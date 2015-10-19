@@ -19,8 +19,6 @@ DEVICE_PACKAGE_OVERLAYS += vendor/oneplus/bacon/overlay
 
 PRODUCT_PACKAGES += \
     com.qualcomm.location \
-    PPPreference \
-    QuickBoot \
     qcrilmsgtunnel \
     shutdownlistener
 
