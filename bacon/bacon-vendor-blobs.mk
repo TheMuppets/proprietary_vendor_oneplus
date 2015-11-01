@@ -219,3 +219,64 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
     vendor/oneplus/bacon/proprietary/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
     vendor/oneplus/bacon/proprietary/vendor/lib/libAKM8963.so:system/vendor/lib/libAKM8963.so
+
+# Firmware images
+PRODUCT_COPY_FILES += \
+    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b00:system/etc/firmware/adsp.b00 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b01:system/etc/firmware/adsp.b01 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b02:system/etc/firmware/adsp.b02 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b03:system/etc/firmware/adsp.b03 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b04:system/etc/firmware/adsp.b04 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b05:system/etc/firmware/adsp.b05 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b06:system/etc/firmware/adsp.b06 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b07:system/etc/firmware/adsp.b07 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b08:system/etc/firmware/adsp.b08 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b09:system/etc/firmware/adsp.b09 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b10:system/etc/firmware/adsp.b10 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b11:system/etc/firmware/adsp.b11 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.b12:system/etc/firmware/adsp.b12 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/adsp.mdt:system/etc/firmware/adsp.mdt \
+    vendor/oneplus/bacon/proprietary/etc/firmware/cmnlib.b00:system/etc/firmware/cmnlib.b00 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/cmnlib.b01:system/etc/firmware/cmnlib.b01 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/cmnlib.b02:system/etc/firmware/cmnlib.b02 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/cmnlib.b03:system/etc/firmware/cmnlib.b03 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/cmnlib.mdt:system/etc/firmware/cmnlib.mdt \
+    vendor/oneplus/bacon/proprietary/etc/firmware/isdbtmm.b00:system/etc/firmware/isdbtmm.b00 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/isdbtmm.b01:system/etc/firmware/isdbtmm.b01 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/isdbtmm.b02:system/etc/firmware/isdbtmm.b02 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/isdbtmm.b03:system/etc/firmware/isdbtmm.b03 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/isdbtmm.mdt:system/etc/firmware/isdbtmm.mdt \
+    vendor/oneplus/bacon/proprietary/etc/firmware/keymaste.b00:system/etc/firmware/keymaste.b00 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/keymaste.b01:system/etc/firmware/keymaste.b01 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/keymaste.b02:system/etc/firmware/keymaste.b02 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/keymaste.b03:system/etc/firmware/keymaste.b03 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/keymaste.mdt:system/etc/firmware/keymaste.mdt \
+    vendor/oneplus/bacon/proprietary/etc/firmware/mc_v2.b00:system/etc/firmware/mc_v2.b00 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/mc_v2.b01:system/etc/firmware/mc_v2.b01 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/mc_v2.b02:system/etc/firmware/mc_v2.b02 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/mc_v2.b03:system/etc/firmware/mc_v2.b03 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/mc_v2.mdt:system/etc/firmware/mc_v2.mdt \
+    vendor/oneplus/bacon/proprietary/etc/firmware/playread.b00:system/etc/firmware/playread.b00 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/playread.b01:system/etc/firmware/playread.b01 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/playread.b02:system/etc/firmware/playread.b02 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/playread.b03:system/etc/firmware/playread.b03 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/playread.mdt:system/etc/firmware/playread.mdt \
+    vendor/oneplus/bacon/proprietary/etc/firmware/tqs.b00:system/etc/firmware/tqs.b00 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/tqs.b01:system/etc/firmware/tqs.b01 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/tqs.b02:system/etc/firmware/tqs.b02 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/tqs.b03:system/etc/firmware/tqs.b03 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/tqs.mdt:system/etc/firmware/tqs.mdt \
+    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b02:system/etc/firmware/wcnss.b02 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b06:system/etc/firmware/wcnss.b06 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b07:system/etc/firmware/wcnss.b07 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b08:system/etc/firmware/wcnss.b08 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.b09:system/etc/firmware/wcnss.b09 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
+    vendor/oneplus/bacon/proprietary/etc/firmware/widevine.b00:system/etc/firmware/widevine.b00 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/widevine.b01:system/etc/firmware/widevine.b01 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/widevine.b02:system/etc/firmware/widevine.b02 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/widevine.b03:system/etc/firmware/widevine.b03 \
+    vendor/oneplus/bacon/proprietary/etc/firmware/widevine.mdt:system/etc/firmware/widevine.mdt
