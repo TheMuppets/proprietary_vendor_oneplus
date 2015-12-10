@@ -78,6 +78,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/fingerprints.b01:/system/etc/firmware/fingerprints.b01 \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/fingerprints.b02:/system/etc/firmware/fingerprints.b02 \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/fingerprints.b03:/system/etc/firmware/fingerprints.b03 \
+        vendor/oneplus/oneplus2/proprietary/etc/firmware/fingerprints.mdt:/system/etc/firmware/fingerprints.mdt \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/leia_pfp_470.fw:/system/etc/firmware/leia_pfp_470.fw \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/leia_pm4_470.fw:/system/etc/firmware/leia_pm4_470.fw \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/nvm_tlv.bin:/system/etc/firmware/nvm_tlv.bin \
