@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -33,8 +33,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/oneplus/bacon/proprietary/etc/permissions/com.google.widevine.software.drm.xml:system/etc/permissions/com.google.widevine.software.drm.xml \
     vendor/oneplus/bacon/proprietary/framework/com.google.widevine.software.drm.jar:system/framework/com.google.widevine.software.drm.jar \
-    vendor/oneplus/bacon/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/oneplus/bacon/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libdrmdiag.so:system/vendor/lib/libdrmdiag.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
