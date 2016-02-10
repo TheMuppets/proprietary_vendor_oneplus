@@ -36,7 +36,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libtime_genoff \
-    libTimeService \
     libdiag \
     libdsutils \
     libmdmdetect \
