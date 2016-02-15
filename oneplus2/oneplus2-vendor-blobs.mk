@@ -53,6 +53,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/bin/laser_init:/system/bin/laser_init \
         vendor/oneplus/oneplus2/proprietary/bin/mm-qcamera-app:/system/bin/mm-qcamera-app \
         vendor/oneplus/oneplus2/proprietary/bin/mm-qcamera-daemon:/system/bin/mm-qcamera-daemon \
+        vendor/oneplus/oneplus2/proprietary/lib64/hw/sensors.hal.tof.so:/system/lib64/hw/sensors.hal.tof.so \
         vendor/oneplus/oneplus2/proprietary/lib64/libopcamera.so:/system/lib64/libopcamera.so \
         vendor/oneplus/oneplus2/proprietary/lib64/libopcameralib.so:/system/lib64/libopcameralib.so \
         vendor/oneplus/oneplus2/proprietary/lib/hw/camera.msm8994.so:/system/lib/hw/camera.msm8994.so \
@@ -62,7 +63,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/lib/libmmjpeg_interface.so:/system/lib/libmmjpeg_interface.so \
         vendor/oneplus/oneplus2/proprietary/lib/libopcamerahw_interface.so:/system/lib/libopcamerahw_interface.so \
         vendor/oneplus/oneplus2/proprietary/lib/libqomx_core.so:/system/lib/libqomx_core.so \
-        vendor/oneplus/oneplus2/proprietary/lib64/hw/sensors.hal.tof.so:/system/lib64/hw/sensors.hal.tof.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libmmcamera2_q3a_core.so:/system/vendor/lib64/libmmcamera2_q3a_core.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libmmcamera2_sensor_debug.so:/system/vendor/lib64/libmmcamera2_sensor_debug.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libmmcamera2_stats_algorithm.so:/system/vendor/lib64/libmmcamera2_stats_algorithm.so \
@@ -197,6 +197,8 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libmmcamera_ov13860_eeprom.so:/system/vendor/lib/libmmcamera_ov13860_eeprom.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libmmcamera_ov5648.so:/system/vendor/lib/libmmcamera_ov5648.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libmmcamera_ov5648_eeprom.so:/system/vendor/lib/libmmcamera_ov5648_eeprom.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/hw/gatekeeper.msm8994.so:/system/vendor/lib64/hw/gatekeeper.msm8994.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/hw/gatekeeper.msm8994.so:/system/vendor/lib/hw/gatekeeper.msm8994.so \
         vendor/oneplus/oneplus2/proprietary/bin/qseecomd:/system/bin/qseecomd \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libdrmfs.so:/system/vendor/lib64/libdrmfs.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libdrmtime.so:/system/vendor/lib64/libdrmtime.so \
@@ -214,28 +216,35 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:/system/vendor/lib/libWVStreamControlAPI_L1.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:/system/vendor/lib/mediadrm/libwvdrmengine.so \
         vendor/oneplus/oneplus2/proprietary/bin/loc_launcher:/system/bin/loc_launcher \
+        vendor/oneplus/oneplus2/proprietary/bin/lowi-server:/system/bin/lowi-server \
+        vendor/oneplus/oneplus2/proprietary/bin/xtwifi-client:/system/bin/xtwifi-client \
+        vendor/oneplus/oneplus2/proprietary/bin/xtwifi-inet-agent:/system/bin/xtwifi-inet-agent \
         vendor/oneplus/oneplus2/proprietary/etc/permissions/com.qualcomm.location.xml:/system/etc/permissions/com.qualcomm.location.xml \
-        vendor/oneplus/oneplus2/proprietary/lib/hw/gps.default.so:/system/lib/hw/gps.default.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/hw/flp.default.so:/system/vendor/lib64/hw/flp.default.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libalarmservice_jni.so:/system/vendor/lib64/libalarmservice_jni.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libflp.so:/system/vendor/lib64/libflp.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libgeofence.so:/system/vendor/lib64/libgeofence.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libizat_core.so:/system/vendor/lib64/libizat_core.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblbs_core.so:/system/vendor/lib64/liblbs_core.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libloc_ext.so:/system/vendor/lib64/libloc_ext.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libloc_xtra.so:/system/vendor/lib64/libloc_xtra.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblocationservice.so:/system/vendor/lib64/liblocationservice.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblocationservice_glue.so:/system/vendor/lib64/liblocationservice_glue.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblowi_client.so:/system/vendor/lib64/liblowi_client.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblowi_wifihal.so:/system/vendor/lib64/liblowi_wifihal.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libquipc_os_api.so:/system/vendor/lib64/libquipc_os_api.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libulp2.so:/system/vendor/lib64/libulp2.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libxtadapter.so:/system/vendor/lib64/libxtadapter.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:/system/vendor/lib64/libxtwifi_ulp_adaptor.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/hw/flp.default.so:/system/vendor/lib/hw/flp.default.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libalarmservice_jni.so:/system/vendor/lib/libalarmservice_jni.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/libflp.so:/system/vendor/lib/libflp.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libgeofence.so:/system/vendor/lib/libgeofence.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libizat_core.so:/system/vendor/lib/libizat_core.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/liblbs_core.so:/system/vendor/lib/liblbs_core.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libloc_ext.so:/system/vendor/lib/libloc_ext.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/liblocationservice.so:/system/vendor/lib/liblocationservice.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/liblocationservice_glue.so:/system/vendor/lib/liblocationservice_glue.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/liblowi_client.so:/system/vendor/lib/liblowi_client.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libquipc_os_api.so:/system/vendor/lib/libquipc_os_api.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libulp2.so:/system/vendor/lib/libulp2.so \
@@ -285,27 +294,25 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/egl/libq3dtools_esx.so:/system/vendor/lib/egl/libq3dtools_esx.so \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/a420_pfp.fw:/system/etc/firmware/a420_pfp.fw \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/a420_pm4.fw:/system/etc/firmware/a420_pm4.fw \
-        vendor/oneplus/oneplus2/proprietary/lib64/hw/lights.msm8994.so:/system/lib64/hw/lights.msm8994.so \
-        vendor/oneplus/oneplus2/proprietary/lib/hw/lights.msm8994.so:/system/lib/hw/lights.msm8994.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/hw/sound_trigger.primary.msm8994.so:/system/vendor/lib/hw/sound_trigger.primary.msm8994.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libDivxDrm.so:/system/vendor/lib64/libDivxDrm.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libI420colorconvert.so:/system/vendor/lib64/libI420colorconvert.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libOmxAacDec.so:/system/vendor/lib64/libOmxAacDec.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:/system/vendor/lib64/libOmxAmrwbplusDec.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libOmxWmaDec.so:/system/vendor/lib64/libOmxWmaDec.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libSHIMDivxDrm.so:/system/vendor/lib64/libSHIMDivxDrm.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libmm-color-convertor.so:/system/vendor/lib64/libmm-color-convertor.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libmmosal.so:/system/vendor/lib64/libmmosal.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libDivxDrm.so:/system/vendor/lib/libDivxDrm.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libI420colorconvert.so:/system/vendor/lib/libI420colorconvert.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/libmmosal.so:/system/vendor/lib/libmmosal.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/libmm-color-convertor.so:/system/vendor/lib/libmm-color-convertor.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libOmxAacDec.so:/system/vendor/lib/libOmxAacDec.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libOmxAmrwbplusDec.so:/system/vendor/lib/libOmxAmrwbplusDec.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libOmxEvrcDec.so:/system/vendor/lib/libOmxEvrcDec.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libOmxQcelp13Dec.so:/system/vendor/lib/libOmxQcelp13Dec.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libOmxWmaDec.so:/system/vendor/lib/libOmxWmaDec.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libSHIMDivxDrm.so:/system/vendor/lib/libSHIMDivxDrm.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libDivxDrm.so:/system/vendor/lib64/libDivxDrm.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libI420colorconvert.so:/system/vendor/lib64/libI420colorconvert.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libmmosal.so:/system/vendor/lib64/libmmosal.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libmm-color-convertor.so:/system/vendor/lib64/libmm-color-convertor.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libOmxAacDec.so:/system/vendor/lib64/libOmxAacDec.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:/system/vendor/lib64/libOmxAmrwbplusDec.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libOmxWmaDec.so:/system/vendor/lib64/libOmxWmaDec.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libSHIMDivxDrm.so:/system/vendor/lib64/libSHIMDivxDrm.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/libmm-color-convertor.so:/system/vendor/lib/libmm-color-convertor.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/libmmosal.so:/system/vendor/lib/libmmosal.so \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/venus.b00:/system/etc/firmware/venus.b00 \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/venus.b01:/system/etc/firmware/venus.b01 \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/venus.b02:/system/etc/firmware/venus.b02 \
@@ -313,10 +320,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/venus.b04:/system/etc/firmware/venus.b04 \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/venus.mbn:/system/etc/firmware/venus.mbn \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/venus.mdt:/system/etc/firmware/venus.mdt \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblocationservice_glue.so:/system/vendor/lib64/liblocationservice_glue.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/liblocationservice_glue.so:/system/vendor/lib/liblocationservice_glue.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libflp.so:/system/vendor/lib64/libflp.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/libflp.so:/system/vendor/lib/libflp.so \
         vendor/oneplus/oneplus2/proprietary/bin/energy-awareness:/system/bin/energy-awareness \
         vendor/oneplus/oneplus2/proprietary/bin/msm_irqbalance:/system/bin/msm_irqbalance \
         vendor/oneplus/oneplus2/proprietary/vendor/bin/perfd:/system/vendor/bin/perfd \
@@ -369,22 +372,17 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libcneapiclient.so:/system/vendor/lib64/libcneapiclient.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libconfigdb.so:/system/vendor/lib64/libconfigdb.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libnetmgr.so:/system/vendor/lib64/libnetmgr.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblqe.so:/system/vendor/lib64/liblqe.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libril-qc-qmi-1.so:/system/vendor/lib64/libril-qc-qmi-1.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libril-qc-radioconfig.so:/system/vendor/lib64/libril-qc-radioconfig.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libril-qcril-hook-oem.so:/system/vendor/lib64/libril-qcril-hook-oem.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libsystem_health_mon.so:/system/vendor/lib64/libsystem_health_mon.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libxml.so:/system/vendor/lib64/libxml.so \
         vendor/oneplus/oneplus2/proprietary/bin/sensors.qcom:/system/bin/sensors.qcom \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/tp/14049/14049_FW_S1302.img:/system/etc/firmware/tp/14049/14049_FW_S1302.img \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/tp/14049/14049_FW_S3320_jdi.img:/system/etc/firmware/tp/14049/14049_FW_S3320_jdi.img \
-        vendor/oneplus/oneplus2/proprietary/lib/hw/sensors.msm8994.so:/system/lib/hw/sensors.msm8994.so \
         vendor/oneplus/oneplus2/proprietary/lib64/hw/sensors.msm8994.so:/system/lib64/hw/sensors.msm8994.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/hw/activity_recognition.msm8994.so:/system/vendor/lib/hw/activity_recognition.msm8994.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/libdataitems.so:/system/vendor/lib/libdataitems.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/libsensor1.so:/system/vendor/lib/libsensor1.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/libsensor_reg.so:/system/vendor/lib/libsensor_reg.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/libsensor_thresh.so:/system/vendor/lib/libsensor_thresh.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/libsensor_user_cal.so:/system/vendor/lib/libsensor_user_cal.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/sensors.ssc.so:/system/vendor/lib/sensors.ssc.so \
+        vendor/oneplus/oneplus2/proprietary/lib/hw/sensors.msm8994.so:/system/lib/hw/sensors.msm8994.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/hw/activity_recognition.msm8994.so:/system/vendor/lib64/hw/activity_recognition.msm8994.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libdataitems.so:/system/vendor/lib64/libdataitems.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libsensor1.so:/system/vendor/lib64/libsensor1.so \
@@ -392,10 +390,169 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libsensor_thresh.so:/system/vendor/lib64/libsensor_thresh.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libsensor_user_cal.so:/system/vendor/lib64/libsensor_user_cal.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/sensors.ssc.so:/system/vendor/lib64/sensors.ssc.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/bin/thermal-engine:/system/vendor/bin/thermal-engine \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/libthermalclient.so:/system/vendor/lib/libthermalclient.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/hw/activity_recognition.msm8994.so:/system/vendor/lib/hw/activity_recognition.msm8994.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/libdataitems.so:/system/vendor/lib/libdataitems.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/libsensor1.so:/system/vendor/lib/libsensor1.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/libsensor_reg.so:/system/vendor/lib/libsensor_reg.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/libsensor_thresh.so:/system/vendor/lib/libsensor_thresh.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/libsensor_user_cal.so:/system/vendor/lib/libsensor_user_cal.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/sensors.ssc.so:/system/vendor/lib/sensors.ssc.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libthermalclient.so:/system/vendor/lib64/libthermalclient.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libthermalioctl.so:/system/vendor/lib64/libthermalioctl.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/bin/thermal-engine:/system/vendor/bin/thermal-engine \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/libthermalclient.so:/system/vendor/lib/libthermalclient.so \
         vendor/oneplus/oneplus2/proprietary/bin/time_daemon:/system/bin/time_daemon \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libTimeService.so:/system/vendor/lib64/libTimeService.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libTimeService.so:/system/vendor/lib/libTimeService.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b00:/system/vendor/firmware/adsp.b00 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b01:/system/vendor/firmware/adsp.b01 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b02:/system/vendor/firmware/adsp.b02 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b03:/system/vendor/firmware/adsp.b03 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b04:/system/vendor/firmware/adsp.b04 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b05:/system/vendor/firmware/adsp.b05 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b06:/system/vendor/firmware/adsp.b06 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b07:/system/vendor/firmware/adsp.b07 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b08:/system/vendor/firmware/adsp.b08 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b09:/system/vendor/firmware/adsp.b09 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b10:/system/vendor/firmware/adsp.b10 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b11:/system/vendor/firmware/adsp.b11 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b12:/system/vendor/firmware/adsp.b12 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b13:/system/vendor/firmware/adsp.b13 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b14:/system/vendor/firmware/adsp.b14 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.b15:/system/vendor/firmware/adsp.b15 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.mbn:/system/vendor/firmware/adsp.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/adsp.mdt:/system/vendor/firmware/adsp.mdt \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/bdwlan30.bin:/system/vendor/firmware/bdwlan30.bin \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/bdwlan31.bin:/system/vendor/firmware/bdwlan31.bin \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cmnlib.b00:/system/vendor/firmware/cmnlib.b00 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cmnlib.b01:/system/vendor/firmware/cmnlib.b01 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cmnlib.b02:/system/vendor/firmware/cmnlib.b02 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cmnlib.b03:/system/vendor/firmware/cmnlib.b03 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cmnlib.mdt:/system/vendor/firmware/cmnlib.mdt \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cpe.b02:/system/vendor/firmware/cpe.b02 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cpe.b04:/system/vendor/firmware/cpe.b04 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cpe.b05:/system/vendor/firmware/cpe.b05 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cpe.b06:/system/vendor/firmware/cpe.b06 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cpe.b08:/system/vendor/firmware/cpe.b08 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cpe.b10:/system/vendor/firmware/cpe.b10 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cpe.b11:/system/vendor/firmware/cpe.b11 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cpe.b12:/system/vendor/firmware/cpe.b12 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cpe.b14:/system/vendor/firmware/cpe.b14 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cpe.b16:/system/vendor/firmware/cpe.b16 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cpe.b18:/system/vendor/firmware/cpe.b18 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cpe.b20:/system/vendor/firmware/cpe.b20 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cpe.b21:/system/vendor/firmware/cpe.b21 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cpe.mbn:/system/vendor/firmware/cpe.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/cpe.mdt:/system/vendor/firmware/cpe.mdt \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/data.msc:/system/vendor/firmware/data.msc \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/isdbtmm.b00:/system/vendor/firmware/isdbtmm.b00 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/isdbtmm.b01:/system/vendor/firmware/isdbtmm.b01 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/isdbtmm.b02:/system/vendor/firmware/isdbtmm.b02 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/isdbtmm.b03:/system/vendor/firmware/isdbtmm.b03 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/isdbtmm.mdt:/system/vendor/firmware/isdbtmm.mdt \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/kmota.b00:/system/vendor/firmware/kmota.b00 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/kmota.b01:/system/vendor/firmware/kmota.b01 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/kmota.b02:/system/vendor/firmware/kmota.b02 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/kmota.b03:/system/vendor/firmware/kmota.b03 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/kmota.mdt:/system/vendor/firmware/kmota.mdt \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/mba.b00:/system/vendor/firmware/mba.b00 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/mba.mdt:/system/vendor/firmware/mba.mdt \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b00:/system/vendor/firmware/modem.b00 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b01:/system/vendor/firmware/modem.b01 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b03:/system/vendor/firmware/modem.b03 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b04:/system/vendor/firmware/modem.b04 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b05:/system/vendor/firmware/modem.b05 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b06:/system/vendor/firmware/modem.b06 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b07:/system/vendor/firmware/modem.b07 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b08:/system/vendor/firmware/modem.b08 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b09:/system/vendor/firmware/modem.b09 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b10:/system/vendor/firmware/modem.b10 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b11:/system/vendor/firmware/modem.b11 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b12:/system/vendor/firmware/modem.b12 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b13:/system/vendor/firmware/modem.b13 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b14:/system/vendor/firmware/modem.b14 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b18:/system/vendor/firmware/modem.b18 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b19:/system/vendor/firmware/modem.b19 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b20:/system/vendor/firmware/modem.b20 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.b22:/system/vendor/firmware/modem.b22 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem.mdt:/system/vendor/firmware/modem.mdt \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/airtel/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/airtel/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dcm/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/dcm/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/kddi/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/kddi/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/reliance/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/reliance/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/sbm/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/apac/sbm/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/comb_att/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/comb_att/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/eps_only/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/eps_only/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/lab_conf/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/lab_conf/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/lab_nsio/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/dsds/lab_nsio/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/comb_att/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/comb_att/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/eps_only/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/3csfb/ss/eps_only/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/com_atta/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/com_atta/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/comb_att/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/comb_att/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/eps_only/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/eps_only/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/lab_conf/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/lab_conf/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/lab_nsio/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/dsds/lab_nsio/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/com_atta/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/com_atta/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/comb_att/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/comb_att/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/eps_only/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cmcc/csfb/ss/eps_only/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/3g/ss/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/3g/ss/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsda/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsda/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsds/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/cg/dsds/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/cta_comm/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/cta_comm/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_eps/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_eps/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_no_/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/dsds/test_no_/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/ss/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/ct/srlte/ss/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/drds/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/drds/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsda/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsda/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsda/lab/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsda/lab/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsds/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsds/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsds/lab/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/dsds/lab/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/ss/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/ss/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/ss/lab/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/china/cu/csfb/ss/lab/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/default/default/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/default/default/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/row/gen_3gpp/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/row/gen_3gpp/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/us_cellu/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/us_cellu/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/w_one/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/common/w_one/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ee/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/eu/ee/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/amx/non_volt/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/amx/non_volt/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/non_volt/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/non_volt/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/volte/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/att/volte/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/sprint/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/commerci/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/tmo/commerci/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/1xsrlte/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/1xsrlte/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/hvolte/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/na/verizon/hvolte/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/oem/overseas/dsds/csfb/mcfg_sw.mbn:/system/vendor/firmware/modem_pr/mcfg/configs/mcfg_sw/generic/oem/overseas/dsds/csfb/mcfg_sw.mbn \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/otp30.bin:/system/vendor/firmware/otp30.bin \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/playread.b00:/system/vendor/firmware/playread.b00 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/playread.b01:/system/vendor/firmware/playread.b01 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/playread.b02:/system/vendor/firmware/playread.b02 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/playread.b03:/system/vendor/firmware/playread.b03 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/playread.mdt:/system/vendor/firmware/playread.mdt \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/qwlan30.bin:/system/vendor/firmware/qwlan30.bin \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/sampleap.b00:/system/vendor/firmware/sampleap.b00 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/sampleap.b01:/system/vendor/firmware/sampleap.b01 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/sampleap.b02:/system/vendor/firmware/sampleap.b02 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/sampleap.b03:/system/vendor/firmware/sampleap.b03 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/sampleap.mdt:/system/vendor/firmware/sampleap.mdt \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/securemm.b00:/system/vendor/firmware/securemm.b00 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/securemm.b01:/system/vendor/firmware/securemm.b01 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/securemm.b02:/system/vendor/firmware/securemm.b02 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/securemm.b03:/system/vendor/firmware/securemm.b03 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/securemm.mdt:/system/vendor/firmware/securemm.mdt \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/tqs.b00:/system/vendor/firmware/tqs.b00 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/tqs.b01:/system/vendor/firmware/tqs.b01 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/tqs.b02:/system/vendor/firmware/tqs.b02 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/tqs.b03:/system/vendor/firmware/tqs.b03 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/tqs.mdt:/system/vendor/firmware/tqs.mdt \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/utf30.bin:/system/vendor/firmware/utf30.bin \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/widevine.b00:/system/vendor/firmware/widevine.b00 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/widevine.b01:/system/vendor/firmware/widevine.b01 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/widevine.b02:/system/vendor/firmware/widevine.b02 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/widevine.b03:/system/vendor/firmware/widevine.b03 \
+        vendor/oneplus/oneplus2/proprietary/vendor/firmware/widevine.mdt:/system/vendor/firmware/widevine.mdt \
