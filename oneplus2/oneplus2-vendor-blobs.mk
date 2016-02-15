@@ -294,8 +294,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/egl/libq3dtools_esx.so:/system/vendor/lib/egl/libq3dtools_esx.so \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/a420_pfp.fw:/system/etc/firmware/a420_pfp.fw \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/a420_pm4.fw:/system/etc/firmware/a420_pm4.fw \
-        vendor/oneplus/oneplus2/proprietary/lib64/hw/lights.msm8994.so:/system/lib64/hw/lights.msm8994.so \
-        vendor/oneplus/oneplus2/proprietary/lib/hw/lights.msm8994.so:/system/lib/hw/lights.msm8994.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/hw/sound_trigger.primary.msm8994.so:/system/vendor/lib/hw/sound_trigger.primary.msm8994.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libDivxDrm.so:/system/vendor/lib64/libDivxDrm.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libI420colorconvert.so:/system/vendor/lib64/libI420colorconvert.so \
