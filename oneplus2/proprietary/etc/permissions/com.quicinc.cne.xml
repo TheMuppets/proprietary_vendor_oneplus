@@ -1,0 +1,8 @@
+<!--
+   Copyright (c) 2015 Qualcomm Technologies, Inc.
+   All Rights Reserved.
+   Qualcomm Technologies Proprietary and Confidential.
+-->
+<permissions>
+   <library name="com.quicinc.cne" file="/system/framework/com.quicinc.cne.jar"/>
+</permissions>
