@@ -16,6 +16,11 @@
 
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGES += \
+    CNEService \
+    com.qti.dpmframework \
+    dpmapi
+
+PRODUCT_PACKAGES += \
     com.qualcomm.location
 
 PRODUCT_PACKAGES += \
