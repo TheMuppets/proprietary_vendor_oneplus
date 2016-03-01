@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (c) 2012-2014 Qualcomm Technologies, Inc.  All Rights Reserved. Qualcomm Technologies Proprietary and Confidential.-->
+<AndsfPolicy>
+   <Man>Qualcomm</Man>
+   <Mod>FFA</Mod>
+   <Andsf>
+       <Version>4.9</Version>
+      <Name>Test 1</Name>
+      <!-- ISRP>
+         <ForFlowBased>
+            <IPFlow>
+               <AddressType>IPv4</AddressType>
+               <StartSourceIPAddress>192.0.2.0</StartSourceIPAddress>
+               <EndSourceIPAddress>192.0.2.255</EndSourceIPAddress>
+               <StartDestIPAddress>74.125.224.0</StartDestIPAddress>
+               <EndDestIPAddress>74.125.224.255</EndDestIPAddress>
+               <ProtocolType>6</ProtocolType>
+               <StartSourcePortNumber>1</StartSourcePortNumber>
+               <EndSourcePortNumber>65535</EndSourcePortNumber>
+               <StartDestPortNumber>1</StartDestPortNumber>
+               <EndDestPortNumber>65535</EndDestPortNumber>
+               <AppName>SomeAppName</AppName>
+               <Direction>0</Direction>
+               <QoS>0</QoS>
+            </IPFlow>
+            <RoutingCriteria>
+               <ValidityArea>
+                  <_3GPP_Location>
+                     <PLMN>ATT</PLMN>
+                     <TAC>SAN DIEGO</TAC>
+                     <LAC>SAN DIEGO</LAC>
+                     <GERAN_CI>F</GERAN_CI>
+                     <UTRAN_CI>1E</UTRAN_CI>
+                     <EUTRA_CI>1D</EUTRA_CI>
+                  </_3GPP_Location>
+                  <_3GPP2_Location>
+                     <_1x>
+                        <SID>10</SID>
+                        <NID>255</NID>
+                        <Base_ID>255</Base_ID>
+                     </_1x>
+                     <HRPD>
+                        <Sector_ID>12345678</Sector_ID>
+                        <Netmask>5</Netmask>
+                     </HRPD>
+                  </_3GPP2_Location>
+                  <WiMAX_Location>
+                     <NAP-ID>NAP</NAP-ID>
+                     <BS-ID>BS</BS-ID>
+                  </WiMAX_Location>
+                  <WLAN_Location>
+                     <HESSID>QCOM</HESSID>
+                     <SSID>Cerberus</SSID>
+                     <BSSID>12345678</BSSID>
+                  </WLAN_Location>
+                  <Geo_Location>
+                     <Circular>
+                        <AnchorLatitude>0</AnchorLatitude>
+                        <AnchorLongitude>0</AnchorLongitude>
+                        <Radius>10</Radius>
+                     </Circular>
+                  </Geo_Location>
+               </ValidityArea>
+               <TimeOfDay>
+                  <TimeStart>003000</TimeStart>
+                  <TimeStop>235959</TimeStop>
+                  <DateStart>19750201</DateStart>
+                  <DateStop>20120228</DateStop>
+               </TimeOfDay>
+               <APN>IMS</APN>
+            </RoutingCriteria>
+            <RoutingRule>
+               <AccessTechnology>1</AccessTechnology>
+               <AccessNetworkPriority>1</AccessNetworkPriority>
+            </RoutingRule>
+            <RoutingRule>
+               <AccessTechnology>3</AccessTechnology>
+               <AccessId>Cerberus</AccessId>
+               <SecondaryAccessId>QCOM</SecondaryAccessId>
+               <AccessNetworkPriority>5</AccessNetworkPriority>
+            </RoutingRule>
+            <RulePriority>2</RulePriority>
+         </ForFlowBased>
+         <Roaming>0</Roaming>
+         <UpdatePolicy>0</UpdatePolicy>
+         <PLMN>ATT</PLMN>
+      </ISRP -->
+      <Ext>
+         <WQE>
+            <InterfaceManager>
+               <BQE_Disabled>false</BQE_Disabled>
+               <ICD_Disabled>true</ICD_Disabled>
+               <!-- Default bqe thresholds where no apIds are specified. -->
+               <BQE_Thresholds Id="128">
+                  <RadioTechnology Type="CDMA2000">
+                     <Threshold units="bps">0</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="EVDO_0">
+                     <Threshold units="bps">0</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="EVDO_A">
+                     <Threshold units="bps">0</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="EVDO_B">
+                     <Threshold units="bps">0</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="EDGE">
+                     <Threshold units="bps">0</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="UMTS">
+                     <Threshold units="bps">0</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="HSPA">
+                     <Threshold units="bps">0</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="HSDPA">
+                     <Threshold units="bps">0</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="GPRS">
+                     <Threshold units="bps">0</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="LTE">
+                     <Threshold units="bps">0</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="EHRPD">
+                     <Threshold units="bps">0</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="HSPAP">
+                     <Threshold units="bps">0</Threshold>
+                  </RadioTechnology>
+               </BQE_Thresholds>
+               <!-- Suggested use of bqethreshold with specific apIds -->
+               <!-- BQE_Thresholds Id="1">
+                   <apIds Type="SSID">
+                     <apId>wifi-ap1</apId>
+                     <apId>wifi-ap2</apId>
+                  </apIds>
+                  <RadioTechnology Type="CDMA2000">
+                     <Threshold units="bps">100000</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="EVDO_0">
+                     <Threshold units="bps">200000</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="EVDO_A">
+                     <Threshold units="bps">400000</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="EVDO_B">
+                     <Threshold units="bps">600000</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="EDGE">
+                     <Threshold units="bps">100000</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="UMTS">
+                     <Threshold units="bps">200000</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="HSPA">
+                     <Threshold units="bps">600000</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="HSDPA">
+                     <Threshold units="bps">600000</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="GPRS">
+                     <Threshold units="bps">50000</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="LTE">
+                     <Threshold units="bps">1000000</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="EHRPD">
+                     <Threshold units="bps">600000</Threshold>
+                  </RadioTechnology>
+                  <RadioTechnology Type="HSPAP">
+                     <Threshold units="bps">600000</Threshold>
+                  </RadioTechnology>
+               </BQE_Thresholds -->
+               <Authentication>
+                  <MaxAuthTime>60</MaxAuthTime>
+                  <IcdBanRetest>3</IcdBanRetest>
+                  <AuthApps>
+                     <Appname>someauthapp1</Appname>
+                     <Appname>someauthapp2</Appname>
+                     <Appname>someauthapp3</Appname>
+                  </AuthApps>
+               </Authentication>
+               <ICD config-type="disabled">
+               </ICD>
+               <!-- The below list is only for reference to enable/disable ICD per SSID basis
+               <ICD config-type="disabled">
+                  <apIds Type="SSID">
+                     <apId>wifi-ap1</apId>
+                     <apId>wifi-ap2</apId>
+                  </apIds>
+               </ICD>
+                     OR
+               <ICD config-type="enabled">
+                  <apIds Type="SSID">
+                     <apId>wifi-ap3</apId>
+                     <apId>wifi-ap4</apId>
+                  </apIds>
+               </ICD>
+                    -->
+                    <TQE>
+                        <!-- Default node for TQE_Thresholds element -->
+                        <TQE_Thresholds Id ="128">
+                            <!-- Disabling Broken Backhaul Detector module -->
+                            <BBD_Disabled>false</BBD_Disabled>
+                            <!-- Disabling Degraded Backhaul Detector module -->
+                            <DBD_Disabled>false</DBD_Disabled>
+                            <!-- Threshold on downlink gap indicator metric -->
+                            <DGIMThresh units="msecs">400</DGIMThresh>
+                            <!-- DBD always returns pass when average device throughput is greater than min(DBDTputThresh,BQE_Threshold) -->
+                            <DBDTputThresh units="bps">1000000</DBDTputThresh>
+                            <!-- Time window for TQE history -->
+                            <TQETimeWindow units="secs">20</TQETimeWindow>
+                            <!-- Minimum fraction of sockets reporting BAD (among valid ones) to declare TQE FAIL -->
+                            <RatioThresh>0.2</RatioThresh>
+                        </TQE_Thresholds>
+                        <!-- The next element is for reference only to show how to -->
+                        <!-- set up TQE thresholds for a list of specific apids -->
+                        <!--
+                        <TQE_Thresholds Id ="1">
+                            <apIds Type="SSID">
+                                <apId>operatorSsid1</apId>
+                                <apId>operatorSsid2</apId>
+                            </apIds>
+                            <BBD_Disabled>false</BBD_Disabled>
+                            <DBD_Disabled>false</DBD_Disabled>
+                            <DGIMThresh units="msecs">400</DGIMThresh>
+                            <DBDTputThresh units="bps">1000000</DBDTputThresh>
+                            <TQETimeWindow units="secs">20</TQETimeWindow>
+                            <RatioThresh>0.2</RatioThresh>
+                        </TQE_Thresholds>
+                        -->
+                    </TQE>
+            </InterfaceManager>
+         </WQE>
+         <CQE prodId="Rome">
+            <!-- Default node for CQE_Thresholds element -->
+            <CQE_Thresholds Id ="128">
+                    <!-- RSSI threshold from which all values greather than it is considered as good for wlan to be -->
+               <!-- a candidate for interface selection -->
+               <RSSIAddThreshold units="dbm">-86</RSSIAddThreshold>
+               <!-- RSSI threshold from which all values lesser than it is considered as bad for wlan to be -->
+               <!-- a candidate for interface selection -->
+               <RSSIDropThreshold units="dbm">-91</RSSIDropThreshold>
+               <!-- Interval over whcih RSSI values are averaged -->
+               <RSSIAveragingInterval units="secs">5</RSSIAveragingInterval>
+               <!-- RSSI threshold below which MAC hysteresis timer is not started -->
+               <RSSIMacTimerThreshold units="dbm">-91</RSSIMacTimerThreshold>
+               <!-- Periodic timer to evaluate CQE parameters including RSSI and MAC stats -->
+               <!-- Setting CQETimer to zero disables the CQE -->
+               <CQETimer units="secs">2</CQETimer>
+               <!-- Time for which CQE is not reevaluted after it was declared bad due to MAC stats -->
+               <MACHysteresisTimer units="secs">120</MACHysteresisTimer>
+               <!-- Alpha to compute RSSI averaging based on IIR filtering mechanism -->
+               <MACStatsAveragingAlpha>0.36</MACStatsAveragingAlpha>
+               <!-- Threshold for RX MPDU PER -->
+               <RMP_THR>0.05</RMP_THR>
+               <!-- Minimum MPDU count to activate RX MPDU PER -->
+               <RMP_CNT_THR>19</RMP_CNT_THR>
+               <!-- Cutoff RX MCS index -->
+               <RX_MCS_THR>5</RX_MCS_THR>
+               <!-- Cutoff RX BW index -->
+               <RX_BW_THR>0</RX_BW_THR>
+               <!-- Threshold for TX MSDU drop -->
+               <TMD_THR>0.01</TMD_THR>
+               <!-- Minimum MSDU count to activate TX MSDU drop -->
+               <TMD_CNT_THR>1</TMD_CNT_THR>
+               <!-- Threshold for MPDU retry rate -->
+               <TMR_THR>0.82</TMR_THR>
+               <!-- Minimum MPDU count to activate MPDU retry rate -->
+               <TMR_CNT_THR>6</TMR_CNT_THR>
+               <!-- Cutoff TX MCS index -->
+               <TX_MCS_THR>9</TX_MCS_THR>
+               <!-- Cutoff TX BW index -->
+               <TX_BW_THR>3</TX_BW_THR>
+               <!-- Maximum MPDU count to activate RX MPDU PER -->
+               <RMP_UBCNT_THR>100</RMP_UBCNT_THR>
+               <!-- Maximum MPDU count to activate MPDU retry rate -->
+               <TMR_UBCNT_THR>300</TMR_UBCNT_THR>
+               <!-- Threshold for PERAM -->
+               <PERAM_THR>0.25</PERAM_THR>
+               <!-- Minimum MPDU count to activate PERAM -->
+               <PERAM_CNT_THR>10</PERAM_CNT_THR>
+               <!-- Maximum MPDU count to activate PERAM -->
+               <PERAM_UBCNT_THR>80</PERAM_UBCNT_THR>
+               <!-- CQE throughput Threshold-->
+               <CQE_TPUT_THR>1000000</CQE_TPUT_THR>
+            </CQE_Thresholds>
+         </CQE>
+         <CQE prodId="Pronto">
+            <!-- Default node for CQE_Thresholds element -->
+            <CQE_Thresholds Id ="128">
+               <!-- RSSI threshold from which all values greather than it is considered as good for wlan to be -->
+               <!-- a candidate for interface selection -->
+               <RSSIAddThreshold units="dbm">-86</RSSIAddThreshold>
+               <!-- RSSI threshold from which all values lesser than it is considered as bad for wlan to be -->
+               <!-- a candidate for interface selection -->
+               <RSSIDropThreshold units="dbm">-91</RSSIDropThreshold>
+               <!-- RSSI threshold from which to select linear model to compute CQE metric -->
+               <RSSIModelThreshold units="dbm">-72</RSSIModelThreshold>
+               <!-- Interval over whcih RSSI values are averaged -->
+               <RSSIAveragingInterval units="secs">5</RSSIAveragingInterval>
+               <!-- RSSI threshold below which MAC hysteresis timer is not started -->
+               <RSSIMacTimerThreshold units="dbm">-91</RSSIMacTimerThreshold>
+               <!-- Periodic timer to evaluate CQE parameters including RSSI and MAC stats -->
+               <!-- Setting CQETimer to zero disables the CQE -->
+               <CQETimer units="secs">2</CQETimer>
+               <!-- Time for which CQE is not reevaluted after it was declared bad due to MAC stats -->
+               <MACHysteresisTimer units="secs">120</MACHysteresisTimer>
+               <!-- Alpha to compute RSSI averaging based on IIR filtering mechanism -->
+               <MACStatsAveragingAlpha>0.5</MACStatsAveragingAlpha>
+               <!-- The threshold indicating the number of frames below which no valid CQE estimation can't be done -->
+               <FrameCntThreshold units="frames">3</FrameCntThreshold>
+               <!-- The threshold indicating the number of last samples below which valid CQE estimation can't be done -->
+               <ColdStartThreshold units="frames">2</ColdStartThreshold>
+               <!-- The threshold that ultimately decides the wlan is good or bad based on the combined MAC parameters -->
+               <!-- such as retry, multi-retry, fail and  ack fail metric -->
+               <!-- when average RSSI is greater than RSSIModelThreshold -->
+                                        <MACMibThreshold2a>0.25</MACMibThreshold2a>
+               <!-- The weightage that given to retry metric in computation of CQE -->
+               <!-- when average RSSI is greater than RSSIModelThreshold -->
+               <RetryMetricWeight2a>0.2347</RetryMetricWeight2a>
+               <!-- The weightage that given to multi-retry metric in computation of CQE -->
+               <!-- when average RSSI is greater than RSSIModelThreshold -->
+               <MultiRetryMetricWeight2a>0.0489</MultiRetryMetricWeight2a>
+               <!-- The threshold that ultimately decides the wlan is good or bad based on the combined MAC parameters -->
+               <!-- such as retry, multi-retry, fail and  ack fail metric -->
+               <!-- when average RSSI is less than or equal to RSSIModelThreshold -->
+               <MACMibThreshold2b>0.22</MACMibThreshold2b>
+               <!-- The weightage that given to retry metric in computation of CQE -->
+               <!-- when average RSSI is less than or equal to RSSIModelThreshold -->
+               <RetryMetricWeight2b>0.2281</RetryMetricWeight2b>
+               <!-- The weightage that given to multi-retry metric in computation of CQE -->
+               <!-- when average RSSI is less than or equal to RSSIModelThreshold -->
+               <MultiRetryMetricWeight2b>0.1314</MultiRetryMetricWeight2b>
+            </CQE_Thresholds>
+            <!-- The next element is for reference only to show how to set up CQE thresholds for a list of specific apids -->
+            <!--
+            <CQE_Thresholds Id ="1">
+                <apIds Type="SSID">
+                  <apId>operatorSsid1</apId>
+                  <apId>operatorSsid2</apId>
+                </apIds>
+               <RSSIAddThreshold units="dbm">-82</RSSIAddThreshold>
+               <RSSIDropThreshold units="dbm">-90</RSSIDropThreshold>
+               <RSSIModelThreshold units="dbm">-85</RSSIModelThreshold>
+               <RSSIAveragingInterval units="secs">4</RSSIAveragingInterval>
+               <RSSIMacTimerThreshold units="dbm">-93</RSSIMacTimerThreshold>
+               <CQETimer units="secs">2</CQETimer>
+               <MACHysteresisTimer units="secs">110</MACHysteresisTimer>
+               <MACStatsAveragingAlpha>0.1</MACStatsAveragingAlpha>
+               <FrameCntThreshold units="frames">25</FrameCntThreshold>
+               <ColdStartThreshold units="frames">2</ColdStartThreshold>
+               <MACMibThreshold2a>0.25</MACMibThreshold2a>
+               <RetryMetricWeight2a>0.1061</RetryMetricWeight2a>
+               <MultiRetryMetricWeight2a>0.0984</MultiRetryMetricWeight2a>
+               <MACMibThreshold2b>0.45</MACMibThreshold2b>
+               <RetryMetricWeight2b>0.3072</RetryMetricWeight2b>
+               <MultiRetryMetricWeight2b>0.5156</MultiRetryMetricWeight2b>
+            </CQE_Thresholds>
+            -->
+         </CQE>
+      </Ext>
+   </Andsf>
+    <!-- The next element is for reference only to show how to config ANDSF
+         parameters for another version that may be supported on the device -->
+    <!--
+    <Andsf>
+        <Version>4.3</Version>
+        <Name>Test 1</Name>
+        <Ext>
+            <WQE>
+                <InterfaceManager>
+                    <BQE_Disabled>false</BQE_Disabled>
+                    <ICD_Disabled>false</ICD_Disabled>
+                    <BQE_Thresholds Id="128">
+                        <RadioTechnology Type="CDMA2000">
+                            <Threshold units="bps">100000</Threshold>
+                        </RadioTechnology>
+                    </BQE_Thresholds>
+                </InterfaceManager>
+            </WQE>
+            <CQE>
+            </CQE>
+         </Ext>
+     </Andsf>
+     -->
+</AndsfPolicy>

@@ -16,6 +16,11 @@
 
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGES += \
+    CNEService \
+    com.qti.dpmframework \
+    dpmapi
+
+PRODUCT_PACKAGES += \
     com.qualcomm.location
 
 PRODUCT_PACKAGES += \
@@ -35,6 +40,9 @@ PRODUCT_PACKAGES += \
     libloc_ds_api
 
 PRODUCT_PACKAGES += \
+    libwpa_qmi_eap_proxy
+
+PRODUCT_PACKAGES += \
     libtime_genoff \
     libdiag \
     libdsutils \
@@ -45,6 +53,6 @@ PRODUCT_PACKAGES += \
     libqmiservices
 
 PRODUCT_PACKAGES += \
-    keystore.msm8994
+    keystore.$(TARGET_BOARD_PLATFORM)
 
 $(call inherit-product, vendor/oneplus/oneplus2/oneplus2-vendor-blobs.mk)
