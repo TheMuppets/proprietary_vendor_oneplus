@@ -233,20 +233,19 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libdpmframework.so:/system/vendor/lib/libdpmframework.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libdpmnsrm.so:/system/vendor/lib/libdpmnsrm.so \
         vendor/oneplus/oneplus2/proprietary/bin/qseecomd:/system/bin/qseecomd \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libQSEEComAPI.so:/system/vendor/lib64/libQSEEComAPI.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libdrmfs.so:/system/vendor/lib64/libdrmfs.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libdrmtime.so:/system/vendor/lib64/libdrmtime.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libQSEEComAPI.so:/system/vendor/lib64/libQSEEComAPI.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/librpmb.so:/system/vendor/lib64/librpmb.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libssd.so:/system/vendor/lib64/libssd.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/libQSEEComAPI.so:/system/vendor/lib/libQSEEComAPI.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:/system/vendor/lib/libWVStreamControlAPI_L1.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libdrmfs.so:/system/vendor/lib/libdrmfs.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libdrmtime.so:/system/vendor/lib/libdrmtime.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/libQSEEComAPI.so:/system/vendor/lib/libQSEEComAPI.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/liboemcrypto.so:/system/vendor/lib/liboemcrypto.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/librpmb.so:/system/vendor/lib/librpmb.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libssd.so:/system/vendor/lib/libssd.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libwvdrm_L1.so:/system/vendor/lib/libwvdrm_L1.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/librpmb.so:/system/vendor/lib/librpmb.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/libssd.so:/system/vendor/lib/libssd.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:/system/vendor/lib/libWVStreamControlAPI_L1.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:/system/vendor/lib/mediadrm/libwvdrmengine.so \
         vendor/oneplus/oneplus2/proprietary/bin/loc_launcher:/system/bin/loc_launcher \
         vendor/oneplus/oneplus2/proprietary/bin/lowi-server:/system/bin/lowi-server \
