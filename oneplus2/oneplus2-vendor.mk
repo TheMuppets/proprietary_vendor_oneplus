@@ -53,6 +53,6 @@ PRODUCT_PACKAGES += \
     libqmiservices
 
 PRODUCT_PACKAGES += \
-    keystore.$(TARGET_BOARD_PLATFORM)
+    keystore.msm8994
 
 $(call inherit-product, vendor/oneplus/oneplus2/oneplus2-vendor-blobs.mk)
