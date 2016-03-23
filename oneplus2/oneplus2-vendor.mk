@@ -21,9 +21,6 @@ PRODUCT_PACKAGES += \
     dpmapi
 
 PRODUCT_PACKAGES += \
-    com.qualcomm.location
-
-PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     shutdownlistener \
     TimeService
