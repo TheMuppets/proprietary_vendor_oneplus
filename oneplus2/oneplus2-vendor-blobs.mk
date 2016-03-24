@@ -244,36 +244,25 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/fingerprints.b02:/system/etc/firmware/fingerprints.b02 \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/fingerprints.b03:/system/etc/firmware/fingerprints.b03 \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/fingerprints.mdt:/system/etc/firmware/fingerprints.mdt \
-        vendor/oneplus/oneplus2/proprietary/bin/loc_launcher:/system/bin/loc_launcher \
-        vendor/oneplus/oneplus2/proprietary/bin/lowi-server:/system/bin/lowi-server \
-        vendor/oneplus/oneplus2/proprietary/bin/xtwifi-client:/system/bin/xtwifi-client \
-        vendor/oneplus/oneplus2/proprietary/bin/xtwifi-inet-agent:/system/bin/xtwifi-inet-agent \
-        vendor/oneplus/oneplus2/proprietary/etc/permissions/com.qualcomm.location.xml:/system/etc/permissions/com.qualcomm.location.xml \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/hw/flp.default.so:/system/vendor/lib64/hw/flp.default.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libalarmservice_jni.so:/system/vendor/lib64/libalarmservice_jni.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libdataitems.so:/system/vendor/lib64/libdataitems.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libflp.so:/system/vendor/lib64/libflp.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libgeofence.so:/system/vendor/lib64/libgeofence.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libizat_core.so:/system/vendor/lib64/libizat_core.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblbs_core.so:/system/vendor/lib64/liblbs_core.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libloc_ext.so:/system/vendor/lib64/libloc_ext.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libloc_xtra.so:/system/vendor/lib64/libloc_xtra.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblocationservice.so:/system/vendor/lib64/liblocationservice.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblocationservice_glue.so:/system/vendor/lib64/liblocationservice_glue.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblowi_client.so:/system/vendor/lib64/liblowi_client.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/liblowi_wifihal.so:/system/vendor/lib64/liblowi_wifihal.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libquipc_os_api.so:/system/vendor/lib64/libquipc_os_api.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libulp2.so:/system/vendor/lib64/libulp2.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libxtadapter.so:/system/vendor/lib64/libxtadapter.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:/system/vendor/lib64/libxtwifi_ulp_adaptor.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/hw/flp.default.so:/system/vendor/lib/hw/flp.default.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/libalarmservice_jni.so:/system/vendor/lib/libalarmservice_jni.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib/libdataitems.so:/system/vendor/lib/libdataitems.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libflp.so:/system/vendor/lib/libflp.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libgeofence.so:/system/vendor/lib/libgeofence.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libizat_core.so:/system/vendor/lib/libizat_core.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/liblbs_core.so:/system/vendor/lib/liblbs_core.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/libloc_ext.so:/system/vendor/lib/libloc_ext.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/liblocationservice.so:/system/vendor/lib/liblocationservice.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/liblocationservice_glue.so:/system/vendor/lib/liblocationservice_glue.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/liblowi_client.so:/system/vendor/lib/liblowi_client.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libquipc_os_api.so:/system/vendor/lib/libquipc_os_api.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libulp2.so:/system/vendor/lib/libulp2.so \
@@ -408,14 +397,12 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/lib64/hw/sensors.msm8994.so:/system/lib64/hw/sensors.msm8994.so \
         vendor/oneplus/oneplus2/proprietary/lib/hw/sensors.msm8994.so:/system/lib/hw/sensors.msm8994.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/hw/activity_recognition.msm8994.so:/system/vendor/lib64/hw/activity_recognition.msm8994.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libdataitems.so:/system/vendor/lib64/libdataitems.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libsensor1.so:/system/vendor/lib64/libsensor1.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libsensor_reg.so:/system/vendor/lib64/libsensor_reg.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libsensor_thresh.so:/system/vendor/lib64/libsensor_thresh.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libsensor_user_cal.so:/system/vendor/lib64/libsensor_user_cal.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/sensors.ssc.so:/system/vendor/lib64/sensors.ssc.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/hw/activity_recognition.msm8994.so:/system/vendor/lib/hw/activity_recognition.msm8994.so \
-        vendor/oneplus/oneplus2/proprietary/vendor/lib/libdataitems.so:/system/vendor/lib/libdataitems.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libsensor1.so:/system/vendor/lib/libsensor1.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libsensor_reg.so:/system/vendor/lib/libsensor_reg.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib/libsensor_thresh.so:/system/vendor/lib/libsensor_thresh.so \
