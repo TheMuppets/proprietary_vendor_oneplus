@@ -257,3 +257,4 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/onyx/proprietary/vendor/lib/libthermalclient.so:/system/vendor/lib/libthermalclient.so \
         vendor/oneplus/onyx/proprietary/vendor/lib/libthermalioctl.so:/system/vendor/lib/libthermalioctl.so \
         vendor/oneplus/onyx/proprietary/bin/time_daemon:/system/bin/time_daemon \
+        vendor/oneplus/onyx/proprietary/lib/libwcnss_qmi.so:/system/lib/libwcnss_qmi.so
