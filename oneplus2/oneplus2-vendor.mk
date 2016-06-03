@@ -49,7 +49,4 @@ PRODUCT_PACKAGES += \
     libqmi_client_qmux \
     libqmiservices
 
-PRODUCT_PACKAGES += \
-    keystore.msm8994
-
 $(call inherit-product, vendor/oneplus/oneplus2/oneplus2-vendor-blobs.mk)
