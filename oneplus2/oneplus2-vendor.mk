@@ -16,9 +16,7 @@
 
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGES += \
-    CNEService \
-    com.qti.dpmframework \
-    dpmapi
+    CNEService
 
 PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
