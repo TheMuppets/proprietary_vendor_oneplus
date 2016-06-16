@@ -333,6 +333,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/lib-rtpdaemoninterface.so:/system/vendor/lib/lib-rtpdaemoninterface.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/lib-rtpsl.so:/system/vendor/lib/lib-rtpsl.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libimsmedia_jni.so:/system/vendor/lib/libimsmedia_jni.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/librcc.so:/system/vendor/lib/librcc.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-dplmedia.so:/system/vendor/lib64/lib-dplmedia.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-ims-rcscmjni.so:/system/vendor/lib64/lib-ims-rcscmjni.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-imsSDP.so:/system/vendor/lib64/lib-imsSDP.so \
@@ -353,6 +354,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:/system/vendor/lib64/lib-rtpdaemoninterface.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-rtpsl.so:/system/vendor/lib64/lib-rtpsl.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libimsmedia_jni.so:/system/vendor/lib64/libimsmedia_jni.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib64/librcc.so:/system/vendor/lib64/librcc.so \
         vendor/oneplus/oneplus3/proprietary/bin/dpmd:/system/bin/dpmd \
         vendor/oneplus/oneplus3/proprietary/etc/dpm/dpm.conf:/system/etc/dpm/dpm.conf \
         vendor/oneplus/oneplus3/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:/system/etc/dpm/nsrm/NsrmConfiguration.xml \
