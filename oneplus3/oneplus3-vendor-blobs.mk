@@ -659,8 +659,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/etc/permissions/qcnvitems.xml:/system/etc/permissions/qcnvitems.xml \
         vendor/oneplus/oneplus3/proprietary/etc/permissions/qcrilhook.xml:/system/etc/permissions/qcrilhook.xml \
         vendor/oneplus/oneplus3/proprietary/etc/permissions/telephonyservice.xml:/system/etc/permissions/telephonyservice.xml \
-        vendor/oneplus/oneplus3/proprietary/framework/qti-telephony-common.jar:/system/framework/qti-telephony-common.jar \
-        vendor/oneplus/oneplus3/proprietary/framework/QtiTelephonyServicelibrary.jar:/system/framework/QtiTelephonyServicelibrary.jar \
         vendor/oneplus/oneplus3/proprietary/lib64/libparam.so:/system/lib64/libparam.so \
         vendor/oneplus/oneplus3/proprietary/vendor/bin/qti:/system/vendor/bin/qti \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libconfigdb.so:/system/vendor/lib64/libconfigdb.so \
