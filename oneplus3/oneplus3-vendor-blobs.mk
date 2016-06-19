@@ -445,6 +445,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libvqzip.so:system/vendor/lib/libvqzip.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so \
