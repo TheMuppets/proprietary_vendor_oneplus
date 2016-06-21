@@ -512,65 +512,19 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/hw/sound_trigger.primary.msm8996.so:/system/vendor/lib/hw/sound_trigger.primary.msm8996.so \
         vendor/oneplus/oneplus3/proprietary/lib/libOmxVenc.so:/system/lib/libOmxVenc.so \
         vendor/oneplus/oneplus3/proprietary/lib64/libOmxVenc.so:/system/lib64/libOmxVenc.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libFileMux.so:/system/vendor/lib/libFileMux.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libI420colorconvert.so:/system/vendor/lib/libI420colorconvert.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxAacDec.so:/system/vendor/lib/libOmxAacDec.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxAlacDec.so:/system/vendor/lib/libOmxAlacDec.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxAmrwbplusDec.so:/system/vendor/lib/libOmxAmrwbplusDec.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxApeDec.so:/system/vendor/lib/libOmxApeDec.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxEvrcDec.so:/system/vendor/lib/libOmxEvrcDec.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxMux.so:/system/vendor/lib/libOmxMux.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxQcelp13Dec.so:/system/vendor/lib/libOmxQcelp13Dec.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxVideoDSMode.so:/system/vendor/lib/libOmxVideoDSMode.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxWmaDec.so:/system/vendor/lib/libOmxWmaDec.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libhdcp1prov.so:/system/vendor/lib/libhdcp1prov.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libmm-color-convertor.so:/system/vendor/lib/libmm-color-convertor.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libmm-hdcpmgr.so:/system/vendor/lib/libmm-hdcpmgr.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmosal.so:/system/vendor/lib/libmmosal.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfdcommonutils.so:/system/vendor/lib/libwfdcommonutils.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfdhdcpcp.so:/system/vendor/lib/libwfdhdcpcp.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfdmmservice.so:/system/vendor/lib/libwfdmmservice.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfdmmsink.so:/system/vendor/lib/libwfdmmsink.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfdmmsrc.so:/system/vendor/lib/libwfdmmsrc.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfdmmutils.so:/system/vendor/lib/libwfdmmutils.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfdnative.so:/system/vendor/lib/libwfdnative.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfdrtsp.so:/system/vendor/lib/libwfdrtsp.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfdservice.so:/system/vendor/lib/libwfdservice.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfdsm.so:/system/vendor/lib/libwfdsm.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfduibcinterface.so:/system/vendor/lib/libwfduibcinterface.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfduibcsink.so:/system/vendor/lib/libwfduibcsink.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfduibcsinkinterface.so:/system/vendor/lib/libwfduibcsinkinterface.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfduibcsrc.so:/system/vendor/lib/libwfduibcsrc.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libwfduibcsrcinterface.so:/system/vendor/lib/libwfduibcsrcinterface.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libFileMux.so:/system/vendor/lib64/libFileMux.so \
+        vendor/oneplus/oneplus3/proprietary/vendor/lib/libvqzip.so:/system/vendor/lib/libvqzip.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libI420colorconvert.so:/system/vendor/lib64/libI420colorconvert.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libOmxAacDec.so:/system/vendor/lib64/libOmxAacDec.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libOmxAlacDec.so:/system/vendor/lib64/libOmxAlacDec.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:/system/vendor/lib64/libOmxAmrwbplusDec.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libOmxApeDec.so:/system/vendor/lib64/libOmxApeDec.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libOmxEvrcDec.so:/system/vendor/lib64/libOmxEvrcDec.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libOmxMux.so:/system/vendor/lib64/libOmxMux.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libOmxQcelp13Dec.so:/system/vendor/lib64/libOmxQcelp13Dec.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libOmxWmaDec.so:/system/vendor/lib64/libOmxWmaDec.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libhdcp1prov.so:/system/vendor/lib64/libhdcp1prov.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libmm-color-convertor.so:/system/vendor/lib64/libmm-color-convertor.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libmm-hdcpmgr.so:/system/vendor/lib64/libmm-hdcpmgr.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libmmosal.so:/system/vendor/lib64/libmmosal.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfdcommonutils.so:/system/vendor/lib64/libwfdcommonutils.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfdhdcpcp.so:/system/vendor/lib64/libwfdhdcpcp.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfdmmservice.so:/system/vendor/lib64/libwfdmmservice.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfdmmsink.so:/system/vendor/lib64/libwfdmmsink.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfdmmsrc.so:/system/vendor/lib64/libwfdmmsrc.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfdmmutils.so:/system/vendor/lib64/libwfdmmutils.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfdnative.so:/system/vendor/lib64/libwfdnative.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfdrtsp.so:/system/vendor/lib64/libwfdrtsp.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfdservice.so:/system/vendor/lib64/libwfdservice.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfdsm.so:/system/vendor/lib64/libwfdsm.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfduibcinterface.so:/system/vendor/lib64/libwfduibcinterface.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfduibcsink.so:/system/vendor/lib64/libwfduibcsink.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfduibcsinkinterface.so:/system/vendor/lib64/libwfduibcsinkinterface.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfduibcsrc.so:/system/vendor/lib64/libwfduibcsrc.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwfduibcsrcinterface.so:/system/vendor/lib64/libwfduibcsrcinterface.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libconnctrl.so:/system/vendor/lib/libconnctrl.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libconnctrl.so:/system/vendor/lib64/libconnctrl.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libQtiTether.so:/system/vendor/lib64/libQtiTether.so \
