@@ -449,6 +449,13 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/bin/msm_irqbalance:/system/bin/msm_irqbalance \
         vendor/oneplus/oneplus3/proprietary/lib64/libqti-iop.so:/system/lib64/libqti-iop.so \
         vendor/oneplus/oneplus3/proprietary/vendor/bin/perfd:/system/vendor/bin/perfd \
+        vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile0.conf:/system/vendor/etc/perf-profile0.conf \
+        vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile1.conf:/system/vendor/etc/perf-profile1.conf \
+        vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile2.conf:/system/vendor/etc/perf-profile2.conf \
+        vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile3.conf:/system/vendor/etc/perf-profile3.conf \
+        vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile4.conf:/system/vendor/etc/perf-profile4.conf \
+        vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile5.conf:/system/vendor/etc/perf-profile5.conf \
+        vendor/oneplus/oneplus3/proprietary/vendor/etc/perf-profile6.conf:/system/vendor/etc/perf-profile6.conf \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libqc-opt.so:/system/vendor/lib/libqc-opt.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libqti-iop-client.so:/system/vendor/lib/libqti-iop-client.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libqti-perfd-client.so:/system/vendor/lib/libqti-perfd-client.so \
@@ -576,6 +583,8 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_Reliance-Commercial.mbn:/system/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_Reliance-Commercial.mbn \
         vendor/oneplus/oneplus3/proprietary/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_YTL-Commercial.mbn:/system/etc/firmware/mbn_ota/mcfg_sw_NoCDMA/mcfg_sw_YTL-Commercial.mbn \
         vendor/oneplus/oneplus3/proprietary/bin/sensors.qcom:/system/bin/sensors.qcom \
+        vendor/oneplus/oneplus3/proprietary/etc/sensors/hals.conf:/system/etc/sensors/hals.conf \
+        vendor/oneplus/oneplus3/proprietary/etc/sensors/sensor_def_qcomdev.conf:/system/etc/sensors/sensor_def_qcomdev.conf \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/hw/activity_recognition.msm8996.so:/system/vendor/lib/hw/activity_recognition.msm8996.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libsensor1.so:/system/vendor/lib/libsensor1.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libsensor_reg.so:/system/vendor/lib/libsensor_reg.so \
