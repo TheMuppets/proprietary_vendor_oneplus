@@ -466,6 +466,8 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/bin/pm-service:/system/bin/pm-service \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libperipheral_client.so:/system/vendor/lib/libperipheral_client.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libperipheral_client.so:/system/vendor/lib64/libperipheral_client.so \
+        vendor/oneplus/oneplus3/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:/system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
+        vendor/oneplus/oneplus3/proprietary/framework/com.qti.snapdragon.sdk.display.jar:/system/framework/com.qti.snapdragon.sdk.display.jar \
         vendor/oneplus/oneplus3/proprietary/vendor/bin/mm-pp-daemon:/system/vendor/bin/mm-pp-daemon \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libdisp-aba.so:/system/vendor/lib/libdisp-aba.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libmm-als.so:/system/vendor/lib/libmm-als.so \
@@ -527,9 +529,11 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/etc/data/dsi_config.xml:/system/etc/data/dsi_config.xml \
         vendor/oneplus/oneplus3/proprietary/etc/data/netmgr_config.xml:/system/etc/data/netmgr_config.xml \
         vendor/oneplus/oneplus3/proprietary/etc/data/qmi_config.xml:/system/etc/data/qmi_config.xml \
+        vendor/oneplus/oneplus3/proprietary/etc/permissions/embms.xml:/system/etc/permissions/embms.xml \
         vendor/oneplus/oneplus3/proprietary/etc/permissions/qcnvitems.xml:/system/etc/permissions/qcnvitems.xml \
         vendor/oneplus/oneplus3/proprietary/etc/permissions/qcrilhook.xml:/system/etc/permissions/qcrilhook.xml \
         vendor/oneplus/oneplus3/proprietary/etc/permissions/telephonyservice.xml:/system/etc/permissions/telephonyservice.xml \
+        vendor/oneplus/oneplus3/proprietary/framework/embmslibrary.jar:/system/framework/embmslibrary.jar \
         vendor/oneplus/oneplus3/proprietary/framework/qti-telephony-common.jar:/system/framework/qti-telephony-common.jar \
         vendor/oneplus/oneplus3/proprietary/framework/QtiTelephonyServicelibrary.jar:/system/framework/QtiTelephonyServicelibrary.jar \
         vendor/oneplus/oneplus3/proprietary/lib64/libparam.so:/system/lib64/libparam.so \
@@ -600,8 +604,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/sensors.oem.so:/system/vendor/lib64/sensors.oem.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/sensors.ssc.so:/system/vendor/lib64/sensors.ssc.so \
         vendor/oneplus/oneplus3/proprietary/vendor/bin/thermal-engine:/system/vendor/bin/thermal-engine \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libthermalclient.so:/system/vendor/lib/libthermalclient.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libthermalclient.so:/system/vendor/lib64/libthermalclient.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libthermalioctl.so:/system/vendor/lib64/libthermalioctl.so \
         vendor/oneplus/oneplus3/proprietary/bin/time_daemon:/system/bin/time_daemon \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libTimeService.so:/system/vendor/lib/libTimeService.so \
