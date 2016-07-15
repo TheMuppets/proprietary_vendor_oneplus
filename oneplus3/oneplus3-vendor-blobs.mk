@@ -386,7 +386,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/librs_adreno.so:/system/vendor/lib/librs_adreno.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/librs_adreno_sha1.so:/system/vendor/lib/librs_adreno_sha1.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib/libsd_sdk_display.so:/system/vendor/lib/libsd_sdk_display.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib/libsdm-disp-apis.so:/system/vendor/lib/libsdm-disp-apis.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:/system/vendor/lib64/egl/eglSubDriverAndroid.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/egl/libEGL_adreno.so:/system/vendor/lib64/egl/libEGL_adreno.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:/system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
@@ -414,7 +413,6 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libsd_sdk_display.so:/system/vendor/lib64/libsd_sdk_display.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libsdm-color.so:/system/vendor/lib64/libsdm-color.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libsdm-diag.so:/system/vendor/lib64/libsdm-diag.so \
-        vendor/oneplus/oneplus3/proprietary/vendor/lib64/libsdm-disp-apis.so:/system/vendor/lib64/libsdm-disp-apis.so \
         vendor/oneplus/oneplus3/proprietary/vendor/lib64/libsdmextension.so:/system/vendor/lib64/libsdmextension.so \
         vendor/oneplus/oneplus3/proprietary/etc/firmware/a530_gpmu.fw2:/system/etc/firmware/a530_gpmu.fw2 \
         vendor/oneplus/oneplus3/proprietary/etc/firmware/a530_pfp.fw:/system/etc/firmware/a530_pfp.fw \
