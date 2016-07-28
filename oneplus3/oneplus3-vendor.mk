@@ -247,7 +247,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     qdcm_calib_data_samsung_s6e3fa3_1080p_cmd_mode_dsi_panel \
-    qdcm_calib_data_samsung_s6e3fa3_1080p_video_mode_dsi_panel
+    qdcm_calib_data_samsung_s6e3fa3_1080p_video_mode_dsi_panel \
+    dashd
 
 ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
