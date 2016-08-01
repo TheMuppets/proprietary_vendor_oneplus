@@ -319,6 +319,7 @@ PRODUCT_COPY_FILES += \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/librs_adreno.so:/system/vendor/lib64/librs_adreno.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/librs_adreno_sha1.so:/system/vendor/lib64/librs_adreno_sha1.so \
         vendor/oneplus/oneplus2/proprietary/vendor/lib64/libscale.so:/system/vendor/lib64/libscale.so \
+        vendor/oneplus/oneplus2/proprietary/vendor/lib64/libuiblur.so:/system/vendor/lib64/libuiblur.so \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/a420_pfp.fw:/system/etc/firmware/a420_pfp.fw \
         vendor/oneplus/oneplus2/proprietary/etc/firmware/a420_pm4.fw:/system/etc/firmware/a420_pm4.fw \
         vendor/oneplus/oneplus2/proprietary/bin/ipacm-diag:/system/bin/ipacm-diag \
