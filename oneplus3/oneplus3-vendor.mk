@@ -69,7 +69,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so:system/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so \
     vendor/oneplus/oneplus3/proprietary/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so:system/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so \
     vendor/oneplus/oneplus3/proprietary/vendor/firmware/libpn548ad_fw.so:system/vendor/firmware/libpn548ad_fw.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libjni_livedisplay.so:system/vendor/lib64/libjni_livedisplay.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqfp-service.so:system/vendor/lib64/libqfp-service.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/qfp.wakeup.so:system/vendor/lib64/qfp.wakeup.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libactuator_rohm_bu63165gwl.so:system/vendor/lib/libactuator_rohm_bu63165gwl.so \
@@ -289,6 +288,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/oneplus/oneplus3/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/oneplus/oneplus3/proprietary/bin/loc_launcher:system/bin/loc_launcher \
+    vendor/oneplus/oneplus3/proprietary/bin/lowi-server:system/bin/lowi-server \
     vendor/oneplus/oneplus3/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
     vendor/oneplus/oneplus3/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/oneplus/oneplus3/proprietary/bin/pm-proxy:system/bin/pm-proxy \
@@ -301,6 +301,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/oneplus/oneplus3/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/oneplus/oneplus3/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
+    vendor/oneplus/oneplus3/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
+    vendor/oneplus/oneplus3/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/oneplus/oneplus3/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/oneplus/oneplus3/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/oneplus/oneplus3/proprietary/etc/cne/wqeclient/profile1.xml:system/etc/cne/wqeclient/profile1.xml \
@@ -390,6 +392,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libadsp_default_listener.so:system/vendor/lib64/libadsp_default_listener.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libadsprpc.so:system/vendor/lib64/libadsprpc.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libalarmservice_jni.so:system/vendor/lib64/libalarmservice_jni.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libasn1cper.so:system/vendor/lib64/libasn1cper.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libasn1crt.so:system/vendor/lib64/libasn1crt.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libasn1crtx.so:system/vendor/lib64/libasn1crtx.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libaudiodevarb.so:system/vendor/lib64/libaudiodevarb.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
@@ -418,6 +423,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libgdtap.so:system/vendor/lib64/libgdtap.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libGPreqcancel.so:system/vendor/lib64/libGPreqcancel.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libGPreqcancel_svc.so:system/vendor/lib64/libGPreqcancel_svc.so \
@@ -514,6 +520,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/sensors.oem.so:system/vendor/lib64/sensors.oem.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
@@ -654,6 +661,7 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     qcrilmsgtunnel \
     QtiTetherService \
+    xtra_t_app \
     colorservice \
     ims \
     imssettings \
