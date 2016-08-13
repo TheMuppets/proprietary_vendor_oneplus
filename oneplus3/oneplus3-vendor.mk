@@ -352,6 +352,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/oneplus/oneplus3/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
+    vendor/oneplus/oneplus3/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
     vendor/oneplus/oneplus3/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/oneplus/oneplus3/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/oneplus/oneplus3/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
