@@ -5,6 +5,7 @@
      Qualcomm Technologies Proprietary and Confidential.
 -->
 
+
 <!-- QMI configuration -->
 <list name="netmgr_config">
   <!-- Logging overrides for ds_exec() family of commands -->
