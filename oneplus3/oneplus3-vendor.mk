@@ -278,6 +278,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libSonyIMX298PdafLibrary.so:system/vendor/lib/libSonyIMX298PdafLibrary.so
 
 PRODUCT_PACKAGES += \
+    org.ifaa.android.manager \
     qdcm_calib_data_samsung_s6e3fa3_1080p_cmd_mode_dsi_panel \
     qdcm_calib_data_samsung_s6e3fa3_1080p_video_mode_dsi_panel \
     dashd

@@ -19,6 +19,15 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),oneplus3)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := org.ifaa.android.manager
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/framework/org.ifaa.android.manager.jar
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := qdcm_calib_data_samsung_s6e3fa3_1080p_cmd_mode_dsi_panel
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_samsung_s6e3fa3_1080p_cmd_mode_dsi_panel.xml
