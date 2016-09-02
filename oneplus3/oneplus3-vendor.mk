@@ -676,8 +676,6 @@ PRODUCT_PACKAGES += \
     QtiTetherService \
     xtra_t_app \
     colorservice \
-    ims \
-    imssettings \
     qcnvitems \
     qcrilhook
 endif
