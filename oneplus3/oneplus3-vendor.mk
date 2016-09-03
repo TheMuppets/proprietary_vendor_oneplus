@@ -299,7 +299,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/oneplus/oneplus3/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/oneplus/oneplus3/proprietary/bin/loc_launcher:system/bin/loc_launcher \
-    vendor/oneplus/oneplus3/proprietary/bin/lowi-server:system/bin/lowi-server \
     vendor/oneplus/oneplus3/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
     vendor/oneplus/oneplus3/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/oneplus/oneplus3/proprietary/bin/pm-proxy:system/bin/pm-proxy \
@@ -312,8 +311,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/oneplus/oneplus3/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/oneplus/oneplus3/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
-    vendor/oneplus/oneplus3/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
-    vendor/oneplus/oneplus3/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/oneplus/oneplus3/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/oneplus/oneplus3/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/oneplus/oneplus3/proprietary/etc/cne/wqeclient/profile1.xml:system/etc/cne/wqeclient/profile1.xml \
@@ -674,7 +671,6 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     qcrilmsgtunnel \
     QtiTetherService \
-    xtra_t_app \
     colorservice \
     qcnvitems \
     qcrilhook
