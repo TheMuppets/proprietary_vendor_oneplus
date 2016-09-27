@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
      Netmgr Module configuration XML file
-     Copyright (c) 2013, 2015 Qualcomm Technologies, Inc.  All Rights Reserved.
+     Copyright (c) 2013, 2016 Qualcomm Technologies, Inc.  All Rights Reserved.
      Qualcomm Technologies Proprietary and Confidential.
 -->
 
@@ -588,6 +588,8 @@
       <data name="single_qmux_ch_enabled" type="int"> 1 </data>
       <data name="single_qmux_ch_conn_id_str" type="string"> rmnet0 </data>
       <data name="single_qmux_ch_name" type="string"> DATA5_CNTL </data>
+      <data name="tc_ul_baserate" type="int"> 65000000 </data>
+      <data name="tc_ul_burst" type="int"> 24000 </data>
 
       <data name="rmnet_data_enabled" type="int"> 1 </data>
       <data name="dataformat_agg_dl_pkt" type="int"> 1 </data>
@@ -983,6 +985,7 @@
       <data name="single_qmux_ch_name" type="string"> DATA5_CNTL </data>
       <data name="tc_ul_baserate" type="int"> 155000000 </data>
       <data name="dynamic_tc_ul_baserate" type="int"> 1 </data>
+      <data name="tc_ul_burst" type="int"> 25000 </data>
       <data name="rmnet_data_enabled" type="int"> 1 </data>
       <data name="dataformat_agg_dl_pkt" type="int"> 10 </data>
       <data name="dataformat_agg_dl_size" type="int"> 8192 </data>
@@ -1233,7 +1236,9 @@
     <data name="pnd_rps_mask" type="int"> 0 </data>
     <data name="vnd_rps_mask" type="int"> 0 </data>
     <data name="netdev_budget" type="int"> 0 </data>
-    <data name="low_latency_filters" type="int"> 0 </data>
+    <data name="low_latency_filters" type="int"> 1 </data>
+    <data name="ibfc" type="int"> 1 </data>
+    <data name="qos_disabled" type="int"> 1 </data>
 
     <data name="num_modems" type="int"> 2 </data>
     <list name="modems_enabled">

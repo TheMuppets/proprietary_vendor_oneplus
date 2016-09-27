@@ -81,22 +81,19 @@ special_mode_mask values:
     <ChromatixName>
       <ISPCommon>imx179_common</ISPCommon>
       <PostProc>imx179_postproc</PostProc>
-      <CPPPreview>imx179_cpp_3280x2464_30fps_preview</CPPPreview>
-      <CPPSnapshot>imx179_cpp_3280x2464_30fps_snapshot</CPPSnapshot>
-      <CPPLiveshot>imx179_cpp_3280x2464_30fps_video</CPPLiveshot>
-    </ChromatixName>
+      </ChromatixName>
     <ChromatixName special_mode_mask="SCENE_SPORTS">
       <CPPSnapshot>imx179_cpp_3280x2464_30fps_nomultiframe</CPPSnapshot>
-    </ChromatixName>
+      </ChromatixName>
     <ChromatixName special_mode_mask="SCENE_PORTRAIT">
       <ISPPreview>imx179_isp_3280x2464_30fps_facebeauty</ISPPreview>
       <ISPSnapshot>imx179_isp_3280x2464_30fps_facebeauty</ISPSnapshot>
       <CPPPreview>imx179_cpp_3280x2464_30fps_facebeauty</CPPPreview>
       <CPPSnapshot>imx179_cpp_3280x2464_30fps_facebeauty</CPPSnapshot>
       <A3Preview>imx179_3a_3280x2464_30fps_facebeauty</A3Preview>
-    </ChromatixName>
-  </CommonChromatixInfo>
-  <ResolutionChromatixInfo>
+      </ChromatixName>
+    </CommonChromatixInfo>
+      <ResolutionChromatixInfo>
     <ChromatixName sensor_resolution_index="0">
       <ISPPreview>imx179_isp_3280x2464_30fps_snapshot</ISPPreview>
       <ISPSnapshot>imx179_isp_3280x2464_30fps_snapshot</ISPSnapshot>
@@ -104,7 +101,7 @@ special_mode_mask values:
       <CPPPreview>imx179_cpp_3280x2464_30fps_preview</CPPPreview>
       <CPPSnapshot>imx179_cpp_3280x2464_30fps_snapshot</CPPSnapshot>
       <CPPVideo>imx179_cpp_3280x2464_30fps_video</CPPVideo>
-      <CPPLiveshot>imx179_cpp_3280x2464_30fps_liveshot</CPPLiveshot>
+      <CPPLiveshot>imx179_cpp_3280x2464_30fps_video</CPPLiveshot>
       <A3Preview>imx179_3a_3280x2464_30fps_preview</A3Preview>
       <A3Video>imx179_3a_3280x2464_30fps_video</A3Video>
     </ChromatixName>
@@ -115,7 +112,7 @@ special_mode_mask values:
       <CPPPreview>imx179_cpp_3280x1846_30fps_preview</CPPPreview>
       <CPPSnapshot>imx179_cpp_3280x1846_30fps_snapshot</CPPSnapshot>
       <CPPVideo>imx179_cpp_3280x1846_30fps_video</CPPVideo>
-      <CPPLiveshot>imx179_cpp_3280x1846_30fps_liveshot</CPPLiveshot>
+      <CPPLiveshot>imx179_cpp_3280x1846_30fps_video</CPPLiveshot>
       <A3Preview>imx179_3a_3280x1846_30fps_preview</A3Preview>
       <A3Video>imx179_3a_3280x1846_30fps_video</A3Video>
     </ChromatixName>
@@ -126,7 +123,7 @@ special_mode_mask values:
       <CPPPreview>imx179_cpp_1640x924_30fps_preview</CPPPreview>
       <CPPSnapshot>imx179_cpp_1640x924_30fps_snapshot</CPPSnapshot>
       <CPPVideo>imx179_cpp_1640x924_30fps_video</CPPVideo>
-      <CPPLiveshot>imx179_cpp_1640x924_30fps_liveshot</CPPLiveshot>
+      <CPPLiveshot>imx179_cpp_1640x924_30fps_video</CPPLiveshot>
       <A3Preview>imx179_3a_1640x924_30fps_preview</A3Preview>
       <A3Video>imx179_3a_1640x924_30fps_video</A3Video>
     </ChromatixName>
