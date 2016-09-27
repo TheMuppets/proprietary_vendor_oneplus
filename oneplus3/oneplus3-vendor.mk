@@ -75,10 +75,46 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmorpho_image_stab4.so:system/lib/libmorpho_image_stab4.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmorpho_video_refiner.so:system/lib/libmorpho_video_refiner.so \
+    vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_md.so:system/lib/lib_oneplus_md.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcamera_crypt.so:system/lib/libopcamera_crypt.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcameralib.so:system/lib/libopcameralib.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcamera_native_modules.so:system/lib/libopcamera_native_modules.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcamera.so:system/lib/libopcamera.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_calib3d.so:system/lib/libopencv_calib3d.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_core.so:system/lib/libopencv_core.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_face.so:system/lib/libopencv_face.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_features2d.so:system/lib/libopencv_features2d.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_flann.so:system/lib/libopencv_flann.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_fuzzy.so:system/lib/libopencv_fuzzy.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_hal.so:system/lib/libopencv_hal.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_highgui.so:system/lib/libopencv_highgui.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_imgcodecs.so:system/lib/libopencv_imgcodecs.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_imgproc.so:system/lib/libopencv_imgproc.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_libjasper.so:system/lib/libopencv_libjasper.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_libjpeg.so:system/lib/libopencv_libjpeg.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_libopenexr.so:system/lib/libopencv_libopenexr.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_libpng.so:system/lib/libopencv_libpng.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_libtiff.so:system/lib/libopencv_libtiff.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_ml.so:system/lib/libopencv_ml.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_objdetect.so:system/lib/libopencv_objdetect.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_optflow.so:system/lib/libopencv_optflow.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_photo.so:system/lib/libopencv_photo.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_shape.so:system/lib/libopencv_shape.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_stitching.so:system/lib/libopencv_stitching.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_structure_light.so:system/lib/libopencv_structure_light.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_superpixel.so:system/lib/libopencv_superpixel.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_superres.so:system/lib/libopencv_superres.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_surface_matching.so:system/lib/libopencv_surface_matching.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_ts.so:system/lib/libopencv_ts.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_videoio.so:system/lib/libopencv_videoio.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_video.so:system/lib/libopencv_video.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_videostab.so:system/lib/libopencv_videostab.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_world.so:system/lib/libopencv_world.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_xfeatures2d.so:system/lib/libopencv_xfeatures2d.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_ximgproc.so:system/lib/libopencv_ximgproc.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_xobjdetect.so:system/lib/libopencv_xobjdetect.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_xphoto.so:system/lib/libopencv_xphoto.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_zlib.so:system/lib/libopencv_zlib.so \
     vendor/oneplus/oneplus3/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/oneplus/oneplus3/proprietary/lib/libteeclientjni.so:system/lib/libteeclientjni.so \
     vendor/oneplus/oneplus3/proprietary/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so:system/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so \
