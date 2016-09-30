@@ -1,5 +1,5 @@
 <!--
-  Copyright (c) 2015 Qualcomm Technologies, Inc.
+  Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
   All Rights Reserved.
   Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -36,7 +36,7 @@ ChromatixName :
 	If there is no tuning xml file remove the <ChromatixName> node.
 Position :
 	Position of the sensor module. Valid values are:
-	BACK, FRONT and BACK_AUX
+	BACK, FRONT, BACK_AUX and FRONT_AUX
 MountAngle :
 	Angle at which the sensor is mounted. Valid values are 0, 90, 180, 270 and 360.
 	To use default mountangle mentioned in kernel use 360.
@@ -81,9 +81,7 @@ LensInfo : Information of the lens present in the module.
 
 *VARIABLES MARKED WITH ASTRICK (*) ARE MANDATORY.
 
--->
 
-<CameraConfigurationRoot>
   <CameraModuleConfig>
     <CameraId>0</CameraId>
     <SensorName>imx298</SensorName>
@@ -111,6 +109,61 @@ LensInfo : Information of the lens present in the module.
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
+
+-->
+
+<CameraConfigurationRoot>
+  <CameraModuleConfig>
+    <CameraId>0</CameraId>
+    <SensorName>imx298</SensorName>
+    <FlashName>pmic</FlashName>
+    <EepromName>sony_imx298</EepromName>
+    <ActuatorName>rohm_bu63165gwl</ActuatorName>
+    <OisName>rohm_bu63165gwl</OisName>
+    <ChromatixName>imx298_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK</Position>
+    <MountAngle>360</MountAngle>
+    <CSIInfo>
+      <CSIDCore>0</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>4.26</FocalLength>
+      <FNumber>2.0</FNumber>
+      <TotalFocusDistance>1.9</TotalFocusDistance>
+      <HorizontalViewAngle>60.0</HorizontalViewAngle>
+      <VerticalViewAngle>45.0</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+
+  <CameraModuleConfig>
+    <CameraId>1</CameraId>
+    <SensorName>s5k3p8sp</SensorName>
+    <EepromName>s5k3p8sp_m24c64s</EepromName>
+    <ChromatixName>s5k3p8sp_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>FRONT</Position>
+    <MountAngle>270</MountAngle>
+    <CSIInfo>
+      <CSIDCore>0</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>3.4</FocalLength>
+      <FNumber>1.85</FNumber>
+      <TotalFocusDistance>1.2</TotalFocusDistance>
+      <HorizontalViewAngle>64.7</HorizontalViewAngle>
+      <VerticalViewAngle>48.5</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+
   <CameraModuleConfig>
     <CameraId>1</CameraId>
     <SensorName>imx179</SensorName>
@@ -125,7 +178,7 @@ LensInfo : Information of the lens present in the module.
       <LaneAssign>0x4320</LaneAssign>
       <ComboMode>0</ComboMode>
     </CSIInfo>
-    <LensInfo> <!-- Lens info to be obtained from the vendor -->
+    <LensInfo>
       <FocalLength>3.51</FocalLength>
       <FNumber>2.0</FNumber>
       <TotalFocusDistance>1.98</TotalFocusDistance>
@@ -133,16 +186,16 @@ LensInfo : Information of the lens present in the module.
       <VerticalViewAngle>51.5</VerticalViewAngle>
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
-  </CameraModuleConfig>
-  <CameraModuleConfig>
+  </CameraModuleConfig>  
+
+ <CameraModuleConfig>
     <CameraId>1</CameraId>
-    <SensorName>s5k3l8</SensorName>
-    <ActuatorName>ak7345</ActuatorName>
-    <EepromName>rohm_brce064gwz</EepromName>
-    <ChromatixName>s5k3l8_chromatix</ChromatixName>
+    <SensorName>s5k3p8</SensorName>
+    <EepromName>s5k3p8sp_m24c64s</EepromName>
+    <ChromatixName>s5k3p8_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
-    <Position>0</Position>
-    <MountAngle>360</MountAngle>
+    <Position>FRONT</Position>
+    <MountAngle>270</MountAngle>
     <CSIInfo>
       <CSIDCore>0</CSIDCore>
       <LaneMask>0x1F</LaneMask>
@@ -150,23 +203,24 @@ LensInfo : Information of the lens present in the module.
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>3.263</FocalLength>
-      <FNumber>2.2</FNumber>
-      <TotalFocusDistance>2.0</TotalFocusDistance>
-      <HorizontalViewAngle>54.8</HorizontalViewAngle>
-      <VerticalViewAngle>42.5</VerticalViewAngle>
+      <FocalLength>3.4</FocalLength>
+      <FNumber>1.85</FNumber>
+      <TotalFocusDistance>1.2</TotalFocusDistance>
+      <HorizontalViewAngle>64.7</HorizontalViewAngle>
+      <VerticalViewAngle>48.5</VerticalViewAngle>
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
+  </CameraModuleConfig>
+
+<!--
   </CameraModuleConfig>
   <CameraModuleConfig>
     <CameraId>0</CameraId>
-    <SensorName>s5k3l8_mono</SensorName>
-    <ActuatorName>ak7345</ActuatorName>
-    <EepromName>rohm_brce064gwz</EepromName>
-    <ChromatixName>s5k3l8_mono_chromatix</ChromatixName>
+    <SensorName>s5k3p3sm</SensorName>
+    <ChromatixName>s5k3p3sm_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
-    <Position>2</Position>
-    <MountAngle>360</MountAngle>
+    <Position>BACK</Position>
+    <MountAngle>90</MountAngle>
     <CSIInfo>
       <CSIDCore>0</CSIDCore>
       <LaneMask>0x1F</LaneMask>
@@ -174,12 +228,13 @@ LensInfo : Information of the lens present in the module.
       <ComboMode>0</ComboMode>
     </CSIInfo>
     <LensInfo>
-      <FocalLength>3.263</FocalLength>
+      <FocalLength>4.73</FocalLength>
       <FNumber>2.2</FNumber>
-      <TotalFocusDistance>2.0</TotalFocusDistance>
-      <HorizontalViewAngle>54.8</HorizontalViewAngle>
-      <VerticalViewAngle>42.5</VerticalViewAngle>
+      <TotalFocusDistance>1.9</TotalFocusDistance>
+      <HorizontalViewAngle>64.1</HorizontalViewAngle>
+      <VerticalViewAngle>51.6</VerticalViewAngle>
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
+-->
 </CameraConfigurationRoot>
