@@ -179,6 +179,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_4K_preview_s.so:system/vendor/lib/libchromatix_imx298_4K_preview_s.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_4K_video.so:system/vendor/lib/libchromatix_imx298_4K_video.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_4K_video_s.so:system/vendor/lib/libchromatix_imx298_4K_video_s.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_common_60fps.so:system/vendor/lib/libchromatix_imx298_common_60fps.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_common_manual.so:system/vendor/lib/libchromatix_imx298_common_manual.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_common.so:system/vendor/lib/libchromatix_imx298_common.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_hfr_120.so:system/vendor/lib/libchromatix_imx298_cpp_hfr_120.so \

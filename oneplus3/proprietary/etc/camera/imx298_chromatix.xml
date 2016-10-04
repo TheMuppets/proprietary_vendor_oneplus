@@ -146,6 +146,7 @@ special_mode_mask values:
       <A3Video>imx298_hfr_60_3a</A3Video>
     </ChromatixName>
     <ChromatixName sensor_resolution_index="3">
+      <ISPCommon>imx298_common_60fps</ISPCommon>
       <ISPPreview>imx298_hfr_90</ISPPreview>
       <ISPSnapshot>imx298_hfr_90</ISPSnapshot>
       <ISPVideo>imx298_hfr_90</ISPVideo>
