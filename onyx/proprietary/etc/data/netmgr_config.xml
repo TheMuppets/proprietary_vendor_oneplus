@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--
      Netmgr Module configuration XML file
      Copyright (c) 2013, 2015 Qualcomm Technologies, Inc.  All Rights Reserved.
      Qualcomm Technologies Proprietary and Confidential.
 -->
 
+
 <!-- QMI configuration -->
 <list name="netmgr_config">
+  <!-- Logging overrides for ds_exec() family of commands -->
+  <!-- Remove the 'disabled_' from the properties to enable them -->
+  <listitem name = "cmd_logging_config">
+    <data name="disabled_log_options" type="int"> 255 </data>
+    <data name="disabled_cmd_debug" type="int"> 1 </data>
+    <data name="disabled_outfile" type="string"> /data/netmgr_cmd_log.txt </data>
+  </listitem>
 
    <!-- Legacy MSM targets -->
    <listitem name = "msm">
