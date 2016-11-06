@@ -31,7 +31,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/oneplus/oneplus2/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/oneplus/oneplus2/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
-    vendor/oneplus/oneplus2/proprietary/bin/mm-qcamera-daemon-op:system/bin/mm-qcamera-daemon-op \
+    vendor/oneplus/oneplus2/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/oneplus/oneplus2/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
     vendor/oneplus/oneplus2/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/oneplus/oneplus2/proprietary/bin/pm-proxy:system/bin/pm-proxy \
