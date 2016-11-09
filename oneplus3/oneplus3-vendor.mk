@@ -28,6 +28,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/etc/camera/imx179_chromatix.xml:system/etc/camera/imx179_chromatix.xml \
     vendor/oneplus/oneplus3/proprietary/etc/camera/imx298_chromatix.xml:system/etc/camera/imx298_chromatix.xml \
     vendor/oneplus/oneplus3/proprietary/etc/camera/msm8996_camera.xml:system/etc/camera/msm8996_camera.xml \
+    vendor/oneplus/oneplus3/proprietary/etc/camera/s5k3p8_chromatix.xml:system/etc/camera/s5k3p8_chromatix.xml \
+    vendor/oneplus/oneplus3/proprietary/etc/camera/s5k3p8sp_chromatix.xml:system/etc/camera/s5k3p8sp_chromatix.xml \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/alipay.b00:system/etc/firmware/alipay.b00 \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/alipay.b01:system/etc/firmware/alipay.b01 \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/alipay.b02:system/etc/firmware/alipay.b02 \
@@ -59,6 +61,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/tfa98xx.cnt:system/etc/firmware/tfa98xx.cnt \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/tp/fw_synaptics_15801b.img:system/etc/firmware/tp/fw_synaptics_15801b.img \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/tp/fw_synaptics_15801.img:system/etc/firmware/tp/fw_synaptics_15801.img \
+    vendor/oneplus/oneplus3/proprietary/etc/firmware/tp/fw_synaptics_15811.img:system/etc/firmware/tp/fw_synaptics_15811.img \
     vendor/oneplus/oneplus3/proprietary/etc/firmware/tp/fw_synaptics_touchkey.img:system/etc/firmware/tp/fw_synaptics_touchkey.img \
     vendor/oneplus/oneplus3/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
     vendor/oneplus/oneplus3/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
@@ -72,9 +75,47 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmorpho_image_stab4.so:system/lib/libmorpho_image_stab4.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmorpho_video_refiner.so:system/lib/libmorpho_video_refiner.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libopcamerahw_interface.so:system/lib/libopcamerahw_interface.so \
+    vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_md.so:system/lib/lib_oneplus_md.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopcamera_crypt.so:system/lib/libopcamera_crypt.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcameralib.so:system/lib/libopcameralib.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopcamera_native_modules.so:system/lib/libopcamera_native_modules.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcamera.so:system/lib/libopcamera.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_calib3d.so:system/lib/libopencv_calib3d.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_carotene.so:system/lib/libopencv_carotene.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_core.so:system/lib/libopencv_core.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_face.so:system/lib/libopencv_face.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_features2d.so:system/lib/libopencv_features2d.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_flann.so:system/lib/libopencv_flann.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_fuzzy.so:system/lib/libopencv_fuzzy.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_highgui.so:system/lib/libopencv_highgui.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_imgcodecs.so:system/lib/libopencv_imgcodecs.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_imgproc.so:system/lib/libopencv_imgproc.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_libjasper.so:system/lib/libopencv_libjasper.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_libjpeg.so:system/lib/libopencv_libjpeg.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_libopenexr.so:system/lib/libopencv_libopenexr.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_libpng.so:system/lib/libopencv_libpng.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_libtiff.so:system/lib/libopencv_libtiff.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_ml.so:system/lib/libopencv_ml.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_objdetect.so:system/lib/libopencv_objdetect.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_openxv.so:system/lib/libopencv_openxv.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_optflow.so:system/lib/libopencv_optflow.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_photo.so:system/lib/libopencv_photo.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_shape.so:system/lib/libopencv_shape.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_stitching.so:system/lib/libopencv_stitching.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_structure_light.so:system/lib/libopencv_structure_light.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_superpixel.so:system/lib/libopencv_superpixel.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_superres.so:system/lib/libopencv_superres.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_surface_matching.so:system/lib/libopencv_surface_matching.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_ts.so:system/lib/libopencv_ts.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_videoio.so:system/lib/libopencv_videoio.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_video.so:system/lib/libopencv_video.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_videostab.so:system/lib/libopencv_videostab.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_world.so:system/lib/libopencv_world.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_xfeatures2d.so:system/lib/libopencv_xfeatures2d.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_ximgproc.so:system/lib/libopencv_ximgproc.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_xobjdetect.so:system/lib/libopencv_xobjdetect.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_xphoto.so:system/lib/libopencv_xphoto.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libopencv_zlib.so:system/lib/libopencv_zlib.so \
     vendor/oneplus/oneplus3/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/oneplus/oneplus3/proprietary/lib/libteeclientjni.so:system/lib/libteeclientjni.so \
     vendor/oneplus/oneplus3/proprietary/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so:system/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so \
@@ -99,16 +140,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_3a_3280x2464_30fps_video.so:system/vendor/lib/libchromatix_imx179_3a_3280x2464_30fps_video.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_3a_3280x2464_30fps_video_x3.so:system/vendor/lib/libchromatix_imx179_3a_3280x2464_30fps_video_x3.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_common.so:system/vendor/lib/libchromatix_imx179_common.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_cpp_1640x924_30fps_liveshot.so:system/vendor/lib/libchromatix_imx179_cpp_1640x924_30fps_liveshot.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_cpp_1640x924_30fps_preview.so:system/vendor/lib/libchromatix_imx179_cpp_1640x924_30fps_preview.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_cpp_1640x924_30fps_snapshot.so:system/vendor/lib/libchromatix_imx179_cpp_1640x924_30fps_snapshot.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_cpp_1640x924_30fps_video.so:system/vendor/lib/libchromatix_imx179_cpp_1640x924_30fps_video.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_cpp_3280x1846_30fps_liveshot.so:system/vendor/lib/libchromatix_imx179_cpp_3280x1846_30fps_liveshot.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_cpp_3280x1846_30fps_preview.so:system/vendor/lib/libchromatix_imx179_cpp_3280x1846_30fps_preview.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_cpp_3280x1846_30fps_snapshot.so:system/vendor/lib/libchromatix_imx179_cpp_3280x1846_30fps_snapshot.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_cpp_3280x1846_30fps_video.so:system/vendor/lib/libchromatix_imx179_cpp_3280x1846_30fps_video.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_cpp_3280x2464_30fps_facebeauty.so:system/vendor/lib/libchromatix_imx179_cpp_3280x2464_30fps_facebeauty.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_cpp_3280x2464_30fps_liveshot.so:system/vendor/lib/libchromatix_imx179_cpp_3280x2464_30fps_liveshot.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_cpp_3280x2464_30fps_nomultiframe.so:system/vendor/lib/libchromatix_imx179_cpp_3280x2464_30fps_nomultiframe.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_cpp_3280x2464_30fps_preview.so:system/vendor/lib/libchromatix_imx179_cpp_3280x2464_30fps_preview.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_cpp_3280x2464_30fps_snapshot.so:system/vendor/lib/libchromatix_imx179_cpp_3280x2464_30fps_snapshot.so \
@@ -135,15 +173,19 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_isp_3280x2464_30fps_video_x3.so:system/vendor/lib/libchromatix_imx179_isp_3280x2464_30fps_video_x3.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx179_postproc.so:system/vendor/lib/libchromatix_imx179_postproc.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_3a_clearshot.so:system/vendor/lib/libchromatix_imx298_3a_clearshot.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_3a_clearshot_s.so:system/vendor/lib/libchromatix_imx298_3a_clearshot_s.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_3a_panorama.so:system/vendor/lib/libchromatix_imx298_3a_panorama.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_3a_panorama_s.so:system/vendor/lib/libchromatix_imx298_3a_panorama_s.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_4K_preview.so:system/vendor/lib/libchromatix_imx298_4K_preview.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_4K_preview_s.so:system/vendor/lib/libchromatix_imx298_4K_preview_s.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_4K_video.so:system/vendor/lib/libchromatix_imx298_4K_video.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_4K_video_s.so:system/vendor/lib/libchromatix_imx298_4K_video_s.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_common_60fps.so:system/vendor/lib/libchromatix_imx298_common_60fps.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_common_manual.so:system/vendor/lib/libchromatix_imx298_common_manual.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_common.so:system/vendor/lib/libchromatix_imx298_common.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_hfr_120.so:system/vendor/lib/libchromatix_imx298_cpp_hfr_120.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_hfr_60.so:system/vendor/lib/libchromatix_imx298_cpp_hfr_60.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_hfr_90.so:system/vendor/lib/libchromatix_imx298_cpp_hfr_90.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_liveshot.so:system/vendor/lib/libchromatix_imx298_cpp_liveshot.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_panorama_preview.so:system/vendor/lib/libchromatix_imx298_cpp_panorama_preview.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_panorama_snapshot.so:system/vendor/lib/libchromatix_imx298_cpp_panorama_snapshot.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_preview.so:system/vendor/lib/libchromatix_imx298_cpp_preview.so \
@@ -153,33 +195,78 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_snapshot_manual.so:system/vendor/lib/libchromatix_imx298_cpp_snapshot_manual.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_snapshot_nomultiframe.so:system/vendor/lib/libchromatix_imx298_cpp_snapshot_nomultiframe.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_snapshot.so:system/vendor/lib/libchromatix_imx298_cpp_snapshot.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_video_hdr.so:system/vendor/lib/libchromatix_imx298_cpp_video_hdr.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_video_4k.so:system/vendor/lib/libchromatix_imx298_cpp_video_4k.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_video_preview.so:system/vendor/lib/libchromatix_imx298_cpp_video_preview.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_video.so:system/vendor/lib/libchromatix_imx298_cpp_video.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_default_preview.so:system/vendor/lib/libchromatix_imx298_default_preview.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_default_preview_s.so:system/vendor/lib/libchromatix_imx298_default_preview_s.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_default_video.so:system/vendor/lib/libchromatix_imx298_default_video.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_hdr_snapshot_3a.so:system/vendor/lib/libchromatix_imx298_hdr_snapshot_3a.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_hdr_video_3a.so:system/vendor/lib/libchromatix_imx298_hdr_video_3a.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_default_video_s.so:system/vendor/lib/libchromatix_imx298_default_video_s.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_hfr_120_3a.so:system/vendor/lib/libchromatix_imx298_hfr_120_3a.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_hfr_120_3a_s.so:system/vendor/lib/libchromatix_imx298_hfr_120_3a_s.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_hfr_120.so:system/vendor/lib/libchromatix_imx298_hfr_120.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_hfr_60_3a.so:system/vendor/lib/libchromatix_imx298_hfr_60_3a.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_hfr_60_3a_s.so:system/vendor/lib/libchromatix_imx298_hfr_60_3a_s.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_hfr_60.so:system/vendor/lib/libchromatix_imx298_hfr_60.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_hfr_90_3a.so:system/vendor/lib/libchromatix_imx298_hfr_90_3a.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_hfr_90_3a_s.so:system/vendor/lib/libchromatix_imx298_hfr_90_3a_s.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_hfr_90.so:system/vendor/lib/libchromatix_imx298_hfr_90.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_isp_panorama.so:system/vendor/lib/libchromatix_imx298_isp_panorama.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_liveshot.so:system/vendor/lib/libchromatix_imx298_liveshot.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_postproc.so:system/vendor/lib/libchromatix_imx298_postproc.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_preview.so:system/vendor/lib/libchromatix_imx298_preview.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_snapshot_hdr.so:system/vendor/lib/libchromatix_imx298_snapshot_hdr.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_snapshot.so:system/vendor/lib/libchromatix_imx298_snapshot.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_video_hdr.so:system/vendor/lib/libchromatix_imx298_video_hdr.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_video.so:system/vendor/lib/libchromatix_imx298_video.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_zsl_preview.so:system/vendor/lib/libchromatix_imx298_zsl_preview.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_zsl_preview_s.so:system/vendor/lib/libchromatix_imx298_zsl_preview_s.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_zsl_video.so:system/vendor/lib/libchromatix_imx298_zsl_video.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_zsl_video_s.so:system/vendor/lib/libchromatix_imx298_zsl_video_s.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_common.so:system/vendor/lib/libchromatix_s5k3p8_common.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k3p8_cpp_hfr_120.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k3p8_cpp_hfr_60.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_cpp_hfr_90.so:system/vendor/lib/libchromatix_s5k3p8_cpp_hfr_90.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k3p8_cpp_liveshot.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_cpp_preview.so:system/vendor/lib/libchromatix_s5k3p8_cpp_preview.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k3p8_cpp_snapshot.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_cpp_video.so:system/vendor/lib/libchromatix_s5k3p8_cpp_video.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_default_preview_bu64297.so:system/vendor/lib/libchromatix_s5k3p8_default_preview_bu64297.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_default_video_bu64297.so:system/vendor/lib/libchromatix_s5k3p8_default_video_bu64297.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_default_video.so:system/vendor/lib/libchromatix_s5k3p8_default_video.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_hfr_120_bu64297.so:system/vendor/lib/libchromatix_s5k3p8_hfr_120_bu64297.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_hfr_120.so:system/vendor/lib/libchromatix_s5k3p8_hfr_120.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_hfr_60_bu64297.so:system/vendor/lib/libchromatix_s5k3p8_hfr_60_bu64297.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_hfr_60.so:system/vendor/lib/libchromatix_s5k3p8_hfr_60.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_hfr_90_bu64297.so:system/vendor/lib/libchromatix_s5k3p8_hfr_90_bu64297.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_hfr_90.so:system/vendor/lib/libchromatix_s5k3p8_hfr_90.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_postproc.so:system/vendor/lib/libchromatix_s5k3p8_postproc.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_preview.so:system/vendor/lib/libchromatix_s5k3p8_preview.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_snapshot.so:system/vendor/lib/libchromatix_s5k3p8_snapshot.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_3a_2304x1728_30fps_preview.so:system/vendor/lib/libchromatix_s5k3p8sp_3a_2304x1728_30fps_preview.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_3a_2304x1728_30fps_video.so:system/vendor/lib/libchromatix_s5k3p8sp_3a_2304x1728_30fps_video.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_3a_4608x3456_30fps_preview.so:system/vendor/lib/libchromatix_s5k3p8sp_3a_4608x3456_30fps_preview.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_3a_4608x3456_30fps_video.so:system/vendor/lib/libchromatix_s5k3p8sp_3a_4608x3456_30fps_video.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_common_2304x1728.so:system/vendor/lib/libchromatix_s5k3p8sp_common_2304x1728.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_common_4608x3456.so:system/vendor/lib/libchromatix_s5k3p8sp_common_4608x3456.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_cpp_2304x1728_30fps_liveshot.so:system/vendor/lib/libchromatix_s5k3p8sp_cpp_2304x1728_30fps_liveshot.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_cpp_2304x1728_30fps_preview.so:system/vendor/lib/libchromatix_s5k3p8sp_cpp_2304x1728_30fps_preview.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_cpp_2304x1728_30fps_snapshot.so:system/vendor/lib/libchromatix_s5k3p8sp_cpp_2304x1728_30fps_snapshot.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_cpp_2304x1728_30fps_video.so:system/vendor/lib/libchromatix_s5k3p8sp_cpp_2304x1728_30fps_video.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_cpp_4608x3456_30fps_liveshot.so:system/vendor/lib/libchromatix_s5k3p8sp_cpp_4608x3456_30fps_liveshot.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_cpp_4608x3456_30fps_preview.so:system/vendor/lib/libchromatix_s5k3p8sp_cpp_4608x3456_30fps_preview.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_cpp_4608x3456_30fps_snapshot.so:system/vendor/lib/libchromatix_s5k3p8sp_cpp_4608x3456_30fps_snapshot.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_cpp_4608x3456_30fps_video.so:system/vendor/lib/libchromatix_s5k3p8sp_cpp_4608x3456_30fps_video.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_isp_2304x1728_30fps_preview.so:system/vendor/lib/libchromatix_s5k3p8sp_isp_2304x1728_30fps_preview.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_isp_2304x1728_30fps_snapshot.so:system/vendor/lib/libchromatix_s5k3p8sp_isp_2304x1728_30fps_snapshot.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_isp_2304x1728_30fps_video.so:system/vendor/lib/libchromatix_s5k3p8sp_isp_2304x1728_30fps_video.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_isp_4608x3456_30fps_preview.so:system/vendor/lib/libchromatix_s5k3p8sp_isp_4608x3456_30fps_preview.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_isp_4608x3456_30fps_snapshot.so:system/vendor/lib/libchromatix_s5k3p8sp_isp_4608x3456_30fps_snapshot.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_isp_4608x3456_30fps_video.so:system/vendor/lib/libchromatix_s5k3p8sp_isp_4608x3456_30fps_video.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8sp_postproc.so:system/vendor/lib/libchromatix_s5k3p8sp_postproc.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_zsl_preview_bu64297.so:system/vendor/lib/libchromatix_s5k3p8_zsl_preview_bu64297.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_s5k3p8_zsl_video_bu64297.so:system/vendor/lib/libchromatix_s5k3p8_zsl_video_bu64297.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libllvd_smore.so:system/vendor/lib/libllvd_smore.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
@@ -188,20 +275,21 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera2_mct.so:system/vendor/lib/libmmcamera2_mct.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera2_memleak.so:system/vendor/lib/libmmcamera2_memleak.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera2_pp_buf_mgr.so:system/vendor/lib/libmmcamera2_pp_buf_mgr.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera2_q3a_core.so:system/vendor/lib/libmmcamera2_q3a_core.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:system/vendor/lib/libmmcamera_chromaflash_lib.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_dbg.so:system/vendor/lib/libmmcamera_dbg.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_dummyalgo.so:system/vendor/lib/libmmcamera_dummyalgo.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_eebinparse.so:system/vendor/lib/libmmcamera_eebinparse.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_eeprom_util.so:system/vendor/lib/libmmcamera_eeprom_util.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_eztune_module.so:system/vendor/lib/libmmcamera_eztune_module.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_facedetection_lib.so:system/vendor/lib/libmmcamera_facedetection_lib.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_faceproc2.so:system/vendor/lib/libmmcamera_faceproc2.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_hvx_add_constant.so:system/vendor/lib/libmmcamera_hvx_add_constant.so \
@@ -252,20 +340,23 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_isp_sce40.so:system/vendor/lib/libmmcamera_isp_sce40.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_isp_snr47.so:system/vendor/lib/libmmcamera_isp_snr47.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:system/vendor/lib/libmmcamera_isp_sub_module.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_llvd.so:system/vendor/lib/libmmcamera_llvd.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:system/vendor/lib/libmmcamera_optizoom_lib.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_paaf_lib.so:system/vendor/lib/libmmcamera_paaf_lib.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_ppeiscore.so:system/vendor/lib/libmmcamera_ppeiscore.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_quadracfa.so:system/vendor/lib/libmmcamera_quadracfa.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_s5k3p8.so:system/vendor/lib/libmmcamera_s5k3p8.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_s5k3p8sp_m24c64s_eeprom.so:system/vendor/lib/libmmcamera_s5k3p8sp_m24c64s_eeprom.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_s5k3p8sp.so:system/vendor/lib/libmmcamera_s5k3p8sp.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_sony_imx179_eeprom.so:system/vendor/lib/libmmcamera_sony_imx179_eeprom.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_sony_imx298_eeprom.so:system/vendor/lib/libmmcamera_sony_imx298_eeprom.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:system/vendor/lib/libmmcamera_stillmore_lib.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_thread_services.so:system/vendor/lib/libmmcamera_thread_services.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:system/vendor/lib/libmmcamera_tuning_lookup.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_vpu_module.so:system/vendor/lib/libmmcamera_vpu_module.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
@@ -274,7 +365,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libSonyIMX298PdafLibrary.so:system/vendor/lib/libSonyIMX298PdafLibrary.so
 
 PRODUCT_PACKAGES += \
@@ -375,6 +465,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/oneplus/oneplus3/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/oneplus/oneplus3/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
+    vendor/oneplus/oneplus3/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
+    vendor/oneplus/oneplus3/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
     vendor/oneplus/oneplus3/proprietary/lib64/libparam.so:system/lib64/libparam.so \
     vendor/oneplus/oneplus3/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
@@ -442,10 +534,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libGPreqcancel_svc.so:system/vendor/lib64/libGPreqcancel_svc.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
@@ -557,6 +647,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libadm.so:system/vendor/lib/libadm.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libadpcmdec.so:system/vendor/lib/libadpcmdec.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libadsp_default_listener.so:system/vendor/lib/libadsp_default_listener.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libadsp_hvx_callback_skel.so:system/vendor/lib/libadsp_hvx_callback_skel.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libadsp_hvx_stub.so:system/vendor/lib/libadsp_hvx_stub.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
@@ -646,7 +737,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so:system/vendor/lib/rfsa/adsp/libadsp_fd_skel.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_stats.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_stats.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_BGGR.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_BGGR.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_RGGB.so:system/vendor/lib/rfsa/adsp/libadsp_hvx_zzhdr_RGGB.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
@@ -673,11 +768,11 @@ PRODUCT_PACKAGES += \
     CNEService \
     com.qualcomm.location \
     dpmserviceapp \
+    ims \
     qcrilmsgtunnel \
     QtiTetherService \
     xtra_t_app \
     colorservice \
-    ims \
     imssettings \
     qcnvitems \
     qcrilhook

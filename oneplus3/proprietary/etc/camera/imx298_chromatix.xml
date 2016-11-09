@@ -81,9 +81,6 @@ special_mode_mask values:
     <ChromatixName>
       <ISPCommon>imx298_common</ISPCommon>
       <PostProc>imx298_postproc</PostProc>
-      <CPPPreview>imx298_cpp_preview</CPPPreview>
-      <CPPSnapshot>imx298_cpp_snapshot</CPPSnapshot>
-      <CPPLiveshot>imx298_cpp_liveshot</CPPLiveshot>
     </ChromatixName>
     <ChromatixName special_mode_mask="SCENE_SPORTS">
       <CPPSnapshot>imx298_cpp_snapshot_nomultiframe</CPPSnapshot>
@@ -91,7 +88,6 @@ special_mode_mask values:
     <ChromatixName special_mode_mask="SCENE_MANUAL">
       <ISPCommon>imx298_common_manual</ISPCommon>
       <CPPSnapshot>imx298_cpp_snapshot_manual</CPPSnapshot>
-      <A3Preview>imx298_zsl_preview</A3Preview>
     </ChromatixName>
     <ChromatixName special_mode_mask="SCENE_HDR">
       <CPPSnapshot>imx298_cpp_snapshot_nomultiframe</CPPSnapshot>
@@ -102,6 +98,8 @@ special_mode_mask values:
     </ChromatixName>
     <ChromatixName special_mode_mask="SCENE_ANTISHAKE">
       <CPPSnapshot>imx298_cpp_snapshot_clearshot</CPPSnapshot>
+      <ISPPreview>imx298_preview</ISPPreview>
+      <ISPSnapshot>imx298_preview</ISPSnapshot>
       <A3Preview>imx298_3a_clearshot</A3Preview>
     </ChromatixName>
     <ChromatixName special_mode_mask="SCENE_ACTION">
@@ -114,6 +112,13 @@ special_mode_mask values:
     <ChromatixName special_mode_mask="FLASH">
       <CPPSnapshot>imx298_cpp_snapshot_flash</CPPSnapshot>
     </ChromatixName>
+    <ChromatixName special_mode_mask="VIDEO_4K">
+      <CPPVideo>imx298_cpp_video_4k</CPPVideo>
+      <A3Video>imx298_4K_video</A3Video>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="ZSL_16_9">
+      <CPPSnapshot>imx298_cpp_snapshot</CPPSnapshot>
+    </ChromatixName>
   </CommonChromatixInfo>
   <ResolutionChromatixInfo>
     <ChromatixName sensor_resolution_index="0">
@@ -123,33 +128,22 @@ special_mode_mask values:
       <CPPPreview>imx298_cpp_preview</CPPPreview>
       <CPPSnapshot>imx298_cpp_snapshot</CPPSnapshot>
       <CPPVideo>imx298_cpp_video</CPPVideo>
-      <CPPLiveshot>imx298_cpp_liveshot</CPPLiveshot>
+      <CPPLiveshot>imx298_cpp_video</CPPLiveshot>
       <A3Preview>imx298_zsl_preview</A3Preview>
       <A3Video>imx298_zsl_video</A3Video>
     </ChromatixName>
     <ChromatixName sensor_resolution_index="1">
       <ISPPreview>imx298_snapshot</ISPPreview>
       <ISPSnapshot>imx298_snapshot</ISPSnapshot>
-      <ISPVideo>imx298_snapshot</ISPVideo>
-      <CPPPreview>imx298_cpp_preview</CPPPreview>
-      <CPPSnapshot>imx298_cpp_snapshot</CPPSnapshot>
+      <ISPVideo>imx298_video</ISPVideo>
+      <CPPPreview>imx298_cpp_video_preview</CPPPreview>
+      <CPPSnapshot>imx298_cpp_video</CPPSnapshot>
       <CPPVideo>imx298_cpp_video</CPPVideo>
-      <CPPLiveshot>imx298_cpp_liveshot</CPPLiveshot>
-      <A3Preview>imx298_4K_preview</A3Preview>
-      <A3Video>imx298_4K_video</A3Video>
-    </ChromatixName>
-    <ChromatixName sensor_resolution_index="2">
-      <ISPPreview>imx298_snapshot</ISPPreview>
-      <ISPSnapshot>imx298_snapshot</ISPSnapshot>
-      <ISPVideo>imx298_snapshot</ISPVideo>
-      <CPPPreview>imx298_cpp_preview</CPPPreview>
-      <CPPSnapshot>imx298_cpp_snapshot</CPPSnapshot>
-      <CPPVideo>imx298_cpp_video</CPPVideo>
-      <CPPLiveshot>imx298_cpp_liveshot</CPPLiveshot>
+      <CPPLiveshot>imx298_cpp_video</CPPLiveshot>
       <A3Preview>imx298_default_preview</A3Preview>
       <A3Video>imx298_default_video</A3Video>
     </ChromatixName>
-    <ChromatixName sensor_resolution_index="3">
+    <ChromatixName sensor_resolution_index="2">
       <ISPPreview>imx298_hfr_60</ISPPreview>
       <ISPSnapshot>imx298_hfr_60</ISPSnapshot>
       <ISPVideo>imx298_hfr_60</ISPVideo>
@@ -160,7 +154,8 @@ special_mode_mask values:
       <A3Preview>imx298_hfr_60_3a</A3Preview>
       <A3Video>imx298_hfr_60_3a</A3Video>
     </ChromatixName>
-    <ChromatixName sensor_resolution_index="4">
+    <ChromatixName sensor_resolution_index="3">
+      <ISPCommon>imx298_common_60fps</ISPCommon>
       <ISPPreview>imx298_hfr_90</ISPPreview>
       <ISPSnapshot>imx298_hfr_90</ISPSnapshot>
       <ISPVideo>imx298_hfr_90</ISPVideo>
@@ -171,7 +166,7 @@ special_mode_mask values:
       <A3Preview>imx298_hfr_90_3a</A3Preview>
       <A3Video>imx298_hfr_90_3a</A3Video>
     </ChromatixName>
-    <ChromatixName sensor_resolution_index="5">
+    <ChromatixName sensor_resolution_index="4">
       <ISPPreview>imx298_hfr_120</ISPPreview>
       <ISPSnapshot>imx298_hfr_120</ISPSnapshot>
       <ISPVideo>imx298_hfr_120</ISPVideo>
@@ -182,27 +177,16 @@ special_mode_mask values:
       <A3Preview>imx298_hfr_120_3a</A3Preview>
       <A3Video>imx298_hfr_120_3a</A3Video>
     </ChromatixName>
-    <ChromatixName sensor_resolution_index="6">
-      <ISPPreview>imx298_snapshot_hdr</ISPPreview>
-      <ISPSnapshot>imx298_snapshot_hdr</ISPSnapshot>
-      <ISPVideo>imx298_snapshot_hdr</ISPVideo>
-      <CPPPreview>imx298_cpp_snapshot_hdr</CPPPreview>
-      <CPPSnapshot>imx298_cpp_snapshot_hdr</CPPSnapshot>
-      <CPPVideo>imx298_cpp_video_hdr</CPPVideo>
-      <CPPLiveshot>imx298_cpp_video_hdr</CPPLiveshot>
-      <A3Preview>imx298_hdr_snapshot_3a</A3Preview>
-      <A3Video>imx298_hdr_video_3a</A3Video>
-    </ChromatixName>
-    <ChromatixName sensor_resolution_index="7">
-      <ISPPreview>imx298_snapshot_hdr</ISPPreview>
-      <ISPSnapshot>imx298_snapshot_hdr</ISPSnapshot>
-      <ISPVideo>imx298_snapshot_hdr</ISPVideo>
-      <CPPPreview>imx298_cpp_snapshot_hdr</CPPPreview>
-      <CPPSnapshot>imx298_cpp_snapshot_hdr</CPPSnapshot>
-      <CPPVideo>imx298_cpp_video_hdr</CPPVideo>
-      <CPPLiveshot>imx298_cpp_video_hdr</CPPLiveshot>
-      <A3Preview>imx298_hdr_snapshot_3a</A3Preview>
-      <A3Video>imx298_hdr_video_3a</A3Video>
+    <ChromatixName sensor_resolution_index="5">
+      <ISPPreview>imx298_snapshot</ISPPreview>
+      <ISPSnapshot>imx298_snapshot</ISPSnapshot>
+      <ISPVideo>imx298_snapshot</ISPVideo>
+      <CPPPreview>imx298_cpp_preview</CPPPreview>
+      <CPPSnapshot>imx298_cpp_snapshot</CPPSnapshot>
+      <CPPVideo>imx298_cpp_video</CPPVideo>
+      <CPPLiveshot>imx298_cpp_video</CPPLiveshot>
+      <A3Preview>imx298_4K_preview</A3Preview>
+      <A3Video>imx298_4K_video</A3Video>
     </ChromatixName>
   </ResolutionChromatixInfo>
 </ChromatixConfigurationRoot>
