@@ -98,6 +98,8 @@ special_mode_mask values:
     </ChromatixName>
     <ChromatixName special_mode_mask="SCENE_ANTISHAKE">
       <CPPSnapshot>imx298_cpp_snapshot_clearshot</CPPSnapshot>
+      <ISPPreview>imx298_preview</ISPPreview>
+      <ISPSnapshot>imx298_preview</ISPSnapshot>
       <A3Preview>imx298_3a_clearshot</A3Preview>
     </ChromatixName>
     <ChromatixName special_mode_mask="SCENE_ACTION">
@@ -109,6 +111,13 @@ special_mode_mask values:
     </ChromatixName>
     <ChromatixName special_mode_mask="FLASH">
       <CPPSnapshot>imx298_cpp_snapshot_flash</CPPSnapshot>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="VIDEO_4K">
+      <CPPVideo>imx298_cpp_video_4k</CPPVideo>
+      <A3Video>imx298_4K_video</A3Video>
+    </ChromatixName>
+    <ChromatixName special_mode_mask="ZSL_16_9">
+      <CPPSnapshot>imx298_cpp_snapshot</CPPSnapshot>
     </ChromatixName>
   </CommonChromatixInfo>
   <ResolutionChromatixInfo>
@@ -127,8 +136,8 @@ special_mode_mask values:
       <ISPPreview>imx298_snapshot</ISPPreview>
       <ISPSnapshot>imx298_snapshot</ISPSnapshot>
       <ISPVideo>imx298_video</ISPVideo>
-      <CPPPreview>imx298_cpp_preview</CPPPreview>
-      <CPPSnapshot>imx298_cpp_snapshot</CPPSnapshot>
+      <CPPPreview>imx298_cpp_video_preview</CPPPreview>
+      <CPPSnapshot>imx298_cpp_video</CPPSnapshot>
       <CPPVideo>imx298_cpp_video</CPPVideo>
       <CPPLiveshot>imx298_cpp_video</CPPLiveshot>
       <A3Preview>imx298_default_preview</A3Preview>

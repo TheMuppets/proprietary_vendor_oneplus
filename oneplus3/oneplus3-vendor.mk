@@ -194,6 +194,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_snapshot_manual.so:system/vendor/lib/libchromatix_imx298_cpp_snapshot_manual.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_snapshot_nomultiframe.so:system/vendor/lib/libchromatix_imx298_cpp_snapshot_nomultiframe.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_snapshot.so:system/vendor/lib/libchromatix_imx298_cpp_snapshot.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_video_4k.so:system/vendor/lib/libchromatix_imx298_cpp_video_4k.so \
+    vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_video_preview.so:system/vendor/lib/libchromatix_imx298_cpp_video_preview.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_cpp_video.so:system/vendor/lib/libchromatix_imx298_cpp_video.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_default_preview.so:system/vendor/lib/libchromatix_imx298_default_preview.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libchromatix_imx298_default_preview_s.so:system/vendor/lib/libchromatix_imx298_default_preview_s.so \
