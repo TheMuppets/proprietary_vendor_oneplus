@@ -1,0 +1,7 @@
+mcfg_sw_CMCC_Volte_OpenMkt-Commercial.mbn
+mcfg_sw_CT_OpenMkt-Commercial.mbn
+mcfg_sw_CU_OpenMkt-Commercial.mbn
+mcfg_sw_OEM_CDMA-Commercial.mbn
+mcfg_sw_TMO-Commercial.mbn
+mcfg_sw_ATT-VoLTE.mbn
+mcfg_sw_OEM_Test-VoLTE.mbn
