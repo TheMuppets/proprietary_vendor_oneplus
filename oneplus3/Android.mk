@@ -273,4 +273,13 @@ ifneq ($(TARGET_HAVE_QC_PERF),true)
 
 endif
 
+ifeq ($(LOCAL_PATH)/radio, $(wildcard $(LOCAL_PATH)/radio))
+
+RADIO_FILES := $(wildcard $(LOCAL_PATH)/radio/*)
+$(foreach f, $(notdir $(RADIO_FILES)), \
+    $(call add-radio-file,radio/$(f)))
+$(call add-radio-file,../../../device/oneplus/oneplus3/radio/filesmap)
+
+endif
+
 endif
