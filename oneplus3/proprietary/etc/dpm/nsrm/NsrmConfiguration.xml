@@ -52,14 +52,16 @@
          Default 4 hours (14400s). Range: [1 - 86,400] -->
     <TConnect>14400</TConnect>
 
-    <!-- Time period of days which a decision is learning for an app.
-         Default 30 days (2592000s). Range: [1 - 31,536,000] -->
+    <!-- Time period of days for which a previous made decesion is valid.
+         with a margin of 1 day which is the Min allowed value.
+         Default 30 days (2592000s). Range: [86400 - 31,536,000] -->
     <TDecisionMade>2592000</TDecisionMade>
 
     <!-- Minimum connect counts. Range: [0 - 100] -->
     <MinThr>5</MinThr>
 
-    <!-- Time margin. Default 60s. Range: [1 - 1800] -->
+    <!-- Time margin to wait before entering learning mode.
+         Default 60s. Range: [1 - 1800] -->
     <TMargin>60</TMargin>
 
     <!-- Minimum time idle. Default 10 min (600s). Range: [1 - 3600] -->
@@ -68,14 +70,16 @@
     <!-- Time for query. Default 5 min (300s). Range: [60 - 3600] -->
     <TQuery>300</TQuery>
 
-    <!-- Decision made time threshold. Default 5 days (432000s). Range: [1 - 31,536,000] -->
+    <!-- Decision made time threshold. If an app gets updated we consider it
+         valid only if it was taken within this threshold value.
+         Default 5 days (432000s). Range: [1 - 31,536,000] -->
     <TDmThreshold>432000</TDmThreshold>
 
     <!-- Recheck threshold. Default 1.1 Range: [1.0 - 10.0] -->
     <RecheckThr>1.1</RecheckThr>
 
     <!-- Decision made. 0 false, 1 true -->
-    <DNsrmEnable>0</DNsrmEnable>
+    <DNsrmEnable>1</DNsrmEnable>
   </Nsrm>
   <!-- The next element is for reference only to show how to config NSRM
        parameters for another version that may be supported on the device -->

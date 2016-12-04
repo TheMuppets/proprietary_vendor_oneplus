@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Copyright (c) 2012-2014 Qualcomm Technologies, Inc.  All Rights Reserved. Qualcomm Technologies Proprietary and Confidential.-->
+<!--Copyright (c) 2012-2016 Qualcomm Technologies, Inc.  All Rights Reserved. Qualcomm Technologies Proprietary and Confidential.-->
 <AndsfPolicy>
    <Man>Qualcomm</Man>
    <Mod>FFA</Mod>
    <Andsf>
-       <Version>4.9</Version>
+       <Version>5.0</Version>
       <Name>Test 1</Name>
       <!-- ISRP>
          <ForFlowBased>
@@ -238,10 +238,10 @@
             <CQE_Thresholds Id ="128">
                     <!-- RSSI threshold from which all values greather than it is considered as good for wlan to be -->
                <!-- a candidate for interface selection -->
-               <RSSIAddThreshold units="dbm">-86</RSSIAddThreshold>
+               <RSSIAddThreshold units="dbm">-86,-86</RSSIAddThreshold>
                <!-- RSSI threshold from which all values lesser than it is considered as bad for wlan to be -->
                <!-- a candidate for interface selection -->
-               <RSSIDropThreshold units="dbm">-91</RSSIDropThreshold>
+               <RSSIDropThreshold units="dbm">-91,-91</RSSIDropThreshold>
                <!-- Interval over whcih RSSI values are averaged -->
                <RSSIAveragingInterval units="secs">5</RSSIAveragingInterval>
                <!-- RSSI threshold below which MAC hysteresis timer is not started -->
@@ -292,10 +292,10 @@
             <CQE_Thresholds Id ="128">
                <!-- RSSI threshold from which all values greather than it is considered as good for wlan to be -->
                <!-- a candidate for interface selection -->
-               <RSSIAddThreshold units="dbm">-86</RSSIAddThreshold>
+               <RSSIAddThreshold units="dbm">-86,-86</RSSIAddThreshold>
                <!-- RSSI threshold from which all values lesser than it is considered as bad for wlan to be -->
                <!-- a candidate for interface selection -->
-               <RSSIDropThreshold units="dbm">-91</RSSIDropThreshold>
+               <RSSIDropThreshold units="dbm">-91,-91</RSSIDropThreshold>
                <!-- RSSI threshold from which to select linear model to compute CQE metric -->
                <RSSIModelThreshold units="dbm">-72</RSSIModelThreshold>
                <!-- Interval over whcih RSSI values are averaged -->
