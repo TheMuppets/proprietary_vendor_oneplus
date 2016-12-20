@@ -12,8 +12,6 @@
 
 <permission name="com.qualcomm.permission.IZAT" >
     <group gid="gps" />
-    <group gid="net_raw" />
-    <group gid="net_admin" />
     <group gid="system" />
     <group gid="diag" />
     <group gid="qcom_diag" />
