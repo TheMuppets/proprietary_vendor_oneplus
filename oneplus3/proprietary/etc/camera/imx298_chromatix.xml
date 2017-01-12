@@ -87,7 +87,11 @@ special_mode_mask values:
     </ChromatixName>
     <ChromatixName special_mode_mask="SCENE_MANUAL">
       <ISPCommon>imx298_common_manual</ISPCommon>
+      <ISPSnapshot>imx298_snapshot</ISPSnapshot>
+      <ISPVideo>imx298_snapshot</ISPVideo>
+      <CPPPreview>imx298_cpp_preview</CPPPreview>
       <CPPSnapshot>imx298_cpp_snapshot_manual</CPPSnapshot>
+      <A3Preview>imx298_zsl_preview</A3Preview>
     </ChromatixName>
     <ChromatixName special_mode_mask="SCENE_HDR">
       <CPPSnapshot>imx298_cpp_snapshot_nomultiframe</CPPSnapshot>
@@ -97,6 +101,7 @@ special_mode_mask values:
       <CPPVideo>imx298_cpp_snapshot_hdr</CPPVideo>
     </ChromatixName>
     <ChromatixName special_mode_mask="SCENE_ANTISHAKE">
+      <ISPCommon>imx298_common_clearshot</ISPCommon>
       <CPPSnapshot>imx298_cpp_snapshot_clearshot</CPPSnapshot>
       <ISPPreview>imx298_preview</ISPPreview>
       <ISPSnapshot>imx298_preview</ISPSnapshot>
