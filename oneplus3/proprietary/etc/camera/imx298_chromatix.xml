@@ -96,6 +96,7 @@ special_mode_mask values:
     <ChromatixName special_mode_mask="SCENE_HDR">
       <CPPSnapshot>imx298_cpp_snapshot_nomultiframe</CPPSnapshot>
       <CPPVideo>imx298_cpp_snapshot_hdr</CPPVideo>
+      <A3Preview>imx298_3a_HDR</A3Preview>
     </ChromatixName>
     <ChromatixName special_mode_mask="SCENE_HDR_AUTO">
       <CPPVideo>imx298_cpp_snapshot_hdr</CPPVideo>
