@@ -413,7 +413,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so
 
 PRODUCT_PACKAGES += \
-    org.ifaa.android.manager \
     dashd
 
 ifeq ($(QCPATH),)
