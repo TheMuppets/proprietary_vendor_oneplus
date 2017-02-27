@@ -661,9 +661,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libadsp_hvx_callback_skel.so:system/vendor/lib/libadsp_hvx_callback_skel.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libadsp_hvx_stub.so:system/vendor/lib/libadsp_hvx_stub.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so:system/vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libaptXHD-1.0.0-rel-Android21-ARMv7A.so:system/vendor/lib/libaptXHD-1.0.0-rel-Android21-ARMv7A.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libaptXScheduler.so:system/vendor/lib/libaptXScheduler.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libaudiodevarb.so:system/vendor/lib/libaudiodevarb.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
