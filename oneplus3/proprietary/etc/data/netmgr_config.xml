@@ -987,14 +987,14 @@
       <data name="single_qmux_ch_name" type="string"> DATA5_CNTL </data>
       <data name="tc_ul_baserate" type="int"> 0 </data>
       <data name="rmnet_data_enabled" type="int"> 1 </data>
-      <data name="dataformat_agg_dl_pkt" type="int"> 1 </data>
-      <data name="dataformat_agg_dl_size" type="int"> 2048 </data>
+      <data name="dataformat_agg_dl_pkt" type="int"> 10 </data>
+      <data name="dataformat_agg_dl_size" type="int"> 8192 </data>
       <data name="dataformat_agg_ul_pkt" type="int"> 0 </data>
       <data name="dataformat_agg_ul_size" type="int"> 0 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 7 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 7 </data>
-      <data name="dataformat_dl_gro_enabled" type="int"> 0 </data>
-      <data name="dataformat_ul_gso_enabled" type="int"> 0 </data>
+      <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
+      <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
 
       <data name="pnd_rps_mask" type="int"> 16 </data>
