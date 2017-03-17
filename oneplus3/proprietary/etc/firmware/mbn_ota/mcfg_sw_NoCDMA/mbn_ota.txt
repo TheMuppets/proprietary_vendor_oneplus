@@ -7,5 +7,3 @@ mcfg_sw_UK-VoLTE.mbn
 mcfg_sw_OEM_NoCDMA-Commercial.mbn
 mcfg_sw_EE-Commercial.mbn
 mcfg_sw_MTNL_BSNL.mbn
-mcfg_sw_Elisa-VoLTE.mbn
-mcfg_sw_Airtel-Commercial.mbn
