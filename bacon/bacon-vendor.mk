@@ -195,6 +195,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
 
 PRODUCT_PACKAGES += \
+    JRTWallpapers \
     libmdmdetect \
     libwpa_qmi_eap_proxy \
     libTimeService \
