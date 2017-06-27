@@ -209,5 +209,5 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     TimeService \
     shutdownlistener \
-    qcrilmsgtunnel \
+    qcrilmsgtunnel
 endif
