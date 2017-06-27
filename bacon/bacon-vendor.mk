@@ -210,5 +210,4 @@ PRODUCT_PACKAGES += \
     TimeService \
     shutdownlistener \
     qcrilmsgtunnel \
-    JRTWallpapers
 endif
