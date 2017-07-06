@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!---/******************************************************************************
+* @file    com.qualcomm.location.vzw_library.xml
+* @brief   configuration file for permission mapping and library publishing
+*  Coppyright (C) 2010 Qualcomm Technologies, Inc.
+*  All Rights Reserved. Qualcomm Technologies Proprietary and Confidential.
+*  *****************************************************************************-->
+
+
+<permissions>
+
+<library name="com.qualcomm.location.vzw_library" file="/system/framework/com.qualcomm.location.vzw_library.jar"/>
+
+</permissions>
+
