@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Copyright (c) 2016 Qualcomm Technologies, Inc.  All Rights Reserved.
+  Qualcomm Technologies Proprietary and Confidential.
+-->
+<permissions>
+    <permission name="com.qti.permission.DIAG">
+        <group gid="qcom_diag" />
+    </permission>
+    <permission name="com.qti.permission.AUDIO">
+        <group gid="audio" />
+    </permission>
+</permissions>
+
