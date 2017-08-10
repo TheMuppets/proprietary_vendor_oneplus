@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+    All Rights Reserved.
+    Confidential and Proprietary - Qualcomm Technologies, Inc.-->
+<permissions>
+    <library name="com.qti.dpmframework"
+        file="/system/framework/com.qti.dpmframework.jar"/>
+    <permission name="com.qualcomm.permission.READPROC" >
+    <group gid="readproc" />
+    </permission>
+</permissions>
