@@ -166,7 +166,7 @@ LensInfo : Information of the lens present in the module.
     <EepromName>imx350_gt24c64ass</EepromName>
     <ChromatixName>imx350_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
-    <Position>BACK_AUX</Position>
+    <Position>BACK</Position>
     <MountAngle>90</MountAngle>
     <CSIInfo>
       <CSIDCore>1</CSIDCore>
