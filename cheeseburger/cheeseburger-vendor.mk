@@ -58,6 +58,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/ipa_fws.mdt:system/etc/firmware/ipa_fws.mdt \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/mbn_ota/mbn_ota.txt:system/etc/firmware/mbn_ota/mbn_ota.txt \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/tfa98xx.cnt:system/etc/firmware/tfa98xx.cnt \
+    vendor/oneplus/cheeseburger/proprietary/etc/firmware/tp/fw_synaptics_15801.img:system/etc/firmware/tp/fw_synaptics_15801.img \
+    vendor/oneplus/cheeseburger/proprietary/etc/firmware/tp/fw_synaptics_15801b.img:system/etc/firmware/tp/fw_synaptics_15801b.img \
+    vendor/oneplus/cheeseburger/proprietary/etc/firmware/tp/fw_synaptics_16859.img:system/etc/firmware/tp/fw_synaptics_16859.img \
     vendor/oneplus/cheeseburger/proprietary/etc/fsync_db.config:system/etc/fsync_db.config \
     vendor/oneplus/cheeseburger/proprietary/etc/oneplus5_vstab_db_1080p_video_0_30fps.config:system/etc/oneplus5_vstab_db_1080p_video_0_30fps.config \
     vendor/oneplus/cheeseburger/proprietary/etc/oneplus5_vstab_db_1080p_video_0_60fps.config:system/etc/oneplus5_vstab_db_1080p_video_0_60fps.config \
