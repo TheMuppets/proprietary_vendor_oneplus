@@ -183,6 +183,32 @@ LensInfo : Information of the lens present in the module.
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
+  <CameraModuleConfig>
+    <CameraId>1</CameraId>
+    <SensorName>imx350</SensorName>
+    <FlashName>pmic</FlashName>
+    <ActuatorName>lc898217xc_imx350</ActuatorName>
+    <EepromName>imx350_gt24c64ass</EepromName>
+    <ChromatixName>imx350_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK_AUX</Position>
+    <MountAngle>90</MountAngle>
+    <CSIInfo>
+      <CSIDCore>1</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>5.50</FocalLength>
+      <FNumber>2.6</FNumber>
+      <TotalFocusDistance>1.9</TotalFocusDistance>
+      <HorizontalViewAngle>50.5</HorizontalViewAngle>
+      <VerticalViewAngle>38.9</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+
   <!--
   <CameraModuleConfig>
     <CameraId>0</CameraId>

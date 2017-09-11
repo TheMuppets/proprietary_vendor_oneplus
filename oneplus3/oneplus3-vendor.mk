@@ -103,6 +103,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/libSensorManagerHAL.so:system/lib/libSensorManagerHAL.so \
     vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_facebeauty.so:system/lib/lib_oneplus_facebeauty.so \
     vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_md.so:system/lib/lib_oneplus_md.so \
+    vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_watermark.so:system/lib/lib_oneplus_watermark.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmms_gyro_vstab.so:system/lib/libmms_gyro_vstab.so \
