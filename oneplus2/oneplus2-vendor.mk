@@ -73,6 +73,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/etc/firmware/fingerprints.b02:system/etc/firmware/fingerprints.b02 \
     vendor/oneplus/oneplus2/proprietary/etc/firmware/fingerprints.b03:system/etc/firmware/fingerprints.b03 \
     vendor/oneplus/oneplus2/proprietary/etc/firmware/fingerprints.mdt:system/etc/firmware/fingerprints.mdt \
+    vendor/oneplus/oneplus2/proprietary/etc/firmware/mbn_ota/mcfg_sw_ATT-VoLTE.mbn:system/etc/firmware/mbn_ota/mcfg_sw_ATT-VoLTE.mbn \
+    vendor/oneplus/oneplus2/proprietary/etc/firmware/mbn_ota/mcfg_sw_CMCC_CSFB_DSDS_Commercial_Volte.mbn:system/etc/firmware/mbn_ota/mcfg_sw_CMCC_CSFB_DSDS_Commercial_Volte.mbn \
+    vendor/oneplus/oneplus2/proprietary/etc/firmware/mbn_ota/mcfg_sw_CU_OpenMkt-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_CU_OpenMkt-Commercial.mbn \
+    vendor/oneplus/oneplus2/proprietary/etc/firmware/mbn_ota/mcfg_sw_OEM_Overseas-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_OEM_Overseas-Commercial.mbn \
+    vendor/oneplus/oneplus2/proprietary/etc/firmware/mbn_ota/mcfg_sw_Reliance-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_Reliance-Commercial.mbn \
+    vendor/oneplus/oneplus2/proprietary/etc/firmware/mbn_ota/mcfg_sw_TMO-Commercial.mbn:system/etc/firmware/mbn_ota/mcfg_sw_TMO-Commercial.mbn \
     vendor/oneplus/oneplus2/proprietary/etc/firmware/nvm_tlv.bin:system/etc/firmware/nvm_tlv.bin \
     vendor/oneplus/oneplus2/proprietary/etc/firmware/nvm_tlv_1.3.bin:system/etc/firmware/nvm_tlv_1.3.bin \
     vendor/oneplus/oneplus2/proprietary/etc/firmware/nvm_tlv_2.1.bin:system/etc/firmware/nvm_tlv_2.1.bin \
