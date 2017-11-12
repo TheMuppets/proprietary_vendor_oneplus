@@ -14,7 +14,6 @@
     <group gid="gps" />
     <group gid="system" />
     <group gid="diag" />
-    <group gid="qcom_diag" />
     <group gid="sdcard_rw" />
     <group gid="media_rw" />
     <group gid="wifi" />
