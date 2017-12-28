@@ -61,6 +61,7 @@ PRODUCT_PACKAGES += \
 ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/oneplus/msm8998-common/proprietary/bin/spdaemon:system/bin/spdaemon \
     vendor/oneplus/msm8998-common/proprietary/etc/GyroOffset_db.config:system/etc/GyroOffset_db.config \
     vendor/oneplus/msm8998-common/proprietary/etc/camera/ashdr/iso617_4608x3456.ncf:system/etc/camera/ashdr/iso617_4608x3456.ncf \
     vendor/oneplus/msm8998-common/proprietary/etc/camera/ashdr/ncf_pack.ncf:system/etc/camera/ashdr/ncf_pack.ncf \
@@ -87,6 +88,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
     vendor/oneplus/msm8998-common/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw \
     vendor/oneplus/msm8998-common/proprietary/etc/firmware/cpp_firmware_v1_5_0.fw:system/etc/firmware/cpp_firmware_v1_5_0.fw \
+    vendor/oneplus/msm8998-common/proprietary/etc/firmware/cpp_firmware_v1_5_1.fw:system/etc/firmware/cpp_firmware_v1_5_1.fw \
     vendor/oneplus/msm8998-common/proprietary/etc/firmware/cpp_firmware_v1_5_2.fw:system/etc/firmware/cpp_firmware_v1_5_2.fw \
     vendor/oneplus/msm8998-common/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/oneplus/msm8998-common/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
@@ -166,6 +168,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib/libjni_truescanner_v2.so:system/lib/libjni_truescanner_v2.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libjni_ubifocus.so:system/lib/libjni_ubifocus.so \
     vendor/oneplus/msm8998-common/proprietary/lib/liblocationservice_jni.so:system/lib/liblocationservice_jni.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
@@ -180,6 +183,22 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib/libopposfr.so:system/lib/libopposfr.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
     vendor/oneplus/msm8998-common/proprietary/lib/librcc.so:system/lib/librcc.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscveBlobDescriptor.so:system/lib/libscveBlobDescriptor.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscveBlobDescriptor_skel.so:system/lib/libscveBlobDescriptor_skel.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscveBlobDescriptor_stub.so:system/lib/libscveBlobDescriptor_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscveCommon.so:system/lib/libscveCommon.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscveCommon_stub.so:system/lib/libscveCommon_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscveFaceLandmark_skel.so:system/lib/libscveFaceLandmark_skel.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscveFaceLandmarks.so:system/lib/libscveFaceLandmarks.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscveFaceLandmarks_stub.so:system/lib/libscveFaceLandmarks_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscveFaceRecognition.so:system/lib/libscveFaceRecognition.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscveImageCorrection.so:system/lib/libscveImageCorrection.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscveObjectSegmentation.so:system/lib/libscveObjectSegmentation.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscveObjectTracker.so:system/lib/libscveObjectTracker.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscveObjectTracker_stub.so:system/lib/libscveObjectTracker_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscvePanorama.so:system/lib/libscvePanorama.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscvePanorama_lite.so:system/lib/libscvePanorama_lite.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libscveT2T_skel.so:system/lib/libscveT2T_skel.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libsensor_test.so:system/lib/libsensor_test.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
@@ -254,6 +273,19 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/librcc.so:system/lib64/librcc.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libscveBlobDescriptor.so:system/lib64/libscveBlobDescriptor.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libscveBlobDescriptor_stub.so:system/lib64/libscveBlobDescriptor_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libscveCommon.so:system/lib64/libscveCommon.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libscveCommon_stub.so:system/lib64/libscveCommon_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libscveFaceLandmarks.so:system/lib64/libscveFaceLandmarks.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libscveFaceLandmarks_stub.so:system/lib64/libscveFaceLandmarks_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libscveFaceRecognition.so:system/lib64/libscveFaceRecognition.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libscveImageCorrection.so:system/lib64/libscveImageCorrection.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libscveObjectSegmentation.so:system/lib64/libscveObjectSegmentation.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libscveObjectTracker.so:system/lib64/libscveObjectTracker.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libscveObjectTracker_stub.so:system/lib64/libscveObjectTracker_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libscvePanorama.so:system/lib64/libscvePanorama.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libscvePanorama_lite.so:system/lib64/libscvePanorama_lite.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libsensor_test.so:system/lib64/libsensor_test.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libtrueportrait.so:system/lib64/libtrueportrait.so \
@@ -447,6 +479,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libblur_channel.so:system/vendor/lib/libblur_channel.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libcamera_cp_bokeh.so:system/vendor/lib/libcamera_cp_bokeh.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libcamera_cp_wrapper.so:system/vendor/lib/libcamera_cp_wrapper.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libcamera_oneplus_bokeh_wrapper.so:system/vendor/lib/libcamera_oneplus_bokeh_wrapper.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libcdsprpc.so:system/vendor/lib/libcdsprpc.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so \
@@ -477,6 +511,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_3a_2304x1728_30fps_preview.so:system/vendor/lib/libchromatix_imx371_3a_2304x1728_30fps_preview.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_3a_2304x1728_30fps_video.so:system/vendor/lib/libchromatix_imx371_3a_2304x1728_30fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_3a_4656x3456_30fps_preview.so:system/vendor/lib/libchromatix_imx371_3a_4656x3456_30fps_preview.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_3a_640x480_120fps_video.so:system/vendor/lib/libchromatix_imx371_3a_640x480_120fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_common.so:system/vendor/lib/libchromatix_imx371_common.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_flash.so:system/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_flash.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_hdr.so:system/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_hdr.so \
@@ -485,9 +520,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_snapshot.so:system/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_snapshot.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_video.so:system/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_cpp_4656x3456_30fps_snapshot.so:system/vendor/lib/libchromatix_imx371_cpp_4656x3456_30fps_snapshot.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_cpp_640x480_120fps_video.so:system/vendor/lib/libchromatix_imx371_cpp_640x480_120fps_video.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_cpp_640x480_30fps_video.so:system/vendor/lib/libchromatix_imx371_cpp_640x480_30fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_snapshot.so:system/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_snapshot.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_video.so:system/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_isp_4656x3456_30fps_snapshot.so:system/vendor/lib/libchromatix_imx371_isp_4656x3456_30fps_snapshot.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_isp_640x480_120fps_video.so:system/vendor/lib/libchromatix_imx371_isp_640x480_120fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_postproc.so:system/vendor/lib/libchromatix_imx371_postproc.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx376k_3a_1840x1380_30fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx376k_3a_1840x1380_30fps_preview_bokeh.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx376k_3a_2592x1458_120fps_video.so:system/vendor/lib/libchromatix_imx376k_3a_2592x1458_120fps_video.so \
@@ -532,7 +570,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_cpp_snapshot_flash.so:system/vendor/lib/libchromatix_imx398_cpp_snapshot_flash.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_cpp_snapshot_hdr.so:system/vendor/lib/libchromatix_imx398_cpp_snapshot_hdr.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_cpp_snapshot_manual.so:system/vendor/lib/libchromatix_imx398_cpp_snapshot_manual.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_cpp_snapshot_motion.so:system/vendor/lib/libchromatix_imx398_cpp_snapshot_motion.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_cpp_snapshot_nomultiframe.so:system/vendor/lib/libchromatix_imx398_cpp_snapshot_nomultiframe.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_cpp_snapshot_zoom.so:system/vendor/lib/libchromatix_imx398_cpp_snapshot_zoom.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_isp_1476x834_120fps_video.so:system/vendor/lib/libchromatix_imx398_isp_1476x834_120fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_isp_2328x1304_60fps_video.so:system/vendor/lib/libchromatix_imx398_isp_2328x1304_60fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_isp_3264x2448_30fps_snapshot_bokeh.so:system/vendor/lib/libchromatix_imx398_isp_3264x2448_30fps_snapshot_bokeh.so \
@@ -684,6 +724,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmmcamera_quadracfa.so:system/vendor/lib/libmmcamera_quadracfa.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmmcamera_s5k3p8sp_m24c64s_eeprom.so:system/vendor/lib/libmmcamera_s5k3p8sp_m24c64s_eeprom.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmmcamera_sony_imx371_eeprom.so:system/vendor/lib/libmmcamera_sony_imx371_eeprom.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:system/vendor/lib/libmmcamera_stillmore_lib.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmmcamera_sw2d_lib.so:system/vendor/lib/libmmcamera_sw2d_lib.so \
@@ -695,6 +736,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:system/vendor/lib/libmmcamera_tuning_lookup.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmmjpeg_interface.so:system/vendor/lib/libmmjpeg_interface.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmmlib2d_interface.so:system/vendor/lib/libmmlib2d_interface.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmpbase.so:system/vendor/lib/libmpbase.so \
@@ -723,6 +765,19 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libscveBlobDescriptor.so:system/vendor/lib/libscveBlobDescriptor.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libscveBlobDescriptor_stub.so:system/vendor/lib/libscveBlobDescriptor_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libscveCommon.so:system/vendor/lib/libscveCommon.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libscveCommon_stub.so:system/vendor/lib/libscveCommon_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libscveFaceLandmarks.so:system/vendor/lib/libscveFaceLandmarks.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libscveFaceLandmarks_stub.so:system/vendor/lib/libscveFaceLandmarks_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libscveFaceRecognition.so:system/vendor/lib/libscveFaceRecognition.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libscveImageCorrection.so:system/vendor/lib/libscveImageCorrection.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libscveObjectSegmentation.so:system/vendor/lib/libscveObjectSegmentation.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libscveObjectTracker.so:system/vendor/lib/libscveObjectTracker.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libscveObjectTracker_stub.so:system/vendor/lib/libscveObjectTracker_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libscvePanorama.so:system/vendor/lib/libscvePanorama.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libscvePanorama_lite.so:system/vendor/lib/libscvePanorama_lite.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libsdm-color.so:system/vendor/lib/libsdm-color.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libsdm-diag.so:system/vendor/lib/libsdm-diag.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libsdm-disp-vndapis.so:system/vendor/lib/libsdm-disp-vndapis.so \
@@ -739,6 +794,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libsns_low_lat_stream_stub.so:system/vendor/lib/libsns_low_lat_stream_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libspcom.so:system/vendor/lib/libspcom.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libspl.so:system/vendor/lib/libspl.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
@@ -923,6 +979,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libmm-color-convertor.so:system/vendor/lib64/libmm-color-convertor.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libmmcamera2_frame_algorithm.so:system/vendor/lib64/libmmcamera2_frame_algorithm.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libmmcamera2_is.so:system/vendor/lib64/libmmcamera2_is.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libmmcamera2_q3a_core.so:system/vendor/lib64/libmmcamera2_q3a_core.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libmmcamera2_stats_algorithm.so:system/vendor/lib64/libmmcamera2_stats_algorithm.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libmmcamera2_stats_lib.so:system/vendor/lib64/libmmcamera2_stats_lib.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libmmcamera_dbg.so:system/vendor/lib64/libmmcamera_dbg.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libmmcamera_faceproc.so:system/vendor/lib64/libmmcamera_faceproc.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libmmcamera_faceproc2.so:system/vendor/lib64/libmmcamera_faceproc2.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:system/vendor/lib64/libmmcamera_tintless_algo.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/liboptizoom.so:system/vendor/lib64/liboptizoom.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libpdmapper.so:system/vendor/lib64/libpdmapper.so \
@@ -953,6 +1019,19 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libscveBlobDescriptor.so:system/vendor/lib64/libscveBlobDescriptor.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libscveBlobDescriptor_stub.so:system/vendor/lib64/libscveBlobDescriptor_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libscveCommon.so:system/vendor/lib64/libscveCommon.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libscveCommon_stub.so:system/vendor/lib64/libscveCommon_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libscveFaceLandmarks.so:system/vendor/lib64/libscveFaceLandmarks.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libscveFaceLandmarks_stub.so:system/vendor/lib64/libscveFaceLandmarks_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libscveFaceRecognition.so:system/vendor/lib64/libscveFaceRecognition.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libscveImageCorrection.so:system/vendor/lib64/libscveImageCorrection.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libscveObjectSegmentation.so:system/vendor/lib64/libscveObjectSegmentation.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libscveObjectTracker.so:system/vendor/lib64/libscveObjectTracker.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libscveObjectTracker_stub.so:system/vendor/lib64/libscveObjectTracker_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libscvePanorama.so:system/vendor/lib64/libscvePanorama.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libscvePanorama_lite.so:system/vendor/lib64/libscvePanorama_lite.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libsdm-color.so:system/vendor/lib64/libsdm-color.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libsdm-diag.so:system/vendor/lib64/libsdm-diag.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libsdm-disp-vndapis.so:system/vendor/lib64/libsdm-disp-vndapis.so \
@@ -969,6 +1048,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libslimclient.so:system/vendor/lib64/libslimclient.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:system/vendor/lib64/libsns_low_lat_stream_stub.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libspcom.so:system/vendor/lib64/libspcom.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libspl.so:system/vendor/lib64/libspl.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
