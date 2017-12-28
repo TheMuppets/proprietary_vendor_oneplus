@@ -1,0 +1,12 @@
+service wifidisplayhalservice /vendor/bin/wifidisplayhalservice
+  class main
+  user system
+  group drmrpc inet input net_admin mediadrm audio
+  disabled
+  oneshot
+
+on property:sys.wfdservice=enable
+   start wifidisplayhalservice
+
+on property:sys.wfdservice=disable
+   stop wifidisplayhalservice
