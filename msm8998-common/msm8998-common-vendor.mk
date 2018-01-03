@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,7 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib64/libparam.so:system/lib64/libparam.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libteeclientjni.so:system/lib64/libteeclientjni.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libteeclientjniv2.so:system/lib64/libteeclientjniv2.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/bin/ipacm-diag:system/vendor/bin/ipacm-diag \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/sensors/sensor_def_qcomdev.conf:system/vendor/etc/sensors/sensor_def_qcomdev.conf \
     vendor/oneplus/msm8998-common/proprietary/vendor/firmware/a530_gpmu.fw2:system/vendor/firmware/a530_gpmu.fw2 \
@@ -395,10 +394,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/qvop/poc_64_hmm.gmm:system/vendor/etc/qvop/poc_64_hmm.gmm \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/thermal-engine.conf:system/vendor/etc/thermal-engine.conf \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/xtra_root_cert.pem:system/vendor/etc/xtra_root_cert.pem \
-    vendor/oneplus/msm8998-common/proprietary/vendor/framework/oat/arm/vendor.qti.hardware.sensorscalibrate-V1.0-java.odex:system/vendor/framework/oat/arm/vendor.qti.hardware.sensorscalibrate-V1.0-java.odex \
-    vendor/oneplus/msm8998-common/proprietary/vendor/framework/oat/arm/vendor.qti.hardware.sensorscalibrate-V1.0-java.vdex:system/vendor/framework/oat/arm/vendor.qti.hardware.sensorscalibrate-V1.0-java.vdex \
-    vendor/oneplus/msm8998-common/proprietary/vendor/framework/oat/arm64/vendor.qti.hardware.sensorscalibrate-V1.0-java.odex:system/vendor/framework/oat/arm64/vendor.qti.hardware.sensorscalibrate-V1.0-java.odex \
-    vendor/oneplus/msm8998-common/proprietary/vendor/framework/oat/arm64/vendor.qti.hardware.sensorscalibrate-V1.0-java.vdex:system/vendor/framework/oat/arm64/vendor.qti.hardware.sensorscalibrate-V1.0-java.vdex \
     vendor/oneplus/msm8998-common/proprietary/vendor/framework/qti-vzw-ims-internal.jar:system/vendor/framework/qti-vzw-ims-internal.jar \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:system/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
@@ -797,6 +792,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libspcom.so:system/vendor/lib/libspcom.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libspl.so:system/vendor/lib/libspl.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libtinyxml2_1.so:system/vendor/lib/libtinyxml2_1.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
@@ -1053,6 +1049,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libtinyxml2_1.so:system/vendor/lib64/libtinyxml2_1.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libtzdrmgenprov.so:system/vendor/lib64/libtzdrmgenprov.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libuiblur.so:system/vendor/lib64/libuiblur.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
