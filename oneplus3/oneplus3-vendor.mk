@@ -437,6 +437,7 @@ PRODUCT_PACKAGES += \
 ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
+    vendor/oneplus/oneplus3/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/oneplus/oneplus3/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/oneplus/oneplus3/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/oneplus/oneplus3/proprietary/etc/cne/wqeclient/profile1.xml:system/etc/cne/wqeclient/profile1.xml \
@@ -549,7 +550,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/mm-pp-dpps:$(TARGET_COPY_OUT_VENDOR)/bin/mm-pp-dpps \
-    vendor/oneplus/oneplus3/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/oneplus/oneplus3/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
