@@ -469,8 +469,6 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     TimeService \
     datastatusnotification \
-    fastdormancy \
-    shutdownlistener \
     com.qualcomm.location \
     qcrilmsgtunnel \
     ims \
