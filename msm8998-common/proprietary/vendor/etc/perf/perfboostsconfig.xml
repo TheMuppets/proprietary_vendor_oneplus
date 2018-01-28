@@ -103,5 +103,18 @@
         <Config
             Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="msm8998"
             Resources="0x41800000, 0x33, 0x40800000, 1000, 0x40800100, 1000, 0x40C00000, 0x2" />
+
+    <!--PackageInstall boost-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- Type="", Package Install boost -->
+
+        <Config
+            Id="0x00001088" Enable="true" Target="msm8998"
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000,0xFFF,
+                       0x40800100,0xFFF" />
     </PerfBoost>
 </BoostConfigs>
