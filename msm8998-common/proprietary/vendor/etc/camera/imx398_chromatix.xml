@@ -117,18 +117,21 @@ special_mode_mask values:
       <CPPSnapshot>imx398_cpp_snapshot_manual</CPPSnapshot>
       <A3Preview>imx398_3a_manual</A3Preview>
     </ChromatixName>
+  <ChromatixName special_mode_mask="VIDEO_4K">
+      <CPPVideo>imx398_cpp_4656x2608_30fps_video_4k</CPPVideo>
+    </ChromatixName>
   </CommonChromatixInfo>
   <ResolutionChromatixInfo>
     <ChromatixName sensor_resolution_index="0" special_mode_mask="0">
       <ISPPreview>imx398_isp_4656x3496_30fps_snapshot</ISPPreview>
       <ISPSnapshot>imx398_isp_4656x3496_30fps_snapshot</ISPSnapshot>
-      <ISPVideo>imx398_isp_4656x3496_30fps_snapshot</ISPVideo>
+      <ISPVideo>imx398_isp_4656x3496_30fps_video</ISPVideo>
       <CPPPreview>imx398_cpp_4656x3496_30fps_preview</CPPPreview>
       <CPPSnapshot>imx398_cpp_4656x3496_30fps_snapshot</CPPSnapshot>
-      <CPPVideo>imx398_cpp_4656x3496_30fps_snapshot</CPPVideo>
-      <CPPLiveshot>imx398_cpp_4656x3496_30fps_snapshot</CPPLiveshot>
+      <CPPVideo>imx398_cpp_4656x3496_30fps_video</CPPVideo>
+      <CPPLiveshot>imx398_cpp_4656x2608_30fps_preview</CPPLiveshot>
       <A3Preview>imx398_3a_4656x3496_30fps_preview</A3Preview>
-      <A3Video>imx398_3a_4656x3496_30fps_preview</A3Video>
+      <A3Video>imx398_3a_4656x3496_30fps_video</A3Video>
     </ChromatixName>
     <ChromatixName sensor_resolution_index="1" special_mode_mask="0">
       <ISPPreview>imx398_isp_4656x3496_30fps_snapshot</ISPPreview>
