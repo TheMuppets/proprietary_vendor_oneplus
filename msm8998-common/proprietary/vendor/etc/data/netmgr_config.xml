@@ -1778,9 +1778,9 @@
 
     <data name="rmnet_data_enabled" type="int"> 1 </data>
     <data name="dataformat_agg_dl_pkt" type="int"> 1 </data>
-    <data name="dataformat_agg_dl_size" type="int"> 2048 </data>
+    <data name="dataformat_agg_dl_size" type="int"> 1504 </data>
     <data name="dataformat_agg_ul_pkt" type="int"> 1 </data>
-    <data name="dataformat_agg_ul_size" type="int"> 2048 </data>
+    <data name="dataformat_agg_ul_size" type="int"> 1504 </data>
     <data name="dataformat_dl_data_aggregation_protocol" type="int"> 5 </data>
     <data name="dataformat_ul_data_aggregation_protocol" type="int"> 5 </data>
     <data name="dataformat_dl_gro_enabled" type="int"> 0 </data>
@@ -2066,9 +2066,10 @@
     <data name="dataformat_ul_gso_enabled" type="int"> 0 </data>
     <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
     <data name="tc_ul_baserate" type="int"> 0 </data>
-    <data name="pnd_rps_mask" type="int"> 0 </data>
-    <data name="vnd_rps_mask" type="int"> 0 </data>
+    <data name="pnd_rps_mask" type="int"> 2 </data>
+    <data name="vnd_rps_mask" type="int"> 13 </data>
     <data name="netdev_budget" type="int"> 0 </data>
+    <data name="netdev_max_backlog" type="int"> 100000 </data>
     <data name="low_latency_filters" type="int"> 1 </data>
     <data name="ibfc" type="int"> 0 </data>
     <data name="qos_disabled" type="int"> 0 </data>
