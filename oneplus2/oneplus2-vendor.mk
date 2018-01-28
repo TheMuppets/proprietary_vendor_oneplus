@@ -19,14 +19,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/oneplus/oneplus2/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/oneplus/oneplus2/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
-    vendor/oneplus/oneplus2/proprietary/bin/cnss_diag:system/bin/cnss_diag \
     vendor/oneplus/oneplus2/proprietary/bin/energy-awareness:system/bin/energy-awareness \
     vendor/oneplus/oneplus2/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/oneplus/oneplus2/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/oneplus/oneplus2/proprietary/bin/imscmservice:system/bin/imscmservice \
     vendor/oneplus/oneplus2/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/oneplus/oneplus2/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
-    vendor/oneplus/oneplus2/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/oneplus/oneplus2/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/oneplus/oneplus2/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/oneplus/oneplus2/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
