@@ -117,7 +117,7 @@ special_mode_mask values:
       <CPPSnapshot>imx398_cpp_snapshot_manual</CPPSnapshot>
       <A3Preview>imx398_3a_manual</A3Preview>
     </ChromatixName>
-  <ChromatixName special_mode_mask="VIDEO_4K">
+    <ChromatixName special_mode_mask="VIDEO_4K">
       <CPPVideo>imx398_cpp_4656x2608_30fps_video_4k</CPPVideo>
     </ChromatixName>
   </CommonChromatixInfo>
@@ -136,15 +136,26 @@ special_mode_mask values:
     <ChromatixName sensor_resolution_index="1" special_mode_mask="0">
       <ISPPreview>imx398_isp_4656x3496_30fps_snapshot</ISPPreview>
       <ISPSnapshot>imx398_isp_4656x3496_30fps_snapshot</ISPSnapshot>
+      <ISPVideo>imx398_isp_4656x3496_30fps_snapshot</ISPVideo>
+      <CPPPreview>imx398_cpp_4656x3496_30fps_preview</CPPPreview>
+      <CPPSnapshot>imx398_cpp_4608x3456_snapshot_bokeh</CPPSnapshot>
+      <CPPVideo>imx398_cpp_4608x3456_snapshot_bokeh</CPPVideo>
+      <CPPLiveshot>imx398_cpp_4608x3456_snapshot_bokeh</CPPLiveshot>
+      <A3Preview>imx398_3a_4608x3456_30fps_preview_bokeh</A3Preview>
+      <A3Video>imx398_3a_4608x3456_30fps_preview_bokeh</A3Video>
+    </ChromatixName>
+    <ChromatixName sensor_resolution_index="2" special_mode_mask="0">
+      <ISPPreview>imx398_isp_4656x3496_30fps_snapshot</ISPPreview>
+      <ISPSnapshot>imx398_isp_4656x3496_30fps_snapshot</ISPSnapshot>
       <ISPVideo>imx398_isp_4656x2608_30fps_video</ISPVideo>
       <CPPPreview>imx398_cpp_4656x2608_30fps_preview</CPPPreview>
-      <CPPSnapshot>imx398_cpp_4656x2608_30fps_video</CPPSnapshot>
-      <CPPVideo>imx398_cpp_4656x2608_30fps_video</CPPVideo>
-      <CPPLiveshot>imx398_cpp_4656x2608_30fps_video</CPPLiveshot>
+      <CPPSnapshot>imx398_cpp_4656x2608_30fps_video_4k</CPPSnapshot>
+      <CPPVideo>imx398_cpp_4656x2608_30fps_video_4k</CPPVideo>
+      <CPPLiveshot>imx398_cpp_4656x2608_30fps_video_4k</CPPLiveshot>
       <A3Preview>imx398_3a_4656x2608_30fps_preview</A3Preview>
       <A3Video>imx398_3a_4656x2608_30fps_video</A3Video>
     </ChromatixName>
-    <ChromatixName sensor_resolution_index="2" special_mode_mask="0">
+    <ChromatixName sensor_resolution_index="3" special_mode_mask="0">
       <ISPPreview>imx398_isp_2328x1304_60fps_video</ISPPreview>
       <ISPSnapshot>imx398_isp_2328x1304_60fps_video</ISPSnapshot>
       <ISPVideo>imx398_isp_2328x1304_60fps_video</ISPVideo>
@@ -155,7 +166,7 @@ special_mode_mask values:
       <A3Preview>imx398_3a_2328x1304_60fps_video</A3Preview>
       <A3Video>imx398_3a_2328x1304_60fps_video</A3Video>
     </ChromatixName>
-    <ChromatixName sensor_resolution_index="3" special_mode_mask="0">
+    <ChromatixName sensor_resolution_index="4" special_mode_mask="0">
       <ISPPreview>imx398_isp_1476x834_120fps_video</ISPPreview>
       <ISPSnapshot>imx398_isp_1476x834_120fps_video</ISPSnapshot>
       <ISPVideo>imx398_isp_1476x834_120fps_video</ISPVideo>
@@ -166,49 +177,16 @@ special_mode_mask values:
       <A3Preview>imx398_3a_1476x834_120fps_video</A3Preview>
       <A3Video>imx398_3a_1476x834_120fps_video</A3Video>
     </ChromatixName>
-    <ChromatixName sensor_resolution_index="4" special_mode_mask="0">
-      <ISPPreview>imx398_isp_3264x2448_30fps_snapshot_bokeh</ISPPreview>
-      <ISPSnapshot>imx398_isp_3264x2448_30fps_snapshot_bokeh</ISPSnapshot>
-      <ISPVideo>imx398_isp_3264x2448_30fps_snapshot_bokeh</ISPVideo>
-      <CPPPreview>imx398_cpp_3264x2448_30fps_preview_bokeh</CPPPreview>
-      <CPPSnapshot>imx398_cpp_3264x2448_30fps_snapshot_bokeh</CPPSnapshot>
-      <CPPVideo>imx398_cpp_3264x2448_30fps_snapshot_bokeh</CPPVideo>
-      <CPPLiveshot>imx398_cpp_3264x2448_30fps_snapshot_bokeh</CPPLiveshot>
-      <A3Preview>imx398_3a_3264x2448_24fps_preview_bokeh</A3Preview>
-      <A3Video>imx398_3a_3264x2448_24fps_preview_bokeh</A3Video>
-    </ChromatixName>
     <ChromatixName sensor_resolution_index="5" special_mode_mask="0">
-      <ISPPreview>imx398_isp_3264x2448_30fps_snapshot_bokeh</ISPPreview>
-      <ISPSnapshot>imx398_isp_3264x2448_30fps_snapshot_bokeh</ISPSnapshot>
-      <ISPVideo>imx398_isp_3264x2448_30fps_snapshot_bokeh</ISPVideo>
-      <CPPPreview>imx398_cpp_3264x2448_30fps_preview_bokeh</CPPPreview>
-      <CPPSnapshot>imx398_cpp_3264x2448_30fps_snapshot_bokeh</CPPSnapshot>
-      <CPPVideo>imx398_cpp_3264x2448_30fps_snapshot_bokeh</CPPVideo>
-      <CPPLiveshot>imx398_cpp_3264x2448_30fps_snapshot_bokeh</CPPLiveshot>
-      <A3Preview>imx398_3a_3264x2448_24fps_preview_bokeh</A3Preview>
-      <A3Video>imx398_3a_3264x2448_24fps_preview_bokeh</A3Video>
-    </ChromatixName>
-    <ChromatixName sensor_resolution_index="6" special_mode_mask="0">
-      <ISPPreview>imx398_isp_3264x2448_30fps_snapshot_bokeh</ISPPreview>
-      <ISPSnapshot>imx398_isp_3264x2448_30fps_snapshot_bokeh</ISPSnapshot>
-      <ISPVideo>imx398_isp_3264x2448_30fps_snapshot_bokeh</ISPVideo>
-      <CPPPreview>imx398_cpp_3264x2448_30fps_preview_bokeh</CPPPreview>
-      <CPPSnapshot>imx398_cpp_3264x2448_30fps_snapshot_bokeh</CPPSnapshot>
-      <CPPVideo>imx398_cpp_3264x2448_30fps_snapshot_bokeh</CPPVideo>
-      <CPPLiveshot>imx398_cpp_3264x2448_30fps_snapshot_bokeh</CPPLiveshot>
-      <A3Preview>imx398_3a_3264x2448_24fps_preview_bokeh</A3Preview>
-      <A3Video>imx398_3a_3264x2448_24fps_preview_bokeh</A3Video>
-    </ChromatixName>
-    <ChromatixName sensor_resolution_index="7" special_mode_mask="0">
-      <ISPPreview>imx398_isp_zsl_snapshot</ISPPreview>
+      <ISPPreview>imx398_isp_4656x3496_30fps_snapshot</ISPPreview>
       <ISPSnapshot>imx398_isp_4656x3496_30fps_snapshot</ISPSnapshot>
-      <ISPVideo>imx398_isp_4656x2608_30fps_video</ISPVideo>
-      <CPPPreview>imx398_preview_1080p_cpp</CPPPreview>
-      <CPPSnapshot>imx398_cpp_4656x2608_30fps_video</CPPSnapshot>
-      <CPPVideo>imx398_cpp_4656x2608_30fps_video</CPPVideo>
-      <CPPLiveshot>imx398_cpp_4656x2608_30fps_video</CPPLiveshot>
-      <A3Preview>imx398_3a_wechat_preview</A3Preview>
-      <A3Video>imx398_3a_4656x2608_30fps_video</A3Video>
+      <ISPVideo>imx398_isp_4656x3496_30fps_snapshot</ISPVideo>
+      <CPPPreview>imx398_cpp_4656x3496_30fps_preview</CPPPreview>
+      <CPPSnapshot>imx398_cpp_snapshot_nomultiframe</CPPSnapshot>
+      <CPPVideo>imx398_cpp_snapshot_nomultiframe</CPPVideo>
+      <CPPLiveshot>imx398_cpp_snapshot_nomultiframe</CPPLiveshot>
+      <A3Preview>imx398_3a_3264x2448_30fps_preview_bokeh</A3Preview>
+      <A3Video>imx398_3a_3264x2448_30fps_preview_bokeh</A3Video>
     </ChromatixName>
-  </ResolutionChromatixInfo>
+   </ResolutionChromatixInfo>
 </ChromatixConfigurationRoot>

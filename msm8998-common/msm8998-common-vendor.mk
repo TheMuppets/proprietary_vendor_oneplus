@@ -123,8 +123,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
-    vendor/oneplus/msm8998-common/proprietary/framework/rcs_service_aidl.jar:system/framework/rcs_service_aidl.jar \
-    vendor/oneplus/msm8998-common/proprietary/framework/rcs_service_api.jar:system/framework/rcs_service_api.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/oneplus/msm8998-common/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
@@ -483,7 +481,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_video.so:system/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_cpp_4656x3456_30fps_snapshot.so:system/vendor/lib/libchromatix_imx371_cpp_4656x3456_30fps_snapshot.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_cpp_640x480_120fps_video.so:system/vendor/lib/libchromatix_imx371_cpp_640x480_120fps_video.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_cpp_640x480_30fps_video.so:system/vendor/lib/libchromatix_imx371_cpp_640x480_30fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_snapshot.so:system/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_snapshot.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_video.so:system/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx371_isp_4656x3456_30fps_snapshot.so:system/vendor/lib/libchromatix_imx371_isp_4656x3456_30fps_snapshot.so \
@@ -509,8 +506,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx376k_postproc.so:system/vendor/lib/libchromatix_imx376k_postproc.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_1476x834_120fps_video.so:system/vendor/lib/libchromatix_imx398_3a_1476x834_120fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_2328x1304_60fps_video.so:system/vendor/lib/libchromatix_imx398_3a_2328x1304_60fps_video.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_3264x2448_24fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx398_3a_3264x2448_24fps_preview_bokeh.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_3264x2448_30fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx398_3a_3264x2448_30fps_preview_bokeh.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_4608x3456_30fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx398_3a_4608x3456_30fps_preview_bokeh.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_preview.so:system/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_preview.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_video.so:system/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_video_4k.so:system/vendor/lib/libchromatix_imx398_3a_4656x2608_30fps_video_4k.so \
@@ -519,12 +516,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_hq.so:system/vendor/lib/libchromatix_imx398_3a_hq.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_manual.so:system/vendor/lib/libchromatix_imx398_3a_manual.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_panorama.so:system/vendor/lib/libchromatix_imx398_3a_panorama.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_3a_wechat_preview.so:system/vendor/lib/libchromatix_imx398_3a_wechat_preview.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_common.so:system/vendor/lib/libchromatix_imx398_common.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_cpp_1476x834_120fps_video.so:system/vendor/lib/libchromatix_imx398_cpp_1476x834_120fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_cpp_2328x1304_60fps_video.so:system/vendor/lib/libchromatix_imx398_cpp_2328x1304_60fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_cpp_3264x2448_30fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx398_cpp_3264x2448_30fps_preview_bokeh.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_cpp_3264x2448_30fps_snapshot_bokeh.so:system/vendor/lib/libchromatix_imx398_cpp_3264x2448_30fps_snapshot_bokeh.so \
+    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_cpp_4608x3456_snapshot_bokeh.so:system/vendor/lib/libchromatix_imx398_cpp_4608x3456_snapshot_bokeh.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_cpp_4656x2608_30fps_preview.so:system/vendor/lib/libchromatix_imx398_cpp_4656x2608_30fps_preview.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_cpp_4656x2608_30fps_video.so:system/vendor/lib/libchromatix_imx398_cpp_4656x2608_30fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_cpp_4656x2608_30fps_video_4k.so:system/vendor/lib/libchromatix_imx398_cpp_4656x2608_30fps_video_4k.so \
@@ -546,9 +543,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_isp_4656x3496_30fps_video.so:system/vendor/lib/libchromatix_imx398_isp_4656x3496_30fps_video.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_isp_manual.so:system/vendor/lib/libchromatix_imx398_isp_manual.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_isp_panorama.so:system/vendor/lib/libchromatix_imx398_isp_panorama.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so:system/vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_postproc.so:system/vendor/lib/libchromatix_imx398_postproc.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libchromatix_imx398_preview_1080p_cpp.so:system/vendor/lib/libchromatix_imx398_preview_1080p_cpp.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
