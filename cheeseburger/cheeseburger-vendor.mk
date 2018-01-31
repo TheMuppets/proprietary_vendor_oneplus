@@ -18,6 +18,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/etc/permissions/com.fingerprints.extension.xml:system/etc/permissions/com.fingerprints.extension.xml \
     vendor/oneplus/cheeseburger/proprietary/lib/hw/fingerprint.msm8998.so:system/lib/hw/fingerprint.msm8998.so \
     vendor/oneplus/cheeseburger/proprietary/lib64/hw/fingerprint.msm8998.so:system/lib64/hw/fingerprint.msm8998.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_Bluetooth_cal.acdb:system/vendor/etc/acdbdata/EU/EU_Bluetooth_cal.acdb \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_General_cal.acdb:system/vendor/etc/acdbdata/EU/EU_General_cal.acdb \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_Global_cal.acdb:system/vendor/etc/acdbdata/EU/EU_Global_cal.acdb \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_Handset_cal.acdb:system/vendor/etc/acdbdata/EU/EU_Handset_cal.acdb \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_Hdmi_cal.acdb:system/vendor/etc/acdbdata/EU/EU_Hdmi_cal.acdb \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_Headset_cal.acdb:system/vendor/etc/acdbdata/EU/EU_Headset_cal.acdb \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_Speaker_cal.acdb:system/vendor/etc/acdbdata/EU/EU_Speaker_cal.acdb \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_workspaceFile.qwsp:system/vendor/etc/acdbdata/EU/EU_workspaceFile.qwsp \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:system/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:system/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb:system/vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb \
@@ -28,7 +36,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp:system/vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:system/vendor/etc/acdbdata/adsp_avs_config.acdb \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:system/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:system/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:system/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/qdcm_calib_data_samsung_s6e3fa5_1080p_cmd_mode_dsi_panel.xml:system/vendor/etc/qdcm_calib_data_samsung_s6e3fa5_1080p_cmd_mode_dsi_panel.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/qdcm_calib_data_samsung_s6e3fa6_1080p_cmd_mode_dsi_panel.xml:system/vendor/etc/qdcm_calib_data_samsung_s6e3fa6_1080p_cmd_mode_dsi_panel.xml
 
 PRODUCT_PACKAGES += \
     com.fingerprints.extension \
