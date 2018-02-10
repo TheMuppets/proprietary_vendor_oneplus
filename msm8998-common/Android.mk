@@ -40,7 +40,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
 include $(BUILD_PREBUILT)
 
-
 ifeq ($(QCPATH),)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libbtnv
