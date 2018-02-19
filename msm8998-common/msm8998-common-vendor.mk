@@ -93,18 +93,18 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
     vendor/oneplus/msm8998-common/proprietary/etc/fsync_db.config:system/etc/fsync_db.config \
     vendor/oneplus/msm8998-common/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
-    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5_vstab_db_1080p_video_0_30fps.config:system/etc/oneplus5_vstab_db_1080p_video_0_30fps.config \
-    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5_vstab_db_1080p_video_0_60fps.config:system/etc/oneplus5_vstab_db_1080p_video_0_60fps.config \
-    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5_vstab_db_1080p_video_1_30fps.config:system/etc/oneplus5_vstab_db_1080p_video_1_30fps.config \
-    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5_vstab_db_4k_video_0_30fps.config:system/etc/oneplus5_vstab_db_4k_video_0_30fps.config \
-    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5_vstab_db_720p_video_0_30fps.config:system/etc/oneplus5_vstab_db_720p_video_0_30fps.config \
-    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5_vstab_db_720p_video_1_30fps.config:system/etc/oneplus5_vstab_db_720p_video_1_30fps.config \
     vendor/oneplus/msm8998-common/proprietary/etc/oneplus5T_vstab_db_1080p_video_0_30fps.config:system/etc/oneplus5T_vstab_db_1080p_video_0_30fps.config \
     vendor/oneplus/msm8998-common/proprietary/etc/oneplus5T_vstab_db_1080p_video_0_60fps.config:system/etc/oneplus5T_vstab_db_1080p_video_0_60fps.config \
     vendor/oneplus/msm8998-common/proprietary/etc/oneplus5T_vstab_db_1080p_video_1_30fps.config:system/etc/oneplus5T_vstab_db_1080p_video_1_30fps.config \
     vendor/oneplus/msm8998-common/proprietary/etc/oneplus5T_vstab_db_4k_video_0_30fps.config:system/etc/oneplus5T_vstab_db_4k_video_0_30fps.config \
     vendor/oneplus/msm8998-common/proprietary/etc/oneplus5T_vstab_db_720p_video_0_30fps.config:system/etc/oneplus5T_vstab_db_720p_video_0_30fps.config \
     vendor/oneplus/msm8998-common/proprietary/etc/oneplus5T_vstab_db_720p_video_1_30fps.config:system/etc/oneplus5T_vstab_db_720p_video_1_30fps.config \
+    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5_vstab_db_1080p_video_0_30fps.config:system/etc/oneplus5_vstab_db_1080p_video_0_30fps.config \
+    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5_vstab_db_1080p_video_0_60fps.config:system/etc/oneplus5_vstab_db_1080p_video_0_60fps.config \
+    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5_vstab_db_1080p_video_1_30fps.config:system/etc/oneplus5_vstab_db_1080p_video_1_30fps.config \
+    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5_vstab_db_4k_video_0_30fps.config:system/etc/oneplus5_vstab_db_4k_video_0_30fps.config \
+    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5_vstab_db_720p_video_0_30fps.config:system/etc/oneplus5_vstab_db_720p_video_0_30fps.config \
+    vendor/oneplus/msm8998-common/proprietary/etc/oneplus5_vstab_db_720p_video_1_30fps.config:system/etc/oneplus5_vstab_db_720p_video_1_30fps.config \
     vendor/oneplus/msm8998-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/oneplus/msm8998-common/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/oneplus/msm8998-common/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
@@ -255,6 +255,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib64/libjni_trueportrait.so:system/lib64/libjni_trueportrait.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libjni_truescanner_v2.so:system/lib64/libjni_truescanner_v2.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libjni_ubifocus.so:system/lib64/libjni_ubifocus.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libldacBT_abr.so:system/lib64/libldacBT_abr.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libldacBT_enc.so:system/lib64/libldacBT_enc.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
@@ -1080,6 +1082,7 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     qcrilmsgtunnel \
     TimeService \
+    aptxui \
     colorservice \
     qcnvitems \
     qcrilhook \
