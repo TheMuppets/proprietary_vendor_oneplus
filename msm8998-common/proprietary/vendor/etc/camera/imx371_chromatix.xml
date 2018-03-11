@@ -92,6 +92,9 @@ special_mode_mask values:
     <ChromatixName special_mode_mask="FLASH">
       <CPPSnapshot>imx371_cpp_2304x1728_30fps_flash</CPPSnapshot>
     </ChromatixName>
+    <ChromatixName special_mode_mask="FACE_REGISTER">
+      <A3Preview>imx371_3a_2304x1728_30fps_face_register</A3Preview>
+    </ChromatixName>
   </CommonChromatixInfo>
   <ResolutionChromatixInfo>
     <ChromatixName sensor_resolution_index="0" special_mode_mask="0">

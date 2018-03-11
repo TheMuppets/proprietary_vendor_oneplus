@@ -684,7 +684,7 @@
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 7 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 7 </data>
-      <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
+      <data name="dataformat_dl_gro_enabled" type="int"> 0 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
       <data name="pnd_rps_mask" type="int"> 16 </data>
       <data name="vnd_rps_mask" type="int"> 32 </data>
@@ -770,7 +770,7 @@
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 7 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 7 </data>
-      <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
+      <data name="dataformat_dl_gro_enabled" type="int"> 0 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="netdev_budget" type="int"> 9 </data>
@@ -994,7 +994,7 @@
       <data name="dataformat_agg_ul_size" type="int"> 0 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 7 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 7 </data>
-      <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
+      <data name="dataformat_dl_gro_enabled" type="int"> 0 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
 
@@ -1076,7 +1076,7 @@
       <data name="dataformat_agg_dl_size" type="int"> 8192 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 7 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 7 </data>
-      <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
+      <data name="dataformat_dl_gro_enabled" type="int"> 0 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 0 </data>
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
 
@@ -1162,7 +1162,7 @@
       <data name="dataformat_agg_ul_size" type="int"> 0 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 7 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 7 </data>
-      <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
+      <data name="dataformat_dl_gro_enabled" type="int"> 0 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
 
@@ -1255,7 +1255,7 @@
       <data name="dataformat_agg_ul_size" type="int"> 0 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 7 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 7 </data>
-      <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
+      <data name="dataformat_dl_gro_enabled" type="int"> 0 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
       <data name="netdev_max_backlog" type="int"> 10000 </data>
@@ -1353,7 +1353,7 @@
       <data name="dataformat_agg_ul_size" type="int"> 0 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 7 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 7 </data>
-      <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
+      <data name="dataformat_dl_gro_enabled" type="int"> 0 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
       <data name="netdev_max_backlog" type="int"> 10000 </data>
@@ -1546,7 +1546,7 @@
       <data name="dataformat_agg_ul_size" type="int"> 0 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 8 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 8 </data>
-      <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
+      <data name="dataformat_dl_gro_enabled" type="int"> 0 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 0 </data>
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
 
@@ -1873,7 +1873,7 @@
       <data name="dataformat_agg_ul_size" type="int"> 0 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 8 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 8 </data>
-      <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
+      <data name="dataformat_dl_gro_enabled" type="int"> 0 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
       <data name="netdev_max_backlog" type="int"> 10000 </data>
@@ -1968,7 +1968,7 @@
       <data name="dataformat_agg_ul_size" type="int"> 0 </data>
       <data name="dataformat_dl_data_aggregation_protocol" type="int"> 8 </data>
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 8 </data>
-      <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
+      <data name="dataformat_dl_gro_enabled" type="int"> 0 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
 
