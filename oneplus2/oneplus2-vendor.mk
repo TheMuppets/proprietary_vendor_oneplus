@@ -149,7 +149,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
-    vendor/oneplus/oneplus2/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
@@ -198,7 +197,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libchromatix_ov5648_30fps_video.so:system/vendor/lib/libchromatix_ov5648_30fps_video.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libchromatix_ov5648_common.so:system/vendor/lib/libchromatix_ov5648_common.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
-    vendor/oneplus/oneplus2/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
@@ -361,10 +359,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:system/vendor/lib64/libOmxAmrwbplusDec.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libOmxWmaDec.so:system/vendor/lib64/libOmxWmaDec.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so \
-    vendor/oneplus/oneplus2/proprietary/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libSHIMDivxDrm.so:system/vendor/lib64/libSHIMDivxDrm.so \
-    vendor/oneplus/oneplus2/proprietary/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
@@ -378,7 +374,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
-    vendor/oneplus/oneplus2/proprietary/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libdataitems.so:system/vendor/lib64/libdataitems.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libdisp-aba.so:system/vendor/lib64/libdisp-aba.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
@@ -437,6 +432,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libthermalclient.so:system/vendor/lib64/libthermalclient.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
+    vendor/oneplus/oneplus2/proprietary/vendor/lib64/libtime_genoff.so:system/vendor/lib64/libtime_genoff.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
@@ -459,7 +455,6 @@ PRODUCT_PACKAGES += \
     libqmi_cci \
     libqmi_client_qmux \
     libqmiservices \
-    libtime_genoff \
     QtiTelephonyService \
     TimeService \
     datastatusnotification \
