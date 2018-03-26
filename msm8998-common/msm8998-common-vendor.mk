@@ -1206,6 +1206,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/perf/perf-profile5.conf:system/vendor/etc/perf/perf-profile5.conf \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/perf/perf-profile6.conf:system/vendor/etc/perf/perf-profile6.conf \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/perf/perfboostsconfig.xml:system/vendor/etc/perf/perfboostsconfig.xml \
+    vendor/oneplus/msm8998-common/proprietary/vendor/etc/powerhint.xml:system/vendor/etc/powerhint.xml \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libperfgluelayer.so:system/vendor/lib/libperfgluelayer.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libqti-iopd-client.so:system/vendor/lib/libqti-iopd-client.so \
