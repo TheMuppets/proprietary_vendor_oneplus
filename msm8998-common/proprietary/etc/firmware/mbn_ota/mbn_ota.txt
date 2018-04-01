@@ -23,4 +23,3 @@ mcfg_sw/generic/sea/ytl/commerci/mcfg_sw.mbn
 mcfg_sw/generic/common/row/commerci/mcfg_sw.mbn
 mcfg_sw/generic/sea/cht/commerci/mcfg_sw.mbn
 mcfg_sw/generic/sea/fareasto/commerci/mcfg_sw.mbn
-mcfg_sw/generic/apac/idea/commerci/mcfg_sw.mbn
