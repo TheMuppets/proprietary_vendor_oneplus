@@ -184,10 +184,10 @@
         -->
         <UIBC>
             <UIBCValid>1</UIBCValid>                <!-- UIBC by default enabled -->
-            <M4Enable>1</M4Enable>                  <!-- 0/1 send UIBC enable in M4 or not -->
+            <M4Enable>0</M4Enable>                  <!-- 0/1 send UIBC enable in M4 or not -->
             <M14Support>0</M14Support>              <!-- 0/1 M14 supported or not -->
             <InputCategory>
-                <Generic>1</Generic>                <!-- 0/1 - support generic or not -->
+                <Generic>0</Generic>                <!-- 0/1 - support generic or not -->
                 <HID>1</HID>                        <!-- 0/1 - support HID or not -->
             </InputCategory>
 
