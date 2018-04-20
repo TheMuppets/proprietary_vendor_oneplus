@@ -5,6 +5,6 @@
     Confidential and Proprietary - Qualcomm Technologies, Inc.
  -->
 <permissions>
-    <library name="android.hidl.manager@V1.0-java"
+    <library name="android.hidl.manager@1.0-java"
           file="/system/framework/android.hidl.manager-V1.0-java.jar"/>
 </permissions>
