@@ -639,7 +639,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libfusionLibrary.so:system/vendor/lib/libfusionLibrary.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libgdtap.so:system/vendor/lib/libgdtap.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib/libgnsspps.so:system/vendor/lib/libgnsspps.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libhbtpclient.so:system/vendor/lib/libhbtpclient.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libhbtpdsp.so:system/vendor/lib/libhbtpdsp.so \
@@ -1001,7 +1000,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libgdtap.so:system/vendor/lib64/libgdtap.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libgnsspps.so:system/vendor/lib64/libgnsspps.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libhbtpclient.so:system/vendor/lib64/libhbtpclient.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libhbtpdsp.so:system/vendor/lib64/libhbtpdsp.so \
