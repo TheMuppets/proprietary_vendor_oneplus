@@ -121,10 +121,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/libop_xobjdetect.so:system/lib/libop_xobjdetect.so \
     vendor/oneplus/oneplus3/proprietary/lib/libop_xphoto.so:system/lib/libop_xphoto.so \
     vendor/oneplus/oneplus3/proprietary/lib/libop_zlib.so:system/lib/libop_zlib.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libopcamera.so:system/lib/libopcamera.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcamera_crypt.so:system/lib/libopcamera_crypt.so \
     vendor/oneplus/oneplus3/proprietary/lib/libopcamera_native_modules.so:system/lib/libopcamera_native_modules.so \
-    vendor/oneplus/oneplus3/proprietary/lib/libopcameralib.so:system/lib/libopcameralib.so \
     vendor/oneplus/oneplus3/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/oneplus/oneplus3/proprietary/lib/libteeclientjni.so:system/lib/libteeclientjni.so \
     vendor/oneplus/oneplus3/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
