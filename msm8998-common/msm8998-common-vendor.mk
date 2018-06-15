@@ -270,7 +270,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/camera/imx371_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx371_chromatix.xml \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/camera/imx376k_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx376k_chromatix.xml \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/camera/imx398_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx398_chromatix.xml \
-    vendor/oneplus/msm8998-common/proprietary/vendor/etc/camera/license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/license.lic \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile3.xml \
