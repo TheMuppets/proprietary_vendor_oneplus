@@ -70,7 +70,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/etc/camera/cp/SystemParamsBokeh.bin:system/etc/camera/cp/SystemParamsBokeh.bin \
     vendor/oneplus/msm8998-common/proprietary/etc/camera/cp/SystemParamsFusion.bin:system/etc/camera/cp/SystemParamsFusion.bin \
     vendor/oneplus/msm8998-common/proprietary/etc/camera/cp/systemParams.bin:system/etc/camera/cp/systemParams.bin \
-    vendor/oneplus/msm8998-common/proprietary/etc/camera/license.lic:system/etc/camera/license.lic \
     vendor/oneplus/msm8998-common/proprietary/etc/camera/sticker/dog.zip:system/etc/camera/sticker/dog.zip \
     vendor/oneplus/msm8998-common/proprietary/etc/camera/sticker/huzi.zip:system/etc/camera/sticker/huzi.zip \
     vendor/oneplus/msm8998-common/proprietary/etc/camera/sticker/megviifacepp_0_4_7_model:system/etc/camera/sticker/megviifacepp_0_4_7_model \
