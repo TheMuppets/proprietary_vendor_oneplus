@@ -103,6 +103,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/oneplus/oneplus2/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/oneplus/oneplus2/proprietary/framework/imscmlibrary.jar:system/framework/imscmlibrary.jar \
+    vendor/oneplus/oneplus2/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
+    vendor/oneplus/oneplus2/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/oneplus/oneplus2/proprietary/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar \
     vendor/oneplus/oneplus2/proprietary/lib/hw/fingerprint.msm8994.so:system/lib/hw/fingerprint.msm8994.so \
     vendor/oneplus/oneplus2/proprietary/lib/libFNVfbEngineLib.so:system/lib/libFNVfbEngineLib.so \
@@ -462,6 +464,4 @@ PRODUCT_PACKAGES += \
     TimeService \
     ims \
     imssettings \
-    qcnvitems \
-    qcrilhook \
     pp_calib_data_jd35695_1080p_cmd_mode_dsi_panel
