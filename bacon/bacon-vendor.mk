@@ -49,6 +49,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so
 PRODUCT_COPY_FILES += \
     vendor/oneplus/bacon/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/hw/android.hardware.nfc@1.0-impl.so:system/vendor/lib/hw/android.hardware.nfc@1.0-impl.so \
+    vendor/oneplus/bacon/proprietary/vendor/lib/hw/nfc_nci.bacon.so:system/vendor/lib/hw/nfc_nci.bacon.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libactuator_dw9714.so:system/vendor/lib/libactuator_dw9714.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libactuator_dw9714_camcorder.so:system/vendor/lib/libactuator_dw9714_camcorder.so \
     vendor/oneplus/bacon/proprietary/vendor/lib/libactuator_dw9714_camera.so:system/vendor/lib/libactuator_dw9714_camera.so \
