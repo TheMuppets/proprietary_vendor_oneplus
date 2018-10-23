@@ -68,6 +68,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_facebeauty.so:system/lib/lib_oneplus_facebeauty.so \
     vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_md.so:system/lib/lib_oneplus_md.so \
     vendor/oneplus/oneplus3/proprietary/lib/lib_oneplus_watermark.so:system/lib/lib_oneplus_watermark.so \
+    vendor/oneplus/oneplus3/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmms_gyro_vstab.so:system/lib/libmms_gyro_vstab.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmms_gyro_vstab_auth.so:system/lib/libmms_gyro_vstab_auth.so \
     vendor/oneplus/oneplus3/proprietary/lib/libmms_hal_vstab.so:system/lib/libmms_hal_vstab.so \
@@ -378,7 +379,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_isp_sce40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_sce40.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_isp_snr47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_snr47.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_sub_module.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_llvd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_llvd.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_optizoom_lib.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_paaf_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_paaf_lib.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmmcamera_pdaf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdaf.so \
@@ -464,7 +464,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/oneplus/oneplus3/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/oneplus/oneplus3/proprietary/framework/uimlpalibrary.jar:system/framework/uimlpalibrary.jar \
-    vendor/oneplus/oneplus3/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/oneplus/oneplus3/proprietary/lib/libadsprpc.so:system/lib/libadsprpc.so \
     vendor/oneplus/oneplus3/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/oneplus/oneplus3/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
@@ -571,7 +570,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxApeDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDecSw.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxEvrcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxEvrcDec.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Dec.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxVideoDSMode.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVideoDSMode.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxVpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVpp.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
@@ -592,7 +590,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libcppf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppf.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvadsp_stub.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
@@ -604,8 +601,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libllvm-qgl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qgl.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmm-disp-apis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-disp-apis.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib/libmm-qdcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-qdcm.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
@@ -679,7 +674,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-dplmedia.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-dplmedia.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-imsSDP.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsSDP.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsqimf.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-rtpcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpcommon.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-rtpcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpcore.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpdaemoninterface.so \
@@ -702,7 +696,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptXHD_encoder.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptX_encoder.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbccQTI.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-hidlclient.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libc2d30-a5xx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30-a5xx.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
@@ -736,15 +729,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libllvm-qgl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qgl.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libloc_ds_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_ds_api.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libloc_externalDr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_externalDr.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice_glue.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_client.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_wifihal.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libmm-disp-apis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-disp-apis.so \
-    vendor/oneplus/oneplus3/proprietary/vendor/lib64/libmm-qdcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-qdcm.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
     vendor/oneplus/oneplus3/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
