@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+<!--Copyright (c) 2015-2018 Qualcomm Technologies, Inc.
     All Rights Reserved.
     Confidential and Proprietary - Qualcomm Technologies, Inc.-->
 <AndsfPolicy><Andsf>
@@ -152,13 +152,13 @@
 					<!-- Time for which CQE is not reevaluted after it was declared bad due to MAC stats -->
 					<MACHysteresisTimer units="secs">120</MACHysteresisTimer>
 					<!-- Alpha to compute RSSI averaging based on IIR filtering mechanism -->
-					<MACStatsAveragingAlpha>0.51</MACStatsAveragingAlpha>
+					<MACStatsAveragingAlpha>0.7</MACStatsAveragingAlpha>
 					<!-- Threshold for RX MPDU PER -->
-					<RMP_THR>0.18</RMP_THR>
+					<RMP_THR>0.12</RMP_THR>
 					<!-- Minimum MPDU count to activate RX MPDU PER -->
-					<RMP_CNT_THR>19</RMP_CNT_THR>
+					<RMP_CNT_THR>10</RMP_CNT_THR>
 					<!-- Cutoff RX MCS index -->
-					<RX_MCS_THR>3</RX_MCS_THR>
+					<RX_MCS_THR>9</RX_MCS_THR>
 					<!-- Cutoff RX BW index -->
 					<RX_BW_THR>3</RX_BW_THR>
 					<!-- Threshold for TX MSDU drop -->
@@ -166,9 +166,9 @@
 					<!-- Minimum MSDU count to activate TX MSDU drop -->
 					<TMD_CNT_THR>2</TMD_CNT_THR>
 					<!-- Threshold for MPDU retry rate -->
-					<TMR_THR>0.44</TMR_THR>
+					<TMR_THR>0.64</TMR_THR>
 					<!-- Minimum MPDU count to activate MPDU retry rate -->
-					<TMR_CNT_THR>60</TMR_CNT_THR>
+					<TMR_CNT_THR>100</TMR_CNT_THR>
 					<!-- Cutoff TX MCS index -->
 					<TX_MCS_THR>4</TX_MCS_THR>
 					<!-- Cutoff TX BW index -->
@@ -178,9 +178,9 @@
 					<!-- Maximum MPDU count to activate MPDU retry rate -->
 					<TMR_UBCNT_THR>1000</TMR_UBCNT_THR>
 					<!-- Threshold for PERAM -->
-					<PERAM_THR>0.05</PERAM_THR>
+					<PERAM_THR>0.22</PERAM_THR>
 					<!-- Minimum MPDU count to activate PERAM -->
-					<PERAM_CNT_THR>10</PERAM_CNT_THR>
+					<PERAM_CNT_THR>20</PERAM_CNT_THR>
 					<!-- Maximum MPDU count to activate PERAM -->
 					<PERAM_UBCNT_THR>1000</PERAM_UBCNT_THR>
 					<!-- CQE throughput Threshold-->
