@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Copyright (c) 2015-2017 Qualcomm Technologies, Inc.
+<!--Copyright (c) 2015-2018 Qualcomm Technologies, Inc.
     All Rights Reserved.
     Confidential and Proprietary - Qualcomm Technologies, Inc.-->
 <AndsfPolicy><Andsf>
@@ -100,7 +100,7 @@
 					<!-- Alpha to compute RSSI averaging based on IIR filtering mechanism -->
 					<MACStatsAveragingAlpha>0.55</MACStatsAveragingAlpha>
 					<!-- Threshold for RX MPDU PER -->
-					<RMP_THR>0.09</RMP_THR>
+					<RMP_THR>1</RMP_THR>
 					<!-- Minimum MPDU count to activate RX MPDU PER -->
 					<RMP_CNT_THR>4</RMP_CNT_THR>
 					<!-- Cutoff RX MCS index -->
@@ -108,11 +108,11 @@
 					<!-- Cutoff RX BW index -->
 					<RX_BW_THR>3</RX_BW_THR>
 					<!-- Threshold for TX MSDU drop -->
-					<TMD_THR>0.1</TMD_THR>
+					<TMD_THR>1</TMD_THR>
 					<!-- Minimum MSDU count to activate TX MSDU drop -->
 					<TMD_CNT_THR>2</TMD_CNT_THR>
 					<!-- Threshold for MPDU retry rate -->
-					<TMR_THR>0.55</TMR_THR>
+					<TMR_THR>1</TMR_THR>
 					<!-- Minimum MPDU count to activate MPDU retry rate -->
 					<TMR_CNT_THR>50</TMR_CNT_THR>
 					<!-- Cutoff TX MCS index -->
@@ -124,7 +124,7 @@
 					<!-- Maximum MPDU count to activate MPDU retry rate -->
 					<TMR_UBCNT_THR>300</TMR_UBCNT_THR>
 					<!-- Threshold for PERAM -->
-					<PERAM_THR>0.15</PERAM_THR>
+					<PERAM_THR>1</PERAM_THR>
 					<!-- Minimum MPDU count to activate PERAM -->
 					<PERAM_CNT_THR>4</PERAM_CNT_THR>
 					<!-- Maximum MPDU count to activate PERAM -->
@@ -138,10 +138,10 @@
 				<CQE_Thresholds Id="128">
                     <!-- RSSI threshold from which all values greather than it is considered as good for wlan to be -->
 					<!-- a candidate for interface selection -->
-					<RSSIAddThreshold units="dbm">-78,-78</RSSIAddThreshold>
+					<RSSIAddThreshold units="dbm">-79,-79</RSSIAddThreshold>
 					<!-- RSSI threshold from which all values lesser than it is considered as bad for wlan to be -->
 					<!-- a candidate for interface selection -->
-					<RSSIDropThreshold units="dbm">-78,-78</RSSIDropThreshold>
+					<RSSIDropThreshold units="dbm">-79,-79</RSSIDropThreshold>
 					<!-- Interval over whcih RSSI values are averaged -->
 					<RSSIAveragingInterval units="secs">5</RSSIAveragingInterval>
 					<!-- RSSI threshold below which MAC hysteresis timer is not started -->
@@ -152,25 +152,25 @@
 					<!-- Time for which CQE is not reevaluted after it was declared bad due to MAC stats -->
 					<MACHysteresisTimer units="secs">120</MACHysteresisTimer>
 					<!-- Alpha to compute RSSI averaging based on IIR filtering mechanism -->
-					<MACStatsAveragingAlpha>0.51</MACStatsAveragingAlpha>
+					<MACStatsAveragingAlpha>0.64</MACStatsAveragingAlpha>
 					<!-- Threshold for RX MPDU PER -->
-					<RMP_THR>0.18</RMP_THR>
+					<RMP_THR>1</RMP_THR>
 					<!-- Minimum MPDU count to activate RX MPDU PER -->
-					<RMP_CNT_THR>19</RMP_CNT_THR>
+					<RMP_CNT_THR>12</RMP_CNT_THR>
 					<!-- Cutoff RX MCS index -->
 					<RX_MCS_THR>3</RX_MCS_THR>
 					<!-- Cutoff RX BW index -->
 					<RX_BW_THR>3</RX_BW_THR>
 					<!-- Threshold for TX MSDU drop -->
-					<TMD_THR>0.1</TMD_THR>
+					<TMD_THR>1</TMD_THR>
 					<!-- Minimum MSDU count to activate TX MSDU drop -->
 					<TMD_CNT_THR>2</TMD_CNT_THR>
 					<!-- Threshold for MPDU retry rate -->
-					<TMR_THR>0.44</TMR_THR>
+					<TMR_THR>1</TMR_THR>
 					<!-- Minimum MPDU count to activate MPDU retry rate -->
 					<TMR_CNT_THR>60</TMR_CNT_THR>
 					<!-- Cutoff TX MCS index -->
-					<TX_MCS_THR>4</TX_MCS_THR>
+					<TX_MCS_THR>8</TX_MCS_THR>
 					<!-- Cutoff TX BW index -->
 					<TX_BW_THR>2</TX_BW_THR>
 					<!-- Maximum MPDU count to activate RX MPDU PER -->
@@ -178,9 +178,9 @@
 					<!-- Maximum MPDU count to activate MPDU retry rate -->
 					<TMR_UBCNT_THR>1000</TMR_UBCNT_THR>
 					<!-- Threshold for PERAM -->
-					<PERAM_THR>0.05</PERAM_THR>
+					<PERAM_THR>1</PERAM_THR>
 					<!-- Minimum MPDU count to activate PERAM -->
-					<PERAM_CNT_THR>10</PERAM_CNT_THR>
+					<PERAM_CNT_THR>20</PERAM_CNT_THR>
 					<!-- Maximum MPDU count to activate PERAM -->
 					<PERAM_UBCNT_THR>1000</PERAM_UBCNT_THR>
 					<!-- CQE throughput Threshold-->
@@ -216,7 +216,7 @@
 					<!-- The threshold that ultimately decides the wlan is good or bad based on the combined MAC parameters -->
 					<!-- such as retry, multi-retry, fail and  ack fail metric -->
 					<!-- when average RSSI is greater than RSSIModelThreshold -->
-                    <MACMibThreshold2a>0.42</MACMibThreshold2a>
+                    <MACMibThreshold2a>1</MACMibThreshold2a>
 					<!-- The weightage that given to retry metric in computation of CQE -->
 					<!-- when average RSSI is greater than RSSIModelThreshold -->
 					<RetryMetricWeight2a>0.0597</RetryMetricWeight2a>
@@ -226,7 +226,7 @@
 					<!-- The threshold that ultimately decides the wlan is good or bad based on the combined MAC parameters -->
 					<!-- such as retry, multi-retry, fail and  ack fail metric -->
 					<!-- when average RSSI is less than or equal to RSSIModelThreshold -->
-					<MACMibThreshold2b>0.21</MACMibThreshold2b>
+					<MACMibThreshold2b>1</MACMibThreshold2b>
 					<!-- The weightage that given to retry metric in computation of CQE -->
 					<!-- when average RSSI is less than or equal to RSSIModelThreshold -->
 					<RetryMetricWeight2b>0.1366</RetryMetricWeight2b>
