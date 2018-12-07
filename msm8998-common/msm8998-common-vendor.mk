@@ -103,8 +103,17 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:system/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:system/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/com.qualcomm.qti.uceservice-V2.0-java.jar:system/framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/com.quicinc.cne.api-V1.1-java.jar:system/framework/com.quicinc.cne.api-V1.1-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/com.quicinc.cne.constants-V1.0-java.jar:system/framework/com.quicinc.cne.constants-V1.0-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/com.quicinc.cne.constants-V2.0-java.jar:system/framework/com.quicinc.cne.constants-V2.0-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/com.quicinc.cne.constants-V2.1-java.jar:system/framework/com.quicinc.cne.constants-V2.1-java.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/com.quicinc.cne.server-V1.0-java.jar:system/framework/com.quicinc.cne.server-V1.0-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/com.quicinc.cne.server-V2.0-java.jar:system/framework/com.quicinc.cne.server-V2.0-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/com.quicinc.cne.server-V2.1-java.jar:system/framework/com.quicinc.cne.server-V2.1-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/com.quicinc.cne.server-V2.2-java.jar:system/framework/com.quicinc.cne.server-V2.2-java.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/oneplus/msm8998-common/proprietary/vendor/framework/embmslibrary.jar:$(TARGET_COPY_OUT_VENDOR)/framework/embmslibrary.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
@@ -112,7 +121,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/framework/qcrilhook.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qcrilhook.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/oneplus/msm8998-common/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/vendor.qti.data.factory-V1.0-java.jar:system/framework/vendor.qti.data.factory-V1.0-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar:system/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/vendor.qti.hardware.data.latency-V1.0-java.jar:system/framework/vendor.qti.hardware.data.latency-V1.0-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar:system/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar \
     vendor/oneplus/msm8998-common/proprietary/vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:$(TARGET_COPY_OUT_VENDOR)/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/vendor.qti.hardware.soter-V1.0-java.jar:system/framework/vendor.qti.hardware.soter-V1.0-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar:system/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:system/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/vendor.qti.latency-V2.0-java.jar:system/framework/vendor.qti.latency-V2.0-java.jar \
+    vendor/oneplus/msm8998-common/proprietary/framework/vendor.qti.voiceprint-V1.0-java.jar:system/framework/vendor.qti.voiceprint-V1.0-java.jar \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/extractors/libmmparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/extractors/libmmparser.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/lib-imscamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imscamera.so \
@@ -1169,7 +1187,6 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     embms \
     TimeService \
-    vendor.qti.hardware.soter-V1.0-java \
     WfdCommon
 endif
 
