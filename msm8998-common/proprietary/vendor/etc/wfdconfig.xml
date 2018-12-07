@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
     <!--
-        Copyright (C) 2012 - 2017 Qualcomm Technologies, Inc.
+        Copyright (C) 2012 - 2018 Qualcomm Technologies, Inc.
         All Rights Reserved.
         Confidential and Proprietary - Qualcomm Technologies, Inc.
     -->
@@ -19,6 +19,9 @@
 
         <AudioAAC>
             <Name>AAC</Name>
+            <!-- enable AAC to fix CBGP-341,no sound when connecting Honor box
+                 guoguangyi@multimedia,2018/20/24
+            -->
             <Valid>1</Valid>
             <Channels>6</Channels>
             <SamplingFreq>48000</SamplingFreq>
@@ -121,7 +124,6 @@
                 Resolution is 720P
             -->
             <MaxOverlay>5</MaxOverlay>
-            <BlendMode>0</BlendMode>
             <HRes>1280</HRes>
             <VRes>720</VRes>
             <Mode>CEA</Mode>
@@ -131,7 +133,7 @@
             Standby Resume capability is supported
         -->
         <StandbyResumeCapability>
-            <Valid>1</Valid>
+            <Valid>0</Valid>
         </StandbyResumeCapability>
 
         <!--
@@ -153,7 +155,7 @@
             <FrameInterval>0</FrameInterval>
         </FrameSkipping>
 
-        <!--  enable HDCP by default -->
+        <!--  disable HDCP by default -->
         <ContentProtection>
             <Valid>0</Valid>
             <!--
@@ -173,8 +175,8 @@
         -->
         <RTPDumpEnable>
             <!-- DEPRECATED -->
-            <!-- For enabling RTP encoder dumping
-                 persist.sys.enable_RTPDumps to  1
+            <!-- For enabling RTP encoder dumping set
+                 persist.vendor.debug.rtp.enable_dump to 1
                  /data/media/dump.ts
             -->
         </RTPDumpEnable>

@@ -1,0 +1,6 @@
+service vendor.drm-clearkey-hal-1-1 /vendor/bin/hw/android.hardware.drm@1.1-service.clearkey
+    class hal
+    user media
+    group media mediadrm
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks

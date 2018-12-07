@@ -1,0 +1,4 @@
+service  oneplus_hdcpkey_service /vendor/bin/hw/vendor.oneplus.hardware.hdcpkey@1.0-service
+    class hal
+    user media
+    group media mediadrm drmrpc sdcard_r sdcard_rw system
