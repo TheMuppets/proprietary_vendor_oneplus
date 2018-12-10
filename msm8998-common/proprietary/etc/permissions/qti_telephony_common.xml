@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2015 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<permissions>
+ <library name="qti-telephony-common"
+          file="/system/framework/qti-telephony-common.jar"/>
+</permissions>
