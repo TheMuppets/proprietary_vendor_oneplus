@@ -163,17 +163,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/extractors/libaacextractor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/extractors/libaacextractor.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/extractors/libamrextractor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/extractors/libamrextractor.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/extractors/libflacextractor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/extractors/libflacextractor.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/extractors/libmidiextractor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/extractors/libmidiextractor.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/extractors/libmkvextractor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/extractors/libmkvextractor.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/extractors/libmmparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/extractors/libmmparser.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/extractors/libmp3extractor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/extractors/libmp3extractor.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/extractors/libmp4extractor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/extractors/libmp4extractor.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/extractors/libmpeg2extractor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/extractors/libmpeg2extractor.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/extractors/liboggextractor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/extractors/liboggextractor.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/extractors/libwavextractor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/extractors/libwavextractor.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/lib-imscamera.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscamera.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsvideocodec.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsvt.so \
@@ -1092,7 +1082,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor1.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_reg.so \
-    vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorndkbridge.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsettings.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libslimclient.so \
