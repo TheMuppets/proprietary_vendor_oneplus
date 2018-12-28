@@ -141,6 +141,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/lib-imsvtutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsvtutils.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libGPTEE_system.so:system/lib/libGPTEE_system.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libQTEEConnector_system.so:system/lib/libQTEEConnector_system.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libadsprpc_system.so:system/lib/libadsprpc_system.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libcdsprpc_system.so:system/lib/libcdsprpc_system.so \
@@ -149,7 +150,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib/libmdsprpc_system.so:system/lib/libmdsprpc_system.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcc.so \
@@ -157,6 +160,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libsensor_reg.so:system/lib/libsensor_reg.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
+    vendor/oneplus/msm8998-common/proprietary/lib/libwfdclient.so:system/lib/libwfdclient.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
     vendor/oneplus/msm8998-common/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
@@ -188,6 +192,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsvtutils.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libGPTEE_system.so:system/lib64/libGPTEE_system.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libQTEEConnector_system.so:system/lib64/libQTEEConnector_system.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libadsprpc_system.so:system/lib64/libadsprpc_system.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptXHD_encoder.so \
@@ -206,13 +211,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/lib64/libmdsprpc_system.so:system/lib64/libmdsprpc_system.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmrtpdecoder.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmrtpencoder.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
     vendor/oneplus/msm8998-common/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libsdsprpc_system.so:system/lib64/libsdsprpc_system.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libsensor1.so:system/lib64/libsensor1.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libsensor_reg.so:system/lib64/libsensor_reg.so \
+    vendor/oneplus/msm8998-common/proprietary/lib64/libwfdclient.so:system/lib64/libwfdclient.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
     vendor/oneplus/msm8998-common/proprietary/lib64/vendor.qti.esepowermanager@1.0.so:system/lib64/vendor.qti.esepowermanager@1.0.so \
