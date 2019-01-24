@@ -1,5 +1,5 @@
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -84,28 +84,15 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus3/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/oneplus/oneplus3/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/oneplus/oneplus3/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/com.quicinc.cne.api-V1.1-java.jar:system/framework/com.quicinc.cne.api-V1.1-java.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/com.quicinc.cne.constants-V1.0-java.jar:system/framework/com.quicinc.cne.constants-V1.0-java.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/com.quicinc.cne.constants-V2.0-java.jar:system/framework/com.quicinc.cne.constants-V2.0-java.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/com.quicinc.cne.constants-V2.1-java.jar:system/framework/com.quicinc.cne.constants-V2.1-java.jar \
     vendor/oneplus/oneplus3/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/com.quicinc.cne.server-V1.0-java.jar:system/framework/com.quicinc.cne.server-V1.0-java.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/com.quicinc.cne.server-V2.0-java.jar:system/framework/com.quicinc.cne.server-V2.0-java.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/com.quicinc.cne.server-V2.1-java.jar:system/framework/com.quicinc.cne.server-V2.1-java.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/com.quicinc.cne.server-V2.2-java.jar:system/framework/com.quicinc.cne.server-V2.2-java.jar \
     vendor/oneplus/oneplus3/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/oneplus/oneplus3/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/oneplus/oneplus3/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
+    vendor/oneplus/oneplus3/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
+    vendor/oneplus/oneplus3/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
     vendor/oneplus/oneplus3/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/oneplus/oneplus3/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/oneplus/oneplus3/proprietary/framework/uimlpalibrary.jar:system/framework/uimlpalibrary.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/vendor.qti.data.factory-V1.0-java.jar:system/framework/vendor.qti.data.factory-V1.0-java.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/vendor.qti.hardware.alarm-V1.0-java.jar:system/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar:system/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/vendor.qti.hardware.data.latency-V1.0-java.jar:system/framework/vendor.qti.hardware.data.latency-V1.0-java.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar:system/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar \
-    vendor/oneplus/oneplus3/proprietary/framework/vendor.qti.latency-V2.0-java.jar:system/framework/vendor.qti.latency-V2.0-java.jar \
     vendor/oneplus/oneplus3/proprietary/lib/TC_Bayer_Converter_v6_core_opt.bin:system/lib/TC_Bayer_Converter_v6_core_opt.bin \
     vendor/oneplus/oneplus3/proprietary/lib/libFNVfbEngineHAL.so:system/lib/libFNVfbEngineHAL.so \
     vendor/oneplus/oneplus3/proprietary/lib/libSensorManagerHAL.so:system/lib/libSensorManagerHAL.so \
@@ -848,6 +835,4 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     PowerOffAlarm \
     TimeService \
-    qcnvitems \
-    qcrilhook \
     dashd
