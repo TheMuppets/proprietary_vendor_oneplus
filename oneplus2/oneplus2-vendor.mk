@@ -422,5 +422,4 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     datastatusnotification \
     qcrilmsgtunnel \
-    TimeService \
-    pp_calib_data_jd35695_1080p_cmd_mode_dsi_panel
+    TimeService
