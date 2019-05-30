@@ -11,3 +11,5 @@ mcfg_sw_Elisa-VoLTE.mbn
 mcfg_sw_Airtel-Commercial.mbn
 mcfg_sw_H3G-Commercial.mbn
 mcfg_sw_Vodafone-Commercial.mbn
+mcfg_sw_H3GDK-Commercial.mbn
+mcfg_sw_Idea-Commercial.mbn

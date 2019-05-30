@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!-- This is a target specific resource config file which can be
+used to overwrite the node paths mentioned in common resources file
+and also to mention the resources which are not supported. -->
+
+<!-- This file supports only Config tag, which has the following fields
+* MajorValue and MinorValue, both are required to uniquely
+identify the resource.
+* Node, the new node path to overwrite the already existing one
+of commonresourceconfigs.xml file.
+* Supported, to indicate whether the resource is supported or not.
+* For each config tag, either of Node or Supported fields need
+to be mentioned. -->
+
+<!-- NOTE - It is not Mandatory to write all the resources which are not supported
+as anyway perflock calls of these resources would fail. -->
+
+<ResourceConfigs>
+    <PerfResources>
+
+        <Config MajorValue="0x1" MinorValue="0x1" Node="/sys/module/lpm_levels/system/perf/perf-l2-fpc/idle_enabled" /> <!-- idle_enabled -->
+        <Config MajorValue="0x1" MinorValue="0x2" Supported="no" /> <!-- lpm_bias_hyst -->
+        <Config MajorValue="0x1" MinorValue="0x3" Supported="no" /> <!-- lpm_ref_stddev -->
+        <Config MajorValue="0x1" MinorValue="0x4" Supported="no" /> <!-- lpm_tmr_add -->
+
+        <Config MajorValue="0x3" MinorValue="0x3" Supported="no" /> <!-- sched_small_task -->
+        <Config MajorValue="0x3" MinorValue="0xF" Supported="no" /> <!-- top-app_cpus -->
+        <Config MajorValue="0x3" MinorValue="0x10" Supported="no" /> <!-- foreground_cpus -->
+        <Config MajorValue="0x3" MinorValue="0x11" Supported="no" /> <!-- system_background_cpus -->
+        <Config MajorValue="0x3" MinorValue="0x12" Supported="no" /> <!-- background_cpus -->
+        <Config MajorValue="0x3" MinorValue="0x15" Supported="no" /> <!-- sched_group_upmigrate -->
+        <Config MajorValue="0x3" MinorValue="0x16" Supported="no" /> <!-- sched_group_downmigrate -->
+        <Config MajorValue="0x3" MinorValue="0x18" Supported="no" /> <!-- schedtune.prefer_idle -->
+
+        <!-- For INTERACTIVE major, all the interactive minors are not supported
+        by default as the recent target moved to schedutil. So, for older targets
+        where interactive minors are supported they need to be enabled and schedutil
+        minors are disabled. -->
+        <Config MajorValue="0x5" MinorValue="0x0" Supported="yes" /> <!-- above_hispeed_delay -->
+        <Config MajorValue="0x5" MinorValue="0x1" Supported="yes" /> <!-- boost -->
+        <Config MajorValue="0x5" MinorValue="0x3" Supported="yes" /> <!-- boostpulse_duration -->
+        <Config MajorValue="0x5" MinorValue="0x4" Supported="yes" /> <!-- go_hispeed_load -->
+        <Config MajorValue="0x5" MinorValue="0x5" Supported="yes" /> <!-- hispeed_freq -->
+        <Config MajorValue="0x5" MinorValue="0x6" Supported="yes" /> <!-- io_is_busy -->
+        <Config MajorValue="0x5" MinorValue="0x7" Supported="yes" /> <!-- min_sample_time -->
+        <Config MajorValue="0x5" MinorValue="0x8" Supported="yes" /> <!-- target_loads -->
+        <Config MajorValue="0x5" MinorValue="0x9" Supported="yes" /> <!-- timer_rate -->
+        <Config MajorValue="0x5" MinorValue="0xA" Supported="yes" /> <!-- timer_slack -->
+        <Config MajorValue="0x5" MinorValue="0xB" Supported="yes" /> <!-- max_freq_hysteresis -->
+        <Config MajorValue="0x5" MinorValue="0xC" Supported="yes" /> <!-- use_sched_load -->
+        <Config MajorValue="0x5" MinorValue="0xF" Supported="no" />
+        <Config MajorValue="0x5" MinorValue="0x10" Supported="no" />
+        <Config MajorValue="0x5" MinorValue="0x11" Supported="no" />
+
+        <Config MajorValue="0x9" MinorValue="0x7" Supported="yes" /> <!-- cpu.notify_on_migrate -->
+
+        <!-- All the minors of LLCBW_HWMON MAJOR are not supported -->
+        <Config MajorValue="0xC" MinorValue="0x0" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x1" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x2" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x3" Supported="no" />
+
+        <Config MajorValue="0xD" MinorValue="0x0" Supported="no" /> <!--  l3_min_freq -->
+        <Config MajorValue="0xD" MinorValue="0x2" Node="/sys/class/devfreq/soc:qcom,memlat-cpu2/mem_latency/ratio_ceil"/> <!-- l2_memlat_ratio_ceil_1 -->
+
+    </PerfResources>
+</ResourceConfigs>
