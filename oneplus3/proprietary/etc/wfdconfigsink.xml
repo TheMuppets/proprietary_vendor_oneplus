@@ -21,7 +21,7 @@
 
         <AudioAAC>
             <Name>AAC</Name>
-            <Valid>1</Valid>
+            <Valid>0</Valid>
             <Channels>6</Channels>
             <SamplingFreq>48000</SamplingFreq>
             <Latency>0</Latency>

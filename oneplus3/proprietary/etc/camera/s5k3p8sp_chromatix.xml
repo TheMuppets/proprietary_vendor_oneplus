@@ -81,6 +81,9 @@ special_mode_mask values:
     <ChromatixName special_mode_mask="0">
       <PostProc>s5k3p8sp_postproc</PostProc>
     </ChromatixName>
+    <ChromatixName special_mode_mask="FACE_UNLOCK">
+      <A3Preview>s5k3p8sp_3a_2304x1728_30fps_face_unlock</A3Preview>
+    </ChromatixName>
   </CommonChromatixInfo>
   <ResolutionChromatixInfo>
     <ChromatixName sensor_resolution_index="0" special_mode_mask="0">
