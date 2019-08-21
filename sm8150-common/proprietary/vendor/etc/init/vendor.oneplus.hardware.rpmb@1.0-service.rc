@@ -1,0 +1,7 @@
+service vendor.rpmb_hal /vendor/bin/hw/vendor.oneplus.hardware.rpmb@1.0-service
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
+    class late_start
+    user root
+    group system input sdcard_rw

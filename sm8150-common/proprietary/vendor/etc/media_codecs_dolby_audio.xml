@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+     This file was modified by Dolby Laboratories, Inc. The portions of the
+     code that are surrounded by "DOLBY..." are copyrighted and
+     licensed separately, as follows:
+
+     (C) 2018 Dolby Laboratories, Inc.
+     All rights reserved.
+
+     This program is protected under international and U.S. Copyright laws as
+     an unpublished work. This program is confidential and proprietary to the
+     copyright owners. Reproduction or disclosure, in whole or in part, or the
+     production of derivative works therefrom without the express permission of
+     the copyright owners is prohibited.
+-->
+
+<Included>
+    <Decoders>
+        <!-- DOLBY_UDC -->
+        <MediaCodec name="OMX.dolby.ac3.decoder" type="audio/ac3">
+            <Limit name="channel-count" max="6" />
+            <Limit name="sample-rate" ranges="32000,44100,48000" />
+            <Limit name="bitrate" range="32000-640000" />
+        </MediaCodec>
+        <MediaCodec name="OMX.dolby.eac3.decoder" type="audio/eac3">
+            <Limit name="channel-count" max="8" />
+            <Limit name="sample-rate" ranges="32000,44100,48000" />
+            <Limit name="bitrate" range="32000-6144000" />
+        </MediaCodec>
+        <MediaCodec name="OMX.dolby.eac3_joc.decoder" type="audio/eac3-joc">
+            <Limit name="channel-count" max="8" />
+            <Limit name="sample-rate" ranges="48000" />
+            <Limit name="bitrate" range="32000-6144000" />
+        </MediaCodec>
+        <!-- DOLBY_UDC END -->
+        <!-- DOLBY_AC4 -->
+        <MediaCodec name="OMX.dolby.ac4.decoder" type="audio/ac4">
+            <Limit name="channel-count" max="2" />
+            <Limit name="sample-rate" ranges="48000" />
+            <Limit name="bitrate" range="16000-2688000" />
+        </MediaCodec>
+        <!-- DOLBY_AC4 END -->
+    </Decoders>
+</Included>

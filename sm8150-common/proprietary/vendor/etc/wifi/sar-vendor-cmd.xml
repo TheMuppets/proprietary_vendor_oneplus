@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<WCN_VenTool>
+	<VendorCmd name="SAR_SET" ID="146">
+		<Attribute name="ENABLE" ID="1" TYPE="u32"/>
+		<Attribute name="NUM_SPECS" ID="2" TYPE="u32"/>
+		<Attribute name="SAR_SPEC" ID="3" TYPE="NESTED" ATTR_MAX="8">
+			<Attribute name="BAND" ID="4" TYPE="u32"/>
+			<Attribute name="CHAIN" ID="5" TYPE="u32"/>
+			<Attribute name="MOD" ID="6" TYPE="u32"/>
+			<Attribute name="POW" ID="7" TYPE="u32"/>
+		</Attribute>
+	</VendorCmd>
+</WCN_VenTool>

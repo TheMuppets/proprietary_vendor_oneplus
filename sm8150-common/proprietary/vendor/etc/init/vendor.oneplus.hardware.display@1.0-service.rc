@@ -1,0 +1,4 @@
+service  oneplus_display_service /vendor/bin/hw/vendor.oneplus.hardware.display@1.0-service
+    class hal
+    user display
+    group display
