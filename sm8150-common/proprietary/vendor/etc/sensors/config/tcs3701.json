@@ -2,7 +2,7 @@
   "config":
   {
     "hw_platform": ["MTP", "Dragon", "Surf"],
-    "soc_id": ["339", "246", "305"]
+    "soc_id": ["339", "246", "305", "361"]
   },
   "tcs3701":{
     "owner": "sns_tcs3701",

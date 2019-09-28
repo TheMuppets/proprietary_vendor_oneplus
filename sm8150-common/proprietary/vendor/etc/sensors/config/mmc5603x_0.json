@@ -1,7 +1,7 @@
 {
   "config":{
     "hw_platform": ["MTP", "Dragon", "Surf","HDK"],
-    "soc_id": ["339"]
+    "soc_id": ["339", "361"]
   },
   "mmc5603x_0":{
     "owner": "sns_mmc5603x",

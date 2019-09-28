@@ -2,7 +2,7 @@
   "config":
   {
     "hw_platform": ["MTP", "Dragon", "Surf"],
-    "soc_id": ["339", "291", "246", "305", "321"]
+    "soc_id": ["339", "291", "246", "305", "321", "361"]
   },
   "lsm6dsm_0":{
     "owner": "lsm6dsm",

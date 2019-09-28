@@ -57,10 +57,6 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.MODIFY_PHONE_STATE"/>
     </privapp-permissions>
 
-    <privapp-permissions package="org.codeaurora.qti.nrNetworkSettingApp">
-        <permission name="android.permission.MODIFY_PHONE_STATE"/>
-    </privapp-permissions>
-
     <privapp-permissions package="org.codeaurora.ims">
         <permission name="android.permission.READ_PRECISE_PHONE_STATE"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
@@ -89,6 +85,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
     <privapp-permissions package="com.android.mms">
         <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
+        <permission name="android.permission.CALL_PRIVILEGED"/>
     </privapp-permissions>
 
     <privapp-permissions package="org.codeaurora.bluetooth.batestapp">
@@ -101,6 +98,10 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
     </privapp-permissions>
 
+    <privapp-permissions package="org.codeaurora.gallery">
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+    </privapp-permissions>
+
     <privapp-permissions package="com.qualcomm.qti.callenhancement">
         <permission name="android.permission.RECORD_AUDIO" />
         <permission name="android.permission.CAPTURE_AUDIO_OUTPUT" />
@@ -109,9 +110,4 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.READ_BLOCKED_NUMBERS" />
         <permission name="android.permission.VIBRATE" />
     </privapp-permissions>
-
-    <privapp-permissions package="com.skyhook.blp">
-        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
-    </privapp-permissions>
-
 </permissions>

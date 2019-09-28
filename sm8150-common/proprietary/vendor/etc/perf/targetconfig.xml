@@ -46,7 +46,7 @@
              Target="msmnile"
              NumClusters="3"
              TotalNumCores="8"
-             SocIds="339"
+             SocIds="339,361"
              SynCore="1"
              CoreCtlCpu="4"
              MinCoreOnline="0"

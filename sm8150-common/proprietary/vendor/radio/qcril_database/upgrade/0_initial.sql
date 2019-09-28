@@ -237,7 +237,6 @@ CREATE TABLE qcril_emergency_source_nw_table(MCC TEXT, NUMBER TEXT, IMS_ADDRESS 
 CREATE TABLE qcril_emergency_source_escv_iin_table(IIN TEXT, NUMBER TEXT, ESCV INTEGER, ROAM TEXT, PRIMARY KEY(IIN,NUMBER,ROAM));
 CREATE TABLE qcril_emergency_source_escv_nw_table(MCC TEXT, MNC TEXT, NUMBER TEXT, ESCV INTEGER, PRIMARY KEY(MCC,NUMBER, ESCV));
 CREATE TABLE qcril_emergency_source_mcc_mnc_table(MCC TEXT, MNC TEXT, NUMBER TEXT, IMS_ADDRESS TEXT, SERVICE TEXT, PRIMARY KEY(MCC,NUMBER,MNC));
-INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('262','02','112','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('234','20','999','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('234','20','112','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('234','15','999','','');
@@ -526,6 +525,1146 @@ INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','874','100',
 INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','874','101','','full');
 INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','874','102','','full');
 INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','874','108','','full');
+
+/*Start Emerency List For Germany [GLFT-8599] [GLFT-7245] [GLFT-7546] [GLFT-8643] [GLFT-8160] ravi.katam 2019/09/03 */
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('262','02','000','','full'); /*Vodafone.de*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('262','02','112','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('262','02','911','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('262','02','110','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('262','02','08','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('262','03','110','','full'); /*o2-de*/
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('242','02','110','','full'); /*Fire Telia N*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('242','02','113','','full'); /*Ambulance Telia N*/
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('208','20','15','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('208','20','17','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('208','20','18','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('208','20','119','','full'); /*F-Bouygues Telecom*/
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('208','01','15','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('208','01','17','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('208','01','18','','full'); /*Orange F*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('262','02','000','',''); /*Vodafone.de*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('262','02','112','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('262','02','911','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('262','02','110','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('262','02','08','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('262','03','110','',''); /*o2-de*/
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('242','02','110','',''); /*Fire Telia N*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('242','02','113','',''); /*Ambulance Telia N*/
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('208','20','15','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('208','20','17','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('208','20','18','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('208','20','119','',''); /*F-Bouygues Telecom*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('208','01','15','',''); /*Orange F*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('208','01','17','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('208','01','18','','');
+
+/*END Emerency List For Germany qcril_emergency_source_mcc_mnc_table */
+
+/*Start Emerency List For INDIA AIRTEL Operator qcril_emergency_source_mcc_mnc_table ravi.katam 2019/08/24 */
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','10','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','10','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','10','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','10','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','31','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','31','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','31','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','31','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','40','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','40','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','40','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','40','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','45','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','45','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','45','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','45','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','49','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','49','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','49','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','49','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','51','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','51','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','51','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','51','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','52','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','52','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','52','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','52','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','53','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','53','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','53','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','53','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','54','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','54','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','54','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','54','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','55','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','55','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','55','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','55','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','56','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','56','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','56','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','56','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','90','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','90','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','90','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','90','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','92','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','92','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','92','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','92','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','93','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','93','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','93','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','93','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','94','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','94','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','94','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','94','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','95','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','95','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','95','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','95','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','96','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','96','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','96','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','96','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','97','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','97','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','97','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','97','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','98','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','98','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','98','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','98','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','02','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','02','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','02','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','02','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','03','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','03','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','03','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','03','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','16','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','16','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','16','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','16','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','70','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','70','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','70','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','70','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','818','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','818','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','818','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','818','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','819','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','819','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','819','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','819','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','876','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','876','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','876','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','876','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','879','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','879','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','879','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','879','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','927','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','927','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','927','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','927','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','929','100','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','929','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','929','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','929','108','','');
+
+
+/*End Emerency List For INDIA AIRTEL Operator qcril_emergency_source_mcc_mnc_table */
+
+/*Start Emerency List For INDIA AIRTEL Operator qcril_emergency_source_voice_mcc_mnc_table ravi.katam 2019/08/24 */
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','10','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','10','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','10','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','10','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','31','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','31','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','31','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','31','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','40','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','40','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','40','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','40','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','45','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','45','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','45','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','45','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','49','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','49','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','49','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','49','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','51','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','51','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','51','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','51','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','52','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','52','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','52','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','52','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','53','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','53','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','53','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','53','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','54','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','54','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','54','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','54','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','55','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','55','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','55','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','55','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','56','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','56','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','56','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','56','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','90','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','90','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','90','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','90','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','92','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','92','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','92','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','92','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','93','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','93','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','93','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','93','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','94','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','94','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','94','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','94','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','95','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','95','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','95','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','95','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','96','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','96','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','96','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','96','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','97','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','97','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','97','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','97','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','98','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','98','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','98','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','98','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','02','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','02','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','02','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','02','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','03','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','03','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','03','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','03','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','16','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','16','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','16','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','16','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','70','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','70','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','70','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','70','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','818','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','818','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','818','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','818','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','819','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','819','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','819','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','819','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','876','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','876','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','876','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','876','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','879','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','879','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','879','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','879','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','927','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','927','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','927','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','927','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','929','100','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','929','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','929','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','929','108','','full');
+
+
+/*End Emerency List For INDIA AIRTEL Operator qcril_emergency_source_voice_mcc_mnc_table */
+
+/*Start Emerency List For INDIA IDEA Operator qcril_emergency_source_mcc_mnc_table ravi.katam 2019/08/24 */
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','07','100','',''); /*Andhra Pradesh*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','07','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','07','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','07','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','04','100','',''); /*Delhi*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','04','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','04','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','04','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','24','100','',''); /*Gujarat*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','24','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','24','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','24','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','12','100','',''); /*Haryana*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','12','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','12','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','12','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','44','100','',''); /*Karnataka*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','44','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','44','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','44','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','19','100','',''); /*Kerala*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','19','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','19','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','19','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','848','100','',''); /*Kolkata*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','848','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','848','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','848','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','22','100','',''); /*Maharashtra*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','22','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','22','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','22','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','799','100','',''); /*Mumbai*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','799','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','799','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','799','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','14','100','',''); /*Punjab*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','14','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','14','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','14','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','87','100','',''); /*Rajasthan*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','87','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','87','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','87','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','852','100','',''); /*TamilNadu*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','852','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','852','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','852','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','89','100','',''); /*Uttar Pradesh (East)*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','89','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','89','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','89','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','56','100','',''); /*Uttar Pradesh (West)*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','56','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','56','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','56','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','853','100','',''); /*West Bengal*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','853','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','853','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','853','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','846','100','',''); /*Jammu & Kashmir*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','846','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','846','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','846','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','845','100','',''); /*Assam*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','845','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','845','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','845','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','70','100','',''); /*Bihar*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','70','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','70','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','70','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','850','100','',''); /*Orissa*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','850','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','850','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','850','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','82','100','',''); /*Himachal Pradesh*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','82','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','82','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','82','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','849','100','',''); /*North East India*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','849','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','849','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','849','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','78','100','',''); /*Madhya Pradesh*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','78','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','78','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','78','108','','');
+
+/*Emerency List IDEA Operator qcril_emergency_source_mcc_mnc_table END*/
+
+
+/*Start Emerency List For INDIA IDEA Operator qcril_emergency_source_voice_mcc_mnc_table ravi.katam 2019/08/24 */
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','07','100','','full'); /*Andhra Pradesh*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','07','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','07','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','07','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','04','100','','full'); /*Delhi*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','04','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','04','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','04','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','24','100','','full'); /*Gujarat*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','24','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','24','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','24','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','12','100','','full'); /*Haryana*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','12','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','12','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','12','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','44','100','','full'); /*Karnataka*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','44','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','44','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','44','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','19','100','','full'); /*Kerala*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','19','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','19','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','19','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','848','100','','full'); /*Kolkata*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','848','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','848','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','848','108','','');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','22','100','','full'); /*Maharashtra*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','22','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','22','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','22','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','799','100','','full'); /*Mumbai*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','799','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','799','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','799','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','14','100','','full'); /*Punjab*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','14','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','14','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','14','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','87','100','','full'); /*Rajasthan*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','87','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','87','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','87','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','852','100','','full'); /*TamilNadu*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','852','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','852','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','852','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','89','100','','full'); /*Uttar Pradesh (East)*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','89','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','89','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','89','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','56','100','','full'); /*Uttar Pradesh (West)*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','56','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','56','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','56','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','853','100','','full'); /*West Bengal*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','853','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','853','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','853','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','846','100','','full'); /*Jammu & Kashmir*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','846','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','846','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','846','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','845','100','','full'); /*Assam*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','845','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','845','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','845','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','70','100','','full'); /*Bihar*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','70','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','70','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','70','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','850','100','','full'); /*Orissa*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','850','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','850','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','850','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','82','100','','full'); /*Himachal Pradesh*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','82','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','82','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','82','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','849','100','','full'); /*North East India*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','849','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','849','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','849','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','78','100','','full'); /*Madhya Pradesh*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','78','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','78','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','78','108','','full');
+
+/*Emerency List IDEA Operator qcril_emergency_source_voice_mcc_mnc_table END*/
+
+/*Start Emerency List For INDIA VODAFONE Operator qcril_emergency_source_mcc_mnc_table ravi.katam 2019/08/24 */
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','13','100','',''); /*Andhra Pradesh*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','13','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','13','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','13','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','84','100','',''); /*Chennai*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','84','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','84','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','84','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','11','100','',''); /*Delhi*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','11','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','11','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','11','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','05','100','',''); /*Gujarat*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','05','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','05','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','05','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','01','100','',''); /*Haryana*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','01','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','01','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','01','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','86','100','',''); /*Karnataka*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','86','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','86','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','86','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','46','100','',''); /*Kerala*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','46','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','46','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','46','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','30','100','',''); /*Kolkata*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','30','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','30','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','30','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','27','100','',''); /*Maharashtra*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','27','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','27','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','27','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','20','100','',''); /*Mumbai*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','20','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','20','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','20','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','88','100','',''); /*Punjab*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','88','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','88','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','88','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','60','100','',''); /*Rajasthan*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','60','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','60','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','60','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','43','100','',''); /*TamilNadu*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','43','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','43','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','43','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','15','100','',''); /*Uttar Pradesh (East)*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','15','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','15','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','15','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','66','100','',''); /*Uttar Pradesh (West)*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','66','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','66','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','66','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','67','100','',''); /*West Bengal*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','67','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','67','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','67','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','750','100','',''); /*Jammu & Kashmir*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','750','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','750','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','750','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','751','100','',''); /*Assam*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','751','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','751','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','751','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','752','100','',''); /*Bihar*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','752','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','752','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','752','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','753','100','',''); /*Orissa*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','753','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','753','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','753','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','754','100','',''); /*Himachal Pradesh*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','754','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','754','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','754','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','755','100','',''); /*North East India*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','755','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','755','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','755','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','756','100','',''); /*Madhya Pradesh*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','756','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','756','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('405','756','108','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','68','100','','');  /*MTNL Delhi*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','68','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','68','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','68','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','68','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','69','100','',''); /*MTNL Mumbai*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','69','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','69','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','69','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','69','911','','');
+
+/*Emerency List VODAFONE Operator qcril_emergency_source_mcc_mnc_table END*/
+
+
+
+/*Start Emerency List For INDIA VODAFONE Operator qcril_emergency_source_voice_mcc_mnc_table ravi.katam 2019/08/24 */
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','13','100','','full'); /*Andhra Pradesh*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','13','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','13','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','13','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','84','100','','full'); /*Chennai*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','84','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','84','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','84','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','11','100','','full'); /*Delhi*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','11','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','11','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','11','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','05','100','','full'); /*Gujarat*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','05','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','05','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','05','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','01','100','','full'); /*Haryana*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','01','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','01','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','01','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','86','100','','full'); /*Karnataka*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','86','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','86','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','86','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','46','100','','full'); /*Kerala*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','46','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','46','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','46','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','30','100','','full'); /*Kolkata*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','30','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','30','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','30','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','27','100','','full'); /*Maharashtra*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','27','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','27','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','27','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','20','100','','full'); /*Mumbai*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','20','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','20','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','20','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','88','100','','full'); /*Punjab*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','88','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','88','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','88','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','60','100','','full'); /*Rajasthan*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','60','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','60','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','60','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','43','100','','full'); /*TamilNadu*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','43','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','43','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','43','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','15','100','','full'); /*Uttar Pradesh (East)*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','15','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','15','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','15','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','66','100','','full'); /*Uttar Pradesh (West)*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','66','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','66','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','66','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','67','100','','full'); /*West Bengal*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','67','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','67','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','67','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','750','100','','full'); /*Jammu & Kashmir*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','750','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','750','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','750','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','751','100','','full'); /*Assam*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','751','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','751','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','751','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','752','100','','full'); /*Bihar*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','752','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','752','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','752','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','753','100','','full'); /*Orissa*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','753','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','753','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','753','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','754','100','','full'); /*Himachal Pradesh*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','754','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','754','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','754','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','755','100','','full'); /*North East India*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','755','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','755','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','755','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','756','100','','full'); /*Madhya Pradesh*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','756','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','756','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('405','756','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','68','100','','full');  /*MTNL Delhi*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','68','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','68','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','68','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','68','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','69','100','','full'); /*MTNL Mumbai*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','69','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','69','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','69','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','69','911','','full');
+
+/*Emerency List VODAFONE Operator qcril_emergency_source_voice_mcc_mnc_table END*/
+
+/*Start Emerency List For INDIA BSNL Operator qcril_emergency_source_mcc_mnc_table ravi.katam 2019/08/27 */
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','34','100','',''); /*Haryana*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','34','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','34','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','34','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','34','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','38','100','',''); /*Assam*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','38','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','38','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','38','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','38','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','51','100','',''); /*Himachal Pradesh*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','51','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','51','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','51','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','51','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','53','100','',''); /*Punjab*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','53','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','53','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','53','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','53','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','54','100','',''); /*Uttar Pradesh (West)*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','54','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','54','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','54','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','54','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','55','100','',''); /*Uttar Pradesh (East)*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','55','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','55','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','55','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','55','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','57','100','',''); /*Gujarat*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','57','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','57','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','57','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','57','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','58','100','',''); /*Madhya Pradesh*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','58','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','58','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','58','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','58','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','59','100','',''); /*Rajasthan*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','59','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','59','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','59','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','59','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','62','100','',''); /*Jammu & Kashmir*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','62','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','62','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','62','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','62','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','64','100','',''); /*Chennai*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','64','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','64','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','64','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','64','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','66','100','',''); /*Maharashtra*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','66','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','66','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','66','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','66','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','71','100','',''); /*Karnataka*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','71','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','71','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','71','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','71','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','72','100','',''); /*Kerala*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','72','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','72','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','72','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','72','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','73','100','',''); /*Andhra Pradesh*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','73','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','73','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','73','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','73','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','74','100','',''); /*West Bengal*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','74','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','74','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','74','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','74','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','75','100','',''); /*Bihar*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','75','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','75','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','75','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','75','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','76','100','',''); /*Orissa*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','76','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','76','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','76','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','76','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','77','100','',''); /*North East*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','77','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','77','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','77','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','77','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','79','100','',''); /*Andaman Nicobar*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','79','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','79','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','79','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','79','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','80','100','',''); /*Tamilnadu*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','80','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','80','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','80','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','80','911','','');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','81','100','',''); /*Kolkata*/
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','81','101','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','81','102','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','81','108','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('404','81','911','','');
+
+/*END Emerency List For INDIA BSNL Operator qcril_emergency_source_mcc_mnc_table  */
+
+/*Start Emerency List For INDIA BSNL Operator qcril_emergency_source_voice_mcc_mnc_table ravi.katam 2019/08/27 */
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','34','100','','full'); /*Haryana*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','34','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','34','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','34','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','34','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','38','100','','full'); /*Assam*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','38','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','38','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','38','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','38','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','51','100','','full'); /*Himachal Pradesh*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','51','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','51','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','51','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','51','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','53','100','','full'); /*Punjab*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','53','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','53','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','53','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','53','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','54','100','','full'); /*Uttar Pradesh (West)*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','54','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','54','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','54','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','54','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','55','100','','full'); /*Uttar Pradesh (East)*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','55','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','55','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','55','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','55','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','57','100','','full'); /*Gujarat*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','57','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','57','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','57','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','57','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','58','100','','full'); /*Madhya Pradesh*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','58','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','58','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','58','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','58','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','59','100','','full'); /*Rajasthan*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','59','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','59','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','59','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','59','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','62','100','','full'); /*Jammu & Kashmir*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','62','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','62','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','62','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','62','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','64','100','','full'); /*Chennai*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','64','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','64','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','64','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','64','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','66','100','','full'); /*Maharashtra*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','66','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','66','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','66','108','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','71','100','','full'); /*Karnataka*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','71','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','71','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','71','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','71','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','72','100','','full'); /*Kerala*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','72','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','72','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','72','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','72','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','73','100','','full'); /*Andhra Pradesh*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','73','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','73','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','73','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','73','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','74','100','','full'); /*West Bengal*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','74','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','74','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','74','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','74','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','75','100','','full'); /*Bihar*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','75','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','75','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','75','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','75','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','76','100','','full'); /*Orissa*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','76','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','76','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','76','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','76','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','77','100','','full'); /*North East*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','77','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','77','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','77','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','77','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','79','100','','full'); /*Andaman Nicobar*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','79','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','79','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','79','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','79','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','80','100','','full'); /*Tamilnadu*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','80','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','80','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','80','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','80','911','','full');
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','81','100','','full'); /*Kolkata*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','81','101','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','81','102','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','81','108','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('404','81','911','','full');
+
+/*END Emerency List For INDIA BSNL Operator qcril_emergency_source_voice_mcc_mnc_table  */
+
+/* START VENDOR_EDIT ravi.katam [GLFT-8666] 2019/08/28 Add Emergency Numbers for "Denmark" Operator*/
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('238','01','114','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('238','02','114','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('238','06','114','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('238','30','114','','full');
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('238','70','114','','full');
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('238','01','114','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('238','02','114','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('238','06','114','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('238','30','114','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('238','70','114','','');
+
+/* END VENDOR_EDIT ravi.katam NETWORK */
+
+/* START VENDOR_EDIT ravi.katam [GCEQ-4511] [GLFT-7514] [GLFT-7911] [GLFT-7529] NETWORK 2019/08/13 Add entery for
+   100,101,102 & 108 Emergency Numbers, All these Emergency Call type should be process as VOICE call not emg call.*/
+
+/* END VENDOR_EDIT ravi.katam NETWORK */
+
+/* START VENDOR_EDIT ravi.katam [GLFT-8149] 2019/08/28 Add Emergency Numbers for "FREE" Operator*/
+
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('208','15','15','','full'); /*AMBULANCE*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('208','15','17','','full'); /*POLICE*/
+INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('208','15','18','','full'); /*FIRE*/
+
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('208','15','15','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('208','15','17','','');
+INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('208','15','18','','');
+
+/* END VENDOR_EDIT ravi.katam NETWORK */
+
 CREATE TABLE qcril_properties_table (property TEXT,value TEXT, PRIMARY KEY(property));
 INSERT INTO qcril_properties_table VALUES('qcrildb_version','4');
 CREATE TABLE qcril_operator_specific_config(MCC TEXT, MNC TEXT, WPS_OVER_CS INTEGER, PRIMARY KEY(MCC, MNC));
@@ -537,6 +1676,10 @@ INSERT INTO qcril_cdma_operator_specific_config VALUES('460','11',1);
 INSERT INTO qcril_cdma_operator_specific_config VALUES('454','03',1);
 INSERT INTO qcril_cdma_operator_specific_config VALUES('454','31',1);
 INSERT INTO qcril_cdma_operator_specific_config VALUES('204','04',1);
+
+/* START VENDOR_EDIT ravi.katam [GLFT-7362] [GLFT-7535] NETWORK 2019/08/13 Remove entery for RJIL
+   100 Emergency Call , For 100 Emergency Call type should be process as VOICE Call Not Emg call.
+
 DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '405' AND MNC = '840' AND NUMBER = '100';
 DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '405' AND MNC = '854' AND NUMBER = '100';
 DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '405' AND MNC = '855' AND NUMBER = '100';
@@ -559,6 +1702,7 @@ DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '405' AND MNC = '87
 DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '405' AND MNC = '872' AND NUMBER = '100';
 DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '405' AND MNC = '873' AND NUMBER = '100';
 DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '405' AND MNC = '874' AND NUMBER = '100';
+
 DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC = '840' AND NUMBER = '100';
 DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC = '854' AND NUMBER = '100';
 DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC = '855' AND NUMBER = '100';
@@ -581,4 +1725,7 @@ DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC
 DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC = '872' AND NUMBER = '100';
 DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC = '873' AND NUMBER = '100';
 DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC = '874' AND NUMBER = '100';
+
+END VENDOR_EDIT ravi.katam NETWORK */
+
 COMMIT;

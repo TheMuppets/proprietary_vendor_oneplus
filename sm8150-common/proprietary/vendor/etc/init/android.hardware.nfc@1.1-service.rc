@@ -1,4 +1,0 @@
-service nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.1-service
-    class hal
-    user nfc
-    group nfc

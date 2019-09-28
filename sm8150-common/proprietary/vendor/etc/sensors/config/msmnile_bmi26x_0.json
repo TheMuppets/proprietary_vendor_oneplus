@@ -1,7 +1,7 @@
 {
   "config":{
     "hw_platform": ["MTP", "Surf"],
-    "soc_id": ["339"]
+    "soc_id": ["339", "361"]
   },
   "bmi26x_0_platform":{
     "owner": "sns_bmi26x",

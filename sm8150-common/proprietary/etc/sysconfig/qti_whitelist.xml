@@ -44,9 +44,9 @@
     <allow-in-power-save package="com.qualcomm.qti.gsma.services.nfc" />
     <allow-in-power-save package="com.quicinc.voice.activation" />
     <allow-in-power-save package="com.android.mms" />
+    <allow-in-power-save package="com.android.exchange" />
     <allow-in-power-save package="com.qualcomm.qti.callenhancement" />
     <allow-in-power-save package="com.qualcomm.qti.smartassistant" />
-    <allow-in-power-save package="com.skyhook.blp" />
     <!-- These telephony applications need access to non-[System]SDK APIs -->
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteserver" />
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteclient" />
@@ -106,7 +106,6 @@
     <hidden-api-whitelisted-app package="com.qti.vtloopback " />
     <hidden-api-whitelisted-app package="com.android.bluetooth" />
     <hidden-api-whitelisted-app package="org.codeaurora.bluetooth" />
-    <hidden-api-whitelisted-app package="org.codeaurora.bluetooth.hidtestapp" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.qmmi" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.perfdump" />
     <hidden-api-whitelisted-app package="com.qualcomm.wfd.client" />

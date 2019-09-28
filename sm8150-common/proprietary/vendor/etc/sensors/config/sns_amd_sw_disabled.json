@@ -1,7 +1,7 @@
 {
   "config": {
     "hw_platform": [ "MTP", "Dragon", "Surf", "QRD", "HDK"],
-    "soc_id": ["340"]
+    "soc_id": ["339", "340", "356", "361"]
   },
   "sns_amd": {
     "owner": "sns_amd",

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+/*
+ * Copyright (c) 2019, Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+ */
+-->
+
+<CapabilityStore version="1">
+   <namespace name="wigig">
+     <capability key="max_num_sta" value="8" />
+     <capability key="npt.rps" value="206"/>
+     <capability key="npt.gro_flush_timeout" value="2000"/>
+     <capability key="npt.tcp_limit_output_bytes" value="8800000"/>
+     <capability key="fst.data.interface" value="bond0"/>
+     <capability key="fst.wigig.interface" value="wigig0"/>
+     <capability key="fst.wifi.sta.interface" value="wlan0"/>
+     <capability key="fst.wifi.sap.interface" value="softap0"/>
+     <capability key="fst.wigig.interface.channel" value="2"/>
+     <capability key="sta.wowlan_triggers" value="any" />
+     <capability key="sap.wowlan_triggers" value="any" />
+   </namespace>
+</CapabilityStore>

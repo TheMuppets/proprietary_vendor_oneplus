@@ -1,0 +1,8 @@
+# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+service vendor.imsrcsservice /vendor/bin/imsrcsd
+    class main
+    user radio
+    group radio vendor_qti_diag log inet wakelock

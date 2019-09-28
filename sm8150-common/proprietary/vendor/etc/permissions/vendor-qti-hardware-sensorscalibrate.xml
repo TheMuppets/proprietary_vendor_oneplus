@@ -6,6 +6,6 @@
  -->
 <permissions>
     <library name="vendor.qti.hardware.sensorscalibrate-V1.0"
-          file="/system/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar"/>
+          file="/system/product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar"/>
 </permissions>
 

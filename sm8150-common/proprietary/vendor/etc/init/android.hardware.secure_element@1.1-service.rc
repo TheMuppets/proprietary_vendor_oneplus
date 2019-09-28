@@ -1,0 +1,9 @@
+service vendor.secure_element_hal_service_1_1 /vendor/bin/hw/android.hardware.secure_element@1.1-service
+    class hal
+    interface android.hardware.secure_element@1.1::ISecureElement eSE1
+    disabled
+    user secure_element
+    group secure_element
+
+on property:ro.boot.product.hardware.sku=ese
+    start vendor.secure_element_hal_service_1_1

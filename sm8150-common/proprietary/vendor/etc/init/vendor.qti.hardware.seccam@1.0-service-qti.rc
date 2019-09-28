@@ -1,0 +1,10 @@
+service seccam-1-0 /vendor/bin/hw/vendor.qti.hardware.seccam@1.0-service-qti
+    class hal
+    user system
+    group system
+
+on property:vendor.hyp_core_ctl=enable
+    write /sys/devices/system/cpu/hyp_core_ctl/enable 1
+
+on property:vendor.hyp_core_ctl=disable
+    write /sys/devices/system/cpu/hyp_core_ctl/enable 0

@@ -1,0 +1,10 @@
+service vl53l1_daemon_main /vendor/bin/vl53l1_daemon_main
+    class late_start
+    user system
+    group system
+    socket vl53l1_daemon stream 660 system system
+
+on post-fs
+    chown system system /dev/stmvl53l1_ranging
+    chmod 0666 /dev/stmvl53l1_ranging
+    start vl53l1_daemon_main

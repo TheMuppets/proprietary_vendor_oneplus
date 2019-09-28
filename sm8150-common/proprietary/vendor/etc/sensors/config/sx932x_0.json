@@ -2,7 +2,7 @@
   "config":
   {
     "hw_platform": ["MTP", "Surf"],
-    "soc_id": ["339"]
+    "soc_id": ["339", "361"]
   },
   "sx932x_0":{
     "owner": "sx932x_0",

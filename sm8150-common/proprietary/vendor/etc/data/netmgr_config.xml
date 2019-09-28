@@ -268,6 +268,92 @@
       </list>
    </listitem>
 
+   <!-- Off Target paramaters - based on fusion4.5 above (PCIe) -->
+   <listitem name = "off_target">
+
+      <data name="qmi_dpm_enabled" type="int"> 0 </data>
+      <data name="wda_data_format_enabled" type="int"> 1 </data>
+      <data name="ep_type" type="int"> 3 </data> <!-- PCIE -->
+
+      <data name="single_qmux_ch_enabled" type="int"> 1 </data>
+      <data name="single_qmux_ch_conn_id_str" type="string"> rmnet_mhi0 </data>
+      <data name="single_qmux_ch_name" type="string"> MHICTL0 </data>
+
+      <data name="rmnet_data_enabled" type="int"> 1 </data>
+      <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
+      <data name="dataformat_agg_dl_pkt" type="int"> 1 </data>
+      <data name="dataformat_agg_dl_size" type="int"> 2048 </data>
+      <data name="dataformat_agg_ul_pkt" type="int"> 0 </data>
+      <data name="dataformat_agg_ul_size" type="int"> 0 </data>
+      <data name="dataformat_dl_data_aggregation_protocol" type="int"> 5 </data>
+      <data name="dataformat_ul_data_aggregation_protocol" type="int"> 5 </data>
+      <data name="dataformat_dl_gro_enabled" type="int"> 0 </data>
+      <data name="dataformat_ul_gso_enabled" type="int"> 0 </data>
+      <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
+      <data name="pnd_rps_mask" type="int"> 1 </data>
+      <data name="qos_via_idl" type="int"> 0 </data>
+      <data name="netdev_budget" type="int"> 9 </data>
+      <data name="tc_ul_baserate" type="int"> 0 </data>
+      <data name="low_latency_filters" type="int"> 1 </data>
+
+      <data name="num_modems" type="int"> 2 </data>
+      <list name="modems_enabled">
+         <data type="int"> 1 </data> <!-- MODEM_MSM -->
+         <data type="int"> 0 </data> <!-- MODEM_MDM -->
+      </list>
+
+      <data name="control_ports_len" type="int"> 8 </data>
+      <list name="control_ports">
+         <data type="string"> rmnet_data0 </data>
+         <data type="string"> rmnet_data1 </data>
+         <data type="string"> rmnet_data2 </data>
+         <data type="string"> rmnet_data3 </data>
+         <data type="string"> rmnet_data4 </data>
+         <data type="string"> rmnet_data5 </data>
+         <data type="string"> rmnet_data6 </data>
+         <data type="string"> rmnet_data7 </data>
+      </list>
+
+      <data name="data_ports_len" type="int"> 8 </data>
+      <list name="data_ports">
+         <data type="string"> rmnet_data0 </data>
+         <data type="string"> rmnet_data1 </data>
+         <data type="string"> rmnet_data2 </data>
+         <data type="string"> rmnet_data3 </data>
+         <data type="string"> rmnet_data4 </data>
+         <data type="string"> rmnet_data5 </data>
+         <data type="string"> rmnet_data6 </data>
+         <data type="string"> rmnet_data7 </data>
+      </list>
+
+      <data name="iwlan_enable" type="int"> 1 </data>
+      <data name="rev_control_ports_len" type="int"> 9 </data>
+      <list name="rev_control_ports">
+         <data type="string"> r_rmnet_data0 </data>
+         <data type="string"> r_rmnet_data1 </data>
+         <data type="string"> r_rmnet_data2 </data>
+         <data type="string"> r_rmnet_data3 </data>
+         <data type="string"> r_rmnet_data4 </data>
+         <data type="string"> r_rmnet_data5 </data>
+         <data type="string"> r_rmnet_data6 </data>
+         <data type="string"> r_rmnet_data7 </data>
+         <data type="string"> r_rmnet_data8 </data>
+      </list>
+
+      <data name="rev_data_ports_len" type="int"> 9 </data>
+      <list name="rev_data_ports">
+        <data type="string"> r_rmnet_data0 </data>
+        <data type="string"> r_rmnet_data1 </data>
+        <data type="string"> r_rmnet_data2 </data>
+        <data type="string"> r_rmnet_data3 </data>
+        <data type="string"> r_rmnet_data4 </data>
+        <data type="string"> r_rmnet_data5 </data>
+        <data type="string"> r_rmnet_data6 </data>
+        <data type="string"> r_rmnet_data7 </data>
+        <data type="string"> r_rmnet_data8 </data>
+      </list>
+   </listitem>
+
    <!-- MSM8994 parameters -->
    <listitem name = "msm8994">
 
@@ -462,7 +548,6 @@
       <data name="netdev_budget" type="int"> 9 </data>
       <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 0 </data>
-      <data name="skip_buffered_qos_modify" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
          <data type="int"> 1 </data> <!-- MODEM_MSM -->
@@ -1085,7 +1170,6 @@
       <data name="pnd_rps_mask" type="int"> 01 </data>
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="low_latency_filters" type="int"> 0 </data>
-      <data name="skip_buffered_qos_modify" type="int"> 1 </data>
 
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
@@ -1273,7 +1357,6 @@
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
-      <data name="skip_buffered_qos_modify" type="int"> 1 </data>
 
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
@@ -1469,7 +1552,6 @@
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
-      <data name="skip_buffered_qos_modify" type="int"> 1 </data>
 
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
@@ -1567,7 +1649,6 @@
       <data name="disable_tcp_hystart_detect" type="int"> 1 </data>
       <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
-      <data name="skip_buffered_qos_modify" type="int"> 1 </data>
 
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
@@ -2098,7 +2179,6 @@
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
-      <data name="skip_buffered_qos_modify" type="int"> 1 </data>
 
       <data name="num_modems" type="int"> 2 </data>
       <data name="qos_disabled" type="int"> 0 </data>
@@ -2207,6 +2287,7 @@
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 12 </data>
       <data name="netdev_budget" type="int"> 0 </data>
+      <data name="tcp_mtu_probing" type="int"> 2 </data>
       <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
 
@@ -2305,7 +2386,7 @@
       <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
       <data name="rtnetlink_tc_enabled" type="int"> 1 </data>
       <data name="rmnet_shs" type="int"> 0 </data>
-      <data name="rmnet_perf" type="int"> 0 </data>
+      <data name="rmnet_perf" type="int"> 2 </data>
       <data name="netdev_max_backlog" type="int"> 100000 </data>
       <data name="disable_tcp_hystart_detect" type="int"> 1 </data>
       <data name="disable_hystart" type="int"> 1 </data>
@@ -2522,6 +2603,341 @@
       <data name="low_latency_filters" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 9216 </data>
+      <data name="num_modems" type="int"> 2 </data>
+      <list name="modems_enabled">
+         <data type="int"> 1 </data> <!-- MODEM_MSM -->
+         <data type="int"> 0 </data> <!-- MODEM_MDM -->
+      </list>
+
+      <data name="control_ports_len" type="int"> 11 </data>
+      <list name="control_ports">
+         <data type="string"> rmnet_data0 </data>
+         <data type="string"> rmnet_data1 </data>
+         <data type="string"> rmnet_data2 </data>
+         <data type="string"> rmnet_data3 </data>
+         <data type="string"> rmnet_data4 </data>
+         <data type="string"> rmnet_data5 </data>
+         <data type="string"> rmnet_data6 </data>
+         <data type="string"> rmnet_data7 </data>
+         <data type="string"> rmnet_data8 </data>
+         <data type="string"> rmnet_data9 </data>
+         <data type="string"> rmnet_data10 </data>
+      </list>
+
+      <data name="data_ports_len" type="int"> 11 </data>
+      <list name="data_ports">
+         <data type="string"> rmnet_data0 </data>
+         <data type="string"> rmnet_data1 </data>
+         <data type="string"> rmnet_data2 </data>
+         <data type="string"> rmnet_data3 </data>
+         <data type="string"> rmnet_data4 </data>
+         <data type="string"> rmnet_data5 </data>
+         <data type="string"> rmnet_data6 </data>
+         <data type="string"> rmnet_data7 </data>
+         <data type="string"> rmnet_data8 </data>
+         <data type="string"> rmnet_data9 </data>
+         <data type="string"> rmnet_data10 </data>
+      </list>
+
+      <!-- iWLAN ports -->
+      <data name="iwlan_enable" type="int"> 1 </data>
+      <data name="rev_control_ports_len" type="int"> 9 </data>
+      <list name="rev_control_ports">
+         <data type="string"> r_rmnet_data0 </data>
+         <data type="string"> r_rmnet_data1 </data>
+         <data type="string"> r_rmnet_data2 </data>
+         <data type="string"> r_rmnet_data3 </data>
+         <data type="string"> r_rmnet_data4 </data>
+         <data type="string"> r_rmnet_data5 </data>
+         <data type="string"> r_rmnet_data6 </data>
+         <data type="string"> r_rmnet_data7 </data>
+         <data type="string"> r_rmnet_data8 </data>
+      </list>
+
+      <data name="rev_data_ports_len" type="int"> 9 </data>
+      <list name="rev_data_ports">
+        <data type="string"> r_rmnet_data0 </data>
+        <data type="string"> r_rmnet_data1 </data>
+        <data type="string"> r_rmnet_data2 </data>
+        <data type="string"> r_rmnet_data3 </data>
+        <data type="string"> r_rmnet_data4 </data>
+        <data type="string"> r_rmnet_data5 </data>
+        <data type="string"> r_rmnet_data6 </data>
+        <data type="string"> r_rmnet_data7 </data>
+        <data type="string"> r_rmnet_data8 </data>
+      </list>
+   </listitem>
+
+   <!-- Fusion SDA855+SDX55 (PCIe) parameters -->
+   <listitem name = "fusion_sda855_sdx55">
+
+      <data name="qmi_dpm_enabled" type="int"> 0 </data>
+      <data name="use_qmuxd" type="int"> 0 </data>
+      <data name="dpm_retry_timeout" type="int"> 10000 </data>
+      <data name="wda_data_format_enabled" type="int"> 1 </data>
+      <data name="kfc_mode" type="int"> 2 </data>
+      <data name="qmi_pc" type="int"> 1 </data>
+      <data name="tcp_ack_prio" type="int"> 1 </data>
+
+      <data name="single_qmux_ch_enabled" type="int"> 1 </data>
+      <data name="single_qmux_ch_conn_id_str" type="string"> rmnet_mhi0 </data>
+      <data name="single_qmux_ch_name" type="string"> MHICTL0 </data>
+      <data name="tc_ul_ceiling_mbps" type="int"> 3500 </data>
+      <data name="dynamic_tc_ul_baserate" type="int"> 0 </data>
+      <data name="tc_ul_burst" type="int"> 25000 </data>
+      <data name="rmnet_data_enabled" type="int"> 1 </data>
+      <data name="dataformat_agg_dl_pkt" type="int"> 31 </data>
+      <data name="dataformat_agg_dl_size" type="int"> 31668 </data>
+      <data name="dataformat_agg_ul_pkt" type="int"> 32 </data>
+      <data name="dataformat_agg_ul_size" type="int"> 16384 </data>
+      <data name="dataformat_agg_ul_time" type="int"> 3000000 </data>
+      <data name="dataformat_dl_data_aggregation_protocol" type="int"> 9 </data>
+      <data name="dataformat_ul_data_aggregation_protocol" type="int"> 9 </data>
+      <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
+      <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
+      <data name="rsc" type="int"> 1 </data>
+      <data name="rsb" type="int"> 1 </data>
+      <data name="mhip" type="int"> 1 </data>
+      <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
+      <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
+      <data name="rtnetlink_tc_enabled" type="int"> 1 </data>
+      <data name="rmnet_perf" type="int"> 3 </data>
+      <data name="rmnet_shs" type="int"> 1 </data>
+      <data name="netdev_max_backlog" type="int"> 100000 </data>
+      <data name="disable_tcp_hystart_detect" type="int"> 1 </data>
+      <data name="disable_hystart" type="int"> 1 </data>
+      <data name="initial_ssthresh" type="int"> 1400 </data>
+      <data name="dl_marker_enabled" type="int"> 2 </data>
+      <data name="pnd_rps_mask" type="int"> 2 </data>
+      <data name="vnd_rps_mask" type="int"> 125 </data>
+      <!-- #ifdef VENDOR_EDIT -->
+      <data name="tcp_mtu_probing" type="int"> 1 </data>
+      <!-- #endif VENDOR_EDIT -->
+      <data name="netdev_budget" type="int"> 0 </data>
+      <data name="low_latency_filters" type="int"> 0 </data>
+      <data name="qos_via_idl" type="int"> 1 </data>
+      <data name="max_mtu" type="int"> 9216 </data>
+      <data name="num_modems" type="int"> 2 </data>
+      <list name="modems_enabled">
+      <data type="int"> 1 </data> <!-- MODEM_MSM -->
+      <data type="int"> 0 </data> <!-- MODEM_MDM -->
+      </list>
+
+      <data name="control_ports_len" type="int"> 11 </data>
+      <list name="control_ports">
+        <data type="string"> rmnet_data0 </data>
+        <data type="string"> rmnet_data1 </data>
+        <data type="string"> rmnet_data2 </data>
+        <data type="string"> rmnet_data3 </data>
+        <data type="string"> rmnet_data4 </data>
+        <data type="string"> rmnet_data5 </data>
+        <data type="string"> rmnet_data6 </data>
+        <data type="string"> rmnet_data7 </data>
+        <data type="string"> rmnet_data8 </data>
+        <data type="string"> rmnet_data9 </data>
+        <data type="string"> rmnet_data10 </data>
+      </list>
+
+      <data name="data_ports_len" type="int"> 11 </data>
+      <list name="data_ports">
+        <data type="string"> rmnet_data0 </data>
+        <data type="string"> rmnet_data1 </data>
+        <data type="string"> rmnet_data2 </data>
+        <data type="string"> rmnet_data3 </data>
+        <data type="string"> rmnet_data4 </data>
+        <data type="string"> rmnet_data5 </data>
+        <data type="string"> rmnet_data6 </data>
+        <data type="string"> rmnet_data7 </data>
+        <data type="string"> rmnet_data8 </data>
+        <data type="string"> rmnet_data9 </data>
+        <data type="string"> rmnet_data10 </data>
+      </list>
+
+      <!-- iWLAN ports -->
+      <data name="iwlan_enable" type="int"> 1 </data>
+      <data name="rev_control_ports_len" type="int"> 9 </data>
+      <list name="rev_control_ports">
+        <data type="string"> r_rmnet_data0 </data>
+        <data type="string"> r_rmnet_data1 </data>
+        <data type="string"> r_rmnet_data2 </data>
+        <data type="string"> r_rmnet_data3 </data>
+        <data type="string"> r_rmnet_data4 </data>
+        <data type="string"> r_rmnet_data5 </data>
+        <data type="string"> r_rmnet_data6 </data>
+        <data type="string"> r_rmnet_data7 </data>
+        <data type="string"> r_rmnet_data8 </data>
+      </list>
+
+      <data name="rev_data_ports_len" type="int"> 9 </data>
+      <list name="rev_data_ports">
+        <data type="string"> r_rmnet_data0 </data>
+        <data type="string"> r_rmnet_data1 </data>
+        <data type="string"> r_rmnet_data2 </data>
+        <data type="string"> r_rmnet_data3 </data>
+        <data type="string"> r_rmnet_data4 </data>
+        <data type="string"> r_rmnet_data5 </data>
+        <data type="string"> r_rmnet_data6 </data>
+        <data type="string"> r_rmnet_data7 </data>
+        <data type="string"> r_rmnet_data8 </data>
+      </list>
+   </listitem>
+
+   <!-- Fusion SDA865+SDX55 (PCIe) parameters -->
+   <listitem name = "fusion_sda865_sdx55">
+
+      <data name="qmi_dpm_enabled" type="int"> 0 </data>
+      <data name="use_qmuxd" type="int"> 0 </data>
+      <data name="dpm_retry_timeout" type="int"> 10000 </data>
+      <data name="wda_data_format_enabled" type="int"> 1 </data>
+      <data name="kfc_mode" type="int"> 2 </data>
+      <data name="qmi_pc" type="int"> 1 </data>
+      <data name="tcp_ack_prio" type="int"> 1 </data>
+
+      <data name="single_qmux_ch_enabled" type="int"> 1 </data>
+      <data name="single_qmux_ch_conn_id_str" type="string"> rmnet_mhi0 </data>
+      <data name="single_qmux_ch_name" type="string"> MHICTL0 </data>
+      <data name="tc_ul_ceiling_mbps" type="int"> 3500 </data>
+      <data name="dynamic_tc_ul_baserate" type="int"> 0 </data>
+      <data name="tc_ul_burst" type="int"> 25000 </data>
+      <data name="rmnet_data_enabled" type="int"> 1 </data>
+      <data name="dataformat_agg_dl_pkt" type="int"> 31 </data>
+      <data name="dataformat_agg_dl_size" type="int"> 31668 </data>
+      <data name="dataformat_agg_ul_pkt" type="int"> 32 </data>
+      <data name="dataformat_agg_ul_size" type="int"> 16384 </data>
+      <data name="dataformat_agg_ul_time" type="int"> 3000000 </data>
+      <data name="dataformat_dl_data_aggregation_protocol" type="int"> 9 </data>
+      <data name="dataformat_ul_data_aggregation_protocol" type="int"> 9 </data>
+      <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
+      <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
+      <data name="rsc" type="int"> 1 </data>
+      <data name="rsb" type="int"> 1 </data>
+      <data name="mhip" type="int"> 1 </data>
+      <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
+      <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
+      <data name="rtnetlink_tc_enabled" type="int"> 1 </data>
+      <data name="rmnet_perf" type="int"> 3 </data>
+      <data name="rmnet_shs" type="int"> 1 </data>
+      <data name="netdev_max_backlog" type="int"> 100000 </data>
+      <data name="disable_tcp_hystart_detect" type="int"> 1 </data>
+      <data name="disable_hystart" type="int"> 1 </data>
+      <data name="initial_ssthresh" type="int"> 1400 </data>
+      <data name="dl_marker_enabled" type="int"> 2 </data>
+      <data name="pnd_rps_mask" type="int"> 2 </data>
+      <data name="vnd_rps_mask" type="int"> 125 </data>
+      <data name="netdev_budget" type="int"> 0 </data>
+      <data name="low_latency_filters" type="int"> 0 </data>
+      <data name="qos_via_idl" type="int"> 1 </data>
+      <data name="max_mtu" type="int"> 9216 </data>
+      <data name="num_modems" type="int"> 2 </data>
+      <list name="modems_enabled">
+      <data type="int"> 1 </data> <!-- MODEM_MSM -->
+      <data type="int"> 0 </data> <!-- MODEM_MDM -->
+      </list>
+
+      <data name="control_ports_len" type="int"> 11 </data>
+      <list name="control_ports">
+        <data type="string"> rmnet_data0 </data>
+        <data type="string"> rmnet_data1 </data>
+        <data type="string"> rmnet_data2 </data>
+        <data type="string"> rmnet_data3 </data>
+        <data type="string"> rmnet_data4 </data>
+        <data type="string"> rmnet_data5 </data>
+        <data type="string"> rmnet_data6 </data>
+        <data type="string"> rmnet_data7 </data>
+        <data type="string"> rmnet_data8 </data>
+        <data type="string"> rmnet_data9 </data>
+        <data type="string"> rmnet_data10 </data>
+      </list>
+
+      <data name="data_ports_len" type="int"> 11 </data>
+      <list name="data_ports">
+        <data type="string"> rmnet_data0 </data>
+        <data type="string"> rmnet_data1 </data>
+        <data type="string"> rmnet_data2 </data>
+        <data type="string"> rmnet_data3 </data>
+        <data type="string"> rmnet_data4 </data>
+        <data type="string"> rmnet_data5 </data>
+        <data type="string"> rmnet_data6 </data>
+        <data type="string"> rmnet_data7 </data>
+        <data type="string"> rmnet_data8 </data>
+        <data type="string"> rmnet_data9 </data>
+        <data type="string"> rmnet_data10 </data>
+      </list>
+
+      <!-- iWLAN ports -->
+      <data name="iwlan_enable" type="int"> 1 </data>
+      <data name="rev_control_ports_len" type="int"> 9 </data>
+      <list name="rev_control_ports">
+        <data type="string"> r_rmnet_data0 </data>
+        <data type="string"> r_rmnet_data1 </data>
+        <data type="string"> r_rmnet_data2 </data>
+        <data type="string"> r_rmnet_data3 </data>
+        <data type="string"> r_rmnet_data4 </data>
+        <data type="string"> r_rmnet_data5 </data>
+        <data type="string"> r_rmnet_data6 </data>
+        <data type="string"> r_rmnet_data7 </data>
+        <data type="string"> r_rmnet_data8 </data>
+      </list>
+
+      <data name="rev_data_ports_len" type="int"> 9 </data>
+      <list name="rev_data_ports">
+        <data type="string"> r_rmnet_data0 </data>
+        <data type="string"> r_rmnet_data1 </data>
+        <data type="string"> r_rmnet_data2 </data>
+        <data type="string"> r_rmnet_data3 </data>
+        <data type="string"> r_rmnet_data4 </data>
+        <data type="string"> r_rmnet_data5 </data>
+        <data type="string"> r_rmnet_data6 </data>
+        <data type="string"> r_rmnet_data7 </data>
+        <data type="string"> r_rmnet_data8 </data>
+      </list>
+   </listitem>
+
+  <!-- lito parameters -->
+   <listitem name = "lito">
+
+      <data name="qmi_dpm_enabled" type="int"> 1 </data>
+      <data name="use_qmuxd" type="int"> 0 </data>
+      <data name="dpm_retry_timeout" type="int"> 10000 </data>
+      <data name="wda_data_format_enabled" type="int"> 1 </data>
+      <data name="kfc_mode" type="int"> 2 </data>
+      <data name="qmi_pc" type="int"> 1 </data>
+      <data name="tcp_ack_prio" type="int"> 1 </data>
+
+      <data name="single_qmux_ch_enabled" type="int"> 1 </data>
+      <data name="single_qmux_ch_conn_id_str" type="string"> rmnet0 </data>
+      <data name="single_qmux_ch_name" type="string"> DATA5_CNTL </data>
+      <data name="tc_ul_ceiling_mbps" type="int"> 3500 </data>
+      <data name="dynamic_tc_ul_baserate" type="int"> 0 </data>
+      <data name="tc_ul_burst" type="int"> 25000 </data>
+      <data name="rmnet_data_enabled" type="int"> 1 </data>
+      <data name="dataformat_agg_dl_pkt" type="int"> 31 </data>
+      <data name="dataformat_agg_dl_size" type="int"> 16384 </data>
+      <data name="dataformat_agg_ul_pkt" type="int"> 32  </data>
+      <data name="dataformat_agg_ul_size" type="int"> 16384 </data>
+      <data name="dataformat_dl_data_aggregation_protocol" type="int"> 9 </data>
+      <data name="dataformat_ul_data_aggregation_protocol" type="int"> 9 </data>
+      <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
+      <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
+      <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
+      <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
+      <data name="rtnetlink_tc_enabled" type="int"> 1 </data>
+      <data name="rsc" type="int"> 0 </data>
+      <data name="rsb" type="int"> 0 </data>
+      <data name="rmnet_shs" type="int"> 0 </data>
+      <data name="rmnet_perf" type="int"> 0 </data>
+      <data name="netdev_max_backlog" type="int"> 100000 </data>
+      <data name="disable_tcp_hystart_detect" type="int"> 1 </data>
+      <data name="disable_hystart" type="int"> 1 </data>
+      <data name="initial_ssthresh" type="int"> 1400 </data>
+      <data name="dl_marker_enabled" type="int"> 1 </data>
+      <data name="xlat_txcsum_disabled" type="int"> 0 </data>
+      <data name="pnd_rps_mask" type="int"> 2 </data>
+      <data name="vnd_rps_mask" type="int"> 13 </data>
+      <data name="netdev_budget" type="int"> 0 </data>
+      <data name="low_latency_filters" type="int"> 0 </data>
+      <data name="qos_via_idl" type="int"> 1 </data>
+      <data name="max_mtu" type="int"> 0 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
          <data type="int"> 1 </data> <!-- MODEM_MSM -->

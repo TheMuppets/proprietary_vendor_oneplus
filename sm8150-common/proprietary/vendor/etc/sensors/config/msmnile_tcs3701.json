@@ -1,7 +1,7 @@
 {
   "config":{
     "hw_platform": ["MTP", "Dragon", "Surf"],
-    "soc_id": ["339", "246", "305"]
+    "soc_id": ["339", "246", "305", "361"]
   },
   "tcs3701_platform":{
     "owner": "sns_tcs3701",
@@ -26,7 +26,7 @@
         "data": "0"
       },
       "dri_irq_num":{ "type": "int", "ver": "0",
-        "data": "95"
+        "data": "117"
       },
       "irq_pull_type":{ "type": "int", "ver": "0",
         "data": "2"
@@ -61,10 +61,37 @@
       ".fac_cal":{
         "owner": "sns_tcs3701",
         "scale":{ "type": "flt", "ver": "0",
-          "data": "1.0"
+          "data": "1000.0"
         },
         "bias":{ "type": "flt", "ver": "0",
           "data": "0.0"
+        },
+        "cal_chh0":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "cal_chh1":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "cal_chh2":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "cal_chh3":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "cal_chl0":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "cal_chl1":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "cal_chl2":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "cal_chl3":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "rowcoe":{ "type": "flt", "ver": "0",
+          "data": "1000.0"
         }
       }
     },
@@ -73,10 +100,22 @@
       ".fac_cal":{
         "owner": "sns_tcs3701",
         "near_threshold":{ "type": "flt", "ver": "0",
-          "data": "60.0"
+          "data": "200.0"
         },
         "far_threshold":{ "type": "flt", "ver": "0",
-          "data": "40.0"
+          "data": "150.0"
+        },
+	"offset1":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "offset2":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "1cm_thrd":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "3cm_thrd":{ "type": "flt", "ver": "0",
+          "data": "0.0"
         }
       }
     },
@@ -98,24 +137,30 @@
         "data": "-0.1"
       },
       "5":{ "type": "flt", "ver": "0",
-        "data": "0.0"
+        "data": "1000.0"
       },
       "6":{ "type": "flt", "ver": "0",
-        "data": "0.0"
+        "data": "3486.0"
       },
       "7":{ "type": "flt", "ver": "0",
-        "data": "0.0"
+        "data": "1700.0"
       },
       "8":{ "type": "flt", "ver": "0",
-        "data": "0.0"
+        "data": "1315.0"
       },
       "9":{ "type": "flt", "ver": "0",
-        "data": "0.0"
+        "data": "705.0"
       },
       "10":{ "type": "flt", "ver": "0",
-        "data": "600.0"
+        "data": "5627.0"
       },
       "11":{ "type": "flt", "ver": "0",
+        "data": "1153.0"
+      },
+      "12":{ "type": "flt", "ver": "0",
+        "data": "1637.0"
+      },
+      "13":{ "type": "flt", "ver": "0",
         "data": "0.0"
       }
     }

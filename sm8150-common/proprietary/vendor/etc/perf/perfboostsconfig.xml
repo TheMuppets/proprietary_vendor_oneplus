@@ -81,11 +81,25 @@
         <!-- Type="4", FA launch boost of 15sec -->
         <Config
             Id="0x00001081" Type="4" Enable="true" Timeout="15000" Target="msmnile"
-            Resources="0x40C00000, 0x3, 0x40C58000, 0x2D, 0x40C54000, 0x41,
+            Resources="0x40C00000, 0x1, 0x40C58000, 0x2D, 0x40C54000, 0x41,
                        0x40408000, 0x63, 0x40C20000, 0x28, 0x40C1C000, 0x3C,
                        0x40C20200, 0x28, 0x40C1C200, 0x3C, 0x42C10000, 0x1,
-                       0x40800200, 0x640, 0x40800000, 0x640, 0x40800100, 0x4B0,
+                       0x40800200, 0x76C, 0x40800000, 0x76C, 0x40800100, 0x4B0,
                        0x41800000, 0x50, 0x43000000, 0x3A, 0x43400000, 0x3480" />
+
+    <!-- config_enableLaunchBoost6-->
+       <!-- SLB_BIG, val, SLB_BIG, val, SLB_BIG, val-->
+       <!-- SLB_LITTLE, val, SLB_LITTLE, val, SLB_LITTLE, val, SLB_LITTLE, val-->
+       <!-- SLB_PRIME, val-->
+       <!-- CPU_DOWN_FREQ_THRESHOLD_US, val us -->
+
+       <!-- Type="6", Game Launch boost -->
+       <Config
+           Id="0x00001081" Type="6" Enable="true" Timeout="2000" Target="msmnile"
+           Resources="0x40C68000, 60, 0x40C68010, 60, 0x40C68020, 60,
+                      0x40C68100, 33, 0x40C68110, 33, 0x40C68120, 33, 0x40C68130, 33,
+                      0x40C68200, 60,
+                      0x41448000, 20000 "/>
 
     <!--Vertical Scroll boost-->
         <!-- LLCBW_MIN_FREQ resource opcode, value-->
@@ -96,10 +110,22 @@
         <!-- L3_MEMLAT_MIN_FREQ resource opcode, value -->
 
         <!-- Type="1", Vertical Scroll boost -->
+        <!--
+        // #ifndef VENDOR_EDIT
+        // chris.gao@SYSTEM, 2019/3/2, [GCE-16643] Update boost config for scroll
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="msmnile"
+            Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
+                       0x40C00000, 0x2, 0x43400000, 0x1F40" />
+        #else
+        -->
         <Config
             Id="0x00001080" Type="1" Enable="true" Target="msmnile"
             Resources="0x43000000, 0x19, 0x40800000, 1209, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43400000, 0x1F40" />
+        <!--
+        // #endif VENDOR_EDIT
+        -->
 
     <!--Prefling Scroll boost-->
         <!-- LLCBW_MIN_FREQ resource opcode, value-->
@@ -114,14 +140,6 @@
             Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="msmnile"
             Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43400000, 0x1F40" />
-
-    <!--Horizontal Scroll boost-->
-        <!-- SCHEDBOOST resource opcode, value-->
-
-        <!-- Type="2", Horizontal Scroll boost -->
-        <Config
-            Id="0x00001080" Type="2" Enable="true" Target="msmnile"
-            Resources="0x40C00000, 0x2" />
 
 	<!--MTP boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -188,5 +206,17 @@
         <Config
             Id="0x00001090" Enable="true" Timeout="1000" Target="msmnile"
             Resources="0x40800100, 1000, 0x4280C000, 596" />
+
+    <!--Display on Resource -->
+        <!-- Display on resource opcode, value -->
+        <Config
+                Id="0x00001041" Enable="true" Timeout="0" Target="msmnile"
+                Resources="0x40000000, 1" />
+    <!--Display off Resource -->
+        <!-- Display on resource opcode, value -->
+        <Config
+                Id="0x00001040" Enable="true" Timeout="0" Target="msmnile"
+                Resources="0x40000000, 0x0" />
+
     </PerfBoost>
 </BoostConfigs>
