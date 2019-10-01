@@ -6,5 +6,5 @@
 -->
 <permissions>
     <library name="com.qualcomm.qti.imscmservice@1.0-java"
-            file="/system/framework/com.qualcomm.qti.imscmservice@1.0-java.jar" />
+            file="/system/product/framework/com.qualcomm.qti.imscmservice@1.0-java.jar" />
 </permissions>

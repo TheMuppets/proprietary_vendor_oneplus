@@ -6,5 +6,5 @@
 -->
 <permissions>
  <library name="qti-telephony-common"
-          file="/system/framework/qti-telephony-common.jar"/>
+          file="/product/framework/qti-telephony-common.jar"/>
 </permissions>
