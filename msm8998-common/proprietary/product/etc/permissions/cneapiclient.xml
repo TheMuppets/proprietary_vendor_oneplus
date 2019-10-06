@@ -2,5 +2,5 @@
 <!--Copyright (c) 2011-2013 Qualcomm Technologies, Inc.  All Rights Reserved. Qualcomm Technologies Proprietary and Confidential.-->
 <permissions>
     <library name="com.quicinc.cneapiclient"
-        file="/system/framework/cneapiclient.jar"/>
+        file="/system/product/framework/cneapiclient.jar"/>
 </permissions>
