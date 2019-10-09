@@ -902,8 +902,8 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     CneApp \
     IWlanService \
-    PowerOffAlarm \
     TimeService \
+    PowerOffAlarm \
     dpmserviceapp \
     WfdCommon \
     dashd
