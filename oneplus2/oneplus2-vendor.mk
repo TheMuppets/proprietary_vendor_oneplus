@@ -30,7 +30,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/vendor/bin/pm-service:system/vendor/bin/pm-service \
     vendor/oneplus/oneplus2/proprietary/vendor/bin/qmuxd:system/vendor/bin/qmuxd \
     vendor/oneplus/oneplus2/proprietary/vendor/bin/qseecomd:system/vendor/bin/qseecomd \
-    vendor/oneplus/oneplus2/proprietary/vendor/bin/radish:system/vendor/bin/radish \
     vendor/oneplus/oneplus2/proprietary/vendor/bin/rfs_access:system/vendor/bin/rfs_access \
     vendor/oneplus/oneplus2/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
     vendor/oneplus/oneplus2/proprietary/vendor/bin/sensors.qcom:system/vendor/bin/sensors.qcom \
