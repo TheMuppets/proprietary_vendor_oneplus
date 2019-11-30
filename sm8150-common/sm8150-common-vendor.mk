@@ -461,68 +461,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/qdcm_calib_data_td4330_cmd_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4330_cmd_mode_dsi_truly_panel.xml \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/qdcm_calib_data_td4330_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4330_video_mode_dsi_truly_panel.xml \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/sdr_config.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sdr_config.cfg \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/ak991x_polling_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_polling_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lps22hh_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/lsm6dsm_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dsm_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/lsm6dsm_0_8g.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dsm_0_8g.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/mmc5603x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/mmc5603x_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_ak991x_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_bmi26x_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_default_sensors.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_dps368_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_dps368_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_hdk_tmd2725_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_hdk_tmd2725_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_irq.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_lsm6dsm_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_lsm6dsm_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_mmc5603x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_mmc5603x_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_power_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_qrd_tmd2725_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_qrd_tmd2725_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_stk2232_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_stk2232_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_sx9324.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_sx9324.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_sx932x.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_sx932x.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_tcs3701.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_tcs3701.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_tmd2725_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_tmd2725_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/msmnile_tmd3702.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/msmnile_tmd3702.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_aont.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_aont.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_basic_gestures.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_basic_gestures.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_bring_to_ear.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_bring_to_ear.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_ccd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_ccd_v2_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v2_walk.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_ccd_v3_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v3_walk.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dae.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_device_orient.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_device_orient.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_distance_bound.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_distance_bound.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_dpc.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dpc.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_facing.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_facing.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_fmv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_free_fall.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_free_fall.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_geomag_rv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_geomag_rv.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_heart_rate.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_heart_rate.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_mag_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_mag_cal_legacy.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal_legacy.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_multishake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_multishake.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_pedometer.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_pedometer.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rmd.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rotv.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_smd.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_tilt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_tilt_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_disabled.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/stk2232_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk2232_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sx9324_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sx9324_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sx932x_0.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/tcs3701.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3701.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/config/tmd3702.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tmd3702.json \
-    vendor/oneplus/sm8150-common/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/oneplus/sm8150-common/proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml \
