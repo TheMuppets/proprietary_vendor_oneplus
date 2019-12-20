@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 
 <!--
-/* Copyright (c) 2017, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2017-2018, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -43,6 +43,10 @@
     <allow-in-power-save package="com.qualcomm.qti.StatsPollManager" />
     <allow-in-power-save package="com.qualcomm.qti.gsma.services.nfc" />
     <allow-in-power-save package="com.quicinc.voice.activation" />
+    <allow-in-power-save package="com.android.mms" />
+    <allow-in-power-save package="com.android.exchange" />
+    <allow-in-power-save package="com.qualcomm.qti.callenhancement" />
+    <allow-in-power-save package="com.qualcomm.qti.smartassistant" />
     <!-- These telephony applications need access to non-[System]SDK APIs -->
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteserver" />
     <hidden-api-whitelisted-app package="com.qualcomm.uimremoteclient" />
@@ -102,10 +106,10 @@
     <hidden-api-whitelisted-app package="com.qti.vtloopback " />
     <hidden-api-whitelisted-app package="com.android.bluetooth" />
     <hidden-api-whitelisted-app package="org.codeaurora.bluetooth" />
-    <hidden-api-whitelisted-app package="org.codeaurora.bluetooth.hidtestapp" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.qmmi" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.perfdump" />
     <hidden-api-whitelisted-app package="com.qualcomm.wfd.client" />
     <hidden-api-whitelisted-app package="com.qualcomm.wfd.service" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.server.wigigapp" />
+    <hidden-api-whitelisted-app package="com.qti.service.colorservice" />
 </config>
