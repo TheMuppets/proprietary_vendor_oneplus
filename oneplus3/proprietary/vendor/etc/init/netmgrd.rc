@@ -7,12 +7,6 @@ on boot
     #Create NETMGR daemon socket area
     mkdir /dev/socket/netmgr 0750 radio radio
 
-    # Create netmgr recovery folder
-    mkdir /data/vendor/netmgr/recovery 0700 radio radio
-    chmod 0770 /data/vendor/netmgr/recovery
-    write /data/vendor/netmgr/recovery/recovery_info ""
-    chown radio radio /data/vendor/netmgr/recovery/recovery_info
-
     #Assign TCP buffer thresholds to be ceiling value of technology maximums
     #Increased technology maximums should be reflected here.
     write /proc/sys/net/core/rmem_max  16777216
@@ -23,6 +17,12 @@ on post-fs-data
     #Create NETMGR daemon log dir
     mkdir /data/vendor/netmgr 0770 radio radio
     chmod 0770 /data/vendor/netmgr
+
+    # Create netmgr recovery folder
+    mkdir /data/vendor/netmgr/recovery 0700 radio radio
+    chmod 0770 /data/vendor/netmgr/recovery
+    write /data/vendor/netmgr/recovery/recovery_info ""
+    chown radio radio /data/vendor/netmgr/recovery/recovery_info
 
 # Manage netmgrd based on value of property
 on property:persist.vendor.data.mode=disabled
