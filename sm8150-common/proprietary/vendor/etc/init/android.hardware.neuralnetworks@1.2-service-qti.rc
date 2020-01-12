@@ -11,3 +11,12 @@ service neuralnetworks_hal_service /vendor/bin/hw/android.hardware.neuralnetwork
 #Below changes moved from init.target.rc as part of go/FR53051
 on post-fs-data
     mkdir /data/vendor/nnhal 0700 system system
+
+# Swinder@Imaging, 2019/11/05, Reset NN process when it hangs
+on property:sys.boot_completed=1
+    setprop vendor.oem.nn 1
+
+on property:vendor.oem.nn=0
+    stop neuralnetworks_hal_service
+    start neuralnetworks_hal_service
+    setprop vendor.oem.nn 1

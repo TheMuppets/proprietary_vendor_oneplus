@@ -6,9 +6,6 @@
 
 BEGIN TRANSACTION;
 
-/* START VENDOR_EDIT ravi.katam [GLFT-7362] [GLFT-7535] NETWORK 2019/08/13 Remove entery for RJIL
-   100 Emergency Call , For 100 Emergency Call type should be process as VOICE Call Not Emg call.
-
 INSERT OR REPLACE INTO qcril_properties_table (property, value) VALUES ('qcrildb_version', 4);
 
 DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '405' AND MNC = '840' AND NUMBER = '100';
@@ -56,7 +53,5 @@ DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC
 DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC = '872' AND NUMBER = '100';
 DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC = '873' AND NUMBER = '100';
 DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '405' AND MNC = '874' AND NUMBER = '100';
-
-END VENDOR_EDIT ravi.katam NETWORK */
 
 COMMIT TRANSACTION;

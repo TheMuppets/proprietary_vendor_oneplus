@@ -444,6 +444,25 @@
 	    0x40C68130, 0xFFFFFFF6,0x41444100, 0, 0x41440100, 0x63, 0x41444000, 0,
 	    0x4300C000, 0xA ,0x41820000, 0xA, 0x43004000, 0x64 ,0x41808000, 0x64, 0x4180C000, 0, 0x43008000, 0, 0x43420000, 0x64,
 	       0x40800100, 0x4B9, 0x40800000, 0x4CC, 0x40C20000, 0x14, 0x40C1C000, 0x1E"/>
+        <!-- camera thirdparty -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU - Disable schedutil PL -->
+        <!--L CPU - Set hispeed load 99 -->
+        <!--B CPU - Disable schedutil PL -->
+        <!--LLC-DDR BWMON - Set sample_ms 10 -->
+        <!--CPU-LLC BWMON - Set sample_ms 10 -->
+        <!--LLC-DDR BWMON - Set io_percent 100 -->
+        <!--CPU-LLC BWMON - Set io_percent 100 -->
+        <!--CPU-LLC BWMON - Set hyst_length 0 -->
+        <!--LLC-DDR BWMON - Set hyst_length 0 -->
+        <!--CPU0-LLC MEM LAT - Set ratio_ceil 100 -->
+        <Config
+            Id="0x00001340" Enable="true" Timeout="0" Target="msmnile"
+            Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 25, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 71,
+                0x41808000, 80"/>
     </Powerhint>
 </HintConfigs>
 
