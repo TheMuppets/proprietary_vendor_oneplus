@@ -85,7 +85,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/vendor/etc/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
     vendor/oneplus/oneplus2/proprietary/vendor/etc/permissions/qti_libpermissions.xml:system/vendor/etc/permissions/qti_libpermissions.xml \
     vendor/oneplus/oneplus2/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
-    vendor/oneplus/oneplus2/proprietary/etc/silence_short.wav:system/etc/silence_short.wav \
     vendor/oneplus/oneplus2/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
     vendor/oneplus/oneplus2/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/oneplus/oneplus2/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
@@ -111,6 +110,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/vendor/etc/perf-profile3.conf:system/vendor/etc/perf-profile3.conf \
     vendor/oneplus/oneplus2/proprietary/vendor/etc/perf-profile4.conf:system/vendor/etc/perf-profile4.conf \
     vendor/oneplus/oneplus2/proprietary/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
+    vendor/oneplus/oneplus2/proprietary/vendor/etc/silence_short.wav:system/vendor/etc/silence_short.wav \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/oneplus/oneplus2/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
