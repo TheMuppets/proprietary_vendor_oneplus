@@ -210,17 +210,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QFingerprintService",
-	owner: "oneplus",
-	apk: "proprietary/vendor/app/QFingerprintService/QFingerprintService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "TimeService",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
