@@ -2695,9 +2695,11 @@
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 9 </data>
       <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
-      <data name="rsc" type="int"> 1 </data>
-      <data name="rsb" type="int"> 1 </data>
-      <data name="mhip" type="int"> 1 </data>
+      <!-- #ifdef VENDOR_EDIT KimmyYang 20191017 Disable GRO for x55m -->
+      <data name="rsc" type="int"> 0 </data>
+      <data name="rsb" type="int"> 0 </data>
+      <data name="mhip" type="int"> 0 </data>
+      <!-- #endif VENDOR_EDIT -->
       <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
       <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
       <data name="rtnetlink_tc_enabled" type="int"> 1 </data>
