@@ -158,17 +158,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "com.qualcomm.location",
-	owner: "oneplus",
-	apk: "proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "oneplus",
 	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
