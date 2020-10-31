@@ -28,3 +28,4 @@ mcfg_sw/generic/eu/dt/volte/commerci/mcfg_sw.mbn
 mcfg_sw/generic/na/verizon/cdmaless/mcfg_sw.mbn
 mcfg_sw/generic/eu/vodafone/volte/uk/mcfg_sw.mbn
 mcfg_sw/generic/eu/bouygues/commerci/france/mcfg_sw.mbn
+mcfg_sw/generic/eu/vodafone/volte/netherla/mcfg_sw.mbn

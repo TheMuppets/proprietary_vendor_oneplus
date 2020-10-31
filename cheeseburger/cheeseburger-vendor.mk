@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2019 The LineageOS Project
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,14 +20,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/hw/fingerprint.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.msm8998.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/hw/fingerprint.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.msm8998.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_Bluetooth_cal.acdb \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_General_cal.acdb \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_Global_cal.acdb \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_Handset_cal.acdb \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_Hdmi_cal.acdb \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_Headset_cal.acdb \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_Speaker_cal.acdb \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/EU/EU_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_workspaceFile.qwsp \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_General_cal.acdb \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Global_cal.acdb \
@@ -46,4 +38,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_3a_wechat_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx398_3a_wechat_preview.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_isp_zsl_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx398_isp_zsl_snapshot.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_preview_1080p_cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx398_preview_1080p_cpp.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_iface_modules.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_imglib_modules.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_mct.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_sensor_modules.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_modules.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imx398.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx398.so

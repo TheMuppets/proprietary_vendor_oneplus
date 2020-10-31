@@ -18,14 +18,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/dumpling
 
 PRODUCT_COPY_FILES += \
-    vendor/oneplus/dumpling/proprietary/vendor/etc/acdbdata/EU/EU_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_Bluetooth_cal.acdb \
-    vendor/oneplus/dumpling/proprietary/vendor/etc/acdbdata/EU/EU_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_General_cal.acdb \
-    vendor/oneplus/dumpling/proprietary/vendor/etc/acdbdata/EU/EU_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_Global_cal.acdb \
-    vendor/oneplus/dumpling/proprietary/vendor/etc/acdbdata/EU/EU_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_Handset_cal.acdb \
-    vendor/oneplus/dumpling/proprietary/vendor/etc/acdbdata/EU/EU_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_Hdmi_cal.acdb \
-    vendor/oneplus/dumpling/proprietary/vendor/etc/acdbdata/EU/EU_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_Headset_cal.acdb \
-    vendor/oneplus/dumpling/proprietary/vendor/etc/acdbdata/EU/EU_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_Speaker_cal.acdb \
-    vendor/oneplus/dumpling/proprietary/vendor/etc/acdbdata/EU/EU_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/EU/EU_workspaceFile.qwsp \
     vendor/oneplus/dumpling/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
     vendor/oneplus/dumpling/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_General_cal.acdb \
     vendor/oneplus/dumpling/proprietary/vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Global_cal.acdb \
@@ -45,6 +37,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_ca.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_hal.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libgoodixfingerprintd_binder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgoodixfingerprintd_binder.so \
+    vendor/oneplus/dumpling/proprietary/vendor/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_iface_modules.so \
+    vendor/oneplus/dumpling/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_imglib_modules.so \
+    vendor/oneplus/dumpling/proprietary/vendor/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_mct.so \
+    vendor/oneplus/dumpling/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_sensor_modules.so \
+    vendor/oneplus/dumpling/proprietary/vendor/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_modules.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libmmcamera_imx398.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx398.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib64/hw/fingerprint.fpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib64/hw/fingerprint.goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.so \

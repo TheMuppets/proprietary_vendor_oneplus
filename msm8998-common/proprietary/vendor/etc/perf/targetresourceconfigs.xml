@@ -37,7 +37,6 @@ as anyway perflock calls of these resources would fail. -->
         minors are disabled. -->
         <Config MajorValue="0x5" MinorValue="0x0" Node="/sys/devices/system/cpu/cpu4/cpufreq/interactive/above_hispeed_delay" /> <!-- above_hispeed_delay -->
         <Config MajorValue="0x5" MinorValue="0x1" Node="/sys/devices/system/cpu/cpu4/cpufreq/interactive/boost" /> <!-- boost -->
-        <Config MajorValue="0x5" MinorValue="0x2" Node="/sys/devices/system/cpu/cpu4/cpufreq/interactive/boostpulse" /> <!-- boostpulse -->
         <Config MajorValue="0x5" MinorValue="0x3" Node="/sys/devices/system/cpu/cpu4/cpufreq/interactive/boostpulse_duration" /> <!-- boostpulse_duration -->
         <Config MajorValue="0x5" MinorValue="0x4" Node="/sys/devices/system/cpu/cpu4/cpufreq/interactive/go_hispeed_load" /> <!-- go_hispeed_load -->
         <Config MajorValue="0x5" MinorValue="0x5" Node="/sys/devices/system/cpu/cpu4/cpufreq/interactive/hispeed_freq" /> <!-- hispeed_freq -->

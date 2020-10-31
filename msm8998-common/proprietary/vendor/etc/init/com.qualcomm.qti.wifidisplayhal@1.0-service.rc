@@ -1,4 +1,4 @@
 service wifidisplayhalservice /vendor/bin/wifidisplayhalservice
   class main
   user system
-  group drmrpc inet input net_admin mediadrm audio
+  group drmrpc inet input net_admin mediadrm audio system
