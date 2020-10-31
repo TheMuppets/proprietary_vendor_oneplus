@@ -19,6 +19,6 @@ service vendor.drm-widevine-hal-1-2 /vendor/bin/hw/android.hardware.drm@1.2-serv
     interface android.hidl.base@1.0::IBase widevine
     class hal
     user media
-    group media mediadrm drmrpc
+    group media mediadrm drmrpc system
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks

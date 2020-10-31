@@ -138,5 +138,17 @@
         <Config
             Id="0x00001090" Enable="true" Timeout="1000" Target="msm8998"
             Resources="0x40800100, 1000, 0x4280C000, 596" />
+
+    <!--Display on Resource -->
+        <!-- Display on resource opcode, value -->
+        <Config
+                Id="0x00001041" Enable="true" Timeout="0" Target="msm8998"
+                Resources="0x40000000, 1" />
+    <!--Display off Resource -->
+        <!-- Display on resource opcode, value -->
+        <Config
+                Id="0x00001040" Enable="true" Timeout="0" Target="msm8998"
+                Resources="0x40000000, 0x0" />
+
     </PerfBoost>
 </BoostConfigs>
