@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (c) 2015-2016 Qualcomm Technologies, Inc.
+    All Rights Reserved.
+    Confidential and Proprietary - Qualcomm Technologies, Inc.-->
+<permissions>
+    <library name="com.qti.dpmframework"
+        file="/system/product/framework/com.qti.dpmframework.jar"/>
+    <library name="android.hidl.manager-V1.0-java"
+        file="/system/framework/android.hidl.manager-V1.0-java.jar"/>
+    <permission name="com.qualcomm.permission.READPROC" >
+    <group gid="readproc" />
+    </permission>
+</permissions>
