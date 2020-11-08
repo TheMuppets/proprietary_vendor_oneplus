@@ -38,6 +38,16 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "NxpNfcNci",
+	owner: "oneplus",
+	apk: "proprietary/app/NxpNfcNci/NxpNfcNci.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "HotwordEnrollmentOKGoogleHEXAGON",
 	owner: "oneplus",
 	apk: "proprietary/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
