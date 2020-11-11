@@ -19,23 +19,6 @@
 soong_namespace {
 }
 
-android_app_import {
-	name: "IFAAService",
-	owner: "oneplus",
-	apk: "proprietary/priv-app/IFAAService/IFAAService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-dex_import {
-	name: "vendor.oneplus.hardware.param-V1.0-java",
-	owner: "oneplus",
-	jars: ["proprietary/framework/vendor.oneplus.hardware.param-V1.0-java.jar"],
-}
-
 cc_prebuilt_library_shared {
 	name: "libantradio",
 	owner: "oneplus",
@@ -263,6 +246,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "IFAAService",
+	owner: "oneplus",
+	apk: "proprietary/priv-app/IFAAService/IFAAService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "WfdService",
 	owner: "oneplus",
 	apk: "proprietary/priv-app/WfdService/WfdService.apk",
@@ -400,6 +394,12 @@ dex_import {
 	name: "WfdCommon",
 	owner: "oneplus",
 	jars: ["proprietary/framework/WfdCommon.jar"],
+}
+
+dex_import {
+	name: "vendor.oneplus.hardware.param-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/framework/vendor.oneplus.hardware.param-V1.0-java.jar"],
 }
 
 prebuilt_etc_xml {
