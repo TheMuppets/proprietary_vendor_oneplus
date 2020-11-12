@@ -1,0 +1,14 @@
+<InterfaceDb>
+  <Usecases>
+    <Usecase name="USECASE_INTERNAL_POWERSOUND">
+      <Parameters/>
+      <Modes/>
+    </Usecase>
+    <Usecase name="USECASE_EXTERNAL_HEADSET">
+      <Parameters>
+        <Parameter id="4" name="Loudness" defaultValue="0"/>
+      </Parameters>
+      <Modes/>
+    </Usecase>
+  </Usecases>
+</InterfaceDb>
