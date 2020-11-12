@@ -1,0 +1,7 @@
+service vendor.ril-daemon /vendor/bin/hw/rild
+    override
+    class main
+    user radio
+    disabled
+    group radio cache inet misc audio log readproc wakelock oem_2901
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW

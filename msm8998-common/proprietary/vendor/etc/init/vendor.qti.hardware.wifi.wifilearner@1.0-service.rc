@@ -1,0 +1,16 @@
+#
+# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+service vendor.wifilearner /system/vendor/bin/wifilearner
+    class main
+    user wifi
+    group wifi
+    # HIDL interfaces
+    interface vendor.qti.hardware.wifi.wifilearner@1.0::IWifiStats wifiStats
+    # don't auto restart
+    oneshot
+    # start only when requested
+    disabled

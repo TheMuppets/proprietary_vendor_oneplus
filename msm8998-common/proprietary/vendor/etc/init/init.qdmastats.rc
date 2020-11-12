@@ -1,0 +1,29 @@
+# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+on post-fs-data
+    # create QDMA dropbox
+    mkdir /data/vendor/qdmastats 0700 system system
+    mkdir /data/vendor/qdma 0770 system system
+    mkdir /dev/socket/qdma 0777 system system
+    chmod 2777 /dev/socket/qdma
+    mkdir /data/vendor/qdma/conf 0770 system system
+
+on property:vendor.qti.qdma.oper.mode=1
+    write /data/vendor/qdma/conf/qdma.conf "OperationMode:1"
+    chown system system /data/vendor/qdma/conf/qdma.conf
+
+on property:vendor.qti.qdma.oper.mode=2
+    write /data/vendor/qdma/conf/qdma.conf "OperationMode:2"
+    chown system system /data/vendor/qdma/conf/qdma.conf
+
+on property:vendor.qti.qdma.oper.mode=3
+    write /data/vendor/qdma/conf/qdma.conf "OperationMode:3"
+    chown system system /data/vendor/qdma/conf/qdma.conf
+
+service vendor.qdmastatsd /system/vendor/bin/qdmastatsd
+    class late_start
+    user system
+    group readproc system net_bw_stats radio vendor_rfs_shared sdcard_rw media_rw sdcard_r
