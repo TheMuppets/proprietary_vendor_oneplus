@@ -232,14 +232,11 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libtime_genoff.so"],
-		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libtime_genoff.so"],
 		},
 	},
-	compile_multilib: "both",
+	compile_multilib: "64",
 	prefer: true,
 	soc_specific: true,
 }
