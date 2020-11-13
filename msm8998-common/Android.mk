@@ -19,13 +19,6 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter cheeseburger dumpling,$(TARGET_DEVICE)),)
 
 
-ifeq ($(QCPATH),)
-endif
-
-ifneq ($(TARGET_HAVE_QC_PERF),true)
-
-endif
-
 $(shell mkdir -p $(TARGET_OUT_VENDOR)/lib/egl && pushd $(TARGET_OUT_VENDOR)/lib > /dev/null && ln -sf egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
 $(shell mkdir -p $(TARGET_OUT_VENDOR)/lib64/egl && pushd $(TARGET_OUT_VENDOR)/lib64 > /dev/null && ln -sf egl/libEGL_adreno.so libEGL_adreno.so && popd > /dev/null)
 endif
