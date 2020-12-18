@@ -1,0 +1,5 @@
+service secure_element_hal_service /vendor/bin/hw/android.hardware.secure_element@1.0-service
+    class hal
+    interface android.hardware.secure_element@1.0::ISecureElement eSE1
+    user secure_element
+    group secure_element

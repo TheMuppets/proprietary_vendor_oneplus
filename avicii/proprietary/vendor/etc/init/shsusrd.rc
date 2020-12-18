@@ -1,0 +1,25 @@
+# Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+on boot
+    # Create netmgr recovery folder
+    write /data/vendor/shsusr/shsusr_log.txt ""
+    chown root root /data/vendor/shsusr/shsusr_log.txt
+
+# msm specific files that need to be created on /data
+on post-fs-data
+    #Create SHSUSR daemon log dir
+    mkdir /data/vendor/shsusr 0770 root root
+    chmod 0770 /data/vendor/shsusr
+
+service vendor.shsusrd /system/vendor/bin/shsusrd 0x002819000
+    class main
+    disabled
+
+on property:persist.vendor.data.shsusr_load=1
+    start vendor.shsusrd
+
+on property:persist.vendor.data.shsusr_load=0
+    stop vendor.shsusrd

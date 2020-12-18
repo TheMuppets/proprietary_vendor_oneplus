@@ -1,0 +1,4 @@
+service pasr-hal-1-0 /vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
+    class hal
+    user system
+    group system

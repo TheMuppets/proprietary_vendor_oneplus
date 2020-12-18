@@ -1,0 +1,67 @@
+<InterfaceDb>
+  <Usecases>
+    <Usecase name="USECASE_INTERNAL_POWERSOUND">
+      <Parameters>
+        <Parameter id="3" name="Tonal Balance" defaultValue="0"/>
+      </Parameters>
+      <Modes>
+        <Mode name="Movie">
+          <Parameter id="3" value="1"/>
+        </Mode>
+        <Mode name="Music">
+          <Parameter id="3" value="0"/>
+        </Mode>
+      </Modes>
+    </Usecase>
+    <Usecase name="USECASE_INTERNAL_POWERSOUND2">
+      <Parameters/>
+      <Modes/>
+    </Usecase>
+    <Usecase name="USECASE_EXTERNAL_HEADSET">
+      <Parameters>
+        <Parameter id="3" name="Tonal Balance" defaultValue="0"/>
+      </Parameters>
+      <Modes>
+        <Mode name="Bypass">
+          <Parameter id="3" value="-1"/>
+		  <EQ band="1" value="0"/>
+          <EQ band="2" value="0"/>
+          <EQ band="3" value="0"/>
+          <EQ band="4" value="0"/>
+          <EQ band="5" value="0"/>
+          <EQ band="6" value="0"/>
+          <EQ band="7" value="0"/>
+		  <EQ band="8" value="0"/>
+          <EQ band="9" value="0"/>
+          <EQ band="10" value="0"/>
+        </Mode>
+        <Mode name="Movie">
+          <Parameter id="3" value="1"/>
+		  <EQ band="1" value="0"/>
+          <EQ band="2" value="0"/>
+          <EQ band="3" value="0"/>
+          <EQ band="4" value="0"/>
+          <EQ band="5" value="0"/>
+          <EQ band="6" value="0"/>
+          <EQ band="7" value="0"/>
+		  <EQ band="8" value="0"/>
+          <EQ band="9" value="0"/>
+          <EQ band="10" value="0"/>
+        </Mode>
+        <Mode name="Music">
+          <Parameter id="3" value="0"/>
+		  <EQ band="1" value="0"/>
+          <EQ band="2" value="0"/>
+          <EQ band="3" value="0"/>
+          <EQ band="4" value="0"/>
+          <EQ band="5" value="0"/>
+          <EQ band="6" value="0"/>
+          <EQ band="7" value="0"/>
+		  <EQ band="8" value="0"/>
+          <EQ band="9" value="0"/>
+          <EQ band="10" value="0"/>
+        </Mode>
+      </Modes>
+    </Usecase>
+  </Usecases>
+</InterfaceDb>

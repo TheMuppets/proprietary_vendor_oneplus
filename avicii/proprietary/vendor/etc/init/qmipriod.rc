@@ -1,0 +1,20 @@
+# Copyright (c) 2020 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+service vendor.qmipriod /system/vendor/bin/qmipriod
+    class main
+    user radio
+    group radio
+    disabled
+
+on property:persist.vendor.data.qmipriod_load=1
+    start vendor.qmipriod
+
+on property:persist.vendor.data.qmipriod_load=0
+    stop vendor.qmipriod
+
+on post-fs-data
+    #Create logging directory
+    mkdir /data/vendor/qmipriod 0770 radio radio
+    chmod 0770 /data/vendor/qmipriod

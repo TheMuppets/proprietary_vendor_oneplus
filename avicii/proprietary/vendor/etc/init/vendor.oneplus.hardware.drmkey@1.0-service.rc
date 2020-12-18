@@ -1,0 +1,4 @@
+service  oneplus_drmkey_service /vendor/bin/hw/vendor.oneplus.hardware.drmkey@1.0-service
+    class hal
+    user media
+    group media mediadrm drmrpc

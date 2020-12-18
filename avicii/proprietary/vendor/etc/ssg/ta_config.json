@@ -1,0 +1,17 @@
+/********************************************************************
+Copyright (c) 2018-19 Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+*********************************************************************/
+{
+  "embedded_ta_images": [
+  ],
+  "ta_images": [
+    { "path":"/vendor/firmware_mnt/image/haventkn.mbn"},
+    { "path":"/vendor/firmware_mnt/image/dhsecapp.mbn"},
+    { "path":"/vendor/firmware_mnt/image/rtic.mbn"},
+    { "path":"/vendor/firmware/image/haventkn.mbn"},
+    { "path":"/vendor/firmware/image/dhsecapp.mbn"},
+    { "path":"/vendor/firmware/image/rtic.mbn"}
+  ]
+}

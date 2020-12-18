@@ -1,0 +1,10 @@
+# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+on early-boot
+
+    chown system system /sys/kernel/boot_adsp/ssr
+
+
