@@ -1,0 +1,63 @@
+#
+# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+service wigighalsvc /vendor/bin/wigighalsvc
+    interface vendor.qti.hardware.wigig.supptunnel@1.0::ISuppTunnelProvider default
+    class hal
+    user wifi
+    group wifi
+    disabled
+
+# wpa_supplicant instance for running WIGIG P2P under WIFI
+service wigig_p2p_supplicant /vendor/bin/hw/wpa_supplicant \
+     -O/data/vendor/wifi/wigig_sockets -dd \
+     -g@android:wigig/wpa_wigig0 -Swigigp2p
+#   we will start as root and wpa_supplicant will switch to user wifi
+#   after setting up the capabilities required for WEXT
+#   user wifi
+#   group wifi inet keystore
+    interface android.hardware.wifi.supplicant@1.0::ISupplicant wigigp2p
+    interface android.hardware.wifi.supplicant@1.1::ISupplicant wigigp2p
+    class main
+    socket wigig/wpa_wigig0 dgram 660 wifi wifi
+    disabled
+    oneshot
+
+on property:vendor.wigig.driver=on
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -d /vendor/lib/modules wil6210 alt_ifname=1
+    setprop vendor.wigig.driver.probed 1
+
+on property:vendor.wigig.driver=on,ipa
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -d /vendor/lib/modules wil6210 alt_ifname=1 ipa_offload=1
+    setprop vendor.wigig.driver.probed 1
+
+on property:vendor.wigig.driver=on,sensing
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -d /vendor/lib/modules wil6210 alt_ifname=1 support_sensing_over_spi=1
+    setprop vendor.wigig.driver.probed 1
+
+on property:vendor.wigig.driver=on,ipa,sensing
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -d /vendor/lib/modules wil6210 alt_ifname=1 ipa_offload=1 support_sensing_over_spi=1
+    setprop vendor.wigig.driver.probed 1
+
+on property:vendor.wigig.driver=off
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules wil6210
+    setprop vendor.wigig.driver.probed 0
+
+on property:vendor.wigig.driver.probed=1
+    # fix owner/permission of wigig files, workaround for ueventd bug
+    chmod 0660 /sys/class/net/wigig0/device/wil6210/fst_link_loss
+    chown system wifi /sys/class/net/wigig0/device/wil6210/fst_link_loss
+    chmod 0660 /sys/class/net/wigig0/device/wil6210/thermal_throttling
+    chown system wifi /sys/class/net/wigig0/device/wil6210/thermal_throttling
+    chmod 0660 /sys/class/net/wigig0/device/wil6210/snr_thresh
+    chown system wifi /sys/class/net/wigig0/device/wil6210/snr_thresh
+    chmod 0660 /sys/class/net/wigig0/queues/rx-0/rps_cpus
+    chown system wifi /sys/class/net/wigig0/queues/rx-0/rps_cpus
+    chmod 0660 /sys/class/net/wigig0/gro_flush_timeout
+    chown system wifi /sys/class/net/wigig0/gro_flush_timeout
+    chmod 0660 /sys/class/net/wigig0/device/wil6210/fst_config
+    chown system wifi /sys/class/net/wigig0/device/wil6210/fst_config
+

@@ -1,0 +1,37 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "QRD"],
+    "soc_id": ["400", "440"]
+  },
+  "bmi26x_crt_state":{
+    "owner": "sns_bmi26x",
+    ".crt_gain":{
+      "owner": "sns_bmi26x",
+      "gain_x":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "gain_y":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "gain_z":{ "type": "int", "ver": "0",
+        "data": "2"
+      }
+    }
+  },
+  "bmi26x_ois_cfg":{
+    "owner": "sns_bmi26x",
+    ".ois_cfg":{
+      "owner": "sns_bmi26x",
+      "enable":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "range_idx":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "spi4":{ "type": "int", "ver": "0",
+        "data": "1"
+      }
+    }
+  }
+}

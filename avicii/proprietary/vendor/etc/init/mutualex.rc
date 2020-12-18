@@ -1,0 +1,6 @@
+service vendor.mutualex /vendor/bin/mutualex
+     class main
+     user radio
+     group radio wakelock wifi inet
+     capabilities BLOCK_SUSPEND
+     oneshot

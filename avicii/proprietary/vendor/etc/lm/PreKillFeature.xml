@@ -1,0 +1,76 @@
+<!--
+/******************************************************************************
+  @file    PreKillMeter.xml
+  @brief   Implementation of Android Framework Learning Module
+
+  DESCRIPTION
+      Each feature has an xml file to define the components
+
+  =========================================================================
+  Copyright (c) 2019 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+  =========================================================================
+******************************************************************************/
+-->
+
+<Feature>
+    <Name>PreKill</Name>
+    <Libname>libprekill.so</Libname>
+    <Meters>
+        <SamplesRequired>3</SamplesRequired>
+        <Meter>
+            <Name>Memory</Name>
+            <Triggers>
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_FIRST_LAUNCH_BOOST</AsyncId>
+                    <AsyncType>1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_FIRST_LAUNCH_BOOST</AsyncId>
+                    <AsyncType>2</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_FIRST_LAUNCH_BOOST</AsyncId>
+                    <AsyncType>101</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_KILL</AsyncId>
+                    <AsyncType>0</AsyncType>
+                </Trigger>
+
+                 <Trigger>
+                     <Primary>true</Primary>
+                     <AsyncId>VENDOR_HINT_APP_UPDATE</AsyncId>
+                     <AsyncType>0</AsyncType>
+                 </Trigger>
+
+                <Trigger>
+                    <Primary>false</Primary>
+                    <AsyncId>VENDOR_HINT_FIRST_DRAW</AsyncId>
+                    <AsyncType>1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>false</Primary>
+                    <AsyncId>VENDOR_HINT_TAP_EVENT</AsyncId>
+                </Trigger>
+            </Triggers>
+            <Samples>1</Samples>
+            <Configs>
+                 <TotalSamplesToRun>120</TotalSamplesToRun>
+             </Configs>
+            <Fields>
+        <Field>ion_kgsl</Field>
+        <Field>rss_swap</Field>
+            </Fields>
+        </Meter>
+    </Meters>
+</Feature>

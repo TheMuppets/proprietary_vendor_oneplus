@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+/* Copyright (c) 2016-2018, The Linux Foundation. All rights reserved.
+ *
+ *Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are
+ * met:
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above
+ *       copyright notice, this list of conditions and the following
+ *       disclaimer in the documentation and/or other materials provided
+ *       with the distribution.
+ *     * Neither the name of The Linux Foundation nor the names of its
+ *       contributors may be used to endorse or promote products derived
+ *       from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+ * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+ * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+-->
+<HintConfigs>
+    <Powerhint>
+
+        <!-- camera 30fps and camera preview -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--L CPU Hispeed freq of 864Mhz -->
+        <!--L CPU - Set hispeed load 95 -->
+        <!--CPU-LLCC BWMON - Set sample_ms 20 -->
+        <!--LLCC-DDR BWMON - Set sample_ms 20 -->
+        <Config
+            Id="0x00001331" Enable="true" Timeout="0" Target="lito"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4143C100, 0x360, 0x41440100, 0x5F, 0x41820000, 0x14, 0x4300C000, 0x14"/>
+
+        <!-- camera 60 FPS -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--CPU-LLCC BWMON - Set sample_ms 20 -->
+        <!--LLCC-DDR BWMON - Set sample ms 20 -->
+        <Config
+            Id="0x00001332" Enable="true" Timeout="0" Target="lito"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x41820000, 0x14, 0x4300C000, 0x14"/>
+
+        <!-- camera HFR -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--CPU-LLCC BWMON - Set sample_ms 20 -->
+        <!--LLCC-DDR BWMON - Set sample ms 20 -->
+        <Config
+            Id="0x00001333" Enable="true" Timeout="0" Target="lito"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x41820000, 0x14, 0x4300C000, 0x14"/>
+
+        <!-- HFR 480fps -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--CPU-LLCC BWMON - Set sample_ms 20 -->
+        <!--LLCC-DDR BWMON - Set sample ms 20 -->
+        <!--CPU CORE 0 Min freq to 1.075Ghz -->
+        <Config
+            Id="0x00001334" Enable="true" Timeout="0" Target="lito"
+            Resources="0x40C20000, 0x14, 0x40C1C000, 0x1E, 0x40C20200, 0x14, 0x40C1C200, 0x1E,
+            0x41000100, 0x6, 0x42C10000, 0x1, 0x43010000, 59, 0x41828000, 806, 0x43400000, 0xFFFF,
+            0x40800000, 1516, 0x40800100, 1900, 0x40800200, 1996, 0x40CA8000, 0x2"/>
+
+        <!-- same settings for all the qvr power levels intentionally -->
+        <!-- qvr level cpu1 gpu1 -->
+        <!-- Prime CPU - Cluster min freq ~.806 Ghz -->
+        <!-- Prime CPU - Cluster max freq ~.2.400 Ghz -->
+        <!-- B CPU - Cluster min freq ~.652 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~.614 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.075 Ghz -->
+        <!-- GPU - min pwrlevel 7 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Min Big CPUs 2 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130A" Enable="true" Target="lito" Timeout="0"
+            Resources="0x40800200, 0x326, 0x40804200, 0x960, 0x40800000, 0x28C,
+            0x40804000, 0x82C, 0x40800100, 0x266, 0x40804100, 0x433,
+            0x42804000, 0x7, 0x42808000, 0x0, 0x41000000, 0x2"/>
+
+        <!-- qvr level cpu1 gpu2 -->
+        <!-- Prime CPU - Cluster min freq ~.806 Ghz -->
+        <!-- Prime CPU - Cluster max freq ~.2.400 Ghz -->
+        <!-- B CPU - Cluster min freq ~.652 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~.614 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.075 Ghz -->
+        <!-- GPU - min pwrlevel 7 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Min Big CPUs 2 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130B" Enable="true" Target="lito" Timeout="0"
+            Resources="0x40800200, 0x326, 0x40804200, 0x960, 0x40800000, 0x28C,
+            0x40804000, 0x82C, 0x40800100, 0x266, 0x40804100, 0x433,
+            0x42804000, 0x7, 0x42808000, 0x0, 0x41000000, 0x2"/>
+
+        <!-- qvr level cpu1 gpu3 -->
+        <!-- Prime CPU - Cluster min freq ~.806 Ghz -->
+        <!-- Prime CPU - Cluster max freq ~.2.400 Ghz -->
+        <!-- B CPU - Cluster min freq ~.652 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~.614 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.075 Ghz -->
+        <!-- GPU - min pwrlevel 7 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Min Big CPUs 2 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130C" Enable="true" Target="lito" Timeout="0"
+            Resources="0x40800200, 0x326, 0x40804200, 0x960, 0x40800000, 0x28C,
+            0x40804000, 0x82C, 0x40800100, 0x266, 0x40804100, 0x433,
+            0x42804000, 0x7, 0x42808000, 0x0, 0x41000000, 0x2"/>
+
+        <!-- qvr level cpu2 gpu1 -->
+        <!-- Prime CPU - Cluster min freq ~.806 Ghz -->
+        <!-- Prime CPU - Cluster max freq ~.2.400 Ghz -->
+        <!-- B CPU - Cluster min freq ~.652 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~.614 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.075 Ghz -->
+        <!-- GPU - min pwrlevel 7 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Min Big CPUs 2 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130D" Enable="true" Target="lito" Timeout="0"
+            Resources="0x40800200, 0x326, 0x40804200, 0x960, 0x40800000, 0x28C,
+            0x40804000, 0x82C, 0x40800100, 0x266, 0x40804100, 0x433,
+            0x42804000, 0x7, 0x42808000, 0x0, 0x41000000, 0x2"/>
+
+        <!-- qvr level cpu2 gpu2 -->
+        <!-- Prime CPU - Cluster min freq ~.806 Ghz -->
+        <!-- Prime CPU - Cluster max freq ~.2.400 Ghz -->
+        <!-- B CPU - Cluster min freq ~.652 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~.614 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.075 Ghz -->
+        <!-- GPU - min pwrlevel 7 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Min Big CPUs 2 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130E" Enable="true" Target="lito" Timeout="0"
+            Resources="0x40800200, 0x326, 0x40804200, 0x960, 0x40800000, 0x28C,
+            0x40804000, 0x82C, 0x40800100, 0x266, 0x40804100, 0x433,
+            0x42804000, 0x7, 0x42808000, 0x0, 0x41000000, 0x2"/>
+
+        <!-- qvr level cpu2 gpu3 -->
+        <!-- Prime CPU - Cluster min freq ~.806 Ghz -->
+        <!-- Prime CPU - Cluster max freq ~.2.400 Ghz -->
+        <!-- B CPU - Cluster min freq ~.652 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~.614 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.075 Ghz -->
+        <!-- GPU - min pwrlevel 7 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Min Big CPUs 2 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130F" Enable="true" Target="lito" Timeout="0"
+            Resources="0x40800200, 0x326, 0x40804200, 0x960, 0x40800000, 0x28C,
+            0x40804000, 0x82C, 0x40800100, 0x266, 0x40804100, 0x433,
+            0x42804000, 0x7, 0x42808000, 0x0, 0x41000000, 0x2"/>
+
+        <!-- qvr level cpu3 gpu1 -->
+        <!-- Prime CPU - Cluster min freq ~.806 Ghz -->
+        <!-- Prime CPU - Cluster max freq ~.2.400 Ghz -->
+        <!-- B CPU - Cluster min freq ~.652 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~.614 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.075 Ghz -->
+        <!-- GPU - min pwrlevel 7 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Min Big CPUs 2 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x00001310" Enable="true" Target="lito" Timeout="0"
+            Resources="0x40800200, 0x326, 0x40804200, 0x960, 0x40800000, 0x28C,
+            0x40804000, 0x82C, 0x40800100, 0x266, 0x40804100, 0x433,
+            0x42804000, 0x7, 0x42808000, 0x0, 0x41000000, 0x2"/>
+
+        <!-- qvr level cpu3 gpu2 -->
+        <!-- Prime CPU - Cluster min freq ~.806 Ghz -->
+        <!-- Prime CPU - Cluster max freq ~.2.400 Ghz -->
+        <!-- B CPU - Cluster min freq ~.652 Ghz -->
+        <!-- B CPU - Cluster max freq ~.2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~.614 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.075 Ghz -->
+        <!-- GPU - min pwrlevel 7 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Min Big CPUs 2 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x00001311" Enable="true" Target="lito" Timeout="0"
+            Resources="0x40800200, 0x326, 0x40804200, 0x960, 0x40800000, 0x28C,
+            0x40804000, 0x82C, 0x40800100, 0x266, 0x40804100, 0x433,
+            0x42804000, 0x7, 0x42808000, 0x0, 0x41000000, 0x2"/>
+
+        <!-- qvr level cpu3 gpu3 -->
+        <!-- Prime CPU - Cluster min freq ~.806 Ghz -->
+        <!-- Prime CPU - Cluster max freq ~.2.400 Ghz -->
+        <!-- B CPU - Cluster min freq ~.652 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.092 Ghz -->
+        <!-- L CPU - Cluster min freq ~.614 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.075 Ghz -->
+        <!-- GPU - min pwrlevel 7 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Min Big CPUs 2 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x00001312" Enable="true" Target="lito" Timeout="0"
+            Resources="0x40800200, 0x326, 0x40804200, 0x960, 0x40800000, 0x28C,
+            0x40804000, 0x82C, 0x40800100, 0x266, 0x40804100, 0x433,
+            0x42804000, 0x7, 0x42808000, 0x0, 0x41000000, 0x2"/>
+
+         <!-- sustained performance -->
+         <!-- Prime CPU - Cluster min freq uncapped -->
+         <!-- B CPU - Cluster min freq uncapped -->
+         <!-- L CPU - Cluster min freq uncapped -->
+         <!-- Prime CPU - Cluster max freq ~1.094 Ghz -->
+         <!-- B CPU - Cluster max freq ~1.152 GHz -->
+         <!-- L CPU - Cluster max freq ~1.075 Ghz -->
+         <!-- GPU - min freq 275Mhz -->
+         <!-- GPU - max freq 400Mhz -->
+         <!-- GPUBW freq uncapped -->
+         <Config
+             Id="0x00001206" Enable="true" Timeout="0" Target="lito"
+             Resources="0x40800200, 0x0, 0x40800000, 0x0, 0x40800100, 0x0, 0x40804200, 0x446,
+             0x40804000, 0x480, 0x40804100, 0x433, 0X4280C000, 0x113, 0X42810000, 0x190,
+             0x42814000, 0x0"/>
+
+         <!-- vr mode -->
+         <!-- Prime CPU - Cluster min freq ~1.094 Ghz -->
+         <!-- B CPU - Cluster min freq ~1.152 Ghz -->
+         <!-- L CPU - Cluster min freq ~0.864 Ghz -->
+         <!-- Prime CPU - Cluster max freq ~2.188 Ghz -->
+         <!-- B CPU - Cluster max freq ~1.90 Ghz -->
+         <!-- L CPU - Cluster max freq ~1.651 Ghz -->
+         <!-- GPU - min freq 275Mhz -->
+         <!-- GPU - max freq 625Mhz -->
+         <!-- GPUBW uncapped -->
+         <Config
+             Id="0x00001207" Enable="true" Timeout="0" Target="lito"
+             Resources="0x40800200, 0x446, 0x40800000, 0x480, 0x40800100, 0x360, 0x40804200, 0x88C,
+             0x40804000, 0x76C, 0x40804100, 0x673, 0X4280C000, 0x113, 0X4280C000, 0x271,
+             0x42814000, 0x0"/>
+
+         <!-- vr mode sustained performance -->
+         <!-- Prime CPU - Cluster min freq ~1.094 Ghz -->
+         <!-- B CPU - Cluster min freq ~1.152 Ghz -->
+         <!-- L CPU - Cluster min freq ~1.075 Ghz -->
+         <!-- Prime CPU - Cluster max freq ~1.094 Ghz -->
+         <!-- B CPU - Cluster max freq ~1.152 Ghz -->
+         <!-- L CPU - Cluster max freq ~1.075 Ghz -->
+         <!-- GPU - min freq 400Mhz -->
+         <!-- GPU - max freq 400Mhz -->
+         <!-- GPUBW uncapped  -->
+         <Config
+             Id="0x00001301" Enable="true" Timeout="0" Target="lito"
+             Resources="0x40800200, 0x446, 0x40800000, 0x480, 0x40800100, 0x433, 0x40804200, 0x446,
+             0x40804000, 0x480, 0x40804100, 0x433, 0X4280C000, 0x190, 0X42810000, 0x190,
+             0x42814000, 0x0"/>
+
+        <!-- Rear Cam 4K 30 Encoding -->
+        <!-- Hint - POWER_HINT_ID_VIDEO_REAR_UHD_30 -->
+        <!-- llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- llcc-ddr-bw sample_ms : MPCTLV3_LLCBW_HWMON_SAMPLE_MS(0x4300C000) : 0x0A(10) -->
+        <!-- llcc-ddr-bw min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 29 -->
+        <!-- cpu-llcc-bw hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- cpu-llcc-bw sample_ms : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- cpu-llcc-bw min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 71 -->
+        <Config
+            Id="0x00001336" Enable="true" Timeout="0" Target="lito"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4143C100, 0x360, 0x41440100, 0x5F, 0x41820000, 0x14, 0x4300C000, 0x14"/>
+
+        <!-- Rear Cam FHD 60 Encoding -->
+        <!-- Hint - POWER_HINT_ID_VIDEO_REAR_FHD_60 -->
+        <!-- llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- llcc-ddr-bw sample_ms : MPCTLV3_LLCBW_HWMON_SAMPLE_MS(0x4300C000) : 0x0A(10) -->
+        <!-- llcc-ddr-bw min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 38 -->
+        <!-- cpu-llcc-bw hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- cpu-llcc-bw sample_ms : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- cpu-llcc-bw min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 91 -->
+        <!-- silver cluster min freq : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1036 -->
+        <!-- gold cluster min freq : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000) : 1056 -->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 20 -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 30 -->
+        <!-- cpu-llcc-bw io_percent : MPCTLV3_CPUBW_HWMON_IO_PERCENT(0x41808000) : 80 -->
+        <Config
+            Id="0x00001335"  Enable="true" Timeout="0" Target="lito"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x41820000, 0x14, 0x4300C000, 0x14"/>
+
+        <!-- Rear Cam 4K 60 Encoding -->
+        <!-- Hint - POWER_HINT_ID_VIDEO_REAR_UHD_60 -->
+        <!-- llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- llcc-ddr-bw sample_ms : MPCTLV3_LLCBW_HWMON_SAMPLE_MS(0x4300C000) : 0x0A(10) -->
+        <!-- llcc-ddr-bw min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 38 -->
+        <!-- cpu-llcc-bw hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- cpu-llcc-bw sample_ms : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- cpu-llcc-bw min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 91 -->
+        <!-- silver cluster min freq : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1305 -->
+        <!-- gold cluster min freq : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000) : 1171 -->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 20 -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 30 -->
+        <!-- cpu-llcc-bw io_percent : MPCTLV3_CPUBW_HWMON_IO_PERCENT(0x41808000) : 80 -->
+        <Config
+            Id="0x00001337" Enable="true" Timeout="0" Target="lito"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x41820000, 0x14, 0x4300C000, 0x14"/>
+
+        <!-- Front Cam Preview -->
+        <!-- Hint - POWER_HINT_ID_FRONT_PREVIEW -->
+        <!-- llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- llcc-ddr-bw sample_ms : MPCTLV3_LLCBW_HWMON_SAMPLE_MS(0x4300C000) : 0x0A(10) -->
+        <!-- llcc-ddr-bw min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 25 -->
+        <!-- cpu-llcc-bw hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- cpu-llcc-bw sample_ms : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- cpu-llcc-bw min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 71 -->
+        <!-- cpu-llcc-bw io_percent : MPCTLV3_CPUBW_HWMON_IO_PERCENT(0x41808000) : 80 -->
+        <Config
+            Id="0x00001338" Enable="true" Timeout="0" Target="lito"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4143C100, 0x360, 0x41440100, 0x5F, 0x41820000, 0x14, 0x4300C000, 0x14"/>
+
+        <!-- Rear Cam FHD 30 Encoding -->
+        <!-- Hint - POWER_HINT_ID_VIDEO_REAR_FHD_30 -->
+        <!-- llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- llcc-ddr-bw sample_ms : MPCTLV3_LLCBW_HWMON_SAMPLE_MS(0x4300C000) : 0x0A(10) -->
+        <!-- llcc-ddr-bw min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 29 -->
+        <!-- cpu-llcc-bw hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- cpu-llcc-bw sample_ms : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- cpu-llcc-bw min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 71 -->
+        <Config
+            Id="0x00001339" Enable="true" Timeout="0" Target="lito"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4143C100, 0x360, 0x41440100, 0x5F, 0x41820000, 0x14, 0x4300C000, 0x14"/>
+
+        <!-- Rear Cam Bokeh Preview -->
+        <!-- Hint - POWER_HINT_ID_REAR_BOKEH_PREVIEW -->
+        <!-- llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- llcc-ddr-bw sample_ms : MPCTLV3_LLCBW_HWMON_SAMPLE_MS(0x4300C000) : 0x0A(10) -->
+        <!-- llcc-ddr-bw min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 25 -->
+        <!-- cpu-llcc-bw hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- cpu-llcc-bw sample_ms : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- cpu-llcc-bw min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 71 -->
+        <!-- cpu-llcc-bw io_percent : MPCTLV3_CPUBW_HWMON_IO_PERCENT(0x41808000) : 80 -->
+        <Config
+            Id="0x0000133A" Enable="true" Timeout="0" Target="lito"
+            Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 29, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 71,
+            0x41808000, 80, 0x40800100, 1100, 0x40800000, 1100,0x43024000, 0, 0x43034000,0x14,0x41838000 ,0,0x4183C000 ,0x14"/>
+
+        <!-- Front Cam Encoding -->
+        <!-- Hint - POWER_HINT_ID_VIDEO_FRONT_ENCODE -->
+        <!-- llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- llcc-ddr-bw sample_ms : MPCTLV3_LLCBW_HWMON_SAMPLE_MS(0x4300C000) : 0x0A(10) -->
+        <!-- llcc-ddr-bw min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 29 -->
+        <!-- cpu-llcc-bw hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- cpu-llcc-bw sample_ms : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- cpu-llcc-bw min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 71 -->
+        <Config
+            Id="0x0000133B" Enable="true" Timeout="0" Target="lito"
+            Resources="0x41444100, 0, 0x41440100, 0x63, 0x41444000, 0, 0x43008000, 0, 0x4300C000, 0xA,
+            0x43000000, 29, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 71, 0x40800100,1200, 0x40800000, 1200, 0x43444000, 1, 0x43448000, 1"/>
+
+        <!-- Rear Cam Preview -->
+        <!-- Hint - POWER_HINT_ID_REAR_PREVIEW -->
+        <!-- llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- llcc-ddr-bw sample_ms : MPCTLV3_LLCBW_HWMON_SAMPLE_MS(0x4300C000) : 0x0A(10) -->
+        <!-- llcc-ddr-bw min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 25 -->
+        <!-- cpu-llcc-bw hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- cpu-llcc-bw sample_ms : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- cpu-llcc-bw min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 71 -->
+        <!-- cpu-llcc-bw io_percent : MPCTLV3_CPUBW_HWMON_IO_PERCENT(0x41808000) : 80 -->
+        <Config
+            Id="0x0000133C" Enable="true" Timeout="0" Target="lito"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4143C100, 0x360, 0x41440100, 0x5F, 0x41820000, 0x14, 0x4300C000, 0x14"/>
+
+        <!-- UltraWide SuperSteady 4K Encoding -->
+        <!-- llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- llcc-ddr-bw sample_ms : MPCTLV3_LLCBW_HWMON_SAMPLE_MS(0x4300C000) : 0x0A(10) -->
+        <!-- llcc-ddr-bw min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 38 -->
+        <!-- cpu-llcc-bw hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- cpu-llcc-bw sample_ms : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- cpu-llcc-bw min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 91 -->
+        <!-- silver cluster min freq : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1305 -->
+        <!-- gold cluster min freq : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000) : 1171 -->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 10 -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 20 -->
+        <!-- cpu-llcc-bw io_percent : MPCTLV3_CPUBW_HWMON_IO_PERCENT(0x41808000) : 80 -->
+        <Config
+            Id="0x0000133E" Enable="true" Timeout="0" Target="lito"
+            Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 38, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 91,
+            0x40800100, 1305, 0x40800000, 1171, 0x40C20000, 10, 0x40C1C000, 20, 0x41808000, 80"/>
+
+        <!-- camera cts -->
+        <!-- Hint - POWER_HINT_ID_VIDEO_ENCODE_CTS -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU - Disable schedutil PL -->
+        <!--L CPU - Set hispeed load 99 -->
+        <!--B CPU - Disable schedutil PL -->
+        <!--LLC-DDR BWMON - Set sample_ms 10 -->
+        <!--CPU-LLC BWMON - Set sample_ms 10 -->
+        <!--LLC-DDR BWMON - Set io_percent 100 -->
+        <!--CPU-LLC BWMON - Set io_percent 100 -->
+        <!--CPU-LLC BWMON - Set hyst_length 0 -->
+        <!--LLC-DDR BWMON - Set hyst_length 0 -->
+        <!--CPU0-LLC MEM LAT - Set ratio_ceil 100 -->
+        <Config
+            Id="0x0000133F" Enable="true" Timeout="0" Target="lito"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4143C100, 0x360, 0x41440100, 0x5F, 0x41820000, 0x14, 0x4300C000, 0x14"/>
+        <!-- camera thirdparty -->
+        <!-- Hint - POWER_HINT_ID_THIRD_PARTY_CAM -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU - Disable schedutil PL -->
+        <!--L CPU - Set hispeed load 99 -->
+        <!--B CPU - Disable schedutil PL -->
+        <!--LLC-DDR BWMON - Set sample_ms 10 -->
+        <!--CPU-LLC BWMON - Set sample_ms 10 -->
+        <!--LLC-DDR BWMON - Set io_percent 100 -->
+        <!--CPU-LLC BWMON - Set io_percent 100 -->
+        <!--CPU-LLC BWMON - Set hyst_length 0 -->
+        <!--LLC-DDR BWMON - Set hyst_length 0 -->
+        <!--CPU0-LLC MEM LAT - Set ratio_ceil 100 -->
+        <Config
+            Id="0x00001340" Enable="true" Timeout="0" Target="lito"
+            Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 29, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 71, 0x40800100, 1420"/>
+
+        <!-- Rear Cam SAT Encoding -->
+        <!-- Hint - POWER_HINT_ID_VIDEO_SAT -->
+        <!-- llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- llcc-ddr-bw sample_ms : MPCTLV3_LLCBW_HWMON_SAMPLE_MS(0x4300C000) : 0x0A(10) -->
+        <!-- llcc-ddr-bw min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 29 -->
+        <!-- cpu-llcc-bw hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- cpu-llcc-bw sample_ms : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- cpu-llcc-bw min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 71 -->
+        <Config
+            Id="0x00001341" Enable="true" Timeout="0" Target="lito"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4143C100, 0x360, 0x41440100, 0x5F, 0x41820000, 0x14, 0x4300C000, 0x14"/>
+
+        <!-- Rear Cam 48M Preview -->
+        <!-- Hint - POWER_HINT_ID_48M_PREVIEW -->
+        <!-- llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- llcc-ddr-bw sample_ms : MPCTLV3_LLCBW_HWMON_SAMPLE_MS(0x4300C000) : 0x0A(10) -->
+        <!-- llcc-ddr-bw min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 25 -->
+        <!-- cpu-llcc-bw hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- cpu-llcc-bw sample_ms : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- cpu-llcc-bw min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 71 -->
+        <!-- cpu-llcc-bw io_percent : MPCTLV3_CPUBW_HWMON_IO_PERCENT(0x41808000) : 80 -->
+        <Config
+            Id="0x00001342" Enable="true" Timeout="0" Target="lito"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68140, 0xFFFFFFFA, 0x40C68150, 0xFFFFFFFA,
+            0x4143C100, 0x360, 0x41440100, 0x5F, 0x41820000, 0x14, 0x4300C000, 0x14"/>
+
+        <Config
+            Id="0x00001343" Enable="true" Timeout="0" Target="lito"
+            Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 29, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 71,
+            0x41808000, 80, 0x40800100, 1400"/>
+
+    </Powerhint>
+</HintConfigs>
+

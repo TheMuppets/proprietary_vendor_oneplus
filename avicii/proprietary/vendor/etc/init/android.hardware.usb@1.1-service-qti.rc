@@ -1,0 +1,4 @@
+service vendor.usb-hal-1-1 /vendor/bin/hw/android.hardware.usb@1.1-service-qti
+    class hal
+    user root
+    group root system mtp
