@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
      Netmgr Module configuration XML file
      Copyright (c) 2013, 2016-2020 Qualcomm Technologies, Inc.
@@ -5,7 +6,6 @@
      Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
 
-<?xml version="1.0" encoding="UTF-8"?>
 
 <!-- QMI configuration -->
 <list name="netmgr_config">
@@ -2869,7 +2869,7 @@
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 125 </data>
       <!-- #ifdef VENDOR_EDIT -->
-      <!-- richy.li@Connectivity, 2019/09/16, set tcp_mtu_probing as 1 for 19811 project
+      <!-- richy.li@Connectivity, 2019/09/16, set tcp_mtu_probing as 1 for 19811 project -->
       <data name="tcp_mtu_probing" type="int"> 1 </data>
       <!-- #endif VENDOR_EDIT -->
       <data name="netdev_budget" type="int"> 0 </data>
