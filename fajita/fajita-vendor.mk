@@ -15,6 +15,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/fajita/proprietary/odm/etc/acdbdata/MTP/MTP_Headset_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
     vendor/oneplus/fajita/proprietary/odm/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
     vendor/oneplus/fajita/proprietary/odm/etc/acdbdata/MTP/MTP_workspaceFile.qwsp:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/MTP/MTP_workspaceFile.qwsp \
+    vendor/oneplus/fajita/proprietary/odm/etc/odm_feature_list:$(TARGET_COPY_OUT_ODM)/etc/odm_feature_list \
     vendor/oneplus/fajita/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
     vendor/oneplus/fajita/proprietary/vendor/etc/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tfa98xx.cnt \
     vendor/oneplus/fajita/proprietary/vendor/etc/firmware/tp/fw_synaptics_18801.img:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/tp/fw_synaptics_18801.img \
