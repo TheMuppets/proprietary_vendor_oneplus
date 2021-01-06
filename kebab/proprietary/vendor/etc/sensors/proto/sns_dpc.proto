@@ -1,0 +1,64 @@
+// @file sns_dpc.proto
+//
+// Defines message types for the DPC(Device Position Classifier) Sensor.
+//
+// Copyright (c) 2017, 2020 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// The DPC Sensor provides device position information
+
+// DPC Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "device_position_classifier"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Stream Requests:
+// - SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG is used to enable the sensor
+
+// Message IDs for DPC Sensor
+enum sns_dpc_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  //send to new client immediatly to inform current device position
+  SNS_DPC_MSGID_SNS_DPC_EVENT_CONFIG = 777;
+
+  //send when detect device position change
+  SNS_DPC_MSGID_SNS_DPC_EVENT = 1030;
+}
+
+// Stream events:
+//
+// The sns_dpc_event message is used to publish updated device position
+// The sns_dpc_event_config message is sent immediately to new client to inform the current device position
+
+enum sns_dpc_state
+{
+  option (nanopb_enumopt).long_names = false;
+
+  // when algo cannot identify other states
+  SNS_DPC_UNKNOWN         = 1;
+  // User keeps the device steady with display at an angle within +/-15 deg with respect to the horizontal plane
+  SNS_DPC_FLAT_STATIC     = 2;
+  // Device is not in FLAT_STATIC state and proximity sensor detects NEAR
+  SNS_DPC_HIDDEN          = 3;
+  // User picks up the device
+  SNS_DPC_IN_HAND         = 4;
+  // User keeps the device steady with display at an angle greater than +/-15 deg with respect to the horizontal plane
+  SNS_DPC_FACING          = 5;
+}
+
+// Events types from DPC Sensor
+message sns_dpc_event
+{
+  required sns_dpc_state dpc_state = 1;
+}
+
+message sns_dpc_event_config
+{
+  //current dpc state
+  required sns_dpc_state dpc_state = 1;
+}

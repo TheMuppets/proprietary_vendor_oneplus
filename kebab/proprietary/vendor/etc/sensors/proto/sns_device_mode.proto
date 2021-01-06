@@ -1,0 +1,61 @@
+// @file sns_device_mode.proto
+//
+// Defines message types for the Device Mode Sensor.
+//
+// Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// DEVICE_MODE determine the current mode of the device
+
+// DEVICE_MODE Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "device_mode"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Stream Requests:
+// - SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG is used to enable the sensor
+// - Client must remove stream to disable the sensor
+
+// Message IDs for DEVICE_MODE Sensor
+enum sns_device_mode_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_DEVICE_MODE_MSGID_SNS_DEVICE_MODE_EVENT = 772;
+}
+
+enum sns_device_mode
+{
+  option (nanopb_enumopt).long_names = false;
+  SNS_DEVICE_MODE_UNKNOWN = 0;
+  SNS_DEVICE_MODE_FLIP_OPEN  = 1;
+}
+
+enum sns_device_state
+{
+  option (nanopb_enumopt).long_names = false;
+  SNS_DEVICE_STATE_INACTIVE  = 0;
+  SNS_DEVICE_STATE_ACTIVE  = 1;
+}
+
+message sns_device_mode_event
+{
+  message mode_spec {
+    required sns_device_mode mode = 1;
+
+    required sns_device_state state = 2;
+  }
+  // Device Mode
+  repeated mode_spec device_mode = 1;
+}
+
+// Stream events:
+//
+// The sns_device_mode_event message is used to publish updated mode
+//
+// DEVICE_MODE does not publish configuration events.
+
