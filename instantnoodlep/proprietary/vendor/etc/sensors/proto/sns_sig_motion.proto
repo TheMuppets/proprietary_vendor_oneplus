@@ -1,0 +1,33 @@
+// @file sns_sig_motion.proto
+//
+// Defines the API for Significant Motion Detection Sensors.
+//
+// Copyright (c) 2017 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// A significant motion sensor reports once if "significant motion"
+// is detected.  After reporting, conceptually the algorithm's state is reset,
+// and detection begins again.
+//
+// ## Significant Motion sensor attributes:
+// SNS_STD_SENSOR_ATTRID_TYPE is "sig_motion"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+//
+// ## Request Message: SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG
+// No configuration is available for this sensor.
+//
+// ## Event Message: SNS_SIG_MOTION_MSGID_SNS_SIG_MOTION_EVENT
+// Reported upon new detection of significant motion.
+
+// Message IDs for Significant Motion Detect Sensor
+enum sns_sig_motion_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  // Empty Message
+  SNS_SIG_MOTION_MSGID_SNS_SIG_MOTION_EVENT = 772;
+}

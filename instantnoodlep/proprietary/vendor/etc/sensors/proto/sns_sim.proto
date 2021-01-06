@@ -1,0 +1,30 @@
+// @file sns_sim.proto
+//
+// Defines Header config packet strcture for finding out sim sensors config info
+//
+// Copyright (c) 2017 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+import "sns_std_type.proto";
+
+enum sns_sim_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+  // message not required
+  // Purpose: Created only for Offline/Online Playback to inform end of the 
+  // file status to client 
+  SNS_SIM_MSGID_SNS_SIM_END_OF_THE_FILE_EVENT = 1027;
+}
+
+/*Header config packet proto message. It will come as a first packet in event dlf file*/
+message header_info {
+  message sensor_info{
+      required sns_std_suid suid = 1;
+      required string data_type = 2;
+      repeated sns_std_attr attributes = 3;
+  }
+  repeated sensor_info info= 1;
+}
