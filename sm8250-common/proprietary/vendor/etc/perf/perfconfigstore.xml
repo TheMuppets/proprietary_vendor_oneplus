@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (c) 2019 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!-- This is PerfConfigsStore file which returns the value when a
+particular property name is invoked -->
+
+<!-- This file supports only Prop tag, which has the following fields
+* Name, to identify the name of the property. The names of the
+properties have been classified into Vendor and System property.
+* Value, the new value to be returned as string when respective
+property Name is called. -->
+
+<PerfConfigsStore>
+    <PerfConfigs>
+
+                <!--Vendor Properties -->
+                <!--
+                #ifdef VENDOR_EDIT
+                alden.zhang@OPTI, 2020/6/5, [ITN-749] Close uxe feature
+                <Prop Name="vendor.iop.enable_uxe" Value="1" />
+                #else
+                -->
+                <Prop Name="vendor.iop.enable_uxe" Value="0" />
+                <!--
+                #endif /* VENDOR_EDIT */
+                -->
+                <Prop Name="vendor.debug.enable.lm" Value="true" />
+                <Prop Name="vendor.perf.iop_v3.enable" Value="true" />
+                <Prop Name="vendor.perf.iop_v3.enable.debug" Value="false" />
+                <Prop Name="vendor.enable.prefetch" Value="false" />
+                <Prop Name="vendor.iop.enable_prefetch_ofr" Value="false" />
+
+                <!--System Properties -->
+                <Prop Name="ro.lmk.kill_heaviest_task_dup" Value="true" />
+                <Prop Name="ro.lmk.enhance_batch_kill" Value="false" />
+                <Prop Name="ro.lmk.enable_watermark_check" Value="true" />
+                <Prop Name="ro.lmk.enable_preferred_apps" Value="true" />
+                <Prop Name="ro.lmk.use_new_strategy_dup" Value="true" />
+                <Prop Name="vendor.perf.gestureflingboost.enable" Value="true" />
+                <Prop Name="vendor.perf.performancemode.support" Value="false" />
+                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="60" />
+                <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
+                <Prop Name="vendor.perf.topAppRenderThreadBoost.enable" Value="false" />
+
+                <!--
+                #ifdef VENDOR_EDIT
+                simon.ma@SYSTEM, 2019/05/16, add for GCE-12831 to enable bservice limit
+                -->
+                <Prop Name="ro.vendor.qti.sys.fw.bservice_enable" Value="true" />
+                <Prop Name="ro.vendor.qti.sys.fw.bservice_limit" Value="8" />
+                <Prop Name="ro.vendor.qti.sys.fw.bservice_age" Value="5000" />
+                <!--
+                #endif /* VENDOR_EDIT */
+                -->
+
+                <!--
+                #ifdef VENDOR_EDIT
+                denzel.chen@SYSTEM, 2020/05/12, add for OPBRITN-3462
+                -->
+                <Prop Name="ro.lmk.kill_timeout_ms_dup" Value="15" />
+                <!--
+                #endif /* VENDOR_EDIT */
+                -->
+    </PerfConfigs>
+</PerfConfigsStore>

@@ -1,0 +1,4 @@
+service vendor.opcamera-mdm-1-0 /vendor/bin/hw/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service
+    class hal
+    user cameraserver
+    group audio camera input drmrpc sdcard_rw system
