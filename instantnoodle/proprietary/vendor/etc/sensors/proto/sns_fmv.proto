@@ -1,0 +1,40 @@
+// @file sns_fmv.proto
+//
+// Defines the API for Filtered Magnetic Vector.
+//
+// Copyright (c) 2017 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "sns_std_sensor.proto";
+
+// A FMV sensor reports the filtered magnetic vector
+//
+// ## FMV sensor attributes:
+// SNS_STD_SENSOR_ATTRID_TYPE is "fmv"
+//
+// ## Request Message: sns_std_sensor_config
+// sns_std_sensor_config::sample_rate is used to specify the sampling rate (Hz)
+// of the FMV sensor. Sensor will generate data events at this rate.
+//
+// ## Event Message: sns_std_sensor_event
+// 1. Output of the FMV sensor will be populated in sns_std_sensor_event
+// 2. Each stream event contains three output data fields in µT (micro Tesla)
+// 3. Data in the stream is adjusted to Android coordinate system relative to a
+//    mobile device held with screen facing the user in it's natural orientation:
+//    X-axis: parallel to the screen pointing to the right
+//    Y-axis: parallel to the screen pointing to the top
+//    Z-axis: perpendicular to the screen pointing towards the user
+// 4. Data in the stream event is ordered as: 
+//    data[0] = X-axis
+//    data[1] = Y-axis
+//    data[2] = Z-axis
+// 5. Each stream event publishes an accuracy field:
+//    SNS_STD_SENSOR_SAMPLE_STATUS_UNRELIABLE to mark invalid samples when hardware is
+//    yet to stabilize after the sensor is configured.
+//    SNS_STD_SENSOR_SAMPLE_STATUS_ACCURACY_HIGH to mark samples when they are valid.
+//
+// sns_std_sensor_event::status specifies the reliability of the sample value
+// value is of type sns_std_sensor_sample_status. see sns_std_sensor.proto for
+// details.

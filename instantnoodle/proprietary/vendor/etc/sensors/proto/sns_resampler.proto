@@ -1,0 +1,90 @@
+// @file sns_resampler.proto
+//
+// Defines standard message types for the Resampler
+//
+// Copyright (c) 2016-2020 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std.proto";
+import "sns_std_sensor.proto";
+import "sns_std_event_gated_sensor.proto";
+
+// Resampler Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "resampler"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_STREAMING
+
+// Sensor output event:
+// Resampler use sns_std_sensor_event for it's output event
+
+enum sns_resampler_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_RESAMPLER_MSGID_SNS_RESAMPLER_CONFIG = 512;
+  SNS_RESAMPLER_MSGID_SNS_RESAMPLER_CONFIG_EVENT = 776;
+}
+
+// Type of requested resampled rate
+enum sns_resampler_rate
+{
+  option (nanopb_enumopt).long_names = false;
+
+  // Requested resampled rate is fixed
+  SNS_RESAMPLER_RATE_FIXED = 0;
+
+  // Requested resampled rate is the minimum required
+  SNS_RESAMPLER_RATE_MINIMUM = 1;
+}
+
+// Resampler output quality
+enum sns_resampler_quality
+{
+  option (nanopb_enumopt).long_names = false;
+
+  // Resampler output is the same as input sensor data
+  SNS_RESAMPLER_QUALITY_CURRENT_SAMPLE = 0;
+
+  // Resampler output is filtered down from input sensor data
+  SNS_RESAMPLER_QUALITY_FILTERED = 1;
+
+  // Resampler output is interpolated and filtered down from input sensor data
+  SNS_RESAMPLER_QUALITY_INTERPOLATED_FILTERED = 2;
+
+  // Resampler output is interpolated down from input sensor data
+  SNS_RESAMPLER_QUALITY_INTERPOLATED = 3;
+}
+
+// Configuration Message
+// Used to either request for a new configuration of the Resampler Sensor or
+// alter an already existing configuration
+message sns_resampler_config
+{
+  // UID of the Sensor to be resampled
+  required sns_std_suid sensor_uid = 1;
+
+  // The requested resampled rate in Hz
+  required float resampled_rate = 2;
+
+  // The requested rate type as defined in sns_resampler_rate
+  required sns_resampler_rate rate_type = 3;
+
+  // Set to true to enable filtering, else false
+  required bool filter = 4;
+
+  // Set to true if sensor to be resampled is event gated
+  optional bool event_gated = 5;
+
+  // Number of axes of the sensor data
+  optional uint32 axis_cnt = 6;
+}
+
+// Config event to inform client sample quality
+// of all subsequent sns_std_sensor_event from resampler
+message sns_resampler_config_event
+{
+  // Quality of the resampled sensor data as defined in
+  // sns_resampler_quality
+  required sns_resampler_quality quality = 1;
+}

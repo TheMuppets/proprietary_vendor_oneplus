@@ -1,0 +1,36 @@
+// @file sns_tilt_to_wake.proto
+//
+// Defines message types for the tilt_to_wake Sensor.
+//
+// Copyright (c) 2017 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// The tilt_to_wake detects substantial phone rotation (gesture) within
+// limited period ending in a specific range of the pitch and roll angles.
+// It uses proximity sensor to block the tilt event reporting in pocket or purse
+
+// tilt_to_wake Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "tilt_to_wake"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Stream Requests:
+// - SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG is used to enable the sensor
+
+// Message IDs for tilt_to_wake Sensor
+enum sns_tilt_to_wake_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_TILT_TO_WAKE_MSGID_SNS_TILT_TO_WAKE_EVENT = 775;
+}
+
+// Stream events:
+//
+// A NULL message with message ID SNS_TILT_TO_WAKE_MSGID_SNS_TILT_TO_WAKE_EVENT is used to
+// publish tilt_to_wake event
+//
+// tilt_to_wake does not publish configuration events.
