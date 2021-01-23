@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <permissions>
  <library name="com.qualcomm.qcrilhook"
-          file="/product/framework/qcrilhook.jar"
+          file="/system_ext/framework/qcrilhook.jar"
           dependency="qti-telephony-utils:qti-telephony-hidl-wrapper" />
 </permissions>

@@ -7,5 +7,5 @@ Qualcomm Technologies Proprietary and Confidential.
 
 <permissions>
 <library name="com.qualcomm.qti.QtiTelephonyServicelibrary"
-         file="/system/product/framework/QtiTelephonyServicelibrary.jar"/>
+         file="/system/system_ext/framework/QtiTelephonyServicelibrary.jar"/>
 </permissions>

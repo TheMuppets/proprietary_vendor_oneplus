@@ -291,81 +291,81 @@ android_app_import {
 android_app_import {
 	name: "QtiTelephonyService",
 	owner: "oneplus",
-	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
+	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "datastatusnotification",
 	owner: "oneplus",
-	apk: "proprietary/product/app/datastatusnotification/datastatusnotification.apk",
+	apk: "proprietary/system_ext/app/datastatusnotification/datastatusnotification.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "imssettings",
 	owner: "oneplus",
-	apk: "proprietary/product/app/imssettings/imssettings.apk",
+	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "uceShimService",
 	owner: "oneplus",
-	apk: "proprietary/product/app/uceShimService/uceShimService.apk",
+	apk: "proprietary/system_ext/app/uceShimService/uceShimService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "dpmserviceapp",
 	owner: "oneplus",
-	apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "ims",
 	owner: "oneplus",
-	apk: "proprietary/product/priv-app/ims/ims.apk",
+	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "oneplus",
-	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 dex_import {
