@@ -4,7 +4,7 @@
     Confidential and Proprietary - Qualcomm Technologies, Inc.-->
 <permissions>
     <library name="com.qti.dpmframework"
-        file="/system/product/framework/com.qti.dpmframework.jar"/>
+        file="/system/system_ext/framework/com.qti.dpmframework.jar"/>
     <permission name="com.qualcomm.permission.READPROC" >
     <group gid="readproc" />
     </permission>
