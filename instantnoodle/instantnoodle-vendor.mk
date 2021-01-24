@@ -223,6 +223,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
     vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/oneplus/instantnoodle/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/oneplus/instantnoodle/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/oneplus/instantnoodle/proprietary/vendor/lib64/camera/CFR_OnePlus_UW_photo_preview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_OnePlus_UW_photo_preview.bin \
     vendor/oneplus/instantnoodle/proprietary/vendor/lib64/camera/CFR_OnePlus_UW_video.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_OnePlus_UW_video.bin \
     vendor/oneplus/instantnoodle/proprietary/vendor/lib64/camera/CFR_para2_OnePlus_EF017_UW_snapshot.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_para2_OnePlus_EF017_UW_snapshot.bin \
