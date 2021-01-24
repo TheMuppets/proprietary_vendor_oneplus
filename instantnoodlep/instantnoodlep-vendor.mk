@@ -250,6 +250,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/instantnoodlep/proprietary/vendor/firmware/iris5.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/iris5.fw \
     vendor/oneplus/instantnoodlep/proprietary/vendor/firmware/iris5_ccf1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/iris5_ccf1.fw \
     vendor/oneplus/instantnoodlep/proprietary/vendor/firmware/iris5_ccf2.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/iris5_ccf2.fw \
+    vendor/oneplus/instantnoodlep/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/oneplus/instantnoodlep/proprietary/vendor/lib64/camera/CFR_OnePlus_UW_photo_preview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_OnePlus_UW_photo_preview.bin \
     vendor/oneplus/instantnoodlep/proprietary/vendor/lib64/camera/CFR_OnePlus_UW_video.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_OnePlus_UW_video.bin \
     vendor/oneplus/instantnoodlep/proprietary/vendor/lib64/camera/CFR_para2_OnePlus_EF017_UW_snapshot.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_para2_OnePlus_EF017_UW_snapshot.bin \
