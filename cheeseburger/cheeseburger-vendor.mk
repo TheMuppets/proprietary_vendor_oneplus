@@ -17,8 +17,38 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_workspaceFile.qwsp \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/camera/imx398_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx398_chromatix.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/camera/imx350_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx350_chromatix.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/oneplus5_vstab_db_1080p_video_0_30fps.config:$(TARGET_COPY_OUT_VENDOR)/etc/oneplus5_vstab_db_1080p_video_0_30fps.config \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/oneplus5_vstab_db_1080p_video_0_60fps.config:$(TARGET_COPY_OUT_VENDOR)/etc/oneplus5_vstab_db_1080p_video_0_60fps.config \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/oneplus5_vstab_db_1080p_video_1_30fps.config:$(TARGET_COPY_OUT_VENDOR)/etc/oneplus5_vstab_db_1080p_video_1_30fps.config \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/oneplus5_vstab_db_4k_video_0_30fps.config:$(TARGET_COPY_OUT_VENDOR)/etc/oneplus5_vstab_db_4k_video_0_30fps.config \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/oneplus5_vstab_db_720p_video_0_30fps.config:$(TARGET_COPY_OUT_VENDOR)/etc/oneplus5_vstab_db_720p_video_0_30fps.config \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/oneplus5_vstab_db_720p_video_1_30fps.config:$(TARGET_COPY_OUT_VENDOR)/etc/oneplus5_vstab_db_720p_video_1_30fps.config \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/hw/camera.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8998.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libSonyIMX350PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX350PdafLibrary.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libactuator_lc898217xc_imx350.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_lc898217xc_imx350.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_3a_1536x866_30fps_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_3a_1536x866_30fps_video.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_3a_2304x1300_30fps_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_3a_2304x1300_30fps_preview.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_3a_2304x1300_30fps_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_3a_2304x1300_30fps_video.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_3a_2592x1940_24fps_preview_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_3a_2592x1940_24fps_preview_bokeh.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_3a_4160x3120_30fps_preview_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_3a_4160x3120_30fps_preview_bokeh.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_3a_4608x3456_27fps_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_3a_4608x3456_27fps_preview.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_3a_5184x3880_30fps_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_3a_5184x3880_30fps_preview.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_common.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_cpp_1536x866_30fps_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_cpp_1536x866_30fps_video.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_cpp_2304x1300_30fps_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_cpp_2304x1300_30fps_video.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_cpp_4160x3120_30fps_preview_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_cpp_4160x3120_30fps_preview_bokeh.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_cpp_4160x3120_30fps_snapshot_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_cpp_4160x3120_30fps_snapshot_bokeh.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_cpp_4608x3456_27fps_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_cpp_4608x3456_27fps_preview.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_cpp_4608x3456_27fps_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_cpp_4608x3456_27fps_snapshot.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_cpp_5184x3880_30fps_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_cpp_5184x3880_30fps_preview.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_cpp_5184x3880_30fps_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_cpp_5184x3880_30fps_snapshot.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_isp_1536x866_30fps_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_isp_1536x866_30fps_video.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_isp_2304x1300_30fps_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_isp_2304x1300_30fps_video.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_isp_4160x3120_30fps_snapshot_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_isp_4160x3120_30fps_snapshot_bokeh.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_isp_4608x3456_27fps_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_isp_4608x3456_27fps_snapshot.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_isp_5184x3880_30fps_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_isp_5184x3880_30fps_snapshot.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx350_postproc.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_cpp_640x480_30fps_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx371_cpp_640x480_30fps_video.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_3a_3264x2448_24fps_preview_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx398_3a_3264x2448_24fps_preview_bokeh.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_3a_wechat_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx398_3a_wechat_preview.so \
@@ -29,4 +59,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_mct.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_sensor_modules.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_modules.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imx350.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx350.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imx350_gt24c64ass_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx350_gt24c64ass_eeprom.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imx398.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx398.so
