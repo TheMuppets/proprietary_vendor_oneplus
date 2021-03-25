@@ -56,7 +56,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/config/bmi26x_0_crt_cfg.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0_crt_cfg.json \
     vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/config/bmp380_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmp380_0.json \
     vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/config/kona_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_ak991x_0.json \
-    vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/config/kona_bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_bmi26x_0.json \
     vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/config/kona_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_bu52053nvx_0.json \
     vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/config/kona_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_default_sensors.json \
     vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/config/kona_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_dynamic_sensors.json \
@@ -68,7 +67,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/config/kona_lsm6dsm_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_lsm6dsm_0.json \
     vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/config/kona_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_lsm6dst_0.json \
     vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/config/kona_lsm6dst_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_lsm6dst_1.json \
-    vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/config/kona_mmc5603x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_mmc5603x_0.json \
     vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/config/kona_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_power_0.json \
     vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/config/kona_qrd_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_qrd_ak991x_0.json \
     vendor/oneplus/instantnoodle/proprietary/vendor/etc/sensors/config/kona_qrd_lsm6dst_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_qrd_lsm6dst_0.json \
