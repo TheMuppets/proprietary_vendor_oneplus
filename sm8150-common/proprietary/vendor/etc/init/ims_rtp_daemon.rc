@@ -1,0 +1,13 @@
+# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+# imsdatadaemon starts with root and UID will be downgraded to RADIO.
+service vendor.ims_rtp_daemon /vendor/bin/ims_rtp_daemon
+    class main
+    user radio
+    group radio vendor_qti_diag inet log
+
+on property:vendor.ims.DATA_DAEMON_STATUS=1
+    restart vendor.ims_rtp_daemon
