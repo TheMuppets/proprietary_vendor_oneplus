@@ -1,0 +1,59 @@
+// @file sns_psmd.proto
+//
+// Defines the API for Persistent Stationary/Motion Detection Sensors.
+//
+// Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// A persistent stationary/motion sensor reports once
+// - The device is moving/not still
+// - The device is detected to be still/stationary
+// The period of time to monitor for motion and stationarity should be greater
+// than 5 seconds, and less than 10 seconds.  After reporting, conceptually
+// the algorithm's state is reset, and detection begins again.
+//
+// Motion here refers to any mechanism in which the device is causes to be
+// moved in its inertial frame. eg: Picking up the device and walking with it
+// to a nearby room may trigger motion whereas keeping the device on a table
+// on a smooth train moving at constant velocity may not trigger motion.
+//
+// Stationarity here refers to absolute stationarity. eg: device on desk.
+//
+// ## Persistent Stationary/Motion Detect sensor attributes:
+// SNS_STD_SENSOR_ATTRID_TYPE is "psmd"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Message IDs for Persistent Stationary/Motion Sensor
+enum sns_psmd_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+
+  // Configuration Request
+  SNS_PSMD_MSGID_SNS_PSMD_CONFIG = 512;
+
+  // Empty Event
+  // Indicates that the requested state has been detected
+  SNS_PSMD_MSGID_SNS_PSMD_EVENT = 768;
+}
+
+// Detected states supported by the PSM Detector
+enum sns_psmd_type
+{
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_PSMD_TYPE_STATIONARY = 0;
+  SNS_PSMD_TYPE_MOTION = 1;
+}
+
+// Configuration Message
+// Used to specify the PSMD configuration
+message sns_psmd_config
+{
+  // Which detector type to enable
+  required sns_psmd_type type = 1;
+}
