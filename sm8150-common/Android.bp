@@ -185,13 +185,13 @@ android_app_import {
 dex_import {
 	name: "WfdCommon",
 	owner: "oneplus",
-	jars: ["proprietary/framework/WfdCommon.jar"],
+	jars: ["proprietary/system/framework/WfdCommon.jar"],
 }
 
 dex_import {
 	name: "qcnvitems",
 	owner: "oneplus",
-	jars: ["proprietary/framework/qcnvitems.jar"],
+	jars: ["proprietary/system/framework/qcnvitems.jar"],
 }
 
 prebuilt_etc_xml {
