@@ -1,0 +1,17 @@
+ # Copyright (c) 2020 Qualcomm Technologies, Inc.
+ # All Rights Reserved.
+ # Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+service vendor.qconfig /vendor/bin/hw/qconfigservice
+    class hal
+    user media
+    group camera
+
+    # HIDL interfaces
+    interface vendor.qti.hardware.qconfig@1.0::IQConfig default
+
+    # don't auto restart
+    oneshot
+
+    # start only when requested (uncomment below to disable service at boot)
+    # disabled

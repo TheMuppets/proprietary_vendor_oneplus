@@ -1,0 +1,402 @@
+<!--
+/******************************************************************************
+  @file    GameOptimizationFeature.xml
+  @brief   Game Optimization feature xml
+
+  DESCRIPTION
+      Each feature has an xml file to define the feature components
+
+  ===========================================================================
+  Copyright (c) 2017-2020 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+  ===========================================================================
+******************************************************************************/
+-->
+<!--
+    Follows "Data goes into elements, metadata goes into attributes"
+ -->
+
+<Feature>
+    <Name>GameOptimization</Name>
+    <Libname>libgameoptfeature.so</Libname>
+    <Configs target="lahaina">
+        <Enable>1</Enable>
+        <STATIC_L0>1</STATIC_L0>
+        <AGPE>1</AGPE>
+        <PICARD>0</PICARD>
+        <IDLE_SENSE>0</IDLE_SENSE>
+        <THERMAL_MONITOR>1</THERMAL_MONITOR>
+        <THERMAL_MONITOR_RULES>GAME_OPT_TSENS_RULE1,GAME_OPT_TSENS_RULE2,GAME_OPT_TSENS_RULE3</THERMAL_MONITOR_RULES>
+        <!-- AGPE threshold values in the order: Increase, Aggressive Increase, Decrease -->
+        <AGPE_FPS_30_THRESHOLD>0.6, 1.0, 0.4</AGPE_FPS_30_THRESHOLD>
+        <AGPE_FPS_35_THRESHOLD>0.6, 1.0, 0.4</AGPE_FPS_35_THRESHOLD>
+        <AGPE_FPS_40_THRESHOLD>0.6, 1.0, 0.4</AGPE_FPS_40_THRESHOLD>
+        <AGPE_FPS_60_THRESHOLD>0.6, 1.0, 0.4</AGPE_FPS_60_THRESHOLD>
+        <AGPE_FPS_90_THRESHOLD>2.0, 5.0, 1.0</AGPE_FPS_90_THRESHOLD>
+        <AGPE_FPS_120_THRESHOLD>2.0, 5.0, 1.0</AGPE_FPS_120_THRESHOLD>
+        <AGPE_FPS_144_THRESHOLD>2.0, 5.0, 1.0</AGPE_FPS_144_THRESHOLD>
+    </Configs>
+    <Configs target="shima">
+        <Enable>1</Enable>
+        <ATML1>1</ATML1>
+        <ATML2>1</ATML2>
+        <ATML3>1</ATML3>
+        <GFAR>1</GFAR>
+        <PICARD>0</PICARD>
+        <IDLE_SENSE>0</IDLE_SENSE>
+        <GROUP_UPMIGRATE_PATH>/proc/sys/kernel/sched_group_upmigrate</GROUP_UPMIGRATE_PATH>
+        <GROUP_DOWNMIGRATE_PATH>/proc/sys/kernel/sched_group_downmigrate</GROUP_DOWNMIGRATE_PATH>
+        <BIG_CLUSTER_ID>4,5,6,7</BIG_CLUSTER_ID>
+        <BIG_SLB_OPCODE>0x40C68000,0x40C68010,0x40C68020,0x40C680200</BIG_SLB_OPCODE>
+        <LITTLE_SLB_OPCODE>0x40C68100,0x40C68110,0x40C68120,0x40C68130</LITTLE_SLB_OPCODE>
+        <!-- SLBval, TADemand, Jank-->
+        <SLB_MAP>14,200,40,6,150,30,4,125,25,2,100,15,0</SLB_MAP>
+        <STUTTER_SCALE>10</STUTTER_SCALE>
+        <ENABLE_DB_L2_L3>0</ENABLE_DB_L2_L3>
+        <!-- This will enbale SLB clamping if Janks are zero in consistent learning window-->
+        <ENABLE_SLB_CLAMPER>1</ENABLE_SLB_CLAMPER>
+        <L3_JANK_THRESHOLD>2,12</L3_JANK_THRESHOLD>
+        <!-- Janky vector threshold, Total no. of Janks Threshold-->
+        <L1_JANK_THRESHOLD>4,8</L1_JANK_THRESHOLD>
+        <!-- Default slb little,  Default slb big-->
+        <ATM_L3_DEFAULTS>0,-6</ATM_L3_DEFAULTS>
+    </Configs>
+    <Profiles>
+        <!-- Heavy Game Default -->
+        <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, 0, SCHED_MIN_TASK_UTIL_FOR_BOOST, 0 -->
+        <!-- MPCTLV3_SCHEDUTIL_DOWN_RATE_LIMIT_CLUSTER_BIG, 19000, MPCTLV3_SCHEDUTIL_DOWN_RATE_LIMIT_CLUSTER_LITTLE, 19000 -->
+        <!-- SCHED_GROUP_DOWNMIGRATE, 75, SCHED_GROUP_UPMIGRATE, 90 -->
+        <Profile target="lahaina">
+            <DEFAULT_PROF>
+            0x40C78000, 0, 0x40C7C000, 0,
+            0x41448000, 19000, 0x41448100, 19000,
+            0x40C58000, 75, 0x40C54000, 90
+            </DEFAULT_PROF>
+        </Profile>
+        <!-- Agressive Profile - Junk detected -->
+        <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, 0, SCHED_MIN_TASK_UTIL_FOR_BOOST, 0 -->
+        <!-- MPCTLV3_SCHEDUTIL_DOWN_RATE_LIMIT_CLUSTER_BIG, 79000, MPCTLV3_SCHEDUTIL_DOWN_RATE_LIMIT_CLUSTER_LITTLE, 79000-->
+        <!-- CPUBW_HWMON_MIN_FREQ, 30, LLCBW_HWMON_MIN_FREQ, 90, L3_MEMLAT_MIN_FREQ, 9000 -->
+        <!-- MIN_FREQ_CLUSTER_PRIME_CORE_0, 1000, MIN_FREQ_CLUSTER_BIG_CORE_0, 1000, MIN_FREQ_CLUSTER_LITTLE_CORE_0, 1000 -->
+        <!-- SCHED_GROUP_DOWNMIGRATE, 65, SCHED_GROUP_UPMIGRATE, 80 -->
+        <!-- TO BE REPLACED: SCHED_BUSY_HYSTERSIS_CPU_MASK, 0xf0, LPM_BIAS_HYST, 99-->
+        <Profile target="lahaina">
+            <DEFAULT_PROF>
+            0x40C78000, 0, 0x40C7C000, 0,
+            0x41448000, 79000, 0x41448100, 79000,
+            0x41800000, 30, 0x43000000, 90, 0x43400000, 9000,
+            0x40800200, 1000, 0x40800000, 1000, 0x40800100, 1000,
+            0x40C58000, 65, 0x40C54000, 80,
+            0x40C74000, 0xf0, 0x40408000, 99
+            </DEFAULT_PROF>
+        </Profile>
+        <Profile target="lahaina">
+            <!-- Colocation v3 1 GHz -->
+            <DEFAULT>0x40c6c000,1000000</DEFAULT>
+            <!-- Colocation v3 1 GHz -->
+            <SKEW2>0x40c6c000,1000000</SKEW2>
+        </Profile>
+        <Profile target="shima">
+            <!-- Colocation v3 1 GHz, Predictive Load 1, Sched Many Wake Up Threshold 4 ,LPM IPI Prediction 0 -->
+            <DEFAULT>0x4144C100,860000,0x41444000,1,0x41444200,1,0x40C9C000,4,0x40414000,0</DEFAULT>
+            <!-- Colocation v3 1 GHz, Predictive Load 1, Sched Many Wake Up Threshold 4, LPM IPI Prediction 0-->
+            <SKEW2>0x4144C100,860000,0x41444000,1,0x41444200,1,0x40C9C000,4,0x40414000,0</SKEW2>
+        </Profile>
+    </Profiles>
+
+    <Meters>
+        <SamplesRequired>4</SamplesRequired>
+
+        <Meter>
+            <Name>Fps</Name>
+            <Triggers>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_APP_WORKLOAD_TYPE</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_WORKLOAD_HEAVY</AsyncId>
+                    <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_HEADROOM_REGULATOR</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_TAP_EVENT</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_ACTIVITY_START</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_ACTIVITY_PAUSE</AsyncId>
+                    <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_ACTIVITY_RESUME</AsyncId>
+                    <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_ACTIVITY_STOP</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_SENSOR_DATA</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_TOGGLE_GAMEOPT</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_PICARD_TOP_APP</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_PICARD_RENDER_RATE</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_PICARD_LOW_LAT</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_PICARD_HIGH_CPUUTIL</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_PICARD_LOAD_CHANGED</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+            </Triggers>
+
+            <Configs>
+                <FPS_NODE>/sys/class/drm/sde-crtc-0/measured_fps</FPS_NODE>
+                <FPS_PERIODICITY_NODE>/sys/class/drm/sde-crtc-0/fps_periodicity_ms</FPS_PERIODICITY_NODE>
+            </Configs>
+            <Samples>100</Samples>
+        </Meter>
+
+        <Meter>
+            <Name>SchedParams</Name>
+            <Triggers>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_APP_WORKLOAD_TYPE</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_WORKLOAD_HEAVY</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_TAP_EVENT</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_ACTIVITY_START</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_ACTIVITY_PAUSE</AsyncId>
+                    <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_ACTIVITY_RESUME</AsyncId>
+                    <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_ACTIVITY_STOP</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_TOGGLE_GAMEOPT</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_PICARD_TOP_APP</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_PICARD_RENDER_RATE</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_PICARD_LOW_LAT</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_PICARD_HIGH_CPUUTIL</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_PICARD_LOAD_CHANGED</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+            </Triggers>
+            <Samples>100</Samples>
+        </Meter>
+
+        <Meter>
+            <Name>Gpu</Name>
+            <Triggers>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_APP_WORKLOAD_TYPE</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_WORKLOAD_HEAVY</AsyncId>
+                    <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_HEADROOM_REGULATOR</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_TAP_EVENT</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_ACTIVITY_START</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_ACTIVITY_PAUSE</AsyncId>
+                    <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                    <Primary>true</Primary>
+                    <AsyncId>VENDOR_HINT_ACTIVITY_RESUME</AsyncId>
+                    <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_ACTIVITY_STOP</AsyncId>
+                   <AsyncType>-1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_SENSOR_DATA</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_TOGGLE_GAMEOPT</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_PICARD_TOP_APP</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_PICARD_RENDER_RATE</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_PICARD_LOW_LAT</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_PICARD_HIGH_CPUUTIL</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+                <Trigger>
+                   <Primary>true</Primary>
+                   <AsyncId>VENDOR_HINT_PICARD_LOAD_CHANGED</AsyncId>
+                   <AsyncType>1</AsyncType>
+                </Trigger>
+            </Triggers>
+
+            <Configs>
+                <GPU_AVAILABLE_FREQUENCIES>/sys/class/kgsl/kgsl-3d0/gpu_available_frequencies</GPU_AVAILABLE_FREQUENCIES>
+                <GPU_CLOCK_STATS>/sys/class/kgsl/kgsl-3d0/gpu_clock_stats</GPU_CLOCK_STATS>
+                <GPU_CLK>/sys/class/kgsl/kgsl-3d0/gpuclk</GPU_CLK>
+                <GPU_BUSY_PERCENTAGE>/sys/class/kgsl/kgsl-3d0/gpu_busy_percentage</GPU_BUSY_PERCENTAGE>
+            </Configs>
+            <Samples>100</Samples>
+        </Meter>
+    </Meters>
+    <IgnoredApps target="lahaina">
+        <App>com.google.android.gms</App>
+        <App>com.android.vending</App>
+        <App>com.google.android.projection.gearhead</App>
+    </IgnoredApps>
+    <IgnoredApps target="shima">
+        <App>com.google.android.gms</App>
+        <App>com.android.vending</App>
+        <App>com.google.android.projection.gearhead</App>
+    </IgnoredApps>
+    <Triggers>
+        <Trigger>
+           <Primary>true</Primary>
+           <AsyncId>VENDOR_HINT_THERMAL_UPDATE</AsyncId>
+           <AsyncType>-1</AsyncType>
+        </Trigger>
+    </Triggers>
+</Feature>

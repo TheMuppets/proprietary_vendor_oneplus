@@ -1,0 +1,12 @@
+
+# Copyright (c) 2020 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+# imsdaemon starts with root and UID will be downgraded to RADIO.
+service vendor.imsdaemon /vendor/bin/imsdaemon
+    class main
+    user radio
+    socket ims_datad stream 0660 system radio
+    group radio wifi inet vendor_qti_diag log

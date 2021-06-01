@@ -1,0 +1,46 @@
+<!--
+/******************************************************************************
+  @file    sPLHFeature.xml
+  @brief   Implementation of Android Framework Learning Module
+
+  DESCRIPTION
+      Each feature has an xml file to define the components
+
+  ===========================================================================
+  Copyright (c) 2020 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+  ===========================================================================
+******************************************************************************/
+-->
+<!--
+    Follows "Data goes into elements, metadata goes into attributes"
+    Specify ipc threashold and freq threashold for 60,90,120,144::
+       <Configs>
+          <FPS60>IPC1,FREQ1,IPC2,FREQ2,IPC3,FREQ3</FPS60>
+       </Configs>
+-->
+<Feature>
+    <Name>sPLH</Name>
+    <Configs target="shima">
+        <FPS>60,90,120,144</FPS>
+        <FPS60>0,650,150,1200,200,1700,250,2200</FPS60>
+        <FPS90>0,650,150,1200,200,1700,250,2200</FPS90>
+        <FPS120>0,1497,200,1700,250,2200</FPS120>
+        <FPS144>0,1497,200,1700,250,2200</FPS144>
+    </Configs>
+    <Libname>libsplh.so</Libname>
+    <Triggers>
+        <Trigger>
+            <Primary>true</Primary>
+            <AsyncId>VENDOR_HINT_SCROLL_BOOST</AsyncId>
+            <AsyncType>1</AsyncType>
+         </Trigger>
+
+         <Trigger>
+             <Primary>true</Primary>
+             <AsyncId>VENDOR_HINT_SCROLL_BOOST</AsyncId>
+             <AsyncType>2</AsyncType>
+         </Trigger>
+    </Triggers>
+</Feature>

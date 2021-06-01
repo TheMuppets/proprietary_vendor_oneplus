@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+<!-- This is PerfConfigsStore file which returns the value when a
+particular property name is invoked -->
+
+<!-- This file supports only Prop tag, which has the following fields
+* Name, to identify the name of the property. The names of the
+properties have been classified into Vendor and System property.
+* Value, the new value to be returned as string when respective
+property Name is called. -->
+
+<!--__________________________________Example format_______________________________________________
+<Prop Name="vendor.debug.enable.lm" Value="true" Target="lagoon" Variant="lito" Resolution="1080p"
+ Ram="3" Kernel="4.19"/>
+    Target: target code name (decided based on soc id, doesn't depend on lunch combo name)
+            ex: lito, lagoon, kona, etc
+    Variant: For Variants of Target go/32bit/64bit/nongo, examples below
+               Variant=bengal_32go  -> bengal 32 bit go target
+               Variant=bengal_32    -> bengal 32 bit target
+               Variant=bengal       -> bengal 64 bit target
+    Resolution="1080p", "2560", "720p", "HD+"
+    Kernel: kernel version, examples: "4.19", "5.4", etc
+    Ram: ram size in GB, examples: "1","2","3","4" (4 for target with >= 4GB of RAM as well)
+_______________________________________________________________________________________________ -->
+
+<PerfConfigsStore>
+    <PerfConfigs>
+
+                <!--Vendor Properties -->
+                <Prop Name="vendor.iop.enable_uxe" Value="0" />
+                <Prop Name="vendor.debug.enable.lm" Value="true" />
+                <Prop Name="vendor.perf.iop_v3.enable" Value="true" Target="lahaina" />
+                <Prop Name="vendor.perf.iop_v3.enable.debug" Value="false" />
+                <Prop Name="vendor.enable.prefetch" Value="false" />
+                <Prop Name="vendor.iop.enable_prefetch_ofr" Value="false" />
+                <Prop Name="vendor.iop.enable_speed" Value="true" Target="lahaina" />
+                <Prop Name="vendor.perf.fps_switch_hyst_time_secs" Value="20" Target="lahaina" />
+                <Prop Name="vendor.debug.enable.memperfd" Value="true" Target="shima" />
+                <Prop Name="vendor.perf.pfar.enable" Value="1" Target="shima" />
+                <Prop Name="vendor.perf.fps_switch.enable" Value="1" Target="shima" />
+                <Prop Name="ro.vendor.perf.gfl.tap_ignore_enable" Value="true" Target="shima" />
+                <Prop Name="ro.vendor.perf.wlc.heavygame" Value="true" Target="shima" />
+                <Prop Name="ro.vendor.perf.gfl_hg_assured_min_threshold" Value="0" Target="lahaina" />
+                <Prop Name="ro.vendor.perf.splh" Value="none" Target="shima" />
+                <Prop Name="ro.vendor.perf.gplaf" Value="false" Target="shima" />
+                <Prop Name="ro.vendor.perf.enable.prekill" Value="false" Target="lahaina" />
+
+                <!--System Properties -->
+                <Prop Name="ro.lmk.thrashing_limit_pct_dup" Value="30" />
+                <Prop Name="ro.lmk.thrashing_threshold" Value="30" />
+                <Prop Name="ro.lmk.thrashing_decay" Value="5" />
+                <Prop Name="ro.lmk.nstrat_low_swap" Value="10" />
+                <Prop Name="ro.lmk.nstrat_psi_partial_ms" Value="70" />
+                <Prop Name="ro.lmk.nstrat_psi_complete_ms" Value="70" />
+                <Prop Name="ro.lmk.psi_scrit_complete_stall_ms" Value="75" />
+                <Prop Name="ro.lmk.nstrat_wmark_boost_factor" Value="4" />
+                <Prop Name="ro.lmk.kill_heaviest_task_dup" Value="true" />
+                <Prop Name="ro.lmk.kill_timeout_ms_dup" Value="100" />
+                <Prop Name="ro.lmk.enhance_batch_kill" Value="false" />
+                <Prop Name="ro.lmk.enable_watermark_check" Value="true" />
+                <Prop Name="ro.lmk.super_critical" Value="606" />
+                <Prop Name="vendor.perf.gestureflingboost.enable" Value="true" />
+                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="96" />
+                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="60" Target="shima" />
+                <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
+                <Prop Name="vendor.perf.performancemode.support" Value="false" Target="lahaina" />
+                <Prop Name="ro.lmk.enable_preferred_apps" Value="true" />
+                <Prop Name="vendor.appcompact.enable_app_compact" Value="false" />
+                <Prop Name="vendor.appcompact.full_compact_type" Value="2" />
+                <Prop Name="vendor.appcompact.some_compact_type" Value="2" />
+                <Prop Name="vendor.appcompact.compact_throttle_somesome" Value="5000" />
+                <Prop Name="vendor.appcompact.compact_throttle_somefull" Value="10000" />
+                <Prop Name="vendor.appcompact.compact_throttle_fullsome" Value="500" />
+                <Prop Name="vendor.appcompact.compact_throttle_fullfull" Value="10000" />
+                <Prop Name="vendor.appcompact.compact_throttle_bfgs" Value="600000" />
+                <Prop Name="vendor.appcompact.compact_throttle_persistent" Value="600000" />
+                <Prop Name="vendor.appcompact.rss_throttle_kb" Value="12000" />
+                <Prop Name="vendor.appcompact.delta_rss_throttle_kb" Value="8000" />
+                <Prop Name="vendor.perf.topAppRenderThreadBoost.enable" Value="false" Target="lahaina" />
+                <Prop Name="ro.vendor.qti.sys.fw.use_trim_settings" Value="true" Target="shima" />
+                <Prop Name="ro.vendor.qti.sys.fw.empty_app_percent" Value="50" Target="shima" />
+                <Prop Name="ro.vendor.qti.sys.fw.trim_empty_percent" Value="100" Target="shima" />
+                <Prop Name="ro.vendor.qti.sys.fw.trim_cache_percent" Value="100" Target="shima" />
+                <Prop Name="ro.vendor.qti.sys.fw.trim_enable_memory" Value="4294967296" Target="shima" />
+                <Prop Name="ro.vendor.qti.am.reschedule_service" Value="true" Target="shima" />
+                <Prop Name="ro.vendor.iocgrp.config" Value="1" Target="shima" />
+                <Prop Name="ro.lmk.enable_userspace_lmk" Value="true" />
+                <Prop Name="vendor.perf.phr.enable" Value="1" Target="lahaina"/>
+                <Prop Name="vendor.perf.phr.hr_min_rate" Value="0.5" Target="lahaina"/>
+                <Prop Name="vendor.perf.pfar2.enable" Value="1" Target="lahaina"/>
+                <Prop Name="vendor.perf.pfar2.boost_level" Value="1" Target="lahaina"/>
+                <Prop Name="vendor.perf.pfar2.disable_pl" Value="1" Target="lahaina"/>
+                <Prop Name="vendor.perf.pfar2.disable_core_ctl" Value="1" Target="lahaina"/>
+
+                <!--
+                #ifdef VENDOR_EDIT
+                simon.ma@SYSTEM, 2019/05/16, add for GCE-12831 to enable bservice limit
+                -->
+                <Prop Name="ro.vendor.qti.sys.fw.bservice_enable" Value="true" />
+                <Prop Name="ro.vendor.qti.sys.fw.bservice_limit" Value="8" />
+                <Prop Name="ro.vendor.qti.sys.fw.bservice_age" Value="5000" />
+                <!--
+                #endif /* VENDOR_EDIT */
+                -->
+
+                <!--
+                #ifdef VENDOR_EDIT
+                denzel.chen@SYSTEM, 2020/05/12, add for OPBRITN-3462
+                -->
+                <Prop Name="ro.lmk.kill_timeout_ms_dup" Value="15" />
+                <!--
+                #endif /* VENDOR_EDIT */
+                -->
+                <!--
+                #ifdef VENDOR_EDIT
+                kenneth.wang@OPTIMIZATION, 2020/10/28, add for TFS-41337
+                -->
+                <Prop Name="ro.lmk.use_new_strategy_dup" Value="true" />
+                <!--
+                #endif /* VENDOR_EDIT */
+                -->
+    </PerfConfigs>
+</PerfConfigsStore>

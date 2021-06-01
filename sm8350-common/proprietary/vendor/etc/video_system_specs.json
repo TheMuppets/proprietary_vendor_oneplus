@@ -1,0 +1,149 @@
+// If you modify this file,
+//    1. Push it to /vendor/etc/video_system_specs.json on the device
+//    2. Kill media.hwcodec to get the new changed values.
+// Note: Please do not use hexadecimal values 0x in this file.
+{
+    "Video": {
+    // feature list used for enable/disable
+        "Features": {
+            // This is used for encoder color space conversion with custom matrix.
+            // custom matrix is defined in kernel driver
+            // this triggers to enable CSC to 709LR with custom matrix
+            "enc_csc_custom_matrix": false,
+            // this enables adaptive blur if possible by encoder.
+            // this is preprocessing of encoder input YUV buffers
+            "enc_auto_blur": true,
+            // this enables encoding rotate by C2D. it is used for some low tier end chipsets which
+            // don't support rotate feature in video core. TODO - Rename as enc_vpss_rotation
+            "enc_c2d_rotation": false,
+            // target supports cvp for all encode usecases.
+            "enc_cvp_enable": true,
+            // encoder csc enable
+            "enc_csc_enable": false,
+            // perf hints support for decoder and encoder
+            "perf_control_enable": false,
+            // It is used to enable fastCV engine for flip support in the absence of VPSS hardware
+            // support.
+            "enc_vpss_flip": true,
+            "pipelining": true
+        },
+        "Presets": {
+            // this is used for secure decoding performance boost handling
+            // prefech sizes of internal & output buffers
+            // internal : 200 MB (200 X 1)
+            // output   : 200 MB (12.5 X 16)
+            "dec_sec_prefetch_size_internal": 209715200,
+            "dec_sec_prefetch_size_output": 13434880,
+            // control to force enable linear color format for decoder
+            // if this is enable, then decoder will produce linear color format output.
+            // it is bitmask:
+            //  0x0: no override,
+            //  0x1: enable 8 bit: linear format. 10 bit: compressed format
+            //  0x2: 8 bit: compressed format. 10 bit: linear format
+            //  0x3: 8 bit: linear format. 10 bit: linear format
+            "dec_linear_color_format": 0,
+            // this control enables default b frame encoding
+            // if it is within capability of B frame encode case
+            // this is used only in MediaRecorder path
+            // max B frame count between two P
+            "enc_default_bframe_count": 1,
+            // maximum MB/sec for default adaptive b-frame enablement case
+            // 3840x2160@60fps
+            "enc_adaptive_b_max_mbs_per_sec": 1944000,
+            // maximum MB/frame for default adaptive b-frame enablement case
+            // 3840x2160/256
+            "enc_adaptive_b_max_mbs_per_frame": 32400,
+            // maximum width for default adaptive b-frame enablement case
+            // Max Width=3840, Max Height=3840
+            "enc_adaptive_b_max_width": 3840,
+            // maximum MB/sec for default Hier-B enablement case
+            // 1920x1088@60fps
+            "enc_hier_b_max_mbs_per_sec": 489600,
+            // maximum MB/frame for default Hier-B enablement case
+            // 1920x1088/256
+            "enc_hier_b_max_mbs_per_frame": 8160,
+            // maximum width for default Hier-B enablement case
+            // Max Width=1920, Max Height=1920
+            "enc_hier_b_max_width": 1920,
+            // maximum decoder output rate if it is Nuplayer path and
+            // player sets max refresh rate
+            "max_supported_render_rate": 120,
+            // control to force enable linear color format for encoder
+            // if this is enable, then encoder will ask camera via
+            // consumer flag to inform usage of linear color format.
+            // it is used only for camera path. can't be used for non-camera producer case
+            // it is bitmask:
+            //  0x0: no override,
+            //  0x1: enable 8 bit: linear format. 10 bit: compressed format
+            //  0x2: 8 bit: compressed format. 10 bit: linear format
+            //  0x3: 8 bit: linear format. 10 bit: linear format
+            "enc_linear_color_format": 0,
+            // override chroma qp offset value for 8 and 10 bits:
+            // default: 0
+            // allowed override value: -12
+            "enc_chroma_qp_offset_10_bit": 0,
+            "enc_chroma_qp_offset_8_bit": 0,
+            //encoder bitrate savings control (CAC) - content adaptive coding feature
+            // it is bitmask.
+            //  0x0: disable CAC
+            //  0x1: 8 bit: enable.  10 bit: disable
+            //  0x2: 8 bit: disable. 10 bit: enable
+            //  0x3: 8 bit: enable.  10 bit: enable
+            "enc_bitrate_savings": 3,
+            // minimum encoder bitrate boost
+            "enc_bitrate_boost": 25,
+            // maximum and minimum QPs for Encoders
+            // default: 10 - 40
+            // allowed override value: 0 - 51
+            "enc_bitrate_boost_qp_min": 10,
+            "enc_bitrate_boost_qp_max": 40,
+            // additional buffers to be added while computing pipeline delays
+            "pipeline_extra_output_buffers": 2,
+
+            // WARNING:
+            //    Please DON'T change these values, if you don't know what you are doing.
+            // These are the Video HAL capabilities. Video HAL may not function properly with wrong values.
+            // below are various capability used
+            // video driver version capability used for skype MediaCodec
+            "vt_driver_version": 534123018,
+            // maximum LTR cont for encoder
+            "ltr_max_count": 2,
+            // Encoder preprocessing: maximum encoder downscalar factor possible in width or height or both direction
+            "preprocess_max_downscale_factor": 8,
+            // encoder support rotation as preprocessing
+            "preprocess_rotation": 1,
+            // encoder Hier-P maximum layer count: 6
+            "enc_hier_p_max_temporal_layer_count": 6,
+            // encoder Hier-B maximum layer count: 4
+            "enc_hier_b_max_temporal_layer_count": 4,
+            // disable vpp secure mode disable: 1
+            "vpp_secure_mode_disable": 1
+        },
+        // list of codec plugin libraries to be loaded into codec registry
+        "QC2CodecPlugins": [
+            "libqc2vppfilter.so"
+        ],
+
+        // List of HW codecs enabled for this target
+        "codecs-available": {
+            "decoders": [
+                "c2.qti.avc.decoder",
+                "c2.qti.avc.decoder.low_latency",
+                "c2.qti.avc.decoder.secure",
+                "c2.qti.hevc.decoder",
+                "c2.qti.hevc.decoder.low_latency",
+                "c2.qti.hevc.decoder.secure",
+                "c2.qti.vp9.decoder",
+                "c2.qti.vp9.decoder.secure",
+                "c2.qti.mpeg2.decoder"
+            ],
+            "encoders": [
+                "c2.qti.avc.encoder",
+                "c2.qti.avc.encoder.secure",
+                "c2.qti.hevc.encoder",
+                "c2.qti.hevc.encoder.cq",
+                "c2.qti.heic.encoder"
+            ]
+        }
+    }
+}
