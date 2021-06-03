@@ -194,7 +194,7 @@
         <Config
             Id="0x00001083" Enable="true" Timeout="400" Target="lahaina"
             Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
-                       0x40800000, 0x840, 0x40800100, 0xFFF, 0x40800200, 0x94D" />
+                       0x40800000, 0x7CC, 0x40800100, 0xFFF, 0x40800200, 0x94D" />
 
        <Config
            Id="0x00001083" Enable="true" Timeout="400" Target="shima"
