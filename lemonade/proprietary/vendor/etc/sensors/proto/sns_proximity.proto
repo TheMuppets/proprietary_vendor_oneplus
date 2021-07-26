@@ -1,0 +1,115 @@
+// @file sns_proximity.proto
+//
+// Defines the API for Proximity Sensors.
+// All Proximity Sensor drivers are required to comply with this API.
+// Any new functionality for Proximity Sensor can be defined in a
+// device specific API file.
+//
+// Copyright (c) 2016-2019 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+import "sns_physical_sensor_test.proto";
+import "sns_cal.proto";
+
+// Attribute requirements:
+// The Proximity Sensor publishes:
+// 1. SNS_STD_SENSOR_ATTRID_TYPE attribute value as "proximity".
+// 2. SNS_STD_SENSOR_ATTRID_RESOLUTIONS attribute is not applicable since this
+//    is an event sensor.
+// 3. SNS_STD_SENSOR_ATTRID_RANGES attribute values in cm unit (proximity distance).
+// 4. See sns_std_sensor.proto for other attributes.
+
+// Handling stream requests:
+// 1. The Proximity Sensor supports both streaming and on-change
+//    modes and the operating mode is configured in the Registry.
+// 2. The streaming Proximity Sensor handles the sns_std_sensor_config request
+//    for all stream enable/update requests.
+// 3. The on-change Proximity Sensor handles the
+//    SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG request for
+//    all on-change enable/update requests.
+// 4. In on-change mode the Sensor uses interrupt operation and reports
+//    samples only for NEAR/FAR transitions.
+
+// Message IDs for proximity Sensor
+enum sns_proximity_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  // Uses message: sns_proximity_event
+  // Purpose: A non-recurring output data event from the proximity sensor to its client.
+  SNS_PROXIMITY_MSGID_SNS_PROXIMITY_EVENT  = 769;
+
+  // Uses message: sns_proximity_event_recurrent
+  // Purpose: A recurring output data event from the proximity sensor to its client.
+  SNS_PROXIMITY_MSGID_SNS_PROXIMITY_EVENT_RECURRENT  = 1031;
+}
+
+enum sns_proximity_event_type {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_PROXIMITY_EVENT_TYPE_FAR = 0;
+  SNS_PROXIMITY_EVENT_TYPE_NEAR  = 1;
+}
+
+// Events types from proximity Sensor
+message sns_proximity_event
+{
+  // Proximity NEAR/FAR output event
+  required sns_proximity_event_type proximity_event_type = 1 [default = SNS_PROXIMITY_EVENT_TYPE_FAR];
+
+  // Proimity sensor raw data
+  required uint32 raw_adc = 2;
+
+  // Proximity sensor sample status
+  required sns_std_sensor_sample_status status = 3 [default = SNS_STD_SENSOR_SAMPLE_STATUS_UNRELIABLE];
+
+// Proimity sensor offset
+  required uint32 offset = 4 [default = 0];
+
+}
+
+message sns_proximity_event_recurrent
+{
+  // Proximity NEAR/FAR output event
+  required sns_proximity_event_type proximity_event_type = 1 [default = SNS_PROXIMITY_EVENT_TYPE_FAR];
+
+  // Proimity sensor raw data
+  required uint32 raw_adc = 2;
+
+  // Proximity sensor sample status
+  required sns_std_sensor_sample_status status = 3 [default = SNS_STD_SENSOR_SAMPLE_STATUS_UNRELIABLE];
+}
+
+// Handling stream events:
+// 1. The Proximity Sensor publishes object proximity data stream events
+//    using sns_proximity_event message.
+// 2. Each stream event publishes an accuracy field:
+//    SNS_STD_SENSOR_SAMPLE_STATUS_UNRELIABLE to mark invalid samples when hardware is
+//    yet to stabilize after the sensor is configured.
+//    SNS_STD_SENSOR_SAMPLE_STATUS_ACCURACY_HIGH to mark samples when they are valid.
+// 3. The Proximity Sensor publishes a configuration event using the
+//    sns_std_sensor_physical_config_event message.
+//    It publishes this event each time there is a change in hardware config of the sensor
+//    and contains current physical sensor config of the sensor.
+
+// Handling self-test requests:
+// 1. The Proximity Sensor implements SNS_PHYSICAL_SENSOR_TEST_TYPE_COM test
+//    type using the physical sensor test API.
+// 2. The Proximity Sensor implements SNS_PHYSICAL_SENSOR_TEST_TYPE_FACTORY test
+//    type to determine factory calibration parameters using the physical
+//    sensor test API. The factory test for Proximity Sensor calibrates
+//    the sensor to detect an object (including light and dark colored)
+//    at 5cm distance from the physical sensor.
+// 3. The Proximity Sensor could implement other test types.
+
+// Handling test events:
+// 1. The Proximity Sensor uses sns_physical_sensor_test_event message to publish
+//    a test completion event.
+// 2. The test_passed field in sns_physical_sensor_test_event is used to output the
+//    pass/fail result of self-test execution.
+// 3. The test_data field in sns_physical_sensor_test_event could be used to output any
+//    driver-specific error data.
+

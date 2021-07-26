@@ -1,0 +1,11 @@
+// @file sns_data_acquisition_engine.proto
+//
+// Includes sns_dae.proto
+//
+// Copyright (c) 2018 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+syntax = "proto2";
+import "nanopb.proto";
+
+import "sns_dae.proto";
