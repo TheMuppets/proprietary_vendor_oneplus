@@ -34,17 +34,17 @@
     <!-- These are telephony components that need to freely run in the background -->
     <allow-in-power-save package="com.qualcomm.atfwd" />
     <allow-in-power-save package="com.qualcomm.qti.telephonyservice" />
-    <allow-in-power-save package="com.qulacomm.qcrilmsgtunnel" />
+    <allow-in-power-save package="com.qualcomm.qcrilmsgtunnel" />
     <allow-in-power-save package="com.qualcomm.qti.ims" />
     <allow-in-power-save package="com.qualcomm.qti.radioconfiginterface" />
     <allow-in-power-save package="com.qualcomm.simcontacts" />
     <allow-in-power-save package="com.qualcomm.qti.autoregistration" />
     <allow-in-power-save package="com.qualcomm.qti.server.wigigapp" />
-    <allow-in-power-save package="com.qualcomm.qti.StatsPollManager" />
     <allow-in-power-save package="com.qualcomm.qti.gsma.services.nfc" />
     <allow-in-power-save package="com.quicinc.voice.activation" />
     <allow-in-power-save package="com.android.mms" />
     <allow-in-power-save package="com.android.exchange" />
+    <allow-in-power-save package="com.android.email" />
     <allow-in-power-save package="com.qualcomm.qti.callenhancement" />
     <allow-in-power-save package="com.qualcomm.qti.smartassistant" />
     <!-- These telephony applications need access to non-[System]SDK APIs -->
@@ -111,5 +111,8 @@
     <hidden-api-whitelisted-app package="com.qualcomm.wfd.client" />
     <hidden-api-whitelisted-app package="com.qualcomm.wfd.service" />
     <hidden-api-whitelisted-app package="com.qualcomm.qti.server.wigigapp" />
+    <!-- These are location components that need to freely run in the background -->
+    <allow-in-power-save package="com.qualcomm.location" />
+    <allow-in-power-save package="com.qualcomm.location.XT" />
     <hidden-api-whitelisted-app package="com.qti.service.colorservice" />
 </config>
