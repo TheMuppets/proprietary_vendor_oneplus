@@ -18,6 +18,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_workspaceFile.qwsp \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/camera/imx350_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx350_chromatix.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/camera/imx398_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx398_chromatix.xml \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/oneplus5_vstab_db_1080p_video_0_30fps.config:$(TARGET_COPY_OUT_VENDOR)/etc/oneplus5_vstab_db_1080p_video_0_30fps.config \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/oneplus5_vstab_db_1080p_video_0_60fps.config:$(TARGET_COPY_OUT_VENDOR)/etc/oneplus5_vstab_db_1080p_video_0_60fps.config \
     vendor/oneplus/cheeseburger/proprietary/vendor/etc/oneplus5_vstab_db_1080p_video_1_30fps.config:$(TARGET_COPY_OUT_VENDOR)/etc/oneplus5_vstab_db_1080p_video_1_30fps.config \
