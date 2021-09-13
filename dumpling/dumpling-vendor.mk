@@ -24,8 +24,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dumpling/proprietary/vendor/etc/oneplus5T_vstab_db_720p_video_0_30fps.config:$(TARGET_COPY_OUT_VENDOR)/etc/oneplus5T_vstab_db_720p_video_0_30fps.config \
     vendor/oneplus/dumpling/proprietary/vendor/etc/oneplus5T_vstab_db_720p_video_1_30fps.config:$(TARGET_COPY_OUT_VENDOR)/etc/oneplus5T_vstab_db_720p_video_1_30fps.config \
     vendor/oneplus/dumpling/proprietary/vendor/lib/hw/camera.msm8998.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8998.so \
-    vendor/oneplus/dumpling/proprietary/vendor/lib/hw/fingerprint.fpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.fpc.so \
-    vendor/oneplus/dumpling/proprietary/vendor/lib/hw/fingerprint.goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.goodix.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libactuator_lc898217xc_imx376k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_lc898217xc_imx376k.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libchromatix_imx376k_3a_1840x1380_30fps_preview_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx376k_3a_1840x1380_30fps_preview_bokeh.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libchromatix_imx376k_3a_2592x1458_120fps_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx376k_3a_2592x1458_120fps_video.so \
@@ -47,9 +45,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libchromatix_imx376k_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx376k_postproc.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libchromatix_imx398_3a_4608x3456_30fps_preview_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx398_3a_4608x3456_30fps_preview_bokeh.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libchromatix_imx398_cpp_4608x3456_snapshot_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx398_cpp_4608x3456_snapshot_bokeh.so \
-    vendor/oneplus/dumpling/proprietary/vendor/lib/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_ca.so \
-    vendor/oneplus/dumpling/proprietary/vendor/lib/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_hal.so \
-    vendor/oneplus/dumpling/proprietary/vendor/lib/libgoodixfingerprintd_binder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgoodixfingerprintd_binder.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_iface_modules.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_imglib_modules.so \
     vendor/oneplus/dumpling/proprietary/vendor/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_mct.so \
