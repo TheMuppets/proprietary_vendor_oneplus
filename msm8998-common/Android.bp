@@ -6,25 +6,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "libantradio",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libantradio.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/lib64/libantradio.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libdsi_netctrl",
 	owner: "oneplus",
 	strip: {
@@ -199,6 +180,26 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libantradio",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/system_ext/lib/libantradio.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/system_ext/lib64/libantradio.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
