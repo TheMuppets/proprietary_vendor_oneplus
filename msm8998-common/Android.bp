@@ -358,12 +358,6 @@ android_app_import {
 	system_ext_specific: true,
 }
 
-dex_import {
-	name: "vendor.oneplus.hardware.param-V1.0-java",
-	owner: "oneplus",
-	jars: ["proprietary/framework/vendor.oneplus.hardware.param-V1.0-java.jar"],
-}
-
 prebuilt_etc_xml {
 	name: "vendor.qti.gnss@3.0-service",
 	owner: "oneplus",
