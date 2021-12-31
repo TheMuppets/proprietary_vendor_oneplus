@@ -1,0 +1,7 @@
+# Copyright (c) 2020 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+on boot
+    write /data/vendor/qmipriod/log.txt ""
+    chown radio radio /data/vendor/qmipriod/log.txt

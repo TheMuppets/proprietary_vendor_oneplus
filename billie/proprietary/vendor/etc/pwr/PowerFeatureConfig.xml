@@ -1,0 +1,21 @@
+<!--
+/******************************************************************************
+  @file    PowerFeatureConfig.xml
+  @brief   Power Optimization feature config xml
+
+  DESCRIPTION
+      This is to enable power features for optimization
+
+  ===========================================================================
+  Copyright (c) 2020 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+  ===========================================================================
+******************************************************************************/
+-->
+<PowerFeature>
+    <Feature>
+        <Name>VideoPowerOptFeature</Name>
+        <Enable>1</Enable>
+    </Feature>
+</PowerFeature>

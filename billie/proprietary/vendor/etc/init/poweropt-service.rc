@@ -1,0 +1,17 @@
+#  @file    poweropt-servce.rc
+#  @brief   Definition to enable poweropt
+#
+#  DESCRIPTION
+#  ---------------------------------------------------------------------------
+#       Copyright (c) 2020 Qualcomm Technologies, Inc.
+#       All Rights Reserved.
+#       Confidential and Proprietary - Qualcomm Technologies, Inc.
+#  ---------------------------------------------------------------------------
+on post-fs-data && property:ro.crypto.state=encrypted && property:ro.crypto.type=file
+    start poweropt-service
+
+service poweropt-service /vendor/bin/poweropt-service
+    class main
+    user root
+    group system
+

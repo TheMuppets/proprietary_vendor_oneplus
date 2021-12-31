@@ -1,0 +1,17 @@
+#! /bin/sh
+#
+#Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
+#All Rights Reserved.
+#Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
+    override
+    interface android.hardware.camera.provider@2.4::ICameraProvider legacy/0
+    interface vendor.qti.hardware.camera.postproc@1.0::IPostProcService camerapostprocservice
+    class hal
+    user cameraserver
+    group audio camera input drmrpc oem_2907 wakelock
+    ioprio rt 4
+    capabilities SYS_NICE BLOCK_SUSPEND
+    writepid /dev/cpuset/camera-daemon/tasks /dev/stune/foreground/tasks

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- there is used for wt mmi loopback  test -->
+
+<mixer>
+    <!-- mainmic-->
+    <path name="mainmic">
+        <ctl name="TX DEC2 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX2" value="ADC0" />
+        <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+    </path>
+    <!-- mainmic2-->
+    <path name="mainmic2">
+        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX0" value="ADC0" />
+        <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+    </path>
+
+    <!-- submic-->
+    <path name="submic">
+        <ctl name="TX DEC2 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX2" value="ADC2" />
+        <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
+        <ctl name="TX_AIF1_CAP Mixer DEC2" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC2 MUX" value="INP3" />
+    </path>
+
+    <!-- submic2-->
+    <path name="submic2">
+        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX0" value="ADC2" />
+        <ctl name="TX_CDC_DMA_TX_3 Channels" value="One" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC2 MUX" value="INP3" />
+    </path>
+
+    <!-- headset-mic-->
+    <path name="headset-mic">
+        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX0" value="ADC2" />
+        <ctl name="TX_CDC_DMA_TX_4 Channels" value="One" />
+        <ctl name="TX_AIF2_CAP Mixer DEC0" value="1" />
+        <ctl name="DEC0_BCS Switch" value="1" />
+        <ctl name="ADC2_MIXER Switch" value="1" />
+        <ctl name="ADC2 MUX" value="INP2" />
+    </path>
+
+    <!-- headphone-->
+    <path name="headphone">
+        <ctl name="RX_MACRO RX0 MUX" value="AIF1_PB" />
+        <ctl name="RX_MACRO RX1 MUX" value="AIF1_PB" />
+        <ctl name="RX_CDC_DMA_RX_0 Channels" value="Two" />
+        <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
+        <ctl name="RX INT1_1 MIX1 INP0" value="RX1" />
+        <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
+        <ctl name="RX INT1 DEM MUX" value="CLSH_DSM_OUT" />
+        <ctl name="RX_COMP1 Switch" value="1" />
+        <ctl name="RX_COMP2 Switch" value="1" />
+        <ctl name="HPHL_COMP Switch" value="1" />
+        <ctl name="HPHR_COMP Switch" value="1" />
+        <ctl name="HPHL_RDAC Switch" value="1" />
+        <ctl name="HPHR_RDAC Switch" value="1" />
+    </path>
+
+    <!--speaker -->
+    <path name="speaker">
+        <ctl name="TERT_MI2S_RX Channels" value="Two" />
+		<ctl name="TERT_MI2S_RX Format" value="S24_LE" />
+		<ctl name="TFA_CHIP_SELECTOR" value="0" />
+		<ctl name="TFA Profile" value="speaker" />
+    </path>
+
+    <!--speaker right -->
+    <path name="speaker-right">
+		<ctl name="TERT_MI2S_RX Format" value="S24_LE" />
+		<ctl name="TFA_CHIP_SELECTOR" value="2" />
+		<ctl name="TFA Profile" value="speaker" />
+    </path>
+
+    <!-- speakerleft -->
+    <path name="speaker-left">
+    	<ctl name="TERT_MI2S_RX Format" value="S24_LE" />
+		<ctl name="TFA_CHIP_SELECTOR" value="1" />
+		<ctl name="TFA Profile" value="speaker" />
+    </path>
+
+    <!-- reciver -->
+    <path name="reciver">
+        <ctl name="TERT_MI2S_RX Channels" value="Two" />
+		<ctl name="TERT_MI2S_RX Format" value="S24_LE" />
+		<ctl name="TFA_CHIP_SELECTOR" value="1" />
+		<ctl name="TFA Profile" value="receiver" />
+    </path>
+
+    <!--loopback test -->
+    <!-- mainmic to headphone -->
+    <path name="mmi-loopback-mainmic-headphone">
+          <path name="mainmic" />
+          <path name="headphone" />
+          <ctl name="RX_CDC_DMA_RX_0 Port Mixer TX_CDC_DMA_TX_3" value="1"/>
+          <ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
+    </path>
+    <!-- mainmic2 to headphone -->
+    <path name="mmi-loopback-mainmic2-headphone">
+          <path name="mainmic2" />
+          <path name="headphone" />
+          <ctl name="RX_CDC_DMA_RX_0 Port Mixer TX_CDC_DMA_TX_3" value="1"/>
+          <ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
+    </path>
+    <!-- second to headphone -->
+    <path name="mmi-loopback-second-headphone">
+         <path name="submic" />
+         <path name="headphone" />
+          <ctl name="RX_CDC_DMA_RX_0 Port Mixer TX_CDC_DMA_TX_3" value="1"/>
+          <ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
+    </path>
+    <!-- second2 to headphone -->
+    <path name="mmi-loopback-second2-headphone">
+          <path name="submic2" />
+          <path name="headphone" />
+          <ctl name="RX_CDC_DMA_RX_0 Port Mixer TX_CDC_DMA_TX_3" value="1"/>
+          <ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
+    </path>
+    <!-- headset-mic to speaker -->
+    <path name="mmi-loopback-hsmic-speaker">
+          <path name="headset-mic" />
+          <path name="speaker" />
+          <ctl name="TERT_MI2S_RX Port Mixer TX_CDC_DMA_TX_3" value="1"/>
+          <ctl name="TERT_MI2S_RX_DL_HL Switch" value="1" />
+    </path>
+    <!-- headset-mic to speakerright -->
+    <path name="mmi-loopback-hsmic-spkr">
+          <path name="headset-mic" />
+          <path name="speaker-right" />
+          <ctl name="TERT_MI2S_RX Port Mixer TX_CDC_DMA_TX_3" value="1"/>
+          <ctl name="TERT_MI2S_RX_DL_HL Switch" value="1" />
+    </path>
+    <!-- headset-mic to speakerleft -->
+    <path name="mmi-loopback-hsmic-spkl">
+          <path name="headset-mic" />
+          <path name="speaker-left" />
+          <ctl name="TERT_MI2S_RX Port Mixer TX_CDC_DMA_TX_3" value="1"/>
+          <ctl name="TERT_MI2S_RX_DL_HL Switch" value="1" />
+    </path>
+    <!-- headset-mic to receiver -->
+    <path name="mmi-loopback-hsmic-receiver">
+          <path name="headset-mic" />
+          <path name="reciver" />
+          <ctl name="RX_CDC_DMA_RX_0 Port Mixer TX_CDC_DMA_TX_3" value="1"/>
+          <ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
+    </path>
+    <!-- headset-mic to headphone -->
+    <path name="mmi-loopback-hsmic-headphone">
+          <path name="headset-mic" />
+          <path name="headphone" />
+          <ctl name="RX_CDC_DMA_RX_0 Port Mixer TX_CDC_DMA_TX_3" value="1"/>
+          <ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
+    </path>
+    <!-- main-mic to speaker -->
+    <path name="mmi-loopback-mainmic-spkr">
+          <path name="mainmic" />
+          <path name="speaker" />
+          <ctl name="TERT_MI2S_RX Port Mixer TX_CDC_DMA_TX_3" value="1"/>
+          <ctl name="TERT_MI2S_RX_DL_HL Switch" value="1" />
+    </path>
+        <!-- main-mic2 to speaker -->
+    <path name="mmi-loopback-mainmic2-spkr">
+          <path name="mainmic2" />
+          <path name="speaker" />
+          <ctl name="TERT_MI2S_RX Port Mixer TX_CDC_DMA_TX_3" value="1"/>
+          <ctl name="TERT_MI2S_RX_DL_HL Switch" value="1" />
+    </path>
+    <!-- main-mic to receiver -->
+    <path name="mmi-loopback-mainmic-rec">
+          <path name="mainmic" />
+          <path name="reciver" />
+          <ctl name="RX_CDC_DMA_RX_0 Port Mixer TX_CDC_DMA_TX_3" value="1"/>
+          <ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
+    </path>
+    <!-- main-mic2 to receiver -->
+    <path name="mmi-loopback-mainmic2-rec">
+          <path name="mainmic2" />
+          <path name="reciver" />
+          <ctl name="RX_CDC_DMA_RX_0 Port Mixer TX_CDC_DMA_TX_3" value="1"/>
+          <ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
+    </path>
+        <!-- sub-mic to speaker -->
+    <path name="mmi-loopback-submic-spkr">
+          <path name="submic" />
+          <path name="speaker" />
+          <ctl name="TERT_MI2S_RX Port Mixer TX_CDC_DMA_TX_3" value="1"/>
+          <ctl name="TERT_MI2S_RX_DL_HL Switch" value="1" />
+    </path>
+    <!-- sub-mic to receiver -->
+    <path name="mmi-loopback-submic-rec">
+          <path name="submic" />
+          <path name="reciver" />
+          <ctl name="RX_CDC_DMA_RX_0 Port Mixer TX_CDC_DMA_TX_3" value="1"/>
+          <ctl name="RX_CDC_DMA_RX_0_DL_HL Switch" value="1" />
+    </path>
+
+</mixer>
+
