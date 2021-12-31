@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!---/***********************************************************
+  Copyright (c) 2018-2020 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+**************************************************************-->
+
+<configs>
+    <Integer name="HistBufferDuration" value="2000" />
+
+    <SoundModel name="Alexa_en-US.uim" locale="en-US">
+        <Item name="KeyphraseConfidenceLevel" value="10" /> 
+        <Item name="DefaultTrainingThreshold" value="10" />
+        <Item name="DefaultUvrThreshold" value="25"/>
+        <Item name="DefaultUserConfidenceThreshold" value="10"/>
+        <Item name="CnnModel" value="alexa_Jan08_2018.flt.1.0_1.0.0_min_duration_30.sva3"/>
+        <Item name="SvaUvWeight" value="0.1"/>
+    </SoundModel>
+
+	<SoundModel name="Alexa_de-DE.uim" locale="de-DE">
+        <Item name="KeyphraseConfidenceLevel" value="10" />
+        <Item name="DefaultTrainingThreshold" value="10" />
+        <Item name="DefaultUvrThreshold" value="26"/>
+        <Item name="DefaultUserConfidenceThreshold" value="10"/>
+        <Item name="CnnModel" value="alexa_Jan08_2018.flt.1.0_1.0.0_min_duration_30.sva3"/>
+        <Item name="SvaUvWeight" value="0.1"/>
+    </SoundModel>
+
+    <SoundModel name="Alexa_en-GB.uim" locale="en-GB">
+        <Item name="KeyphraseConfidenceLevel" value="10" />
+        <Item name="DefaultTrainingThreshold" value="10" />
+        <Item name="DefaultUvrThreshold" value="30"/>
+        <Item name="DefaultUserConfidenceThreshold" value="10"/>
+        <Item name="CnnModel" value="alexa_Jan08_2018.flt.1.0_1.0.0_min_duration_30.sva3"/>
+        <Item name="SvaUvWeight" value="0.1"/>        
+    </SoundModel>
+	
+    <SoundModel name="Alexa_es-US.uim" locale="es-ES">
+        <Item name="KeyphraseConfidenceLevel" value="10" />
+        <Item name="DefaultTrainingThreshold" value="10" />
+        <Item name="DefaultUvrThreshold" value="20"/>
+        <Item name="DefaultUserConfidenceThreshold" value="10"/>
+        <Item name="CnnModel" value="alexa_Jan08_2018.flt.1.0_1.0.0_min_duration_30.sva3"/>
+        <Item name="SvaUvWeight" value="0.1"/>
+    </SoundModel>
+
+    <SoundModel name="Alexa_it-IT.uim" locale="it-IT">
+        <Item name="KeyphraseConfidenceLevel" value="10" />
+        <Item name="DefaultTrainingThreshold" value="10" />
+        <Item name="DefaultUvrThreshold" value="22"/>
+        <Item name="DefaultUserConfidenceThreshold" value="10"/>
+        <Item name="CnnModel" value="alexa_Jan08_2018.flt.1.0_1.0.0_min_duration_30.sva3"/>
+        <Item name="SvaUvWeight" value="0.1"/>
+    </SoundModel>
+
+    <SoundModel name="Alexa_fr-FR.uim" locale="fr-FR">
+        <Item name="KeyphraseConfidenceLevel" value="10" />
+        <Item name="DefaultTrainingThreshold" value="10" />
+        <Item name="DefaultUvrThreshold" value="18"/>
+        <Item name="DefaultUserConfidenceThreshold" value="10"/>
+        <Item name="CnnModel" value="alexa_Jan08_2018.flt.1.0_1.0.0_min_duration_30.sva3"/>
+        <Item name="SvaUvWeight" value="0.1"/>        
+    </SoundModel>
+
+    <WhiteListApp name="com.amazon.alexa" value="2f19adeb284eb36f7f07786152b9a1d14b21653203ad0b04ebbf9c73ab6d7625"/>
+    <WhiteListApp name="com.quicinc.voiceactivationtester" value="2a80e89df6dfc4cacee28ea8260da92fb2a62e0de3dda01fbe72a8e93d742976"/>
+    <WhiteListApp name="com.amazon.dee.app" value="2f19adeb284eb36f7f07786152b9a1d14b21653203ad0b04ebbf9c73ab6d7625"/>
+
+
+</configs>

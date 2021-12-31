@@ -1,0 +1,15 @@
+service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
+    class late_start
+    user system
+    group system input sdcard_rw
+    # writepid /dev/cpuset/system-background/tasks  //remove for speed up fingerprint enroll and identify
+on boot
+# access permission for egis
+    chown system system /dev/esfp0
+    chmod 0660 /dev/esfp0
+# access permission for egis navigation
+    chmod 0666 /sys/devices/platform/egis_input/navigation_event
+    chmod 0666 /sys/devices/platform/egis_input/navigation_enable

@@ -1,0 +1,26 @@
+service prop-adap-core /vendor/bin/self_init -r core
+    class core
+    user root
+    oneshot
+
+service prop-adap-main /vendor/bin/self_init -r main
+    class main
+    user root
+    oneshot
+
+service prop-adap-fs /vendor/bin/self_init -r fs
+    class core
+    user root
+    oneshot
+
+on fs
+    start prop-adap-fs
+
+# Trigger fingerprint prop setting. this *.oneplus property keys must also be added into vendor_property_contexts
+on property:ro.vendor.build.fingerprint.oneplus=*
+   setprop ro.vendor.build.fingerprint      ${ro.vendor.build.fingerprint.oneplus}
+   setprop ro.bootimage.build.fingerprint   ${ro.vendor.build.fingerprint.oneplus}
+
+on property:ro.odm.build.fingerprint.oneplus=*
+   setprop ro.odm.build.fingerprint         ${ro.vendor.build.fingerprint.oneplus}
+   setprop ro.bootimage.build.fingerprint   ${ro.vendor.build.fingerprint.oneplus}

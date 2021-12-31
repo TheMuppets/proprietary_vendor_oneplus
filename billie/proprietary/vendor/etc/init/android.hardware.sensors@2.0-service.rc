@@ -1,0 +1,10 @@
+# Copyright (c) 2018-2019 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+service vendor.sensors-hal-2-0 /vendor/bin/hw/android.hardware.sensors@2.0-service
+    class hal
+    user system
+    group system wakelock
+    capabilities BLOCK_SUSPEND
+    rlimit rtprio 10 10

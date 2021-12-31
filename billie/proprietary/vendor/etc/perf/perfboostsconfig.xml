@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+/* Copyright (c) 2019 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+*/
+-->
+
+
+<!--Ids are used in identifying the boosts, increment ids linearly,
+    do not modify Ids, or add in between-->
+<!--follow the number format rules while specifying number, can be given
+    in any format-->
+
+<BoostConfigs>
+    <PerfBoost>
+
+    <!--app lauch boost-->
+        <!-- SCHED DOWNMIGRATE resource opcode, value-->
+        <!-- SCHED UPMIGRATE resource opcode, value-->
+        <!-- SCHED DOWNMIGRATE PRIME resource opcode, value-->
+        <!-- SCHED UPMIGRATE PRIME resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
+
+        <!-- Type="1", main launch boost of 2sec -->
+        <!--
+        #ifndef VENDOR_EDIT
+        Simon.Ma@OPTI, 2020/05/01, [AVICII-2141] Update boost config for launch
+       <Config
+           Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="lito"
+           Resources="0x40C20000, 0x28, 0x40C1C000, 0x32, 0x40C20200, 0x28, 0x40C1C200, 0x32,
+                      0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF, 0x40800000, 1478,
+                      0x40800100, 1363, 0x40800200, 1708" />
+        #else
+        -->
+       <Config
+           Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="lito"
+           Resources="0x40C20000, 0x28, 0x40C1C000, 0x32, 0x40C20200, 0x28, 0x40C1C200, 0x32,
+                      0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF, 0x40800000, 0xFFF,
+                      0x40800100, 0xFFF, 0x40800200, 0xFFF" />
+        <!--
+        #endif /* VENDOR_EDIT */
+        -->
+
+        <!-- SCHED DOWNMIGRATE resource opcode, value-->
+        <!-- SCHED UPMIGRATE resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- Type="1", main launch boost of 2sec -->
+        <Config
+            Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="lagoon"
+           Resources="0x40C20000, 0x28, 0x40C1C000, 0x32, 0x40C20200, 0x28, 0x40C1C200, 0x32,
+                      0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF, 0x40800000, 0xFFF,
+                      0x40800100, 0xFFF, 0x40800200, 0xFFF" />
+
+    <!--app lauch boost (disabling packing)-->
+        <!-- POWER COLLAPSE resource opcode, value-->
+        <!-- STORAGE CLK SCALING resource opcode, value-->
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- LLCCBW resource opcode, value-->
+        <!-- L3 resource opcode, value-->
+        <!-- GPU nap resource opcode, value-->
+
+        <!-- Type="2", launch boost for disable packing 1.5sec -->
+       <Config
+           Id="0x00001081" Type="2" Enable="true" Timeout="1500" Target="lito"
+           Resources="0x40400000, 0x1, 0x42C10000, 0x1, 0x43010000, 59,
+                      0x41828000, 806, 0x43400000, 0x2E80, 0x4281C000, 1500" />
+
+        <Config
+            Id="0x00001081" Type="2" Enable="true" Timeout="1500" Target="lagoon"
+            Resources="0x40400000, 0x1, 0x42C10000, 0x1, 0x43010000, 59,
+                      0x41828000, 806, 0x43400000, 0x2E80, 0x4281C000, 1500" />
+
+    <!-- config_enableLaunchBoostv3-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED GROUP DOWNMIGRATE resource opcode, value-->
+        <!-- SCHED GROUP UPMIGRATE resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+
+        <!-- Type="3", FA launch boost of 15sec -->
+       <Config
+           Id="0x00001081" Type="3" Enable="true" Timeout="15000" Target="lito"
+          Resources="0x40C00000, 0x3, 0x40C58000, 85, 0x40C54000, 100, 0x40408000, 0x5,
+          0x40C74000, 0xC0" />
+
+        <Config
+            Id="0x00001081" Type="3" Enable="true" Timeout="15000" Target="lagoon"
+           Resources="0x40C00000, 0x3, 0x40C58000, 85, 0x40C54000, 100, 0x40408000, 0x5,
+           0x40C74000, 0xC0" />
+
+     <!-- config_gameBoost-->
+         <!-- SCHEDBOOST resource opcode, value-->
+         <!-- SCHED GROUP DOWNMIGRATE resource opcode, value-->
+         <!-- SCHED GROUP UPMIGRATE resource opcode, value-->
+         <!-- LPM Bias resource opcode, value-->
+         <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+
+         <!-- Type="4", FA launch boost of 15sec -->
+        <Config
+            Id="0x00001081" Type="4" Enable="true" Timeout="15000" Target="lito"
+           Resources="0x40C00000, 0x3, 0x40C58000, 85, 0x40C54000, 100, 0x40408000, 0x5,
+           0x40C74000, 0xC0" />
+
+        <Config
+            Id="0x00001081" Type="4" Enable="true" Timeout="15000" Target="lagoon"
+           Resources="0x40C00000, 0x3, 0x40C58000, 85, 0x40C54000, 100, 0x40408000, 0x5,
+           0x40C74000, 0xC0" />
+
+     <!-- config_enableLaunchBoost6-->
+        <!-- SLB_BIG, val-->
+        <!-- SLB_PRIME, val-->
+        <!-- MIN_FREQ_BIG, val MHz -->
+        <!-- MIN_FREQ_PRIME, val MHz -->
+        <!-- CPU_DOWN_FREQ_THRESHOLD_US BIG, val us -->
+        <!-- CPU_DOWN_FREQ_THRESHOLD_US PRIME, val us -->
+        <!-- LPM_BIAS resource opcode, val ms-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+
+        <!-- Type="6", Game Launch boost -->
+        <Config
+            Id="0x00001081" Type="6" Enable="true" Timeout="2000" Target="lito"
+            Resources="0x40C68000, 60,
+                       0x40C68200, 60,
+                       0x40800000, 1152,
+                       0x40800200, 1228,
+                       0x41448000, 20000,
+                       0x41448200, 20000,
+                       0x40408000, 0x63,
+                       0x40C74000, 0xC0" />
+
+        <!-- LPM_BIAS resource opcode, val ms-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- SLB_BIG, val, SLB_BIG, val-->
+        <!-- MIN_FREQ_BIG, val MHz -->
+        <!-- CPU_DOWN_FREQ_THRESHOLD_US, val us -->
+        <!-- Type="6", Game Launch boost -->
+        <Config
+            Id="0x00001081" Type="6" Enable="true" Timeout="2000" Target="lagoon"
+            Resources="0x40408000, 0x5,
+                       0x40C74000, 0xC0,
+                       0x40C68000, 60, 0x40C68010, 60,
+                       0x40800000, 1248,
+                       0x41448000, 20000" />
+
+    <!--app launch boost (attach application) -->
+        <!-- SCHED_TASK_BOOST resource opcode, value-->
+        <Config
+            Id="0x00001081" Type="103" Enable="true" Timeout="2000" Target="lito"
+            Resources="0x40C80000, 0x0" />
+        <Config
+            Id="0x00001081" Type="103" Enable="true" Timeout="2000" Target="lagoon"
+            Resources="0x40C80000, 0x0" />
+
+
+    <!--Animation boost -->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
+
+       <Config
+           Id="0x00001083" Enable="true" Timeout="400" Target="lito"
+           Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+                      0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF" />
+
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <Config
+            Id="0x00001083" Enable="true" Timeout="400" Target="lagoon"
+            Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF,
+                       0x40800100, 0xFFF" />
+
+    <!--Vertical Scroll boost-->
+        <!-- #ifndef VENDOR_EDIT -->
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+
+        <!-- Type="1", Vertical Scroll boost -->
+        <!--
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="lito" Fps="60"
+            Resources="0x43010000, 0x26, 0x40800000, 1094, 0x40800100, 1075, 0x40800200, 1094,
+                       0x40C00000, 2" />
+        -->
+
+        <!-- # else -->
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- L3 resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM_BIAS resource opcode, val ms-->
+        <!-- MIN_ONLINE_CPU_CLUSTER_BIG resource opcode, value-->
+
+        <!-- Type="1", Vertical Scroll boost -->
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="lito"
+            Resources="0x43010000, 0x26, 0x40800000, 1094, 0x40800100, 1100, 0x40800200, 1094,
+                       0x40C00000, 2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3" />
+        <!-- #endif VENDOR_EDIT -->
+
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="lito" Fps="90"
+            Resources="0x43010000, 0x26, 0x40800000, 1728, 0x40800100, 1363, 0x40800200, 1766,
+                       0x40C00000, 2, 0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="lito" Fps="120"
+            Resources="0x43010000, 0x26, 0x40800000, 2092, 0x40800100, 1516, 0x40800200, 1996,
+                       0x40C00000, 2, 0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="lito" Fps="144"
+            Resources="0x43010000, 0x26, 0x40800000, 2092, 0x40800100, 1516, 0x40800200, 1996,
+                       0x40C00000, 2, 0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- Type="1", Vertical Scroll boost -->
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="lagoon" Fps="60"
+            Resources="0x43010000, 0x26, 0x40800000, 1036, 0x40800100, 1017, 0x40C00000, 2" />
+
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="lagoon" Fps="90"
+            Resources="0x43010000, 0x26, 0x40800000, 1766, 0x40800100, 1248, 0x40C00000, 2,
+                       0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="lagoon" Fps="120"
+            Resources="0x43010000, 0x26, 0x40800000, 2073, 0x40800100, 1516, 0x40C00000, 2,
+                       0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="lagoon" Fps="144"
+            Resources="0x43010000, 0x26, 0x40800000, 2073, 0x40800100, 1516, 0x40C00000, 2,
+                       0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+    <!--Horizontal Scroll boost-->
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+
+        <!-- Type="2", Horizontal Scroll boost -->
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="lito" Fps="60"
+            Resources="0x43010000, 0x26, 0x40800000, 1094, 0x40800100, 1075, 0x40800200, 1094,
+                       0x40C00000, 2" />
+
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="lito" Fps="90"
+            Resources="0x43010000, 0x26, 0x40800000, 1728, 0x40800100, 1363, 0x40800200, 1766,
+                       0x40C00000, 2, 0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="lito" Fps="120"
+            Resources="0x43010000, 0x26, 0x40800000, 2092, 0x40800100, 1516, 0x40800200, 1996,
+                       0x40C00000, 2, 0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="lito" Fps="144"
+            Resources="0x43010000, 0x26, 0x40800000, 2092, 0x40800100, 1516, 0x40800200, 1996,
+                       0x40C00000, 2, 0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- Type="2", Horizontal Scroll boost -->
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="lagoon" Fps="60"
+            Resources="0x43010000, 0x26, 0x40800000, 1036, 0x40800100, 1017, 0x40C00000, 2" />
+
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="lagoon" Fps="90"
+            Resources="0x43010000, 0x26, 0x40800000, 1766, 0x40800100, 1248, 0x40C00000, 2,
+                       0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="lagoon" Fps="120"
+            Resources="0x43010000, 0x26, 0x40800000, 2073, 0x40800100, 1516, 0x40C00000, 2,
+                       0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="lagoon" Fps="144"
+            Resources="0x43010000, 0x26, 0x40800000, 2073, 0x40800100, 1516, 0x40C00000, 2,
+                       0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+    <!--Pre-Fling boost-->
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+
+        <!-- Type="4", Pre-Fling boost -->
+        <Config
+            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="lito" Fps="60"
+            Resources="0x43010000, 0x26, 0x40800000, 1094, 0x40800100, 1075, 0x40800200, 1094,
+                       0x40C00000, 2" />
+
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+
+        <Config
+            Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="lito" Fps="90"
+            Resources="0x43010000, 0x26, 0x40800000, 1728, 0x40800100, 1363, 0x40800200, 1766,
+                       0x40C00000, 2, 0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+        <Config
+            Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="lito" Fps="120"
+            Resources="0x43010000, 0x26, 0x40800000, 2092, 0x40800100, 1516, 0x40800200, 1996,
+                       0x40C00000, 2, 0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+        <Config
+            Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="lito" Fps="144"
+            Resources="0x43010000, 0x26, 0x40800000, 2092, 0x40800100, 1516, 0x40800200, 1996,
+                       0x40C00000, 2, 0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- Type="4", Pre-Fling boost -->
+        <Config
+            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="lagoon" Fps="60"
+            Resources="0x43010000, 0x26, 0x40800000, 1036, 0x40800100, 1017, 0x40C00000, 2" />
+
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+
+        <Config
+            Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="lagoon" Fps="90"
+            Resources="0x43010000, 0x26, 0x40800000, 1766, 0x40800100, 1248, 0x40C00000, 2,
+                       0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+        <Config
+            Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="lagoon" Fps="120"
+            Resources="0x43010000, 0x26, 0x40800000, 2073, 0x40800100, 1516, 0x40C00000, 2,
+                       0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+        <Config
+            Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="lagoon" Fps="144"
+            Resources="0x43010000, 0x26, 0x40800000, 2073, 0x40800100, 1516, 0x40C00000, 2,
+                       0x40C74000, 0xC0, 0x40408000, 0x27" />
+
+    <!--MTP boost-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
+        <!-- STORAGE CLK SCALING resource opcode, value-->
+
+        <!-- Type="", MTP boost -->
+        <Config
+            Id="0x00001086" Enable="true" Target="lito"
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+                       0x40800000, 1478, 0x40800100, 1363, 0x40800200, 1708, 0x42C10000, 0x1" />
+
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- STORAGE CLK SCALING resource opcode, value-->
+        <!-- LPM Bias resource opcode, value -->
+        <!-- Type="", MTP boost -->
+        <Config
+            Id="0x00001086" Enable="true" Target="lagoon"
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 1555,
+                       0x40800100, 1516, 0x42C10000, 0x1,  0x40408000, 0x19" />
+
+    <!--PackageInstall boost-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
+        <!-- SCHED_SYNC_HINT_ENABLE resource opcode, value-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- Type="", Package Install boost -->
+        <Config
+            Id="0x00001088" Enable="true" Target="lito"
+            Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF, 0x40800000, 0xFFF,
+                       0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x40CA0000, 0, 0x40C00000, 2" />
+
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- SCHED_SYNC_HINT_ENABLE resource opcode, value-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- Type="", Package Install boost -->
+        <Config
+            Id="0x00001088" Enable="true" Target="lagoon"
+            Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 0xFFF,
+                       0x40800100, 0xFFF, 0x40CA0000, 0, 0x40C00000, 2" />
+
+    <!--Rotation latency boost-->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
+        <!-- Type="", Rotation latency boost -->
+        <Config
+            Id="0x00001089" Enable="true" Timeout="1500" Target="lito"
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+                       0x40800000,0xFFF, 0x40800100,0xFFF, 0x40800200,0xFFF" />
+
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- Type="", Rotation latency boost -->
+        <Config
+            Id="0x00001089" Enable="true" Timeout="1500" Target="lagoon"
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000,0xFFF,
+                       0x40800100,0xFFF" />
+
+    <!--Rotation animation boost-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- GPU MIN_FREQUENCY resource opcode,value-->
+        <!-- Type="", Rotation animation boost -->
+        <Config
+            Id="0x00001090" Enable="true" Timeout="1000" Target="lito"
+            Resources="0x40800100, 1228, 0x42804000, 0" />
+
+        <Config
+            Id="0x00001090" Enable="true" Timeout="1000" Target="lagoon"
+            Resources="0x40800100, 1000, 0x42804000, 0" />
+
+    <!--Performance mode boost-->
+        <!-- SCHED DOWNMIGRATE resource opcode, value-->
+        <!-- SCHED UPMIGRATE resource opcode, value-->
+        <!-- SCHED DOWNMIGRATE PRIME resource opcode, value-->
+        <!-- SCHED UPMIGRATE PRIME resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
+        <Config
+            Id="0x00001091" Enable="true" Target="lito"
+            Resources="0x40C20000, 0x28, 0x40C1C000, 0x32, 0x40C20200, 0x28, 0x40C1C200, 0x32,
+                       0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF, 0x40800000, 0xFFF,
+                       0x40800100, 0xFFF, 0x40800200, 0xFFF" />
+
+         <Config
+             Id="0x00001091" Enable="true" Target="lagoon"
+             Resources="0x40C20000, 0x28, 0x40C1C000, 0x32, 0x40804000, 0xFFF, 0x40804100, 0xFFF,
+                        0x40800000, 0xFFF, 0x40800100, 0xFFF" />
+
+    <!--Drag boost-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME CORE resource opcode, value -->
+
+         <!-- Type="1", Drag boost -->
+         <Config
+             Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="lito"
+             Resources="0x40800000, 1094, 0x40800100, 1075, 0x40800200, 1094" />
+
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME CORE resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+         <Config
+             Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="lito" Fps="120"
+             Resources="0x40800000, 1094, 0x40800100, 1075, 0x40800200, 1094, 0x40C00000, 2" />
+
+         <Config
+             Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="lito" Fps="144"
+             Resources="0x40800000, 1094, 0x40800100, 1075, 0x40800200, 1094, 0x40C00000, 2" />
+
+
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- Type="1", Drag boost -->
+         <Config
+             Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="lagoon"
+             Resources="0x40800000, 1036, 0x40800100, 1017" />
+
+         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+         <!-- SCHEDBOOST resource opcode, value-->
+          <Config
+              Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="lagoon" Fps="120"
+              Resources="0x40800000, 1036, 0x40800100, 1017, 0x40C00000, 2" />
+
+          <Config
+              Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="lagoon" Fps="144"
+              Resources="0x40800000, 1036, 0x40800100, 1017, 0x40C00000, 2" />
+
+    <!--Display on Resource -->
+         <!-- Display on resource opcode, value -->
+         <Config
+                 Id="0x00001041" Enable="true" Timeout="0" Target="lito"
+                 Resources="0x40000000, 1" />
+
+        <Config
+                Id="0x00001041" Enable="true" Timeout="0" Target="lagoon"
+                Resources="0x40000000, 1" />
+
+    <!--Display off Resource -->
+         <!-- Display on resource opcode, value -->
+         <Config
+                 Id="0x00001040" Enable="true" Timeout="0" Target="lito"
+                 Resources="0x40000000, 0x0" />
+
+         <Config
+                Id="0x00001040" Enable="true" Timeout="0" Target="lagoon"
+                Resources="0x40000000, 0x0" />
+
+    <!--FPS Update Resource-->
+         <!-- PREDECITIVE_LOAD BIG CORE resource opcode, value -->
+         <!-- PREDECITIVE_LOAD LITTLE Core resource opcode, value -->
+         <!-- PREDECITIVE_LOAD PRIME CORE resource opcode, value -->
+         <!-- SCHED_PREFER_SPREAD resource opcode, value -->
+
+         <!-- Type="60" -->
+         <Config
+                Id="0x00001094" Type="60" Enable="true" Target="lito" Timeout="0"
+               Resources="0x41444000, 0, 0x41444100, 0, 0x41444200, 0, 0x40CA8000, 0" />
+
+         <!-- Type="90" -->
+         <Config
+                Id="0x00001094" Type="90" Enable="true" Target="lito" Timeout="0"
+                Resources="0x41444000, 1, 0x41444100, 1, 0x41444200, 1, 0x40CA8000, 2" />
+
+         <!-- Type="120" -->
+         <Config
+                Id="0x00001094" Type="120" Enable="true" Target="lito" Timeout="0"
+                Resources="0x41444000, 1, 0x41444100, 1, 0x41444200, 1, 0x40CA8000, 2" />
+
+         <!-- Type="144" -->
+         <Config
+                Id="0x00001094" Type="144" Enable="true" Target="lito" Timeout="0"
+                Resources="0x41444000, 1, 0x41444100, 1, 0x41444200, 1, 0x40CA8000, 2" />
+
+         <!-- PREDECITIVE_LOAD BIG CORE resource opcode, value -->
+         <!-- PREDECITIVE_LOAD LITTLE Core resource opcode, value -->
+         <!-- SCHED_PREFER_SPREAD resource opcode, value -->
+
+         <!-- Type="60" -->
+         <Config
+                Id="0x00001094" Type="60" Enable="true" Target="lagoon" Timeout="0"
+               Resources="0x41444000, 0, 0x41444100, 0, 0x40CA8000, 0" />
+
+         <!-- Type="90" -->
+         <Config
+                Id="0x00001094" Type="90" Enable="true" Target="lagoon" Timeout="0"
+                Resources="0x41444000, 1, 0x41444100, 1, 0x40CA8000, 2" />
+
+         <!-- Type="120" -->
+         <Config
+                Id="0x00001094" Type="120" Enable="true" Target="lagoon" Timeout="0"
+                Resources="0x41444000, 1, 0x41444100, 1, 0x40CA8000, 2" />
+
+         <!-- Type="144" -->
+         <Config
+                Id="0x00001094" Type="144" Enable="true" Target="lagoon" Timeout="0"
+                Resources="0x41444000, 1, 0x41444100, 1, 0x40CA8000, 2" />
+
+    </PerfBoost>
+</BoostConfigs>

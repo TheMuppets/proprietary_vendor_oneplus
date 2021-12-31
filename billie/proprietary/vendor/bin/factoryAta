@@ -1,0 +1,42 @@
+#! /system/bin/sh
+cmd=$1
+cmd1=$2
+cmd2=$3
+cmd3=$4
+cmd4=$5
+cmd5=$6
+#echo "cmd:$cmd cmd1:$cmd1 cmd2:$cmd2 cmd3:$cmd3"
+#echo "cmd:$@"
+setprop persist.sys.ata_adb.result  ""
+if [ "$cmd" = "headsetState" ];then
+	state=`cat /sys/bus/platform/drivers/Accdet_Driver/state`
+	if [ "$state" = "1" ];then
+		echo pass
+	else 
+		echo fail
+	fi
+	exit 0
+elif [ "$cmd" = "exit" ] || [ "$cmd" = "stop" ]; then
+	am broadcast -a action.adb.ata.$cmd  >>/dev/null
+elif [ "$cmd" = "mode" ]; then
+	am broadcast -a action.adb.ata.$cmd --ei ${cmd} ${cmd1} >>/dev/null
+elif [ "$cmd" = "mifunctiontest" ]; then
+    am broadcast -a action.adb.ata.$cmd --es ${cmd} ${cmd1},${cmd2},${cmd3},${cmd4},${cmd5} >> /dev/null
+else
+	am broadcast -a action.adb.ata.$cmd --es ${cmd} ${cmd1} >>/dev/null
+fi
+i=0
+while ( [ -z "$(getprop persist.sys.ata_adb.result)" ] )
+do
+	let "i+=1"
+done
+if [ -z "$(getprop persist.sys.ata_adb.result)" ];then
+	setprop persist.sys.ata_adb.result fail
+fi
+result=`getprop persist.sys.ata_adb.result`
+if [ "${result:0:4}" = "File" ]; then
+	filename=${result:5}
+	echo `cat $filename`
+else
+	echo `getprop persist.sys.ata_adb.result`
+fi

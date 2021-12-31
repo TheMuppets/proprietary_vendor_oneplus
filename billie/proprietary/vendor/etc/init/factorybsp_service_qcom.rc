@@ -1,0 +1,37 @@
+
+#for wlan and bt ftmdaemon test
+on property:vendor.ptt_ffbm_bt=start
+    #start ffbm_bt
+    setprop vendor.wlan.ftm.daemon on
+
+on property:vendor.ptt_ffbm_bt=stop
+    #stop ffbm_bt
+    setprop vendor.wlan.ftm.daemon off
+
+on property:vendor.ptt_ffbm_wifi=start
+    #ifconfig wlan0 up
+    write /sys/module/wlan/parameters/con_mode 5
+    setprop vendor.wlan.ftm.daemon on
+    #start ffbm_wifi
+
+on property:vendor.ptt_ffbm_wifi=stop
+    write /sys/module/wlan/parameters/con_mode 0
+    setprop vendor.wlan.ftm.daemon off
+    #stop ffbm_wifi
+
+service ffbm_bt /vendor/bin/ftmdaemon -n -dd
+    user system
+    group system
+    seclabel u:r:hal_bluetooth_default:s0
+    disabled
+
+service ffbm_wifi /vendor/bin/ftmdaemon -n -dd
+    user root
+    group system vendor_qti_diag
+    seclabel u:r:wcnss_service:s0
+    disabled
+
+on post-fs-data
+     mkdir data/vendor/fac_sources/FTM_AP/ -p
+     chown system system /data/vendor/fac_sources/FTM_AP
+     chmod 0777 /data/vendor/fac_sources/FTM_AP
