@@ -125,18 +125,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "NQNfcNci",
-	owner: "oneplus",
-	apk: "proprietary/system_ext/app/NQNfcNci/NQNfcNci.apk",
-	overrides: ["NfcNci"],
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "QtiTelephonyService",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
@@ -205,13 +193,6 @@ dex_import {
 	name: "com.android.hotwordenrollment.common.util",
 	owner: "oneplus",
 	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "com.nxp.nfc.nq",
-	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/com.nxp.nfc.nq.jar"],
 	system_ext_specific: true,
 }
 
