@@ -1,4 +1,4 @@
-# Copyright (c) 2020 Qualcomm Technologies, Inc.
+# Copyright (c) 2020-2021 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc
 #
@@ -55,6 +55,8 @@ execve: 1
 connect: 1
 socket: arg0 == AF_UNIX
 getpid: 1
+gettid: 1
+nanosleep: 1
 restart_syscall: 1
 set_tid_address: 1
 open: 1
