@@ -1,0 +1,4 @@
+on post-fs
+    mkdir /mnt/vendor/persist/camera 0777 system system
+    mkdir /mnt/vendor/persist/dual_camera_calibration 0777 system system
+    chmod 777 /mnt/vendor/persist/dual_camera_calibration/calibrationOutput_wt.bin

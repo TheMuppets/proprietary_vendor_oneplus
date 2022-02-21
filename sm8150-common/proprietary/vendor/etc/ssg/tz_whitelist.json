@@ -1,0 +1,34 @@
+/********************************************************************
+Copyright (c) 2018 Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+*********************************************************************/
+
+/*
+ * Configure class Ids available to third-party apps that try to
+ * communicate with TZ. The rules defined here are used by
+ * com.qualcomm.qti.qms.service.TrustZoneAccess to determine
+ * what classes are available to clients.
+ *
+ * For Example -
+ * { "classId":"80", "name":"I Need Location TA", "permissions":[ "android.permission.ACCESS_FINE_LOCATION" ] },
+ * classId: The class ID that a TA is assigned.
+ * name: The name of that TA. This is only a placeholder for now.
+ * permissions: A list of Android permissions that a client must have to use this TA.
+ */
+
+
+{
+  "whitelist": [
+    { "classId":"3", "name":"App Loader", "permissions":[] },
+    { "classId":"34", "name":"PVC License", "permissions":[] },
+    { "classId":"62", "name":"Device Attestation", "permissions":[] },
+    { "classId":"78", "name":"Haven Token", "permissions":[] },
+    { "classId":"70", "name":"RTIC App", "permissions":[] },
+    { "classId":"71", "name":"RTICe App", "permissions":[] },
+    { "classId":"101", "name":"Celluar Security Measures", "permissions":[] },
+    { "classId":"102", "name":"SCPassThrough", "permissions":[] },
+    { "classId":"119", "name":"Platform Feature Management", "permissions":[] },
+    { "classId":"146", "name":"TLOC Service", "permissions":[] }
+  ]
+}
