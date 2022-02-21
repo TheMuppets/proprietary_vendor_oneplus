@@ -1,0 +1,70 @@
+{
+    "QModKey_Static_VppFilter": {
+        "descriptor": "Holds the static presets specific to VPP",
+        "presets": [
+            {
+                "id": "aie",
+                "configs": {
+                    "vendor.qti-ext-vpp.mode": "HQV_MODE_MANUAL",
+                    "vendor.qti-ext-vpp-aie.mode": "HQV_MODE_MANUAL",
+                    "vendor.qti-ext-vpp-aie.cade-level": "10",
+                    "vendor.qti-ext-vpp-aie.ltm-level":"25",
+                    "vendor.qti-ext-vpp-aie.ltm-sat-gain": "100",
+                    "vendor.qti-ext-vpp-aie.ltm-sat-offset": "56",
+                    "vendor.qti-ext-vpp-aie.ltm-ace-str": "10",
+                    "vendor.qti-ext-vpp-aie.ltm-ace-brightness-low": "15",
+                    "vendor.qti-ext-vpp-aie.ltm-ace-brightness-high": "15"
+                }
+            },
+            {
+                "id": "ais-aie",
+                "configs": {
+                    "vendor.qti-ext-vpp.mode": "HQV_MODE_MANUAL",
+                    "vendor.qti-ext-vpp-aie.mode": "HQV_MODE_MANUAL",
+                    "vendor.qti-ext-vpp-aie.cade-level": "0",
+                    "vendor.qti-ext-vpp-aie.ltm-sat-gain": "100",
+                    "vendor.qti-ext-vpp-aie.ltm-sat-offset": "55",
+                    "vendor.qti-ext-vpp-aie.ltm-ace-str": "0",
+                    "vendor.qti-ext-vpp-aie.ltm-ace-brightness-low": "0",
+                    "vendor.qti-ext-vpp-aie.ltm-ace-brightness-high": "0",
+                    "vendor.qti-ext-vpp-ais.mode": "AIS_AUTO",
+                    "vendor.qti-ext-vpp-ais.classification": "10"
+                }
+            },
+            {
+                "id": "aie-test",
+                "configs": {
+                    "vendor.qti-ext-vpp.mode": "HQV_MODE_MANUAL",
+                    "vendor.qti-ext-vpp-aie.mode": "HQV_MODE_MANUAL",
+                    "vendor.qti-ext-vpp-aie.cade-level": "20",
+                    "vendor.qti-ext-vpp-aie.ltm-sat-gain": "100",
+                    "vendor.qti-ext-vpp-aie.ltm-sat-offset": "55",
+                    "vendor.qti-ext-vpp-aie.ltm-ace-str": "37",
+                    "vendor.qti-ext-vpp-aie.ltm-ace-brightness-low": "0",
+                    "vendor.qti-ext-vpp-aie.ltm-ace-brightness-high": "0",
+                    "vendor.qti-ext-vpp-aie.ltm-level":"25",
+                    "vendor.qti-ext-vpp-demo.process-side": "PROCESS_LEFT",
+                    "vendor.qti-ext-vpp-demo.process-percent": "50"
+                }
+            }
+        ]
+    },
+
+    "QModKey_Dynamic_VppFilter": {
+        "descriptor": "Holds the dynamic presets specific to VPP",
+        "presets": [
+            {
+                "id": "bypass-disable",
+                "configs": {
+                    "vendor.qti-ext-vpp-bypass.enable": "0"
+                }
+            },
+            {
+                "id": "bypass-enable",
+                "configs": {
+                    "vendor.qti-ext-vpp-bypass.enable": "1"
+                }
+            }
+        ]
+    }
+}

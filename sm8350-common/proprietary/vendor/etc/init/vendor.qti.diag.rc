@@ -1,0 +1,11 @@
+
+on boot
+    start vendor.diag-router
+
+service vendor.diag-router /vendor/bin/diag-router
+    class hal
+    user system
+    group system
+    capabilities KILL
+    disabled
+

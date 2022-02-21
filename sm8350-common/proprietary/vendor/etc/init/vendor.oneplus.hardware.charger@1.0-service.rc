@@ -1,0 +1,6 @@
+service charger_hal_service /vendor/bin/hw/vendor.oneplus.hardware.charger@1.0-service
+#	interface vendor.oneplus.hardware.charger@1.0::ICharger default
+	class hal
+	user system
+	group system
+

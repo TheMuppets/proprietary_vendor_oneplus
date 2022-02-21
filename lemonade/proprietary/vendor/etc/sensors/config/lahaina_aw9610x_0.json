@@ -1,0 +1,168 @@
+{
+ "config":{
+    "hw_platform": ["MTP", "Surf", "RCM", "QRD", "HDK"],
+    "soc_id": ["415", "439", "456"]
+ },
+ "aw9610x_0":{
+   "owner": "aw9610x_0",
+   ".sar":{
+      "owner": "aw9610x_0",
+      ".config":{
+        "owner": "aw9610x_0",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  },
+	"aw9610x_platform":{
+		"owner": "sns_aw9610x",
+		".config":{
+			"owner": "sns_aw9610x",
+			"bus_type":{ "type": "int", "ver": "0",
+				"data": "0"
+			},
+			"bus_instance":{ "type": "int", "ver": "0",
+				"data": "5"
+			},
+			"slave_config":{ "type": "int", "ver": "0",
+				"data": "0x12"
+			},
+			"min_bus_speed_khz":{ "type": "int", "ver": "0",
+				"data": "400"
+			},
+			"max_bus_speed_khz":{ "type": "int", "ver": "0",
+				"data": "400"
+			},
+			"reg_addr_type":{ "type": "int", "ver": "0",
+				"data": "1"
+			},
+			"dri_irq_num":{ "type": "int", "ver": "0",
+				"data": "80"
+			},
+			"irq_pull_type":{ "type": "int", "ver": "0",
+				"data": "0"
+			},
+			"irq_is_chip_pin":{ "type": "int", "ver": "0",
+				"data": "1"
+			},
+			"irq_drive_strength":{ "type": "int", "ver": "0",
+				"data": "0"
+			},
+			"irq_trigger_type":{ "type": "int", "ver": "0",
+				"data": "1"
+			},
+			"num_rail":{ "type": "int", "ver": "0",
+				"data": "1"
+			},
+			"rail_on_state":{ "type": "int", "ver": "0",
+				"data": "1"
+			},
+			"vddio_rail":{ "type": "str", "ver": "0",
+				"data": "/pmic/client/sensor_vddio"
+			},
+			"rigid_body_type":{ "type": "int", "ver": "0",
+				"data": "0"
+			}
+		},
+		".placement":{
+			"owner": "sns_aw9610x",
+			"0":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"1":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"2":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"3":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"4":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"5":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"6":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"7":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"8":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"9":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"10":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			},
+			"11":{ "type": "flt", "ver": "0",
+				"data": "0.0"
+			}
+		}
+	},
+	"aw9610x":{
+		"owner": "sns_aw9610x",
+		".proximity":{
+			"owner": "sns_aw9610x",
+			".config":{
+				"owner": "sns_aw9610x",
+				"is_dri":{ "type": "int", "ver": "0",
+				"data": "0"
+				},
+				"hw_id":{ "type": "int", "ver": "0",
+				"data": "0"
+				},
+				"res_idx":{ "type": "int", "ver": "0",
+				"data": "0"
+				},
+				"sync_stream":{ "type": "int", "ver": "0",
+				"data": "0"
+				}
+			}
+		},
+		".cali":{
+			"owner": "sns_aw9610x",
+			".config":{
+				"owner": "sns_aw9610x",
+				"reg_14":{ "type": "flt", "ver": "0",
+				"data": "0x0"
+				},
+				"reg_28":{ "type": "flt", "ver": "0",
+				"data": "0x0"
+				},
+				"reg_3C":{ "type": "flt", "ver": "0",
+				"data": "0x0"
+				},
+				"reg_50":{ "type": "flt", "ver": "0",
+				"data": "0x0"
+				},
+				"reg_64":{ "type": "flt", "ver": "0",
+				"data": "0x0"
+				},
+				"reg_78":{ "type": "flt", "ver": "0",
+				"data": "0x0"
+				},
+				"reg_208":{ "type": "flt", "ver": "0",
+				"data": "0x0"
+				},
+				"reg_20C":{ "type": "flt", "ver": "0",
+				"data": "0x0"
+				}
+			}
+		}
+	}
+}

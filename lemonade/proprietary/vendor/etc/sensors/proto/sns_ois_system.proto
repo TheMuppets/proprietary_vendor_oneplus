@@ -1,0 +1,44 @@
+// @file sns_ois_cal.proto
+//
+// Defines the API for ois system.
+//
+// Copyright (c) 2019 OPLUS, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - OPLUS, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+
+// Message IDs for ois system
+enum sns_ois_system_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_OIS_SYSTEM_MSGID_START = 524;
+
+  SNS_OIS_SYSTEM_MSGID_CONFIG = 525;
+
+  SNS_OIS_SYSTEM_MSGID_EXT = 526;
+
+  SNS_OIS_SYSTEM_EVENTS = 1025;
+}
+
+message sns_oisparams_config
+{
+  required int32 id            = 1;
+  required int32 mode          = 2;
+  required int32 posture       = 3;
+  required int32 af_fb         = 4;
+  required int32 ois_gain_x    = 5;
+  required int32 ois_gain_y    = 6;
+  required int32 ois_delay_x   = 7;
+  required int32 ois_delay_y   = 8;
+  required int32 gyro_offset_x = 9;
+  required int32 gyro_offset_y = 10;
+  required int32 ois_ctl_rate  = 11;
+  required int32 sample_rate   = 12;
+}
+
+message sns_ois_system_events
+{
+  repeated float data3g2h = 1;
+}

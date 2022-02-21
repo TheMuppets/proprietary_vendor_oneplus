@@ -1,0 +1,31 @@
+<!--
+/******************************************************************************
+  @file    AppClassifierFeature.xml
+  @brief   Implementation of Android Framework Learning Module
+
+  DESCRIPTION
+      Each feature has an xml file to define the components
+
+  ===========================================================================
+  Copyright (c) 2017-2020 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+  ===========================================================================
+******************************************************************************/
+-->
+<!--
+    Follows "Data goes into elements, metadata goes into attributes"
+ -->
+<Feature>
+    <Name>AppClassifier</Name>
+    <Configs>
+        <Enable>1</Enable>
+    </Configs>
+    <Libname>libappclassifier.so</Libname>
+    <Triggers>
+        <Trigger>
+            <Primary>true</Primary>
+            <AsyncId>VENDOR_HINT_APP_WORKLOAD_TYPE</AsyncId>
+        </Trigger>
+    </Triggers>
+</Feature>

@@ -1,0 +1,60 @@
+<!--
+/******************************************************************************
+  @file    gPLAFFeature.xml
+  @brief   Game Peak Load AR Filter(gPLAF) xml
+
+  DESCRIPTION
+      Each feature has an xml file to define the feature components
+
+  ===========================================================================
+  Copyright (c) 2020 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+  ===========================================================================
+******************************************************************************/
+-->
+<!--
+    Follows "Data goes into elements, metadata goes into attributes"
+ -->
+
+<Feature>
+    <Name>gPLAFFeature</Name>
+    <Libname>libgplaf.so</Libname>
+    <Configs target="shima">
+        <Resources_Big>0x40800200,0x40800000</Resources_Big>
+        <Resources_Lil>0x40800100</Resources_Lil>
+    </Configs>
+    <Triggers>
+        <Trigger>
+           <Primary>true</Primary>
+           <AsyncId>VENDOR_HINT_ACTIVITY_START</AsyncId>
+           <AsyncType>-1</AsyncType>
+        </Trigger>
+
+        <Trigger>
+            <Primary>true</Primary>
+            <AsyncId>VENDOR_HINT_ACTIVITY_PAUSE</AsyncId>
+            <AsyncType>-1</AsyncType>
+        </Trigger>
+
+        <Trigger>
+            <Primary>true</Primary>
+            <AsyncId>VENDOR_HINT_ACTIVITY_RESUME</AsyncId>
+            <AsyncType>-1</AsyncType>
+        </Trigger>
+
+        <Trigger>
+           <Primary>true</Primary>
+           <AsyncId>VENDOR_HINT_ACTIVITY_STOP</AsyncId>
+           <AsyncType>-1</AsyncType>
+        </Trigger>
+    </Triggers>
+    <IgnoredApps target="shima">
+        <App>com.google.android.gms</App>
+        <App>com.android.vending</App>
+        <App>com.google.android.projection.gearhead</App>
+    </IgnoredApps>
+    <SpuriousHintApps>
+       <App>PermissionGrantActivity</App>
+    </SpuriousHintApps>
+</Feature>

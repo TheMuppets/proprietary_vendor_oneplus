@@ -1,0 +1,118 @@
+// @file sns_cal.proto
+//
+// Defines standard message types pertaining to calibration
+//
+// Copyright (c) 2016-2018 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// For dynamic calibration supported by Calibration Sensors:
+// Client will use the standard on change config message id to enable 
+// Calibration Sensor. Calibration algorithms are inherently on change in
+// behavior.
+
+// For both dynamic calibration supported by Calibration Sensors &
+// factory calibration supported by Physical Sensors:
+// Client can send an empty request with the msg id for reset
+// to reset the calibration parameters.
+enum sns_cal_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+  SNS_CAL_MSGID_SNS_CAL_RESET =  512;
+  SNS_CAL_MSGID_SNS_CAL_EVENT = 1022;
+}
+
+// Calibration Event
+// Used as an output data event by Calibration Sensors to convey
+// dynamic calibration estimates and 
+// as a config event by Physical Sensors to convey factory calibration
+// being applied
+//
+// A) The data field of the sns_cal_event message
+// 
+// 1) float bias[] (Nx1 vector)
+//      The zero bias (B) correction subtracted to get calibrated sample.(Nx1 vector)
+//
+// 2) float scale_factor (Nx1 vector)
+//      The scaling (SF) to be done before doing any bias correction.
+//
+// 3) float comp_matrix (NxN matrix)
+//      The compensation matrix (CM). The matrix elements are in row major order ie:
+//      CM =  CM0  CM1  CM2
+//            CM3  CM4  CM5
+//            CM6  CM7  CM8
+//
+//      The calibrated sample (Sc) is computed as following.
+//
+//      if SF, B and CM are available,
+//
+//          Sc = CM * ((S .* SF) - B)
+//
+//      if only B and CM are available,
+//
+//          Sc = CM * (S - B)
+//
+//      if only SF and B are available,
+//
+//          Sc = ((S .* SF) - B)
+//
+//      if only SF is available,
+//
+//          Sc = S .* SF
+//
+//      if only B is available,
+//
+//          Sc = (S - B)
+//
+//      if only CM is available
+//
+//          Sc = CM * S
+//
+//      where:
+//          Sc = Calibrated sensor sample
+//          S = Sensor sample (Nx1 vector)
+//          SF = Scaling factor to be applied to S
+//          CM = compensation_matrix
+//          B = bias
+//          "*" represents matrix multiplication
+//          ".*" represents element-by-element multiplication
+//
+//
+// B) The status field of the sns_std_sensor_event message contains
+//    the quality of calibration defined by sns_std_sensor_sample_status as
+//    SNS_STD_SENSOR_SAMPLE_STATUS_UNRELIABLE = 0; // Sample is unreliable.
+//    SNS_STD_SENSOR_SAMPLE_STATUS_ACCURACY_LOW = 1; // Sample is low accuracy.
+//    SNS_STD_SENSOR_SAMPLE_STATUS_ACCURACY_MEDIUM = 2;// Sample is medium accuracy.
+//    SNS_STD_SENSOR_SAMPLE_STATUS_ACCURACY_HIGH = 3; // Sample is high accuracy.
+
+message sns_cal_event
+{
+  //Optional bias value
+  //If no bias is being published this will be of size 0.  
+  //Generic for different axes biases.
+  //Size is defined by axes value inherently.
+  repeated float bias = 1;
+  
+  //Optional scaling factor
+  //If no scaling factor is published this will be of size 0.
+  //Size if published is has to be equal to the axes of the data
+  repeated float scale_factor = 2;
+ 
+  //If no CM is being published this will be of size 0.
+  //Optional CM values . 
+  //Size if published should be equal to matrix of size [axes*axes] 
+  repeated float comp_matrix = 3;
+  
+  // Event sample status.
+  required sns_std_sensor_sample_status status = 4 [default = SNS_STD_SENSOR_SAMPLE_STATUS_UNRELIABLE];
+
+  // Calibration ID, a unique identifier for the calibration set being used
+  // As an example, could be set when there are distinct calibration sets for different
+  // device modes being maintained
+  optional fixed32 cal_id = 5;
+}
+
+

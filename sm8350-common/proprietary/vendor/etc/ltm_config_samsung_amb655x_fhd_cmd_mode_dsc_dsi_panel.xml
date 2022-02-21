@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+ * Copyright (c) 2019 Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Confidential and Proprietary - Qualcomm Technologies, Inc.
+--><Group id="LTMConfig">
+    <!-- version of LTMConfig.xml should be maintained -->
+    <version>"0.6"</version>
+
+    <!-- defaults will be used unless any mode overrides params -->
+    <default>
+        <AmbientLightToContrastStrengthTableInput>0 100 3000 6000 20000</AmbientLightToContrastStrengthTableInput>
+        <AmbientLightToContrastStrengthTableOutput>0 0 0 100 256</AmbientLightToContrastStrengthTableOutput>
+        <AmbientLightToContrastStrengthEnable>1</AmbientLightToContrastStrengthEnable>
+
+        <BacklightReductionTableInput>0 1024 1536 1792 2047</BacklightReductionTableInput>
+        <BacklightReductionTableOutput>0 1024 1536 1792 2047</BacklightReductionTableOutput>
+        <BacklightReductionEnable>0</BacklightReductionEnable>
+
+        <LuxStartPoint>0</LuxStartPoint>
+
+        <TemporalFilterSpeedStepSizeOne>8</TemporalFilterSpeedStepSizeOne>
+        <TemporalControlTableInput>0 30 50 128 160 256</TemporalControlTableInput>
+        <TemporalControlTableOutput>1 2 4 4 4 4</TemporalControlTableOutput>
+
+        <BacklightToContrastStrengthTableInput>0 512 1024 1536 2047</BacklightToContrastStrengthTableInput>
+        <BacklightToContrastStrengthTableOutput>256 256 256 256 256</BacklightToContrastStrengthTableOutput>
+        <BacklightToContrastStrengthEnable>1</BacklightToContrastStrengthEnable>
+
+        <param001>256</param001>
+        <param002>128</param002>
+        <param003>5</param003>
+        <param004>30</param004>
+
+        <param005>1.2</param005>
+
+        <param006>50</param006>
+        <param007>0.1</param007>
+    </default>
+
+</Group>

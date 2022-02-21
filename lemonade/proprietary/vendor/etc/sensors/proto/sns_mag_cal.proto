@@ -1,0 +1,32 @@
+// @file sns_mag_cal.proto
+//
+// Defines message types for the Mag Calibration Sensor.
+//
+// Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_cal.proto";
+
+// The Mag Calibration Sensor determines the calibration parameters
+// for magnetometer sensor
+
+// Mag Calibration Sensor Attributes:
+// - SNS_STD_SENSOR_ATTRID_TYPE: "mag_cal"
+// - SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Stream Requests:
+// - SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG message ID is used to
+//      enable the sensor
+// - SNS_CAL_MSGID_SNS_CAL_RESET message ID is used to reset the algorithm
+//      and any previously determined calibration parameters.
+
+// Stream Events:
+// - SNS_CAL_MSGID_SNS_CAL_EVENT message ID is used to report calibration
+//      parameters to the client of the sensor. The sns_cal_event message as
+//      defined in sns_cal.proto is used to report this data event where the
+//      units for the bias field in the message are in micro Tesla.
+
+

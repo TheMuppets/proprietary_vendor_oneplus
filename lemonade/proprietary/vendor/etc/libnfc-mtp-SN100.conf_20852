@@ -1,0 +1,737 @@
+ #################### This file is used by NXP NFC NCI HAL #####################
+###############################################################################
+# Application options
+# Logging Levels
+# NXPLOG_DEFAULT_LOGLEVEL    0x01
+# ANDROID_LOG_DEBUG          0x03
+# ANDROID_LOG_WARN           0x02
+# ANDROID_LOG_ERROR          0x01
+# ANDROID_LOG_SILENT         0x00
+NXPLOG_EXTNS_LOGLEVEL=0x03
+NXPLOG_NCIHAL_LOGLEVEL=0x03
+NXPLOG_NCIX_LOGLEVEL=0x03
+NXPLOG_NCIR_LOGLEVEL=0x03
+NXPLOG_FWDNLD_LOGLEVEL=0x03
+NXPLOG_TML_LOGLEVEL=0x03
+NFC_DEBUG_ENABLED=1
+
+###############################################################################
+# Nfc Device Node name
+NXP_NFC_DEV_NODE="/dev/nq-nci"
+
+#################################################################################
+#VEN Toggle Config
+#Disable = 0x00
+#Enable  = 0x01
+ENABLE_VEN_TOGGLE=0x01
+
+###############################################################################
+# Extension for Mifare reader enable
+MIFARE_READER_ENABLE=0x01
+
+###############################################################################
+# Mifare Reader implementation
+# 0: General implementation
+# 1: Legacy implementation
+LEGACY_MIFARE_READER=0
+
+###############################################################################
+# File name for Firmware
+NXP_FW_NAME="libsn100u_fw.so"
+
+###############################################################################
+# System clock source selection configuration
+#define CLK_SRC_XTAL       1
+#define CLK_SRC_PLL        2
+NXP_SYS_CLK_SRC_SEL=0x02
+
+###############################################################################
+# System clock frequency selection configuration
+#define CLK_FREQ_13MHZ         1
+#define CLK_FREQ_19_2MHZ       2
+#define CLK_FREQ_24MHZ         3
+#define CLK_FREQ_26MHZ         4
+#define CLK_FREQ_38_4MHZ       5
+#define CLK_FREQ_52MHZ         6
+NXP_SYS_CLK_FREQ_SEL=0x02
+
+###############################################################################
+# The timeout value to be used for clock request acknowledgment
+# min value = 0x01 to max = 0x06
+#NXP_SYS_CLOCK_TO_CFG=0x06
+
+###############################################################################
+# The delay to try to start PLL/XTAL when using sys clock 256/fc units = ~18.8 us
+# min value = 0x01 to max = 0x1F
+#NXP_CLOCK_REQ_DELAY=0x16
+
+###############################################################################
+# NXP proprietary settings
+NXP_ACT_PROP_EXTN={2F, 02, 00}
+
+###############################################################################
+# NFC forum profile settings
+NXP_NFC_PROFILE_EXTN={20, 02, 05, 01, A0, 44, 01, 00}
+
+###############################################################################
+# NXP TVDD configurations settings
+# Allow NFCC to configure External TVDD, two configurations (1 and 2) supported,
+# out of them only one can be configured at a time.
+NXP_EXT_TVDD_CFG=0x02
+
+###############################################################################
+#config1:SLALM, 3.3V for both RM and CM
+#NXP_EXT_TVDD_CFG_1={20, 02, 0F, 01, A0, 0E, 0B, 31, 01, 01, 31, 00, 00, 00, 01, 00, D0, 0C}
+
+###############################################################################
+#config2: use DCDC in CE, use Tx_Pwr_Req, set CFG2 mode, SLALM,
+#monitoring 5V from DCDC, 3.3V for both RM and CM, DCDCWaitTime=4.2ms
+#NXP_EXT_TVDD_CFG_2={20, 02, 0F, 01, A0, 0E, 0B, 11, 01, C2, B2, 00, B2, 1E, 1F, 00, D0, 0C}
+#NXP_EXT_TVDD_CFG_2={20, 02, 30, 01, A0, 0E, 2C, F0, 00, 3E, 11, E4, E4, E4, 00, 00, 00, 00, 00, A7, 8E, FF, FF, 0F, 0F, 0F, 0F, 0A, 00, 00, 00, 00, 02, 00, 00, 01, 00, 10, 00, 04, 00, 00, 00, 17, 40, 20, 07, 13, 07, 05, 13}
+
+# *** IGUANA_LITE40x20 FW VERSION = 01.10.53  ***
+NXP_RF_CONF_BLK_1={
+		  20,   02,   E5,   05,
+	      A0,   0E,   2C,   F0,   00,   3E,   11,   E4,   E4,   E4,   00,   00,   00,   00,   00,   A7,   8E,   FF,   FF,   1F,   1F,   1F,   1F,   0A,   00,   00,   00,   00,   02,   00,   00,   01,   00,   10,   00,   04,   00,   00,   00,   17,   40,   FF,   07,   13,   07,   05,   13,
+	      A0,   A4,   85,   14,   00,   01,   00,   00,   00,   00,   00,   00,   01,   00,   03,   00,   05,   00,   07,   00,   08,   00,   0A,   00,   0C,   00,   0E,   00,   10,   00,   11,   00,   13,   00,   14,   00,   16,   00,   18,   00,   19,   00,   1A,   00,   1C,   00,   1D,   00,   1F,   00,   20,   00,   21,   00,   24,   00,   25,   00,   27,   00,   29,   00,   2A,   00,   2C,   00,   2D,   00,   2F,   00,   31,   00,   32,   00,   34,   00,   35,   00,   37,   00,   39,   00,   3A,   00,   3C,   00,   3D,   00,   3F,   00,   41,   00,   42,   00,   44,   00,   46,   00,   47,   00,   49,   00,   4A,   00,   4C,   00,   4E,   00,   4F,   00,   51,   00,   52,   00,   54,   00,   56,   00,   57,   00,   59,   00,   5A,   00,   5C,   00,   5E,   00,   5F,   00,   61,   00,   62,   00,   64,   00,
+	      A0,   11,   07,   01,   0A,   32,   01,   C8,   F6,   F6,
+	      A0,   A5,   0D,   3B,   3B,   3B,   3B,   3B,   3B,   FF,   03,   1F,   00,   3B,   00,   00,
+	      A0,   6A,   10,   00,   00,   00,   00,   00,   00,   00,   00,   EC,   04,   EC,   04,   EC,   04,   EC,   04
+}
+
+NXP_RF_CONF_BLK_2={
+		  20,   02,   CC,   01,
+		  A0,   34,   C8,   23,   04,   3D,   01,   09,   19,   60,   06,   00,   00,   1C,   09,   00,   00,   D7,   0B,   00,   00,   D7,   0B,   00,   00,   1E,   0E,   00,   00,   1E,   0E,   00,   00,   D9,   10,   00,   00,   D9,   10,   00,   00,   A1,   15,   00,   00,   2F,   1A,   00,   00,   2F,   1A,   00,   00,   BD,   1E,   00,   00,   BD,   1E,   00,   00,   BD,   1E,   00,   00,   BD,   1E,   00,   00,   BD,   1E,   00,   00,   BD,   1E,   00,   00,   BD,   1E,   00,   00,   6E,   24,   00,   00,   6E,   24,   00,   00,   6E,   24,   00,   00,   6E,   24,   00,   00,   13,   5B,   00,   00,   13,   5B,   00,   00,   09,   19,   60,   06,   00,   00,   1C,   09,   00,   00,   D7,   0B,   00,   00,   D7,   0B,   00,   00,   1E,   0E,   00,   00,   1E,   0E,   00,   00,   D9,   10,   00,   00,   D9,   10,   00,   00,   A1,   15,   00,   00,   2F,   1A,   00,   00,   2F,   1A,   00,   00,   BD,   1E,   00,   00,   BD,   1E,   00,   00,   BD,   1E,   00,   00,   BD,   1E,   00,   00,   BD,   1E,   00,   00,   BD,   1E,   00,   00,   BD,   1E,   00,   00,   6E,   24,   00,   00,   6E,   24,   00,   00,   6E,   24,   00,   00,   6E,   24,   00,   00,   13,   5B,   00,   00,   13,   5B,   00,   00
+}
+
+NXP_RF_CONF_BLK_3={
+		  20,   02,   66,   01,
+	      A1,   0A,   62,   09,   18,   7A,   03,   00,   00,   7A,   03,   00,   00,   7A,   03,   00,   00,   7A,   03,   00,   00,   7A,   03,   00,   00,   78,   05,   00,   00,   08,   07,   00,   00,   FC,   08,   00,   00,   FC,   08,   00,   00,   92,   09,   00,   00,   92,   09,   00,   00,   DC,   0A,   00,   00,   DC,   0A,   00,   00,   48,   0D,   00,   00,   30,   11,   00,   00,   30,   11,   00,   00,   8E,   12,   00,   00,   7C,   15,   00,   00,   70,   17,   00,   00,   58,   1B,   00,   00,   40,   1F,   00,   00,   28,   23,   00,   00,   28,   23,   00,   00,   28,   23,   00,   00
+}
+
+NXP_RF_CONF_BLK_4={
+		  20,   02,   F1,   01,
+		  A0,   A9,   ED,   00,   2A,   FF,   01,   24,   FF,   02,   1F,   FF,   03,   1A,   FF,   04,   16,   FF,   05,   12,   FF,   06,   0F,   FF,   07,   0C,   FF,   08,   09,   FF,   09,   07,   FF,   0A,   05,   FF,   0B,   03,   FF,   0C,   01,   FF,   0D,   00,   F5,   0E,   00,   DC,   0F,   00,   C6,   10,   00,   B3,   11,   00,   A2,   12,   00,   92,   13,   00,   84,   14,   00,   77,   15,   00,   6B,   16,   00,   60,   17,   00,   57,   18,   00,   4E,   19,   00,   46,   1A,   00,   3F,   1B,   00,   39,   1C,   00,   33,   1D,   00,   2E,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A,   1E,   00,   2A
+}
+
+NXP_RF_CONF_BLK_5={
+		  20,   02,   C5,   02,
+	      A0,   0B,   BB,   00,   04,   01,   14,   6A,   2A,   E8,   03,   E8,   03,   06,   10,   0E,   2C,   01,   78,   13,   00,   00,   78,   13,   00,   00,   78,   13,   00,   00,   78,   13,   00,   00,   78,   13,   00,   00,   78,   13,   00,   00,   78,   13,   00,   00,   78,   0A,   00,   00,   78,   0A,   00,   00,   78,   0A,   00,   00,   78,   0A,   00,   00,   78,   0A,   00,   00,   78,   0A,   00,   00,   78,   0A,   00,   00,   78,   0A,   00,   00,   78,   0A,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   78,   00,   00,   00,   3C,   00,   00,   00,   3C,   00,   00,   00,   3C,   00,   00,   00,   00,   00,   00,   00,
+	      A0,   A6,   03,   C0,   08,   08
+}
+
+NXP_RF_CONF_BLK_6={
+		  20,   02,   E9,   05,
+	      A0,   AB,   82,   27,   1B,   33,   04,   42,   04,   55,   04,   75,   04,   9E,   04,   C7,   04,   F0,   04,   20,   05,   4F,   05,   7F,   05,   B8,   05,   F2,   05,   2B,   06,   72,   06,   BA,   06,   02,   07,   49,   07,   91,   07,   F0,   07,   50,   08,   AF,   08,   0F,   09,   6E,   09,   E1,   09,   54,   0A,   C6,   0A,   56,   0B,   E5,   0B,   74,   0C,   04,   0D,   93,   0D,   52,   0E,   11,   0F,   D0,   0F,   8F,   10,   4F,   11,   0E,   12,   2C,   13,   4B,   14,   6A,   15,   88,   16,   A7,   17,   C6,   18,   44,   1A,   C2,   1B,   41,   1D,   BF,   1E,   9D,   20,   7B,   22,   58,   24,   96,   26,   D3,   28,   11,   2B,   4E,   2D,   4B,   30,   47,   33,   44,   36,   40,   39,   3D,   3C,   A2,   3F,   07,   43,   6C,   46,   E6,   4A,   61,   4F,
+	      A0,   A7,   0B,   00,   02,   77,   17,   1F,   1F,   1F,   0A,   FF,   19,   05,
+	      A0,   A8,   38,   00,   33,   33,   10,   00,   33,   23,   10,   00,   33,   24,   10,   4B,   23,   44,   10,   CF,   22,   43,   10,   CF,   22,   43,   10,   CF,   22,   43,   10,   CE,   22,   43,   10,   CF,   22,   43,   10,   CE,   22,   43,   10,   00,   33,   22,   10,   C0,   22,   23,   10,   00,   33,   22,   10,   C0,   22,   23,   10,
+		  A0,   98,   08,   C1,   6E,   24,   80,   23,   39,   1C,   37,
+		  A0,   9E,   0C,   07,   6E,   24,   64,   00,   82,   00,   2B,   52,   03,   00,   00
+}
+
+NXP_RF_CONF_BLK_7={
+		  20,   02,   FB,   14,
+	      A0,   C6,   5B,   00,   00,   04,   00,   00,   00,   3C,   00,   00,   00,   20,   80,   FF,   01,   00,   00,   64,   00,   00,   C0,   00,   00,   00,   C0,   00,   00,   00,   01,   01,   01,   20,   01,   03,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,
+	      A0,   0D,   06,   10,   C9,   30,   00,   40,   00,
+	      A0,   0D,   03,   24,   29,   07,
+	      A0,   0D,   03,   24,   30,   07,
+	      A0,   0D,   03,   25,   29,   01,
+	      A0,   0D,   03,   25,   30,   01,
+	      A0,   0D,   06,   40,   42,   F0,   C1,   37,   CC,
+	      A0,   0D,   06,   41,   45,   31,   12,   00,   00,
+	      A0,   0D,   03,   42,   7C,   54,
+	      A0,   0D,   06,   42,   8D,   00,   A0,   A4,   64,
+	      A0,   0D,   06,   42,   8B,   00,   A2,   23,   00,
+	      A0,   0D,   06,   42,   89,   7F,   12,   BD,   01,
+	      A0,   0D,   06,   42,   44,   00,   B0,   66,   01,
+	      A0,   0D,   06,   42,   43,   24,   24,   4D,   ED,
+	      A0,   0D,   06,   42,   41,   FD,   FF,   5F,   F0,
+	      A0,   0D,   06,   42,   40,   18,   77,   33,   3A,
+	      A0,   0D,   06,   42,   4A,   00,   00,   00,   00,
+	      A0,   0D,   06,   42,   49,   00,   00,   00,   00,
+	      A0,   0D,   06,   51,   40,   32,   77,   33,   3A,
+	      A0,   0D,   06,   43,   44,   00,   34,   52,   01
+}
+
+NXP_RF_CONF_BLK_8={
+		  20,   02,   FD,   1C,
+	      A0,   0D,   06,   43,   43,   A5,   64,   4C,   AD,
+	      A0,   0D,   06,   43,   40,   05,   77,   33,   3D,
+	      A0,   0D,   06,   43,   4A,   00,   00,   00,   00,
+	      A0,   0D,   06,   43,   49,   00,   00,   00,   00,
+	      A0,   0D,   06,   44,   44,   00,   34,   52,   01,
+	      A0,   0D,   06,   44,   43,   A5,   64,   4C,   AD,
+	      A0,   0D,   06,   44,   40,   05,   77,   33,   3D,
+	      A0,   0D,   06,   44,   4A,   00,   00,   00,   00,
+	      A0,   0D,   06,   44,   49,   00,   00,   00,   00,
+	      A0,   0D,   06,   45,   44,   00,   34,   52,   01,
+	      A0,   0D,   06,   45,   43,   A5,   64,   4C,   AD,
+	      A0,   0D,   06,   45,   40,   05,   77,   33,   3D,
+	      A0,   0D,   06,   45,   4A,   00,   00,   00,   00,
+	      A0,   0D,   06,   45,   49,   00,   00,   00,   00,
+	      A0,   0D,   06,   46,   45,   39,   12,   00,   00,
+	      A0,   0D,   06,   46,   44,   00,   34,   52,   01,
+	      A0,   0D,   06,   47,   43,   A5,   64,   4C,   ED,
+	      A0,   0D,   06,   47,   40,   05,   77,   33,   3D,
+	      A0,   0D,   06,   47,   4A,   20,   AA,   0B,   81,
+	      A0,   0D,   06,   47,   49,   B5,   44,   22,   00,
+	      A0,   0D,   06,   48,   43,   A5,   64,   4C,   AD,
+	      A0,   0D,   06,   48,   40,   05,   77,   33,   3D,
+	      A0,   0D,   06,   48,   4A,   00,   00,   00,   00,
+	      A0,   0D,   06,   48,   49,   00,   00,   00,   00,
+	      A0,   0D,   06,   49,   43,   A5,   64,   4C,   AD,
+	      A0,   0D,   06,   49,   40,   05,   77,   33,   3D,
+	      A0,   0D,   06,   49,   4A,   00,   00,   00,   00,
+	      A0,   0D,   06,   49,   49,   00,   00,   00,   00
+}
+
+NXP_RF_CONF_BLK_9={
+		  20,   02,   FA,   1C,
+	      A0,   0D,   06,   4A,   8B,   48,   02,   F0,   80,
+	      A0,   0D,   06,   4A,   43,   A5,   64,   4C,   AD,
+	      A0,   0D,   06,   4A,   40,   05,   77,   33,   3D,
+	      A0,   0D,   06,   4A,   4A,   00,   00,   00,   00,
+	      A0,   0D,   06,   4A,   49,   00,   00,   00,   00,
+	      A0,   0D,   06,   4B,   43,   A5,   64,   4C,   6D,
+	      A0,   0D,   06,   4C,   44,   00,   34,   52,   01,
+	      A0,   0D,   06,   4C,   4A,   00,   00,   00,   00,
+	      A0,   0D,   06,   4C,   49,   00,   00,   00,   00,
+	      A0,   0D,   06,   4C,   40,   85,   51,   33,   3D,
+	      A0,   0D,   06,   4D,   44,   00,   34,   52,   01,
+	      A0,   0D,   06,   4D,   4A,   00,   00,   00,   00,
+	      A0,   0D,   06,   4D,   49,   00,   00,   00,   00,
+	      A0,   0D,   06,   4D,   40,   85,   51,   33,   3D,
+	      A0,   0D,   06,   4E,   45,   31,   12,   00,   00,
+	      A0,   0D,   03,   4E,   7C,   50,
+	      A0,   0D,   06,   4E,   8D,   00,   00,   00,   06,
+	      A0,   0D,   06,   4E,   8B,   00,   A2,   24,   00,
+	      A0,   0D,   06,   4E,   89,   7D,   84,   05,   08,
+	      A0,   0D,   06,   4E,   44,   00,   B0,   66,   01,
+	      A0,   0D,   06,   4E,   43,   A5,   64,   5C,   AD,
+	      A0,   0D,   06,   4E,   41,   FD,   FF,   5F,   F0,
+	      A0,   0D,   06,   4E,   40,   20,   77,   33,   3D,
+	      A0,   0D,   06,   4F,   4A,   2A,   8E,   8D,   2A,
+	      A0,   0D,   06,   4F,   49,   5D,   27,   27,   00,
+	      A0,   0D,   06,   50,   4A,   00,   00,   00,   00,
+	      A0,   0D,   06,   50,   49,   00,   00,   00,   00,
+	      A0,   0D,   06,   52,   4A,   00,   00,   00,   00
+}
+
+NXP_RF_CONF_BLK_10={
+		  20,   02,   FD,   1C,
+	      A0,   0D,   06,   52,   49,   00,   00,   00,   00,
+	      A0,   0D,   06,   53,   4A,   00,   00,   00,   00,
+	      A0,   0D,   06,   53,   49,   00,   00,   00,   00,
+	      A0,   0D,   06,   60,   4E,   FF,   FF,   FF,   01,
+	      A0,   0D,   06,   60,   4F,   FF,   FF,   FF,   01,
+	      A0,   0D,   06,   60,   50,   FF,   FF,   FF,   3F,
+	      A0,   0D,   06,   80,   7D,   A0,   00,   94,   BF,
+	      A0,   0D,   06,   80,   80,   42,   00,   04,   00,
+	      A0,   0D,   06,   80,   C9,   30,   00,   00,   00,
+	      A0,   0D,   06,   8C,   80,   41,   00,   04,   00,
+	      A0,   0D,   06,   90,   4F,   FF,   FF,   F0,   01,
+	      A0,   0D,   06,   90,   4E,   FF,   FF,   F0,   01,
+	      A0,   0D,   06,   90,   39,   3F,   00,   00,   61,
+	      A0,   0D,   06,   9B,   A9,   84,   00,   00,   00,
+	      A0,   0D,   06,   9B,   A1,   7F,   7F,   7F,   7F,
+	      A0,   0D,   06,   9B,   99,   7F,   7F,   7F,   7F,
+	      A0,   0D,   06,   9B,   95,   FF,   00,   0F,   00,
+	      A0,   0D,   06,   9B,   A5,   7F,   7F,   7F,   7F,
+	      A0,   0D,   06,   9B,   9D,   7F,   7F,   7F,   7F,
+	      A0,   0D,   06,   9B,   97,   FF,   00,   0F,   00,
+	      A0,   0D,   06,   9B,   4F,   FF,   FF,   FF,   01,
+	      A0,   0D,   06,   9B,   4E,   FF,   FF,   FF,   01,
+	      A0,   0D,   06,   91,   D4,   F8,   84,   EF,   03,
+	      A0,   0D,   06,   91,   D2,   4A,   4A,   4B,   38,
+	      A0,   0D,   06,   9C,   A9,   84,   00,   00,   00,
+	      A0,   0D,   06,   9C,   A1,   7F,   22,   5F,   00,
+	      A0,   0D,   06,   9C,   99,   7F,   22,   7F,   7F,
+	      A0,   0D,   06,   9C,   95,   FF,   00,   0F,   00
+}
+
+NXP_RF_CONF_BLK_11={
+		  20,   02,   F5,   17,
+	      A0,   0D,   06,   9C,   A5,   7F,   22,   5F,   00,
+	      A0,   0D,   06,   9C,   9D,   7F,   22,   7F,   7F,
+	      A0,   0D,   06,   9C,   97,   FF,   00,   0F,   00,
+	      A0,   0D,   06,   9C,   4F,   9F,   88,   FF,   01,
+	      A0,   0D,   06,   9C,   4E,   9F,   88,   FF,   01,
+	      A0,   0D,   06,   95,   D4,   F8,   84,   75,   00,
+	      A0,   0D,   06,   95,   D2,   4A,   4B,   4B,   58,
+	      A0,   0D,   06,   9D,   A9,   84,   00,   00,   00,
+	      A0,   0D,   06,   9D,   A1,   7F,   7F,   7F,   7F,
+	      A0,   0D,   06,   9D,   99,   7F,   7F,   7F,   7F,
+	      A0,   0D,   06,   9D,   95,   FF,   00,   0F,   00,
+	      A0,   0D,   06,   9D,   A5,   7F,   7F,   7F,   7F,
+	      A0,   0D,   06,   9D,   9D,   7F,   7F,   7F,   7F,
+	      A0,   0D,   06,   9D,   97,   FF,   00,   0F,   00,
+	      A0,   0D,   06,   9D,   4F,   FF,   FF,   FF,   01,
+	      A0,   0D,   06,   9D,   4E,   FF,   FF,   FF,   01,
+	      A0,   0D,   06,   99,   D4,   F8,   04,   E4,   01,
+	      A0,   0D,   06,   99,   D2,   4A,   4B,   4B,   48,
+		  A0,   AF,   09,   11,   C1,   00,   1F,   11,   C1,   00,   1F,   00,
+	      A0,   92,   28,   37,   00,   1B,   00,   FC,   81,   0F,   00,   22,   80,   0F,   00,   14,   00,   20,   70,   EA,   01,   43,   18,   32,   16,   78,   30,   0D,   00,   03,   55,   EA,   05,   01,   04,   68,   02,   3F,   92,   04,   00,   0C,   13,
+	      A0,   1F,   06,   63,   00,   42,   00,   14,   00,
+	      A0,   9A,   02,   00,   00,
+	      A0,   99,   0A,   03,   00,   80,   00,   00,   80,   00,   00,   00,   00
+}
+
+NXP_RF_CONF_BLK_12={
+		  20,   02,   34,   02,
+          A0, 68, 2A, 06, 40, 60, 03, 19, 00, 00, 00, 00, 82, 04, 00, 0C, 01, 00, 0F, FF, 7F, 00, 0F, FF, 7F, A0, 00, 03, FA, 00, 00, 00, 4C, 00, 14, 00, 40, 00, 05, 48, 00, 00, 01, 00, 03,		 
+		  A0,   0D,   03,   61,   09,   7E
+}
+
+NXP_RF_CONF_MAX_NUM=12
+
+###############################################################################
+# Set configuration optimization decision setting
+# Enable    = 0x01
+# Disable   = 0x00
+NXP_SET_CONFIG_ALWAYS=0x01
+
+###############################################################################
+# Core configuration rf field filter settings to enable set to 01 to disable set to 00 last bit
+#NXP_CORE_RF_FIELD={ 20, 02, 05, 01, A0, 62, 01, 00}
+
+###############################################################################
+# To enable i2c fragmentation set i2c fragmentation enable 0x01 to disable set
+# to 0x00
+#NXP_I2C_FRAGMENTATION_ENABLED=0x00
+
+###############################################################################
+# Core configuration extensions
+# It includes
+# Wired mode settings A0ED, A0EE
+# Tag Detector A040, A041, A043
+# Low Power mode A007
+# Clock settings A002, A003
+# PbF settings A008
+# Clock timeout settings A004
+# eSE (SVDD) PWR REQ settings A0F2
+# Window size A0D8
+# DWP Speed   A0D5
+# How eSE connected to PN553 A012
+# UICC2 bit rate A0D1
+# SWP1A interface A0D4
+# DWP intf behavior config, SVDD Load activated by default if set to 0x31 A037
+# Low power tag detection LPTD for power reduction A068
+NXP_CORE_CONF_EXTN={20, 02, 1F, 07,
+    A0, 07, 01, 01,
+    A0, 8E, 01, 01,
+    A0, EC, 01, 01,
+    A0, ED, 01, 01,
+    A0, 46, 02, BA, 27,
+    A0, 47, 02, BA, 27,
+    A0, 0A, 01, 20
+}
+#       A0, F2, 01, 01,
+#       A0, 40, 01, 01,
+#       A0, 41, 01, 02,
+#       A0, 43, 01, 04,
+#       A0, 02, 01, 01,
+#       A0, 03, 01, 11,
+#       A0, 07, 01, 03,
+#       A0, 08, 01, 01
+#       }
+
+###############################################################################
+# Core configuration settings
+NXP_CORE_CONF={ 20, 02, 37, 11,
+        28, 01, 00,
+        21, 01, 00,
+        30, 01, 08,
+        31, 01, 03,
+        32, 01, 20,
+        38, 01, 01,
+        33, 04, 01, 02, 03, 04,
+        54, 01, 06,
+        50, 01, 02,
+        5B, 01, 00,
+        3E, 01, 00,
+        80, 01, 01,
+        81, 01, 01,
+        82, 01, 0E,
+        18, 01, 01,
+        68, 01, 01,
+        85, 01, 01
+        }
+
+###############################################################################
+#set autonomous mode
+# disable autonomous 0x00
+# enable autonomous  0x01
+NXP_AUTONOMOUS_ENABLE=0x00
+###############################################################################
+#set Guard Timer
+# Gurad Timer range to 0x0F-0xFF(i.e.15-255 seconds)
+NXP_GUARD_TIMER_VALUE=0x0F
+###############################################################################
+#Enable SWP full power mode when phone is power off
+#NXP_SWP_FULL_PWR_ON=0x00
+
+################################################################################
+#This is used to configure UICC2 at boot time.
+# UICC2              0x03
+NXP_DEFAULT_UICC2_SELECT=0x03
+###############################################################################
+# CE when Screen state is locked
+# This setting is for DEFAULT_AID_ROUTE,
+# DEFAULT_DESFIRE_ROUTE and DEFAULT_MIFARE_CLT_ROUTE
+# Disable           0x00
+# Enable            0x01
+NXP_CE_ROUTE_STRICT_DISABLE=0x01
+
+###############################################################################
+#Timeout in secs
+NXP_SWP_RD_TAG_OP_TIMEOUT=20
+
+###############################################################################
+#Set the default AID route Location :
+#This settings will be used when application does not set this parameter
+# host  0x00
+# eSE   0x01
+# UICC  0x02
+# UICC2 0x03
+DEFAULT_AID_ROUTE=0x02
+
+###############################################################################
+#Set the ISODEP (Mifare Desfire) route Location :
+#This settings will be used when application does not set this parameter
+# host  0x00
+# eSE   0x01
+# UICC  0x02
+# UICC2 0x03
+DEFAULT_ISODEP_ROUTE=0x02
+
+###############################################################################
+#Set the Mifare CLT route Location :
+#This settings will be used when application does not set this parameter
+# host  0x00
+# eSE   0x01
+# UICC  0x02
+# UICC2 0x03
+DEFAULT_MIFARE_CLT_ROUTE=0x02
+
+###############################################################################
+#Set the Felica CLT route Location :
+#This settings will be used when application does not set this parameter
+# eSE   0x01
+# UICC  0x02
+# UICC2 0x03
+DEFAULT_FELICA_CLT_ROUTE=0x02
+
+###############################################################################
+#Set the default AID Power state :
+#This settings will be used when application does not set this parameter
+# bit pos 0 = Switch On
+# bit pos 1 = Switch Off
+# bit pos 2 = Battery Off
+# bit pos 3 = Screen off unlock
+# bit pos 4 = Screen On lock
+# bit pos 5 = Screen Off lock
+DEFAULT_AID_PWR_STATE=0x3B
+
+###############################################################################
+#Set the Mifare Desfire Power state :
+#This settings will be used when application does not set this parameter
+# bit pos 0 = Switch On
+# bit pos 1 = Switch Off
+# bit pos 2 = Battery Off
+# bit pos 3 = Screen off unlock
+# bit pos 4 = Screen On lock
+# bit pos 5 = Screen Off lock
+DEFAULT_DESFIRE_PWR_STATE=0x3B
+
+###############################################################################
+#Set the Mifare CLT Power state :
+#This settings will be used when application does not set this parameter
+# bit pos 0 = Switch On
+# bit pos 1 = Switch Off
+# bit pos 2 = Battery Off
+# bit pos 3 = Screen off unlock
+# bit pos 4 = Screen On lock
+# bit pos 5 = Screen Off lock
+DEFAULT_MIFARE_CLT_PWR_STATE=0x3B
+
+###############################################################################
+#Set the Felica CLT Power state :
+#This settings will be used when application does not set this parameter
+# bit pos 0 = Switch On
+# bit pos 1 = Switch Off
+# bit pos 2 = Battery Off
+# bit pos 3 = Screen off unlock
+# bit pos 4 = Screen On lock
+# bit pos 5 = Screen Off lock
+DEFAULT_FELICA_CLT_PWR_STATE=0x3B
+###############################################################################
+#Set the T4TNfcee AID Power state :
+#This settings will be used when application does not set this parameter
+# bit pos 0 = Switch On
+# bit pos 1 = Switch Off
+# bit pos 2 = Battery Off
+# bit pos 3 = Screen off unlock
+# bit pos 4 = Screen On lock
+# bit pos 5 = Screen Off lock
+DEFAULT_T4TNFCEE_AID_POWER_STATE=0x3B
+
+###############################################################################
+#Set the default Felica T3T System Code OffHost route Location :
+#This settings will be used when application does not set this parameter
+# host  0x00
+# eSE   0x01
+# UICC  0x02
+# UICC2 0x03
+DEFAULT_SYS_CODE_ROUTE=0x02
+###############################################################################
+# AID Matching platform options
+# AID_MATCHING_L 0x01
+# AID_MATCHING_K 0x02
+#AID_MATCHING_PLATFORM=0x01
+###############################################################################
+# P61 interface options
+# SPI 0x02
+NXP_P61_LS_DEFAULT_INTERFACE=0x02
+
+###############################################################################
+#CHINA_TIANJIN_RF_SETTING
+#Enable  0x01
+#Disable  0x00
+#NXP_CHINA_TIANJIN_RF_ENABLED=0x01
+###############################################################################
+#SWP_SWITCH_TIMEOUT_SETTING
+# Allowed range of swp timeout setting is 0x00 to 0x3C [0 - 60].
+# Timeout in milliseconds, for example
+# No Timeout  0x00
+# 10 millisecond timeout 0x0A
+#NXP_SWP_SWITCH_TIMEOUT=0x0A
+###############################################################################
+# Flashing Options Configurations
+# FLASH_UPPER_VERSION 0x01
+# FLASH_DIFFERENT_VERSION 0x02
+# FLASH_ALWAYS 0x03
+NXP_FLASH_CONFIG=0x02
+
+###############################################################################
+# P61 interface options for JCOP Download
+# SPI 0x02
+NXP_P61_JCOP_DEFAULT_INTERFACE=0x02
+
+###############################################################################
+# Option to perform LS update every boot
+# Enable 0x01
+# Disable    0x00
+NXP_LS_FORCE_UPDATE_REQUIRED=0x00
+
+###############################################################################
+# Option to perform JCOP update every boot
+# Enable 0x01
+# Disable 0x00
+NXP_JCOP_FORCE_UPDATE_REQUIRED=0x00
+
+###############################################################################
+# Bail out mode
+#  If set to 1, NFCC is using bail out mode for either Type A or Type B poll.
+#  Set this parameter value to 1 if Android Beam is enabled, else set to 0.
+NFA_POLL_BAIL_OUT_MODE=0x00
+
+###############################################################################
+# White list of Hosts
+# This values will be the Hosts(NFCEEs) in the HCI Network.
+DEVICE_HOST_WHITE_LIST={C0, 80}
+
+###############################################################################
+# Choose the presence-check algorithm for type-4 tag.  If not defined, the default value is 1.
+# 0  NFA_RW_PRES_CHK_DEFAULT; Let stack selects an algorithm
+# 1  NFA_RW_PRES_CHK_I_BLOCK; ISO-DEP protocol's empty I-block
+# 2 NFA_RW_PRES_CHK_ISO_DEP_NAK; Type - 4 tag protocol iso-dep nak presence check
+#    command is sent waiting for rsp and ntf.
+PRESENCE_CHECK_ALGORITHM=2
+###############################################################################
+# Options to Fallback to alternative route
+# Disable           0x00
+# DH                0x01
+# ESE               0x02
+NXP_CHECK_DEFAULT_PROTO_SE_ID=0x01
+###############################################################################
+# Vendor Specific Proprietary Protocol & Discovery Configuration
+# Set to 0xFF if unsupported
+#  byte[0] NCI_PROTOCOL_18092_ACTIVE
+#  byte[1] NCI_PROTOCOL_B_PRIME
+#  byte[2] NCI_PROTOCOL_DUAL
+#  byte[3] NCI_PROTOCOL_15693
+#  byte[4] NCI_PROTOCOL_KOVIO
+#  byte[5] NCI_PROTOCOL_MIFARE
+#  byte[6] NCI_DISCOVERY_TYPE_POLL_KOVIO
+#  byte[7] NCI_DISCOVERY_TYPE_POLL_B_PRIME
+#  byte[8] NCI_DISCOVERY_TYPE_LISTEN_B_PRIME
+NFA_PROPRIETARY_CFG={05, FF, FF, 06, 81, 80, FF, FF, FF}
+
+###############################################################################
+#NXP_CN_TRANSIT_BLK_NUM_CHECK_ENABLE
+#Enable/Disable block number checks for china transit use case
+#Enable  0x01
+#Disable  0x00
+#NXP_CN_TRANSIT_BLK_NUM_CHECK_ENABLE=0x01
+
+###################################################################################################
+#This flags will enable different modes of Lx Debug based on bits of the Byte0 & Byte1
+#Byte 0:
+# |_________Bit Mask_______|   Debug Mode
+#  b7|b6|b5|b4|b3|b2|b1|b0|
+#    |  |  |X |  |  |  |  |    Enable L1 Events (ISO14443-4, ISO18092)
+#    |  |  |  |X |  |  |  |    Enable L2 Reader Events(ROW specific)
+#    |  |  |  |  |X |  |  |    Enable Felica SystemCode
+#    |  |  |  |  |  |X |  |    Enable Felica RF (all Felica CM events)
+#    |  |  |  |  |  |  |X |    Enable L2 Events Card Emulation (ISO14443-3, Modulation detected, RF Field ON/OFF)
+#Byte 1:
+#      Enable RSSI  0x01       Byte1    Byte0
+#      Disable RSSI 0x00          \__ __/
+# e.g. NXP_CORE_PROP_SYSTEM_DEBUG=0x0110 ==> L1 with RSSI
+NXP_CORE_PROP_SYSTEM_DEBUG=0x0000
+
+###############################################################################
+#Enable NXP NCI runtime parser library
+#Enable 0x01
+#Disable 0x00
+NXP_NCI_PARSER_LIBRARY=0x00
+
+###############################################################################
+# Timeout value in milliseconds for JCOP OS download to complete
+OS_DOWNLOAD_TIMEOUT_VALUE=60000
+
+###############################################################################
+# Forcing HOST to listen for a selected protocol
+# 0x00 : Disable Host Listen
+# 0x01 : Enable Host to Listen (A)  for ISO-DEP tech A
+# 0x02 : Enable Host to Listen (B)  for ISO-DEP tech B
+# 0x04 : Enable Host to Listen (F)  for T3T Tag Type Protocol tech F
+# 0x07 : Enable Host to Listen (ABF)for ISO-DEP tech AB & T3T Tag Type Protocol tech F
+HOST_LISTEN_TECH_MASK=0x07
+
+###############################################################################
+# Enable forward functionality
+# Disable           0x00
+# Enable            0x01
+FORWARD_FUNCTIONALITY_ENABLE=0x00
+
+###############################################################################
+# Configure the NFC Extras to open and use a static pipe.  If the value is
+# not set or set to 0, then the default is use a dynamic pipe based on a
+# destination gate (see NFA_HCI_DEFAULT_DEST_GATE).  Note there is a value
+# for each EE (ESE/SIM1/SIM2)
+OFF_HOST_ESE_PIPE_ID=0x16
+OFF_HOST_SIM_PIPE_ID=0x0A
+OFF_HOST_SIM2_PIPE_ID=0x23
+
+###############################################################################
+#Set the Felica T3T System Code Power state :
+#This settings will be used when application does not set this parameter
+#Update Power state as per NCI2.0
+# bit pos 0 = Switch On
+# bit pos 1 = Switch Off
+# bit pos 2 = Battery Off
+# bit pos 3 = Screen On lock
+# bit pos 4 = Screen off unlock
+# bit pos 5 = Screen Off lock
+DEFAULT_SYS_CODE_PWR_STATE=0x00
+###############################################################################
+#Default Secure Element route id
+DEFAULT_OFFHOST_ROUTE=0x02
+
+###############################################################################
+#Maximum SMB transceive wait for response
+NXP_SMB_TRANSCEIVE_TIMEOUT=2000
+###############################################################################
+# Firmware file type
+#.so file   0x01
+#.bin file  0x02
+NXP_FW_TYPE=0x01
+############################################################################
+# Extended APDU length for ISO_DEP
+ISO_DEP_MAX_TRANSCEIVE=0xFEFF
+#########################################################################
+# Support for Amendment I SEMS specification
+# Support SEMS Amendment I 0x01
+# Support NXP LS client    0x00
+NXP_GP_AMD_I_SEMS_SUPPORTED=0x01
+
+###############################################################################
+#All eSE terminals shall be match with the  /vendor/etc/vintf/manifest.xml file
+#under android.hardware.secure_element
+# The terminal name shall start from 1
+# Assign terminal number to each interface based on system config
+NXP_SPI_SE_TERMINAL_NUM="eSE1"
+###############################################################################
+# Assign terminal number to each interface based on system config
+#NXP_VISO_SE_TERMINAL_NUM="eSE3"
+###############################################################################
+# Assign terminal number to each interface based on system config
+NXP_NFC_SE_TERMINAL_NUM="eSE2"
+###############################################################################
+#For static or dynamic dual UICC feature support
+#Enable static dual uicc feature by setting value 0x00
+#Enable dynamic dual uicc feature by setting value 0x01
+NXP_DUAL_UICC_ENABLE=0x01
+###############################################################################
+# Time to wait by DH when NFCC will report eSE Cold Temp Error.
+# The value is as per the UM and in seconds
+NXP_SE_COLD_TEMP_ERROR_DELAY=0x05
+###############################################################################
+#OffHost ESE route location for MultiSE
+#ESE = 01
+OFFHOST_ROUTE_ESE={01}
+###############################################################################
+#OffHost UICC route location for MultiSE
+#UICC1 = 02
+#UICC2 = 03
+OFFHOST_ROUTE_UICC={02:03}
+
+###############################################################################
+#T4T NFCEE ENABLE
+#bit pos 0 = T4T NFCEE Enable
+#bit pos 6 = T4T NFCEE Contactless write enable
+NXP_T4T_NFCEE_ENABLE=0x01
+
+###############################################################################
+#CORE_SET_CONF_CMD to reset Prop Emvco Flag
+NXP_PROP_RESET_EMVCO_CMD={20, 02, 05, 01, A0, 44, 01, 00}
+
+###############################################################################
+#Guard time in ms for the mPOS/SCR module to process the reader start/stop req
+NXP_RDR_REQ_GUARD_TIME=0
+
+###############################################################################
+#MW workaround to enable LPCD when EMVCO polling mode starts and disable
+#while switching back to NFC Forum mode
+# 0 --> Disable MW workaround
+# 1 --> Enable MW workaround
+NXP_RDR_DISABLE_ENABLE_LPCD=0
+
+###############################################################################
+# Firmware patch format, Only 1 and 5 should be set
+#   0 -> NFC Default
+#   1 -> EMVCO Default
+#   3 -> EMVCO Polling, DISC_IDLE = POWER_OFF, DISC DEACTIVATE =  Removal process
+#   5 -> EMVCO Cert Polling, DISC_IDLE = Removal process  , DISC DEACTIVATE =   POWER_OFF
+#   7 -> EMVCO Polling, DISC_IDLE = POWER_OFF, DISC DEACTIVATE =  POWER_OFF
+NFA_CONFIG_FORMAT=1
+
+################################################################################
+# This will enable power state required for GSMA testing.
+# When this is enabled , then default AID route power state is added with this power state
+# If any aid with power state 0 is added, then this power state is used.
+# bit pos 0 = Switch On
+# bit pos 1 = Switch Off
+# bit pos 2 = Battery Off
+# bit pos 3 = Screen off unlock
+# bit pos 4 = Screen On lock
+# bit pos 5 = Screen Off lock
+#DEFUALT_GSMA_PWR_STATE=0x3B
+
+#################################################################################
+# Enable disconnect tag in screen off
+# Disable           0x00
+# Enable            0x01
+NXP_DISCONNECT_TAG_IN_SCRN_OFF=0x01
+#################################################################################

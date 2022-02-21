@@ -1,0 +1,54 @@
+// @file sns_suid.proto
+//
+// Defines standard message types to request and receive SUIDs.
+//
+// Copyright (c) 2016-2017,2020 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_type.proto";
+
+enum sns_suid_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_SUID_MSGID_SNS_SUID_REQ = 512;
+  SNS_SUID_MSGID_SNS_SUID_EVENT = 768;
+}
+
+// Well-known SUID for use by all clients.
+// All other Sensor UIDs must be discovered dynamically
+message sns_suid_sensor {
+  required fixed64 suid_low = 1 [default = 0xabababababababab];
+  required fixed64 suid_high = 2 [default = 0xabababababababab];
+}
+
+// Request sent by internal or external client for the list of SUIDs that
+// advertise the specified Data Type
+// Note: Additional requests arriving on the same connection, will not result
+// in a replaced request, but instead the new request will be appended to any
+// active registrations.
+message sns_suid_req {
+  required string data_type = 1;
+  // Register for updates to the list of SUIDs advertising data_type
+  optional bool register_updates = 2;
+
+  // Each data type may or may not have one sensor configured to be "default" through registry.
+  // If following field is set to true and :
+  // * A default for the data type is explicitly configured,
+  //   only the SUID of the default sensor will be sent via the suid event when available.
+  // * A default for the data type is not explicitly configured,
+  //   the SUID of the first sensor with matching data type will be sent via the suid event.
+  // If following field is set to false, all sensors with matching data type will be sent,
+  // as and when they become available.  
+  optional bool default_only = 3 [default = true];
+}
+
+// Event specifying the list of SUIDs associated with the given Data Type
+// Receipt of this event indicates that a change to this list has occurred
+// since the previous event.
+message sns_suid_event {
+  // Direct copy of sns_suid_req:data_type
+  required string data_type = 1;
+  repeated sns_std_suid suid = 2;
+}
