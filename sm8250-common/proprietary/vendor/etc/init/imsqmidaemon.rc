@@ -1,0 +1,10 @@
+# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+service vendor.imsqmidaemon /vendor/bin/imsqmidaemon
+    class main
+    user radio
+    socket ims_qmid stream 0660 system radio
+    group radio vendor_qti_diag log

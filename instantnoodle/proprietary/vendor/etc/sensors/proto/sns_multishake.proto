@@ -1,0 +1,71 @@
+// @file sns_multishake.proto
+//
+// Defines message types for the the multishake sensor
+//
+// Copyright (c) 2017 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+syntax = "proto2";
+import "nanopb.proto";
+
+// The multishake sensor detects shakes along an axis and
+// generates an event when a client specified number of consecutive shakes
+// to the device occur. There is a sleep period after a multishake event
+// is reported during which shakes are not detected. This sleep period
+// is configurable through the registry.
+//
+// ## Multishake sensor attributes:
+// SNS_STD_SENSOR_ATTRID_TYPE is "multishake"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+//
+// ## Request Message: SNS_MULTISHAKE_MSGID_SNS_MULTISHAKE_CONFIG
+// No configuration is available for this sensor.
+//
+// ## Event Message: SNS_MULTISHAKE_MSGID_SNS_MULTISHAKE_EVENT
+// Reported upon new detection of multishake event.
+//
+// ## Configuration Message: Multishake does not publish configuration
+// messages.
+
+enum sns_multishake_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+  SNS_MULTISHAKE_MSGID_SNS_MULTISHAKE_CONFIG = 512;
+  SNS_MULTISHAKE_MSGID_SNS_MULTISHAKE_EVENT = 1024;
+}
+
+enum multishake_axis
+{
+  option (nanopb_enumopt).long_names = false;
+  // Phone is shaken, but phone shake direction cannot be clearly determined
+  MULTISHAKE_AXIS_UNKNOWN_AXIS = 0;
+
+  // Phone is shaken in the X axis according
+  // to the android coordinate system
+  MULTISHAKE_AXIS_X_AXIS = 1;
+
+  // Phone is shaken in the Y axis according
+  // to the android coordinate system
+  MULTISHAKE_AXIS_Y_AXIS = 2;
+
+}
+
+message sns_multishake_config
+{
+  // Select the shake axis along which shake events are detected by
+  // the algorithm instance. Multiple axes can be selected.
+  // To detect shakes starting from a left shake or a right shake, use
+  // shake_axis = [MULTISHAKE_AXIS_LEFT, MULTISHAKE_AXIS_RIGHT]
+  //
+  // If shake_axis is not provided, then a multishake event along any
+  // axis will be reported.
+  repeated multishake_axis shake_axis = 1 [(nanopb).max_count = 3];
+}
+
+message sns_multishake_event
+{
+  // Specifies the axis along which the shakes were detected  If shakes in
+  // multiple axes were detected, the direction of the first shake is reported
+  // in this field.
+  required multishake_axis shake_axis = 1;
+}

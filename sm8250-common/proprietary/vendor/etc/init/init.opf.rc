@@ -1,0 +1,8 @@
+on early-init
+    start opf-service
+
+service opf-service /vendor/bin/opf-service
+    disabled
+    user root
+    group root
+    oneshot

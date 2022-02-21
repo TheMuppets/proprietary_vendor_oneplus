@@ -1,0 +1,23 @@
+// @file sns_fw.proto
+//
+// Defines Framework internal values.
+//
+// Copyright (c) 2017 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+syntax = "proto2";
+import "nanopb.proto";
+
+// Internal Framework message IDs
+// Note: These message IDs must not conflict with those in sns_std_msgid
+enum sns_fw_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  // Special message only sent by the Framework; not processed by Sensors
+  // Empty Message
+  SNS_FW_MSGID_SNS_DESTROY_REQ = 120;
+
+  // Special message only sent by the Framework; not processed by Sensors
+  // Empty Message
+  SNS_FW_MSGID_SNS_DESTROY_COMPLETE_EVENT = 250;
+}

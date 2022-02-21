@@ -1,0 +1,16 @@
+# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+# Start daemon after boot completed
+on property:sys.boot_completed=1
+    start vendor.ssgtzd
+
+# Used 'disabled' flag, so daemon won't be started until explicit start
+service vendor.ssgtzd /vendor/bin/ssgtzd
+    class late_start
+    user system
+    group system
+    disabled
+    socket ssgtzd stream 0660 system inet
+    socket qwes_ipc stream 0660 system inet
