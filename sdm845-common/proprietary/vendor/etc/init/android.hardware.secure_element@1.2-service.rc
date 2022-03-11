@@ -1,0 +1,10 @@
+service vendor.secure_element_hal_service_1_2 /vendor/bin/hw/android.hardware.secure_element@1.2-service
+    class hal
+    interface android.hardware.secure_element@1.0::ISecureElement eSE1
+    interface android.hardware.secure_element@1.1::ISecureElement eSE1
+    interface android.hardware.secure_element@1.2::ISecureElement eSE1
+    interface vendor.nxp.eventprocessor@1.0::INxpEseEvtProcessor default
+    interface vendor.nxp.nxpese@1.0::INxpEse default
+    user secure_element
+    group secure_element
+

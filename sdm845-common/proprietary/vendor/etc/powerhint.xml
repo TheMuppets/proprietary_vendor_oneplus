@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+/* Copyright (c) 2016-2017, The Linux Foundation. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are
+ * met:
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above
+ *       copyright notice, this list of conditions and the following
+ *       disclaimer in the documentation and/or other materials provided
+ *       with the distribution.
+ *     * Neither the name of The Linux Foundation nor the names of its
+ *       contributors may be used to endorse or promote products derived
+ *       from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+ * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+ * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+-->
+<HintConfigs>
+    <Powerhint>
+        <!--video encode 30 fps-->
+        <Config
+            Id="0x00001203" Enable="true" Timeout="0" Target="sdm845"
+            Resources="" />
+
+        <!-- sustained performance -->
+        <!-- B CPU - Cluster min freq uncapped -->
+        <!-- L CPU - Cluster min freq uncapped -->
+        <!-- B CPU - Cluster max freq ~1.26 GHz -->
+        <!-- L CPU - Cluster max freq ~1.28 Ghz -->
+        <!-- GPU - min pwrlevel 4 (freq 338 MHz)-->
+        <!-- GPU - max pwrlevel 3 (freq 425 MHz)-->
+        <!-- GPUBW freq uncapped -->
+        <Config
+            Id="0x00001206" Enable="true" Timeout="0" Target="sdm845"
+            Resources="0x40800000, 0x0, 0x40800100, 0x0, 0x40804000, 0x4F3, 0x40804100, 0x506,
+            0X42804000, 0x4, 0X42808000, 0x3, 0x42814000, 0x0"/>
+        <!-- vr mode -->
+        <!-- B CPU - Cluster min freq ~1.19 Ghz -->
+        <!-- L CPU - Cluster min freq ~0.902 Ghz -->
+        <!-- B CPU - Cluster max freq ~1.95 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.70 Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 280 MHz)-->
+        <!-- GPU - max pwrlevel 0 (freq 600 MHz)-->
+        <!-- GPUBW freq 775 Mhz-->
+        <Config
+            Id="0x00001207" Enable="true" Timeout="0" Target="sdm845"
+            Resources="0x40800000, 0x4A6, 0x40800100, 0x386, 0x40804000, 0x7A6, 0x40804100, 0x6AC,
+            0X42804000, 0x5, 0X42808000, 0x0, 0x42814000, 0x1E4F"/>
+
+        <!-- vr mode sustained performance -->
+        <!-- B CPU - Cluster min freq ~1.26 Ghz -->
+        <!-- L CPU - Cluster min freq ~1.28 Ghz -->
+        <!-- B CPU - Cluster max freq ~1.26 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.28 Ghz -->
+        <!-- GPU - min pwrlevel 3 (freq 425 MHz)-->
+        <!-- GPU - max pwrlevel 3 (freq 425 MHz)-->
+        <!-- GPUBW freq 775 Mhz -->
+        <Config
+            Id="0x00001301" Enable="true" Timeout="0" Target="sdm845"
+            Resources="0x40800000, 0x4F3, 0x40800100, 0x506, 0x40804000, 0x4F3, 0x40804100, 0x506,
+            0X42804000, 0x3, 0X42808000, 0x3, 0x42814000, 0x1E4F"/>
+
+        <!-- qvr level cpu1 gpu1 -->
+        <!-- B CPU - Cluster min freq ~1.19 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.09 Ghz -->
+        <!-- L CPU - Cluster min freq ~.902 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.70 Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 280 Mhz) -->
+        <!-- GPU - max pwrlevel 3 (freq 425 Mhz) -->
+        <!-- Min Big CPUs 4 -->
+        <Config
+            Id="0x0000130A" Enable="true" Timeout="0" Target="sdm845"
+            Resources="0x40800000, 0x4A6, 0x40804000, 0x82C, 0x40800100, 0x386, 0x40804100, 0x6AC,
+            0x42804000, 0x5, 0x42808000, 0x3, 0x41000000, 0x4"/>
+
+        <!-- qvr level cpu1 gpu2 -->
+        <!-- B CPU - Cluster min freq ~1.19 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.09 Ghz -->
+        <!-- L CPU - Cluster min freq ~.902 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.70 Ghz -->
+        <!-- GPU - min pwrlevel 3 (freq 425 Mhz) -->
+        <!-- GPU - max pwrlevel 1 (freq 548 Mhz) -->
+        <!-- Min Big CPUs 4 -->
+        <Config
+            Id="0x0000130B" Enable="true" Timeout="0" Target="sdm845"
+            Resources="0x40800000, 0x4A6, 0x40804000, 0x82C, 0x40800100, 0x386, 0x40804100, 0x6AC,
+            0x42804000, 0x3, 0x42808000, 0x1, 0x41000000, 0x4"/>
+
+        <!-- qvr level cpu1 gpu3 -->
+        <!-- B CPU - Cluster min freq ~1.19 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.09 Ghz -->
+        <!-- L CPU - Cluster min freq ~.902 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.70 Ghz -->
+        <!-- GPU - min pwrlevel 1 (freq 548 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 600 Mhz) -->
+        <!-- Min Big CPUs 4 -->
+        <Config
+            Id="0x0000130C" Enable="true" Timeout="0" Target="sdm845"
+            Resources="0x40800000, 0x4A6, 0x40804000, 0x82C, 0x40800100, 0x386, 0x40804100, 0x6AC,
+            0x42804000, 0x1, 0x42808000, 0x0, 0x41000000, 0x4"/>
+
+        <!-- qvr level cpu2 gpu1 -->
+        <!-- B CPU - Cluster min freq ~1.19 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.09 Ghz -->
+        <!-- L CPU - Cluster min freq ~1.13 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.70 Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 280 Mhz) -->
+        <!-- GPU - max pwrlevel 3 (freq 425 Mhz) -->
+        <!-- Min Big CPUs 4 -->
+        <Config
+            Id="0x0000130D" Enable="true" Timeout="0" Target="sdm845"
+            Resources="0x40800000, 0x4A6, 0x40804000, 0x82C, 0x40800100, 0x46C, 0x40804100, 0x6AC,
+            0x42804000, 0x5, 0x42808000, 0x3, 0x41000000, 0x4"/>
+
+        <!-- qvr level cpu2 gpu2 -->
+        <!-- B CPU - Cluster min freq ~1.19 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.09 Ghz -->
+        <!-- L CPU - Cluster min freq ~1.13 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.70 Ghz -->
+        <!-- GPU - min pwrlevel 3 (freq 425 Mhz) -->
+        <!-- GPU - max pwrlevel 1 (freq 548 Mhz) -->
+        <!-- Min Big CPUs 4 -->
+        <Config
+            Id="0x0000130E" Enable="true" Timeout="0" Target="sdm845"
+            Resources="0x40800000, 0x4A6, 0x40804000, 0x82C, 0x40800100, 0x46C, 0x40804100, 0x6AC,
+            0x42804000, 0x3, 0x42808000, 0x1, 0x41000000, 0x4"/>
+
+        <!-- qvr level cpu2 gpu3 -->
+        <!-- B CPU - Cluster min freq ~1.19 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.09 Ghz -->
+        <!-- L CPU - Cluster min freq ~1.13 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.70 Ghz -->
+        <!-- GPU - min pwrlevel 1 (freq 548 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 600 Mhz) -->
+        <!-- Min Big CPUs 4 -->
+        <Config
+            Id="0x0000130F" Enable="true" Timeout="0" Target="sdm845"
+            Resources="0x40800000, 0x4A6, 0x40804000, 0x82C, 0x40800100, 0x46c, 0x40804100, 0x6AC,
+            0x42804000, 0x1, 0x42808000, 0x0, 0x41000000, 0x4"/>
+
+        <!-- qvr level cpu3 gpu1 -->
+        <!-- B CPU - Cluster min freq ~1.26 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.09 Ghz -->
+        <!-- L CPU - Cluster min freq ~1.28 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.70 Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 280 Mhz) -->
+        <!-- GPU - max pwrlevel 3 (freq 425 Mhz) -->
+        <!-- Min Big CPUs 4 -->
+        <Config
+            Id="0x00001310" Enable="true" Timeout="0" Target="sdm845"
+            Resources="0x40800000, 0x4F3, 0x40804000, 0x82C, 0x40800100, 0x506, 0x40804100, 0x6AC,
+            0x42804000, 0x5, 0x42808000, 0x3, 0x41000000, 0x4"/>
+
+        <!-- qvr level cpu3 gpu2 -->
+        <!-- B CPU - Cluster min freq ~1.26 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.09 Ghz -->
+        <!-- L CPU - Cluster min freq ~1.28 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.70 Ghz -->
+        <!-- GPU - min pwrlevel 3 (freq 425 Mhz) -->
+        <!-- GPU - max pwrlevel 1 (freq 548 Mhz) -->
+        <!-- Min Big CPUs 4 -->
+        <Config
+            Id="0x00001311" Enable="true" Timeout="0" Target="sdm845"
+            Resources="0x40800000, 0x4F3, 0x40804000, 0x82C, 0x40800100, 0x506, 0x40804100, 0x6AC,
+            0x42804000, 0x3, 0x42808000, 0x1, 0x41000000, 0x4"/>
+
+        <!-- qvr level cpu3 gpu3 -->
+        <!-- B CPU - Cluster min freq ~1.26 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.09 Ghz -->
+        <!-- L CPU - Cluster min freq ~1.28 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.70 Ghz -->
+        <!-- GPU - min pwrlevel 1 (freq 548 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 600 Mhz) -->
+        <!-- Min Big CPUs 4 -->
+        <Config
+            Id="0x00001312" Enable="true" Timeout="0" Target="sdm845"
+            Resources="0x40800000, 0x4F3, 0x40804000, 0x82C, 0x40800100, 0x506, 0x40804100, 0x6AC,
+            0x42804000, 0x1, 0x42808000, 0x0, 0x41000000, 0x4"/>
+
+        <!-- camera general -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU - Disable schedutil PL -->
+        <!--B CPU - Disable schedutil PL -->
+        <!--L CPU - Set hispeed load 99 -->
+        <!--B CPU - Set hispeed load 99 -->
+        <!--BWMON - Set sample_ms 10 -->
+        <Config
+            Id="0x00001331" Enable="true" Timeout="0" Target="sdm845"
+            Resources="0x40C68100, 0xFFFFFFF6, 0x40C68110, 0xFFFFFFF6, 0x40C68120, 0xFFFFFFF6,
+            0x40C68130, 0xFFFFFFF6,0x41444100, 0, 0x41444000, 0, 0x41440100, 0x63,
+            0x41440000, 0x63, 0x41820000, 0xA"/>
+
+        <!-- camera 60 FPS -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU - Disable schedutil PL -->
+        <!--B CPU - Disable schedutil PL -->
+        <!--L CPU - Set hispeed load 99 -->
+        <!--B CPU - Set hispeed load 99 -->
+        <!--BWMON - Set sample_ms 10 -->
+        <Config
+            Id="0x00001332" Enable="true" Timeout="0" Target="sdm845"
+            Resources="0x40C68100, 0xFFFFFFF6, 0x40C68110, 0xFFFFFFF6, 0x40C68120, 0xFFFFFFF6,
+            0x40C68130, 0xFFFFFFF6, 0x41444100, 0, 0x41444000, 0, 0x41440100, 0x63,
+            0x41440000, 0x63, 0x41820000, 0xA"/>
+
+        <!-- camera HFR -->
+        <!--BWMON - Set sample_ms 10 -->
+        <Config
+            Id="0x00001333" Enable="true" Timeout="0" Target="sdm845"
+            Resources="0x41820000, 0xA"/>
+
+        <!-- Front Camera Preview Mode : POWER_HINT_ID_FRONT_PREVIEW -->
+        <!-- LLC min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 0x1D (2929) -->
+        <!-- CPUBW min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 0x41(6500) -->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- CPUBW IO Percent : MPCTLV3_CPUBW_HWMON_IO_PERCENT(0x41808000) : 0x50(80) -->
+        <Config
+            Id="0x00001341" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources="0x40800000,748,0x40804000,1689,0x40800100, 748,0x40804100,2400,0x43000000, 0x1D, 0x41800000, 0x41, 0x43008000, 0x00, 0x4180C000, 0x00,
+            0x41820000, 0x0A, 0x41808000, 0x50"/>
+
+        <!-- Rear Camera Preview Mode : POWER_HINT_ID_REAR_PREVIEW -->
+        <!-- L CPU - Cluster min freq 1280Mhz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1280-->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- LLC min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 0x26 (3879) -->
+        <!-- CPUBW min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 0x5B(9155) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <Config
+            Id="0x00001342" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources=" 0x40800000, 748, 0x40804000, 1459, 0x40800100, 748,0x40804100, 1324, 0x43008000, 0x00, 0x4180C000, 0x00, 0x41820000, 0x0A,
+            0x43000000, 0x26, 0x41800000, 0x5B, 0x41444100, 0x00, 0x41444000, 0x00"/>
+
+        <!-- Rear Camera Bokeh Preview Mode : POWER_HINT_ID_REAR_BOKEH_PREVIEW -->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 0x42(66) -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 0x4C(76) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <Config
+            Id="0x00001343" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources=" 0x40804000, 1920, 0x40804100, 1612,0x40C20000, 0x42, 0x40C1C000, 0x4C, 0x43008000, 0x00, 0x4180C000, 0x00, 0x41820000, 0x0A,
+            0x41444100, 0x00, 0x41444000, 0x00"/>
+
+        <!-- Front Camera video encode HD 30 fps : POWER_HINT_ID_VIDEO_ENCODE_HD30_FRONT -->
+        <!-- LLC min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 0x1D (2929) -->
+        <!-- CPUBW min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 0x41(6500) -->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- CPUBW IO Percent : MPCTLV3_CPUBW_HWMON_IO_PERCENT(0x41808000) : 0x50(80) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <Config
+            Id="0x00001344" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources="0x40804000, 1996, 0x40804100, 1420,0x43000000, 0x1D, 0x41800000, 0x41, 0x43008000, 0x00, 0x4180C000, 0x00, 0x41820000, 0x0A,
+            0x41808000, 0x50, 0x41444100, 0x00, 0x41444000, 0x00"/>
+
+        <!-- Front Camera video encode FHD 30 fps : POWER_HINT_ID_VIDEO_ENCODE_FHD30_FRONT -->
+        <!-- LLC min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 0x1D (2929) -->
+        <!-- CPUBW min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 0x41(6500) -->
+        <!-- L CPU - Cluster min freq 1280Mhz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1280-->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- CPUBW IO Percent : MPCTLV3_CPUBW_HWMON_IO_PERCENT(0x41808000) : 0x50(80) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <Config
+            Id="0x00001345" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources="0x40804000, 1996, 0x40804100, 1420,0x43000000, 0x1D, 0x41800000, 0x41, 0x40800100, 1280, 0x43008000, 0x00, 0x4180C000, 0x00,
+            0x41820000, 0x0A, 0x41808000, 0x50, 0x41444100, 0x00, 0x41444000, 0x00"/>
+
+        <!-- video encode FHD 30 fps : POWER_HINT_ID_VIDEO_ENCODE_FHD30 -->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 0x28,(40) -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 0x32,(50) -->
+        <!-- LLC min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 0x1D (2929) -->
+        <!-- CPUBW min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 0x41(6500) -->
+        <!-- L CPU - Cluster min freq 1280Mhz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1280-->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <Config
+            Id="0x00001346" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources="0x40C20000, 0x28, 0x40C1C000, 0x32, 0x43000000, 0x1D, 0x41800000, 0x41, 0x40800100, 1280,
+            0x43008000, 0x00, 0x4180C000, 0x00, 0x41820000, 0x0A, 0x41444100, 0x00, 0x41444000, 0x00"/>
+
+        <!-- video encode UHD 30 fps : POWER_HINT_ID_VIDEO_ENCODE_UHD30 -->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 0x3C,(60) -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 0x46,(70) -->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <Config
+            Id="0x00001347" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources="0x40C20000, 0x3C, 0x40C1C000, 0x46,
+            0x43008000, 0x00, 0x4180C000, 0x00, 0x41820000, 0x0A, 0x41444100, 0x00, 0x41444000, 0x00"/>
+
+        <!-- video encode FHD 60 fps : POWER_HINT_ID_VIDEO_ENCODE_FHD60 -->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 0x14,(20) -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 0x1E,(30) -->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- L CPU memlat ratio : MPCTLV3_L2_MEMLAT_RATIO_CEIL_0(0x43404000) : 0x01(1) -->
+        <!-- B CPU memlat ratio : MPCTLV3_L2_MEMLAT_RATIO_CEIL_1(0x43408000) : 0x01(1) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <Config
+            Id="0x00001348" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources=" 0x40804000, 1996, 0x40804100, 1420 ,0x40C20000, 0x14,
+            0x40C1C000, 0x1E, 0x43008000, 0x00,
+            0x4180C000, 0x00, 0x41820000, 0x0A, 0x43404000, 0x01, 0x43408000, 0x01,
+            0x41444100, 0x00, 0x41444000, 0x00"/>
+
+        <!-- video encode UHD 60 fps : POWER_HINT_ID_VIDEO_ENCODE_UHD60 -->
+        <!-- L CPU - Cluster min freq ~0.748GHz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 0x2EC(748)-->
+        <!-- B CPU - Cluster min freq ~0.902GHz : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000) : 0x386(902)-->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 0x14,(20) -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 0x1E,(30) -->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- L CPU memlat ratio : MPCTLV3_L2_MEMLAT_RATIO_CEIL_0(0x43404000) : 0x01(1) -->
+        <!-- B CPU memlat ratio : MPCTLV3_L2_MEMLAT_RATIO_CEIL_1(0x43408000) : 0x01(1) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <Config
+            Id="0x00001349" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources="0x40800000, 902, 0x40804000, 1363, 0x40800100, 652,0x40804100, 1132, 0x40C20000, 0x14, 0x40C1C000, 0x1E,  0x43008000, 0x00,
+            0x4180C000, 0x00, 0x41820000, 0x0A, 0x43404000, 0x01, 0x43408000, 0x01,
+            0x41444100, 0x00, 0x41444000, 0x00"/>
+
+        <!-- video encode HFR240 fps : POWER_HINT_ID_VIDEO_ENCODE_HFR240 -->
+        <!-- L CPU - Cluster min freq ~1.228GHz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 0x4CC(1228)-->
+        <!-- B CPU - Cluster min freq ~1.056GHz : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000) : 0x420(1056)-->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 0x1E,(30) -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 0x28,(40) -->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- LLC min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 0x31 (4943) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- CPUBW min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 0x7A(12298) -->
+        <!-- L CPU memlat ratio : MPCTLV3_L2_MEMLAT_RATIO_CEIL_0(0x43404000) : 0x01(1) -->
+        <!-- B CPU memlat ratio : MPCTLV3_L2_MEMLAT_RATIO_CEIL_1(0x43408000) : 0x01(1) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <Config
+            Id="0x0000134A" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources="0x40800100, 0x4CC, 0x40800000, 0x420, 0x40C20000, 0x1E, 0x40C1C000, 0x28, 0x43008000, 0x00,
+            0x43000000, 0x31, 0x4180C000, 0x00, 0x41820000, 0x0A, 0x41800000, 0x7A, 0x43404000, 0x01, 0x43408000, 0x01,
+            0x41444100, 0x00, 0x41444000, 0x00"/>
+
+        <!-- video encode HFR480 fps : POWER_HINT_ID_VIDEO_ENCODE_HFR480 -->
+        <!-- L CPU - Cluster min freq ~1.766GHz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 0x6e6(1766)-->
+        <!-- B CPU - Cluster min freq ~1.766GHz : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000) : 0x6e6(1766)-->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 0x19,(25) -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 0x23,(35) -->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- LLC min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 0x31 (4943) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- CPUBW min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 0x7A(12298) -->
+        <!-- CPUBW IO Percent : MPCTLV3_CPUBW_HWMON_IO_PERCENT(0x41808000) : 0x50(80) -->
+        <!-- L CPU memlat ratio : MPCTLV3_L2_MEMLAT_RATIO_CEIL_0(0x43404000) : 0x01(1) -->
+        <!-- B CPU memlat ratio : MPCTLV3_L2_MEMLAT_RATIO_CEIL_1(0x43408000) : 0x01(1) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <!-- LPM bias to 99ms : MPCTLV3_LPM_BIAS_HYST(0x40408000) : 0x63(99)-->
+        <Config
+            Id="0x0000134B" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources="0x40800000, 1420, 0x40804000, 1420, 0x40800100, 1420, 0x40804100, 1420, 0x40C20000, 0x19, 0x40C1C000, 0x23, 0x43008000, 0x00,
+            0x43000000, 0x31, 0x4180C000, 0x00, 0x41820000, 0x0A, 0x41800000, 0x7A, 0x41808000, 0x50, 0x43404000, 0x01,
+            0x43408000, 0x01, 0x41444100, 0x00, 0x41444000, 0x00, 0x40408000, 99"/>
+
+        <!-- CTS : POWER_HINT_ID_CTS -->
+        <!-- L CPU - Cluster min freq ~1.228GHz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1228-->
+        <!-- B CPU - Cluster min freq ~1.209GHz : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000) : 1209-->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 20 -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 30 -->
+        <!-- LLCBW min: MPCTLV3_LLCBW_HWMON_MIN_FREQ (0x43000000) : 49 (4943) :  -->
+        <!-- CPUBW min: MPCTLV3_CPUBW_HWMON_MIN_FREQ (0x41800000) : 91 (9155) :  -->
+        <!-- L3 memlat min MPCTLV3_L3_MEMLAT_MIN_FREQ (0x43400000) : 49 (4943) : -->
+        <!-- LPM bias to 99ms : MPCTLV3_LPM_BIAS_HYST(0x40408000) : 0x63(99)-->
+        <Config
+            Id="0x0000134C" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources="0x40800100, 1228, 0x40800000, 1209, 0x40C20000, 40, 0x40C1C000, 50,
+            0x43000000, 49, 0x41800000, 91, 0x43400000, 49, 0x40408000, 99"/>
+
+        <!-- VENDOR_HINT_PLAYBACK -->
+        <!-- L CPU - Cluster min freq ~1.766GHz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1766-->
+        <!-- B CPU - Cluster min freq ~2.649GHz : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000) : 2649-->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 10 -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 20 -->
+        <!-- LLCBW min: MPCTLV3_LLCBW_HWMON_MIN_FREQ (0x43000000) : 68 (6881) :  -->
+        <!-- L3 memlat min MPCTLV3_L3_MEMLAT_MIN_FREQ (0x43400000) : 14 (1478) : -->
+        <Config
+            Id="0x0000134D" Enable="true" Timeout="300" Target="sdm845"
+            Resources="0x40800100, 1766, 0x40800000, 2649, 0x40C20000, 10, 0x40C1C000, 20,
+            0x43000000, 68, 0x43400000, 14"/>
+
+        <!-- VENDOR_HINT_ZOOM -->
+        <!-- L CPU - Cluster min freq ~1.766GHz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1766-->
+        <!-- B CPU - Cluster min freq ~2.649GHz : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000) : 2649-->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 10 -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 20 -->
+        <!-- LLCBW min: MPCTLV3_LLCBW_HWMON_MIN_FREQ (0x43000000) : 68 (6881) :  -->
+        <!-- L3 memlat min MPCTLV3_L3_MEMLAT_MIN_FREQ (0x43400000) : 14 (1478) : -->
+        <Config
+            Id="0x0000134E" Enable="true" Timeout="300" Target="sdm845"
+            Resources="0x40800100, 1766, 0x40800000, 2649, 0x40C20000, 10, 0x40C1C000, 20,
+            0x43000000, 68, 0x43400000, 14"/>
+
+        <!-- VENDOR_HINT_TOUCH -->
+        <!-- L CPU - Cluster min freq ~1.766GHz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1766-->
+        <!-- B CPU - Cluster min freq ~2.649GHz : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000) : 2649-->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 10 -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 20 -->
+        <!-- LLCBW min: MPCTLV3_LLCBW_HWMON_MIN_FREQ (0x43000000) : 68 (6881) :  -->
+        <!-- L3 memlat min MPCTLV3_L3_MEMLAT_MIN_FREQ (0x43400000) : 14 (1478) : -->
+        <Config
+            Id="0x0000134F" Enable="true" Timeout="300" Target="sdm845"
+            Resources="0x40800100, 1766, 0x40800000, 2649, 0x40C20000, 10, 0x40C1C000, 20,
+            0x43000000, 68, 0x43400000, 14"/>
+
+        <!-- VENDOR_HINT_SLOWMOTION -->
+        <!-- L CPU - Cluster min freq ~1.766GHz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1766-->
+        <!-- B CPU - Cluster min freq ~2.649GHz : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000) : 2649-->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 10 -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 20 -->
+        <!-- LLCBW min: MPCTLV3_LLCBW_HWMON_MIN_FREQ (0x43000000) : 68 (6881) :  -->
+        <!-- L3 memlat min MPCTLV3_L3_MEMLAT_MIN_FREQ (0x43400000) : 14 (1478) : -->
+        <Config
+            Id="0x00001350" Enable="true" Timeout="5000" Target="sdm845"
+            Resources="0x40800100, 1766, 0x40800000, 2649, 0x40C20000, 10, 0x40C1C000, 20,
+            0x43000000, 68, 0x43400000, 14"/>
+
+        <!-- Rear Camera Preview Mode : POWER_HINT_ID_REAR_CAPTURE -->
+        <!-- L CPU - Cluster min freq 1280Mhz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1280-->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- LLC min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 0x26 (3879) -->
+        <!-- CPUBW min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 0x5B(9155) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <Config
+            Id="0x00001351" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources=" 0x40800100, 1280, 0x43008000, 0x00, 0x4180C000, 0x00, 0x41820000, 0x0A,
+            0x43000000, 0x26, 0x41800000, 0x5B, 0x41444100, 0x00, 0x41444000, 0x00"/>
+
+        <!-- Rear Camera Preview Mode : POWER_HINT_ID_FRONT_CAPTURE -->
+        <!-- L CPU - Cluster min freq 1280Mhz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1280-->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- LLC min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 0x26 (3879) -->
+        <!-- CPUBW min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 0x5B(9155) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <Config
+            Id="0x00001352" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources="0x43000000, 0x1D, 0x41800000, 0x41, 0x43008000, 0x00, 0x4180C000, 0x00,
+            0x41820000, 0x0A, 0x41808000, 0x50"/>
+
+        <!-- Rear Camera Preview Mode : POWER_HINT_ID_REAR_BOKEH_CAPTURE -->
+        <!-- L CPU - Cluster min freq 1280Mhz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1280-->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- LLC min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 0x26 (3879) -->
+        <!-- CPUBW min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 0x5B(9155) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <Config
+            Id="0x00001353" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources="0x40C20000, 0x42, 0x40C1C000, 0x4C, 0x43008000, 0x00, 0x4180C000, 0x00, 0x41820000, 0x0A,
+            0x41444100, 0x00, 0x41444000, 0x00"/>
+
+        <!-- Rear Camera Preview Mode : PERF_LOCK_POWER_HINT_PRO_RAW_PREVIEW -->
+        <!-- L CPU - Cluster min freq 1280Mhz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1280-->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- LLC min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 0x26 (3879) -->
+        <!-- CPUBW min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 0x5B(9155) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <Config
+            Id="0x00001354" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources=" 0x40800100, 1280, 0x43008000, 0x00, 0x4180C000, 0x00, 0x41820000, 0x0A,
+            0x43000000, 0x26, 0x41800000, 0x5B, 0x41444100, 0x00, 0x41444000, 0x00"/>
+
+        <!-- Rear Camera Preview Mode : POWER_HINT_ID_NIGHTSPACE_CAPTURE -->
+        <!-- L CPU - Cluster min freq 1280Mhz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1280-->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- LLC min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 0x26 (3879) -->
+        <!-- CPUBW min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 0x5B(9155) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <Config
+            Id="0x00001355" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources=" 0x40800100, 1280, 0x43008000, 0x00, 0x4180C000, 0x00, 0x41820000, 0x0A,
+            0x43000000, 0x26, 0x41800000, 0x5B, 0x41444100, 0x00, 0x41444000, 0x00"/>
+
+        <!-- Nightspace Preview Mode : POWER_HINT_ID_NIGHTSPACE_PREVIEW -->
+        <!-- L CPU - Cluster min freq 1280Mhz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1280-->
+        <!-- LLC hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- CPUBW hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- CPUBW sampling rate : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- LLC min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 0x26 (3879) -->
+        <!-- CPUBW min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 0x5B(9155) -->
+        <!-- L CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_LITTLE(0x41444100) : 0x00(0) -->
+        <!-- B CPU- Disable PL:MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG(0x41444000) : 0x00(0) -->
+        <Config
+            Id="0x00001356" Enable="true" Timeout="3600000" Target="sdm845"
+            Resources=" 0x40800100, 1280, 0x43008000, 0x00, 0x4180C000, 0x00, 0x41820000, 0x0A,
+            0x43000000, 0x26, 0x41800000, 0x5B, 0x41444100, 0x00, 0x41444000, 0x00"/>
+
+    </Powerhint>
+</HintConfigs>
+

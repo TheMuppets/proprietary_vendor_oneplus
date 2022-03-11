@@ -1,0 +1,48 @@
+// @file sns_game_rv.proto
+//
+// Defines the API for Game Rotation Vector sensors
+//
+// Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "sns_std_sensor.proto";
+
+// A GameRV sensor reports the orientation of the device relative to an
+// unspecified coordinates frame. It is obtained by integration of
+// accelerometer and gyroscope readings. Therefore the Y axis doesn't point
+// north but instead to an arbitrary reference.
+//
+// ## GameRV sensor attributes:
+// 1. SNS_STD_SENSOR_ATTRID_TYPE is "game_rv"
+//
+// ## Request Message: sns_std_sensor_config
+// sns_std_sensor_config::sample_rate is used to specify the sampling rate (Hz)
+// of the GameRV sensor. Sensor will generate data events at this rate.
+//
+// ## Event Message: sns_std_sensor_event
+// Output of the GameRV sensor will be populated in sns_std_sensor_event
+//
+// The orientation is represented by the rotation necessary to align
+// the coordinate frame with the device's coordinates. That is,
+// applying the rotation to the world frame (X,Y,Z) would align them with
+// the device coordinates (x,y,z).
+//
+// The rotation can be seen as rotating the device by an angle theta around an
+// axis rot_axis to go from the reference device orientation to the current
+// device orientation. The rotation is encoded as the four unitless x, y, z, w
+// components of a unit quaternion:
+// sns_std_sensor_event::data[0] = rot_axis.x*sin(theta/2)
+// sns_std_sensor_event::data[1] = rot_axis.y*sin(theta/2)
+// sns_std_sensor_event::data[2] = rot_axis.z*sin(theta/2)
+// sns_std_sensor_event::data[3] = cos(theta/2)
+//
+// Where:
+// - the x, y and z fields of rot_axis are the East-North-Up coordinates
+// of a unit length vector representing the rotation axis
+// - theta is the rotation angle
+//
+// sns_std_sensor_event::status specifies the reliability of the sample value
+// value is of type sns_std_sensor_sample_status. see sns_std_sensor.proto for
+// details.
