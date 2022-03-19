@@ -24,4 +24,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/fajita/proprietary/vendor/lib64/fp_hal_extension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/fp_hal_extension.so \
     vendor/oneplus/fajita/proprietary/vendor/lib64/hw/goodix.fod.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/goodix.fod.sdm845.so \
     vendor/oneplus/fajita/proprietary/vendor/lib64/libgf_ud_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ud_hal.so \
-    vendor/oneplus/fajita/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so
+    vendor/oneplus/fajita/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
+    vendor/oneplus/fajita/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
+    vendor/oneplus/fajita/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_Codec_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_Codec_cal.acdb \
+    vendor/oneplus/fajita/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_General_cal.acdb \
+    vendor/oneplus/fajita/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_Global_cal.acdb \
+    vendor/oneplus/fajita/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_Handset_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_Handset_cal.acdb \
+    vendor/oneplus/fajita/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
+    vendor/oneplus/fajita/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_Headset_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
+    vendor/oneplus/fajita/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
+    vendor/oneplus/fajita/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_workspaceFile.qwsp:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
