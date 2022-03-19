@@ -26,4 +26,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/enchilada/proprietary/vendor/lib64/hw/fingerprint.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.qcom.so \
     vendor/oneplus/enchilada/proprietary/vendor/lib64/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ca.so \
     vendor/oneplus/enchilada/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
-    vendor/oneplus/enchilada/proprietary/vendor/lib64/libgoodixfingerprintd_binder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgoodixfingerprintd_binder.so
+    vendor/oneplus/enchilada/proprietary/vendor/lib64/libgoodixfingerprintd_binder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgoodixfingerprintd_binder.so \
+    vendor/oneplus/enchilada/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
+    vendor/oneplus/enchilada/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_Codec_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_Codec_cal.acdb \
+    vendor/oneplus/enchilada/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_General_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_General_cal.acdb \
+    vendor/oneplus/enchilada/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_Global_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_Global_cal.acdb \
+    vendor/oneplus/enchilada/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_Handset_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_Handset_cal.acdb \
+    vendor/oneplus/enchilada/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
+    vendor/oneplus/enchilada/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_Headset_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
+    vendor/oneplus/enchilada/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
+    vendor/oneplus/enchilada/proprietary/vendor/odm/etc/acdbdata/MTP/MTP_workspaceFile.qwsp:$(TARGET_COPY_OUT_ODM)/odm/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
