@@ -358,6 +358,61 @@ android_app_import {
 	system_ext_specific: true,
 }
 
+dex_import {
+	name: "audiosphere",
+	owner: "oneplus",
+	jars: ["proprietary/framework/audiosphere.jar"],
+}
+
+dex_import {
+	name: "qcnvitems",
+	owner: "oneplus",
+	jars: ["proprietary/product/framework/qcnvitems.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.alarm-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.sensorscalibrate-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qti.dpmframework",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "dpmapi",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qti-telephony-common",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
+	system_ext_specific: true,
+}
+
 prebuilt_etc_xml {
 	name: "vendor.qti.gnss@3.0-service",
 	owner: "oneplus",
