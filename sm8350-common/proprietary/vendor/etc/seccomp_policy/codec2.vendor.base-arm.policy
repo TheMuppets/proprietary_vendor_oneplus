@@ -1,4 +1,4 @@
-################################################################################################### 
+###################################################################################################
 # Copyright (c) 2020 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
@@ -34,7 +34,11 @@ memfd_create: 1
 ftruncate: 1
 ftruncate64: 1
 
-mremap: arg3 == 3
+#ifdef OPLUS_FEATURE_OSIE_SR
+#shumin.nie@MULTIMEDIA.MMSERVER.PLAYER, 2020/11/10, Add for OSIE and SR
+mremap: 1
+#endif /* OPLUS_FEATURE_OSIE_SR */
+
 munmap: 1
 prctl: 1
 getuid32: 1
@@ -87,3 +91,10 @@ geteuid32: 1
 getgid32: 1
 getegid32: 1
 getgroups32: 1
+
+#ifdef OPLUS_FEATURE_OSIE_SR
+#shumin.nie@MULTIMEDIA.MMSERVER.PLAYER, 2020/11/10, Add for OSIE and SR
+inotify_init1: 1
+inotify_add_watch: 1
+inotify_rm_watch: 1
+#endif /* OPLUS_FEATURE_OSIE_SR */

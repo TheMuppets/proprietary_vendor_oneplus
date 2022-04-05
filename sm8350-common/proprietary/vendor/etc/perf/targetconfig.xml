@@ -46,7 +46,7 @@
              Target="lahaina"
              NumClusters="3"
              TotalNumCores="8"
-             SocIds="415"
+             SocIds="415,439,456,501,502"
              SynCore="1"
              CoreCtlCpu="4"
              MinCoreOnline="0"
@@ -75,5 +75,23 @@
          <ClustersInfo Id="2" NumCores="1" Type="prime" />
 
     </Config2>
+
+    <Config3>
+         <TargetInfo
+             Target="yupik"
+             NumClusters="3"
+             TotalNumCores="8"
+             SocIds="475,499"
+             SynCore="1"
+             CoreCtlCpu="4"
+             MinCoreOnline="0"
+             CpufreqGov="1"
+             MinFpsForTuning="60" />
+
+         <ClustersInfo Id="0" NumCores="4" Type="little" />
+         <ClustersInfo Id="1" NumCores="3" Type="big" />
+         <ClustersInfo Id="2" NumCores="1" Type="prime" />
+
+    </Config3>
 
 </TargetConfig>

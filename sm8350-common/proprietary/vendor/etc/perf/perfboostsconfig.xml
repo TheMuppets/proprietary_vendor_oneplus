@@ -33,16 +33,13 @@
 
         <!-- Type="1", main launch boost of 2sec -->
         <Config
-            Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="lahaina"
+            Id="0x00001081" Type="1" Enable="false" Timeout="2000" Target="lahaina"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
                        0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x41818000, 0xFF,
                        0x41800000, 0xFF, 0x40400000, 0x1, 0x42C10000, 0x1, 0x43430100, 0x28C5,
-                       0x43400000, 0xFFFF, 0x43400000, 0xFFFF" />
+                       0x43400000, 0xFFFF, 0x4281C000, 2000" />
 
-        <!-- SCHED DOWNMIGRATE resource opcode, value-->
-        <!-- SCHED UPMIGRATE resource opcode, value-->
-        <!-- SCHED DOWNMIGRATE PRIME resource opcode, value-->
-        <!-- SCHED UPMIGRATE PRIME resource opcode, value-->
+        <!-- SCHEDBOOST resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
@@ -53,9 +50,13 @@
         <!-- Type="1", main launch boost of 2sec -->
        <Config
            Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="shima"
-           Resources="0x40C20000, 0x28, 0x40C1C000, 0x32, 0x40C20200, 0x28, 0x40C1C200, 0x32,
-                      0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF, 0x40800000, 1497,
-                      0x40800100, 1516, 0x40800200, 1766" />
+           Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+                      0x40800000, 1497, 0x40800100, 1516, 0x40800200, 1766" />
+
+       <Config
+           Id="0x00001081" Type="1" Enable="true" Timeout="2000" Target="yupik"
+           Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+                      0x40800000, 1497, 0x40800100, 1497, 0x40800200, 1766" />
 
     <!--app lauch boost (disabling packing)-->
 
@@ -73,7 +74,12 @@
 
         <!-- Type="2", launch boost for disable packing 1.5sec -->
        <Config
-           Id="0x00001081" Type="2" Enable="true" Timeout="1500" Target="shima"
+           Id="0x00001081" Type="2" Enable="false" Timeout="1500" Target="shima"
+           Resources="0x40400000, 0x1, 0x42C10000, 0x1, 0x43010000, 59,
+                      0x41828000, 806, 0x43400000, 0x2E80, 0x4281C000, 1500" />
+
+       <Config
+           Id="0x00001081" Type="2" Enable="true" Timeout="1500" Target="yupik"
            Resources="0x40400000, 0x1, 0x42C10000, 0x1, 0x43010000, 59,
                       0x41828000, 806, 0x43400000, 0x2E80, 0x4281C000, 1500" />
 
@@ -90,7 +96,7 @@
 
         <!-- Type="3", FA launch boost of 15sec -->
         <Config
-            Id="0x00001081" Type="3" Enable="true" Timeout="15000" Target="lahaina"
+            Id="0x00001081" Type="3" Enable="false" Timeout="15000" Target="lahaina"
             Resources="0x40C00000, 0x3, 0x40C58000, 0x2D, 0x40C54000, 0x41,
                       0x40C74000, 0xF0, 0x40408000, 0x63, 0x40C20000, 0x28,
                       0x40C1C000, 0x3C, 0x40C20200, 0x28, 0x40C1C200, 0x3C" />
@@ -103,7 +109,12 @@
 
         <!-- Type="3", FA launch boost of 15sec -->
        <Config
-           Id="0x00001081" Type="3" Enable="true" Timeout="15000" Target="shima"
+           Id="0x00001081" Type="3" Enable="false" Timeout="15000" Target="shima"
+          Resources="0x40C00000, 0x3, 0x40C58000, 85, 0x40C54000, 100, 0x40408000, 0x5,
+          0x40C74000, 0xF0" />
+
+       <Config
+           Id="0x00001081" Type="3" Enable="true" Timeout="15000" Target="yupik"
           Resources="0x40C00000, 0x3, 0x40C58000, 85, 0x40C54000, 100, 0x40408000, 0x5,
           0x40C74000, 0xF0" />
 
@@ -116,7 +127,12 @@
 
          <!-- Type="4", FA launch boost of 15sec -->
         <Config
-            Id="0x00001081" Type="4" Enable="true" Timeout="15000" Target="shima"
+            Id="0x00001081" Type="4" Enable="false" Timeout="15000" Target="shima"
+           Resources="0x40C00000, 0x3, 0x40C58000, 85, 0x40C54000, 100, 0x40408000, 0x5,
+           0x40C74000, 0xF0" />
+
+        <Config
+            Id="0x00001081" Type="4" Enable="true" Timeout="15000" Target="yupik"
            Resources="0x40C00000, 0x3, 0x40C58000, 85, 0x40C54000, 100, 0x40408000, 0x5,
            0x40C74000, 0xF0" />
 
@@ -140,7 +156,7 @@
 
         <!-- Type="6", FA launch boost of 2sec -->
         <Config
-            Id="0x00001081" Type="6" Enable="true" Timeout="2000" Target="lahaina"
+            Id="0x00001081" Type="6" Enable="false" Timeout="2000" Target="lahaina"
             Resources="0x40C00000, 0x1, 0x40C58000, 0x2D, 0x40C54000, 0x41,
                        0x40C74000, 0xF0, 0x40408000, 0x63, 0x40C20000, 0x28,
                        0x40C1C000, 0x3C, 0x40C20200, 0x28, 0x40C1C200, 0x3C,
@@ -162,7 +178,7 @@
 
         <!-- Type="6", Game Launch boost -->
         <Config
-            Id="0x00001081" Type="6" Enable="true" Timeout="2000" Target="shima"
+            Id="0x00001081" Type="6" Enable="false" Timeout="2000" Target="shima"
             Resources="0x40C68000, 60,
                        0x40C68010, 60,
                        0x40C68020, 60,
@@ -174,14 +190,31 @@
                        0x40408000, 0x63,
                        0x40C74000, 0xF0" />
 
+        <Config
+            Id="0x00001081" Type="6" Enable="true" Timeout="2000" Target="yupik"
+            Resources="0x40C68000, 60,
+                       0x40C68010, 60,
+                       0x40C68020, 60,
+                       0x40C68200, 60,
+                       0x40800000, 1228,
+                       0x40800200, 1324,
+                       0x41448000, 20000,
+                       0x41448200, 20000,
+                       0x40408000, 0x63,
+                       0x40C74000, 0xF0" />
+
     <!--app launch boost (attach application) -->
         <!-- SCHED_TASK_BOOST resource opcode, value-->
         <Config
-            Id="0x00001081" Type="103" Enable="true" Timeout="2000" Target="lahaina"
+            Id="0x00001081" Type="103" Enable="false" Timeout="2000" Target="lahaina"
             Resources="0x40C80000, 0x0" />
 
         <Config
-            Id="0x00001081" Type="103" Enable="true" Timeout="2000" Target="shima"
+            Id="0x00001081" Type="103" Enable="false" Timeout="2000" Target="shima"
+            Resources="0x40C80000, 0x0" />
+
+        <Config
+            Id="0x00001081" Type="103" Enable="true" Timeout="2000" Target="yupik"
             Resources="0x40C80000, 0x0" />
 
     <!--Animation boost -->
@@ -192,12 +225,17 @@
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
         <Config
-            Id="0x00001083" Enable="true" Timeout="400" Target="lahaina"
+            Id="0x00001083" Enable="false" Timeout="400" Target="lahaina"
             Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
-                       0x40800000, 0x7CC, 0x40800100, 0xFFF, 0x40800200, 0x94D" />
+                       0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF" />
 
        <Config
-           Id="0x00001083" Enable="true" Timeout="400" Target="shima"
+           Id="0x00001083" Enable="false" Timeout="400" Target="shima"
+           Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+                      0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF" />
+
+       <Config
+           Id="0x00001083" Enable="true" Timeout="400" Target="yupik"
            Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
                       0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF" />
 
@@ -217,53 +255,26 @@
         <!-- SCHED_PREFER_SPREAD resource opcode, value -->
 
         <!-- Type="1", Vertical Scroll boost -->
-        <!-- #ifdef /* VENDOR_EDIT */ -->
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="lahaina" Fps="60"
-            Resources="0x43000000, 0x11, 0x40800000, 1209, 0x40800100, 1000, 0x40800200, 1000,
-                       0x40C00000, 0x2, 0x43400000, 0x1770, 0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x40C1C000, 80, 0x40C1C200, 100, 0x40C20000, 70, 0x40C20200, 90,
-                       0x41444200, 0, 0x40C68200, -19, 0x40CA4000, 4, 0x41000000, 3" />
-        <Config
-            Id="0x00001080" Type="1" Enable="true" Target="lahaina" Fps="90"
-            Resources="0x43000000, 0x19, 0x40800000, 1209, 0x40800100, 1000, 0x40800200, 1000,
-                       0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x41000000, 3" />
-        <Config
-            Id="0x00001080" Type="1" Enable="true" Target="lahaina" Fps="120"
-            Resources="0x43000000, 0x11, 0x40800000, 1209, 0x40800100, 1000, 0x40800200, 1000,
-                       0x40C00000, 0x2, 0x43400000, 0x1770, 0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x40C1C000, 80, 0x40C1C200, 100, 0x40C20000, 70, 0x40C20200, 90,
-                       0x41444200, 0, 0x40C68200, -19, 0x40CA4000, 2, 0x41000000, 3" />
-		<Config
-            Id="0x00001080" Type="1" Enable="true" Target="lahaina" Fps="144"
-            Resources="0x43000000, 0x19, 0x40800000, 1209, 0x40800100, 1000, 0x40800200, 1000,
-                       0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x41000000, 3, 0x40CA8000, 0" />
-        <!--
-        #else
-        <Config
-            Id="0x00001080" Type="1" Enable="true" Target="lahaina" Fps="60"
+            Id="0x00001080" Type="1" Enable="false" Target="lahaina" Fps="60"
             Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3" />
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="lahaina" Fps="90"
+            Id="0x00001080" Type="1" Enable="false" Target="lahaina" Fps="90"
             Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3" />
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="lahaina" Fps="120"
+            Id="0x00001080" Type="1" Enable="false" Target="lahaina" Fps="120"
             Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0, 0x40CA8000, 4" />
+                       0x41000000, 3, 0x40CA8000, 4" />
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="lahaina" Fps="144"
+            Id="0x00001080" Type="1" Enable="false" Target="lahaina" Fps="144"
             Resources="0x43000000, 0x19, 0x40800000, 1300, 0x40800100, 1100, 0x40800200, 1300,
                        0x40C00000, 0x2, 0x43400000, 0x2AF8, 0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x41000000, 3, 0x40C78000, 0, 0x40C7C000, 0, 0x40CA8000, 4" />
-        #endif /* VENDOR_EDIT */
-        -->
+                       0x41000000, 3, 0x40CA8000, 4" />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
@@ -273,8 +284,13 @@
 
         <!-- Type="1", Vertical Scroll boost -->
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="shima" Fps="60"
+            Id="0x00001080" Type="1" Enable="false" Target="shima" Fps="60"
             Resources="0x43010000, 0x26, 0x40800000, 1209, 0x40800100, 1171, 0x40800200, 1094,
+                       0x40C00000, 2" />
+
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="yupik" Fps="60"
+            Resources="0x43010000, 0x26, 0x40800000, 1228, 0x40800100, 1152, 0x40800200, 1056,
                        0x40C00000, 2" />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
@@ -286,19 +302,63 @@
         <!-- LPM Bias resource opcode, value-->
 
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="shima" Fps="90"
+            Id="0x00001080" Type="1" Enable="false" Target="shima" Fps="90"
             Resources="0x43010000, 0x26, 0x40800000, 1651, 0x40800100, 1324, 0x40800200, 1766,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27" />
 
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="shima" Fps="120"
-            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
+            Id="0x00001080" Type="1" Enable="true" Target="yupik" Fps="90"
+            Resources="0x43010000, 0x26, 0x40800000, 1651, 0x40800100, 1324, 0x40800200, 1766,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27" />
 
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+        <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
+        <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
+        <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
+
         <Config
-            Id="0x00001080" Type="1" Enable="true" Target="shima" Fps="144"
+            Id="0x00001080" Type="1" Enable="true" Target="shima" Fps="120"
             Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
-                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27" />
+                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
+                       0x40C78000, 0, 0x40C7C000, 0" />
+
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="yupik" Fps="120"
+            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
+                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
+                       0x40C78000, 0, 0x40C7C000, 0" />
+
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+        <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
+        <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
+        <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
+        <!-- LLCBW_MIN_FREQ resource opcode, value-->
+        <!-- L3_MEMLAT_MIN_FREQ resource opcode, value -->
+
+        <Config
+            Id="0x00001080" Type="1" Enable="false" Target="shima" Fps="144"
+            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
+                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
+                       0x40C78000, 0, 0x40C7C000, 0, 0x43000000, 0x11, 0x43400000, 0x1F40" />
+
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="yupik" Fps="144"
+            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
+                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
+                       0x40C78000, 0, 0x40C7C000, 0, 0x43000000, 0x11, 0x43400000, 0x1F40" />
+
 
     <!--Horizontal Scroll boost-->
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
@@ -309,8 +369,13 @@
 
         <!-- Type="2", Horizontal Scroll boost -->
         <Config
-            Id="0x00001080" Type="2" Enable="true" Target="shima" Fps="60"
+            Id="0x00001080" Type="2" Enable="false" Target="shima" Fps="60"
             Resources="0x43010000, 0x26, 0x40800000, 1209, 0x40800100, 1171, 0x40800200, 1094,
+                       0x40C00000, 2" />
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="yupik" Fps="60"
+            Resources="0x43010000, 0x26, 0x40800000, 1228, 0x40800100, 1152, 0x40800200, 1056,
                        0x40C00000, 2" />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
@@ -322,19 +387,62 @@
         <!-- LPM Bias resource opcode, value-->
 
         <Config
-            Id="0x00001080" Type="2" Enable="true" Target="shima" Fps="90"
+            Id="0x00001080" Type="2" Enable="false" Target="shima" Fps="90"
             Resources="0x43010000, 0x26, 0x40800000, 1651, 0x40800100, 1324, 0x40800200, 1766,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27" />
 
         <Config
-            Id="0x00001080" Type="2" Enable="true" Target="shima" Fps="120"
-            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
+            Id="0x00001080" Type="2" Enable="true" Target="yupik" Fps="90"
+            Resources="0x43010000, 0x26, 0x40800000, 1651, 0x40800100, 1324, 0x40800200, 1766,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27" />
 
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+        <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
+        <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
+        <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
+
         <Config
-            Id="0x00001080" Type="2" Enable="true" Target="shima" Fps="144"
+            Id="0x00001080" Type="2" Enable="true" Target="shima" Fps="120"
             Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
-                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27" />
+                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
+                       0x40C78000, 0, 0x40C7C000, 0" />
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="yupik" Fps="120"
+            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
+                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
+                       0x40C78000, 0, 0x40C7C000, 0" />
+
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+        <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
+        <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
+        <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
+        <!-- LLCBW_MIN_FREQ resource opcode, value-->
+        <!-- L3_MEMLAT_MIN_FREQ resource opcode, value -->
+
+        <Config
+            Id="0x00001080" Type="2" Enable="false" Target="shima" Fps="144"
+            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
+                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
+                       0x40C78000, 0, 0x40C7C000, 0, 0x43000000, 0x11, 0x43400000, 0x1F40" />
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="yupik" Fps="144"
+            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
+                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
+                       0x40C78000, 0, 0x40C7C000, 0, 0x43000000, 0x11, 0x43400000, 0x1F40" />
 
     <!--Prefling Scroll boost-->
         <!-- LLCBW_MIN_FREQ resource opcode, value-->
@@ -353,25 +461,25 @@
         <!-- TIMEOUT 80ms -->
         <!-- Type="4", Prefling boost -->
         <Config
-            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="lahaina" Fps="60"
+            Id="0x00001080" Type="4" Enable="false" Timeout="80" Target="lahaina" Fps="60"
             Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3" />
         <Config
-            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="lahaina" Fps="90"
+            Id="0x00001080" Type="4" Enable="false" Timeout="80" Target="lahaina" Fps="90"
             Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3" />
         <Config
-            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="lahaina" Fps="120"
+            Id="0x00001080" Type="4" Enable="false" Timeout="80" Target="lahaina" Fps="120"
             Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x41000000, 3, 0x40CA8000, 0" />
+                       0x41000000, 3, 0x40CA8000, 4" />
         <Config
-            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="lahaina" Fps="144"
-            Resources="0x43000000, 0x19, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
-                       0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x41000000, 3, 0x40CA8000, 0" />
+            Id="0x00001080" Type="4" Enable="false" Timeout="80" Target="lahaina" Fps="144"
+            Resources="0x43000000, 0x19, 0x40800000, 1300, 0x40800100, 1100, 0x40800200, 1300,
+                       0x40C00000, 0x2, 0x43400000, 0x2AF8, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3, 0x40CA8000, 4" />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
@@ -381,8 +489,13 @@
 
         <!-- Type="4", Pre-Fling boost -->
         <Config
-            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="shima" Fps="60"
+            Id="0x00001080" Type="4" Enable="false" Timeout="80" Target="shima" Fps="60"
             Resources="0x43010000, 0x26, 0x40800000, 1209, 0x40800100, 1171, 0x40800200, 1094,
+                       0x40C00000, 2" />
+
+        <Config
+            Id="0x00001080" Type="4" Enable="true" Timeout="80" Target="yupik" Fps="60"
+            Resources="0x43010000, 0x26, 0x40800000, 1228, 0x40800100, 1152, 0x40800200, 1056,
                        0x40C00000, 2" />
 
         <!-- CPUBW_MIN_FREQ resource opcode, value-->
@@ -394,19 +507,63 @@
         <!-- LPM Bias resource opcode, value-->
 
         <Config
-            Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="shima" Fps="90"
+            Id="0x00001080" Type="4" Enable="false" Timeout="115" Target="shima" Fps="90"
             Resources="0x43010000, 0x26, 0x40800000, 1651, 0x40800100, 1324, 0x40800200, 1766,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27" />
 
         <Config
-            Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="shima" Fps="120"
-            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
+            Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="yupik" Fps="90"
+            Resources="0x43010000, 0x26, 0x40800000, 1651, 0x40800100, 1324, 0x40800200, 1766,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27" />
 
+
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+        <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
+        <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
+        <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
+
         <Config
-            Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="shima" Fps="144"
+            Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="shima" Fps="120"
             Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
-                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27" />
+                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
+                       0x40C78000, 0, 0x40C7C000, 0" />
+
+        <Config
+            Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="yupik" Fps="120"
+            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
+                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
+                       0x40C78000, 0, 0x40C7C000, 0" />
+
+        <!-- CPUBW_MIN_FREQ resource opcode, value-->
+        <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
+        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value -->
+        <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM Bias resource opcode, value-->
+        <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
+        <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
+        <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
+        <!-- LLCBW_MIN_FREQ resource opcode, value-->
+        <!-- L3_MEMLAT_MIN_FREQ resource opcode, value -->
+
+        <Config
+            Id="0x00001080" Type="4" Enable="false" Timeout="115" Target="shima" Fps="144"
+            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
+                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
+                       0x40C78000, 0, 0x40C7C000, 0, 0x43000000, 0x11, 0x43400000, 0x1F40" />
+
+        <Config
+            Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="yupik" Fps="144"
+            Resources="0x43010000, 0x26, 0x40800000, 1900, 0x40800100, 1516, 0x40800200, 1862,
+                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
+                       0x40C78000, 0, 0x40C7C000, 0, 0x43000000, 0x11, 0x43400000, 0x1F40" />
 
     <!--MTP boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -417,7 +574,7 @@
 
         <!-- Type="", MTP boost -->
         <Config
-            Id="0x00001086" Enable="true" Target="lahaina"
+            Id="0x00001086" Enable="false" Target="lahaina"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40800000, 1800,
                        0x40800100, 1400" />
 
@@ -432,9 +589,14 @@
 
         <!-- Type="", MTP boost -->
         <Config
-            Id="0x00001086" Enable="true" Target="shima"
+            Id="0x00001086" Enable="false" Target="shima"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
                        0x40800000, 1497, 0x40800100, 1324, 0x40800200, 1766, 0x42C10000, 0x1" />
+
+        <Config
+            Id="0x00001086" Enable="true" Target="yupik"
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+                       0x40800000, 1516, 0x40800100, 1324, 0x40800200, 1766, 0x42C10000, 0x1" />
 
     <!--Drag boost-->
         <!-- LLCBW_MIN_FREQ resource opcode, value-->
@@ -452,27 +614,24 @@
         <!-- SCHED_PREFER_SPREAD resource opcode, value -->
         <!-- Type="1", Drag boost -->
         <Config
-            Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="lahaina" Fps="60"
-            Resources="0x43000000, 0x11, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
-                       0x40C00000, 0x2, 0x43400000, 0x1770, 0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x40C1C000, 80, 0x40C1C200, 100, 0x40C20000, 70, 0x40C20200, 90, 0x41444200,
-                       0, 0x40C68200, -19, 0x40CA4000, 4, 0x41000000, 3" />
-        <Config
-            Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="lahaina" Fps="90"
+            Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="lahaina" Fps="60"
             Resources="0x43000000, 0x11, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3" />
         <Config
-            Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="lahaina" Fps="120"
-            Resources="0x43000000, 0x11, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
-                       0x40C00000, 0x2, 0x43400000, 0x1770, 0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x40C1C000, 80, 0x40C1C200, 100, 0x40C20000, 70, 0x40C20200, 90,
-                       0x41444200, 0, 0x40C68200, -19, 0x40CA4000, 2, 0x41000000, 3" />
-
-		<Config
-            Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="lahaina" Fps="144"
+            Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="lahaina" Fps="90"
             Resources="0x43000000, 0x11, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
                        0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3" />
+        <Config
+            Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="lahaina" Fps="120"
+            Resources="0x43000000, 0x11, 0x40800000, 1000, 0x40800100, 1000, 0x40800200, 1000,
+                       0x40C00000, 0x2, 0x43400000, 0x1F40, 0x40C74000, 0xFF, 0x40408000, 0x63,
+                       0x41000000, 3, 0x40CA8000, 4" />
+        <Config
+            Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="lahaina" Fps="144"
+            Resources="0x43000000, 0x11, 0x40800000, 1300, 0x40800100, 1100, 0x40800200, 1300,
+                       0x40C00000, 0x2, 0x43400000, 0x2AF8, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 3, 0x40CA8000, 4" />
 
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
@@ -481,20 +640,38 @@
 
          <!-- Type="1", Drag boost -->
          <Config
-             Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="shima"
+             Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="shima"
              Resources="0x40800000, 1209, 0x40800100, 1171, 0x40800200, 1094" />
+
+         <Config
+             Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="yupik"
+             Resources="0x40800000, 1228, 0x40800100, 1152, 0x40800200, 1056" />
 
         <!-- CPUBOOST_MIN_FREQ BIG CORE resource opcode, value -->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value -->
         <!-- CPUBOOST_MIN_FREQ PRIME CORE resource opcode, value -->
         <!-- SCHEDBOOST resource opcode, value-->
+        <!-- LLCBW_MIN_FREQ resource opcode, value-->
+        <!-- L3_MEMLAT_MIN_FREQ resource opcode, value -->
          <Config
              Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="shima" Fps="120"
-             Resources="0x40800000, 1209, 0x40800100, 1171, 0x40800200, 1094, 0x40C00000, 2" />
+             Resources="0x40800000, 1209, 0x40800100, 1171, 0x40800200, 1094, 0x40C00000, 2,
+                        0x43000000, 0x11, 0x43400000, 0x1F40" />
 
          <Config
              Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="shima" Fps="144"
-             Resources="0x40800000, 1209, 0x40800100, 1171, 0x40800200, 1094, 0x40C00000, 2" />
+             Resources="0x40800000, 1209, 0x40800100, 1171, 0x40800200, 1094, 0x40C00000, 2,
+                        0x43000000, 0x11, 0x43400000, 0x2AF8" />
+
+         <Config
+             Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="yupik" Fps="120"
+             Resources="0x40800000, 1228, 0x40800100, 1152, 0x40800200, 1056, 0x40C00000, 2,
+                        0x43000000, 0x11, 0x43400000, 0x1F40" />
+
+         <Config
+             Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="yupik" Fps="144"
+             Resources="0x40800000, 1228, 0x40800100, 1152, 0x40800200, 1056, 0x40C00000, 2,
+                        0x43000000, 0x11, 0x43400000, 0x2AF8" />
 
     <!--PackageInstall boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -505,12 +682,14 @@
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
         <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
         <!-- SCHED_SYNC_HINT_ENABLE resource opcode, value-->
+        <!-- SCHED_FORCE_LB_ENABLE resource opcode, value-->
         <!-- Type="", Package Install boost -->
 
         <Config
-            Id="0x00001088" Enable="true" Target="lahaina"
+            Id="0x00001088" Enable="false" Target="lahaina"
             Resources="0x40C00000, 0x2, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
-                       0x40800000,0xFFF, 0x40800100,0xFFF, 0x40800200, 0xFFF, 0x40CA0000, 0" />
+                       0x40800000,0xFFF, 0x40800100,0xFFF, 0x40800200, 0xFFF, 0x40CA0000, 0,
+                       0x40CCC000, 0" />
 
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ LITTLE Core resource opcode, value-->
@@ -520,11 +699,19 @@
         <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
         <!-- SCHED_SYNC_HINT_ENABLE resource opcode, value-->
         <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED_FORCE_LB_ENABLE resource opcode, value-->
         <!-- Type="", Package Install boost -->
         <Config
-            Id="0x00001088" Enable="true" Target="shima"
+            Id="0x00001088" Enable="false" Target="shima"
             Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF, 0x40800000, 0xFFF,
-                       0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x40CA0000, 0, 0x40C00000, 2" />
+                       0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x40CA0000, 0, 0x40C00000, 2,
+                       0x40CCC000, 0" />
+
+        <Config
+            Id="0x00001088" Enable="true" Target="yupik"
+            Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF, 0x40800000, 0xFFF,
+                       0x40800100, 0xFFF, 0x40800200, 0xFFF, 0x40CA0000, 0, 0x40C00000, 2,
+                       0x40CCC000, 0" />
 
     <!--Rotation latency boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -537,26 +724,35 @@
         <!-- Type="", Rotation latency boost -->
 
         <Config
-            Id="0x00001089" Enable="true" Timeout="1500" Target="lahaina"
+            Id="0x00001089" Enable="false" Timeout="1500" Target="lahaina"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
                        0x40800000,0xFFF, 0x40800100,0xFFF, 0x40800200,0xFFF" />
 
         <Config
-            Id="0x00001089" Enable="true" Timeout="1500" Target="shima"
+            Id="0x00001089" Enable="false" Timeout="1500" Target="shima"
+            Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
+                       0x40800000,0xFFF, 0x40800100,0xFFF, 0x40800200,0xFFF" />
+
+        <Config
+            Id="0x00001089" Enable="true" Timeout="1500" Target="yupik"
             Resources="0x40C00000, 0x1, 0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
                        0x40800000,0xFFF, 0x40800100,0xFFF, 0x40800200,0xFFF" />
 
     <!--Rotation animation boost-->
         <!-- CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
-        <!-- GPU MIN_FREQUENCY resource opcode,value-->
+        <!-- GPU_MIN_POWER_LEVEL resource opcode,value-->
         <!-- Type="", Rotation animation boost -->
 
         <Config
-            Id="0x00001090" Enable="true" Timeout="1000" Target="lahaina"
+            Id="0x00001090" Enable="false" Timeout="1000" Target="lahaina"
             Resources="0x40800100, 1000, 0x42804000, 0" />
 
         <Config
-            Id="0x00001090" Enable="true" Timeout="1000" Target="shima"
+            Id="0x00001090" Enable="false" Timeout="1000" Target="shima"
+            Resources="0x40800100, 1324, 0x42804000, 0" />
+
+        <Config
+            Id="0x00001090" Enable="true" Timeout="1000" Target="yupik"
             Resources="0x40800100, 1324, 0x42804000, 0" />
 
     <!--Performance mode-->
@@ -567,11 +763,13 @@
         <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
         <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
         <!-- LPM_BIAS_HYST resource opcode, value-->
+        <!-- DISABLE_PASR, value-->
+        <!-- SCHED_PREFER_SPREAD resource opcode, value -->
         <!-- Type="", Performance mode -->
         <Config
             Id="0x00001091" Enable="true" Target="lahaina"
-            Resources="0x40CAC000, 20, 0x40CA4000, 2, 0x40800000, 1555, 0x40800100, 691, 0x40800200, 1670,
-                       0x40C74000, 0xFF, 0x40408000, 0x63, 0x42C1C000, 1" />
+            Resources="0x40CAC000, 20, 0x40CA4000, 2, 0x40800000, 1555, 0x40800100, 800, 0x40800200, 1670,
+                       0x40C74000, 0xFF, 0x40408000, 0x63, 0x42C1C000, 1, 0x40CA8000, 3" />
 
     <!--Display on Resource -->
         <!-- Display on resource opcode, value -->
@@ -581,6 +779,10 @@
 
         <Config
                 Id="0x00001041" Enable="false" Timeout="0" Target="shima"
+                Resources="0x40000000, 1" />
+
+        <Config
+                Id="0x00001041" Enable="true" Timeout="0" Target="yupik"
                 Resources="0x40000000, 1" />
 
     <!--Display off Resource -->
@@ -593,6 +795,10 @@
                 Id="0x00001040" Enable="false" Timeout="0" Target="shima"
                 Resources="0x40000000, 0x0" />
 
+        <Config
+                Id="0x00001040" Enable="true" Timeout="0" Target="yupik"
+                Resources="0x40000000, 0x0" />
+
     <!--FPS Update from Framework-->
         <!-- SCHED_WINDOW_TICKS_UPDATE resource opcode, value -->
         <!-- Below additional resources for 120fps, 144fps-->
@@ -603,36 +809,37 @@
         <!-- Type indicates FPS -->
         <!-- 30fps -->
         <Config
-            Id="0x00001094" Type="30" Enable="true" Target="lahaina" Timeout="0"
+            Id="0x00001094" Type="30" Enable="false" Target="lahaina" Timeout="0"
             Resources="0x40CA4000, 8" />
         <!-- 45fps -->
         <Config
-            Id="0x00001094" Type="45" Enable="true" Target="lahaina" Timeout="0"
+            Id="0x00001094" Type="45" Enable="false" Target="lahaina" Timeout="0"
             Resources="0x40CA4000, 5" />
         <!-- 60fps -->
         <Config
-            Id="0x00001094" Type="60" Enable="true" Target="lahaina" Timeout="0"
+            Id="0x00001094" Type="60" Enable="false" Target="lahaina" Timeout="0"
             Resources="0x40CA4000, 4" />
         <!-- 90fps -->
         <Config
-            Id="0x00001094" Type="90" Enable="true" Target="lahaina" Timeout="0"
+            Id="0x00001094" Type="90" Enable="false" Target="lahaina" Timeout="0"
             Resources="0x40CA4000, 3" />
         <!-- 120fps -->
         <Config
             Id="0x00001094" Type="120" Enable="true" Target="lahaina" Timeout="0"
-            Resources="0x40CA4000, 2, 0x40CA8000, 3, 0x40C74000, 15, 0x40408000, 3" />
+            Resources="0x40CA4000, 2, 0x40CA8000, 3, 0x40C74000, 15, 0x40408000, 3,
+                       0x40CC8000, 119" />
         <!-- 144fps -->
         <Config
-            Id="0x00001094" Type="144" Enable="true" Target="lahaina" Timeout="0"
+            Id="0x00001094" Type="144" Enable="false" Target="lahaina" Timeout="0"
             Resources="0x40CA4000, 2, 0x40CA8000, 3, 0x40C74000, 15, 0x40408000, 3,
-                       0x40800100, 800" />
+                       0x40800100, 800, 0x40CC8000, 119" />
         <!-- 180fps -->
         <Config
-            Id="0x00001094" Type="180" Enable="true" Target="lahaina" Timeout="0"
+            Id="0x00001094" Type="180" Enable="false" Target="lahaina" Timeout="0"
             Resources="0x40CA4000, 2" />
         <!-- 240fps -->
         <Config
-            Id="0x00001094" Type="240" Enable="true" Target="lahaina" Timeout="0"
+            Id="0x00001094" Type="240" Enable="false" Target="lahaina" Timeout="0"
             Resources="0x40CA4000, 2" />
 
         <!--FPS Immediate Update from within Perfd-->
@@ -645,64 +852,104 @@
         <!-- Type indicates FPS -->
         <!-- 30fps -->
         <Config
-            Id="0x0000109B" Type="30" Enable="true" Target="lahaina" Timeout="0"
+            Id="0x0000109B" Type="30" Enable="false" Target="lahaina" Timeout="0"
             Resources="0x40CA4000, 8" />
         <!-- 45fps -->
         <Config
-            Id="0x0000109B" Type="45" Enable="true" Target="lahaina" Timeout="0"
+            Id="0x0000109B" Type="45" Enable="false" Target="lahaina" Timeout="0"
             Resources="0x40CA4000, 5" />
         <!-- 60fps -->
         <Config
-            Id="0x0000109B" Type="60" Enable="true" Target="lahaina" Timeout="0"
+            Id="0x0000109B" Type="60" Enable="false" Target="lahaina" Timeout="0"
             Resources="0x40CA4000, 4" />
         <!-- 90fps -->
         <Config
-            Id="0x0000109B" Type="90" Enable="true" Target="lahaina" Timeout="0"
+            Id="0x0000109B" Type="90" Enable="false" Target="lahaina" Timeout="0"
             Resources="0x40CA4000, 3" />
         <!-- 120fps -->
         <Config
-            Id="0x0000109B" Type="120" Enable="true" Target="lahaina" Timeout="0"
+            Id="0x0000109B" Type="120" Enable="false" Target="lahaina" Timeout="0"
             Resources="0x40CA4000, 2, 0x40CA8000, 3, 0x40C74000, 15, 0x40408000, 3" />
         <!-- 144fps -->
         <Config
-            Id="0x0000109B" Type="144" Enable="true" Target="lahaina" Timeout="0"
+            Id="0x0000109B" Type="144" Enable="false" Target="lahaina" Timeout="0"
             Resources="0x40CA4000, 2, 0x40CA8000, 3, 0x40C74000, 15, 0x40408000, 3,
                        0x40800100, 800" />
         <!-- 180fps -->
         <Config
-            Id="0x0000109B" Type="180" Enable="true" Target="lahaina" Timeout="0"
+            Id="0x0000109B" Type="180" Enable="false" Target="lahaina" Timeout="0"
             Resources="0x40CA4000, 2" />
         <!-- 240fps -->
         <Config
-            Id="0x0000109B" Type="240" Enable="true" Target="lahaina" Timeout="0"
+            Id="0x0000109B" Type="240" Enable="false" Target="lahaina" Timeout="0"
             Resources="0x40CA4000, 2" />
 
-        <!-- 30fps -->
-        <Config
-            Id="0x0000109B" Type="30" Enable="true" Target="shima" Timeout="0"
-            Resources="0x40CA4000, 8" />
-        <!-- 45fps -->
-        <Config
-            Id="0x0000109B" Type="45" Enable="true" Target="shima" Timeout="0"
-            Resources="0x40CA4000, 5" />
-        <!-- 60fps -->
-        <Config
-            Id="0x0000109B" Type="60" Enable="true" Target="shima" Timeout="0"
-            Resources="0x40CA4000, 4" />
-        <!-- 90fps -->
-        <Config
-            Id="0x0000109B" Type="90" Enable="true" Target="shima" Timeout="0"
-            Resources="0x40CA4000, 3" />
-        <!-- 120fps -->>
-        <Config
-            Id="0x0000109B" Type="120" Enable="true" Target="shima" Timeout="0"
-            Resources="0x40CA4000, 2, 0x40CA8000, 3, 0x40C74000, 15, 0x40408000, 3,
-                       0x40800100, 700" />
-        <!-- 144fps -->
-        <Config
-            Id="0x0000109B" Type="144" Enable="true" Target="shima" Timeout="0"
-            Resources="0x40CA4000, 2, 0x40CA8000, 3, 0x40C74000, 15, 0x40408000, 3,
-                       0x40800100, 700" />
+        <!-- FPS Immediate Update from within Perfd Shima, yupik-->
+          <!-- PREDECITIVE_LOAD BIG CORE resource opcode, value -->
+          <!-- PREDECITIVE_LOAD LITTLE Core resource opcode, value -->
+          <!-- PREDECITIVE_LOAD PRIME CORE resource opcode, value -->
+          <!-- SCHED_PREFER_SPREAD resource opcode, value -->
+          <!-- SCHED_WINDOW_TICKS_UPDATE resource opcode, value -->
+
+         <!-- Type="60" -->
+         <Config
+                Id="0x0000109B" Type="60" Enable="true" Target="shima" Timeout="0"
+                Resources="0x41444000, 0, 0x41444100, 0, 0x41444200, 0, 0x40CA8000, 0, 0x40CA4000, 5" />
+
+         <Config
+                Id="0x0000109B" Type="60" Enable="true" Target="yupik" Timeout="0"
+                Resources="0x41444000, 0, 0x41444100, 0, 0x41444200, 0, 0x40CA8000, 0, 0x40CA4000, 5" />
+
+         <!-- Type="90" -->
+         <Config
+                Id="0x0000109B" Type="90" Enable="true" Target="shima" Timeout="0"
+                Resources="0x41444000, 1, 0x41444100, 1, 0x41444200, 1, 0x40CA8000, 2, 0x40CA4000, 3" />
+
+         <Config
+                Id="0x0000109B" Type="90" Enable="true" Target="yupik" Timeout="0"
+                Resources="0x41444000, 1, 0x41444100, 1, 0x41444200, 1, 0x40CA8000, 2, 0x40CA4000, 3" />
+
+         <!-- WALT_RTG_CFS_BOOST_PRIO resource opcode, value -->
+         <!-- WALT_LOW_LATENCY_TASK_THRESHOLD resource opcode, value -->
+
+         <!-- Type="120" -->
+         <Config
+                Id="0x0000109B" Type="120" Enable="true" Target="shima" Timeout="0"
+                Resources="0x41444000, 1, 0x41444100, 1, 0x41444200, 1, 0x40CA8000, 2, 0x40CA4000, 2,
+                           0x40CC8000, 119, 0x40CD8000, 100" />
+
+         <Config
+                Id="0x0000109B" Type="120" Enable="true" Target="yupik" Timeout="0"
+                Resources="0x41444000, 1, 0x41444100, 1, 0x41444200, 1, 0x40CA8000, 2, 0x40CA4000, 2,
+                           0x40CC8000, 119, 0x40CD8000, 100" />
+
+         <!-- SLB_BIG_0, val-->
+         <!-- SLB_BIG_1, val-->
+         <!-- SLB_BIG_2, val-->
+         <!-- SLB_PRIME, val-->
+         <!-- WALT_RTG_CFS_BOOST_PRIO resource opcode, value -->
+         <!-- SCHED_COLOC_DOWNMIGRATE_NS resource opcode, value -->
+         <!-- WALT_LOW_LATENCY_TASK_THRESHOLD resource opcode, value -->
+         <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
+         <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
+         <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
+         <!-- CPU min freq resource opcode, value -->
+         <!-- SCHED_BUSY_HYSTERESIS_ENABLE_COLOC_CPUS opcode, value -->
+
+         <!-- Type="144" -->
+         <Config
+                Id="0x0000109B" Type="144" Enable="true" Target="shima" Timeout="0"
+                Resources="0x41444000, 1, 0x41444100, 1, 0x41444200, 1, 0x40CA8000, 2, 0x40CA4000, 2,
+                           0x40C68000, 0, 0x40C68010, 0, 0x40C68020, 0, 0x40C68200, 0, 0x40CC8000, 119,
+                           0x40C8C000, 100000000, 0x40CD8000, 100, 0x41000000, 3, 0x40C78000, 0,
+                           0x40C7C000, 0, 0x40800100, 806, 0x40C90000, 0x70" />
+
+         <Config
+                Id="0x0000109B" Type="144" Enable="true" Target="yupik" Timeout="0"
+                Resources="0x41444000, 1, 0x41444100, 1, 0x41444200, 1, 0x40CA8000, 2, 0x40CA4000, 2,
+                           0x40C68000, 0, 0x40C68010, 0, 0x40C68020, 0, 0x40C68200, 0, 0x40CC8000, 119,
+                           0x40C8C000, 100000000, 0x40CD8000, 100, 0x41000000, 3, 0x40C78000, 0,
+                           0x40C7C000, 0, 0x40800100, 806, 0x40C90000, 0x70" />
 
          <!-- PREDECITIVE_LOAD BIG CORE resource opcode, value -->
          <!-- PREDECITIVE_LOAD LITTLE Core resource opcode, value -->
@@ -712,21 +959,35 @@
 
          <!-- Type="60" -->
          <Config
-                Id="0x00001094" Type="60" Enable="true" Target="shima" Timeout="0"
+                Id="0x00001094" Type="60" Enable="false" Target="shima" Timeout="0"
+                Resources="0x41444000, 0, 0x41444100, 0, 0x41444200, 0, 0x40CA8000, 0, 0x40CA4000, 5" />
+
+         <Config
+                Id="0x00001094" Type="60" Enable="true" Target="yupik" Timeout="0"
                 Resources="0x41444000, 0, 0x41444100, 0, 0x41444200, 0, 0x40CA8000, 0, 0x40CA4000, 5" />
 
          <!-- Type="90" -->
          <Config
-                Id="0x00001094" Type="90" Enable="true" Target="shima" Timeout="0"
+                Id="0x00001094" Type="90" Enable="false" Target="shima" Timeout="0"
+                Resources="0x41444000, 1, 0x41444100, 1, 0x41444200, 1, 0x40CA8000, 2, 0x40CA4000, 3" />
+
+         <Config
+                Id="0x00001094" Type="90" Enable="true" Target="yupik" Timeout="0"
                 Resources="0x41444000, 1, 0x41444100, 1, 0x41444200, 1, 0x40CA8000, 2, 0x40CA4000, 3" />
 
          <!-- WALT_RTG_CFS_BOOST_PRIO resource opcode, value -->
+         <!-- WALT_LOW_LATENCY_TASK_THRESHOLD resource opcode, value -->
 
          <!-- Type="120" -->
          <Config
-                Id="0x00001094" Type="120" Enable="true" Target="shima" Timeout="0"
+                Id="0x00001094" Type="120" Enable="false" Target="shima" Timeout="0"
                 Resources="0x41444000, 1, 0x41444100, 1, 0x41444200, 1, 0x40CA8000, 2, 0x40CA4000, 2,
-                           0x40CC8000, 119" />
+                           0x40CC8000, 119, 0x40CD8000, 100" />
+
+         <Config
+                Id="0x00001094" Type="120" Enable="true" Target="yupik" Timeout="0"
+                Resources="0x41444000, 1, 0x41444100, 1, 0x41444200, 1, 0x40CA8000, 2, 0x40CA4000, 2,
+                           0x40CC8000, 119, 0x40CD8000, 100" />
 
          <!-- SLB_BIG_0, val-->
          <!-- SLB_BIG_1, val-->
@@ -734,44 +995,94 @@
          <!-- SLB_PRIME, val-->
          <!-- WALT_RTG_CFS_BOOST_PRIO resource opcode, value -->
          <!-- SCHED_COLOC_DOWNMIGRATE_NS resource opcode, value -->
+         <!-- WALT_LOW_LATENCY_TASK_THRESHOLD resource opcode, value -->
+         <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
+         <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
+         <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
+         <!-- CPU min freq resource opcode, value -->
+         <!-- SCHED_BUSY_HYSTERESIS_ENABLE_COLOC_CPUS opcode, value -->
 
          <!-- Type="144" -->
          <Config
-                Id="0x00001094" Type="144" Enable="true" Target="shima" Timeout="0"
+                Id="0x00001094" Type="144" Enable="false" Target="shima" Timeout="0"
                 Resources="0x41444000, 1, 0x41444100, 1, 0x41444200, 1, 0x40CA8000, 2, 0x40CA4000, 2,
                            0x40C68000, 0, 0x40C68010, 0, 0x40C68020, 0, 0x40C68200, 0, 0x40CC8000, 119,
-                           0x40C8C000, 100000000" />
+                           0x40C8C000, 100000000, 0x40CD8000, 100, 0x41000000, 3, 0x40C78000, 0,
+                           0x40C7C000, 0, 0x40800100, 806, 0x40C90000, 0x70"/>
+
+         <Config
+                Id="0x00001094" Type="144" Enable="true" Target="yupik" Timeout="0"
+                Resources="0x41444000, 1, 0x41444100, 1, 0x41444200, 1, 0x40CA8000, 2, 0x40CA4000, 2,
+                           0x40C68000, 0, 0x40C68010, 0, 0x40C68020, 0, 0x40C68200, 0, 0x40CC8000, 119,
+                           0x40C8C000, 100000000, 0x40CD8000, 100, 0x41000000, 3, 0x40C78000, 0,
+                           0x40C7C000, 0, 0x40800100, 806, 0x40C90000, 0x70"/>
 
     <!-- PiCard Early Wakeup both GPU and Display -->
         <!-- GPU DISABLE resource opcode, value-->
         <!-- DISPLAY EARLY WAKEUP opcode, value-->
         <Config
-                Id="0x00001096" Type="0" Enable="true" Target="lahaina" Timeout="2000"
+                Id="0x00001098" Type="0" Enable="true" Target="lahaina" Timeout="2000"
                 Resources="0x4281C000, 32, 0x41C0C000, 0" />
 
         <Config
-                Id="0x00001096" Type="0" Enable="true" Target="shima" Timeout="2000"
+                Id="0x00001098" Type="0" Enable="true" Target="shima" Timeout="2000"
+                Resources="0x4281C000, 32, 0x41C0C000, 0" />
+
+        <Config
+                Id="0x00001098" Type="0" Enable="true" Target="yupik" Timeout="2000"
                 Resources="0x4281C000, 32, 0x41C0C000, 0" />
 
     <!-- PiCard Early Wakeup GPU only -->
         <!-- GPU DISABLE resource opcode, value-->
         <Config
-                Id="0x00001097" Type="0" Enable="true" Target="lahaina" Timeout="2000"
+                Id="0x00001099" Type="0" Enable="true" Target="lahaina" Timeout="2000"
                 Resources="0x4281C000, 32" />
 
         <Config
-                Id="0x00001097" Type="0" Enable="true" Target="shima" Timeout="2000"
+                Id="0x00001099" Type="0" Enable="true" Target="shima" Timeout="2000"
+                Resources="0x4281C000, 32" />
+
+        <Config
+                Id="0x00001099" Type="0" Enable="true" Target="yupik" Timeout="2000"
                 Resources="0x4281C000, 32" />
 
     <!-- PiCard Early Wakeup Display only -->
         <!-- DISPLAY EARLY WAKEUP opcode, value-->
         <Config
-                Id="0x00001098" Type="0" Enable="true" Target="lahaina" Timeout="2000"
+                Id="0x0000109A" Type="0" Enable="true" Target="lahaina" Timeout="2000"
                 Resources="0x41C0C000, 0" />
 
         <Config
-                Id="0x00001098" Type="0" Enable="true" Target="shima" Timeout="2000"
+                Id="0x0000109A" Type="0" Enable="true" Target="shima" Timeout="2000"
                 Resources="0x41C0C000, 0" />
+
+        <Config
+                Id="0x0000109A" Type="0" Enable="true" Target="yupik" Timeout="2000"
+                Resources="0x41C0C000, 0" />
+
+    <!--Large Comp HInt -->
+        <!-- CPU min freq resource opcode, value -->
+        <!-- GPU MIN_FREQUENCY resource opcode,value -->
+        <!-- PID Affine opcode,value -->
+        <Config
+                Id="0x00001097" Type="0" Enable="true" Timeout="7" Target="shima" Fps="144"
+                Resources="0x40800000, 1500, 0x42804000, 0, 0x42C20000, 1" />
+
+        <Config
+                Id="0x00001097" Type="0" Enable="true" Timeout="7" Target="yupik" Fps="144"
+                Resources="0x40800000, 1500, 0x42804000, 0, 0x42C20000, 1" />
+
+    <!--Large Comp HInt -->
+        <!-- CPU min freq resource opcode, value -->
+        <!-- GPU MIN_FREQUENCY resource opcode,value -->
+        <!-- PID Affine opcode,value -->
+        <Config
+                Id="0x00001097" Type="0" Enable="true" Timeout="9" Target="lahaina" Fps="120"
+                Resources="0x40800000, 1500, 0x42804000, 0, 0x42C20000, 1" />
+
+        <Config
+                Id="0x00001097" Type="0" Enable="true" Timeout="7" Target="lahaina" Fps="144"
+                Resources="0x40800000, 1500, 0x42804000, 0, 0x42C20000, 1" />
 
     </PerfBoost>
 </BoostConfigs>

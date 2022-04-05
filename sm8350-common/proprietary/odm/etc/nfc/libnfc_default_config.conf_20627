@@ -1,0 +1,65 @@
+###############################################################################
+# Force P2P to only listen for the following technology(s).
+# The bits are defined as tNFA_TECHNOLOGY_MASK in nfa_api.h.
+# Default is NFA_TECHNOLOGY_MASK_A | NFA_TECHNOLOGY_MASK_F |
+#            NFA_TECHNOLOGY_MASK_A_ACTIVE | NFA_TECHNOLOGY_MASK_F_ACTIVE
+#
+# Notable bits:
+# NFA_TECHNOLOGY_MASK_A	            0x01    /* NFC Technology A             */
+# NFA_TECHNOLOGY_MASK_F	            0x04    /* NFC Technology F             */
+# NFA_TECHNOLOGY_MASK_A_ACTIVE      0x40    /* NFC Technology A active mode */
+# NFA_TECHNOLOGY_MASK_F_ACTIVE      0x80    /* NFC Technology F active mode */
+P2P_LISTEN_TECH_MASK=0x44
+
+###############################################################################
+# Force tag polling for the following technology(s).
+# The bits are defined as tNFA_TECHNOLOGY_MASK in nfa_api.h.
+# Default is NFA_TECHNOLOGY_MASK_A | NFA_TECHNOLOGY_MASK_B |
+#            NFA_TECHNOLOGY_MASK_F | NFA_TECHNOLOGY_MASK_ISO15693 |
+#            NFA_TECHNOLOGY_MASK_B_PRIME |
+#            NFA_TECHNOLOGY_MASK_A_ACTIVE | NFA_TECHNOLOGY_MASK_F_ACTIVE.
+#
+# Notable bits:
+# NFA_TECHNOLOGY_MASK_A             0x01    /* NFC Technology A             */
+# NFA_TECHNOLOGY_MASK_B             0x02    /* NFC Technology B             */
+# NFA_TECHNOLOGY_MASK_F             0x04    /* NFC Technology F             */
+# NFA_TECHNOLOGY_MASK_ISO15693      0x08    /* Proprietary Technology       */
+# NFA_TECHNOLOGY_MASK_A_ACTIVE      0x40    /* NFC Technology A active mode */
+# NFA_TECHNOLOGY_MASK_F_ACTIVE      0x80    /* NFC Technology F active mode */
+POLLING_TECH_MASK=0x4F
+
+# NXP_CORE_CONF_EXTN block
+# add A0,   85,   04,   58,   0A,   A8,   AC: fix frequency, guard time 1.2ms and mute RATS issues.
+# NXP_RF_CONF_BLK_1 block
+# A0,   6A,   10,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00
+# NXP_RF_CONF_BLK_6 block nfcld
+# A0,   9E,   0C,   08,   80,   12,   96,   00,   2C,   01,   2B,   52,   03,   00,   00
+# NXP_RF_CONF_BLK_12 block
+# A0,   0D,   06,   82,   82,   43,   80,   00,   00
+# A0,   0D,   06,   80,   82,   4F,   80,   00,   00
+# A0,   0D,   06,   62,   32,   AE,   00,   7F,   00
+# A0,   0D,   06,   67,   32,   AE,   00,   1F,   00
+#Add pharse auto function control:A0,   28,   26,   03,   00,   00,   00,   CB  2021-06-02 added by LiuWenJie
+#register addr :A0,   28,   26 ;
+# 00 -->Field On ,mobile reply REQA count，set ->00，disable this function
+# 00 -->Field On ,mobile reply REQB count，set ->00，disable this function
+# 00 -->Field On ,mobile reply REQF count，set ->00，disable this function
+# 00 -->Field On ,14443-4 reply NAK count，set ->00，disable this function
+# 00 -->disable pharse auto function
+
+OPLUS_CONF_EXTN={
+	      20,   02,   85,   0A,
+	      A1,   0E,   02,   60,   00,
+	      A0,   85,   04,   50,   08,   A8,   2C,
+	      A0,   6A,   10,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,
+	      A0,   9E,   0C,   07,   BF,   25,   64,   00,   64,   00,   2B,   52,   03,   00,   00,
+	      A0,   0D,   06,   82,   82,   43,   80,   00,   00,
+	      A0,   0D,   06,   80,   82,   4F,   80,   00,   00,
+	      A0,   0D,   06,   62,   32,   AE,   00,   7F,   00,
+	      A0,   0D,   06,   67,   32,   AE,   00,   1F,   00,
+	      A0,   0D,   06,   80,   7D,   A0,   00,   94,   BF,
+	      A0,   28,   26,   00,   00,   00,   00,   00,
+	      B4,   00,   00,   10,   FF,   00,   D0,   02,   00,   84,   03,   00,   E0,   01,    00,
+	      00,   00,   7C,   00,   00,   80,   B4,   00,   7C,   B4,   00,   80,   10,   FF,    7C,   10,   FF,   80
+}
+##############################NEED THIS LINE TO END FILE#####################################

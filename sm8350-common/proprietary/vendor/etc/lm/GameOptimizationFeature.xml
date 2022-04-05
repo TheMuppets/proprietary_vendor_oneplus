@@ -24,7 +24,9 @@
         <Enable>1</Enable>
         <STATIC_L0>1</STATIC_L0>
         <AGPE>1</AGPE>
-        <PICARD>0</PICARD>
+        <GFAR>0</GFAR>
+        <STUTTER_SCALE>10</STUTTER_SCALE>
+        <PICARD>1</PICARD>
         <IDLE_SENSE>0</IDLE_SENSE>
         <THERMAL_MONITOR>1</THERMAL_MONITOR>
         <THERMAL_MONITOR_RULES>GAME_OPT_TSENS_RULE1,GAME_OPT_TSENS_RULE2,GAME_OPT_TSENS_RULE3</THERMAL_MONITOR_RULES>
@@ -41,7 +43,32 @@
         <Enable>1</Enable>
         <ATML1>1</ATML1>
         <ATML2>1</ATML2>
-        <ATML3>1</ATML3>
+        <ATML3>0</ATML3>
+        <GFAR>1</GFAR>
+        <PICARD>0</PICARD>
+        <IDLE_SENSE>0</IDLE_SENSE>
+        <GROUP_UPMIGRATE_PATH>/proc/sys/kernel/sched_group_upmigrate</GROUP_UPMIGRATE_PATH>
+        <GROUP_DOWNMIGRATE_PATH>/proc/sys/kernel/sched_group_downmigrate</GROUP_DOWNMIGRATE_PATH>
+        <BIG_CLUSTER_ID>4,5,6,7</BIG_CLUSTER_ID>
+        <BIG_SLB_OPCODE>0x40C68000,0x40C68010,0x40C68020,0x40C680200</BIG_SLB_OPCODE>
+        <LITTLE_SLB_OPCODE>0x40C68100,0x40C68110,0x40C68120,0x40C68130</LITTLE_SLB_OPCODE>
+        <!-- SLBval, TADemand, Jank-->
+        <SLB_MAP>14,200,40,6,150,30,4,125,25,2,100,15,0</SLB_MAP>
+        <STUTTER_SCALE>10</STUTTER_SCALE>
+        <ENABLE_DB_L2_L3>0</ENABLE_DB_L2_L3>
+        <!-- This will enbale SLB clamping if Janks are zero in consistent learning window-->
+        <ENABLE_SLB_CLAMPER>1</ENABLE_SLB_CLAMPER>
+        <L3_JANK_THRESHOLD>2,12</L3_JANK_THRESHOLD>
+        <!-- Janky vector threshold, Total no. of Janks Threshold-->
+        <L1_JANK_THRESHOLD>4,8</L1_JANK_THRESHOLD>
+        <!-- Default slb little,  Default slb big-->
+        <ATM_L3_DEFAULTS>0,-6</ATM_L3_DEFAULTS>
+    </Configs>
+    <Configs target="yupik">
+        <Enable>1</Enable>
+        <ATML1>1</ATML1>
+        <ATML2>1</ATML2>
+        <ATML3>0</ATML3>
         <GFAR>1</GFAR>
         <PICARD>0</PICARD>
         <IDLE_SENSE>0</IDLE_SENSE>
@@ -93,11 +120,17 @@
         </Profile>
         <Profile target="lahaina">
             <!-- Colocation v3 1 GHz -->
-            <DEFAULT>0x40c6c000,1000000</DEFAULT>
+            <DEFAULT>0x4144C100,1000000</DEFAULT>
             <!-- Colocation v3 1 GHz -->
-            <SKEW2>0x40c6c000,1000000</SKEW2>
+            <SKEW2>0x4144C100,1000000</SKEW2>
         </Profile>
         <Profile target="shima">
+            <!-- Colocation v3 1 GHz, Predictive Load 1, Sched Many Wake Up Threshold 4 ,LPM IPI Prediction 0 -->
+            <DEFAULT>0x4144C100,860000,0x41444000,1,0x41444200,1,0x40C9C000,4,0x40414000,0</DEFAULT>
+            <!-- Colocation v3 1 GHz, Predictive Load 1, Sched Many Wake Up Threshold 4, LPM IPI Prediction 0-->
+            <SKEW2>0x4144C100,860000,0x41444000,1,0x41444200,1,0x40C9C000,4,0x40414000,0</SKEW2>
+        </Profile>
+        <Profile target="yupik">
             <!-- Colocation v3 1 GHz, Predictive Load 1, Sched Many Wake Up Threshold 4 ,LPM IPI Prediction 0 -->
             <DEFAULT>0x4144C100,860000,0x41444000,1,0x41444200,1,0x40C9C000,4,0x40414000,0</DEFAULT>
             <!-- Colocation v3 1 GHz, Predictive Load 1, Sched Many Wake Up Threshold 4, LPM IPI Prediction 0-->
@@ -386,8 +419,17 @@
         <App>com.google.android.gms</App>
         <App>com.android.vending</App>
         <App>com.google.android.projection.gearhead</App>
+        <App>com.vectorunit.silver.googleplay</App>
+        <App>com.kiloo.subwaysurf</App>
+        <App>com.imangi.templerun2</App>
+        <App>com.ogien.trainsim</App>
     </IgnoredApps>
     <IgnoredApps target="shima">
+        <App>com.google.android.gms</App>
+        <App>com.android.vending</App>
+        <App>com.google.android.projection.gearhead</App>
+    </IgnoredApps>
+    <IgnoredApps target="yupik">
         <App>com.google.android.gms</App>
         <App>com.android.vending</App>
         <App>com.google.android.projection.gearhead</App>

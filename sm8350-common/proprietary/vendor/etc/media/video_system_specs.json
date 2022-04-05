@@ -103,16 +103,13 @@
                 "c2.qti.vp8.decoder",
                 "c2.qti.vp9.decoder",
                 "c2.qti.vp9.decoder.secure",
-                "c2.qti.mpeg2.decoder"
+                "c2.qti.mpeg2.decoder",
                 "c2.qti.mpeg2.decoder.secure"
             ],
             "encoders": [
                 "c2.qti.avc.encoder",
-                "c2.qti.avc.encoder.secure",
                 "c2.qti.hevc.encoder",
-                "c2.qti.hevc.encoder.cq",
-                "c2.qti.vp8.encoder",
-                "c2.qti.heic.encoder"
+                "c2.qti.vp8.encoder"
             ]
         }
     }

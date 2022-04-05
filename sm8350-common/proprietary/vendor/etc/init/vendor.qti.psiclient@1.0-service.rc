@@ -1,0 +1,20 @@
+# Copyright (c) 2020 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+service psiclient /vendor/bin/hw/vendor.qti.psiclient@1.0-service
+    class core
+    user system
+    group system
+    disabled
+
+# Stop psi service when vendor.pasr.[activemode.enabled/enabled] is disabled
+on property:vendor.pasr.activemode.enabled=false
+    stop psiclient
+
+on property:vendor.pasr.enabled=false
+    stop psiclient
+
+# Start psi service after boot completed
+on property:vendor.pasr.activemode.enabled=true && property:vendor.pasr.enabled=true
+    start psiclient

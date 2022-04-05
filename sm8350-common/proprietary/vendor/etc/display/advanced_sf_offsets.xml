@@ -13,7 +13,7 @@ Confidential and Proprietary - Qualcomm Technologies, Inc.
             <FpsOffsetMap fps="144" advancedSfOffsetPercentage="40"/>
         </Device>
         <Device version="2">
-            <FpsOffsetMap fps="90" advancedSfOffsetPercentage="36"/>
+            <FpsOffsetMap fps="90" advancedSfOffsetPercentage="45"/>
             <FpsOffsetMap fps="120" advancedSfOffsetPercentage="48"/>
             <FpsOffsetMap fps="144" advancedSfOffsetPercentage="40"/>
         </Device>

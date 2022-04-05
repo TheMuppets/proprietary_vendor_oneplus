@@ -1,0 +1,53 @@
+###############################################################################
+# Force P2P to only listen for the following technology(s).
+# The bits are defined as tNFA_TECHNOLOGY_MASK in nfa_api.h.
+# Default is NFA_TECHNOLOGY_MASK_A | NFA_TECHNOLOGY_MASK_F |
+#            NFA_TECHNOLOGY_MASK_A_ACTIVE | NFA_TECHNOLOGY_MASK_F_ACTIVE
+#
+# Notable bits:
+# NFA_TECHNOLOGY_MASK_A	            0x01    /* NFC Technology A             */
+# NFA_TECHNOLOGY_MASK_F	            0x04    /* NFC Technology F             */
+# NFA_TECHNOLOGY_MASK_A_ACTIVE      0x40    /* NFC Technology A active mode */
+# NFA_TECHNOLOGY_MASK_F_ACTIVE      0x80    /* NFC Technology F active mode */
+P2P_LISTEN_TECH_MASK=0x44
+
+###############################################################################
+# Force tag polling for the following technology(s).
+# The bits are defined as tNFA_TECHNOLOGY_MASK in nfa_api.h.
+# Default is NFA_TECHNOLOGY_MASK_A | NFA_TECHNOLOGY_MASK_B |
+#            NFA_TECHNOLOGY_MASK_F | NFA_TECHNOLOGY_MASK_ISO15693 |
+#            NFA_TECHNOLOGY_MASK_B_PRIME |
+#            NFA_TECHNOLOGY_MASK_A_ACTIVE | NFA_TECHNOLOGY_MASK_F_ACTIVE.
+#
+# Notable bits:
+# NFA_TECHNOLOGY_MASK_A             0x01    /* NFC Technology A             */
+# NFA_TECHNOLOGY_MASK_B             0x02    /* NFC Technology B             */
+# NFA_TECHNOLOGY_MASK_F             0x04    /* NFC Technology F             */
+# NFA_TECHNOLOGY_MASK_ISO15693      0x08    /* Proprietary Technology       */
+# NFA_TECHNOLOGY_MASK_A_ACTIVE      0x40    /* NFC Technology A active mode */
+# NFA_TECHNOLOGY_MASK_F_ACTIVE      0x80    /* NFC Technology F active mode */
+POLLING_TECH_MASK=0x4F
+
+# NXP_CORE_CONF_EXTN block
+# add A0,   85,   04,   58,   0A,   A8,   AC: fix frequency, guard time 1.2ms and mute RATS issues.
+# NXP_RF_CONF_BLK_1 block
+# A0,   6A,   10,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00
+# NXP_RF_CONF_BLK_6 block nfcld
+# A0,   9E,   0C,   08,   80,   12,   96,   00,   2C,   01,   2B,   52,   03,   00,   00
+# NXP_RF_CONF_BLK_12 block
+# A0,   0D,   06,   82,   82,   43,   80,   00,   00
+# A0,   0D,   06,   80,   82,   4F,   80,   00,   00
+# A0,   0D,   06,   62,   32,   AE,   00,   7F,   00
+# A0,   0D,   06,   67,   32,   AE,   00,   1F,   00
+
+OPLUS_CONF_EXTN={
+	      20,   02,   4E,   07,
+	      A0,   85,   04,   50,   08,   A8,   2C,
+	      A0,   6A,   10,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,   00,
+	      A0,   9E,   0C,   08,   80,   12,   96,   00,   2C,   01,   2B,   52,   03,   00,   00,
+	      A0,   0D,   06,   82,   82,   43,   80,   00,   00,
+	      A0,   0D,   06,   80,   82,   4F,   80,   00,   00,
+	      A0,   0D,   06,   62,   32,   AE,   00,   7F,   00,
+	      A0,   0D,   06,   67,   32,   AE,   00,   1F,   00
+}
+##############################NEED THIS LINE TO END FILE#####################################

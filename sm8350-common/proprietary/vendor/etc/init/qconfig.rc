@@ -10,8 +10,6 @@ service vendor.qconfig /vendor/bin/hw/qconfigservice
     # HIDL interfaces
     interface vendor.qti.hardware.qconfig@1.0::IQConfig default
 
-    # don't auto restart
-    oneshot
 
     # start only when requested (uncomment below to disable service at boot)
     # disabled

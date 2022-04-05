@@ -1,0 +1,43 @@
+#############################libnfc_accesscard_config.conf###################################
+# NXP_RF_CONF_BLK_1 block
+# A0,   6A,   10,   94,   02,   94,   02,   94,   02,   94,   02,   1C,   02,   1C,   02,   1C,   02,   1C,   02
+#add A0, 85, 04, 50, 0A, A8, 2C for mute RATS on Mifare 1K 2020.04.02 bugid:2917116
+#close RATS mute A0,   85,   04,   58,   08,   A8,   AC 20210305 bug 785329
+# NXP_RF_CONF_BLK_12 block
+# A1,   0E,   02,   60,   00, change Tx2Rx time, the FW default value is 0x60
+# The access card Tx2Rx will be set 0x40 and the A0,   0D,   06,   62/67,   32 register will be set 0xAE/0x0E -> 0x2E
+#Add pharse auto function control:A0,   28,   26,   03,   00,   00,   00,   CB  2021-06-02 added by LiuWenJie
+#register addr :A0,   28,   26 ;
+# 03 -->Field On ,mobile reply REQA count，set ->00，disable this function
+# 00 -->Field On ,mobile reply REQB count，set ->00，disable this function
+# 00 -->Field On ,mobile reply REQF count，set ->00，disable this function
+# 00 -->Field On ,14443-4 reply NAK count，set ->00，disable this function
+# CB -->11001011 8bit set 1 mean loop set phase , 7bit set 1 enable NCI log;  1011 mean 11 array phase
+#00B4(45°,FDT default)
+#FF10(-60°,FDT default)
+#02D0(180°,FDT default)
+#0384(225°,FDT default)
+#01E0(120°,FDT default)
+#0000(0°,FDT 7C)
+#0000(0°,FDT 80)
+#00B4(45°,FDT 7C)
+#00B4(45°,FDT 80)
+#FF10(-60°,FDT 7C)
+#FF10(-60°,FDT 80)
+
+OPLUS_CONF_EXTN={
+	      20,   02,   85,   0A,
+	      A1,   0E,   02,   40,   00,
+	      A0,   85,   04,   58,   08,   A8,   AC,
+	      A0,   6A,   10,   94,   02,   94,   02,   94,   02,   94,   02,   1C,   02,   1C,   02,   1C,   02,   1C,   02,
+	      A0,   9E,   0C,   07,   4F,   1F,   50,   00,   50,   00,   2B,   52,   03,   00,   00,
+	      A0,   0D,   06,   82,   82,   49,   80,   00,   00,
+	      A0,   0D,   06,   80,   82,   49,   80,   00,   00,
+	      A0,   0D,   06,   62,   32,   2E,   00,   7F,   00,
+	      A0,   0D,   06,   67,   32,   2E,   00,   1F,   00,
+	      A0,   0D,   06,   80,   7D,   A0,   00,   94,   BF,
+	      A0,   28,   26,   03,   00,   00,   00,   CB,
+	      B4,   00,   00,   10,   FF,   00,   D0,   02,   00,   84,   03,   00,   E0,   01,    00,
+	      00,   00,   7C,   00,   00,   80,   B4,   00,   7C,   B4,   00,   80,   10,   FF,    7C,   10,   FF,   80
+}
+##############################NEED THIS LINE TO END FILE#####################################

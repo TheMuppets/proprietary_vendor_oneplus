@@ -46,6 +46,17 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "CACertService",
+	owner: "oneplus",
+	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
 	name: "CneApp",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
@@ -90,6 +101,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "com.oplus.gpudrivers.sm8350.api30",
+	owner: "oneplus",
+	apk: "proprietary/product/app/com.oplus.gpudrivers.sm8350.api30/com.oplus.gpudrivers.sm8350.api30.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
 	name: "PowerOffAlarm",
 	owner: "oneplus",
 	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
@@ -103,7 +125,7 @@ android_app_import {
 android_app_import {
 	name: "HotwordEnrollmentOKGoogleHEXAGON",
 	owner: "oneplus",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -115,13 +137,35 @@ android_app_import {
 android_app_import {
 	name: "HotwordEnrollmentXGoogleHEXAGON",
 	owner: "oneplus",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
 	product_specific: true,
+}
+
+android_app_import {
+	name: "ImsRcsService",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/app/ImsRcsService/ImsRcsService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "QtiTelephony",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/app/QtiTelephony/QtiTelephony.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
 }
 
 android_app_import {
@@ -132,6 +176,41 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "imssettings",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "TeleServiceQcom",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/priv-app/TeleServiceQcom/TeleServiceQcom.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "TelecomQcom",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/priv-app/TelecomQcom/TelecomQcom.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
 	system_ext_specific: true,
 }
 
@@ -148,9 +227,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "ims",
+	name: "dpmserviceapp",
 	owner: "oneplus",
-	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
+	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -178,22 +257,10 @@ dex_import {
 }
 
 dex_import {
-	name: "qcnvitems",
-	owner: "oneplus",
-	jars: ["proprietary/system/framework/qcnvitems.jar"],
-}
-
-dex_import {
-	name: "tcmclient",
-	owner: "oneplus",
-	jars: ["proprietary/system/framework/tcmclient.jar"],
-}
-
-dex_import {
 	name: "com.android.hotwordenrollment.common.util",
 	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
-	system_ext_specific: true,
+	jars: ["proprietary/product/framework/com.android.hotwordenrollment.common.util.jar"],
+	product_specific: true,
 }
 
 dex_import {
@@ -224,6 +291,13 @@ dex_import {
 	system_ext_specific: true,
 }
 
+dex_import {
+	name: "vendor.qti.ims.factory-V2.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
 prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.1-service-qti",
 	owner: "oneplus",
@@ -243,27 +317,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.3-service.widevine",
+	name: "c2_manifest_vendor",
 	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.pixelworks.hardware.display.iris-service",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.pixelworks.hardware.display.iris-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.pixelworks.hardware.feature.irisfeature-service",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -285,5 +341,50 @@ prebuilt_etc_xml {
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_android.hardware.drm@1.3-service.widevine",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_nfc_sn100t",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_nfc_sn100t.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_fingerprint",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.pixelworks.hardware.display.iris-service",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/vendor.pixelworks.hardware.display.iris-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.pixelworks.hardware.feature.irisfeature-service",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
 }
 

@@ -3079,6 +3079,11 @@
      </list>
      <!-- Number of above reverse data ports inited on bootup -->
      <data name="static_rev_links" type="int"> 4 </data>
+
+     <!-- #ifdef OPLUS_BUG_STABILITY -->
+     <!-- Liwei@Connectivity.NETWORK, 2021/04/25, for set default tcp_mtu_probing-->
+     <data name="tcp_mtu_probing" type="int"> 1 </data>
+     <!-- #endif /* OPLUS_BUG_STABILITY */ -->
    </listitem>
 
    <!-- lahaina parameters -->
@@ -3116,6 +3121,7 @@
       <data name="rmnet_shs" type="int"> 1 </data>
       <data name="uplink_priority" type="int"> 1 </data>
       <data name="iwlan_concurrency" type="int"> 1 </data>
+      <data name="nl_xfrm" type="int"> 1 </data>
       <data name="netdev_max_backlog" type="int"> 100000 </data>
       <data name="debug_netdev_max_backlog" type="int"> 1500 </data>
 
@@ -3221,8 +3227,10 @@
       </list>
       <!-- Number of above reverse data ports inited on bootup -->
       <data name="static_rev_links" type="int"> 4 </data>
-      <!-- #ifdef VENDOR_EDIT -->
-      <data name="tcp_mtu_probing" type="int"> 1 </data>
-      <!-- #endif VENDOR_EDIT -->
+
+     <!-- #ifdef OPLUS_BUG_STABILITY -->
+     <!-- Liwei@Connectivity.NETWORK, 2021/04/25, for set default tcp_mtu_probing-->
+     <data name="tcp_mtu_probing" type="int"> 1 </data>
+     <!-- #endif /* OPLUS_BUG_STABILITY */ -->
    </listitem>
 </list>

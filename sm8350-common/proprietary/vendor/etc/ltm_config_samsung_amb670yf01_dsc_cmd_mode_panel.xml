@@ -12,17 +12,17 @@
         <AmbientLightToContrastStrengthTableOutput>0 0 0 100 256</AmbientLightToContrastStrengthTableOutput>
         <AmbientLightToContrastStrengthEnable>1</AmbientLightToContrastStrengthEnable>
 
-        <BacklightReductionTableInput>0 1024 1536 1792 2753</BacklightReductionTableInput>
-        <BacklightReductionTableOutput>0 1024 1536 1792 2753</BacklightReductionTableOutput>
+        <BacklightReductionTableInput>0 1024 1536 1792 4095</BacklightReductionTableInput>
+        <BacklightReductionTableOutput>0 1024 1536 1792 4095</BacklightReductionTableOutput>
         <BacklightReductionEnable>0</BacklightReductionEnable>
 
-        <LuxStartPoint>0</LuxStartPoint>
+        <LuxStartPoint>2000</LuxStartPoint>
 
         <TemporalFilterSpeedStepSizeOne>8</TemporalFilterSpeedStepSizeOne>
         <TemporalControlTableInput>0 30 50 128 160 256</TemporalControlTableInput>
         <TemporalControlTableOutput>1 2 4 4 4 4</TemporalControlTableOutput>
 
-        <BacklightToContrastStrengthTableInput>0 512 1024 1536 2753</BacklightToContrastStrengthTableInput>
+        <BacklightToContrastStrengthTableInput>0 512 1024 1536 4095</BacklightToContrastStrengthTableInput>
         <BacklightToContrastStrengthTableOutput>256 256 256 256 256</BacklightToContrastStrengthTableOutput>
         <BacklightToContrastStrengthEnable>1</BacklightToContrastStrengthEnable>
 

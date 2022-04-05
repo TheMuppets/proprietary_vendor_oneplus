@@ -1,0 +1,78 @@
+service fps_hal /odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
+    class late_start
+    user system
+    group system input uhid
+
+service oplus_fingerprints_sh /vendor/bin/sh /odm/bin/init.oplus.fingerprints.sh
+    class main
+    user root
+    oneshot
+
+on boot
+
+#for jiiov_fp.
+    chown system system /dev/jiiov_fp
+    chmod 0666 /dev/jiiov_fp
+
+#for goodix_fp.
+    chown system system /dev/goodix_fp
+
+#for egis fp
+    chown system system /dev/esfp0
+    chmod 0660 /sys/bus/platform/devices/egis_input/navigation_enable
+    chmod 0660 /sys/bus/platform/devices/egis_input/navigation_event
+    chown system  system /sys/bus/platform/devices/egis_input/navigation_enable
+    chown system  system /sys/bus/platform/devices/egis_input/navigation_event
+
+#for silead fp
+    chown system system /dev/silead_fp
+    chmod 0666 /dev/silead_fp
+
+on post-fs-data
+
+    #ifdef OPLUS_FEATURE_FINGERPRINT
+    #Ran.Chen@EXP.BSP.Fingerprint.Basic, 2017/07/12, modify for fpc in TRUSTONIC
+    chown system  system /sys/bus/platform/devices/fpc_interrupt/clk_enable
+    chown system  system /sys/bus/platform/devices/fpc_interrupt/wakelock_enable
+    chown system  system /sys/bus/platform/devices/fpc_interrupt/irq
+    chown system  system /sys/bus/platform/devices/fpc_interrupt/irq_enable
+    chown system  system /sys/bus/platform/devices/fpc_interrupt/irq_unexpected
+    chown system  system /sys/bus/platform/devices/fpc_interrupt/regulator_enable
+    chmod 0200 /sys/bus/platform/devices/fpc_interrupt/irq_enable
+    chmod 0200 /sys/bus/platform/devices/fpc_interrupt/regulator_enable
+    chmod 0200 /sys/bus/platform/devices/fpc_interrupt/clk_enable
+    chmod 0200 /sys/bus/platform/devices/fpc_interrupt/wakelock_enable
+    chmod 0600 /sys/bus/platform/devices/fpc_interrupt/irq
+    chmod 0660 /sys/bus/platform/devices/fpc_interrupt/irq_unexpected
+    #endif /* OPLUS_FEATURE_FINGERPRINT */
+
+    #ifdef OPLUS_FEATURE_FINGERPRINT
+    #zhoubo@BSP.Biometrics.Fingerprint, 2020/09/10, modify for fpc in QCOM (SM6125R Homer)
+    chown system system /sys/bus/platform/devices/soc:fpc_fpc1020/irq
+    chown system system /sys/bus/platform/devices/soc:fpc_fpc1020/irq_enable
+    chown system system /sys/bus/platform/devices/soc:fpc_fpc1020/regulator_enable
+    chown system system /sys/bus/platform/devices/soc:fpc_fpc1020/wakelock_enable
+    #endif /* OPLUS_FEATURE_FINGERPRINT */
+
+#-----------------------  for optical sensor begin    ---------------------
+    mkdir /data/vendor/fingerprint 0770 system system
+    mkdir /mnt/vendor/persist/fingerprint 0770 system system
+    chown system system /sys/kernel/oplus_display/hbm
+#-----------------------   for optical sensor end     ---------------------
+#add for silead_optical_fp
+    mkdir /data/vendor/silead 0770 system system
+    mkdir /mnt/vendor/persist/fingerprint/silead 0770 system system
+
+#add for egis optical fp
+    mkdir /data/vendor/optical_fingerprint   0770 system system
+
+#add for jiiov optical fp
+    mkdir /data/vendor/FactoryTestReport   0770 system system
+    mkdir /mnt/vendor/persist/fingerprint/jiiov 0770 system system
+
+#Ziqing.Guo@EXP.BSP.Fingerprint.Basic, 2019/08/17, modify for sdsp init fail
+on property:sys.boot_completed=1
+    setprop vendor.oplus.biometrics.fingerprint.boot_completed 1

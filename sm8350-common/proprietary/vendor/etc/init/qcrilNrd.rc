@@ -5,19 +5,35 @@ service vendor.qcrild /vendor/bin/hw/qcrilNrd
     class main
     user radio
     disabled
-    group radio cache inet misc audio log readproc wakelock oem_2901
+    #ifdef OPLUS_FEATURE_OEM_QMI
+    #TanZhengpeng@NETWORK.REG.919197, 2016/06/04, modify for Oem qmi service
+    #group radio cache inet misc audio log readproc wakelock oem_2901
+    #else /* OPLUS_FEATURE_OEM_QMI */
+    group radio cache inet misc audio log readproc wakelock oem_2901 net_raw system root
+    #endif /* OPLUS_FEATURE_OEM_QMI */
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 service vendor.qcrild2 /vendor/bin/hw/qcrilNrd -c 2
     class main
     user radio
     disabled
-    group radio cache inet misc audio log readproc wakelock oem_2901
+    #ifdef OPLUS_FEATURE_OEM_QMI
+    #TanZhengpeng@NETWORK.REG.919197, 2016/06/04, modify for Oem qmi service
+    #group radio cache inet misc audio log readproc wakelock oem_2901
+    #else /* OPLUS_FEATURE_OEM_QMI */
+    group radio cache inet misc audio log readproc wakelock oem_2901 net_raw system root
+    #endif /* OPLUS_FEATURE_OEM_QMI */
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 service vendor.qcrild3 /vendor/bin/hw/qcrilNrd -c 3
     class main
     user radio
     disabled
-    group radio cache inet misc audio log readproc wakelock oem_2901
+    #ifdef OPLUS_FEATURE_OEM_QMI
+    #TanZhengpeng@NETWORK.REG.919197, 2016/06/04, modify for Oem qmi service
+    #group radio cache inet misc audio log readproc wakelock oem_2901
+    #else /* OPLUS_FEATURE_OEM_QMI */
+    group radio cache inet misc audio log readproc wakelock oem_2901 net_raw system root
+    #endif /* OPLUS_FEATURE_OEM_QMI */
+
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW

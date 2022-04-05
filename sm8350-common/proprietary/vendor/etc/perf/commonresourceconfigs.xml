@@ -108,6 +108,9 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x33" Node="/proc/sys/kernel/sched_force_lb_enable" Supported="yes" />
         <Minor OpcodeValue="0x34" Node="/proc/%d/sched_low_latency" Supported="yes" />
         <Minor OpcodeValue="0x35" Node="/proc/sys/kernel/sched_min_granularity_ns" />
+        <Minor OpcodeValue="0x36" Node="/proc/sys/kernel/walt_low_latency_task_threshold" />
+        <Minor OpcodeValue="0x37" Node="/dev/stune/foreground/schedtune.prefer_idle" />
+        <Minor OpcodeValue="0x38" Node="SPECIAL_NODE - sched_up_down_mig" Supported="no"/>
     <!-- sched major end -->
 
     <!-- core hotplug major start -->
@@ -163,6 +166,7 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0xD" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/io_percent" />
         <Minor OpcodeValue="0xE" Node="SPECIAL_NODE - llcbw_hwmon_hyst_opt" />
         <Minor OpcodeValue="0xF" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/sample_ms" />
+        <Minor OpcodeValue="0x10" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/polling_interval" />
     <!-- cpubw hwmon major end -->
 
     <!-- video major start -->
@@ -214,7 +218,7 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x4" Node="StorageNode_path_is_figured_out_based_on_the_target_device" />
         <Minor OpcodeValue="0x5" Node="SPECIAL_NODE - dummy_or_keep_alive" />
         <Minor OpcodeValue="0x6" Node="/sys/module/process_reclaim/parameters/enable_process_reclaim" />
-        <Minor OpcodeValue="0x7" Node="/proc/perfmode" />
+        <Minor OpcodeValue="0x7" Node="SPECIAL_NODE - disable_pasr" />
     <!-- misc major end -->
 
     <!-- llcbw hwmon major start -->

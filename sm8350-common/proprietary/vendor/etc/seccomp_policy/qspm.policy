@@ -76,4 +76,3 @@ geteuid32: 1
 getgid32: 1
 getegid32: 1
 getgroups32: 1
-setgid: 1

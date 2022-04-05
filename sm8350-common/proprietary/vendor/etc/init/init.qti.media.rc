@@ -41,6 +41,7 @@ service qti-media /vendor/bin/init.qti.media.sh
     seclabel u:r:vendor_qti_media:s0
 
 on early-init
+    setprop vendor.media.target.qssi ${vendor.sys.media.target.qssi}
     start qti-media
 
 on post-fs-data

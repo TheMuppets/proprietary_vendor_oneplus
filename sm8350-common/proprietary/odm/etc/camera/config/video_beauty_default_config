@@ -1,0 +1,15 @@
+{
+    "isFunctionOpen":1,
+    "isParamAdjustOpen":1,
+    "appConfigList": [
+        {
+         "appName":"WeChat",
+         "packageName":"com.tencent.mm",
+         "videoBeautyParam":
+            {
+                "isOpen": 0,
+                "fbParam": "40,0,0,0,0,0,0,0,40,0,0"
+            }
+        }
+    ]
+}

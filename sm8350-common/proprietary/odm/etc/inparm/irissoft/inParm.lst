@@ -1,0 +1,39 @@
+2.05
+18
+0, 2, 0, 3, 0, 2500, inParm1_center.txt
+0, 2, 0, 3, 1, 2500, inParm1_down.txt
+0, 2, 0, 3, 2, 2500, inParm1_up.txt
+1, 2, 0, 3, 0, 6500, inParm2_center.txt
+1, 2, 0, 3, 1, 6500, inParm2_down.txt
+1, 2, 0, 3, 2, 6500, inParm2_up.txt
+2, 2, 0, 3, 0, 10000, inParm3_center.txt
+2, 2, 0, 3, 1, 10000, inParm3_down.txt
+2, 2, 0, 3, 2, 10000, inParm3_up.txt
+3, 0, 1, 3, 0, 2500, inParm4_center.txt
+3, 0, 1, 3, 1, 2500, inParm4_down.txt
+3, 0, 1, 3, 2, 2500, inParm4_up.txt
+4, 0, 1, 3, 0, 6500, inParm5_center.txt
+4, 0, 1, 3, 1, 6500, inParm5_down.txt
+4, 0, 1, 3, 2, 6500, inParm5_up.txt
+5, 0, 1, 3, 0, 10000, inParm6_center.txt
+5, 0, 1, 3, 1, 10000, inParm6_down.txt
+5, 0, 1, 3, 2, 10000, inParm6_up.txt
+7, 2, 0, 8, 0, 6500, inParm8_a.txt
+7, 2, 0, 8, 1, 6500, inParm8_b.txt
+7, 2, 0, 8, 2, 6500, inParm8_c.txt
+9, 2, 0, 0, 0, 430, inParm10.txt
+10, 2, 0, 0, 0, 1000, inParm11.txt
+11, 2, 0, 0, 0, 4000, inParm12.txt
+13, 2, 0, 8, 0, 6500, inParm14_a.txt
+13, 2, 0, 8, 1, 6500, inParm14_b.txt
+13, 2, 0, 8, 2, 6500, inParm14_c.txt
+15, 0, 1, 3, 0, 2500, inParm16_center.txt
+15, 0, 1, 3, 1, 2500, inParm16_down.txt
+15, 0, 1, 3, 2, 2500, inParm16_up.txt
+16, 0, 1, 3, 0, 6500, inParm17_center.txt
+16, 0, 1, 3, 1, 6500, inParm17_down.txt
+16, 0, 1, 3, 2, 6500, inParm17_up.txt
+17, 0, 1, 3, 0, 10000, inParm18_center.txt
+17, 0, 1, 3, 1, 10000, inParm18_down.txt
+17, 0, 1, 3, 2, 10000, inParm18_up.txt
+

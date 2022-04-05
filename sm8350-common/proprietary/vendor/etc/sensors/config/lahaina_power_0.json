@@ -1,0 +1,33 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "RCM", "QRD", "HDK"],
+    "soc_id": ["415", "439", "502", "501"]
+  },
+  "power":{
+    "owner": "power_manager",
+    ".island":{
+      "owner": "power_manager",
+      "enable_island":{ "type": "int", "ver": "0",
+        "data": "1"
+      }
+    },
+    ".mcps":{
+      "owner": "power_manager",
+      "min_svs":{ "type": "int", "ver": "0",
+        "data": "423"
+      },
+      "low_svs":{ "type": "int", "ver": "0",
+        "data": "423"
+      },
+      "svs":{ "type": "int", "ver": "0",
+        "data": "557"
+      },
+      "nominal":{ "type": "int", "ver": "0",
+        "data": "845"
+      },
+      "turbo":{ "type": "int", "ver": "0",
+        "data": "1075"
+      }
+    }
+  }
+}

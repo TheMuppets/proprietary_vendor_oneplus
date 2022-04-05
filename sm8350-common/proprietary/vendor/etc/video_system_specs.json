@@ -25,7 +25,12 @@
             // It is used to enable fastCV engine for flip support in the absence of VPSS hardware
             // support.
             "enc_vpss_flip": true,
-            "pipelining": true
+            //#ifdef OPLUS_FEATURE_OSIE_SR
+            //shumin.nie@MULTIMEDIA.MMSERVER.PLAYER, 2020/11/10, Add for OSIE and SR
+            "pipelining": true,
+            //#endif /* OPLUS_FEATURE_OSIE_SR */
+            // This is used to limit secure usecase buffer count. Changes dynamic to static count
+            "dec_secure_static_count": false
         },
         "Presets": {
             // this is used for secure decoding performance boost handling
@@ -98,8 +103,10 @@
             "enc_bitrate_boost_qp_min": 10,
             "enc_bitrate_boost_qp_max": 40,
             // additional buffers to be added while computing pipeline delays
-            "pipeline_extra_output_buffers": 2,
-
+            "pipeline_extra_output_buffers": 0,
+            // time threshold of output buffer allocation loop since last input buffer queued(ms)
+            // 0 --> no such limitation (loop until allocation done)
+            "max_retry_alloc_output_timeout": 1000,
             // WARNING:
             //    Please DON'T change these values, if you don't know what you are doing.
             // These are the Video HAL capabilities. Video HAL may not function properly with wrong values.
@@ -117,11 +124,17 @@
             // encoder Hier-B maximum layer count: 4
             "enc_hier_b_max_temporal_layer_count": 4,
             // disable vpp secure mode disable: 1
-            "vpp_secure_mode_disable": 1
+            "vpp_secure_mode_disable": 1,
+            "vpp_thread_default_sleep_us": 16000,
+            "vpp_thread_min_sleep_us": 10000
         },
         // list of codec plugin libraries to be loaded into codec registry
         "QC2CodecPlugins": [
-            "libqc2vppfilter.so"
+            "libqc2vppfilter.so",
+            //#ifdef OPLUS_FEATURE_OSIE_SR
+            //shumin.nie@MULTIMEDIA.MMSERVER.PLAYER, 2020/11/10, Add for OSIE and SR
+            "liboplusvppfilter.so"
+            //#endif /* OPLUS_FEATURE_OSIE_SR */
         ],
 
         // List of HW codecs enabled for this target
@@ -141,6 +154,7 @@
                 "c2.qti.avc.encoder",
                 "c2.qti.avc.encoder.secure",
                 "c2.qti.hevc.encoder",
+                "c2.qti.hevc.encoder.secure",
                 "c2.qti.hevc.encoder.cq",
                 "c2.qti.heic.encoder"
             ]

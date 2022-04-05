@@ -1,0 +1,17 @@
+# Copyright (c) 2021 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+#start tcmd
+service tcmd /system/system_ext/bin/tcmd
+    class late_start
+    socket tcmd  stream 660 root inet
+    group system readproc inet radio wakelock oem_2901
+    user system
+    disabled
+
+on property:persist.vendor.tcmd.feature=1
+    start tcmd
+
+on property:persist.vendor.tcmd.feature=0
+    stop tcmd

@@ -28,6 +28,8 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0x1" MinorValue="0x2" Node="/proc/sys/kernel/sched_busy_hyst_ns" />
         <Config MajorValue="0x1" MinorValue="0x3" Supported="no" Target="shima" /> <!-- lpm_ref_stddev -->
         <Config MajorValue="0x1" MinorValue="0x4" Supported="no" Target="shima" /> <!-- lpm_tmr_add -->
+        <Config MajorValue="0x1" MinorValue="0x3" Supported="no" Target="yupik" /> <!-- lpm_ref_stddev -->
+        <Config MajorValue="0x1" MinorValue="0x4" Supported="no" Target="yupik" /> <!-- lpm_tmr_add -->
 
         <Config MajorValue="0x3" MinorValue="0x3" Supported="no" /> <!-- sched_small_task -->
         <Config MajorValue="0x3" MinorValue="0x6" Supported="no" /> <!-- sched_init_task_load -->
@@ -38,6 +40,7 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0x3" MinorValue="0x14" Supported="no" /> <!-- sched_enable_thread_grouping -->
         <Config MajorValue="0x3" MinorValue="0x17" Supported="no" /> <!-- sched_freq_aggr_threshold -->
         <Config MajorValue="0x3" MinorValue="0x22" Supported="no" Target="shima" /> <!-- sched_task_unfilter_nr_windows -->
+        <Config MajorValue="0x3" MinorValue="0x22" Supported="no" Target="yupik" /> <!-- sched_task_unfilter_nr_windows -->
 
         <Config MajorValue="0x6" MinorValue="0x0" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/min_freq" Target="lahaina" />
         <Config MajorValue="0x6" MinorValue="0x1" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/decay_rate" Target="lahaina" />
@@ -60,6 +63,17 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0x6" MinorValue="0x8" Supported="no" Target="shima" />
         <Config MajorValue="0x6" MinorValue="0x9" Supported="no" Target="shima" />
 
+        <Config MajorValue="0x6" MinorValue="0x0" Supported="no" Target="yupik" />
+        <Config MajorValue="0x6" MinorValue="0x1" Supported="no" Target="yupik" />
+        <Config MajorValue="0x6" MinorValue="0x2" Supported="no" Target="yupik" />
+        <Config MajorValue="0x6" MinorValue="0x3" Supported="no" Target="yupik" />
+        <Config MajorValue="0x6" MinorValue="0x4" Supported="no" Target="yupik" /> <!-- cpubw_hmon_low_power_ceil_mbps -->
+        <Config MajorValue="0x6" MinorValue="0x5" Supported="no" Target="yupik" /> <!-- cpubw_hmon_low_power_io_percent -->
+        <Config MajorValue="0x6" MinorValue="0x6" Supported="no" Target="yupik" />
+        <Config MajorValue="0x6" MinorValue="0x7" Supported="no" Target="yupik" />
+        <Config MajorValue="0x6" MinorValue="0x8" Supported="no" Target="yupik" />
+        <Config MajorValue="0x6" MinorValue="0x9" Supported="no" Target="yupik" />
+
         <Config MajorValue="0xB" MinorValue="0x2" Node="/sys/devices/system/cpu/cpu_boost/input_boost_freq" />
         <Config MajorValue="0xB" MinorValue="0x6" Supported="no" Target="lahaina" /><!-- disable_ppr -->
 
@@ -74,12 +88,22 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0xC" MinorValue="0x3" Supported="no" Target="shima" />
         <Config MajorValue="0xC" MinorValue="0xA" Supported="no" Target="shima" /> <!-- cpubw_hmon_low_power_ceil_mbps -->
         <Config MajorValue="0xC" MinorValue="0xB" Supported="no" Target="shima" /> <!-- cpubw_hmon_low_power_io_percent -->
+        <Config MajorValue="0xC" MinorValue="0x0" Supported="no" Target="yupik" />
+        <Config MajorValue="0xC" MinorValue="0x1" Supported="no" Target="yupik" />
+        <Config MajorValue="0xC" MinorValue="0x2" Supported="no" Target="yupik" />
+        <Config MajorValue="0xC" MinorValue="0x3" Supported="no" Target="yupik" />
+        <Config MajorValue="0xC" MinorValue="0xA" Supported="no" Target="yupik" /> <!-- cpubw_hmon_low_power_ceil_mbps -->
+        <Config MajorValue="0xC" MinorValue="0xB" Supported="no" Target="yupik" /> <!-- cpubw_hmon_low_power_io_percent -->
 
         <Config MajorValue="0xD" MinorValue="0x0" Node="/sys/class/devfreq/18590100.qcom,cpu%d-cpu-l3-lat/min_freq" />
         <Config MajorValue="0xD" MinorValue="0x1" Node="/sys/class/devfreq/18590100.qcom,cpu0-cpu-l3-lat/mem_latency/ratio_ceil" />
         <Config MajorValue="0xD" MinorValue="0x2" Node="/sys/class/devfreq/18590100.qcom,cpu4-cpu-l3-lat/mem_latency/ratio_ceil" />
         <Config MajorValue="0xD" MinorValue="0x3" Node="/sys/class/devfreq/18590100.qcom,cpu0-cpu-l3-lat/mem_latency/stall_floor" />
         <Config MajorValue="0xD" MinorValue="0x4" Node="/sys/class/devfreq/18590100.qcom,cpu4-cpu-l3-lat/mem_latency/stall_floor" />
+        <Config MajorValue="0xD" MinorValue="0x5" Supported="no" Target="shima" />
+        <Config MajorValue="0xD" MinorValue="0x6" Supported="no" Target="shima" />
+        <Config MajorValue="0xD" MinorValue="0x5" Supported="no" Target="yupik" />
+        <Config MajorValue="0xD" MinorValue="0x6" Supported="no" Target="yupik" />
 
     </PerfResources>
 </ResourceConfigs>

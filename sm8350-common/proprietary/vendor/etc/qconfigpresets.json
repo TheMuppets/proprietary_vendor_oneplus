@@ -7,44 +7,24 @@
                 "configs": {
                     "vendor.qti-ext-vpp.mode": "HQV_MODE_MANUAL",
                     "vendor.qti-ext-vpp-aie.mode": "HQV_MODE_MANUAL",
-                    "vendor.qti-ext-vpp-aie.cade-level": "10",
-                    "vendor.qti-ext-vpp-aie.ltm-level":"25",
-                    "vendor.qti-ext-vpp-aie.ltm-sat-gain": "100",
-                    "vendor.qti-ext-vpp-aie.ltm-sat-offset": "56",
-                    "vendor.qti-ext-vpp-aie.ltm-ace-str": "10",
-                    "vendor.qti-ext-vpp-aie.ltm-ace-brightness-low": "15",
-                    "vendor.qti-ext-vpp-aie.ltm-ace-brightness-high": "15"
-                }
-            },
-            {
-                "id": "ais-aie",
-                "configs": {
-                    "vendor.qti-ext-vpp.mode": "HQV_MODE_MANUAL",
-                    "vendor.qti-ext-vpp-aie.mode": "HQV_MODE_MANUAL",
                     "vendor.qti-ext-vpp-aie.cade-level": "0",
-                    "vendor.qti-ext-vpp-aie.ltm-sat-gain": "100",
+                    "vendor.qti-ext-vpp-aie.ltm-sat-gain": "70",
                     "vendor.qti-ext-vpp-aie.ltm-sat-offset": "55",
-                    "vendor.qti-ext-vpp-aie.ltm-ace-str": "0",
-                    "vendor.qti-ext-vpp-aie.ltm-ace-brightness-low": "0",
-                    "vendor.qti-ext-vpp-aie.ltm-ace-brightness-high": "0",
-                    "vendor.qti-ext-vpp-ais.mode": "AIS_AUTO",
-                    "vendor.qti-ext-vpp-ais.classification": "10"
+                    "vendor.qti-ext-vpp-aie.ltm-ace-str": "50",
+                    "vendor.qti-ext-vpp-aie.ltm-ace-brightness-low": "25",
+                    "vendor.qti-ext-vpp-aie.ltm-ace-brightness-high": "0"
                 }
             },
             {
-                "id": "aie-test",
+                "id": "frc",
                 "configs": {
                     "vendor.qti-ext-vpp.mode": "HQV_MODE_MANUAL",
-                    "vendor.qti-ext-vpp-aie.mode": "HQV_MODE_MANUAL",
-                    "vendor.qti-ext-vpp-aie.cade-level": "20",
-                    "vendor.qti-ext-vpp-aie.ltm-sat-gain": "100",
-                    "vendor.qti-ext-vpp-aie.ltm-sat-offset": "55",
-                    "vendor.qti-ext-vpp-aie.ltm-ace-str": "37",
-                    "vendor.qti-ext-vpp-aie.ltm-ace-brightness-low": "0",
-                    "vendor.qti-ext-vpp-aie.ltm-ace-brightness-high": "0",
-                    "vendor.qti-ext-vpp-aie.ltm-level":"25",
-                    "vendor.qti-ext-vpp-demo.process-side": "PROCESS_LEFT",
-                    "vendor.qti-ext-vpp-demo.process-percent": "50"
+                    "vendor.qti-ext-vpp-frc.mode": "FRC_MODE_SMOOTH_MOTION",
+                    "vendor.qti-ext-vpp-frc.level": "FRC_LEVEL_HIGH",
+                    "vendor.qti-ext-vpp-frc.interp": "FRC_INTERP_1X",
+                    "vendor.qti-ext-vpp-frc.ts_start": "0",
+                    "vendor.qti-ext-vpp-frc.frame_copy_on_fallback": "0",
+                    "vendor.qti-ext-vpp-frc.frame_copy_input": "0"
                 }
             }
         ]
@@ -63,6 +43,31 @@
                 "id": "bypass-enable",
                 "configs": {
                     "vendor.qti-ext-vpp-bypass.enable": "1"
+                }
+            }
+        ]
+    },
+
+    "QModKey_Static_OplusVppFilter": {
+        "descriptor": "OPLUS_FEATURE_OSIE_SR presets specific to OplusVPP",
+        "presets": [
+            {
+                "id": "1",
+                "configs": {
+                    "oplus-osie-enable": "1"
+                }
+            },
+            {
+                "id": "2",
+                "configs": {
+                    "oplus-sr-enable": "1"
+                }
+            },
+            {
+                "id": "3",
+                "configs": {
+                    "oplus-sr-enable": "1",
+                    "oplus-osie-enable": "1"
                 }
             }
         ]
