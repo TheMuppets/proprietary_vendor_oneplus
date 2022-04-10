@@ -1,9 +1,0 @@
-{
-  "config": {
-    "hw_platform": ["MTP", "Surf", "RCM"],
-    "soc_id": ["415", "439"]
-  },
-  "sns_irq": {
-    "owner": "sns_irq"
-  }
-}
