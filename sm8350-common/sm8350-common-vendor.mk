@@ -8,7 +8,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
     vendor/oneplus/sm8350-common/proprietary/odm/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_ODM)/bin/hw/android.hardware.drm@1.3-service.widevine \
-    vendor/oneplus/sm8350-common/proprietary/odm/bin/hw/vendor.nxp.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.nxp.hardware.nfc@1.2-service \
     vendor/oneplus/sm8350-common/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor/oneplus/sm8350-common/proprietary/odm/bin/hw/vendor.pixelworks.hardware.display.iris-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.pixelworks.hardware.display.iris-service \
     vendor/oneplus/sm8350-common/proprietary/odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service \
@@ -438,8 +437,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/init/calibrationOutput_uw.rc:$(TARGET_COPY_OUT_ODM)/etc/init/calibrationOutput_uw.rc \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/init/calibrationOutput_uw_686.rc:$(TARGET_COPY_OUT_ODM)/etc/init/calibrationOutput_uw_686.rc \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/init/init.SN100x.nfc.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.SN100x.nfc.rc \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.nxp.hardware.nfc@1.2-service.rc \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.display.iris-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.display.iris-service.rc \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc \
@@ -487,94 +484,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/irissoft.fw:$(TARGET_COPY_OUT_ODM)/etc/irissoft.fw \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/irissoft_fod.fw:$(TARGET_COPY_OUT_ODM)/etc/irissoft_fod.fw \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp-pnscr.conf \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_19815:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_19815 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_19816:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_19816 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_19825:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_19825 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_19826:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_19826 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_20031:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_20031 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_20311:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_20311 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_20627:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_20627 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_20659:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_20659 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_20664:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_20664 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_20666:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_20666 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_20755:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_20755 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_20851:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_20851 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_20852:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_20852 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_20853:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_20853 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_20854:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_20854 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_20857:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_20857 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_20858:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_20858 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_20859:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_20859 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_2085A:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_2085A \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_21005:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_21005 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_21205:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_21205 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_21617:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_21617 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-mtp-SN100.conf_216B2:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-mtp-SN100.conf_216B2 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_19815:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_19815 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_19816:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_19816 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_19825:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_19825 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_19826:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_19826 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_20031:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_20031 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_20311:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_20311 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_20627:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_20627 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_20659:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_20659 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_20664:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_20664 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_20666:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_20666 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_20755:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_20755 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_20851:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_20851 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_20852:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_20852 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_20853:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_20853 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_20854:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_20854 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_20857:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_20857 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_20858:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_20858 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_20859:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_20859 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_2085A:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_2085A \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_21005:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_21005 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_21205:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_21205 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_21617:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_21617 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc-nci.conf_216B2:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc-nci.conf_216B2 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_19815:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_19815 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_19816:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_19816 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_19825:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_19825 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_19826:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_19826 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_20031:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_20031 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_20627:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_20627 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_20851:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_20851 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_20852:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_20852 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_20853:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_20853 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_20854:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_20854 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_20857:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_20857 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_20858:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_20858 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_20859:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_20859 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_2085A:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_2085A \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_21005:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_21005 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_accesscard_config.conf_21617:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_accesscard_config.conf_21617 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_19815:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_19815 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_19816:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_19816 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_19825:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_19825 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_19826:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_19826 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_20031:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_20031 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_20627:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_20627 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_20659:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_20659 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_20664:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_20664 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_20851:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_20851 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_20852:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_20852 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_20853:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_20853 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_20854:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_20854 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_20857:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_20857 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_20858:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_20858 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_20859:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_20859 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_2085A:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_2085A \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_21005:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_21005 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/libnfc_default_config.conf_21617:$(TARGET_COPY_OUT_ODM)/etc/nfc/libnfc_default_config.conf_21617 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/nfc_conf_ref:$(TARGET_COPY_OUT_ODM)/etc/nfc/nfc_conf_ref \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/nfc_fw_ref:$(TARGET_COPY_OUT_ODM)/etc/nfc/nfc_fw_ref \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_53:$(TARGET_COPY_OUT_ODM)/etc/nfc/sn100u.bin_sn100t_fw_01_10_53 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_57:$(TARGET_COPY_OUT_ODM)/etc/nfc/sn100u.bin_sn100t_fw_01_10_57 \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/st21nfc_fw.bin_st21h:$(TARGET_COPY_OUT_ODM)/etc/nfc/st21nfc_fw.bin_st21h \
-    vendor/oneplus/sm8350-common/proprietary/odm/etc/nfc/st21nfc_fw7.bin_st21h:$(TARGET_COPY_OUT_ODM)/etc/nfc/st21nfc_fw7.bin_st21h \
+    vendor/oneplus/sm8350-common/proprietary/vendor/etc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
+    vendor/oneplus/sm8350-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/wifi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb.bin \
     vendor/oneplus/sm8350-common/proprietary/odm/firmware/100ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/100ms_RTP.bin \
@@ -731,7 +642,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/odm/lib/liboplusvppfilter.so:$(TARGET_COPY_OUT_ODM)/lib/liboplusvppfilter.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib/libosie_process.so:$(TARGET_COPY_OUT_ODM)/lib/libosie_process.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib/libosie_stub.so:$(TARGET_COPY_OUT_ODM)/lib/libosie_stub.so \
-    vendor/oneplus/sm8350-common/proprietary/odm/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_ODM)/lib/libsn100u_fw.so \
+    vendor/oneplus/sm8350-common/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib/rfsa/adsp/aiboost/libQnnHtpAltPrepSkel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/aiboost/libQnnHtpAltPrepSkel.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib/rfsa/adsp/aiboost/libQnnHtpSkel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/aiboost/libQnnHtpSkel.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib/rfsa/adsp/aiboost/libaiboostubwc_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/aiboost/libaiboostubwc_skel.so \
@@ -918,9 +829,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/libwatermark_photo.so:$(TARGET_COPY_OUT_ODM)/lib64/libwatermark_photo.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/libwvhidl.so:$(TARGET_COPY_OUT_ODM)/lib64/libwvhidl.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_ODM)/lib64/mediadrm/libwvdrmengine.so \
-    vendor/oneplus/sm8350-common/proprietary/odm/lib64/nfc_nci.nqx.default.hw.so:$(TARGET_COPY_OUT_ODM)/lib64/nfc_nci.nqx.default.hw.so \
-    vendor/oneplus/sm8350-common/proprietary/odm/lib64/vendor.nxp.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.nxp.hardware.nfc@1.0.so \
-    vendor/oneplus/sm8350-common/proprietary/odm/lib64/vendor.nxp.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.nxp.hardware.nfc@1.1.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.appradio@1.0.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
     vendor/oneplus/sm8350-common/proprietary/odm/lib64/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.commondcs@1.0.so \
@@ -2095,7 +2003,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service \
     vendor.qti.hardware.servicetracker@1.2-service \
     manifest_android.hardware.drm@1.3-service.widevine \
-    manifest_nfc_sn100t \
     manifest_oplus_fingerprint \
     vendor.pixelworks.hardware.display.iris-service \
     vendor.pixelworks.hardware.feature.irisfeature-service

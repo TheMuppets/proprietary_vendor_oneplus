@@ -330,15 +330,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_nfc_sn100t",
-	owner: "oneplus",
-	src: "proprietary/odm/etc/vintf/manifest/manifest_nfc_sn100t.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	device_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "manifest_oplus_fingerprint",
 	owner: "oneplus",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml",
