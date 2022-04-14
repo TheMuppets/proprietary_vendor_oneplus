@@ -14,4 +14,6 @@
         file="/system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar"/>
     <library name="vendor.qti.ims.rcssip-V1.0-java"
         file="/system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar"/>
+    <library name="vendor.qti.ims.factory-V2.1-java"
+        file="/system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar"/>
 </permissions>

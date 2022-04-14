@@ -2079,11 +2079,9 @@ PRODUCT_PACKAGES += \
     ImsRcsService \
     QtiTelephony \
     QtiTelephonyService \
-    imssettings \
-    TeleServiceQcom \
-    TelecomQcom \
     WfdService \
     dpmserviceapp \
+    ims \
     qcrilmsgtunnel \
     WfdCommon \
     com.android.hotwordenrollment.common.util \

@@ -46,6 +46,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
         <permission name="com.android.voicemail.permission.WRITE_VOICEMAIL"/>
         <permission name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS"/>
+        <permission name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
     </privapp-permissions>
 
     <privapp-permissions package="org.codeaurora.ims">
