@@ -354,13 +354,6 @@ dex_import {
 }
 
 dex_import {
-	name: "qcnvitems",
-	owner: "oneplus",
-	jars: ["proprietary/product/framework/qcnvitems.jar"],
-	product_specific: true,
-}
-
-dex_import {
 	name: "vendor.qti.hardware.alarm-V1.0-java",
 	owner: "oneplus",
 	jars: ["proprietary/product/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
