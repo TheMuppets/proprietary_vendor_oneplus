@@ -14,6 +14,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/odm/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/oneplus/sm8350-common/proprietary/odm/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.secure_element@1.2-service \
     vendor/oneplus/sm8350-common/proprietary/odm/bin/init.oplus.fingerprints.sh:$(TARGET_COPY_OUT_ODM)/bin/init.oplus.fingerprints.sh \
+    vendor/oneplus/sm8350-common/proprietary/vendor/bin/nqnfcinfo:$(TARGET_COPY_OUT_VENDOR)/bin/nqnfcinfo \
     vendor/oneplus/sm8350-common/proprietary/odm/bin/oplus_sensor_fb:$(TARGET_COPY_OUT_ODM)/bin/oplus_sensor_fb \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/camera/anc_cl_kernel.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/anc_cl_kernel.cache \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/camera/anc_cl_kernel_ins.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/anc_cl_kernel_ins.cache \
