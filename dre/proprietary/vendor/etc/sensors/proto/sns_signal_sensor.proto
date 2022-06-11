@@ -1,0 +1,47 @@
+//  @file sns_signal_sensor.proto
+//
+//  Defines standard message types for the Signal Sensor
+//
+// Copyright (c) 2016-2017 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+
+// Signal sensor
+//
+// The signal sensor provides a mechanism to turn asynchronous callbacks into
+// events that are passed to the client. The client subscribes to this sensor
+// using the sns_signal_sensor_req message.
+//
+// The signal sensor provides a thread and a flag to the client via the
+// sns_signal_sensor_token_event event upon subscribing to the service.
+
+// Message IDs
+enum sns_signal_sensor_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_SIGNAL_SENSOR_MSGID_SNS_SIGNAL_SENSOR_REQ = 512;
+  SNS_SIGNAL_SENSOR_MSGID_SNS_SIGNAL_SENSOR_TOKEN = 1024;
+  SNS_SIGNAL_SENSOR_MSGID_SNS_SIGNAL_SENSOR_NOTIFY = 1025;
+}
+
+// Signal sensor request
+//
+// Subscribe to the signal sensor.
+message sns_signal_sensor_req
+{
+  required bool enable = 1;
+}
+
+// Signal sensor token
+//
+// Provides the thread and flag to the client
+message sns_signal_sensor_token
+{
+  required fixed64 thread = 1;
+  required fixed32 flag = 2;
+}
+

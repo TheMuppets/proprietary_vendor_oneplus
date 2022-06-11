@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--
+Copyright (c) 2020 Qualcomm Technologies, Inc.
+All Rights Reserved.
+Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<AdvancedSfOffsetSetting>
+    <DeviceSettingList>
+        <DefaultDevice version="1"/>
+        <Device version="1">
+            <FpsOffsetMap fps="90" advancedSfOffsetPercentage="36"/>
+            <FpsOffsetMap fps="120" advancedSfOffsetPercentage="48"/>
+            <FpsOffsetMap fps="144" advancedSfOffsetPercentage="40"/>
+        </Device>
+        <Device version="2">
+            <FpsOffsetMap fps="90" advancedSfOffsetPercentage="45"/>
+            <FpsOffsetMap fps="120" advancedSfOffsetPercentage="48"/>
+            <FpsOffsetMap fps="144" advancedSfOffsetPercentage="40"/>
+        </Device>
+    </DeviceSettingList>
+</AdvancedSfOffsetSetting>

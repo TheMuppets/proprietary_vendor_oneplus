@@ -1,0 +1,102 @@
+# Copyright (c) 2020 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc
+#
+# Not a contribution.
+#
+# Copyright (C) 2018 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+gettid: 1
+prctl: arg0 == PR_SET_VMA || arg0 == PR_SET_NAME || arg0 == PR_GET_DUMPABLE || arg0 == PR_GET_NAME || arg0 == PR_SET_TIMERSLACK || arg0 == 0x37
+write: 1
+read: 1
+close: 1
+openat: 1
+futex: 1
+rt_sigprocmask: 1
+#ioctl: arg1 == _IOC(_IOC_NONE || arg1 == _IOC(_IOC_READ || arg1 == TCGETS || arg1 == BINDER_WRITE_READ || arg1 == SIOCGIFNAME || arg1 == BINDER_THREAD_EXIT || arg1 == VSOC_MAYBE_SEND_INTERRUPT_TO_HOST || arg1 == BINDER_SET_MAX_THREADS || arg1 == BINDER_VERSION
+ioctl : 1
+recvfrom: 1
+ppoll: 1
+fcntl: 1
+sendto: 1
+madvise: 1
+pselect6: 1
+mmap: arg2 in ~PROT_EXEC || arg2 in ~PROT_WRITE
+mprotect: arg2 in ~PROT_EXEC || arg2 in ~PROT_WRITE
+munmap: 1
+newfstatat: 1
+sigaltstack: 1
+fstat: 1
+pread64: 1
+socket: arg0 == AF_UNIX || arg0 == AF_INET || arg0 == AF_QIPCRTR || arg0 == AF_NETLINK
+getuid: 1
+clone: 1
+getsockname: 1
+exit: 1
+writev: 1
+connect: 1
+setsockopt: 1
+set_tid_address: 1
+pipe2: 1
+recvmsg: 1
+nanosleep: 1
+lseek: 1
+mremap: 1
+readlinkat: 1
+fstatfs: 1
+pwrite64: 1
+rt_sigtimedwait: 1
+tgkill: 1
+timer_delete: 1
+bind: 1
+timer_settime: 1
+timer_create: 1
+faccessat: 1
+getdents64: 1
+rt_sigaction: 1
+clock_gettime: 1
+fdatasync: 1
+ftruncate: 1
+setpriority: 1
+getrlimit: 1
+inotify_add_watch: 1
+getrandom: 1
+getgroups: 1
+socketpair: 1
+unlinkat: 1
+accept4: 1
+geteuid: 1
+getgid: 1
+umask: 1
+inotify_init1: 1
+getpid: 1
+listen: 1
+restart_syscall: 1
+sched_getscheduler: 1
+sched_getaffinity: 1
+rt_sigreturn: 1
+exit_group: 1
+getegid: 1
+execve: 1
+fchmodat: 1
+epoll_create1: 1
+epoll_pwait: 1
+epoll_ctl: 1
+epoll_pwait: 1
+getsockopt: 1
+sendmsg: 1
+send: 1
+recv: 1

@@ -1,0 +1,18 @@
+{
+  "config":{
+    "hw_platform": ["QRD","MTP", "RCM", "Surf"],
+    "soc_id": ["454"]
+  },
+
+  "sns_dynamic_sensors":
+  {
+    "owner":"sns_dynamic_sensors",
+
+    "sns_register_lsm6dst":
+    {
+      "type" : "str",
+      "ver" : "0",
+      "data" : "lsm6dst_normal.so"
+    }
+  }
+}

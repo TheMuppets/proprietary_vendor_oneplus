@@ -1,0 +1,75 @@
+<XML>
+<!--
+ Copyright (c) 2020 Qualcomm Technologies, Inc.
+ All Rights Reserved.
+ Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<SDE670>
+  <Param0>6</Param0>
+  <Param1>8</Param1>
+  <Param2>4</Param2>
+  <Param3>1</Param3>
+  <Param4>1</Param4>
+  <Param5>2</Param5>
+  <Param6>0</Param6> <!-- TODO: recheck (as per kernel code it is 2) -->
+  <Param7>3</Param7>
+  <Param8>25</Param8>
+  <Param9>1.05</Param9>
+  <Param10>40</Param10>
+  <Param11>4300.0</Param11>
+  <Param12>4800.0</Param12>
+  <Param13>2</Param13>
+  <Param14>32</Param14>
+  <Param15>2.0</Param15>
+  <Param16>1.5</Param16>
+  <Param17>4.0</Param17>
+  <Param18>3</Param18>
+  <Param19>2</Param19>
+  <Param20>48</Param20>
+  <Param21>32</Param21>
+  <Param22>3</Param22>
+  <Param23>1600.0</Param23>
+  <Param24>261.0</Param24>
+  <Param25>4800.0</Param25>
+  <Param26>9600.0</Param26>
+  <Param27>4.0</Param27>
+  <Param28>1.1</Param28>
+  <Param29>61440</Param29> <!-- TODO: recheck lut Param29-31 (currently, as per lahaina) -->
+  <Param30>4608</Param30>
+  <Param31>8</Param31>
+  <Param32>2</Param32>
+  <Param33>75</Param33>
+  <Param34>256</Param34>
+  <Param35>100</Param35>
+  <Param36>2</Param36>
+  <Param37>4</Param37>
+  <Param38>800</Param38>
+  <Param39>1600</Param39>
+  <Param40>2</Param40>
+  <Param41>4</Param41>
+  <Param42>3</Param42>
+  <Param43>1.45</Param43>
+  <Param44>1.0</Param44>
+  <Param45>1.0</Param45>
+  <Param46>4300</Param46>
+  <Param47>0.25</Param47>
+  <Param48>3.0</Param48>
+  <Param49>5.33</Param49>
+  <Param50>16</Param50>
+  <Param51>1.7</Param51>
+  <Param52>1.4</Param52>
+  <Param53>32</Param53>
+  <Param54>16</Param54>
+  <Param55>8.33</Param55>
+  <Param56>8.0</Param56>
+  <Param57>75</Param57>
+
+<!-- Example
+  <Overrides>
+    <Override0>
+      <Param11>4400</Param11>
+    </Override0>
+  </Overrides>
+-->
+</SDE670>
+</XML>

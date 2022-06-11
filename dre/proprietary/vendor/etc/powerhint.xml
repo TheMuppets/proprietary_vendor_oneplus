@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+/* Copyright (c) 2016-2018, 2020 The Linux Foundation. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are
+ * met:
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above
+ *       copyright notice, this list of conditions and the following
+ *       disclaimer in the documentation and/or other materials provided
+ *       with the distribution.
+ *     * Neither the name of The Linux Foundation nor the names of its
+ *       contributors may be used to endorse or promote products derived
+ *       from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+ * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ * BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+ * OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+ * IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+-->
+<HintConfigs>
+    <Powerhint>
+
+        <!-- camera preview -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--L CPU CORE 6 SCHED LOAD BOOST -->
+        <!--L CPU CORE 7 SCHED LOAD BOOST -->
+        <!--L CPU Hispeed freq of 1190Mhz -->
+        <!--L CLUSTER_LITTLE - Set hispeed load 95 -->
+        <!--L CLUSTER_BIG - Set hispeed load 95 -->
+        <!--CPUBW HWMON - Set sample_ms 50 -->
+        <!--CPUBW HWMON - Set io_percent 100 -->
+        <!--CPUBW HWMON - Set up_scale 0 -->
+        <!--L CPU core ctl min cpus 6 -->
+        <Config
+            Id="0x00001330" Enable="true" Timeout="0" Target="holi"
+            Resources="0x40C68100, -12, 0x40C68110, -12, 0x40C68120, -12,
+            0x40C68130, -12, 0x40C68000, -12, 0x40C68010, -12, 0x40C68020, -12, 0x40C68030, -12,
+            0x4143C100, 1190, 0x41440100, 0x5F, 0x41440000, 0x5F, 0x43034000, 0x32, 0x43020000, 0x64, 0x43014000, 0x0, 0x41000100, 6"/>
+
+        <!-- camera 30fps-->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--L CPU CORE 6 SCHED LOAD BOOST -->
+        <!--L CPU CORE 7 SCHED LOAD BOOST -->
+        <!--L CPU Hispeed freq of 1190Mhz -->
+        <!--L CLUSTER_LITTLE - Set hispeed load 95 -->
+        <!--L CLUSTER_BIG - Set hispeed load 95 -->
+        <!--CPUBW HWMON - Set sample_ms 50 -->
+        <!--CPUBW HWMON - Set io_percent 100 -->
+        <!--CPUBW HWMON - Set up_scale 0 -->
+        <!--L CPU core ctl min cpus 6 -->
+        <Config
+            Id="0x00001331" Enable="true" Timeout="0" Target="holi"
+            Resources="0x40C68100, -10, 0x40C68110, -10, 0x40C68120, -10,
+            0x40C68130, -10, 0x40C68000, -10, 0x40C68010, -10, 0x40C68020, -10, 0x40C68030, -10,
+            0x4143C100, 1190, 0x41440100, 0x5F, 0x41440000, 0x5F, 0x43034000, 0x32, 0x43020000, 0x64, 0x43014000, 0x0, 0x41000100, 6"/>
+
+
+        <!-- camera 60 FPS -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--L CPU CORE 6 SCHED LOAD BOOST -->
+        <!--L CPU CORE 7 SCHED LOAD BOOST -->
+        <!--L CPU Hispeed freq of 1190Mhz -->
+        <!--L CLUSTER_LITTLE - Set hispeed load 95 -->
+        <!--L CLUSTER_BIG - Set hispeed load 95 -->
+        <!--CPUBW HWMON - Set sample_ms 20 -->
+        <!--L CPU core ctl min cpus 6 -->
+        <Config
+            Id="0x00001332" Enable="true" Timeout="0" Target="holi"
+            Resources="0x40C68100, -10, 0x40C68110, -10, 0x40C68120, -10,
+            0x40C68130, -10, 0x40C68000, -10, 0x40C68010, -10, 0x40C68020, -10, 0x40C68030, -10,
+            0x4143C100, 1190, 0x41440100, 0x5F, 0x41440000, 0x5F, 0x43034000, 0x14, 0x41000100, 6"/>
+
+
+        <!-- camera HFR -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--L CPU CORE 6 SCHED LOAD BOOST -->
+        <!--L CPU CORE 7 SCHED LOAD BOOST -->
+        <!--L CPU Hispeed freq of 1190Mhz -->
+        <!--L CLUSTER_LITTLE - Set hispeed load 95 -->
+        <!--L CLUSTER_BIG - Set hispeed load 95 -->
+        <!--CPUBW HWMON - Set sample_ms 20 -->
+        <!--L CPU core ctl min cpus 6 -->
+        <Config
+            Id="0x00001333" Enable="true" Timeout="0" Target="holi"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68000, 0xFFFFFFFA, 0x40C68010, 0xFFFFFFFA, 0x40C68020, 0xFFFFFFFA, 0x40C68030, 0xFFFFFFFA,
+            0x4143C100, 1190, 0x41440100, 0x5F, 0x41440000, 0x5F, 0x43034000, 0x14, 0x41000100, 6"/>
+
+
+        <!-- HFR 480fps -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--L CPU CORE 6 SCHED LOAD BOOST -->
+        <!--L CPU CORE 7 SCHED LOAD BOOST -->
+        <!--L CPU Hispeed freq of 1190Mhz -->
+        <!--L CLUSTER_LITTLE - Set hispeed load 95 -->
+        <!--L CLUSTER_BIG - Set hispeed load 95 -->
+        <!--CPUBW HWMON - Set sample_ms 20 -->
+        <!--L CPU core ctl min cpus 6 -->
+        <Config
+            Id="0x00001334" Enable="true" Timeout="0" Target="holi"
+            Resources="0x40C68100, 0xFFFFFFFA, 0x40C68110, 0xFFFFFFFA, 0x40C68120, 0xFFFFFFFA,
+            0x40C68130, 0xFFFFFFFA, 0x40C68000, 0xFFFFFFFA, 0x40C68010, 0xFFFFFFFA, 0x40C68020, 0xFFFFFFFA, 0x40C68030, 0xFFFFFFFA,
+            0x4143C100, 1190, 0x41440100, 0x5F, 0x41440000, 0x5F, 0x43034000, 0x14, 0x41000100, 6"/>
+
+
+        <!-- same settings for all the qvr power levels intentionally -->
+        <!-- qvr level cpu1 gpu1 -->
+        <!-- B CPU - Cluster min freq ~.768 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.035 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.478 Ghz -->
+        <!-- GPU - min pwrlevel 6 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130A" Enable="true" Target="holi" Timeout="0"
+            Resources="0x40800000, 0x300, 0x40804000, 0x7F3, 0x40800100, 0x240, 0x40804100, 0x5C6,
+            0x42804000, 0x6, 0x42808000, 0x0"/>
+
+        <!-- qvr level cpu1 gpu2 -->
+        <!-- B CPU - Cluster min freq ~.768 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.035 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.478 Ghz -->
+        <!-- GPU - min pwrlevel 6 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130B" Enable="true" Target="holi" Timeout="0"
+            Resources="0x40800000, 0x300, 0x40804000, 0x7F3, 0x40800100, 0x240, 0x40804100, 0x5C6,
+            0x42804000, 0x6, 0x42808000, 0x0"/>
+
+        <!-- qvr level cpu1 gpu3 -->
+        <!-- B CPU - Cluster min freq ~.768 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.035 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.478 Ghz -->
+        <!-- GPU - min pwrlevel 6 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130C" Enable="true" Target="holi" Timeout="0"
+            Resources="0x40800000, 0x300, 0x40804000, 0x7F3, 0x40800100, 0x240, 0x40804100, 0x5C6,
+            0x42804000, 0x6, 0x42808000, 0x0"/>
+
+        <!-- qvr level cpu2 gpu1 -->
+        <!-- B CPU - Cluster min freq ~.768 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.035 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.478 Ghz -->
+        <!-- GPU - min pwrlevel 6 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130D" Enable="true" Target="holi" Timeout="0"
+            Resources="0x40800000, 0x300, 0x40804000, 0x7F3, 0x40800100, 0x240, 0x40804100, 0x5C6,
+            0x42804000, 0x6, 0x42808000, 0x0"/>
+
+        <!-- qvr level cpu2 gpu2 -->
+        <!-- B CPU - Cluster min freq ~.768 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.035 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.478 Ghz -->
+        <!-- GPU - min pwrlevel 6 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130E" Enable="true" Target="holi" Timeout="0"
+            Resources="0x40800000, 0x300, 0x40804000, 0x7F3, 0x40800100, 0x240, 0x40804100, 0x5C6,
+            0x42804000, 0x6, 0x42808000, 0x0"/>
+
+        <!-- qvr level cpu2 gpu3 -->
+        <!-- B CPU - Cluster min freq ~.768 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.035 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.478 Ghz -->
+        <!-- GPU - min pwrlevel 6 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130F" Enable="true" Target="holi" Timeout="0"
+            Resources="0x40800000, 0x300, 0x40804000, 0x7F3, 0x40800100, 0x240, 0x40804100, 0x5C6,
+            0x42804000, 0x6, 0x42808000, 0x0"/>
+
+        <!-- qvr level cpu3 gpu1 -->
+        <!-- B CPU - Cluster min freq ~.768 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.035 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.478 Ghz -->
+        <!-- GPU - min pwrlevel 6 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x00001310" Enable="true" Target="holi" Timeout="0"
+            Resources="0x40800000, 0x300, 0x40804000, 0x7F3, 0x40800100, 0x240, 0x40804100, 0x5C6,
+            0x42804000, 0x6, 0x42808000, 0x0"/>
+
+        <!-- qvr level cpu3 gpu2 -->
+        <!-- B CPU - Cluster min freq ~.768 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.035 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.478 Ghz -->
+        <!-- GPU - min pwrlevel 6 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x00001311" Enable="true" Target="holi" Timeout="0"
+            Resources="0x40800000, 0x300, 0x40804000, 0x7F3, 0x40800100, 0x240, 0x40804100, 0x5C6,
+            0x42804000, 0x6, 0x42808000, 0x0"/>
+
+        <!-- qvr level cpu3 gpu3 -->
+        <!-- B CPU - Cluster min freq ~.768 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.035 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.478 Ghz -->
+        <!-- GPU - min pwrlevel 6 (freq 180 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 825 Mhz) -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x00001312" Enable="true" Target="holi" Timeout="0"
+            Resources="0x40800000, 0x300, 0x40804000, 0x7F3, 0x40800100, 0x240, 0x40804100, 0x5C6,
+            0x42804000, 0x6, 0x42808000, 0x0"/>
+
+         <!-- sustained performance -->
+         <!-- B CPU - Cluster min freq uncapped -->
+         <!-- L CPU - Cluster min freq uncapped -->
+         <!-- B CPU - Cluster max freq ~1.22 GHz -->
+         <!-- L CPU - Cluster max freq ~1.22 Ghz -->
+         <!-- GPU - min freq 275Mhz -->
+         <!-- GPU - max freq 400Mhz -->
+         <!-- GPUBW freq uncapped -->
+         <Config
+             Id="0x00001206" Enable="true" Timeout="0" Target="holi"
+             Resources="0x40800000, 0x0, 0x40800100, 0x0, 0x40804000, 0x4CC, 0x40804100, 0x4CC,
+             0X4280C000, 0x113, 0X42810000, 0x190, 0x42814000, 0x0"/>
+
+         <!-- vr mode -->
+         <!-- B CPU - Cluster min freq ~1.22 Ghz -->
+         <!-- L CPU - Cluster min freq ~0.940 Ghz -->
+         <!-- B CPU - Cluster max freq ~1.90 Ghz -->
+         <!-- L CPU - Cluster max freq ~1.70 Ghz -->
+         <!-- GPU - min freq 275Mhz -->
+         <!-- GPU - max freq 625Mhz -->
+         <!-- GPUBW uncapped -->
+         <Config
+             Id="0x00001207" Enable="true" Timeout="0" Target="holi"
+             Resources="0x40800000, 0x4CC, 0x40800100, 0x3AC, 0x40804000, 0x76C, 0x40804100, 0x6C0,
+             0X4280C000, 0x113, 0X4280C000, 0x271, 0x42814000, 0x0"/>
+
+         <!-- vr mode sustained performance -->
+         <!-- B CPU - Cluster min freq ~1.22 Ghz -->
+         <!-- L CPU - Cluster min freq ~1.22 Ghz -->
+         <!-- B CPU - Cluster max freq ~1.22 Ghz -->
+         <!-- L CPU - Cluster max freq ~1.22 Ghz -->
+         <!-- GPU - min freq 400Mhz -->
+         <!-- GPU - max freq 400Mhz -->
+         <!-- GPUBW uncapped  -->
+         <Config
+             Id="0x00001301" Enable="true" Timeout="0" Target="holi"
+             Resources="0x40800000, 0x4CC, 0x40800100, 0x4CC, 0x40804000, 0x4CC, 0x40804100, 0x4CC,
+             0X4280C000, 0x190, 0X42810000, 0x190, 0x42814000, 0x0"/>
+
+        <!-- multi camera 30fps-->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--L CPU CORE 6 SCHED LOAD BOOST -->
+        <!--L CPU CORE 7 SCHED LOAD BOOST -->
+        <!--L CPU cluster min freq of 1190Mhz -->
+        <!--CPUBW HWMON - Set sample_ms 50 -->
+        <!--CPUBW HWMON - Set io_percent 100 -->
+        <!--CPUBW HWMON - Set up_scale 0 -->
+        <!--L CPU core ctl min cpus 6 -->
+        <Config
+            Id="0x00001336" Enable="true" Timeout="0" Target="holi"
+            Resources="0x40C68100, -10, 0x40C68110, -10, 0x40C68120, -10,
+            0x40C68130, -10, 0x40C68000, -10, 0x40C68010, -10, 0x40C68020, -10, 0x40C68030, -10,
+            0x40800100, 1190, 0x43034000, 0x32, 0x43020000, 0x64, 0x43014000, 0x0, 0x41000100, 6"/>
+
+        <!-- camera portrait preview -->
+        <!--L CPU CORE 0 SCHED LOAD BOOST -->
+        <!--L CPU CORE 1 SCHED LOAD BOOST -->
+        <!--L CPU CORE 2 SCHED LOAD BOOST -->
+        <!--L CPU CORE 3 SCHED LOAD BOOST -->
+        <!--L CPU CORE 4 SCHED LOAD BOOST -->
+        <!--L CPU CORE 5 SCHED LOAD BOOST -->
+        <!--L CPU CORE 6 SCHED LOAD BOOST -->
+        <!--L CPU CORE 7 SCHED LOAD BOOST -->
+        <!-- B CPU - Cluster max freq ~1.401 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.324 Ghz -->
+        <!--L CPU Hispeed freq of 1190Mhz -->
+        <!--L CLUSTER_LITTLE - Set hispeed load 95 -->
+        <!--L CLUSTER_BIG - Set hispeed load 95 -->
+        <!--CPUBW HWMON - Set sample_ms 50 -->
+        <!--CPUBW HWMON - Set io_percent 100 -->
+        <!--CPUBW HWMON - Set up_scale 0 -->
+        <!--L CPU core ctl min cpus 6 -->
+        <Config
+            Id="0x00001337" Enable="true" Timeout="0" Target="holi"
+            Resources="0x40C68100, -12, 0x40C68110, -12, 0x40C68120, -12,
+            0x40C68130, -12, 0x40C68000, -12, 0x40C68010, -12, 0x40C68020, -12, 0x40C68030, -12, 0x40804000, 0xfff, 0x40804100, 0xfff,
+            0x4143C100, 1190, 0x41440100, 0x5F, 0x41440000, 0x5F, 0x43034000, 0x32, 0x43020000, 0x64, 0x43014000, 0x0, 0x41000100, 6"/>
+
+    </Powerhint>
+</HintConfigs>
+
+
+

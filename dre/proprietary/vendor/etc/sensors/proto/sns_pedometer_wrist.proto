@@ -1,0 +1,56 @@
+// @file sns_pedometer_wrist.proto
+//
+// Defines message types for the Pedometer_wrist Sensor.
+//
+// Copyright (c) 2018 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// The Pedometer_wrist Sensor detects steps taken by the user
+//
+// The Pedometer_wrist Step event is generated when the user takes a step.
+// The event includes the latest step count accumulated since activation.
+// All clients to Pedometer_wrist get the same step event.
+// The timestamp of the event indicates the time of the latest detected step.
+
+// Pedometer_wrist Sensor Attribute Requirements:
+// SNS_STD_SENSOR_ATTRID_TYPE: "pedometer_wrist"
+// SNS_STD_SENSOR_ATTRID_STREAM_TYPE: SNS_STD_SENSOR_STREAM_TYPE_ON_CHANGE
+
+// Stream Requests:
+// - SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG is used to enable the sensor
+
+// Message IDs for Pedometer_wrist Sensor
+enum sns_pedometer_wrist_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_PEDOMETER_WRIST_MSGID_SNS_PEDOMETER_STEP_EVENT = 1028;
+  //send to client immediatly to inform current step count
+  //msg body same as sns_step_event
+  SNS_PEDOMETER_WRIST_MSGID_SNS_PEDOMETER_STEP_EVENT_CONFIG = 775;
+}
+
+// Events types from Pedometer_wrist Sensor
+message sns_pedometer_step_event
+{
+  //an incrementing step count
+  required uint32 step_count = 1;
+}
+
+message sns_pedometer_step_event_config
+{
+  //current step count
+  required uint32 step_count = 1;
+}
+
+
+// Stream events:
+//
+// The sns_step_event message is used to publish updated step count
+//
+// Pedometer_wrist does not publish configuration events.
+
