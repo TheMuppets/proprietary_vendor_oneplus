@@ -1,0 +1,45 @@
+// @file sns_std_event_gated_sensor.proto
+//
+// Defines standard message types for Sensors with output streams that can be
+// gated on an event from another Sensor.
+// Example: "accel" Sensor can be gated by motion detect event published by
+//          the "motion_detect" Sensor.
+//
+// Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+enum sns_std_event_gated_sensor_msgid
+{
+  option (nanopb_enumopt).long_names = false;
+
+  // Message ID to send a gated request to a Sensor.
+  // Note that the client is responsible to send separate
+  // requests to the Sensor that provides the gating event.
+  SNS_STD_EVENT_GATED_SENSOR_MSGID_SNS_STD_SENSOR_CONFIG = 518;
+
+  // An event gated Sensors uses this event message ID to indicate to it's
+  // clients that the gated stream is converted to a non-gated stream.
+  // This typically happens when the gating event occurs.
+  // Example: When "accel" is gated on "motion_detect" and if the
+  //          motion detect interrupt fires then the "accel" Sensor publishes
+  //          this event to it's clients before the accel data stream starts.
+  SNS_STD_EVENT_GATED_SENSOR_MSGID_GATED_REQ_CONVERTED_TO_NON_GATED = 772;
+}
+
+// Request and Event messages:
+// 1. An enable request to an event gated sensor uses message
+//    sns_std_sensor_config with message ID
+//    SNS_STD_EVENT_GATED_SENSOR_MSGID_SNS_STD_SENSOR_CONFIG.
+// 2. An event gated sensor publishes an output event to it's clients when
+//    the gated request is converted to a non-gated request. It uses event
+//    message ID SNS_STD_EVENT_GATED_SENSOR_MSGID_GATED_REQ_CONVERTED_TO_NON_GATED
+//    with no message payload.
+// 3. An output data event from an event gated sensor uses message
+//    sns_std_sensor_event. See sns_std_sensor.proto and sensor-specific
+//    proto file for details.
+

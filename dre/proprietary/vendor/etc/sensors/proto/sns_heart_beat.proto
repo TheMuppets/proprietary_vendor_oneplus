@@ -1,0 +1,31 @@
+// @file sns_heart_beat.proto
+//
+// Defines the API for Heart Beat sensors
+//
+// Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "sns_std_sensor.proto";
+
+// A heart beat sensor reports everytime a heart beat peak is detected.
+//
+// Peak ideally corresponds to the positive peak in the QRS complex of
+// an ECG signal, and the event timestamp should correspond to the time this
+// peak occured.
+//
+// The sensor is not expected to be optimized for latency. As a guide, a
+// receipt latency of up to 10 seconds is acceptable.
+//
+// ## Heart Beat sensor attributes:
+// SNS_STD_SENSOR_ATTRID_TYPE is "heart_beat"
+//
+// ## Request Message: SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG
+// No configuration is available for this sensor.
+//
+// ## Event Message: sns_std_sensor_event
+// Output of the Heart Beat sensor will be populated in sns_std_sensor_event.
+//
+// sns_std_sensor_event::data[0] = confidence in the detection of the peak
+//    where 0.0 represent no information at all, and 1.0 represents certainty.

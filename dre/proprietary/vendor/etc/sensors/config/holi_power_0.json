@@ -1,0 +1,16 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "RCM", "Surf"],
+    "soc_id": [ "454" ]
+ },
+ "power":{
+    "owner": "power_manager",
+    ".island":{
+      "owner": "power_manager",
+      "enable_island":{ "type": "int", "ver": "0",
+        "data": "1"
+      }
+    }
+  }
+}
+

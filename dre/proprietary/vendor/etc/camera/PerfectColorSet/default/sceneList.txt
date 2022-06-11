@@ -1,0 +1,53 @@
+0. 不处理
+1. 默认
+2. 纯色
+3. 风景
+4. 蓝天
+5. 草地
+6. 沙滩
+7. 绿植
+8. 猫
+9. 狗
+10.日出日落
+11.食物
+12.室内
+13.鲜花
+14.雪地
+15.烟火
+16.聚光灯
+17.鸟类
+18.建筑
+
+typedef enum AISceneType_t {
+    AI_SCN_UNKNOWN              = 0, 未知      1
+    AI_SCN_BEACH                = 1, 沙滩      6
+    AI_SCN_BLUESKY              = 2, 蓝天      4
+    AI_SCN_CAT                  = 3, 猫        8
+    AI_SCN_TEXT                 = 4, 文本      0
+    AI_SCN_DOG                  = 5, 狗        9
+    AI_SCN_FIREWORK             = 6, 烟火      15
+    AI_SCN_GOURMET              = 7, 美食      11
+    AI_SCN_GRASS                = 8, 草地      5
+    AI_SCN_INDOOR               = 9, 室内      12
+    AI_SCN_INFANT               = 10,婴儿      0
+    AI_SCN_LANDSCAPE            = 11,风景      3
+    AI_SCN_NIGHT                = 12,夜晚      0
+    AI_SCN_SNOW                 = 13,雪地      14
+    AI_SCN_SPOTLIGHT            = 14,聚光灯    16
+    AI_SCN_SUNSET               = 15,日出日落  10
+    AI_SCN_PORTRAIT             = 16,人脸      0
+    AI_SCN_MULTI_PORTRAIT       = 17,多人脸    0
+    AI_SCN_MICROSPUR            = 18,微距      0
+    AI_SCN_BACKLIGHT            = 19,背光      0
+    AI_SCN_PURECOLOR            = 20,纯色      2
+    AI_SCN_MOIRE                = 21,摩尔纹    0
+    AI_SCN_FLOWER               = 22,鲜花      13
+    AI_SCN_PLANT                = 23,绿植      7
+    AI_SCN_BIRD                 = 24,鸟类      17
+    AI_SCN_BUILDING             = 25,建筑      18
+    AI_SCN_COUNT                = 26 计数      0
+} AISceneType;
+
+[scene]
+sceneNum	=19
+sceneIdx	=1/6/4/8/0/9/15/11/5/12/0/3/0/14/16/10/0/0/0/0/2/0/13/7/17/18/0/

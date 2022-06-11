@@ -1,0 +1,61 @@
+// @file sns_device_orient.proto
+//
+// Defines the API for the Device Orientation sensors
+//
+// Copyright (c) 2017-2018 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_std_sensor.proto";
+
+// A device orientation sensor reports the current orientation of the device.
+//
+// Minor or transient rotations should not cause a new event to be reported,
+// and this sensor should only be implemented with the help of an accelerometer.
+// Moving the device to an orientation where the Z axis is vertical (either up
+// or down) should not cause a new event to be reported.
+
+// ## Device Orientation sensor attributes:
+// SNS_STD_SENSOR_ATTRID_TYPE is "device_orient"
+//
+// ## Request Message: SNS_STD_SENSOR_MSGID_SNS_STD_ON_CHANGE_CONFIG
+// No configuration is available for this sensor.
+//
+// ## Event Message: SNS_DEVICE_ORIENT_MSGID_SNS_DEVICE_ORIENT_EVENT
+
+// Message IDs for Device Orientation Sensor
+enum sns_device_orient_msgid {
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_DEVICE_ORIENT_MSGID_SNS_DEVICE_ORIENT_EVENT = 776;
+}
+
+enum sns_device_orient_event_type
+{
+  option (nanopb_enumopt).long_names = false;
+  
+  SNS_DEVICE_ORIENT_EVENT_TYPE_UNKNOWN     = -1;
+  // Device is in default orientation (Y axis is vertical and points up)
+  SNS_DEVICE_ORIENT_EVENT_TYPE_DEFAULT     = 0;
+  // Device is rotated 90 degrees counter-clockwise from default orientation
+  // (X axis is vertical and points up)
+  SNS_DEVICE_ORIENT_EVENT_TYPE_POS_1      = 1;
+  // Device is rotated 180 degrees from default orientation (Y axis is
+  // vertical and points down)
+  SNS_DEVICE_ORIENT_EVENT_TYPE_POS_2      = 2;
+  // Device is rotated 90 degrees clockwise from default orientation (X axis
+  // is vertical and points down)
+  SNS_DEVICE_ORIENT_EVENT_TYPE_POS_3      = 3;
+  //#ifdef VENDOR_EDIT quentin.lin@oneplus.com 2018/04/27 add for new device orient algorithem
+  //Device if flat
+  SNS_DEVICE_ORIENT_EVENT_TYPE_POS_4      = 4;
+  //#endif VENDOR_EDIT quentin.lin@oneplus.com 2018/04/27 add for new device orient algorithem
+}
+
+message sns_device_orient_event
+{
+  // Detected state
+  required sns_device_orient_event_type state = 1;
+}
