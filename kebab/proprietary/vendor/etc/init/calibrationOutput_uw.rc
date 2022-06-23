@@ -1,2 +1,0 @@
-on post-fs
-    chmod 777 /vendor/etc/camera/calibrationOutput_uw.bin

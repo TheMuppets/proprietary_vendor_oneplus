@@ -1,0 +1,145 @@
+{
+	"19805": {
+		"platform_config": {
+			"sensor_arch": "qcom_sensor_see"
+		},
+		"sensor_config": {
+			"android.sensor.accelerometer": {
+				"type": 1,
+				"support": "true",
+				"module": "bmi26x",
+				"bmi26x": {
+					"mode": "batch_cali|factory_cali",
+					"offset_x": 0.0,
+					"offset_y": 0.0,
+					"offset_z": 0.0
+				}
+			},
+			"android.sensor.magnetic_field": {
+				"type": 2,
+				"support": "true",
+				"module": "ak0991x|mmc5603x",
+				"ak0991x": {
+					"mode": "batch_cali"
+				},
+				"mmc5603x": {
+					"mode": "batch_cali"
+				}
+			},
+			"android.sensor.gyroscope": {
+				"type": 4,
+				"support": "true",
+				"module": "bmi26x",
+				"bmi26x": {
+					"mode": "batch_cali|factory_cali",
+					"radian_threshold": 0.05,
+					"offset_x": 0.0,
+					"offset_y": 0.0,
+					"offset_z": 0.0
+				}
+			},
+			"android.sensor.light":{
+				"type":5,
+				"support":"true",
+				"module":"module_ignore",
+				"module_ignore":{
+					"mode":"micro_gap"
+				}
+			},
+			"oplus.sensor.side_panel_fusion_light":{
+				"type":33171103,
+				"support":"true",
+				"module":"module_ignore",
+				"module_ignore":{
+					"mode":"factory_cali",
+					"cali_para": 1000,
+					"R_MAX": 0,
+					"G_MAX": 0,
+					"B_MAX": 0,
+					"W_MAX": 0
+				}
+			},
+			"android.sensor.proximity": {
+				"type": 8,
+				"support": "true",
+				"module": "stk33502",
+				"stk33502": {
+					"mode": "ignore_mean|micro_gap|factory_cali",
+					"delta_threshold": 150,
+					"ps0_offset": 0,
+					"ps0_distance_delta": 110,
+					"ps1_offset": 0,
+					"ps1_distance_delta": 0
+				}
+			},
+			"android.sensor.step_counter": {
+				"type": 19,
+				"support": "true",
+				"module": "module_ignore",
+				"module_ignore": {
+					"mode": "virtual_sensor"
+				}
+			},
+			"qti.sensor.sensor_logger": {
+				"type": 33171024,
+				"support": "true",
+				"module": "module_ignore"
+			},
+            "android.sensor.pressure":{
+                "type":6,
+                "support":"true",
+                "module":"bosch_bmp380",
+                "bosch_bmp380":{
+                    "mode":"factory_cali",
+                    "offset_standard":10000,
+                    "delta_standard":1000,
+                    "sample_amount":20,
+                    "cali_offset":0
+                }
+            },
+            "qti.sensor.sar":{
+                 "type":33171025,
+                 "support":"true",
+                 "module":"SX9324UP_SAR",
+                 "SX9324UP_SAR":{
+                    "mode":"single_channel"
+                }
+            },
+            "qti.sensor.sars":{
+                 "type":33171029,
+                 "support":"true",
+                 "module":"SX9324_SAR",
+                 "SX9324_SAR":{
+                    "mode":"dual_channel"
+                }
+            },
+            "qti.sensor.rgb_rear":{
+                "type":33171052,
+                "support":"true",
+                "module":"tcs3408",
+                "tcs3408":{
+                    "mode":"factory_cali",
+                    "R_cali":1000,
+                    "G_cali":1000,
+                    "B_cali":1000,
+                    "C_cali":1000,
+                    "W_cali":1000,
+                    "F_cali":1000
+                }
+            },
+            "qti.sensor.flicker_rear":{
+                "type":33171054,
+                "support":"true"
+            },
+			"qti.sensor.light_rear":{
+				"type":33171055,
+				"support":"true",
+				"module":"tcs3408",
+				"tcs3408":{
+					"mode":"factory_cali",
+					"cali_para": 1000
+				}
+			}
+		}
+	}
+}
