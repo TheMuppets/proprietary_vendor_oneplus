@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
      DSI Module configuration XML file
-     Copyright (c) 2013, 2015, 2017-2019 Qualcomm Technologies, Inc.
+     Copyright (c) 2013, 2015, 2017-2020 Qualcomm Technologies, Inc.
      All Rights Reserved.
      Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -119,6 +119,7 @@
 
      <data name="single_qmux_channel_enabled" type="int"> 1 </data>
      <data name="single_qmux_channel_name" type="string"> rmnet_mhi0 </data>
+     <data name="netmgr_listen_ev_proto" type="int"> 1 </data>
 
      <data name="num_dsi_handles" type="int"> 8 </data>
      <list name="device_names">

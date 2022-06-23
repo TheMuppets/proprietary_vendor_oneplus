@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*************************************************************
+ ** OPLUS_FEATURE_FINGERPRINT
+ ** Copyright (C), 2008-2021, OPLUS Mobile Comm Corp., Ltd
+ **
+ ** Description : 1.0
+ **           This is a hidl manifest for fingerprint
+ **
+ ** Version: 1.0
+ ** Date created: 12:00, 2021/05/31
+ ** Author: Qijia.Zhou@BSP.Fingerprint.Basic
+ **
+ *************************************************************/
+-->
+<manifest version="1.0" type="device">
+    <hal override="true" format="hidl">
+        <name>android.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <version>2.3</version>
+        <interface>
+            <name>IBiometricsFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.oplus.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <version>2.1</version>
+        <interface>
+            <name>IBiometricsFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

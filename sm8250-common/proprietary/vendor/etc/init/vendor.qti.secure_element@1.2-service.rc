@@ -1,4 +1,0 @@
-service secureelement-hal_1_2 /vendor/bin/hw/vendor.qti.secure_element@1.2-service
-    class hal
-    user system
-    group system

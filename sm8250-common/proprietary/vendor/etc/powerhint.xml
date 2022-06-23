@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!--
-/* Copyright (c) 2019, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2019-2020, The Linux Foundation. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
@@ -33,7 +33,211 @@
     <Powerhint>
         <!--video encode 30 fps-->
         <Config
-            Id="0x00001203" Enable="true" Target="kona" Timeout="0"
+            Id="0x00001203" Enable="true" Target="kona"
+            Resources="" />
+
+        <!--sustained performance-->
+        <Config
+            Id="0x00001206" Enable="true" Target="kona"
+            Resources=""/>
+        <!--vr mode-->
+        <Config
+            Id="0x00001207" Enable="true" Target="kona"
+            Resources=""/>
+
+        <!--vr mode sustained performance-->
+        <Config
+            Id="0x00001301" Enable="true" Target="kona"
+            Resources=""/>
+
+        <!-- same settings for all the VR power levels intentionally -->
+
+        <!-- qvr level cpu1 gpu1 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130A" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu1 gpu2 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130B" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu1 gpu3 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130C" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu2 gpu1 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130D" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu2 gpu2 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130E" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu2 gpu3 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x0000130F" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu3 gpu1 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x00001310" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu3 gpu2 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x00001311" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!-- qvr level cpu3 gpu3 -->
+        <!-- B CPU - Cluster min freq ~.864 Ghz -->
+        <!-- B CPU - Cluster max freq ~2.016 Ghz -->
+        <!-- L CPU - Cluster min freq ~.576 Ghz -->
+        <!-- L CPU - Cluster max freq ~1.804 Ghz -->
+        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
+        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
+        <!-- GPU - min pwrlevel 5 (freq 305 Mhz) -->
+        <!-- GPU - max pwrlevel 0 (freq 587 Mhz) -->
+        <!-- Min Big CPUs 3 -->
+        <!-- Min Prime CPUs 1 -->
+        <!-- Idefinite Duration -->
+        <Config
+            Id="0x00001312" Enable="true" Target="kona" Timeout="0"
+            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240, 0x40804100, 0x70C, 0x40800200, 0x3AD, 0x40804200, 0x806,
+            0x42804000, 0x5, 0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
+
+        <!--camera general-->
+        <!--CPU-LLC BWMON - Set sample_ms 16 -->
+        <!--CPU-LLC BWMON - Set io_percent 80 -->
+        <!--CPU-LLC BWMON - Set hyst_length hyst_trigger hist memory 0 -->
+        <Config
+            Id="0x00001331" Enable="true" Timeout="0" Target="kona"
+            Resources="0x41820000, 0x10, 0x41808000, 0x50, 0x4180C000, 0"/>
+
+        <!--camera 60fps-->
+        <!--CPU-LLC BWMON - Set sample_ms 16 -->
+        <!--CPU-LLC BWMON - Set io_percent 80 -->
+        <!--CPU-LLC BWMON - Set hyst_length hyst_trigger hist memory 0 -->
+        <Config
+            Id="0x00001332" Enable="true" Timeout="0" Target="kona"
+            Resources="0x41820000, 0x10, 0x41808000, 0x50, 0x4180C000, 0"/>
+
+        <!--video encode HFR 480 fps-->
+        <!--MPCTLV3_ALL_CPUS_PWR_CLPS_DIS, 0x1-->
+        <!--MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0, CPU_SILVER_LEVEL_15 (1036800 kHz)-->
+        <!--MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0, CPU_GOLD_LEVEL_12 (1228800 kHz)-->
+        <!--MPCTLV3_SCHED_DOWNMIGRATE, 0xA-->
+        <!--MPCTLV3_SCHED_UPMIGRATE, 0x14-->
+        <!--CPU-LLC BWMON - Set sample_ms 10 -->
+        <!--CPU-LLC BWMON - Set io_percent 80 -->
+        <!--CPU-LLC BWMON - Set hyst_length hyst_trigger hist memory 0 -->
+        <Config
+            Id="0x00001334" Enable="true" Timeout="0" Target="kona"
+            Resources="0x40400000, 0x1, 0x40800100, 0x40C, 0x40800000, 0x4CC, 0x40C20000, 0xA, 0x40C1C000, 0x14, 0x41820000, 0x0A, 0x41808000, 0x50, 0x4180C000, 0"/>
+
+        <!--ONEPLUS_VENDOR_EDITOR BEGIN-->
+        <!--video encode 30 fps-->
+        <Config
+            Id="0x0001213" Enable="true" Target="kona" Timeout="0"
             Resources="" />
 
         <!--sustained performance-->
@@ -44,37 +248,18 @@
         <!-- GPU - max pwrlevel 0 -->
         <!-- Max Prime CPUs 0 -->
         <Config
-            Id="0x00001206" Enable="true" Target="kona" Timeout="0"
+            Id="0x0001216" Enable="true" Target="kona" Timeout="0"
             Resources="0x40800000, 0x420, 0x40800100, 0x40C, 0x40804000, 0x70C,
             0X42804000, 0x2, 0X42808000, 0x0, 0x41004200, 0x0"/>
         <!--vr mode-->
         <Config
-            Id="0x00001207" Enable="true" Target="kona" Timeout="0"
+            Id="0x0001217" Enable="true" Target="kona" Timeout="0"
             Resources=""/>
 
         <!--vr mode sustained performance-->
         <Config
-            Id="0x00001301" Enable="true" Target="kona" Timeout="0"
+            Id="0x0001218" Enable="true" Target="kona" Timeout="0"
             Resources=""/>
-
-        <!-- qvr level cpu1 gpu1 -->
-        <!-- B CPU - Cluster min freq ~.864 Ghz -->
-        <!-- B CPU - Cluster max freq ~.2.016 Ghz -->
-        <!-- L CPU - Cluster min freq ~.576 Ghz -->
-        <!-- L CPU - Cluster max freq ~1.267 Ghz -->
-        <!-- P CPU - PRIME CPU min freq ~.941 Ghz-->
-        <!-- P CPU - PRIME CPU max freq ~2.054Ghz -->
-        <!-- GPU - min pwrlevel 5 (freq 215 Mhz) -->
-        <!-- GPU - max pwrlevel 0 (freq 600 Mhz) -->
-        <!-- Min Big CPUs 3 -->
-        <!-- Min Prime CPUs 1 -->
-        <!-- Idefinite Duration -->
-        <Config
-            Id="0x0000130A" Enable="true" Target="kona" Timeout="0"
-            Resources="0x40800000, 0x360, 0x40804000, 0x7E0, 0x40800100, 0x240,
-            0x40804100, 0x4F3, 0x40800200, 0x3AD, 0x40804200, 0x806, 0x42804000, 0x3,
-            0x42808000, 0x0, 0x41000000, 0x3, 0x41000200, 0x1"/>
-
 
         <!-- qvr level cpu1 gpu2 -->
         <!-- B CPU - Cluster min freq ~.864 Ghz -->
@@ -229,7 +414,7 @@
         <!--LLC-DDR BWMON - Set hyst_length 0 -->
         <!--CPU0-LLC MEM LAT - Set ratio_ceil 100 -->
         <Config
-            Id="0x00001331" Enable="true" Timeout="0" Target="kona"
+            Id="0x00001346" Enable="true" Timeout="0" Target="kona"
             Resources="0x40C68100, 0xFFFFFFF6, 0x40C68110, 0xFFFFFFF6, 0x40C68120, 0xFFFFFFF6,
             0x40C68130, 0xFFFFFFF6,0x41444100, 0, 0x41440100, 0x63, 0x41444000, 0,
             0x4300C000, 0xA ,0x41820000, 0xA, 0x43004000, 0x64 ,0x41808000, 0x64, 0x4180C000, 0, 0x43008000, 0, 0x43420000, 0x64"/>
@@ -245,7 +430,7 @@
         <!--LLC-DDR BWMON - Set sample_ms 20 -->
         <!--CPU-LLC BWMON - Set sample_ms 20 -->
         <Config
-            Id="0x00001332" Enable="true" Timeout="0" Target="kona"
+            Id="0x00001347" Enable="true" Timeout="0" Target="kona"
             Resources="0x40C68100, 0xFFFFFFF6, 0x40C68110, 0xFFFFFFF6, 0x40C68120, 0xFFFFFFF6,
             0x40C68130, 0xFFFFFFF6,0x41444100, 0, 0x41440100, 0x5F, 0x4300C000, 0x14 ,0x41820000, 0x14"/>
 
@@ -258,7 +443,7 @@
         <!--LLC-DDR BWMON - Set sample_ms 10 -->
         <!--CPU-LLC BWMON - Set sample_ms 10 -->
         <Config
-            Id="0x00001333" Enable="true" Timeout="0" Target="kona"
+            Id="0x00001348" Enable="true" Timeout="0" Target="kona"
             Resources="0x40C68100, 0xFFFFFFF6, 0x40C68110, 0xFFFFFFF6, 0x40C68120, 0xFFFFFFF6,
             0x40C68130, 0xFFFFFFF6, 0x4300C000, 0xA ,0x41820000, 0xA, 0x40400000, 0x1,0x40800100,1800, 0x40800000, 2000, 0x40C20000, 0x14, 0x40C1C000, 0x1E"/>
 
@@ -271,7 +456,7 @@
         <!--LLC-DDR BWMON - Set sample_ms 10 -->
         <!--CPU-LLC BWMON - Set sample_ms 10 -->
         <Config
-            Id="0x00001334" Enable="true" Timeout="0" Target="kona"
+            Id="0x00001349" Enable="true" Timeout="0" Target="kona"
             Resources="0x40C68100, 0xFFFFFFF6, 0x40C68110, 0xFFFFFFF6, 0x40C68120, 0xFFFFFFF6,
             0x40C68130, 0xFFFFFFF6, 0x4300C000, 0xA ,0x41820000, 0xA, 0x40400000, 0x1,0x40800100,1800, 0x40800000, 2000, 0x40C20000, 0x14, 0x40C1C000, 0x1E"/>
 
@@ -289,7 +474,7 @@
         <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 30 -->
         <!-- cpu-llcc-bw io_percent : MPCTLV3_CPUBW_HWMON_IO_PERCENT(0x41808000) : 80 -->
         <Config
-            Id="0x00001335" Enable="true" Timeout="0" Target="kona"
+            Id="0x0001335" Enable="true" Timeout="0" Target="kona"
             Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 38, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 91,
             0x40800100, 1036, 0x40800000, 1056, 0x40C20000, 20, 0x40C1C000, 30, 0x41808000, 80"/>
 
@@ -303,7 +488,8 @@
         <!-- cpu-llcc-bw min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 71 -->
         <Config
             Id="0x00001336" Enable="true" Timeout="0" Target="kona"
-            Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 29, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 71"/>
+            Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 29, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 71,
+            0x40800100, 1036, 0x40800000, 1056, 0x40C20000, 20, 0x40C1C000, 30"/>
 
         <!-- PERF_LOCK_POWER_HINT_ID_VIDEO_REAR_UHD_60 -->
         <!-- Rear Cam 4K 60 Encoding -->
@@ -321,8 +507,10 @@
         <Config
             Id="0x00001337" Enable="true" Timeout="0" Target="kona"
             Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 38, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 91, 0x41000000,3,0x41000200,1,
-            0x40800100, 1516, 0x40800000, 1478, 0x40800200,1478, 0x40C20000, 20, 0x40C1C000, 30, 0x41808000, 80"/>
+            0x40800100, 1516, 0x40800000, 1478, 0x40800200,1190, 0x40C20000, 35, 0x40C1C000, 45, 0x40CA8000, 1, 0x41808000, 80,
+            0x43000000, 0x3B, 0x41800000, 0x7A, 0x41444100,0x00, 0x41444000, 0x00, 0x4180C000, 0x00, 0x43008000, 0x00"/>
 
+        <!-- PERF_LOCK_POWER_HINT_ID_FRONT_PREVIEW -->
         <!-- Front Cam Preview -->
         <!-- llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
         <!-- llcc-ddr-bw sample_ms : MPCTLV3_LLCBW_HWMON_SAMPLE_MS(0x4300C000) : 0x0A(10) -->
@@ -387,6 +575,26 @@
             Id="0x0000133C" Enable="true" Timeout="0" Target="kona"
             Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 25, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 71,
             0x41808000, 80"/>
+
+        <!-- Add for photo mode 0.6X preview(alm161956) start -->
+        <!-- PERF_LOCK_POWER_HINT_ID_REAR_PREVIEW_UW -->
+        <!-- Rear Cam Preview -->
+        <!-- llcc-ddr-bw hyst disable : MPCTLV3_LLCBW_HWMON_HYST_OPT(0x43008000) : 0x00(0) -->
+        <!-- llcc-ddr-bw sample_ms : MPCTLV3_LLCBW_HWMON_SAMPLE_MS(0x4300C000) : 0x0A(10) -->
+        <!-- llcc-ddr-bw min_freq : MPCTLV3_LLCBW_HWMON_MIN_FREQ(0x43000000) : 25 -->
+        <!-- cpu-llcc-bw hyst disable : MPCTLV3_CPUBW_HWMON_HYST_OPT(0x4180C000) : 0x00(0) -->
+        <!-- cpu-llcc-bw sample_ms : MPCTLV3_CPUBW_HWMON_SAMPLE_MS(0x41820000) : 0x0A(10) -->
+        <!-- cpu-llcc-bw min_freq : MPCTLV3_CPUBW_HWMON_MIN_FREQ(0x41800000) : 71 -->
+        <!-- cpu-llcc-bw io_percent : MPCTLV3_CPUBW_HWMON_IO_PERCENT(0x41808000) : 80 -->
+        <!-- MPCTLV3_MIN_ONLINE_CPU_CLUSTER_BIG (0x41000000): 0x03(3) -->
+        <!-- gold cluster min freq : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000) : 1056 -->
+        <!-- Sched downmigrate : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000) : 1E -->
+        <!-- Sched upmigrate : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000) : 28 -->
+        <Config
+            Id="0x00001345" Enable="true" Timeout="0" Target="kona"
+            Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 25, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 71,
+            0x41808000, 80, 0x41000000, 3, 0x41000100, 4,0x40800000, 1056, 0x40C20000, 0x1E, 0x40C1C000, 0x28, 0x40CA8000, 0x2 "/>
+        <!-- Add for photo mode 0.6X preview(alm161956) end -->
 
         <!-- Rear Cam HD0960 Encoding -->
         <!-- MPCTLV3_TOGGLE_POWER_COLLAPSE (0x40400000): 0x01(1) -->
@@ -498,8 +706,7 @@
         <Config
             Id="0x00001344" Enable="true" Timeout="0" Target="kona"
             Resources="0x43008000, 0, 0x4300C000, 0xA, 0x43000000, 29, 0x4180C000, 0, 0x41820000, 0xA, 0x41800000, 71,
-            0x41808000, 80, 0x40800000, 1800, 0x40800100, 1800, 0x40800200, 1400, 0x41000000, 3, 0x41000100, 4, 0x41000200, 1,
-            0x40C1C000, 30, 0x40C1C200, 30, 0x40C20000, 20, 0x40C20200, 20"/>
+            0x41808000, 80"/>
 
         <!-- Gallery Slow Motion Playback -->
         <!-- L CPU - Cluster min freq ~1.785GHz : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1785 -->
@@ -512,7 +719,7 @@
             Id="0x00001350" Enable="true" Timeout="5000" Target="kona"
             Resources="0x40800100, 1785, 0x40800000, 2419, 0x40C20000, 10, 0x40C1C000, 20,
             0x43000000, 68, 0x43400000, 14"/>
-
+        <!-- ONEPLUS_VENDOR_EDITOR END-->
     </Powerhint>
 </HintConfigs>
 

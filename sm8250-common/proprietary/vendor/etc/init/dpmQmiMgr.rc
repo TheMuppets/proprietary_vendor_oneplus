@@ -1,9 +1,17 @@
-# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 
 #start dpmQmiMgr service
 service dpmQmiMgr /system/vendor/bin/dpmQmiMgr
+    interface com.qualcomm.qti.dpm.api@1.0::IdpmQmi dpmQmiService
     class main
     user system
     group system
+    disabled
+
+on property:persist.vendor.dpmhalservice.enable=*
+   start dpmQmiMgr
+
+on property:persist.vendor.dpmhalservice.enable=0
+   stop dpmQmiMgr

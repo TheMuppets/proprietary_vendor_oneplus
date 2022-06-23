@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+  Copyright (c) 2021 Qualcomm Technologies, Inc.
+  All Rights Reserved.
+  Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+
+
+<!--
+This XML file declares which system packages should be initially installed for new users based on
+their user type. All system packages on the device should ideally have an entry in an xml file
+(keyed by its manifest name).
+
+Base user-types (every user will be at least one of these types) are:
+ - SYSTEM    (user 0)
+ - FULL      (any non-profile human user)
+ - PROFILE   (profile human user)
+the precise meaning of which is defined in
+frameworks/base/core/java/android/content/pm/UserInfo.java.
+
+Changes to the whitelist during system updates can result in installing additional system packages
+to pre-existing users, but cannot uninstall pre-existing system packages from pre-existing users.
+
+Full documentation at frameworks/base/data/etc/preinstalled-packages-platform.xml
+-->
+
+<config>
+
+    <!-- qcrilOemHook -->
+
+    <install-in-user-type package="com.qualcomm.qcrilmsgtunnel">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <!-- telephony-apps -->
+
+    <install-in-user-type package="com.qualcomm.atfwd">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qualcomm.qti.callfeaturessetting">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qualcomm.qti.confdialer">
+        <install-in user-type="SYSTEM" />
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qti.qualcomm.datastatusnotification">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qti.qualcomm.deviceinfo">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="org.codeaurora.ims">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="org.codeaurora.qti.nrNetworkSettingApp">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qualcomm.qti.telephonyservice">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qualcomm.qti.sam.service">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qti.xdivert">
+        <install-in user-type="SYSTEM" />
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
+    <!-- telephony-internal -->
+
+    <install-in-user-type package="com.qualcomm.qti.imsiprivacy.tests">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <!-- telephony-noship -->
+
+    <install-in-user-type package="com.qualcomm.qti.devicestatisticsservice">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qualcomm.embms">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qualcomm.qti.euiccresource">
+        <install-in user-type="SYSTEM" />
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
+ </config>

@@ -88,3 +88,8 @@ timer_settime: 1
 timer_delete: 1
 clock_gettime: 1
 sched_getaffinity: 1
+#crash dump policy addition
+socket: 1
+process_vm_readv: 1
+tgkill: 1
+

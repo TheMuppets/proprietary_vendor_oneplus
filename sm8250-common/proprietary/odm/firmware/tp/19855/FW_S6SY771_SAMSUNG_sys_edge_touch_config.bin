@@ -1,0 +1,29 @@
+<filter-conf>
+    <version>20200311</version>
+    <isOpen>1</isOpen>
+    <filter-name>sys_edge_touch_config</filter-name>
+		<device name="default">
+			<default>
+				<!--绝对抑制区域设置 -->
+				<command name="tp_switch_dead_zone"	value="mod oos_edge_limit tp_switch_dead_zone:10,20"/>
+			</default>
+
+			<!--所有修改均为增量修改，所有增量修改都是基于上面的default配置，包括各个package里面的default和activity -->
+			<packages>
+				<!--本配置针对应用的包名列表 -->
+				<pkg_list>
+					<item name="com.tencent.mm" />
+					<item name="com.sankuai.meituan" />
+					<item name="me.ele" />
+					<item name="com.sankuai.meituan.takeoutnew" />
+					<!--item name="com.baidu.searchbox" -->
+				</pkg_list>
+				<!--包名列表中，某个包的默认配置，基于外层的default配置增量修改，如果配置了某个包名的场景，必须配置一个如下对应的默认配置 -->
+				<default>
+				<!--绝对抑制区域设置 -->
+					<command name="tp_switch_dead_zone"	value="mod oos_edge_limit tp_switch_dead_zone:10,15"/>
+				</default>
+			</packages>
+		</device>
+
+</filter-conf>

@@ -75,3 +75,6 @@ gettid: 1
 write: 1
 dup3: 1
 getdents64: 1
+getsockname: 1
+recvfrom: 1
+madvise: 1

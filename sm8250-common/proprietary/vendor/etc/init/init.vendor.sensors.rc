@@ -32,7 +32,8 @@
 on early-boot
 
     write /sys/kernel/boot_slpi/boot 1
-
+    #yajie.chen@BSP.Sensor, 2020/07/20, Add for recovery sensors dir
+    exec u:r:vendor_qti_init_shell:s0 -- /odm/bin/sensor_recover.sh
     chown system system /mnt/vendor/persist/sensors
     chown system system /mnt/vendor/persist/sensors/sns.reg
     chown system system /mnt/vendor/persist/sensors/sensors_list.txt
@@ -45,8 +46,11 @@ on early-boot
     chown system system /mnt/vendor/persist/sensors/registry/config
     chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
     chown system system /sys/kernel/boot_adsp/ssr
+    chmod 0664 /dev/ssc_interactive
+    chown system system /dev/ssc_interactive
 
-on boot
+on post-fs-data && property:ro.build.type=userdebug
     #sensors log dir
-    mkdir /data/vendor/sensors
-    chown system system /data/vendor/sensors
+
+    mkdir /data/vendor/sensors 0777 system system
+    mkdir /data/vendor/sensors/scripts 0777 system system

@@ -1,6 +1,0 @@
-service vendor.pixelworks.hardware.display /vendor/bin/hw/vendor.pixelworks.hardware.display.iris-service
-    class hal animation
-    user system
-    group graphics drmrpc
-    capabilities SYS_NICE
-    onrestart restart surfaceflinger

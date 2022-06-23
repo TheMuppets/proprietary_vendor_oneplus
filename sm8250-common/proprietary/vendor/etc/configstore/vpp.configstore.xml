@@ -7,9 +7,12 @@ Confidential and Proprietary - Qualcomm Technologies, Inc.
 
 <CapabilityStore version="1">
     <namespace name="vpp">
+        <!-- #ifdef OPLUS_FEATURE_HQV -->
+        <!-- Yugang.Ma@PSW.MM.MediaServer.Player, 2019/09/20, [Modify for HQV feature]-->
         <capability key="default_config" value="false"/>
         <capability key="disable_dynamic_hal" value="true"/>
-        <capability key="enable" value="false"/>
+        <capability key="enable" value="true"/>
+        <!-- #endif OPLUS_FEATURE_HQV-->
         <capability key="enable_idle_timeout" value="true"/>
         <capability key="idle_timeout_ms" value="1000"/>
     </namespace>

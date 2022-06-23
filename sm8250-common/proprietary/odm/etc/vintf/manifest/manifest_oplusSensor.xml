@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*************************************************************
+ ** Copyright (C), 2008-2020, OPLUS Mobile Comm Corp., Ltd
+ **
+ ** Description : 1.0
+ **           This is a common file
+ **
+ ** Version: 1.0
+ ** Date created: 12:00, 2020/05/26
+ ** Author: tangjh@PSW.BSP.SENSOR
+ **
+ *************************************************************/
+-->
+<manifest version="1.0" type="device">
+    <hal format="hidl">
+        <name>vendor.oplus.hardware.oplusSensor</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISensorFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

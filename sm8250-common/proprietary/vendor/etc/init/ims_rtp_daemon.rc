@@ -9,6 +9,5 @@ service vendor.ims_rtp_daemon /vendor/bin/ims_rtp_daemon
     user radio
     group radio vendor_qti_diag inet log
 
-
 on property:vendor.ims.DATA_DAEMON_STATUS=1
     restart vendor.ims_rtp_daemon

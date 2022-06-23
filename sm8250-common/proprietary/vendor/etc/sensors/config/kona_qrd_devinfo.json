@@ -1,0 +1,64 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP"],
+    "soc_id": ["356"]
+  },
+  "devinfo":{
+    "owner": "oplus",
+    ".als":{
+      "owner": "oplus",
+      "cal_path":{ "type": "str", "ver": "0",
+        "data": "tcs3408_platform.als.fac_cal"
+      }
+    },
+    ".ps":{
+      "owner": "oplus",
+      "cal_path":{ "type": "str", "ver": "0",
+        "data": "defult"
+      }
+    },
+    ".structure_ps":{
+      "owner": "oplus",
+      "cal_path":{ "type": "str", "ver": "0",
+        "data": "defult"
+      }
+    },
+    ".gsesnor":{
+      "owner": "oplus",
+      "cal_path":{ "type": "str", "ver": "0",
+        "data": "defult"
+      }
+    },
+    ".mag":{
+      "owner": "oplus",
+      "cal_path":{ "type": "str", "ver": "0",
+        "data": "defult"
+      }
+    },
+    ".gyro":{
+      "owner": "oplus",
+      "cal_path":{ "type": "str", "ver": "0",
+        "data": "defult"
+      }
+    },
+    ".rgb":{
+      "owner": "oplus",
+      "cal_path":{ "type": "str", "ver": "0",
+        "data": "tcs3408_platform.rgb.fac_cal"
+      }
+    },
+    ".rgb_rear":{
+      "owner": "oplus",
+      "cal_path":{ "type": "str", "ver": "0",
+        "data": "tcs3408r_platform.rgb.fac_cal"
+      }
+    },
+    ".pressure":{
+      "owner": "oplus",
+      "cal_path":{ "type": "str", "ver": "1",
+        "data": "lps22hh_0_platform.pressure.fac_cal.bias"
+      }
+    }
+  }
+}

@@ -77,3 +77,4 @@ pselect6: 1
 accept4: 1
 sendmsg: 1
 recvfrom: 1
+mremap: 1

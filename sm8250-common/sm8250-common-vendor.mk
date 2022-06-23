@@ -6,29 +6,1172 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/sm8250-common
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/sm8250-common/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
+    vendor/oneplus/sm8250-common/proprietary/odm/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_ODM)/bin/hw/android.hardware.drm@1.3-service.widevine \
+    vendor/oneplus/sm8250-common/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
+    vendor/oneplus/sm8250-common/proprietary/odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service \
+    vendor/oneplus/sm8250-common/proprietary/odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service \
+    vendor/oneplus/sm8250-common/proprietary/odm/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.esepowermanager@1.1-service \
+    vendor/oneplus/sm8250-common/proprietary/odm/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.secure_element@1.2-service \
+    vendor/oneplus/sm8250-common/proprietary/odm/bin/init.oplus.fingerprints.sh:$(TARGET_COPY_OUT_ODM)/bin/init.oplus.fingerprints.sh \
+    vendor/oneplus/sm8250-common/proprietary/odm/bin/oplus_sensor_fb:$(TARGET_COPY_OUT_ODM)/bin/oplus_sensor_fb \
+    vendor/oneplus/sm8250-common/proprietary/odm/etc/camera/fb_default:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_default \
+    vendor/oneplus/sm8250-common/proprietary/odm/etc/camera/fwk_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/fwk_config.json \
+    vendor/oneplus/sm8250-common/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
+    vendor/oneplus/sm8250-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
+    vendor/oneplus/sm8250-common/proprietary/odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc \
+    vendor/oneplus/sm8250-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc \
+    vendor/oneplus/sm8250-common/proprietary/odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
+    vendor/oneplus/sm8250-common/proprietary/odm/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.secure_element@1.2-service.rc \
+    vendor/oneplus/sm8250-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/oneplus/sm8250-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/100ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/100ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/120ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/120ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/140ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/140ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/160ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/160ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/180ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/180ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/200ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/200ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/20ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/20ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/220ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/220ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/240ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/240ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/260ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/260ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/280ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/280ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/300ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/300ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/320ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/320ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/340ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/340ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/360ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/360ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/380ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/380ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/400ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/400ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/40ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/40ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/420ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/420ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/440ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/440ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/460ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/460ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/480ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/480ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/500ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/500ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/60ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/60ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/80ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/80ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/AT500ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/AT500ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/Chase_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Chase_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/Climber_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Climber_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/In_game_alarm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/In_game_alarm_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/In_game_ringtone_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/In_game_ringtone_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/In_game_sms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/In_game_sms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/Rock_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Rock_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/VZW_Alrwave_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/VZW_Alrwave_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/Version_Alert_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Version_Alert_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/Wake_up_samurai_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/Wake_up_samurai_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/agingtest_160hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_160hz_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/agingtest_162hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_162hz_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/agingtest_164hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_164hz_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/agingtest_166hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_166hz_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/agingtest_168hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_168hz_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/agingtest_170hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_170hz_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/agingtest_172hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_172hz_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/agingtest_174hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_174hz_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/agingtest_176hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_176hz_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/agingtest_178hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_178hz_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/agingtest_180hz_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/agingtest_180hz_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Alarm_clock_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Alarm_clock_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Beep_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Beep_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Breeze_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Breeze_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Dawn_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Dawn_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Dream_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Dream_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Fluttering_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Fluttering_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Flyer_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Flyer_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Interesting_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Interesting_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Leisurely_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Leisurely_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Memory_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Memory_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Relieved_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Relieved_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Ripple_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Ripple_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Slowly_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Slowly_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Stars_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Stars_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Surging_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Surging_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_The_wind_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_The_wind_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_Walking_in_the_rain_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_Walking_in_the_rain_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_spring_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_spring_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/alarm_tactfully_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/alarm_tactfully_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_About_School_RTP_17.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_About_School_RTP_17_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_About_School_RTP_17_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_About_School_RTP_17_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_About_School_RTP_17_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_About_School_RTP_17_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_About_School_RTP_17_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Airy_morning_RTP_70_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Airy_morning_RTP_70_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Alarm_RTP_153_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Alarm_RTP_153_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Alarm_RTP_153_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Alarm_RTP_153_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Alarm_RTP_153_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Alarm_RTP_153_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Alarm_RTP_153_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Alarm_RTP_153_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Notification_RTP_150_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Notification_RTP_150_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Notification_RTP_150_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Notification_RTP_150_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Notification_RTP_150_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Notification_RTP_150_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Notification_RTP_150_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Notification_RTP_150_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Ringtong_RTP_151_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Ringtong_RTP_151_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Ringtong_RTP_151_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Ringtong_RTP_151_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Ringtong_RTP_151_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Ringtong_RTP_151_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Ringtong_RTP_151_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Ringtong_RTP_151_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Text_RTP_152_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Text_RTP_152_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Text_RTP_152_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Text_RTP_152_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Text_RTP_152_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Text_RTP_152_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Artist_Text_RTP_152_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Artist_Text_RTP_152_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Bliss_RTP_oplusos7_138_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_oplusos7_138_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Bright_channel_RTP_oplusos7_128_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bright_channel_RTP_oplusos7_128_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Childhood_RTP_19.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Childhood_RTP_19_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Childhood_RTP_19_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Childhood_RTP_19_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Childhood_RTP_19_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Childhood_RTP_19_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Childhood_RTP_19_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Childhood_RTP_19_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Classical_ring_RTP_oplusos7_135_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Classical_ring_RTP_oplusos7_135_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Commuting_RTP_20.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Commuting_RTP_20_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Commuting_RTP_20_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Commuting_RTP_20_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Commuting_RTP_20_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Commuting_RTP_20_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Commuting_RTP_20_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Commuting_RTP_20_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Digi_rise_RTP_81_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Digi_rise_RTP_81_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Dream_RTP_oplusos7_139_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Dream_RTP_oplusos7_139_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Electro_club_RTP_73.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Electro_club_RTP_73_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Electro_club_RTP_73_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Electro_club_RTP_73_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Electro_club_RTP_73_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Electro_club_RTP_73_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Electro_club_RTP_73_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Firefly_RTP_22.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Firefly_RTP_22_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Firefly_RTP_22_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Firefly_RTP_22_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Firefly_RTP_22_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Firefly_RTP_22_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Firefly_RTP_22_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Firefly_RTP_22_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Fun_channel_RTP_oplusos7_129_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Fun_channel_RTP_oplusos7_129_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Gaze_RTP_24.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Gaze_RTP_24_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Gaze_RTP_24_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Gaze_RTP_24_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Gaze_RTP_24_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Gaze_RTP_24_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Gaze_RTP_24_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Gaze_RTP_24_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Glittering_channel_RTP_oplusos7_130_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Granules_channel_RTP_9_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Granules_channel_RTP_9_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Harp_channel_RTP_oplusos7_131_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Harp_channel_RTP_oplusos7_131_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Hey_RTP_83.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Hey_RTP_83_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Hey_RTP_83_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Hey_RTP_83_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Hey_RTP_83_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Hey_RTP_83_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Hey_RTP_83_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Hey_RTP_83_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_House_club_RTP_76.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_House_club_RTP_76_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_House_club_RTP_76_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_House_club_RTP_76_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_House_club_RTP_76_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_House_club_RTP_76_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_House_club_RTP_76_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_House_club_RTP_76_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Impression_channel_RTP_11.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Impression_channel_RTP_11.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Info_RTP_85.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Info_RTP_85_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Info_RTP_85_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Info_RTP_85_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Info_RTP_85_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Info_RTP_85_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Info_RTP_85_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Info_RTP_85_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Ingenious_channel_RTP_12_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ingenious_channel_RTP_12_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Instant_channel_RTP_2_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Instant_channel_RTP_2_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_dreamy_RTP_78_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_dreamy_RTP_78_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_funk_RTP_75_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_funk_RTP_75_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Jazz_modern_RTP_79_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Jazz_modern_RTP_79_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_13_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_13_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Joy_channel_RTP_oplusos7_141_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Joy_channel_RTP_oplusos7_141_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Lakeside_RTP_25.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Lakeside_RTP_25_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lakeside_RTP_25_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Lifestyle_RTP_26.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Lifestyle_RTP_26.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Long_for_RTP_oplusos7_136_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Long_for_RTP_oplusos7_136_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Memories_RTP_27.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Memories_RTP_27_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Memories_RTP_27_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Memories_RTP_27_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Memories_RTP_27_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Memories_RTP_27_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Memories_RTP_27_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Memories_RTP_27_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Messy_RTP_28.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Messy_RTP_28_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Messy_RTP_28_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Messy_RTP_28_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Messy_RTP_28_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Messy_RTP_28_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Messy_RTP_28_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Messy_RTP_28_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Miss_RTP_oplusos7_124_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Miss_RTP_oplusos7_124_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Music_channel_RTP_oplusos7_125_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Music_channel_RTP_oplusos7_125_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Night_RTP_29.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Night_RTP_29_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Night_RTP_29_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Night_RTP_29_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Night_RTP_29_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Night_RTP_29_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Night_RTP_29_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Night_RTP_29_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Opop_short_RTP_87.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Opop_short_RTP_87_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Opop_short_RTP_87_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Overtone_channel_RTP_oplusos7_132_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Passionate_Dance_RTP_30_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Passionate_Dance_RTP_30_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Percussion_channel_RTP_oplusos7_126_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Playground_RTP_31.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Playground_RTP_31_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Playground_RTP_31_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Playground_RTP_31_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Playground_RTP_31_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Playground_RTP_31_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Playground_RTP_31_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Playground_RTP_31_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Pure_RTP_49.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Pure_RTP_49_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Pure_RTP_49_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Pure_RTP_49_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Pure_RTP_49_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Pure_RTP_49_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Pure_RTP_49_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Pure_RTP_49_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Receive_channel_RTP_15_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Receive_channel_RTP_15_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_32.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_32_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_32_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_32_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_32_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_32_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_32_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_32_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Relax_RTP_oplusos7_140_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Relax_RTP_oplusos7_140_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Reminiscence_RTP_33.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Reminiscence_RTP_33.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Ripple_channel_RTP_oplusos7_127_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Romantic_RTP_oplusos7_137_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Romantic_RTP_oplusos7_137_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Scenic_RTP_121.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Scenic_RTP_121_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Scenic_RTP_121_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Scenic_RTP_121_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Scenic_RTP_121_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Scenic_RTP_121_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Scenic_RTP_121_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Scenic_RTP_121_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Seine_past_RTP_oplusos7_134_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Seine_past_RTP_oplusos7_134_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Silence_From_Afar_RTP_34_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_From_Afar_RTP_34_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Silence_RTP_35.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Silence_RTP_35_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Silence_RTP_35_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Silence_RTP_35_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Silence_RTP_35_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Silence_RTP_35_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Silence_RTP_35_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Silence_RTP_35_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Simple_channel_RTP_oplusos7_133_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Simple_channel_RTP_oplusos7_133_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Splash_channel_RTP_16_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Splash_channel_RTP_16_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Stars_RTP_36.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Stars_RTP_36_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Stars_RTP_36_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Stars_RTP_36_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Stars_RTP_36_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Stars_RTP_36_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Stars_RTP_36_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Stars_RTP_36_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Summer_RTP_37.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Summer_RTP_37_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Summer_RTP_37_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Summer_RTP_37_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Summer_RTP_37_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Summer_RTP_37_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Summer_RTP_37_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Summer_RTP_37_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Temple_morning_RTP_71_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Temple_morning_RTP_71_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Tip_top_RTP_86.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Tip_top_RTP_86_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tip_top_RTP_86_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Tone_round_RTP_80.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Tone_round_RTP_80_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Tone_round_RTP_80_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Toys_RTP_38.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Toys_RTP_38_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Toys_RTP_38_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Toys_RTP_38_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Toys_RTP_38_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Toys_RTP_38_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Toys_RTP_38_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Toys_RTP_38_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Vacation_RTP_74.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Vacation_RTP_74_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Vacation_RTP_74_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Vacation_RTP_74_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Vacation_RTP_74_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Vacation_RTP_74_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Vacation_RTP_74_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vacation_RTP_74_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Vision_RTP_40.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vision_RTP_40.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Vision_RTP_40_170.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Vision_RTP_40_170.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Water_cicidas_72_RTP_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Water_cicidas_72_RTP_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Wood_phone_RTP_82_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Wood_phone_RTP_82_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Zanza_RTP_84.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Zanza_RTP_84_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Zanza_RTP_84_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Zanza_RTP_84_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Zanza_RTP_84_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Zanza_RTP_84_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_Zanza_RTP_84_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Zanza_RTP_84_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_bowl_bells_RTP_88_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_bowl_bells_RTP_88_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_breath_simulation_RTP_118.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_breath_simulation_RTP_118.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_breath_simulation_RTP_118_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_breath_simulation_RTP_118_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_breath_simulation_RTP_118_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_breath_simulation_RTP_118_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_breath_simulation_RTP_118_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_breath_simulation_RTP_118_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_breath_simulation_RTP_118_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_breath_simulation_RTP_118_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_charging_simulation_RTP_108.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_charging_simulation_RTP_108.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_charging_simulation_RTP_108_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_charging_simulation_RTP_108_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_charging_simulation_RTP_108_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_charging_simulation_RTP_108_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_charging_simulation_RTP_108_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_charging_simulation_RTP_108_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_charging_simulation_RTP_108_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_charging_simulation_RTP_108_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_clock_channel_RTP_43.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_clock_channel_RTP_43_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_clock_channel_RTP_43_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_cut_channel_RTP_42.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_cut_channel_RTP_42_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_cut_channel_RTP_42_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_desk_7_RTP_54.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_desk_7_RTP_54_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_desk_7_RTP_54_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_desk_7_RTP_54_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_desk_7_RTP_54_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_desk_7_RTP_54_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_desk_7_RTP_54_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_desk_7_RTP_54_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect1_RTP_110.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect1_RTP_110.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect1_RTP_110_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect1_RTP_110_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect1_RTP_110_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect1_RTP_110_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect1_RTP_110_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect1_RTP_110_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect1_RTP_110_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect1_RTP_110_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect2_RTP_111.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect2_RTP_111.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect2_RTP_111_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect2_RTP_111_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect2_RTP_111_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect2_RTP_111_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect2_RTP_111_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect2_RTP_111_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect2_RTP_111_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect2_RTP_111_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect3_RTP_112.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect3_RTP_112.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect3_RTP_112_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect3_RTP_112_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect3_RTP_112_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect3_RTP_112_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect3_RTP_112_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect3_RTP_112_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect3_RTP_112_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect3_RTP_112_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect4_RTP_113.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect4_RTP_113.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect4_RTP_113_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect4_RTP_113_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect4_RTP_113_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect4_RTP_113_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect4_RTP_113_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect4_RTP_113_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect4_RTP_113_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect4_RTP_113_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect5_RTP_114.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect5_RTP_114.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect5_RTP_114_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect5_RTP_114_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect5_RTP_114_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect5_RTP_114_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect5_RTP_114_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect5_RTP_114_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect5_RTP_114_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect5_RTP_114_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect6_RTP_115.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect6_RTP_115.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect6_RTP_115_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect6_RTP_115_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect6_RTP_115_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect6_RTP_115_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect6_RTP_115_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect6_RTP_115_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect6_RTP_115_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect6_RTP_115_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect7_RTP_116.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect7_RTP_116.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect7_RTP_116_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect7_RTP_116_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect7_RTP_116_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect7_RTP_116_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect7_RTP_116_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect7_RTP_116_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect7_RTP_116_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect7_RTP_116_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_fingerprint_effect8_RTP_117_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_fingerprint_effect8_RTP_117_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_haptic_166.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_166.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_haptic_168.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_168.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_haptic_170.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_170.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_haptic_172.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_172.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_haptic_174.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_174.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_haptic_235.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_235.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_haptic_235_19161.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_haptic_235_19161.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_160HZ.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_160HZ.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_160Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_160Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_162HZ.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_162HZ.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_162Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_162Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_164Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_164Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_166Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_166Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_168Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_168Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_170Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_170Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_172Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_172Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_174Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_174Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_176Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_176Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_178Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_178Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_180Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_180Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_225Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_225Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_227Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_227Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_228Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_228Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_229Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_229Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_231Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_231Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_232Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_232Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_233Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_233Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_235Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_fisrt_kill_RTP_60_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_fisrt_kill_RTP_60_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_five_kill_RTP_64_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_five_kill_RTP_64_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_continu_kill_RTP_66_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_continu_kill_RTP_66_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_four_kill_RTP_63_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_four_kill_RTP_63_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_lengendary_RTP_69_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_lengendary_RTP_69_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_thousands_kill_RTP_68_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_thousands_kill_RTP_68_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_continu_kill_RTP_65_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_continu_kill_RTP_65_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_three_kill_RTP_62_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_three_kill_RTP_62_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_two_kill_RTP_61_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_two_kill_RTP_61_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_honor_unstoppable_RTP_67_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_honor_unstoppable_RTP_67_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_jumpy_RTP_89.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_jumpy_RTP_89_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_jumpy_RTP_89_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_jumpy_RTP_89_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_jumpy_RTP_89_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_jumpy_RTP_89_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_jumpy_RTP_89_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_jumpy_RTP_89_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_kill_program_RTP_47.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_kill_program_RTP_47_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_kill_program_RTP_47_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_kill_program_RTP_47_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_kill_program_RTP_47_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_kill_program_RTP_47_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_kill_program_RTP_47_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_kill_program_RTP_47_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_listen_pop_53.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_listen_pop_53.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_listen_pop_53_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_listen_pop_53_235Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_long_sound_channel_RTP_44_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_long_sound_channel_RTP_44_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_nfc_10_RTP_55.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_nfc_10_RTP_55_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_nfc_10_RTP_55_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_160Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_160Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_162Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_162Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_164Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_164Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_166Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_166Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_168Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_168Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_170Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_170Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_172Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_172Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_174Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_174Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_176Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_176Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_178Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_178Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_180Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_180Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_225Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_225Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_227Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_227Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_228Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_228Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_229Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_229Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_231Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_231Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_232Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_232Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_233Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_233Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_old_steady_test_RTP_52_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_old_steady_test_RTP_52_235Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_realme_its_realme_RTP_161_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_its_realme_RTP_161_235Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_realme_jingle_RTP_163_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_jingle_RTP_163_235Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_realme_tune_RTP_162_235Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_realme_tune_RTP_162_235Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_reserved_108.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_reserved_108.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_reserved_109.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_reserved_109.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_rtp.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_rtp.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_rtp_lighthouse.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_rtp_lighthouse.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_rtp_silk.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_rtp_silk.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_short_channel_RTP_45.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_short_channel_RTP_45_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_short_channel_RTP_45_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_short_channel_RTP_45_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_short_channel_RTP_45_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_short_channel_RTP_45_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_short_channel_RTP_45_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_short_channel_RTP_45_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fifth_kill_RTP_104_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fifth_kill_RTP_104_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_first_kill_RTP_100_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_first_kill_RTP_100_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_fourth_kill_RTP_103_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_fourth_kill_RTP_103_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_second_kill_RTP_101_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_second_kill_RTP_101_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_soldier_third_kill_RTP_102_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_soldier_third_kill_RTP_102_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_stepable_regulate_RTP_105.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_stepable_regulate_RTP_105.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_stepable_regulate_RTP_105_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_stepable_regulate_RTP_105_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_stepable_regulate_RTP_105_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_stepable_regulate_RTP_105_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_stepable_regulate_RTP_105_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_stepable_regulate_RTP_105_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_stepable_regulate_RTP_105_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_stepable_regulate_RTP_105_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_strength_level_bar_edge_RTP_107.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_strength_level_bar_edge_RTP_107.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_strength_level_bar_edge_RTP_107_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_strength_level_bar_edge_RTP_107_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_strength_level_bar_edge_RTP_107_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_strength_level_bar_edge_RTP_107_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_strength_level_bar_edge_RTP_107_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_strength_level_bar_edge_RTP_107_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_strength_level_bar_edge_RTP_107_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_strength_level_bar_edge_RTP_107_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_temple_tone_RTP_77.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_temple_tone_RTP_77_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_temple_tone_RTP_77_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_two_error_remaind_RTP_46_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_two_error_remaind_RTP_46_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_vibrator_remain_12_RTP_56_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_vibrator_remain_12_RTP_56_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_voice_assistant_RTP_122.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_assistant_RTP_122.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_voice_assistant_RTP_122_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_assistant_RTP_122_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_voice_assistant_RTP_122_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_assistant_RTP_122_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_voice_assistant_RTP_122_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_assistant_RTP_122_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_voice_assistant_RTP_122_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_assistant_RTP_122_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_voice_level_bar_edge_RTP_106.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_level_bar_edge_RTP_106.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_voice_level_bar_edge_RTP_106_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_level_bar_edge_RTP_106_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_voice_level_bar_edge_RTP_106_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_level_bar_edge_RTP_106_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_voice_level_bar_edge_RTP_106_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_level_bar_edge_RTP_106_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_voice_level_bar_edge_RTP_106_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_voice_level_bar_edge_RTP_106_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_waltz_channel_RTP_41_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_waltz_channel_RTP_41_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_cloudy_RTP_oplusos7_143_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_default_RTP_oplusos7_145_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_default_RTP_oplusos7_145_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_rain_RTP_oplusos7_149_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_rain_RTP_oplusos7_149_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_smog_RTP_oplusos7_147_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_smog_RTP_oplusos7_147_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_snow_RTP_oplusos7_148_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_snow_RTP_oplusos7_148_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_sunny_RTP_oplusos7_146_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_sunny_RTP_oplusos7_146_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_thunderstorm_RTP_oplusos7_144_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_165Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_165Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_175Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_175Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_226Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_226Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_230Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_230Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_234Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_234Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/aw8697_weather_wind_RTP_oplusos7_142_237Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_weather_wind_RTP_oplusos7_142_237Hz.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/barca_alarm_ring_RTP_120.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_alarm_ring_RTP_120.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/barca_incoming_ring_RTP_121.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_incoming_ring_RTP_121.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/barca_notice_ring_RTP_122.bin:$(TARGET_COPY_OUT_ODM)/firmware/barca_notice_ring_RTP_122.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19063/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19063/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19065/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19065/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19066/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19066/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19067/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19067/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19161/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19161/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19361/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19361/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19362/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19362/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19705/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19705/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19706/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19706/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19795/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19795/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19805/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19805/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19811/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19811/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19813/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19813/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19821/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19821/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19823/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19823/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19835/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19835/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19837/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19837/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19839/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19839/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19841/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19841/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/19855/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/19855/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20061/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20061/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20062/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20062/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20135/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20135/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20137/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20137/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20139/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20139/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20161/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20161/oplus_vooc_fw_rt5125.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20163/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20163/oplus_vooc_fw_rt5125.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20235/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20235/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20351/oplus_vooc_fw_rt5125.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20351/oplus_vooc_fw_rt5125.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20607/oplus_vooc_fw.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20607/oplus_vooc_fw.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20806/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20806/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20807/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20807/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20808/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20808/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20809/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20809/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/2080E/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2080E/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20819/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20819/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20828/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20828/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/20838/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/20838/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/21615/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21615/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/21619/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/21619/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/2161A/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2161A/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/2169A/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2169A/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/fastchg/2169B/oplus_vooc_fw_rk826.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/2169B/oplus_vooc_fw_rk826.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Allay_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Allay_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Allusion_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Allusion_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Amiable_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Amiable_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Blare_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Blare_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Blissful_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Blissful_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Brisk_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Brisk_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Bubble_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Bubble_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Cheerful_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Cheerful_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Clear_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Clear_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Comely_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Comely_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Cozy_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Cozy_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Ding_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Ding_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Effervesce_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Effervesce_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Elegant_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Elegant_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Free_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Free_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Hallucination_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Hallucination_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Inbound_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Inbound_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Light_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Light_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Meet_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Meet_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Naivety_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Naivety_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Quickly_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Quickly_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Rhythm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Rhythm_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Surprise_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Surprise_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/notif_Twinkle_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/notif_Twinkle_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ring_Amenity_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Amenity_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ring_Bounce_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Bounce_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ring_Calm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Calm_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ring_Lazy_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Lazy_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ring_Mystical_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Mystical_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ring_Whirl_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ring_Whirl_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Alacrity_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Alacrity_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Blues_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Blues_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Cloud_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Cloud_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Cyclotron_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Cyclotron_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Distinct_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Distinct_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Dynamic_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Dynamic_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Echo_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Echo_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Expect_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Expect_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Fanatical_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Fanatical_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Funky_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Funky_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Guitar_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Guitar_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Harping_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Harping_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Highlight_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Highlight_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Idyl_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Idyl_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Innocence_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Innocence_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Jazz_life_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Jazz_life_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Journey_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Journey_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Joyous_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Joyous_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Marimba_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Marimba_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Old_telephone_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Old_telephone_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_OnePlus_tune_rhythm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_OnePlus_tune_rhythm_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Oneplus_tune_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Oneplus_tune_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Optimistic_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Optimistic_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Piano_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Piano_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Rhythm_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Rhythm_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/ringtone_Sun_glittering_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/ringtone_Sun_glittering_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/shuntai24k_rtp.bin:$(TARGET_COPY_OUT_ODM)/firmware/shuntai24k_rtp.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/t-jingle_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/t-jingle_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19065/FW_S6SY791_SAMSUNG.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19065/FW_S6SY791_SAMSUNG.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19065/FW_S6SY791_SAMSUNG_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19065/FW_S6SY791_SAMSUNG_FAE.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19065/LIMIT_S6SY791_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19065/LIMIT_S6SY791_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19161/FW_S3908_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19161/FW_S3908_BOE.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19161/FW_S6SY771_SAMSUNG.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19161/FW_S6SY771_SAMSUNG.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19161/FW_S6SY771_SAMSUNG_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19161/FW_S6SY771_SAMSUNG_FAE.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19161/LIMIT_S3908_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19161/LIMIT_S3908_BOE.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19161/LIMIT_S6SY771_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19161/LIMIT_S6SY771_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19795/FW_GT9886_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19795/FW_GT9886_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19795/FW_GT9886_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19795/FW_GT9886_SAMSUNG_FAE.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19795/LIMIT_GT9886_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19795/LIMIT_GT9886_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19805/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19805/FW_S3908_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19805/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19805/FW_S3908_SAMSUNG_FAE.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19805/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19805/LIMIT_S3908_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19811/FW_S6SY791_SAMSUNG.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19811/FW_S6SY791_SAMSUNG.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19811/FW_S6SY791_SAMSUNG_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19811/FW_S6SY791_SAMSUNG_FAE.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19811/LIMIT_S6SY791_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19811/LIMIT_S6SY791_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19821/FW_S6SY771_SAMSUNG.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19821/FW_S6SY771_SAMSUNG.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19821/FW_S6SY771_SAMSUNG_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19821/FW_S6SY771_SAMSUNG_FAE.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19821/FW_S6SY771_SAMSUNG_sys_edge_touch_config.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19821/FW_S6SY771_SAMSUNG_sys_edge_touch_config.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19821/LIMIT_S6SY771_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19821/LIMIT_S6SY771_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19855/FW_S6SY771_SAMSUNG.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19855/FW_S6SY771_SAMSUNG.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19855/FW_S6SY771_SAMSUNG_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19855/FW_S6SY771_SAMSUNG_FAE.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19855/FW_S6SY771_SAMSUNG_sys_edge_touch_config.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19855/FW_S6SY771_SAMSUNG_sys_edge_touch_config.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/19855/LIMIT_S6SY771_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19855/LIMIT_S6SY771_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/20061/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20061/FW_S3908_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/20061/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20061/FW_S3908_SAMSUNG_FAE.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/20061/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20061/LIMIT_S3908_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/20135/FW_S6SY792_SAMSUNG.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20135/FW_S6SY792_SAMSUNG.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/20135/FW_S6SY792_SAMSUNG_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20135/FW_S6SY792_SAMSUNG_FAE.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/20135/LIMIT_S6SY792_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20135/LIMIT_S6SY792_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/20161/FW_S6SY792_SAMSUNG.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20161/FW_S6SY792_SAMSUNG.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/20161/FW_S6SY792_SAMSUNG_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20161/FW_S6SY792_SAMSUNG_FAE.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/20161/LIMIT_S6SY792_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20161/LIMIT_S6SY792_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/20809/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20809/FW_S3908_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/20809/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20809/FW_S3908_SAMSUNG_FAE.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/20809/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20809/LIMIT_S3908_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/20828/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20828/FW_S3908_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/20828/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20828/FW_S3908_SAMSUNG_FAE.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/20828/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20828/LIMIT_S3908_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/21615/FW_S6SY792_SAMSUNG.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/21615/FW_S6SY792_SAMSUNG.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/21615/FW_S6SY792_SAMSUNG_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/21615/FW_S6SY792_SAMSUNG_FAE.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/21615/LIMIT_S6SY792_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21615/LIMIT_S6SY792_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/21619/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21619/FW_S3908_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/21619/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21619/FW_S3908_SAMSUNG_FAE.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/tp/21619/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21619/LIMIT_S3908_SAMSUNG.img \
+    vendor/oneplus/sm8250-common/proprietary/odm/firmware/wentai24k_rtp.bin:$(TARGET_COPY_OUT_ODM)/firmware/wentai24k_rtp.bin \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib/rfsa/adsp/hta_lib/libhta_dsp_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/hta_lib/libhta_dsp_skel.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib/rfsa/adsp/libaiboost_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libaiboost_skel.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib/rfsa/adsp/libaiboost_skel_v65.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libaiboost_skel_v65.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib/rfsa/adsp/libaiboost_skel_v66.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libaiboost_skel_v66.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib/rfsa/adsp/libc++.so.1:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libc++.so.1 \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib/rfsa/adsp/libc++abi.so.1:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libc++abi.so.1 \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib/rfsa/adsp/libinterstellar_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libinterstellar_skel.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib/rfsa/adsp/libktvdrc.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libktvdrc.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib/rfsa/adsp/libktveffect.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libktveffect.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib/rfsa/adsp/libktveq.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libktveq.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib/rfsa/adsp/libktvns.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libktvns.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib/rfsa/adsp/libktvpitchshift.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libktvpitchshift.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib/rfsa/adsp/libktvreverb.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libktvreverb.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib/rfsa/adsp/libktvvolume.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libktvvolume.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.orms@1.0.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.secure_element@1.0-impl.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.qti.stats.pdlib.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/camera/components/libipebpsstriping.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/libipebpsstriping.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigpreview.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigpreviewlite.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigvideo.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigvideolite.bin \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/hw/fingerprint.18821_goodix9508_G2_4.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.18821_goodix9508_G2_4.default.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/hw/fingerprint.18857_goodix9508_G2_4.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.18857_goodix9508_G2_4.default.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/hw/fingerprint.18865_goodix9558_G3.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.18865_goodix9558_G3.default.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/hw/fingerprint.19805_goodix9638_G6_3.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.19805_goodix9638_G6_3.default.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/hw/fingerprint.19805_goodix9678_G6_7.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.19805_goodix9678_G6_7.default.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/hw/fingerprint.19811_goodix9638_G6.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.19811_goodix9638_G6.default.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/hw/fingerprint.20801_goodix9558_G3.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.20801_goodix9558_G3.default.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/hw/fingerprint.20828_goodix9678.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.20828_goodix9678.default.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/hw/fingerprint.goodix9608_G5.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix9608_G5.default.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/hw/fingerprint.goodix9638_G6.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix9638_G6.default.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libSonyIMX471RmscLibrary.so:$(TARGET_COPY_OUT_ODM)/lib64/libSonyIMX471RmscLibrary.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libfastov_dsp.so:$(TARGET_COPY_OUT_ODM)/lib64/libfastov_dsp.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libgf_hal_19805_G6_3_oplus.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal_19805_G6_3_oplus.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libgf_hal_19805_G6_7_oplus.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal_19805_G6_7_oplus.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libgf_hal_19811_G6_oplus.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal_19811_G6_oplus.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libgf_hal_20828_G6_7_oplus.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal_20828_G6_7_oplus.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libgf_hal_G5_oplus.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal_G5_oplus.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libgf_hal_G6_oplus.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_hal_G6_oplus.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libgf_ud_hal_18821_G2_4_oplus.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_ud_hal_18821_G2_4_oplus.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libgf_ud_hal_18857_G2_4_oplus.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_ud_hal_18857_G2_4_oplus.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libgf_ud_hal_18865_G3_oplus.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_ud_hal_18865_G3_oplus.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libgf_ud_hal_20801_G3_oplus.so:$(TARGET_COPY_OUT_ODM)/lib64/libgf_ud_hal_20801_G3_oplus.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_ODM)/lib64/liboemcrypto.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/liboplus_service.so:$(TARGET_COPY_OUT_ODM)/lib64/liboplus_service.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libormshalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libormshalclient.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libpwirisIoctlWrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisIoctlWrapper.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libpwirisPCS.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisPCS.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libpwiriscalibrate.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwiriscalibrate.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libpwirisfeature.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisfeature.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libpwirishalwrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirishalwrapper.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libpwirispq.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirispq.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libpwirisservice.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisservice.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libpwirissoft.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirissoft.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libpwsnapdragoncolor.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwsnapdragoncolor.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libpwsoftirisPCS.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwsoftirisPCS.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/libwvhidl.so:$(TARGET_COPY_OUT_ODM)/lib64/libwvhidl.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_ODM)/lib64/mediadrm/libwvdrmengine.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.appradio@1.0.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.commondcs@1.0.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.ims@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.ims@1.0.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.oplusSensor@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.oplusSensor@1.0.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms@1.0.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/vendor.oplus.hardware.radio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.radio@1.0.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.0.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.1.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/vendor.pixelworks.hardware.feature@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.feature@1.0.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.qti.esepowermanager@1.0.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/lib64/vendor.qti.esepowermanager@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.qti.esepowermanager@1.1.so \
+    vendor/oneplus/sm8250-common/proprietary/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
     vendor/oneplus/sm8250-common/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/oneplus/sm8250-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/oneplus/sm8250-common/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
+    vendor/oneplus/sm8250-common/proprietary/system_ext/bin/tcmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/tcmd \
     vendor/oneplus/sm8250-common/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
     vendor/oneplus/sm8250-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/oneplus/sm8250-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
+    vendor/oneplus/sm8250-common/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
     vendor/oneplus/sm8250-common/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
-    vendor/oneplus/sm8250-common/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/oneplus/sm8250-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/oneplus/sm8250-common/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
     vendor/oneplus/sm8250-common/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/oneplus/sm8250-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/oneplus/sm8250-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
-    vendor/oneplus/sm8250-common/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
+    vendor/oneplus/sm8250-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
+    vendor/oneplus/sm8250-common/proprietary/system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.ims.rcsservice.xml \
+    vendor/oneplus/sm8250-common/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
     vendor/oneplus/sm8250-common/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
+    vendor/oneplus/sm8250-common/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
+    vendor/oneplus/sm8250-common/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/oneplus/sm8250-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
-    vendor/oneplus/sm8250-common/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
-    vendor/oneplus/sm8250-common/proprietary/system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
-    vendor/oneplus/sm8250-common/proprietary/system_ext/lib/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmctmgr.so \
-    vendor/oneplus/sm8250-common/proprietary/system_ext/lib/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmfdmgr.so \
-    vendor/oneplus/sm8250-common/proprietary/system_ext/lib/libdpmframework.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmframework.so \
-    vendor/oneplus/sm8250-common/proprietary/system_ext/lib/libdpmtcm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmtcm.so \
     vendor/oneplus/sm8250-common/proprietary/system_ext/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmosal.so \
     vendor/oneplus/sm8250-common/proprietary/system_ext/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmparser_lite.so \
     vendor/oneplus/sm8250-common/proprietary/system_ext/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpdecoder.so \
@@ -51,7 +1194,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/system_ext/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrcinterface.so \
     vendor/oneplus/sm8250-common/proprietary/system_ext/lib/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.diaghal@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
-    vendor/oneplus/sm8250-common/proprietary/system_ext/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/system_ext/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvideocodec.so \
     vendor/oneplus/sm8250-common/proprietary/system_ext/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvt.so \
@@ -85,6 +1227,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/system_ext/lib64/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrc.so \
     vendor/oneplus/sm8250-common/proprietary/system_ext/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrcinterface.so \
     vendor/oneplus/sm8250-common/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so \
+    vendor/oneplus/sm8250-common/proprietary/system_ext/lib64/vendor.qti.hardware.dpmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.dpmservice@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
@@ -92,41 +1235,29 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/dashd:$(TARGET_COPY_OUT_VENDOR)/bin/dashd \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/feature_enabler_client:$(TARGET_COPY_OUT_VENDOR)/bin/feature_enabler_client \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/android.hardware.authsecret@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.authsecret@1.0-service-qti \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.1-service-qti \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-qti \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.nxp.hardware.nfc@2.0-service \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.oneplus.hardware.camera@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.camera@1.0-service \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.oneplus.hardware.display@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.display@1.0-service \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.oneplus.hardware.hdcpkey@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.hdcpkey@1.0-service \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.oneplus.hardware.param@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.oneplus.hardware.param@1.0-service \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.composer-service \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.iop@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.iop@2.0-service \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.0-service \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service \
+    vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.2-service \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.soter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter@1.0-service \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.secure_element@1.2-service \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/imsrcsd:$(TARGET_COPY_OUT_VENDOR)/bin/imsrcsd \
+    vendor/oneplus/sm8250-common/proprietary/vendor/bin/init.mdm.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.mdm.sh \
+    vendor/oneplus/sm8250-common/proprietary/vendor/bin/init.qti.chg_policy.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.chg_policy.sh \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
@@ -134,8 +1265,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/mdm_helper:$(TARGET_COPY_OUT_VENDOR)/bin/mdm_helper \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
+    vendor/oneplus/sm8250-common/proprietary/vendor/bin/mutualex:$(TARGET_COPY_OUT_VENDOR)/bin/mutualex \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/opf-service:$(TARGET_COPY_OUT_VENDOR)/bin/opf-service \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
@@ -143,13 +1274,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/qmipriod:$(TARGET_COPY_OUT_VENDOR)/bin/qmipriod \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/qrtr-ns:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-ns \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
+    vendor/oneplus/sm8250-common/proprietary/vendor/bin/shsusrd:$(TARGET_COPY_OUT_VENDOR)/bin/shsusrd \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/slim_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/slim_daemon \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/sscrpcd:$(TARGET_COPY_OUT_VENDOR)/bin/sscrpcd \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/ssgqmigd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgqmigd \
@@ -157,22 +1287,23 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/vl53l1_daemon_main:$(TARGET_COPY_OUT_VENDOR)/bin/vl53l1_daemon_main \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/wfdhdcphalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdhdcphalservice \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/wfdvndservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdvndservice \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
-    vendor/oneplus/sm8250-common/proprietary/vendor/bin/wlchgd:$(TARGET_COPY_OUT_VENDOR)/bin/wlchgd \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
     vendor/oneplus/sm8250-common/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/ArmHDCP_QTI_Android.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/ArmHDCP_QTI_Android.cfg \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/OPlus_QC_LTM_Commercial_SM8250_2020_02_07.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/OPlus_QC_LTM_Commercial_SM8250_2020_02_07.pfm \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/Oppo_QC_LTM_Commercial_2020_01_03.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/Oppo_QC_LTM_Commercial_2020_01_03.pfm \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/Nexus/ATT/ATT_profiles.xml \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/Nexus/ROW/ROW_profiles.xml \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/Nexus/VZW/VZW_profiles.xml \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/cne/profileSlm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileSlm.xml \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/cne/slm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/slm.conf \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode:$(TARGET_COPY_OUT_VENDOR)/etc/camera/M_Attribute_AG_BMW_1.1.0.model.hardcode \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile3.xml \
@@ -204,19 +1335,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/firmware/wkeyota.b00:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wkeyota.b00 \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/firmware/wkeyota.b01:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wkeyota.b01 \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/firmware/wkeyota.b02:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wkeyota.b02 \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/firmware/wkeyota.b03:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wkeyota.b03 \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/firmware/wkeyota.b04:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wkeyota.b04 \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/firmware/wkeyota.b05:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wkeyota.b05 \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/firmware/wkeyota.b06:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wkeyota.b06 \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/firmware/wkeyota.b07:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wkeyota.b07 \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/firmware/wkeyota.mdt:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wkeyota.mdt \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/android.hardware.authsecret@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.authsecret@1.0-service-qti.rc \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
@@ -231,124 +1355,187 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/init-qcril-data.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-qcril-data.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/init.opf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.opf.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/mutualex.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mutualex.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.oneplus.hardware.camera@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.camera@1.0-service.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.oneplus.hardware.display@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.display@1.0-service.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.oneplus.hardware.hdcpkey@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.hdcpkey@1.0-service.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.oneplus.hardware.param@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.param@1.0-service.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.pixelworks.hardware.display.iris-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.pixelworks.hardware.display.iris-service.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.0-service.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.2-service.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.secure_element@1.2-service.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/vppservice_osie_sr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice_osie_sr.rc \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/inparm/irissoft/mcfCheck.txt:$(TARGET_COPY_OUT_VENDOR)/etc/inparm/irissoft/mcfCheck.txt \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc-mtp-SN100.conf_19805:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_19805 \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc-mtp-SN100.conf_19811:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_19811 \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc-mtp-SN100.conf_19821:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_19821 \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc-mtp-SN100.conf_19867:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf_19867 \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100_38_4MHZ.conf \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc_beijing_config.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_beijing_config.conf \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc_gcf_config.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_gcf_config.conf \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc_shanghai_config.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_shanghai_config.conf \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc_suzhou_config.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_suzhou_config.conf \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/libnfc_xiamen_config.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc_xiamen_config.conf \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/ltm_config_19795_samsung_AMS678UW01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_19795_samsung_AMS678UW01_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/ltm_config_samsung_AMS678UW01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_AMS678UW01_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/ltm_config_samsung_AMS678UW01_qhd_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_AMS678UW01_qhd_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/ltm_config_samsung_S6E3HC3_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_S6E3HC3_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/ltm_config_samsung_SOFE03F_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_SOFE03F_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/ltm_config_samsung_amb655uv01_amoled_fhd+_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_amb655uv01_amoled_fhd+_panel_with_DSC.xml \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/ltm_config_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/ltm_config_samsung_ana6705_fhd_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_ana6705_fhd_cmd_mode_dsc_dsi_panel.xml \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/ltm_config_samsung_ana6706_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_ana6706_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/ltm_config_samsung_amb655xl08_amoled_fhd+_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_amb655xl08_amoled_fhd+_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/ltm_config_samsung_ams662zs01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_ams662zs01_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/ltm_config_samsung_ams662zs01_dvt_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_ams662zs01_dvt_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/ltm_config_samsung_fhd_amoled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_fhd_amoled.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/media_codecs_kona.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kona.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/media_codecs_kona_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kona_vendor.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/media_codecs_performance_kona.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kona.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/media_codecs_performance_kona_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kona_vendor.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/media_profiles_kona.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_kona.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/nfc_config_type.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc_config_type.conf \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/permissions/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_19795_samsung_AMS678UW01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_19795_samsung_AMS678UW01_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_Sharp_fhd_cmd_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_fhd_cmd_mode_qsync_dsi_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_Sharp_fhd_video_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_fhd_video_mode_qsync_dsi_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_boe_nt37800_amoled_fhd+_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_boe_nt37800_amoled_fhd+_panel_with_DSC.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_nt35695b_truly_fhd_command_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt35695b_truly_fhd_command_mode_dsi_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_nt36525_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt36525_video_mode_dsi_truly_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_120HZ_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_120HZ_panel_with_DSC.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_60HZ_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_60HZ_panel_with_DSC.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_90HZ_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_90HZ_panel_with_DSC.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_120HZ_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_120HZ_panel_with_DSC.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_60HZ_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_60HZ_panel_with_DSC.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_90HZ_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_90HZ_panel_with_DSC.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_rm69299_amoled_fhd+_cmd_mode_dsi_visionox_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_rm69299_amoled_fhd+_cmd_mode_dsi_visionox_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_rm69299_amoled_fhd+_video_mode_dsi_visionox_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_rm69299_amoled_fhd+_video_mode_dsi_visionox_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_samsung_AMS678UW01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_AMS678UW01_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_samsung_AMS678UW01_qhd_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_AMS678UW01_qhd_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_samsung_S6E3HC3_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_S6E3HC3_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_samsung_SOFE03F_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_SOFE03F_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_samsung_amb655uv01_amoled_fhd+_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_amb655uv01_amoled_fhd+_panel_with_DSC.xml \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_samsung_ana6705_fhd_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_ana6705_fhd_cmd_mode_dsc_dsi_panel.xml \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_samsung_ana6706_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_ana6706_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_samsung_amb655xl08_amoled_fhd+_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_amb655xl08_amoled_fhd+_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_samsung_ams662zs01_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_ams662zs01_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_samsung_ams662zs01_dvt_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_ams662zs01_dvt_dsc_cmd_mode_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_samsung_fhd_amoled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_samsung_fhd_amoled.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_sw43404_amoled_boe_fhd+_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_sw43404_amoled_boe_fhd+_panel_with_DSC.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_sw43404_amoled_cmd_mode_dsi_boe_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_sw43404_amoled_cmd_mode_dsi_boe_panel_with_DSC.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base.policy \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
-    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sn100u_nfcon.pnscr:$(TARGET_COPY_OUT_VENDOR)/etc/sn100u_nfcon.pnscr \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/alsps.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/alsps.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/bmi160.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi160.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_amd_sw_disabled.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_default_sensors.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_dynamic_sensors.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_hdk_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_hdk_ak991x_0.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_irq.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_power_0.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_qrd_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_qrd_ak991x_0.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_qrd_alsps.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_qrd_alsps.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_qrd_bmi160.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_qrd_bmi160.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_qrd_devinfo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_qrd_devinfo.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_qrd_lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_qrd_lps22hh_0.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_qrd_lsm6ds3c.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_qrd_lsm6ds3c.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_qrd_lsm6dsm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_qrd_lsm6dsm.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_qrd_mmc5603nj.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_qrd_mmc5603nj.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_qrd_tcs3408_rear.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_qrd_tcs3408_rear.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_qrd_tmd2725_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_qrd_tmd2725_0.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/kona_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kona_sx932x_0.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/lps22hh_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lps22hh_0.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/mmc5603nj.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/mmc5603nj.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_aont.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_aont.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_basic_gestures.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_basic_gestures.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_bring_to_ear.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_bring_to_ear.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_ccd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_ccd_v2_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v2_walk.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_ccd_v3_1_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v3_1_walk.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_ccd_v3_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v3_walk.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dae.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_device_orient.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_device_orient.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_distance_bound.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_distance_bound.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_dpc.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dpc.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_facing.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_facing.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_fmv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_fmv_legacy.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv_legacy.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_geomag_rv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_geomag_rv.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_heart_rate.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_heart_rate.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_mag_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_mag_cal_legacy.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal_legacy.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_multishake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_multishake.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_pedometer.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_pedometer.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rmd.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rotv.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_smd.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_tilt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_tilt_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_disabled.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/stk3x5x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk3x5x_0.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sx932x_0.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/tcs3408.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3408.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/tcs3701.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3701.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/config/wigig_sensing_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/wigig_sensing_0.json \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/oneplus/sm8250-common/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/100ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/100ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/120ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/120ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/140ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/140ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/160ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/160ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/180ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/180ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/200ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/200ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/20ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/20ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/220ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/220ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/240ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/240ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/260ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/260ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/280ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/280ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/300ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/300ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/320ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/320ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/340ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/340ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/360ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/360ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/380ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/380ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/400ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/400ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/40ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/40ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/420ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/420ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/440ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/440ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/460ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/460ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/480ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/480ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/500ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/500ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/60ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/60ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/80ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/80ms_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/AT500ms_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AT500ms_RTP.bin \
+    vendor/oneplus/sm8250-common/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/oneplus/sm8250-common/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/VZW_Alrwave_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/VZW_Alrwave_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/Version_Alert_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Version_Alert_RTP.bin \
     vendor/oneplus/sm8250-common/proprietary/vendor/firmware/a650_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_gmu.bin \
     vendor/oneplus/sm8250-common/proprietary/vendor/firmware/a650_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_sqe.fw \
     vendor/oneplus/sm8250-common/proprietary/vendor/firmware/a650_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.b00 \
@@ -356,47 +1543,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/firmware/a650_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.b02 \
     vendor/oneplus/sm8250-common/proprietary/vendor/firmware/a650_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.elf \
     vendor/oneplus/sm8250-common/proprietary/vendor/firmware/a650_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.mdt \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/agingtest_160hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_160hz_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/agingtest_162hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_162hz_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/agingtest_164hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_164hz_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/agingtest_166hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_166hz_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/agingtest_168hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_168hz_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/agingtest_170hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_170hz_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/agingtest_172hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_172hz_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/agingtest_174hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_174hz_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/agingtest_176hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_176hz_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/agingtest_178hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_178hz_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/agingtest_180hz_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/agingtest_180hz_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Alarm_clock_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Alarm_clock_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Beep_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Beep_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Breeze_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Breeze_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Dawn_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Dawn_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Dream_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Dream_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Fluttering_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Fluttering_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Flyer_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Flyer_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Interesting_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Interesting_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Leisurely_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Leisurely_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Memory_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Memory_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Relieved_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Relieved_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Ripple_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Ripple_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Slowly_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Slowly_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Stars_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Stars_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Surging_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Surging_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_The_wind_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_The_wind_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_Walking_in_the_rain_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_Walking_in_the_rain_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_spring_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_spring_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/alarm_tactfully_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/alarm_tactfully_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/aw8697_haptic_166.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic_166.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/aw8697_haptic_168.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic_168.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/aw8697_haptic_170.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic_170.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/aw8697_haptic_172.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic_172.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/aw8697_haptic_174.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic_174.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/aw8697_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_rtp.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/aw8697_rtp_lighthouse.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_rtp_lighthouse.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/aw8697_rtp_silk.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_rtp_silk.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/awinic_haptic_gun_params.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic_haptic_gun_params.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/awinic_haptic_params.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/awinic_haptic_params.bin \
     vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
     vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
     vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
@@ -409,75 +1555,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ipa_uc.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.b02 \
     vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ipa_uc.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.elf \
     vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ipa_uc.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.mdt \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Allay_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Allay_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Allusion_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Allusion_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Amiable_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Amiable_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Blare_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Blare_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Blissful_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Blissful_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Brisk_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Brisk_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Bubble_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Bubble_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Cheerful_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Cheerful_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Clear_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Clear_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Comely_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Comely_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Cozy_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Cozy_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Ding_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Ding_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Effervesce_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Effervesce_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Elegant_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Elegant_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Free_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Free_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Hallucination_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Hallucination_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Inbound_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Inbound_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Light_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Light_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Meet_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Meet_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Naivety_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Naivety_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Quickly_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Quickly_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Rhythm_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Rhythm_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Surprise_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Surprise_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/notif_Twinkle_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/notif_Twinkle_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ring_Amenity_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_Amenity_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ring_Bounce_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_Bounce_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ring_Calm_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_Calm_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ring_Lazy_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_Lazy_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ring_Mystical_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_Mystical_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ring_Whirl_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ring_Whirl_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Alacrity_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Alacrity_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Blues_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Blues_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Cloud_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Cloud_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Cyclotron_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Cyclotron_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Distinct_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Distinct_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Dynamic_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Dynamic_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Echo_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Echo_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Expect_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Expect_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Fanatical_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Fanatical_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Funky_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Funky_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Guitar_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Guitar_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Harping_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Harping_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Highlight_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Highlight_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Idyl_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Idyl_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Innocence_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Innocence_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Journey_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Journey_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Joyous_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Joyous_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Marimba_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Marimba_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Old_telephone_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Old_telephone_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_OnePlus_tune_rhythm_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_OnePlus_tune_rhythm_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Oneplus_tune_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Oneplus_tune_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Optimistic_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Optimistic_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Piano_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Piano_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/ringtone_Rhythm_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ringtone_Rhythm_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/shuntai24k_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/shuntai24k_rtp.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/t-jingle_RTP.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/t-jingle_RTP.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/tp/FW_19805_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19805_S3908.img \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/tp/FW_19811_SY761.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19811_SY761.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/tp/FW_19811_SY79x.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19811_SY79x.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/tp/FW_19821_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19821_S3908.img \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/tp/FW_19821_SY761.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19821_SY761.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/tp/FW_19821_SY771.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/FW_19821_SY771.bin \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/tp/LIMIT_19805_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19805_S3908.img \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/tp/LIMIT_19811_SY761.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19811_SY761.img \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/tp/LIMIT_19811_SY79x.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19811_SY79x.img \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/tp/LIMIT_19821_S3908.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19821_S3908.img \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/tp/LIMIT_19821_SY761.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19821_SY761.img \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/tp/LIMIT_19821_SY771.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/LIMIT_19821_SY771.img \
-    vendor/oneplus/sm8250-common/proprietary/vendor/firmware/wentai24k_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wentai24k_rtp.bin \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_adreno.so \
@@ -488,7 +1565,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth_qti.default.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/hw/sound_trigger.primary.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.kona.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.adreno.so \
@@ -499,6 +1577,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libFileMux_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFileMux_proprietary.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libMpeg4SwEncoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMpeg4SwEncoder.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib/libMpeghSwEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMpeghSwEnc.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAacDec.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDec.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libOmxAlacDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDecSw.so \
@@ -524,13 +1603,15 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib/libadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_log_utils.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib/libbluetooth_audio_session_qti_2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti_2_1.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc++_shared.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxexternalformatutils.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
@@ -547,6 +1628,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib/libhdmipassthru.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdmipassthru.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblistensoundmodel2.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
@@ -557,10 +1639,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libmmrtpdecoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder_proprietary.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libmmrtpencoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder_proprietary.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib/libnightvision.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnightvision.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfioctl.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcmaputils.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
@@ -571,6 +1653,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_common_so.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib/libqmi_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_legacy.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd.so \
@@ -583,8 +1666,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppclient.so \
@@ -613,8 +1694,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/libwfdutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdutils_proprietary.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/capi_v2_dap_cpdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_dap_cpdp.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libBeautyShot_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libBeautyShot_skel.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libMFSR_FRT_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libMFSR_FRT_skel.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libQ6MSFR_manager_skel.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libSuperSensor_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libSuperSensor_skel.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so \
@@ -637,6 +1718,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libhexagon_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhexagon_nn_skel.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libhta_dsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhta_dsp_skel.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libinterstellar_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libinterstellar_skel.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libosie_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libosie_skel.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libpmucount_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libpmucount_skel.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libproxy_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libproxy_skel.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
@@ -648,7 +1731,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libvdsuperphoto_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvdsuperphoto_skel.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib/soundfx/libhaptic_effect.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libhaptic_effect.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
@@ -659,10 +1741,58 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.2.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.3.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.4.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/CFR_OnePlus_UW_photo_preview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_OnePlus_UW_photo_preview.bin \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/CFR_OnePlus_UW_video.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_OnePlus_UW_video.bin \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/CFR_para2_OnePlus_EF017_UW_snapshot.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/CFR_para2_OnePlus_EF017_UW_snapshot.bin \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.truly_cmb433.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.oneplus.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.memcpy.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.oneplus.node.preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.preview.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.oneplus.node.preview_nv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.preview_nv.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.oneplus.node.rtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.rtb.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.oneplus.node.sat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.oneplus.node.sat.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.camx.chiiqutils.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.addconstant.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.hvx.binning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.binning.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.node.customhwnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.customhwnode.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.depth.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummyrtb.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummysat.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.node.eisv2.compass.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv2.compass.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv2.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.node.eisv3.compass.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv3.compass.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv3.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.fcv.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.gpu.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.memcpy.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.remosaic.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.stich.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swregistration.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aec.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.aecwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aecwrapper.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.af.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afd.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.afwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afwrapper.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.asd.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awb.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awbwrapper.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.haf.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.hafoverride.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlib.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibsony.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qti.stats.tracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.tracker.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.aec.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.af.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.awb.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.pdlib.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/camera/components/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libdepthmapwrapper.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.anchorsync.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/com.qti.feature2.demux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.demux.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/com.qti.feature2.frameselect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.frameselect.so \
@@ -686,6 +1816,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.1.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.2.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.3.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/deviceInfoServiceModule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/deviceInfoServiceModule.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/eglSubDriverAndroid.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_adreno.so \
@@ -697,22 +1828,21 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-qti.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth_qti.default.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.dsi.ant@1.0-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@4.0-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/jcos_nq_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/jcos_nq_client.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscmservice.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsqimf.so \
@@ -727,7 +1857,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/lib-siputility.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-siputility.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/lib-uceservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-uceservice.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlacSwDec.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libAlgoProcess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlgoProcess.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libC2D2.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
@@ -737,8 +1866,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel_svc.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libMpeg4SwEncoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMpeg4SwEncoder.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libOPPO_Front_SCPortrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOPPO_Front_SCPortrait.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libOPPO_SCPortrait.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOPPO_SCPortrait.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libMpeghSwEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMpeghSwEnc.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAacDec.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAlacDec.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libOmxAlacDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAlacDecSw.so \
@@ -759,20 +1887,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libSonyIMX471RmscLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX471RmscLibrary.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libSuperSensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensor.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libSuperSensorFallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensorFallback.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libSuperSensorProcessor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensorProcessor.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libSuperSensorProcessorCWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensorProcessorCWrapper.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libVDBlurless.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDBlurless.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libVDDualCameraBlurlessAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDDualCameraBlurlessAPI.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libVDFusionBlurlessAPI_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDFusionBlurlessAPI_v2.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libVDSuperPhotoAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDSuperPhotoAPI.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVkLayer_q3dtools.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/lib_bokehlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_bokehlib.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/lib_oneplus_vivideffect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_oneplus_vivideffect.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/lib_oneplus_watermark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_oneplus_watermark.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_utils.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
@@ -806,8 +1922,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libarcsoft_tricam_calibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_tricam_calibration.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libarcsoft_tricam_verification.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_tricam_verification.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libarcsoft_video_fringing_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_video_fringing_correction.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libasn1cper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1cper.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libasn1crt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crt.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libasn1crtx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crtx.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libbitmlengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbitmlengine.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libbluetooth_audio_session_qti_2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti_2_1.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
@@ -829,7 +1950,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libchilog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchilog.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libchrome.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchrome.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
@@ -852,8 +1972,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libdualcam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_image_optical_zoom.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_optical_zoom_control.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libdualcam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_video_optical_zoom.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgdtap.so \
@@ -865,6 +1983,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libhexagon_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_nn_stub.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhistogram.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libhta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta_hexagon_runtime.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
@@ -889,51 +2008,40 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libmdmimgload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmimgload.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libmeters.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libmidasserviceintf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmidasserviceintf.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc2.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libmorpho_dcface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_dcface.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libmorpho_image_refiner_deflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_image_refiner_deflicker.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libnanopb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnanopb.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libnetmgr_nr_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_nr_fusion.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libnetmgr_rmnet_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_rmnet_ext.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libnightvision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnightvision.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/liboemnvbk_img_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemnvbk_img_helper.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libofflinelog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinelog.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libop-bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libop-bokeh.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libopf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopf.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libops.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libparam_vendor.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfconfig.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfioctl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libpwirisIoctlWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirisIoctlWrapper.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libpwirisPCS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirisPCS.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libpwiriscalibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwiriscalibrate.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libpwirisfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirisfeature.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libpwirishalwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirishalwrapper.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libpwirispq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirispq.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libpwirisservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirisservice.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libpwirissoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirissoft.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libpwsnapdragoncolor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwsnapdragoncolor.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libpwsoftirisPCS.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwsoftirisPCS.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilFramework.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildatactl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdma_file_agent.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdutils.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_cci.so \
@@ -942,12 +2050,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_common_so.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_csi.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_encdec.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqmi_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_legacy.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd-client.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-util.so \
@@ -975,7 +2082,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libsdmutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmutils.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorcal.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsettings.so \
@@ -990,7 +2096,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libstblur_capture_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstblur_capture_api.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynx.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
@@ -998,29 +2104,19 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthreadutils.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libtriplecam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_image_optical_zoom.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_optical_zoom_control.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_video_optical_zoom.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libvl53l1_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvl53l1_daemon.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppclient.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libvpphcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphcp.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/ls_nq_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ls_nq_client.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/nfc_nci.nqx.default.hw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci.nqx.default.hw.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/se_nq_extn_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/se_nq_extn_client.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/sensors.hal.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.hal.tof.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/unnhal-acc-adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-adreno.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/unnhal-acc-common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-common.so \
@@ -1033,19 +2129,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.4.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.5.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.nxp.hardware.nfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.nxp.hardware.nfc@2.0.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.oneplus.hardware.camera@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.camera@1.0.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.oneplus.hardware.hdcpkey@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.hdcpkey@1.0.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.oneplus.hardware.param@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oneplus.hardware.param@1.0.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.0.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.1.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.feature@1.0.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cammidasservice@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.data.factory@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.2.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.mwqem@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.slm@1.0.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.0.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.1.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.1.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.2.so \
@@ -1057,6 +2146,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.alarm@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cacert@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
@@ -1068,11 +2158,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@1.0.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.mwqemadapter@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so \
-    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qseecom@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.am@1.0.so \
@@ -1093,6 +2181,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.5.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.1.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.2.so \
@@ -1107,6 +2196,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.1.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.2.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.3.so \
+    vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.4.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callcapability@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/oneplus/sm8250-common/proprietary/vendor/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.factory@1.0.so \
@@ -1125,36 +2215,39 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8250-common/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql \
     vendor/oneplus/sm8250-common/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql \
     vendor/oneplus/sm8250-common/proprietary/vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_update_ecc_table.sql \
-    vendor/oneplus/sm8250-common/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql \
-    vendor/oneplus/sm8250-common/proprietary/vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/8_version_update_ecc_table.sql
+    vendor/oneplus/sm8250-common/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
     libfastcvopt \
     libthermalclient \
+    CACertService \
     CneApp \
     IWlanService \
     TimeService \
-    com.oneplus.gpudrivers.kona.api30 \
-    com.qualcomm.qti.gpudrivers.kona.api30 \
     PowerOffAlarm \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
+    ImsRcsService \
+    QtiTelephony \
     QtiTelephonyService \
     WfdService \
+    dpmserviceapp \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
-    qcnvitems \
-    tcmclient \
     com.android.hotwordenrollment.common.util \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
     vendor.qti.hardware.alarm-V1.0-java \
+    vendor.qti.ims.factory-V2.0-java \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti-hta \
     android.hardware.neuralnetworks@1.3-service-qti \
+    manifest_oplus_osiesr \
+    vendor.qti.gnss@4.0-service \
     manifest_android.hardware.drm@1.3-service.widevine \
+    manifest_oplusSensor \
+    manifest_oplus_fingerprint \
     vendor.pixelworks.hardware.display.iris-service \
-    vendor.pixelworks.hardware.feature.irisfeature-service \
-    vendor.qti.gnss@4.0-service
+    vendor.pixelworks.hardware.feature.irisfeature-service

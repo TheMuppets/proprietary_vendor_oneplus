@@ -1,0 +1,19 @@
+<!--
+/*********************************************************************
+ Copyright (c) 2021 Qualcomm Technologies, Inc.
+ All Rights Reserved.
+ Confidential and Proprietary - Qualcomm Technologies, Inc.
+**********************************************************************/
+-->
+<permissions>
+    <library name="vendor.qti.ims.factory-V2.0-java"
+        file="/system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar"/>
+    <library name="vendor.qti.ims.connection-V1.0-java"
+        file="/system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar"/>
+    <library name="vendor.qti.ims.rcsuce-V1.0-java"
+        file="/system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar"/>
+    <library name="vendor.qti.ims.rcssip-V1.0-java"
+        file="/system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar"/>
+    <library name="vendor.qti.ims.factory-V2.1-java"
+        file="/system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar"/>
+</permissions>

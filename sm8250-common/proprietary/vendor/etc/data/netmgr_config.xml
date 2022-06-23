@@ -293,6 +293,7 @@
       <data name="netdev_budget" type="int"> 9 </data>
       <data name="tc_ul_baserate" type="int"> 0 </data>
       <data name="low_latency_filters" type="int"> 1 </data>
+      <data name="netmgr_listen_ev_proto" type="int"> 1 </data>
 
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
@@ -2164,9 +2165,6 @@
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="skip_buffered_qos_modify" type="int"> 1 </data>
-      <!-- #ifdef VENDOR_EDIT -->
-      <data name="tcp_mtu_probing" type="int"> 1 </data>
-      <!-- #endif VENDOR_EDIT -->
 
       <data name="num_modems" type="int"> 2 </data>
       <data name="qos_disabled" type="int"> 0 </data>
@@ -2383,9 +2381,6 @@
       <data name="xlat_txcsum_disabled" type="int"> 0 </data>
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 13 </data>
-      <!-- #ifdef VENDOR_EDIT -->
-      <data name="tcp_mtu_probing" type="int"> 1 </data>
-      <!-- #endif VENDOR_EDIT -->
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 0 </data>
@@ -2584,9 +2579,6 @@
       <data name="xlat_txcsum_disabled" type="int"> 1 </data>
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 125 </data>
-      <!-- #ifdef VENDOR_EDIT -->
-      <data name="tcp_mtu_probing" type="int"> 1 </data>
-      <!-- #endif VENDOR_EDIT -->
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 9216 </data>
@@ -2685,8 +2677,16 @@
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 9 </data>
       <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
+      <!-- #ifdef OPLUS_BUG_STABILITY -->
+      <!-- YangHao@BSP.STABILITY, 2020/04/03, for ipa crash issue -->
+      <!--
       <data name="rsc" type="int"> 1 </data>
       <data name="rsb" type="int"> 1 </data>
+      -->
+      <!-- #else -->
+      <data name="rsc" type="int"> 0 </data>
+      <data name="rsb" type="int"> 0 </data>
+      <!-- #endif /* OPLUS_BUG_STABILITY */ -->
       <data name="mhip" type="int"> 1 </data>
       <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
       <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
@@ -2701,9 +2701,6 @@
       <data name="dl_marker_enabled" type="int"> 2 </data>
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 125 </data>
-      <!-- #ifdef VENDOR_EDIT -->
-      <data name="tcp_mtu_probing" type="int"> 1 </data>
-      <!-- #endif VENDOR_EDIT -->
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="low_latency_filters" type="int"> 1 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
@@ -2833,8 +2830,16 @@
       <data name="dataformat_ul_data_aggregation_protocol" type="int"> 9 </data>
       <data name="dataformat_dl_gro_enabled" type="int"> 1 </data>
       <data name="dataformat_ul_gso_enabled" type="int"> 1 </data>
+      <!-- #ifdef OPLUS_BUG_STABILITY -->
+      <!-- YangHao@BSP.STABILITY, 2020/04/03, for ipa crash issue -->
+      <!--
       <data name="rsc" type="int"> 1 </data>
       <data name="rsb" type="int"> 1 </data>
+      -->
+      <!-- #else -->
+      <data name="rsc" type="int"> 0 </data>
+      <data name="rsb" type="int"> 0 </data>
+      <!-- #endif /* OPLUS_BUG_STABILITY */ -->
       <data name="mhip" type="int"> 1 </data>
       <data name="phys_net_dev" type="string"> rmnet_mhi0 </data>
       <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
@@ -2849,9 +2854,6 @@
       <data name="dl_marker_enabled" type="int"> 2 </data>
       <data name="pnd_rps_mask" type="int"> 2 </data>
       <data name="vnd_rps_mask" type="int"> 125 </data>
-      <!-- #ifdef VENDOR_EDIT -->
-      <data name="tcp_mtu_probing" type="int"> 1 </data>
-      <!-- #endif VENDOR_EDIT -->
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="debug_netdev_max_backlog" type="int"> 1500 </data>
 
@@ -2952,6 +2954,11 @@
       </list>
       <!-- Number of above reverse data ports inited on bootup -->
       <data name="static_rev_links" type="int"> 4 </data>
+
+     <!-- #ifdef OPLUS_BUG_STABILITY -->
+     <!-- Liwei@Connectivity.NETWORK, 2021/04/25, for set default tcp_mtu_probing-->
+     <data name="tcp_mtu_probing" type="int"> 1 </data>
+     <!-- #endif /* OPLUS_BUG_STABILITY */ -->
    </listitem>
 
   <!-- lito parameters -->
@@ -2983,8 +2990,16 @@
       <data name="phys_net_dev" type="string"> rmnet_ipa0 </data>
       <data name="rtm_rmnet_data_enabled" type="int"> 1 </data>
       <data name="rtnetlink_tc_enabled" type="int"> 1 </data>
+      <!-- #ifdef OPLUS_BUG_STABILITY -->
+      <!-- YangHao@BSP.STABILITY, 2020/04/03, for ipa crash issue -->
+      <!--
       <data name="rsc" type="int"> 1 </data>
       <data name="rsb" type="int"> 1 </data>
+      -->
+      <!-- #else -->
+      <data name="rsc" type="int"> 0 </data>
+      <data name="rsb" type="int"> 0 </data>
+      <!-- #endif /* OPLUS_BUG_STABILITY */ -->
       <data name="rmnet_shs" type="int"> 1 </data>
       <data name="rmnet_perf" type="int"> 3 </data>
       <data name="uplink_priority" type="int"> 1 </data>
@@ -2999,6 +3014,7 @@
       <data name="netdev_budget" type="int"> 0 </data>
       <data name="qos_via_idl" type="int"> 1 </data>
       <data name="max_mtu" type="int"> 8192 </data>
+      <data name="netmgr_recovery_enabled" type="int"> 1 </data>
       <data name="num_modems" type="int"> 2 </data>
       <list name="modems_enabled">
          <data type="int"> 1 </data> <!-- MODEM_MSM -->
@@ -3092,6 +3108,11 @@
      </list>
      <!-- Number of above reverse data ports inited on bootup -->
      <data name="static_rev_links" type="int"> 4 </data>
+
+     <!-- #ifdef OPLUS_BUG_STABILITY -->
+     <!-- Liwei@Connectivity.NETWORK, 2021/04/25, for set default tcp_mtu_probing-->
+     <data name="tcp_mtu_probing" type="int"> 1 </data>
+     <!-- #endif /* OPLUS_BUG_STABILITY */ -->
    </listitem>
 
    <!-- lahaina parameters -->
@@ -3111,8 +3132,8 @@
       <data name="single_qmux_ch_conn_id_str" type="string"> rmnet0 </data>
       <data name="single_qmux_ch_name" type="string"> DATA5_CNTL </data>
       <data name="rmnet_data_enabled" type="int"> 1 </data>
-      <data name="dataformat_agg_dl_pkt" type="int"> 31 </data>
-      <data name="dataformat_agg_dl_size" type="int"> 31668 </data>
+      <data name="dataformat_agg_dl_pkt" type="int"> 63 </data>
+      <data name="dataformat_agg_dl_size" type="int"> 64844 </data>
       <data name="dataformat_agg_ul_pkt" type="int"> 32 </data>
       <data name="dataformat_agg_ul_size" type="int"> 16384 </data>
       <data name="dataformat_agg_ul_time" type="int"> 1000000 </data>
@@ -3129,6 +3150,7 @@
       <data name="rmnet_shs" type="int"> 1 </data>
       <data name="uplink_priority" type="int"> 1 </data>
       <data name="iwlan_concurrency" type="int"> 1 </data>
+      <data name="nl_xfrm" type="int"> 1 </data>
       <data name="netdev_max_backlog" type="int"> 100000 </data>
       <data name="debug_netdev_max_backlog" type="int"> 1500 </data>
 
@@ -3234,5 +3256,10 @@
       </list>
       <!-- Number of above reverse data ports inited on bootup -->
       <data name="static_rev_links" type="int"> 4 </data>
+
+     <!-- #ifdef OPLUS_BUG_STABILITY -->
+     <!-- Liwei@Connectivity.NETWORK, 2021/04/25, for set default tcp_mtu_probing-->
+     <data name="tcp_mtu_probing" type="int"> 1 </data>
+     <!-- #endif /* OPLUS_BUG_STABILITY */ -->
    </listitem>
 </list>

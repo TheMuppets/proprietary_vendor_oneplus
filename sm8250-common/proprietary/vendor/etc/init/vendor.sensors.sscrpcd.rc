@@ -34,4 +34,4 @@ service vendor.sensors /vendor/bin/sscrpcd sensorspd
     user system
     group system wakelock
     capabilities BLOCK_SUSPEND
-
+    shutdown critical

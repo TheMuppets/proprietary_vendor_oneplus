@@ -18,21 +18,13 @@ property Name is called. -->
     <PerfConfigs>
 
                 <!--Vendor Properties -->
-                <!--
-                #ifdef VENDOR_EDIT
-                alden.zhang@OPTI, 2020/6/5, [ITN-749] Close uxe feature
-                <Prop Name="vendor.iop.enable_uxe" Value="1" />
-                #else
-                -->
                 <Prop Name="vendor.iop.enable_uxe" Value="0" />
-                <!--
-                #endif /* VENDOR_EDIT */
-                -->
                 <Prop Name="vendor.debug.enable.lm" Value="true" />
                 <Prop Name="vendor.perf.iop_v3.enable" Value="true" />
                 <Prop Name="vendor.perf.iop_v3.enable.debug" Value="false" />
                 <Prop Name="vendor.enable.prefetch" Value="false" />
                 <Prop Name="vendor.iop.enable_prefetch_ofr" Value="false" />
+                <Prop Name="ro.vendor.perf.gfl.tap_ignore_enable" Value="true"/>
 
                 <!--System Properties -->
                 <Prop Name="ro.lmk.kill_heaviest_task_dup" Value="true" />
@@ -40,30 +32,19 @@ property Name is called. -->
                 <Prop Name="ro.lmk.enable_watermark_check" Value="true" />
                 <Prop Name="ro.lmk.enable_preferred_apps" Value="true" />
                 <Prop Name="ro.lmk.use_new_strategy_dup" Value="true" />
+                <Prop Name="ro.lmk.super_critical" Value="701" />
+                <Prop Name="ro.lmk.direct_reclaim_pressure" Value="45" />
+                <Prop Name="ro.lmk.reclaim_scan_threshold" Value="0" />
                 <Prop Name="vendor.perf.gestureflingboost.enable" Value="true" />
-                <Prop Name="vendor.perf.performancemode.support" Value="false" />
-                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="60" />
+                <Prop Name="vendor.perf.performancemode.support" Value="true" />
+                <!--#ifdef  OPLUS_FEATURE_PERFORMANCE-->
+                <!--MoSiTing@ANDROID.PERFORMANCE, 2020/07/09, Modify for Increase cached app limit -->
+                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="128" />
+                <!--#endif /* OPLUS_FEATURE_PERFORMANCE */ -->
                 <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
                 <Prop Name="vendor.perf.topAppRenderThreadBoost.enable" Value="false" />
-
-                <!--
-                #ifdef VENDOR_EDIT
-                simon.ma@SYSTEM, 2019/05/16, add for GCE-12831 to enable bservice limit
-                -->
-                <Prop Name="ro.vendor.qti.sys.fw.bservice_enable" Value="true" />
-                <Prop Name="ro.vendor.qti.sys.fw.bservice_limit" Value="8" />
-                <Prop Name="ro.vendor.qti.sys.fw.bservice_age" Value="5000" />
-                <!--
-                #endif /* VENDOR_EDIT */
-                -->
-
-                <!--
-                #ifdef VENDOR_EDIT
-                denzel.chen@SYSTEM, 2020/05/12, add for OPBRITN-3462
-                -->
-                <Prop Name="ro.lmk.kill_timeout_ms_dup" Value="15" />
-                <!--
-                #endif /* VENDOR_EDIT */
-                -->
+                <!--#chenxinfu@PSW.AD.Performance.na, 2020/07/09, Add bind the wlc to litti cores -->
+                <Prop Name="ro.vendor.qti.set_wlc_affinity" Value="true" />
+                <!--#endif -->
     </PerfConfigs>
 </PerfConfigsStore>

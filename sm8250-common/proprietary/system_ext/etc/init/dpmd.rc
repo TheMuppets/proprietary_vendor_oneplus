@@ -15,3 +15,9 @@ service dpmd /system/system_ext/bin/dpmd
     socket tcm  stream 660 root inet
     socket dpmwrapper stream 660 root inet
     group system readproc inet radio wakelock oem_2901
+    disabled
+
+on property:persist.vendor.dpm.feature=*
+    start dpmd
+on property:persist.vendor.dpm.feature=0
+    stop dpmd

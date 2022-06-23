@@ -38,6 +38,13 @@ as anyway perflock calls of these resources would fail. -->
 
         <Config MajorValue="0x6" MinorValue="0x4" Supported="no" /> <!-- cpubw_hmon_low_power_ceil_mbps -->
         <Config MajorValue="0x6" MinorValue="0x5" Supported="no" /> <!-- cpubw_hmon_low_power_io_percent -->
+        <Config MajorValue="0x6" MinorValue="0xA" Supported="no" />
+        <Config MajorValue="0x6" MinorValue="0xB" Supported="no" />
+        <Config MajorValue="0x6" MinorValue="0xC" Supported="no" />
+        <Config MajorValue="0x6" MinorValue="0xD" Supported="no" />
+        <Config MajorValue="0x6" MinorValue="0xE" Supported="no" />
+        <Config MajorValue="0x6" MinorValue="0xF" Supported="no" />
+        <Config MajorValue="0x6" MinorValue="0x10" Supported="no"/>
 
         <Config MajorValue="0x6" MinorValue="0x0" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/min_freq" />
         <Config MajorValue="0x6" MinorValue="0x1" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/decay_rate" />
@@ -50,12 +57,22 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0x6" MinorValue="0x9" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/idle_mbps" />
 
         <Config MajorValue="0xB" MinorValue="0x2" Node="/sys/devices/system/cpu/cpu_boost/input_boost_freq"/>
-        <Config MajorValue="0xB" MinorValue="0x6" Supported="no" /><!-- disable_ppr -->
 
         <!-- llcbw L3 and DDR major end -->
         <Config MajorValue="0xC" MinorValue="0x0" Node="/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq" />
         <Config MajorValue="0xC" MinorValue="0x1" Node="/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/io_percent" />
         <Config MajorValue="0xC" MinorValue="0x3" Node="/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/sample_ms" />
+        <Config MajorValue="0xC" MinorValue="0x4" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x5" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x6" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x7" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x8" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0x9" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0xA" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0xB" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0xC" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0xD" Supported="no" />
+        <Config MajorValue="0xC" MinorValue="0xE" Supported="no" />
 
         <Config MajorValue="0xD" MinorValue="0x0" Node="/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu%d-cpu-l3-lat/min_freq" />
         <Config MajorValue="0xD" MinorValue="0x1" Node="/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat/mem_latency/ratio_ceil" />

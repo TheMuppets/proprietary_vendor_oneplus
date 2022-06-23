@@ -1,0 +1,11 @@
+<manifest version="1.0" type="device">
+    <hal>
+        <name>vendor.qti.hardware.vpp</name>
+        <transport>hwbinder</transport>
+        <version>1.4</version>
+        <interface>
+            <name>IHidlVppService</name>
+            <instance>vppService</instance>
+        </interface>
+    </hal>
+</manifest>

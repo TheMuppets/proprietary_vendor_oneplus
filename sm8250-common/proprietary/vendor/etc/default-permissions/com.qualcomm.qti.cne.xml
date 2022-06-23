@@ -13,6 +13,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
 
 <exceptions>
     <exception package="com.qualcomm.qti.cne">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="false"/>
         <permission name="android.permission.READ_PHONE_STATE" fixed="false"/>
     </exception>
 </exceptions>
