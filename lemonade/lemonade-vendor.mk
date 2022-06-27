@@ -25,6 +25,32 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/lemonade/proprietary/odm/etc/camera/config/oplus_camera_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_config \
     vendor/oneplus/lemonade/proprietary/odm/etc/camera/engineer_camera_config:$(TARGET_COPY_OUT_ODM)/etc/camera/engineer_camera_config \
     vendor/oneplus/lemonade/proprietary/odm/etc/camera/settings_fdc.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/settings_fdc.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVACFS_Configuration.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVACFS_Configuration.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Calibration_2mic.dat \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID10_MIC_VR.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID11_HE.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID11_HE.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID12_HE_APP1.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID12_HE_APP1.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID13_HE_APP2.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID13_HE_APP2.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID14_HE_Cam.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID14_HE_Cam.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID15_HE_Conference.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID15_HE_Conference.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID16_HE_Fast.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID16_HE_Fast.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID17_HE_Interview.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID17_HE_Interview.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID18_HE_Unprocess.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID18_HE_Unprocess.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID19_HE_Voice.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID19_HE_Voice.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID1_MIC_Normal.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID1_MIC_Normal.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID20_HE_VR.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID20_HE_VR.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID21_USB_Normal.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID21_USB_Normal.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID22_USB_APP1.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID22_USB_APP1.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID23_BT_Normal.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID23_BT_Normal.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID24_BT_APP1.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID24_BT_APP1.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID2_MIC_APP1.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID2_MIC_APP1.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID3_MIC_APP2.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID3_MIC_APP2.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID4_MIC_Cam.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID4_MIC_Cam.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID5_MIC_Conference.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID5_MIC_Conference.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID6_MIC_Fast.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID6_MIC_Fast.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID7_MIC_Interview.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt \
+    vendor/oneplus/lemonade/proprietary/odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt:$(TARGET_COPY_OUT_ODM)/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt \
     vendor/oneplus/lemonade/proprietary/odm/etc/sensor/config/lahaina_aw9610x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_aw9610x_0.json \
     vendor/oneplus/lemonade/proprietary/odm/etc/sensor/config/lahaina_aw9610x_down_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_aw9610x_down_0.json \
     vendor/oneplus/lemonade/proprietary/odm/etc/sensor/config/lahaina_bmp380.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_bmp380.json \
