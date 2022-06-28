@@ -83,7 +83,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/lemonadep/proprietary/odm/etc/sensor/config/lahaina_tcs3707.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/lahaina_tcs3707.json \
     vendor/oneplus/lemonadep/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
     vendor/oneplus/lemonadep/proprietary/odm/etc/wifi/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.elf \
-    vendor/oneplus/lemonadep/proprietary/odm/etc/wifi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb.bin \
     vendor/oneplus/lemonadep/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
     vendor/oneplus/lemonadep/proprietary/odm/lib64/camera/com.qti.sensor.imx789.lemonade.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx789.lemonade.so \
     vendor/oneplus/lemonadep/proprietary/odm/lib64/camera/com.qti.sensor.ov08a10.lemonade.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.ov08a10.lemonade.so \
