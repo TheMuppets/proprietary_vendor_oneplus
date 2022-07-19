@@ -106,7 +106,7 @@
             "pipeline_extra_output_buffers": 0,
             // time threshold of output buffer allocation loop since last input buffer queued(ms)
             // 0 --> no such limitation (loop until allocation done)
-            "max_retry_alloc_output_timeout": 1000,
+            "max_retry_alloc_output_timeout": 0,
             // WARNING:
             //    Please DON'T change these values, if you don't know what you are doing.
             // These are the Video HAL capabilities. Video HAL may not function properly with wrong values.
