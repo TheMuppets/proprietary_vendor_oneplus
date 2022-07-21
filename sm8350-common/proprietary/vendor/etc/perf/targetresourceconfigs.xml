@@ -41,6 +41,8 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0x3" MinorValue="0x17" Supported="no" /> <!-- sched_freq_aggr_threshold -->
         <Config MajorValue="0x3" MinorValue="0x22" Supported="no" Target="shima" /> <!-- sched_task_unfilter_nr_windows -->
         <Config MajorValue="0x3" MinorValue="0x22" Supported="no" Target="yupik" /> <!-- sched_task_unfilter_nr_windows -->
+        <Config MajorValue="0x3" MinorValue="0x37" Supported="no" /> <!-- Enabled till Kernel 4.19 -->
+        <Config MajorValue="0x3" MinorValue="0x39" Supported="no" /> <!-- Enabled till Kernel 4.19 -->
 
         <Config MajorValue="0x6" MinorValue="0x0" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/min_freq" Target="lahaina" />
         <Config MajorValue="0x6" MinorValue="0x1" Node="/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/decay_rate" Target="lahaina" />
@@ -78,6 +80,7 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0xB" MinorValue="0x6" Supported="no" Target="lahaina" /><!-- disable_ppr -->
 
         <!-- llcbw L3 and DDR major end -->
+
         <Config MajorValue="0xC" MinorValue="0x0" Node="/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq" Target="lahaina" />
         <Config MajorValue="0xC" MinorValue="0x1" Node="/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/io_percent" Target="lahaina" />
         <Config MajorValue="0xC" MinorValue="0x3" Node="/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/bw_hwmon/sample_ms" Target="lahaina" />
@@ -100,6 +103,13 @@ as anyway perflock calls of these resources would fail. -->
         <Config MajorValue="0xD" MinorValue="0x2" Node="/sys/class/devfreq/18590100.qcom,cpu4-cpu-l3-lat/mem_latency/ratio_ceil" />
         <Config MajorValue="0xD" MinorValue="0x3" Node="/sys/class/devfreq/18590100.qcom,cpu0-cpu-l3-lat/mem_latency/stall_floor" />
         <Config MajorValue="0xD" MinorValue="0x4" Node="/sys/class/devfreq/18590100.qcom,cpu4-cpu-l3-lat/mem_latency/stall_floor" />
+        <Config MajorValue="0xD" MinorValue="0x11" Node="/sys/class/devfreq/18590100.qcom,cpu%d-cpu-l3-lat/max_freq" />
+        <Config MajorValue="0xD" MinorValue="0x0" Node="/sys/devices/system/cpu/memlat/c%d_memlat/cpu%d-cpu-l3-lat/min_freq" Target="yupik"/>
+        <Config MajorValue="0xD" MinorValue="0x1" Node="/sys/devices/system/cpu/memlat/c0_memlat/cpu0-cpu-l3-lat/ratio_ceil" Target="yupik" />
+        <Config MajorValue="0xD" MinorValue="0x2" Node="/sys/devices/system/cpu/memlat/c4_memlat/cpu4-cpu-l3-lat/ratio_ceil" Target="yupik" />
+        <Config MajorValue="0xD" MinorValue="0x3" Node="/sys/devices/system/cpu/memlat/c0_memlat/cpu0-cpu-l3-lat/stall_floor" Target="yupik" />
+        <Config MajorValue="0xD" MinorValue="0x4" Node="/sys/devices/system/cpu/memlat/c4_memlat/cpu4-cpu-l3-lat/stall_floor" Target="yupik" />
+        <Config MajorValue="0xD" MinorValue="0x11" Node="/sys/devices/system/cpu/memlat/c%d_memlat/cpu%d-cpu-l3-lat/max_freq" Target="yupik" />
         <Config MajorValue="0xD" MinorValue="0x5" Supported="no" Target="shima" />
         <Config MajorValue="0xD" MinorValue="0x6" Supported="no" Target="shima" />
         <Config MajorValue="0xD" MinorValue="0x5" Supported="no" Target="yupik" />

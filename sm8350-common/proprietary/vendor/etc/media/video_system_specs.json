@@ -70,6 +70,9 @@
             //  0x2: 8 bit: disable. 10 bit: enable
             //  0x3: 8 bit: enable.  10 bit: enable
             "enc_bitrate_savings": 3,
+            // time threshold of output buffer allocation loop since last input buffer queued(ms)
+            // 0 --> no such limitation (loop until allocation done)
+            "max_retry_alloc_output_timeout": 0,
 
             // WARNING:
             //    Please DON'T change these values, if you don't know what you are doing.

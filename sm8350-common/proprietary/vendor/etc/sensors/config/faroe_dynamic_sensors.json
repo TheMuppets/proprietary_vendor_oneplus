@@ -1,0 +1,18 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "RCM", "QRD","IDP"],
+    "soc_id": ["515"]
+  },
+
+  "sns_dynamic_sensors":
+  {
+    "owner":"sns_dynamic_sensors",
+
+    "sns_geomag_rv_register":
+    {
+      "type" : "str",
+      "ver" : "0",
+      "data" : "sns_geomag_rv_normal.so"
+    }
+  }
+}

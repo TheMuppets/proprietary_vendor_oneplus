@@ -107,6 +107,9 @@
             // time threshold of output buffer allocation loop since last input buffer queued(ms)
             // 0 --> no such limitation (loop until allocation done)
             "max_retry_alloc_output_timeout": 1000,
+            // override default primaries to BT709 for >=UHD decode
+            "default_primaries_override" : 0,
+
             // WARNING:
             //    Please DON'T change these values, if you don't know what you are doing.
             // These are the Video HAL capabilities. Video HAL may not function properly with wrong values.
@@ -157,6 +160,12 @@
                 "c2.qti.hevc.encoder.secure",
                 "c2.qti.hevc.encoder.cq",
                 "c2.qti.heic.encoder"
+            ]
+        },
+        "filters-available": {
+            "filters": [
+                "c2.qti.vpp.filter",
+                "c2.qti.vpp.filter.secure"
             ]
         }
     }

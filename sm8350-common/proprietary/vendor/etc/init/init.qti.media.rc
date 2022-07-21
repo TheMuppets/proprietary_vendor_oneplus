@@ -42,6 +42,7 @@ service qti-media /vendor/bin/init.qti.media.sh
 
 on early-init
     setprop vendor.media.target.qssi ${vendor.sys.media.target.qssi}
+    setprop vendor.media.system.build_codename ${ro.build.version.release_or_codename}
     start qti-media
 
 on post-fs-data

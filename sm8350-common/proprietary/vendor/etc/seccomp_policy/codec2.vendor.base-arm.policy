@@ -37,8 +37,9 @@ ftruncate64: 1
 #ifdef OPLUS_FEATURE_OSIE_SR
 #shumin.nie@MULTIMEDIA.MMSERVER.PLAYER, 2020/11/10, Add for OSIE and SR
 mremap: 1
+#else
+mremap: arg3 == 3 || arg3 == MREMAP_MAYMOVE
 #endif /* OPLUS_FEATURE_OSIE_SR */
-
 munmap: 1
 prctl: 1
 getuid32: 1

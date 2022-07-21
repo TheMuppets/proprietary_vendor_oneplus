@@ -42,7 +42,7 @@ case "$platformid" in
     "450")
 	/vendor/bin/sh /vendor/bin/init.kernel.post_boot-shima.sh
 	;;
-    "475"|"499"|"487"|"488"|"498"|"497")
+    "475"|"499"|"487"|"488"|"498"|"497"|"515")
 	/vendor/bin/sh /vendor/bin/init.kernel.post_boot-yupik.sh
 	;;
      *)

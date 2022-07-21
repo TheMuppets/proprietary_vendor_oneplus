@@ -245,7 +245,9 @@
             <Limit name="block-count" range="64-34816" />
             <Limit name="bitrate" range="1-100000000" />
             <Limit name="frame-rate" range="1-480" />
+            <Limit name="complexity" range="0-100"  default="100" />
             <Limit name="concurrent-instances" max="16" />
+            <Feature name="bitrate-modes" value="VBR,CBR" />
             <Limit name="performance-point-4096x2304" value="30" />
             <Limit name="performance-point-3840x2160" value="60" />
             <Limit name="performance-point-1920x1080" value="240" />
@@ -260,6 +262,7 @@
             <Limit name="block-count" range="64-34816" />
             <Limit name="bitrate" range="1-100000000" />
             <Limit name="frame-rate" range="1-480" />
+            <Limit name="complexity" range="0-100"  default="100" />
             <Limit name="concurrent-instances" max="16" />
             <Feature name="bitrate-modes" value="VBR,CBR" />
             <Limit name="performance-point-4096x2304" value="30" />
@@ -275,6 +278,7 @@
             <Limit name="blocks-per-second" min="64" max="20480" />
             <Limit name="bitrate" range="1-160000000" />
             <Limit name="frame-rate" range="1-20" />
+            <Limit name="complexity" range="0-100"  default="100" />
             <Limit name="concurrent-instances" max="16" />
             <Limit name="quality" range="0-100" default="80" />
             <Feature name="bitrate-modes" value="CQ" />
@@ -288,6 +292,7 @@
             <Limit name="blocks-per-second" min="64" max="3916800" />
             <Limit name="bitrate" range="1-160000000" />
             <Limit name="frame-rate" range="1-20" />
+            <Limit name="complexity" range="0-100"  default="100" />
             <Limit name="concurrent-instances" max="16" />
             <Limit name="quality" range="0-100" default="80" />
             <Feature name="bitrate-modes" value="CQ" />

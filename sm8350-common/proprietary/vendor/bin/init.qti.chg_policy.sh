@@ -1,7 +1,7 @@
 #! /vendor/bin/sh
 
 #
-# Copyright (c) 2019-2020 Qualcomm Technologies, Inc.
+# Copyright (c) 2019-2021 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
@@ -11,7 +11,7 @@
 export PATH=/vendor/bin
 
 soc_id=`getprop ro.vendor.qti.soc_id`
-if [ "$soc_id" -eq 415 ] || [ "$soc_id" -eq 439 ] || [ "$soc_id" -eq 450 ] || [ "$soc_id" -eq 475 ]; then
+if [ "$soc_id" -eq 415 ] || [ "$soc_id" -eq 439 ] || [ "$soc_id" -eq 450 ] || [ "$soc_id" -eq 475 ] || [ "$soc_id" -eq 497 ] || [ "$soc_id" -eq 498 ] || [ "$soc_id" -eq 499 ] || [ "$soc_id" -eq 515 ]; then
     setprop persist.vendor.hvdcp_opti.start 2
     exit 0
 fi
@@ -39,7 +39,7 @@ else
 	for i in 0 1 2 3 4 5 6 7 8 9
 	do
 		devname=`cat /sys/bus/iio/devices/iio:device$i/name`
-		if [[ "$devname" == *smb* ]] || [[ "$devname" == *qg* ]] || [[ "$devname" == *div2_cp* ]]; then
+		if [[ "$devname" == *smb* ]] || [[ "$devname" == *qg* ]] || [[ "$devname" == *div2_cp* ]] || [[ "$devname" == *div2-cp* ]]; then
 			find /sys/bus/iio/devices/iio:device$i/ -type f -maxdepth 1 | xargs chown system.system
 		fi
 	done

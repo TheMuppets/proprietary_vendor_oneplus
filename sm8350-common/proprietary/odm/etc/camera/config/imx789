@@ -1951,43 +1951,43 @@
 
             /*index0*/,
             6400/*iso*/, 500/*LuminDenoiseLevel*/, 250/*ColorDenoiseLevel*/, 100/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            25/*ToneLength*/, -10/*Brightness*/, 2/*Saturation*/, 2/*SceneType*/, 0/*Contrast*/
+            25/*ToneLength*/, -10/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, 0/*Contrast*/
 
             /*index1*/,
             4000/*iso*/, 400/*LuminDenoiseLevel*/, 200/*ColorDenoiseLevel*/, 100/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            25/*ToneLength*/, -10/*Brightness*/, 2/*Saturation*/, 2/*SceneType*/, 0/*Contrast*/
+            25/*ToneLength*/, -10/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, 0/*Contrast*/
 
             /*index2*/,
             3200/*iso*/, 400/*LuminDenoiseLevel*/, 200/*ColorDenoiseLevel*/, 100/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            25/*ToneLength*/, -10/*Brightness*/, 2/*Saturation*/, 2/*SceneType*/, 0/*Contrast*/
+            25/*ToneLength*/, -10/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, 0/*Contrast*/
 
             /*index3*/,
             2000/*iso*/, 350/*LuminDenoiseLevel*/, 200/*ColorDenoiseLevel*/, 50/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, -15/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/, 0/*Contrast*/
+            20/*ToneLength*/, -15/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, 0/*Contrast*/
 
             /*index4*/,
             1600/*iso*/, 150/*LuminDenoiseLevel*/, 150/*ColorDenoiseLevel*/, 50/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, -15/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/, 0/*Contrast*/
+            20/*ToneLength*/, -15/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, 0/*Contrast*/
 
             /*index5*/,
-            1000/*iso*/, 120/*LuminDenoiseLevel*/, 150/*ColorDenoiseLevel*/, 50/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, 25/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/, -45/*Contrast*/
+            1000/*iso*/, 150/*LuminDenoiseLevel*/, 150/*ColorDenoiseLevel*/, 50/*SharpLevel*/, 0/*RingNoiseLevel*/,
+            20/*ToneLength*/, 25/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, -45/*Contrast*/
 
             /*index6*/,
-            640/*iso*/, 100/*LuminDenoiseLevel*/, 150/*ColorDenoiseLevel*/, 25/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, 25/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/, -45/*Contrast*/
+            640/*iso*/, 120/*LuminDenoiseLevel*/, 150/*ColorDenoiseLevel*/, 25/*SharpLevel*/, 0/*RingNoiseLevel*/,
+            20/*ToneLength*/, 25/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, -45/*Contrast*/
 
             /*index7*/,
-            320/*iso*/, 75/*LuminDenoiseLevel*/, 120/*ColorDenoiseLevel*/, 12/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, 15/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/, -25/*Contrast*/
+            320/*iso*/, 100/*LuminDenoiseLevel*/, 150/*ColorDenoiseLevel*/, 12/*SharpLevel*/, 0/*RingNoiseLevel*/,
+            20/*ToneLength*/, 15/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, -25/*Contrast*/
 
             /*index8*/,
-            160/*iso*/, 75/*LuminDenoiseLevel*/, 30/*ColorDenoiseLevel*/, 0/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, 15/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/, -25/*Contrast*/
+            160/*iso*/, 100/*LuminDenoiseLevel*/, 50/*ColorDenoiseLevel*/, 0/*SharpLevel*/, 0/*RingNoiseLevel*/,
+            20/*ToneLength*/, 15/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, -25/*Contrast*/
 
             /*index9*/,
-            0/*iso*/, 50/*LuminDenoiseLevel*/, 30/*ColorDenoiseLevel*/, 0/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, 15/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/, -25/*Contrast*/
+            0/*iso*/, 75/*LuminDenoiseLevel*/, 50/*ColorDenoiseLevel*/, 0/*SharpLevel*/, 0/*RingNoiseLevel*/,
+            20/*ToneLength*/, 15/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, -25/*Contrast*/
             ",
   "Comment": "arcsoft_hdr_sensor_param_t"
 },
@@ -2003,43 +2003,43 @@
 
             /*index0*/,
             6400/*iso*/, 500/*LuminDenoiseLevel*/, 250/*ColorDenoiseLevel*/, 100/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            25/*ToneLength*/, -10/*Brightness*/, 2/*Saturation*/, 2/*SceneType*/, 0/*Contrast*/
+            25/*ToneLength*/, -10/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, 0/*Contrast*/
 
             /*index1*/,
             4000/*iso*/, 400/*LuminDenoiseLevel*/, 200/*ColorDenoiseLevel*/, 100/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            25/*ToneLength*/, -10/*Brightness*/, 2/*Saturation*/, 2/*SceneType*/, 0/*Contrast*/
+            25/*ToneLength*/, -10/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, 0/*Contrast*/
 
             /*index2*/,
             3200/*iso*/, 400/*LuminDenoiseLevel*/, 200/*ColorDenoiseLevel*/, 100/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            25/*ToneLength*/, -10/*Brightness*/, 2/*Saturation*/, 2/*SceneType*/, 0/*Contrast*/
+            25/*ToneLength*/, -10/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, 0/*Contrast*/
 
             /*index3*/,
             2000/*iso*/, 350/*LuminDenoiseLevel*/, 200/*ColorDenoiseLevel*/, 50/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, -15/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/, 0/*Contrast*/
+            20/*ToneLength*/, -15/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, 0/*Contrast*/
 
             /*index4*/,
             1600/*iso*/, 150/*LuminDenoiseLevel*/, 150/*ColorDenoiseLevel*/, 50/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, -15/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/, 0/*Contrast*/
+            20/*ToneLength*/, -15/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, 0/*Contrast*/
 
             /*index5*/,
-            1000/*iso*/, 120/*LuminDenoiseLevel*/, 150/*ColorDenoiseLevel*/, 50/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, 25/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/, -45/*Contrast*/
+            1000/*iso*/, 150/*LuminDenoiseLevel*/, 150/*ColorDenoiseLevel*/, 50/*SharpLevel*/, 0/*RingNoiseLevel*/,
+            20/*ToneLength*/, 25/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, -45/*Contrast*/
 
             /*index6*/,
-            640/*iso*/, 100/*LuminDenoiseLevel*/, 150/*ColorDenoiseLevel*/, 25/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, 25/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/, -45/*Contrast*/
+            640/*iso*/, 120/*LuminDenoiseLevel*/, 150/*ColorDenoiseLevel*/, 25/*SharpLevel*/, 0/*RingNoiseLevel*/,
+            20/*ToneLength*/, 25/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, -45/*Contrast*/
 
             /*index7*/,
-            320/*iso*/, 75/*LuminDenoiseLevel*/, 120/*ColorDenoiseLevel*/, 12/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, 15/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/, -25/*Contrast*/
+            320/*iso*/, 100/*LuminDenoiseLevel*/, 150/*ColorDenoiseLevel*/, 12/*SharpLevel*/, 0/*RingNoiseLevel*/,
+            20/*ToneLength*/, 15/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, -25/*Contrast*/
 
             /*index8*/,
-            160/*iso*/, 75/*LuminDenoiseLevel*/, 30/*ColorDenoiseLevel*/, 0/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, 15/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/, -25/*Contrast*/
+            160/*iso*/, 100/*LuminDenoiseLevel*/, 50/*ColorDenoiseLevel*/, 0/*SharpLevel*/, 0/*RingNoiseLevel*/,
+            20/*ToneLength*/, 15/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, -25/*Contrast*/
 
             /*index9*/,
-            0/*iso*/, 50/*LuminDenoiseLevel*/, 30/*ColorDenoiseLevel*/, 0/*SharpLevel*/, 0/*RingNoiseLevel*/,
-            20/*ToneLength*/, 15/*Brightness*/, 2/*Saturation*/, 0/*SceneType*/, -25/*Contrast*/
+            0/*iso*/, 75/*LuminDenoiseLevel*/, 50/*ColorDenoiseLevel*/, 0/*SharpLevel*/, 0/*RingNoiseLevel*/,
+            20/*ToneLength*/, 15/*Brightness*/, 2/*Saturation*/, 1/*SceneType*/, -25/*Contrast*/
             ",
   "Comment": "arcsoft_hdr_sensor_param_t"
 },
