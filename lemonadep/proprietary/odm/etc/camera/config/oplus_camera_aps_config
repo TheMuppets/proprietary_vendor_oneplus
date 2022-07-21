@@ -121,7 +121,7 @@
 {
   "VendorTag": "com.oplus.aps.params.rtb",
   "Type": "Int32",
-  "Count": "102",
+  "Count": "100",
   "Value": "  180 /*rotation*/, 1 /*focusRectValid*/, 1 /*refocusOn*/, 2 /*refocus_mode*/, 6 /*foregroundBlurScale*/, 12 /*curveVal*/, 200 /*farDistanceThres*/, 10 /*nearDistanceThres*/, 6000 /*lowLightTriggerIsoHigh*/, 5600 /*lowLightTriggerIsoLow*/,
                    4000 /*ispOutWidth*/, 3008 /*ispOutHeight*/, 0 /*c2sReSizeTypeMaster*/, 0 /*s2iReSizeTypeMaster*/, 0 /*c2sReSizeTypeSlave*/, 0 /*s2iReSizeTypeSlave*/,
                    4000 /*masterPictureWidth*/,3008 /*masterPictureHeight*/, 4096 /*slavePictureWidth*/, 3072 /*slavePictureHeight*/, 0 /*isTeleMaster*/,
@@ -134,7 +134,7 @@
               150 /*luxThreshold*/, 0 /*dualCaliType*/, 76/*focusDistanceThresholdFallingFace*/, 80/*focusDistanceThresholdRisingFace*/, 100 /*blurSlope*/, 0 /*blurIntercept*/,
               1/*isValid*/,4000/*sensorOutWidthMaster*/,3008/*sensorOutHeightMaster*/,4000/*sensorCropWidthMaster*/,3008/*sensorCropHeightMaster*     /,3200/*sensorOutWidthSlave*/,2400/*sensorOutHeightSlave*/,3200/*sensorCropWidthSlave*/,2400/*sensorCropHeightSlave*/,
                    3200/*ispOutWidthSlave*/,2400/*ispOutHeightSlave*/,
-              1/*isValid*/4000/*sensorOutWidthMaster*/,3000/*sensorOutHeightMaster*/,4000/*sensorCropWidthMaster*/,3000/*sensorCropHeightMaster*/     ,3200/*sensorOutWidthSlave*/,2400/*sensorOutHeightSlave*/,3200/*sensorCropWidthSlave*/,2400/*sensorCropHeightSlave*/,
+              1/*isValid*/,4000/*sensorOutWidthMaster*/,3000/*sensorOutHeightMaster*/,4000/*sensorCropWidthMaster*/,3000/*sensorCropHeightMaster*/     ,3200/*sensorOutWidthSlave*/,2400/*sensorOutHeightSlave*/,3200/*sensorCropWidthSlave*/,2400/*sensorCropHeightSlave*/,
                    3200/*ispOutWidthSlave*/,2400/*ispOutHeightSlave*/,
               1/*isValid*/,4000/*sensorOutWidthMaster*/,3008/*sensorOutHeightMaster*/,2000/*sensorCropWidthMaster*/,1504/*sensorCropHeightMaster*
                    /,3200/*sensorOutWidthSlave*/,2400/*sensorOutHeightSlave*/,1600/*sensorCropWidthSlave*/,1200/*sensorCropHeightSlave*/,
@@ -239,7 +239,7 @@
   "Type": "String",
   "Count": "2",
   "Value": "default,
-            imx586_19125,",
+            imx586_19125",
   "Comment": "suport max 20 chromatix name"
 },
 
@@ -515,7 +515,7 @@
             500,
             0, 0, 80, 0, 0, 2, 25, 0, 1, 0,
             2, 1, 0, 0, 0, 0,
-            -1, 0, 0
+            -1, 0, 0,
             900,
             20, 30, 80, 0, 0, 2, 25, 0, 1, 0,
             2, 1, 1, 0, 0, 0,
@@ -531,7 +531,7 @@
             3100,
             60, 100, 80, 0, 0, 2, 25, 0, 1, 0,
             4, 3, 2, 0, 0, 0,
-            -1, 0, 0,",
+            -1, 0, 0",
   "Comment": "
             isoZoneNumber,
             BlurlessAlgoParamsByIso_t[isoZoneNumber],
@@ -553,7 +553,7 @@
             300,
             0, 0, 60, 0, 0, 3, 25, 0, 1, 0,
             0, 0, 0, 0, 0, 0,
-            -1, 0, 0
+            -1, 0, 0,
             700,
             20, 0, 60, 0, 0, 3, 25, 0, 1, 0,
             2, 1, 1, 0, 0, 0,
@@ -603,7 +603,7 @@
             200,
             200, 100, 120, 0, 0, 0, 15, 1, 0, 0,
             2, 1, 0, 0, 0, 0,
-            -1, 0, 0
+            -1, 0, 0,
             400,
             300, 100, 120, 0, 0, 0, 20, 1, 0, 0,
             3, 1, 0, 0, 0, 0,
@@ -653,7 +653,7 @@
             200,
             100, 0, 100, 0, 0, 0, 15, 1, 0, 0,
             1, 0, 0, 0, 0, 0,
-            -1, 0, 0
+            -1, 0, 0,
             400,
             100, 100, 100, 0, 0, 0, 15, 1, 0, 0,
             2, 1, 0, 0, 0, 0,
@@ -1486,7 +1486,7 @@
 {
   "VendorTag": "com.oplus.aps.params.blurless.ratio.imx576",
   "Type": "Int32",
-  "Count": "612",
+  "Count": "607",
   "Value": "
             6,
             2700,
@@ -1593,7 +1593,7 @@
 {
   "VendorTag": "com.oplus.aps.params.blurless.ratio.s5kgd1sp",
   "Type": "Int32",
-  "Count": "612",
+  "Count": "607",
   "Value": "
             6,
             3100,
@@ -1734,7 +1734,7 @@
 
 {
   "VendorTag": "com.oplus.aps.params.scportrait",
-  "Type": "float",
+  "Type": "Float",
   "Count": "15",
   "Value": "2500 /*estimateTime*/, 0 /*runTimeMemSize*/, 1200 /*isoIndoorFaceDarklight*/, 800 /*isoOutdoorFaceDarklight*/, 5000 /*isoFaceLowLight*/,
             5000 /*isoFaceLowLightHighNoise*/, 2500 /*isoFaceNormalLight*/, 8000 /*isoHighIso*/, 0.18 /*scpFiltergradRatioHighIso*/, 1.1 /*scpHighgradPerMovingScene*/,
