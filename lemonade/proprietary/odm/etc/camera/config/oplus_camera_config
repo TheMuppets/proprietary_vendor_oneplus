@@ -1122,7 +1122,7 @@
 
 {
   "VendorTag": "com.oplus.slow.video.720p.videobitrate.value",
-  "Type": "Byte",
+  "Type": "Int32",
   "Count": "1",
   "Value": "6000000"
 },
@@ -1131,7 +1131,7 @@
   "VendorTag": "com.oplus.quick.jpeg.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "0"
+  "Value": "1"
 },
 
 {
@@ -1150,7 +1150,7 @@
 
 {
   "VendorTag": "com.oplus.feature.none.sat.rear.mode",
-  "Type": "Int32",
+  "Type": "String",
   "Count": "1",
   "Value": "night"
 },
