@@ -27,5 +27,10 @@
             <Primary>true</Primary>
             <AsyncId>VENDOR_HINT_APP_WORKLOAD_TYPE</AsyncId>
         </Trigger>
+        <Trigger>
+            <Primary>true</Primary>
+            <AsyncId>VENDOR_HINT_WORKLOAD_HEAVY</AsyncId>
+            <AsyncType>1</AsyncType>
+        </Trigger>
     </Triggers>
 </Feature>

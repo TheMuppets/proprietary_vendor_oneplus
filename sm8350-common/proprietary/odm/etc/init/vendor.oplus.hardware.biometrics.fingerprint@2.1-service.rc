@@ -17,6 +17,10 @@ on boot
     chown system system /dev/jiiov_fp
     chmod 0666 /dev/jiiov_fp
 
+#for cdfinger.
+    chown system system /dev/fpsdev0
+    chmod 0666 /dev/fpsdev0
+
 #for goodix_fp.
     chown system system /dev/goodix_fp
 
@@ -26,6 +30,9 @@ on boot
     chmod 0660 /sys/bus/platform/devices/egis_input/navigation_event
     chown system  system /sys/bus/platform/devices/egis_input/navigation_enable
     chown system  system /sys/bus/platform/devices/egis_input/navigation_event
+#for chipone
+    chmod 660 /dev/fpsensor
+    chown system system /dev/fpsensor
 
 #for silead fp
     chown system system /dev/silead_fp

@@ -81,7 +81,7 @@
              Target="yupik"
              NumClusters="3"
              TotalNumCores="8"
-             SocIds="475,499"
+             SocIds="475,497,498,499,515"
              SynCore="1"
              CoreCtlCpu="4"
              MinCoreOnline="0"

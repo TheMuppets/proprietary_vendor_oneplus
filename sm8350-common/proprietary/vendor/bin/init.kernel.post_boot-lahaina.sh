@@ -1,5 +1,5 @@
 #=============================================================================
-# Copyright (c) 2020 Qualcomm Technologies, Inc.
+# Copyright (c) 2020-2021 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 # Copyright (C) 2020 Oplus. All rights reserved.
@@ -142,6 +142,22 @@ function oppo_configure_zram_parameters() {
         swapon /dev/block/zram0 -p 32758
     fi
 }
+
+function oplus_configure_hybridswap() {
+	kernel_version=`uname -r`
+
+	if [[ "$kernel_version" == "5.10"* ]]; then
+		echo 160 > /sys/module/oplus_bsp_zram_opt/parameters/vm_swappiness
+	else
+		echo 160 > /sys/module/zram_opt/parameters/vm_swappiness
+	fi
+
+	echo 0 > /proc/sys/vm/page-cluster
+
+	# FIXME: set system memcg pata in init.kernel.post_boot-lahaina.sh temporary
+	echo 500 > /dev/memcg/system/memory.app_score
+	echo systemserver > /dev/memcg/system/memory.name
+}
 #endif /*OPLUS_FEATURE_ZRAM_OPT*/
 
 function configure_read_ahead_kb_values() {
@@ -197,15 +213,29 @@ function configure_memory_parameters() {
 	#
 	# Set allocstall_threshold to 0 for all targets.
 	#
+	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
+	MemTotal=${MemTotalStr:16:8}
 
 #ifdef OPLUS_FEATURE_ZRAM_OPT
-        oppo_configure_zram_parameters
+	if [ -f /sys/block/zram0/hybridswap_enable ]; then
+		oplus_configure_hybridswap
+	else
+		oppo_configure_zram_parameters
+	fi
         oplus_configure_tunning_swappiness
 #else
 #       configure_zram_parameters
 #endif /*OPLUS_FEATURE_ZRAM_OPT*/
 	configure_read_ahead_kb_values
 	echo 0 > /proc/sys/vm/page-cluster
+
+	if [ $MemTotal -le 8388608 ]; then
+		echo 32 > /proc/sys/vm/watermark_scale_factor
+	else
+		echo 16 > /proc/sys/vm/watermark_scale_factor
+	fi
+
+	echo 0 > /proc/sys/vm/watermark_boost_factor
 #ifndef OPLUS_FEATURE_ZRAM_OPT
 #	echo 100 > /proc/sys/vm/swappiness
 #endif /*OPLUS_FEATURE_ZRAM_OPT*/
@@ -272,6 +302,12 @@ echo 1 > /dev/cpuctl/background/cpu.uclamp.top_task_filter
 
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/kernel/sched_boost
+
+#config power effiecny tunning parameters
+echo 1 > /sys/module/cpufreq_effiency/parameters/affect_mode
+echo "300000,45000,1209600,50000,0"  > /sys/module/cpufreq_effiency/parameters/cluster0_effiency
+echo "710400,45000,1881600,50000,0"  > /sys/module/cpufreq_effiency/parameters/cluster1_effiency
+echo "844800,50000,2035200,55000,0"  > /sys/module/cpufreq_effiency/parameters/cluster2_effiency
 
 # configure governor settings for silver cluster
 echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
@@ -456,7 +492,7 @@ if [ -f /sys/devices/soc0/select_image ]; then
 fi
 
 # Change console log level as per console config property
-console_config=`getprop persist.console.silent.config`
+console_config=`getprop persist.vendor.console.silent.config`
 case "$console_config" in
 	"1")
 		echo "Enable console config to $console_config"

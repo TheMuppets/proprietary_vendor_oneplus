@@ -25,7 +25,7 @@ property Name is called. -->
                Variant=bengal       -> bengal 64 bit target
     Resolution="1080p", "2560", "720p", "HD+"
     Kernel: kernel version, examples: "4.19", "5.4", etc
-    Ram: ram size in GB, examples: "1","2","3","4" (4 for target with >= 4GB of RAM as well)
+    Ram: ram size in GB, examples: "1","2","3","4","6","8","10","12" (12 for target with >= 12GB of RAM as well)
 _______________________________________________________________________________________________ -->
 
 <PerfConfigsStore>
@@ -52,10 +52,11 @@ ________________________________________________________________________________
                 <Prop Name="vendor.perf.pfar.enable" Value="1" Target="yupik" />
                 <Prop Name="vendor.perf.fps_switch.enable" Value="1" Target="yupik" />
                 <Prop Name="ro.vendor.perf.gfl.tap_ignore_enable" Value="true" Target="yupik" />
-                <Prop Name="ro.vendor.perf.wlc.heavygame" Value="true" Target="yupik" />
-                <Prop Name="ro.vendor.perf.splh" Value="none" Target="yupik" />
+                <Prop Name="ro.vendor.perf.wlc.heavygame" Value="false" Target="yupik" />
+                <Prop Name="ro.vendor.perf.splh" Value="hw" Target="yupik" />
                 <Prop Name="ro.vendor.perf.gplaf" Value="true" Target="yupik" />
                 <Prop Name="ro.vendor.perf.enable.prekill" Value="false" Target="lahaina" />
+                <Prop Name="ro.vendor.perf.splh" Value="none" Target="lahaina" />
 
                 <!--System Properties -->
                 <Prop Name="ro.lmk.kill_heaviest_task_dup" Value="true" />
@@ -77,7 +78,7 @@ ________________________________________________________________________________
                 <Prop Name="vendor.perf.performancemode.support" Value="true" Target="lahaina" />
                 <Prop Name="vendor.appcompact.enable_app_compact" Value="false" />
                 <Prop Name="vendor.appcompact.full_compact_type" Value="2" />
-                <Prop Name="vendor.appcompact.some_compact_type" Value="2" />
+                <Prop Name="vendor.appcompact.some_compact_type" Value="4" />
                 <Prop Name="vendor.appcompact.compact_throttle_somesome" Value="5000" />
                 <Prop Name="vendor.appcompact.compact_throttle_somefull" Value="10000" />
                 <Prop Name="vendor.appcompact.compact_throttle_fullsome" Value="500" />

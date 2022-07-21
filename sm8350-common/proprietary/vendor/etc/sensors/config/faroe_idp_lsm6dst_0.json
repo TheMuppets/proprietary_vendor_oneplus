@@ -1,0 +1,21 @@
+{
+  "config":{
+    "hw_platform": ["MTP","IDP"],
+    "soc_id": ["515"]
+  },
+  "lsm6dst_0_platform":{
+    "owner": "lsm6dst",
+    ".orient":{
+      "owner": "lsm6dst",
+      "x":{ "type": "str", "ver": "0",
+        "data": "+y"
+      },
+      "y":{ "type": "str", "ver": "0",
+        "data": "+x"
+      },
+      "z":{ "type": "str", "ver": "0",
+        "data": "-z"
+      }
+    }
+  }
+}

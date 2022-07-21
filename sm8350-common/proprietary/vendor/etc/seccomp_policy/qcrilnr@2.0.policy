@@ -19,7 +19,7 @@
 # limitations under the License.
 
 gettid: 1
-prctl: arg0 == PR_SET_VMA || arg0 == PR_SET_NAME || arg0 == PR_GET_DUMPABLE || arg0 == PR_GET_NAME || arg0 == PR_SET_TIMERSLACK || arg0 == 0x37
+prctl: arg0 == PR_SET_VMA || arg0 == PR_SET_NAME || arg0 == PR_GET_DUMPABLE || arg0 == PR_GET_NAME || arg0 == PR_SET_TIMERSLACK || arg0 == 0x37 || arg0 == PR_GET_NO_NEW_PRIVS || arg0 == PR_SET_DUMPABLE || arg0 == PR_SET_PTRACER || arg0 == PR_CAP_AMBIENT
 write: 1
 read: 1
 close: 1
@@ -100,3 +100,6 @@ getsockopt: 1
 sendmsg: 1
 send: 1
 recv: 1
+dup: 1
+process_vm_readv: 1
+rt_tgsigqueueinfo: 1

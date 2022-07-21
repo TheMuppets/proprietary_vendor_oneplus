@@ -1,4 +1,4 @@
-# Copyright (c) 2019 Qualcomm Technologies, Inc.
+# Copyright (c) 2019,2021 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 
@@ -7,8 +7,8 @@
 on post-fs-data
     mkdir /data/vendor/qwes 0755 system system
 
-# Start daemon after boot completed
-on property:sys.boot_completed=1
+# Start daemon on early-boot
+on early-boot
     start vendor.ssgtzd
 
 # Used 'disabled' flag, so daemon won't be started until explicit start

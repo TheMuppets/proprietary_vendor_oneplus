@@ -2050,7 +2050,7 @@
             0/*contrast*/, -1/*iso*/, -1.0/*gain*/, 0/*dynamic*/,0/*lowIntensity*/,0/*colorBoost*/,60/*deghost*/,8/*effectiveFrames*/,15/*inputSharpnessThreshold*/   
 
             /*index1*/,
-            3.0 /zoom 1.5~3.0/,
+            3.0 /*zoom 1.5~3.0*/,
 
             8000 /*iso >8000*/,
             3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0 /*noiseReductionStrength*/,

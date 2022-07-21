@@ -1,8 +1,12 @@
 
-# Copyright (c) 2020 Qualcomm Technologies, Inc.
+# Copyright (c) 2020-2021 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
+
+on post-fs-data
+    mkdir /data/vendor/imslogs 0770 radio radio
+    chmod 0770 /data/vendor/imslogs
 
 # imsdaemon starts with root and UID will be downgraded to RADIO.
 service vendor.imsdaemon /vendor/bin/imsdaemon

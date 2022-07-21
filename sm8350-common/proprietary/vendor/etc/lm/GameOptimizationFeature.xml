@@ -70,7 +70,7 @@
         <ATML2>1</ATML2>
         <ATML3>0</ATML3>
         <GFAR>1</GFAR>
-        <PICARD>0</PICARD>
+        <PICARD>1</PICARD>
         <IDLE_SENSE>0</IDLE_SENSE>
         <GROUP_UPMIGRATE_PATH>/proc/sys/kernel/sched_group_upmigrate</GROUP_UPMIGRATE_PATH>
         <GROUP_DOWNMIGRATE_PATH>/proc/sys/kernel/sched_group_downmigrate</GROUP_DOWNMIGRATE_PATH>
@@ -112,7 +112,7 @@
             <DEFAULT_PROF>
             0x40C78000, 0, 0x40C7C000, 0,
             0x41448000, 79000, 0x41448100, 79000,
-            0x41800000, 30, 0x43000000, 90, 0x43400000, 9000,
+            0x43010000, 30, 0x41828000, 90, 0x43400000, 9000,
             0x40800200, 1000, 0x40800000, 1000, 0x40800100, 1000,
             0x40C58000, 65, 0x40C54000, 80,
             0x40C74000, 0xf0, 0x40408000, 99
@@ -125,16 +125,16 @@
             <SKEW2>0x4144C100,1000000</SKEW2>
         </Profile>
         <Profile target="shima">
-            <!-- Colocation v3 1 GHz, Predictive Load 1, Sched Many Wake Up Threshold 4 ,LPM IPI Prediction 0 -->
-            <DEFAULT>0x4144C100,860000,0x41444000,1,0x41444200,1,0x40C9C000,4,0x40414000,0</DEFAULT>
-            <!-- Colocation v3 1 GHz, Predictive Load 1, Sched Many Wake Up Threshold 4, LPM IPI Prediction 0-->
-            <SKEW2>0x4144C100,860000,0x41444000,1,0x41444200,1,0x40C9C000,4,0x40414000,0</SKEW2>
+            <!-- Colocation v3 1 GHz, Predictive Load 1, Sched Many Wake Up Threshold 4 ,LPM IPI Prediction 0, MIN_TASK_UTIL_FOR_COLOCATION 19 -->
+            <DEFAULT>0x4144C100,860000,0x41444000,1,0x41444200,1,0x40C9C000,4,0x40414000,0,0x40C78000,19</DEFAULT>
+            <!-- Colocation v3 1 GHz, Predictive Load 1, Sched Many Wake Up Threshold 4, LPM IPI Prediction 0, MIN_TASK_UTIL_FOR_COLOCATION 19 -->
+            <SKEW2>0x4144C100,860000,0x41444000,1,0x41444200,1,0x40C9C000,4,0x40414000,0,0x40C78000,19</SKEW2>
         </Profile>
         <Profile target="yupik">
-            <!-- Colocation v3 1 GHz, Predictive Load 1, Sched Many Wake Up Threshold 4 ,LPM IPI Prediction 0 -->
-            <DEFAULT>0x4144C100,860000,0x41444000,1,0x41444200,1,0x40C9C000,4,0x40414000,0</DEFAULT>
-            <!-- Colocation v3 1 GHz, Predictive Load 1, Sched Many Wake Up Threshold 4, LPM IPI Prediction 0-->
-            <SKEW2>0x4144C100,860000,0x41444000,1,0x41444200,1,0x40C9C000,4,0x40414000,0</SKEW2>
+            <!-- Colocation v3 1 GHz, Predictive Load 1, Sched Many Wake Up Threshold 4 ,LPM IPI Prediction 0, MIN_TASK_UTIL_FOR_COLOCATION 19 -->
+            <DEFAULT>0x4144C100,860000,0x41444000,1,0x41444200,1,0x40C9C000,4,0x40414000,0,0x40C78000,19</DEFAULT>
+            <!-- Colocation v3 1 GHz, Predictive Load 1, Sched Many Wake Up Threshold 4, LPM IPI Prediction 0, MIN_TASK_UTIL_FOR_COLOCATION 19 -->
+            <SKEW2>0x4144C100,860000,0x41444000,1,0x41444200,1,0x40C9C000,4,0x40414000,0,0x40C78000,19</SKEW2>
         </Profile>
     </Profiles>
 
@@ -148,12 +148,6 @@
                    <Primary>true</Primary>
                    <AsyncId>VENDOR_HINT_APP_WORKLOAD_TYPE</AsyncId>
                    <AsyncType>1</AsyncType>
-                </Trigger>
-
-                <Trigger>
-                    <Primary>true</Primary>
-                    <AsyncId>VENDOR_HINT_WORKLOAD_HEAVY</AsyncId>
-                    <AsyncType>-1</AsyncType>
                 </Trigger>
 
                 <Trigger>
@@ -248,12 +242,6 @@
 
                 <Trigger>
                    <Primary>true</Primary>
-                   <AsyncId>VENDOR_HINT_WORKLOAD_HEAVY</AsyncId>
-                   <AsyncType>-1</AsyncType>
-                </Trigger>
-
-                <Trigger>
-                   <Primary>true</Primary>
                    <AsyncId>VENDOR_HINT_TAP_EVENT</AsyncId>
                    <AsyncType>-1</AsyncType>
                 </Trigger>
@@ -324,12 +312,6 @@
                    <Primary>true</Primary>
                    <AsyncId>VENDOR_HINT_APP_WORKLOAD_TYPE</AsyncId>
                    <AsyncType>1</AsyncType>
-                </Trigger>
-
-                <Trigger>
-                    <Primary>true</Primary>
-                    <AsyncId>VENDOR_HINT_WORKLOAD_HEAVY</AsyncId>
-                    <AsyncType>-1</AsyncType>
                 </Trigger>
 
                 <Trigger>

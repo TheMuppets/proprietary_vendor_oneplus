@@ -26,6 +26,7 @@
     <Decoders>
         <!-- C2 HW decoders -->
         <MediaCodec name="c2.qti.avc.decoder" type="video/avc" update="true">
+
 <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
 <!-- HuXin@MULTIMEDIA.MEDIASERVER.PLAYER.989971, 2021/02/03, -->
 <!-- Modify for VideoDecoderPerfTest cts -->
@@ -66,7 +67,7 @@
 <!--
             <Limit name="measured-frame-rate-352x288" range="465-1900" />
             <Limit name="measured-frame-rate-720x480" range="370-1550" />
-            <Limit name="measured-frame-rate-1280x720" range="270-2600" />
+            <Limit name="measured-frame-rate-1280x720" range="188-397" />
             <Limit name="measured-frame-rate-1920x1080" range="260-1200" />
             <Limit name="measured-frame-rate-3840x2160" range="67-505" />
 -->
@@ -85,6 +86,7 @@
 <!-- Modify for VideoDecoderPerfTest cts -->
 <!--
             <Limit name="measured-frame-rate-352x288" range="390-1850" />
+            <Limit name="measured-frame-rate-640x360" range="243-397" />
             <Limit name="measured-frame-rate-720x480" range="380-1700" />
             <Limit name="measured-frame-rate-1280x720" range="315-1920" />
             <Limit name="measured-frame-rate-1920x1080" range="220-800" />
@@ -126,7 +128,7 @@
             <Limit name="measured-frame-rate-320x240" range="211-600" /> <!-- N=266 v98%=1.6 -->
             <Limit name="measured-frame-rate-720x480" range="57-405" /> <!-- N=266 v98%=1.5 -->
             <Limit name="measured-frame-rate-1280x720" range="17-98" /> <!-- N=236 v98%=1.5 (-PD1A.180712.003) -->
-            <Limit name="measured-frame-rate-1920x1080" range="6-82" /> <!-- N=272 v98%=1.4 -->
+            <Limit name="measured-frame-rate-1920x1080" range="20-28" /> <!-- N=272 v98%=1.4 -->
         </MediaCodec>
         <MediaCodec name="c2.android.hevc.decoder" type="video/hevc" update="true">
             <Limit name="measured-frame-rate-352x288" range="220-950" /> <!-- N=270 v98%=1.6 -->
