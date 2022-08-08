@@ -5,3 +5,12 @@
 soong_namespace {
 }
 
+prebuilt_etc_xml {
+	name: "android.hardware.biometrics.fingerprint@2.1-service",
+	owner: "oneplus",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
