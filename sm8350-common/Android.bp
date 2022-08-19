@@ -103,7 +103,7 @@ android_app_import {
 android_app_import {
 	name: "HotwordEnrollmentOKGoogleHEXAGON",
 	owner: "oneplus",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -115,7 +115,7 @@ android_app_import {
 android_app_import {
 	name: "HotwordEnrollmentXGoogleHEXAGON",
 	owner: "oneplus",
-	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
