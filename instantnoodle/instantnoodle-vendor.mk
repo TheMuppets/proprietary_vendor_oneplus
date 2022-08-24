@@ -43,6 +43,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/instantnoodle/proprietary/odm/etc/inparm/irissoft/mcfCheck.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/irissoft/mcfCheck.txt \
     vendor/oneplus/instantnoodle/proprietary/odm/etc/irissoft.fw:$(TARGET_COPY_OUT_ODM)/etc/irissoft.fw \
     vendor/oneplus/instantnoodle/proprietary/odm/etc/sensor/config/kona_ak991x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_ak991x_0.json \
+    vendor/oneplus/instantnoodle/proprietary/odm/etc/sensor/config/kona_bmi26x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_bmi26x_0.json \
+    vendor/oneplus/instantnoodle/proprietary/odm/etc/sensor/config/kona_mmc5603x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_mmc5603x_0.json \
     vendor/oneplus/instantnoodle/proprietary/odm/etc/sensor/config/kona_qrd_alsps.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_alsps.json \
     vendor/oneplus/instantnoodle/proprietary/odm/etc/sensor/config/kona_qrd_bmi26x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_bmi26x_0.json \
     vendor/oneplus/instantnoodle/proprietary/odm/etc/sensor/config/kona_qrd_cct.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/kona_qrd_cct.json \
