@@ -170,7 +170,7 @@
   "VendorTag": "com.oplus.aps.params.upscale",
   "Type": "Int32",
   "Count": "7",
-  "Value": "  250,          50,             4,                          400,            16777216,      8000,            6016",
+  "Value": "  250,          50,             4,                          1600,            16777216,      8000,            6016",
   "Comment": "estimateTime, runTimeMemSize, numberOfProcessingThreads, ultraHighSharpen, bufferSize16M, outputWidth8000, outputWidth6000"
 },
 

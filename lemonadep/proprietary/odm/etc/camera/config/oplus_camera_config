@@ -256,7 +256,7 @@
   "VendorTag": "com.oplus.app.feature.sticker.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "0"
+  "Value": "1"
 },
 
 {
@@ -697,7 +697,7 @@
   "VendorTag": "com.oplus.feature.super.text.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "0"
+  "Value": "1"
 },
 
 {
@@ -949,7 +949,7 @@
   "VendorTag": "com.oplus.feature.movie.mode.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "0"
+  "Value": "1"
 },
 
 {
@@ -998,14 +998,14 @@
   "VendorTag": "com.oplus.multi.video.mode.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "0"
+  "Value": "1"
 },
 
 {
   "VendorTag": "com.oplus.feature.id.photo.support",
   "Type": "Byte",
   "Count": "1",
-  "Value": "0"
+  "Value": "1"
 },
 
 {
@@ -1100,27 +1100,6 @@
 },
 
 {
-  "VendorTag": "com.oplus.athena.support",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
-  "VendorTag": "com.oplus.scenes.force.athena",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "1"
-},
-
-{
-  "VendorTag": "com.oplus.athena.memory.threshold",
-  "Type": "Byte",
-  "Count": "1",
-  "Value": "3.0"
-},
-
-{
   "VendorTag": "com.oplus.feature.ai.enhancement.video.facebeauty.mutex.support",
   "Type": "Byte",
   "Count": "1",
@@ -1180,7 +1159,7 @@
   "VendorTag": "com.oplus.feature.breeno.scan",
   "Type": "Byte",
   "Count": "1",
-  "Value": "0"
+  "Value": "1"
 },
 
 {
@@ -1188,6 +1167,20 @@
   "Type": "Byte",
   "Count": "1",
   "Value": "0"
+},
+
+{
+  "VendorTag": "com.oplus.long.exposure.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.long.exposure.no.wide",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
 },
 
 {
@@ -1342,6 +1335,20 @@
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
+},
+
+{
+  "VendorTag": "com.oplus.photo.master.filter.type.list",
+  "Type": "String",
+  "Count": "3",
+  "Value": "Radiance.cube.rgb.bin,Serenity.cube.rgb.bin,Emerald.cube.rgb.bin"
+},
+
+{
+  "VendorTag": "com.oplus.portrait.master.filter.type.list",
+  "Type": "String",
+  "Count": "1",
+  "Value": "Serenity.cube.rgb.bin"
 }
 
 ]
