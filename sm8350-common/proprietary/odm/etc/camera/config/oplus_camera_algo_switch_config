@@ -707,6 +707,19 @@
                     "aps_algo_none" : 1
                 }
             ]
+        },
+        {
+            "mode" : "longExposure",
+            "entity" : [
+                {
+                    "id" : 0,
+                    "enable" : 1,
+                    "aps_algo_rectify" : 1,
+                    "aps_algo_watermark" : 1,
+                    "aps_algo_filter" : 1,
+                    "aps_algo_rotate_mirror" : 1
+                }
+            ]
         }
     ],
     "aps_preview_configs" : [
@@ -2310,6 +2323,51 @@
             ]
         },
         {
+            "mode": "movieNoEis",
+            "entity": [
+                {
+                    "id": 0,
+                    "camera_num": 1,
+                    "separate_preview_video": 1,
+                    "pipelines": {
+                        "preview": {
+                            "enable": 1,
+                            "master_input_width": 3168,
+                            "master_input_height": 1358,
+                            "slave_input_width": 0,
+                            "slave_input_height": 0,
+                            "third_input_width": 0,
+                            "third_input_height": 0,
+                            "output_width": 3168,
+                            "output_height": 1358,
+                            "skip_frame_cnt": 0,
+                            "pipeline_copy_from": "",
+                            "algonode_copy_from": "",
+                            "algo_list": [ "preview_default" ]
+                        },
+                        "video": {
+                            "enable": 1,
+                            "master_input_width": 3168,
+                            "master_input_height": 1358,
+                            "slave_input_width": 0,
+                            "slave_input_height": 0,
+                            "third_input_width": 0,
+                            "third_input_height": 0,
+                            "output_width": 3168,
+                            "output_height": 1358,
+                            "skip_frame_cnt": 0,
+                            "pipeline_copy_from": "",
+                            "algonode_copy_from": "",
+                            "algo_list": [ "video_watermark_process_on_output" ]
+                        },
+                        "asd": {
+                            "enable": 0
+                        }
+                    }
+                }
+            ]
+        },
+        {
             "mode": "microscope",
             "entity": [
                 {
@@ -2337,6 +2395,54 @@
                         },
                         "asd": {
                             "enable": 0
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "mode": "longExposure",
+            "entity": [
+                {
+                    "id": 0,
+                    "camera_num": 1,
+                    "separate_preview_video": 0,
+                    "pipelines": {
+                        "preview": {
+                            "enable": 1,
+                            "master_input_width": 1440,
+                            "master_input_height": 1080,
+                            "slave_input_width": 0,
+                            "slave_input_height": 0,
+                            "third_input_width": 0,
+                            "third_input_height": 0,
+                            "output_width": 1440,
+                            "output_height": 1080,
+                            "skip_frame_cnt": 0,
+                            "pipeline_copy_from": "",
+                            "algonode_copy_from": "",
+                            "algo_list": [ "preview_lsd", "preview_long_exposure", "preview_rectify" ]
+                        },
+                        "video": {
+                            "enable": 0
+                        },
+                        "asd": {
+                            "enable": 0
+                        },
+                        "capture": {
+                            "enable": 1,
+                            "master_input_width": 4096,
+                            "master_input_height": 3072,
+                            "slave_input_width": 0,
+                            "slave_input_height": 0,
+                            "third_input_width": 0,
+                            "third_input_height": 0,
+                            "output_width": 4096,
+                            "output_height": 3072,
+                            "skip_frame_cnt": 0,
+                            "pipeline_copy_from": "",
+                            "algonode_copy_from": "",
+                            "algo_list": [ "preview_long_exposure" ]
                         }
                     }
                 }

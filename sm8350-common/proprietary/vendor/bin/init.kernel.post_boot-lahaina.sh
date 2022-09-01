@@ -81,6 +81,7 @@ function configure_zram_parameters() {
 function oplus_configure_tunning_swappiness() {
     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
     MemTotal=${MemTotalStr:16:8}
+    prjname=`getprop ro.boot.prjname`
 
     if [ $MemTotal -le 6291456 ]; then
         echo 0 > /proc/sys/vm/swappiness_threshold1_size
@@ -98,12 +99,27 @@ function oplus_configure_tunning_swappiness() {
         echo 120 > /proc/sys/vm/vm_swappiness_threshold2
         echo 2048 > /proc/sys/vm/swappiness_threshold2_size
     fi
+
+    if [ -n "$prjname" ]; then
+        case $prjname in
+            "21147")
+                echo 60 > /proc/sys/vm/vm_swappiness_threshold1
+                echo 2000 > /proc/sys/vm/swappiness_threshold1_size
+                echo 70 > /proc/sys/vm/vm_swappiness_threshold2
+                echo 1500 > /proc/sys/vm/swappiness_threshold2_size
+                ;;
+            *)
+                echo "$prjname:no special config<dynamic_swappiness>"
+                ;;
+        esac
+    fi
 }
 
 #ifdef OPLUS_FEATURE_ZRAM_OPT
 function oppo_configure_zram_parameters() {
     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
     MemTotal=${MemTotalStr:16:8}
+    prjname=`getprop ro.boot.prjname`
 
     echo lz4 > /sys/block/zram0/comp_algorithm
     echo 160 > /sys/module/zram_opt/parameters/vm_swappiness
@@ -144,19 +160,31 @@ function oppo_configure_zram_parameters() {
 }
 
 function oplus_configure_hybridswap() {
-	kernel_version=`uname -r`
+    kernel_version=`uname -r`
+    prjname=`getprop ro.boot.prjname`
 
-	if [[ "$kernel_version" == "5.10"* ]]; then
-		echo 160 > /sys/module/oplus_bsp_zram_opt/parameters/vm_swappiness
-	else
-		echo 160 > /sys/module/zram_opt/parameters/vm_swappiness
-	fi
+    if [[ "$kernel_version" == "5.10"* ]]; then
+        echo 160 > /sys/module/oplus_bsp_zram_opt/parameters/vm_swappiness
+    else
+        echo 160 > /sys/module/zram_opt/parameters/vm_swappiness
+    fi
 
-	echo 0 > /proc/sys/vm/page-cluster
+    if [ -n "$prjname" ]; then
+        case $prjname in
+            "21147")
+                echo 80 > /sys/module/zram_opt/parameters/vm_swappiness
+                ;;
+            *)
+                echo "$prjname:no special config<oplus vm_swappiness>"
+                ;;
+        esac
+    fi
 
-	# FIXME: set system memcg pata in init.kernel.post_boot-lahaina.sh temporary
-	echo 500 > /dev/memcg/system/memory.app_score
-	echo systemserver > /dev/memcg/system/memory.name
+    echo 0 > /proc/sys/vm/page-cluster
+
+    # FIXME: set system memcg pata in init.kernel.post_boot-lahaina.sh temporary
+    echo 500 > /dev/memcg/system/memory.app_score
+    echo systemserver > /dev/memcg/system/memory.name
 }
 #endif /*OPLUS_FEATURE_ZRAM_OPT*/
 
@@ -217,10 +245,16 @@ function configure_memory_parameters() {
 	MemTotal=${MemTotalStr:16:8}
 
 #ifdef OPLUS_FEATURE_ZRAM_OPT
-	if [ -f /sys/block/zram0/hybridswap_enable ]; then
-		oplus_configure_hybridswap
-	else
+	# For vts test which has replace system.img
+	ls -l /product | grep '\-\>'
+	if [ $? -eq 0 ]; then
 		oppo_configure_zram_parameters
+	else
+		if [ -f /sys/block/zram0/hybridswap_enable ]; then
+			oplus_configure_hybridswap
+		else
+			oppo_configure_zram_parameters
+		fi
 	fi
         oplus_configure_tunning_swappiness
 #else

@@ -130,9 +130,9 @@ ________________________________________________________________________________
                 <Prop Name="vendor.perf.pfar2.boost_level" Value="1" Target="shima"/>
                 <Prop Name="vendor.perf.pfar2.disable_pl" Value="1" Target="shima"/>
                 <Prop Name="vendor.perf.pfar2.disable_core_ctl" Value="1" Target="shima"/>
-                <Prop Name="vendor.perf.phr.enable" Value="1" Target="yupik"/>
+                <Prop Name="vendor.perf.phr.enable" Value="0" Target="yupik"/>
                 <Prop Name="vendor.perf.phr.hr_min_rate" Value="0.5" Target="yupik"/>
-                <Prop Name="vendor.perf.pfar2.enable" Value="1" Target="yupik"/>
+                <Prop Name="vendor.perf.pfar2.enable" Value="0" Target="yupik"/>
                 <Prop Name="vendor.perf.pfar2.boost_level" Value="1" Target="yupik"/>
                 <Prop Name="vendor.perf.pfar2.disable_pl" Value="1" Target="yupik"/>
                 <Prop Name="vendor.perf.pfar2.disable_core_ctl" Value="1" Target="yupik"/>
