@@ -1,0 +1,17 @@
+##################################################################################
+### Oplus All rights reserved.
+###
+### File: - wlchgmonitor.rc
+### Author: v-k.kumar@BSP
+###
+### ------------------------------- Revision History: ----------------------------
+### <author>                        <data>       <version>   <desc>
+### ------------------------------------------------------------------------------
+### v-k.kumar@BSP                     2021-10-12                Create this file
+##################################################################################
+
+#bsp, 2020/01/04 Add wireless charge
+service wlchgmonitor /odm/bin/wlchgmonitor
+	class main
+	group root system
+
