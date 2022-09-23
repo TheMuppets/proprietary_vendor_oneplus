@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/instantnoodlep
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/instantnoodlep/proprietary/odm/bin/wlchgmonitor:$(TARGET_COPY_OUT_ODM)/bin/wlchgmonitor \
     vendor/oneplus/instantnoodlep/proprietary/odm/etc/acdbdata/Audio_Parameter_Version.txt:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Audio_Parameter_Version.txt \
     vendor/oneplus/instantnoodlep/proprietary/odm/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/oneplus/instantnoodlep/proprietary/odm/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/General_cal.acdb \
@@ -28,6 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/instantnoodlep/proprietary/odm/etc/init/calibrationOutput_IR.rc:$(TARGET_COPY_OUT_ODM)/etc/init/calibrationOutput_IR.rc \
     vendor/oneplus/instantnoodlep/proprietary/odm/etc/init/calibrationOutput_uw.rc:$(TARGET_COPY_OUT_ODM)/etc/init/calibrationOutput_uw.rc \
     vendor/oneplus/instantnoodlep/proprietary/odm/etc/init/calibrationOutput_wt.rc:$(TARGET_COPY_OUT_ODM)/etc/init/calibrationOutput_wt.rc \
+    vendor/oneplus/instantnoodlep/proprietary/odm/etc/init/wlchgmonitor.rc:$(TARGET_COPY_OUT_ODM)/etc/init/wlchgmonitor.rc \
     vendor/oneplus/instantnoodlep/proprietary/odm/etc/inparm/iris5/inParm1.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm1.txt \
     vendor/oneplus/instantnoodlep/proprietary/odm/etc/inparm/iris5/inParm10.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm10.txt \
     vendor/oneplus/instantnoodlep/proprietary/odm/etc/inparm/iris5/inParm11.txt:$(TARGET_COPY_OUT_ODM)/etc/inparm/iris5/inParm11.txt \
