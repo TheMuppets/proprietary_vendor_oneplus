@@ -1,8 +1,0 @@
-service vendor.opcamera-provider-1-0 /vendor/bin/hw/vendor.oneplus.hardware.camera@1.0-service
-    class hal
-    user cameraserver
-    group audio camera input drmrpc sdcard_rw system
-
-on post-fs
-    chmod 0666 /dev/cpuset/background/cpus
-    chmod 0666 /dev/cpuset/foreground/cpus

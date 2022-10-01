@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Copyright (c) 2014, 2019-2020 Qualcomm Technologies, Inc.
+<!--Copyright (c) 2014, 2019-2021 Qualcomm Technologies, Inc.
     All Rights Reserved.
     Confidential and Proprietary - Qualcomm Technologies, Inc.-->
 <permissions>
+    <library name="dpmapi"
+        file="/system/system_ext/framework/dpmapi.jar"/>
+   <!-- ifdef OPLUS_DATA_FAST_DORMANCY -->
+   <!-- MengXiangPeng@NETWORK.DATA.1610480, 2021/6/15, use sim card to load carrierconfig's fastdormancy four time parameter [OCR.527003.3.OM] -->
     <library name="com.qti.dpmapi"
         file="/system/system_ext/framework/dpmapi.jar"/>
+   <!-- endif OPLUS_DATA_FAST_DORMANCY -->
 </permissions>

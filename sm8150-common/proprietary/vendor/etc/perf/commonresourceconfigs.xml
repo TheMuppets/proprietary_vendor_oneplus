@@ -105,6 +105,9 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x30" Node="/proc/sys/walt/sched_coloc_busy_hyst_cpu_busy_pct" />
         <Minor OpcodeValue="0x31" Node="/proc/sys/walt/sched_coloc_busy_hyst_cpu_ns" />
         <Minor OpcodeValue="0x32" Node="/proc/sys/kernel/walt_rtg_cfs_boost_prio" />
+        <Minor OpcodeValue="0x33" Node="/proc/sys/kernel/sched_force_lb_enable" Supported="yes" />
+        <Minor OpcodeValue="0x34" Node="/proc/%d/sched_low_latency" Supported="yes" />
+        <Minor OpcodeValue="0x35" Node="/proc/sys/kernel/sched_min_granularity_ns" />
     <!-- sched major end -->
 
     <!-- core hotplug major start -->

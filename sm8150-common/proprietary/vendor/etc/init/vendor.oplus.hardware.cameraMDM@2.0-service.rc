@@ -1,0 +1,9 @@
+service vendor.opluscamera-mdm-2-0 /vendor/bin/hw/vendor.oplus.hardware.cameraMDM@2.0-service
+    class hal
+    user cameraserver
+    group audio camera input drmrpc sdcard_rw system
+
+on post-fs
+    chmod 0666 /dev/cpuset/background/cpus
+    chmod 0666 /dev/cpuset/foreground/cpus
+    chmod 0666 /dev/cpuset/camera-app/cpus

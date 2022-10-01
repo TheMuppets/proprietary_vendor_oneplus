@@ -1,0 +1,31 @@
+#############################################################
+## File: - nfc_fw_ref
+## Copyright (C), 2008-2020, OPLUS Mobile Comm Corp., Ltd
+##
+## Description : 1.0
+##           This is a common file
+##
+## Version: 1.0
+## Date created: 2020/04/23
+## Author: ChangDongdong@CONNECTIVITY.Nfc.Basic.22181, nfc_fw_ref conf fw copy and load
+## Format for every line:
+##   [target fw]:[project name 1] [project name 2]...
+##   [project name] have four source:
+##     1. ro.separate.soft
+##     2. /proc/oplusVersion/prjName
+##     3. /proc/oplusVersion/prjVersion
+##     4. ro.build.product
+##   [target fw] is the name of folder which contains real config
+## More over, we have some appendencies for other request:
+##   If you have a region concern, you can write in this format
+##     [target fw]:[project name 1(REGION=TARGET1/TARGET2;FEATURE2=TARGET3/TARGET4)]...
+##   Like:
+##     sn100t_fw_01_10_53_JP:19362(REGION=JP;OPERATOR=VODAFONE)
+##   Then we will find fw from sn100t_fw_01_10_53_JP in japen version and 19362 in other
+## ------------------ Revision History: ---------------------
+##      <author>         <date>                        <desc>
+##     ChangDongdong  2020/04/23  Change nfc fw load & compile mechanism
+#############################################################
+
+sn100t_fw_01_10_57:19081
+

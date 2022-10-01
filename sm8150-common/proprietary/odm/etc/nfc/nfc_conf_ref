@@ -1,0 +1,39 @@
+#############################################################
+## File: - nfc_conf_ref
+##
+## Copyright (C), 2008-2020, OPLUS Mobile Comm Corp., Ltd
+##
+## Description : 1.0
+##           This is a common file
+##
+## Version: 1.0
+## Date created: 12:00, 2019/09/20
+## Author: Yukun.Wang@PSW.CONNECTIVITY.Nfc.Basic, 2345426
+## Format for every line:
+##   [target config]:[project name 1] [project name 2]...
+##   [project name] have four source:
+##     1. ro.separate.soft
+##     2. ro.build.product
+##     3. /proc/oplusVersion/prjName
+##     4. /proc/oplusVersion/prjVersion
+##   [target config] is the name of folder which contains real config
+## More over, we have some appendencies for other request:
+##   If you have a region concern, you can write in this format
+##     [target config]:[project name 1(REGION=TARGET1/TARGET2;FEATURE2=TARGET3/TARGET4)]...
+##   Like:
+##     19362_JP:19362(REGION=JP/TW;OPERATOR=VODAFONE)
+##   Then we will find config from 19362_JP in japen version and 19362 in other
+## ------------------ Revision History: ---------------------
+##      <author>         <date>                        <desc>
+##     Yukun.Wang  12:00, 2019/09/20  Change nfc config load & compile mechanism
+##     Yukun.Wang  15:00, 2019/12/25      Add new mechanism for region support
+#############################################################
+
+18501:18501
+18115:18115 18116
+19081:19081
+19698:19698 19711
+18865:18865 19853 19850
+18821:18821 18815 18817
+19801:19801 19830 19831
+18857:18857 18855 18853

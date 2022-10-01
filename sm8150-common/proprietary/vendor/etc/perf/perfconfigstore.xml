@@ -18,10 +18,7 @@ property Name is called. -->
     <PerfConfigs>
 
                 <!--Vendor Properties -->
-                <!--Begin, Closed by weiwang@system, 2019/7/4 -->
-                <Prop Name="vendor.iop.enable_uxe" Value="0" />
-                <!--End -->
-
+                <Prop Name="vendor.iop.enable_uxe" Value="1" />
                 <Prop Name="vendor.debug.enable.lm" Value="true" />
                 <Prop Name="vendor.perf.iop_v3.enable" Value="true" />
                 <Prop Name="vendor.perf.iop_v3.enable.debug" Value="false" />
@@ -34,15 +31,5 @@ property Name is called. -->
                 <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
                 <Prop Name="ro.lmk.enable_userspace_lmk" Value="false" />
 
-                <!--
-                #ifdef VENDOR_EDIT
-                simon.ma@SYSTEM, 2019/05/16, add for GCE-12831 to enable bservice limit
-                -->
-                <Prop Name="ro.vendor.qti.sys.fw.bservice_enable" Value="true" />
-                <Prop Name="ro.vendor.qti.sys.fw.bservice_limit" Value="6" />
-                <Prop Name="ro.vendor.qti.sys.fw.bservice_age" Value="5000" />
-                <!--
-                #endif /* VENDOR_EDIT */
-                -->
     </PerfConfigs>
 </PerfConfigsStore>

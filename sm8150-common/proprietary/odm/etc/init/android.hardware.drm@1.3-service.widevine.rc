@@ -1,0 +1,38 @@
+on property:init.svc.mediadrm=running
+    mkdir /data/vendor/mediadrm 0770 media mediadrm
+    start vendor.move_data_sh
+
+
+#ifndef OPLUS_FEATURE_DRM_WIDEVINEL3
+#QinLing@MULTIMEDIA.MMSERVER.DRM, 2020/06/05, move move_widevine_data.sh to system_ext
+#service vendor.move_data_sh /system/bin/move_widevine_data.sh
+#else /* OPLUS_FEATURE_DRM_WIDEVINEL3 */
+service vendor.move_data_sh /system_ext/bin/move_widevine_data.sh
+#endif /* OPLUS_FEATURE_DRM_WIDEVINEL3 */
+    class late_start
+    user media
+    group media mediadrm system
+    disabled
+    oneshot
+
+#ifndef OPLUS_FEATURE_DRM_WIDEVINEL3
+#QinLing@MULTIMEDIA.MMSERVER.DRM, 2020/06/05, move service to odm
+#service vendor.drm-widevine-hal-1-3 /vendor/bin/hw/android.hardware.drm@1.3-service.widevine
+#else /* OPLUS_FEATURE_DRM_WIDEVINEL3 */
+service vendor.drm-widevine-hal-1-3 /odm/bin/hw/android.hardware.drm@1.3-service.widevine
+#endif /* OPLUS_FEATURE_DRM_WIDEVINEL3 */
+    interface android.hardware.drm@1.0::ICryptoFactory widevine
+    interface android.hardware.drm@1.0::IDrmFactory widevine
+    interface android.hardware.drm@1.1::ICryptoFactory widevine
+    interface android.hardware.drm@1.1::IDrmFactory widevine
+    interface android.hardware.drm@1.2::ICryptoFactory widevine
+    interface android.hardware.drm@1.2::IDrmFactory widevine
+    interface android.hardware.drm@1.3::ICryptoFactory widevine
+    interface android.hardware.drm@1.3::IDrmFactory widevine
+    interface android.hidl.base@1.0::IBase widevine
+    class hal
+    user media
+    group media mediadrm drmrpc system
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks
+    capabilities SYS_NICE

@@ -331,5 +331,3 @@
 69:4294967295:1000
 /* <WLPS QMI Service ID - 0x39>:<WLFW QMI Instance ID - all instances>:<Client Group ID> */
 57:4294967295:1000
-/*Allow QMI service to add radio permission*/
-228:4294967295:1001

@@ -40,3 +40,7 @@ service vendor.adsprpcd_audiopd /vendor/bin/adsprpcd audiopd
    class main
    user media
    group media
+   #ifdef OPLUS_FEATURE_KTV
+   #Juqiang.Geng@MULTIMEDIA.AUDIODRIVER.ADSP,2020/09/22, Add ADSP_LIBRARY_PATH new path
+   setenv ADSP_LIBRARY_PATH ";/system/lib/rfsa/adsp;/system/vendor/lib/rfsa/adsp;/dsp;/vendor/dsp;/odm/lib/rfsa/adsp;/vendor/lib/rfsa/adsp"
+   #endif /* OPLUS_FEATURE_KTV */
