@@ -1,0 +1,27 @@
+{
+  "config":{
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK"],
+    "soc_id": ["339"]
+  },
+  "mmc5603x_0":{
+    "owner": "sns_mmc5603x",
+    ".mag":{
+      "owner": "sns_mmc5603x",
+      ".config":{
+        "owner": "sns_mmc5603x",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}

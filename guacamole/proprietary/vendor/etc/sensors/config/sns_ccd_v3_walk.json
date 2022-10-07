@@ -1,7 +1,7 @@
 {
   "config": {
-    "hw_platform": ["MTP", "Surf", "RCM", "QRD"],
-    "soc_id": ["356", "450"]
+    "hw_platform": ["MTP", "Surf", "RCM", "QRD", "HDK"],
+    "soc_id": ["356"]
   },
   "ccd_walk": {
     "owner": "sns_ccd",
