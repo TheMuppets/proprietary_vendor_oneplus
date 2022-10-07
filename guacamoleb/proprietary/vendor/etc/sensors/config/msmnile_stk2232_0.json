@@ -67,14 +67,8 @@
           "data": "5000.0"
         },
         "rowcoe":{ "type": "flt", "ver": "0",
-          "data": "508.9"
+          "data": "1003.1"
         }
-      }
-    },
-    ".devinfo":{
-      "owner": "sns_stk2232",
-      "project":{ "type": "int", "ver": "0",
-        "data": "18857"
       }
     },
     ".ps":{
