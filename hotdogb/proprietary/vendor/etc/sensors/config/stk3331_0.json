@@ -1,0 +1,28 @@
+{
+  "config":
+  {
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK"],
+    "soc_id": ["339"]
+  },
+  "stk3331_0":{
+    "owner": "sns_stk3x3x",
+	".proximity":{
+      "owner": "sns_stk3x3x",
+      ".config":{
+        "owner": "sns_stk3x3x",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}
