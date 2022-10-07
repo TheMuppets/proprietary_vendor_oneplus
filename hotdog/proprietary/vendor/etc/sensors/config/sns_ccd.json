@@ -6,9 +6,7 @@
   "ccd_amd": {
     "owner": "sns_ccd",
     "h2":  { "ver": "0","type": "int",
-             "data": "50"},
-    "disable_flush_only":  { "ver": "0","type": "int",
-             "data": "0"}
+             "data": "50"}
   },
   "ccd_ttw": {
     "owner": "sns_ccd",

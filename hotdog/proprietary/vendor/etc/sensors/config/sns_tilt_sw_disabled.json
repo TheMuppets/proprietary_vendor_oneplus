@@ -5,7 +5,7 @@
   },
   "sns_tilt": {
     "owner": "sns_tilt",
-    "enabled": {"ver": "1","type": "int", "data": "1"
+    "enabled": {"ver": "0","type": "int", "data": "0"
     }
   }
 }
