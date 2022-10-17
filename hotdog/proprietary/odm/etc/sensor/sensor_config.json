@@ -1,0 +1,78 @@
+{
+    "19830":{
+        "platform_config":{
+            "sensor_arch":"qcom_sensor_see"
+        },
+        "sensor_config":{
+            "android.sensor.accelerometer":{
+                "type":1,
+                "support":"true",
+                "module":"lsm6dsm",
+                "lsm6dsm":{
+                    "mode":"batch_cali|factory_cali",
+                    "offset_x": 0.0,
+                    "offset_y": 0.0,
+                    "offset_z": 0.0
+                }
+            },
+            "android.sensor.magnetic_field":{
+                "type":2,
+                "support":"true",
+                "module":"mmc5603x",
+                "mmc5603x":{
+                  "mode":"batch_cali"
+                }
+            },
+            "android.sensor.gyroscope":{
+                "type":4,
+                "support":"true",
+                "module":"lsm6dsm",
+                "lsm6dsm":{
+                    "mode":"batch_cali|factory_cali",
+                    "radian_threshold":0.05,
+                    "offset_x": 0.0,
+                    "offset_y": 0.0,
+                    "offset_z": 0.0
+                }
+            },
+            "android.sensor.light":{
+                "type":5,
+                "support":"true"
+            },
+            "qti.sensor.wise_light":{
+                "type":33171103,
+                "support":"true",
+                "module":"OPLUS",
+                "OPLUS":{
+                   "mode":"oled_light_leak|factory_cali",
+                   "cali_para": 1000,
+                   "R_MAX": 0,
+                   "G_MAX": 0,
+                   "B_MAX": 0,
+                   "W_MAX": 0
+                }
+            },
+            "android.sensor.proximity":{
+                "type":8,
+                "support":"true"
+            },
+            "oneplus.sensor.ultrasound.proximity":{
+                "type":33171998,
+                "support":"true"
+            },
+            "android.sensor.step_counter":{
+                "type":19,
+                "support":"true",
+                "module":"module_ignore",
+                "module_ignore":{
+                    "mode":"virtual_sensor"
+                }
+            },
+            "qti.sensor.sensor_logger":{
+                "type":33171024,
+                "support":"true",
+                "module":"module_ignore"
+            }
+        }
+    }
+}
