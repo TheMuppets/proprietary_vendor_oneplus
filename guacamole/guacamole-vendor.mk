@@ -16,6 +16,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/guacamole/proprietary/odm/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Speaker_cal.acdb \
     vendor/oneplus/guacamole/proprietary/odm/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_ODM)/etc/camera/vidhance_calibration \
     vendor/oneplus/guacamole/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
+    vendor/oneplus/guacamole/proprietary/odm/etc/wifi/bdwlan.b0a:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.b0a \
+    vendor/oneplus/guacamole/proprietary/odm/etc/wifi/bdwlan.b0i:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.b0i \
+    vendor/oneplus/guacamole/proprietary/odm/etc/wifi/bdwlan.b1a:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.b1a \
+    vendor/oneplus/guacamole/proprietary/odm/etc/wifi/bdwlan0.b0a:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan0.b0a \
+    vendor/oneplus/guacamole/proprietary/odm/etc/wifi/bdwlan0.b0i:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan0.b0i \
+    vendor/oneplus/guacamole/proprietary/odm/etc/wifi/bdwlan0.b1a:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan0.b1a \
+    vendor/oneplus/guacamole/proprietary/odm/etc/wifi/bdwlan1.b0a:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan1.b0a \
+    vendor/oneplus/guacamole/proprietary/odm/etc/wifi/bdwlan1.b0i:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan1.b0i \
+    vendor/oneplus/guacamole/proprietary/odm/etc/wifi/bdwlan1.b1a:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan1.b1a \
+    vendor/oneplus/guacamole/proprietary/odm/etc/wifi/init.project.wifi.sh:$(TARGET_COPY_OUT_ODM)/etc/wifi/init.project.wifi.sh \
     vendor/oneplus/guacamole/proprietary/odm/firmware/aw8697_About_School_RTP_17.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_About_School_RTP_17.bin \
     vendor/oneplus/guacamole/proprietary/odm/firmware/aw8697_Appear_channel_RTP_oplusos7_123.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Appear_channel_RTP_oplusos7_123.bin \
     vendor/oneplus/guacamole/proprietary/odm/firmware/aw8697_Bliss_RTP_18.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw8697_Bliss_RTP_18.bin \
