@@ -16,6 +16,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/hotdog/proprietary/odm/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Speaker_cal.acdb \
     vendor/oneplus/hotdog/proprietary/odm/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_ODM)/etc/camera/vidhance_calibration \
     vendor/oneplus/hotdog/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
+    vendor/oneplus/hotdog/proprietary/odm/etc/wifi/5bdwlan.b0c:$(TARGET_COPY_OUT_ODM)/etc/wifi/5bdwlan.b0c \
+    vendor/oneplus/hotdog/proprietary/odm/etc/wifi/5bdwlan0.b0c:$(TARGET_COPY_OUT_ODM)/etc/wifi/5bdwlan0.b0c \
+    vendor/oneplus/hotdog/proprietary/odm/etc/wifi/5bdwlan1.b0c:$(TARGET_COPY_OUT_ODM)/etc/wifi/5bdwlan1.b0c \
+    vendor/oneplus/hotdog/proprietary/odm/etc/wifi/init.project.wifi.sh:$(TARGET_COPY_OUT_ODM)/etc/wifi/init.project.wifi.sh \
     vendor/oneplus/hotdog/proprietary/odm/firmware/100ms_RTP_166Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/100ms_RTP_166Hz.bin \
     vendor/oneplus/hotdog/proprietary/odm/firmware/100ms_RTP_170Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/100ms_RTP_170Hz.bin \
     vendor/oneplus/hotdog/proprietary/odm/firmware/100ms_RTP_174Hz.bin:$(TARGET_COPY_OUT_ODM)/firmware/100ms_RTP_174Hz.bin \
