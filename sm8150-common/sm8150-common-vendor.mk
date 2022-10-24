@@ -25,7 +25,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8150-common/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
     vendor/oneplus/sm8150-common/proprietary/odm/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp.conf \
     vendor/oneplus/sm8150-common/proprietary/odm/etc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp_RF.conf \
-    vendor/oneplus/sm8150-common/proprietary/odm/etc/libnfc-nxp_RF_noeSE:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp_RF_noeSE \
+    vendor/oneplus/sm8150-common/proprietary/odm/etc/libnfc-nxp_RF_noeSE.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp_RF_noeSE.conf \
     vendor/oneplus/sm8150-common/proprietary/odm/etc/libnfc-nxp_noeSE.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nxp_noeSE.conf \
     vendor/oneplus/sm8150-common/proprietary/odm/etc/nfc/nfc_conf_ref:$(TARGET_COPY_OUT_ODM)/etc/nfc/nfc_conf_ref \
     vendor/oneplus/sm8150-common/proprietary/odm/etc/nfc/nfc_fw_ref:$(TARGET_COPY_OUT_ODM)/etc/nfc/nfc_fw_ref \
