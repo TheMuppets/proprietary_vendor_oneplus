@@ -363,8 +363,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/camera/imx398_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx398_chromatix.xml \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/camera/sticker/dog.zip:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sticker/dog.zip \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/camera/sticker/huzi.zip:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sticker/huzi.zip \
-    vendor/oneplus/msm8998-common/proprietary/vendor/etc/camera/sticker/megviifacepp_0_4_7_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sticker/megviifacepp_0_4_7_model \
-    vendor/oneplus/msm8998-common/proprietary/vendor/etc/camera/sticker/mgbeautify_1_2_3_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sticker/mgbeautify_1_2_3_model \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/camera/sticker/tuzi.zip:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sticker/tuzi.zip \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/camera/sticker/wanzai.zip:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sticker/wanzai.zip \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
